@@ -1,0 +1,83 @@
+1
+teacher: tone
+courseID: 1130T1
+room: 201
+semester: 0
+maxstudents: 20
+
+2
+teacher: tone
+courseID: 924016
+room: 201
+semester: 0
+maxstudents: 20
+
+3
+teacher: tone
+courseID: 317004
+room: 201
+semester: 0
+maxstudents: 20
+
+4
+teacher: tone
+courseID: 000BAN
+room: 300
+semester: 0
+maxstudents: 20
+
+5
+teacher: ttwo
+courseID: 923315
+room: 202
+semester: 0
+maxstudents: 20
+
+6
+teacher: ttwo
+courseID: 317704
+room: 202
+semester: 0
+maxstudents: 20
+
+7
+teacher: ttwo
+courseID: 317861
+room: 202
+semester: 0
+maxstudents: 20
+
+8
+teacher: ttwo
+courseID: 000MAT
+room: 300
+semester: 0
+maxstudents: 0
+
+9
+teacher: tthree
+courseID: 1140T1
+room: 203
+semester: 0
+maxstudents: 20
+
+10
+teacher: tthree
+courseID: 319800
+room: 203
+semester: 0
+maxstudents: 20
+
+11
+teacher: tthree
+courseID: 000ENG
+room: 300
+semester: 0
+maxstudents: 0
+
+12
+teacher: tthree
+courseID: 000LEA
+room: 300
+semester: 0
+maxstudents: 0

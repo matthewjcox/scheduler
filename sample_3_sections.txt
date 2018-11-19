@@ -1,0 +1,1106 @@
+0
+teacher: akbailey
+courseID: 923915
+room: ?
+semester: 0
+maxstudents: 20
+
+1
+teacher: neglover
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+2
+teacher: neglover
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+3
+teacher: neglover
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+
+4
+teacher: neglover
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+5
+teacher: neglover
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+6
+teacher: dlhill2
+courseID: 313754
+room: ?
+semester: 0
+maxstudents: 20
+
+7
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+8
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+9
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+10
+teacher: jmrosenblum
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+11
+teacher: jmrosenblum
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+12
+teacher: jmrosenblum
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+13
+teacher: jmrosenblum
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+14
+teacher: jmrosenblum
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+15
+teacher: cvandekampwa
+courseID: 512000
+room: ?
+semester: 0
+maxstudents: 20
+
+16
+teacher: cvandekampwa
+courseID: 512000
+room: ?
+semester: 0
+maxstudents: 20
+
+17
+teacher: cvandekampwa
+courseID: 512000
+room: ?
+semester: 0
+maxstudents: 20
+
+18
+teacher: cvandekampwa
+courseID: 512000
+room: ?
+semester: 0
+maxstudents: 20
+
+19
+teacher: cvandekampwa
+courseID: 512000
+room: ?
+semester: 0
+maxstudents: 20
+
+20
+teacher: ijcarey
+courseID: 313753
+room: ?
+semester: 0
+maxstudents: 20
+
+21
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+22
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+23
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+24
+teacher: ecsandstrom
+courseID: 541000
+room: ?
+semester: 0
+maxstudents: 20
+
+25
+teacher: jcseyler
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+26
+teacher: jcseyler
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+27
+teacher: jcseyler
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+28
+teacher: mggeiger
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+29
+teacher: mggeiger
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+30
+teacher: mggeiger
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+31
+teacher: mggeiger
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+32
+teacher: mggeiger
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+33
+teacher: mlbillington
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+34
+teacher: mlbillington
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+35
+teacher: mlbillington
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+36
+teacher: clconklin
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+37
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+38
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+39
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+40
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+41
+teacher: cllightner
+courseID: 316055
+room: ?
+semester: 0
+maxstudents: 20
+
+42
+teacher: tadavis2
+courseID: 912032
+room: ?
+semester: 0
+maxstudents: 20
+
+43
+teacher: slglotfelty
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+44
+teacher: slglotfelty
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+45
+teacher: slglotfelty
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+46
+teacher: slglotfelty
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+47
+teacher: djones3
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+48
+teacher: djones3
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+49
+teacher: djones3
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+50
+teacher: djones3
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+51
+teacher: djones3
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+52
+teacher: hesmith
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+53
+teacher: hesmith
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+54
+teacher: hesmith
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+55
+teacher: hesmith
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+56
+teacher: hesmith
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+57
+teacher: mbkochman
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+58
+teacher: mbkochman
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+59
+teacher: mbkochman
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+60
+teacher: mbkochman
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+61
+teacher: kotani
+courseID: 591000
+room: ?
+semester: 0
+maxstudents: 20
+
+62
+teacher: mspiccione
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+63
+teacher: mspiccione
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+64
+teacher: mspiccione
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+65
+teacher: mspiccione
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+66
+teacher: mspiccione
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+67
+teacher: mhmiller2
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+68
+teacher: mhmiller2
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+69
+teacher: mhmiller2
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+70
+teacher: mhmiller2
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+71
+teacher: mhmiller2
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+72
+teacher: njkim
+courseID: 3184T2
+room: ?
+semester: 0
+maxstudents: 20
+
+73
+teacher: njkim
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+74
+teacher: njkim
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+75
+teacher: njkim
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+76
+teacher: njkim
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+77
+teacher: anlampazzi
+courseID: 313753
+room: ?
+semester: 0
+maxstudents: 20
+
+78
+teacher: anlampazzi
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+79
+teacher: anlampazzi
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+80
+teacher: anlampazzi
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+81
+teacher: anlampazzi
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+82
+teacher: eharris1
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+83
+teacher: eharris1
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+84
+teacher: eharris1
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+85
+teacher: eharris1
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+86
+teacher: eharris1
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 20
+
+87
+teacher: calewis1
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+88
+teacher: calewis1
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+89
+teacher: calewis1
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+90
+teacher: calewis1
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+91
+teacher: calewis1
+courseID: 984060
+room: ?
+semester: 0
+maxstudents: 20
+
+92
+teacher: awforeman
+courseID: 923315
+room: ?
+semester: 0
+maxstudents: 20
+
+93
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 0
+maxstudents: 20
+
+94
+teacher: ajirariscavo
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+95
+teacher: ajirariscavo
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+96
+teacher: ajirariscavo
+courseID: 3190T1
+room: ?
+semester: 0
+maxstudents: 20
+
+97
+teacher: ajirariscavo
+courseID: 317004
+room: ?
+semester: 0
+maxstudents: 20
+
+98
+teacher: jcjames
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+99
+teacher: jcjames
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+100
+teacher: jcjames
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+101
+teacher: jcjames
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+102
+teacher: jcjames
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+103
+teacher: phlister
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+104
+teacher: phlister
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+105
+teacher: phlister
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+106
+teacher: phlister
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+107
+teacher: phlister
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+108
+teacher: amreid
+courseID: 141032
+room: ?
+semester: 0
+maxstudents: 20
+
+109
+teacher: qxu1
+courseID: 581000
+room: ?
+semester: 0
+maxstudents: 20
+
+110
+teacher: sdelcerro
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+111
+teacher: sdelcerro
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+112
+teacher: sdelcerro
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+113
+teacher: sdelcerro
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+114
+teacher: sdelcerro
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+115
+teacher: srrose
+courseID: 3184T2
+room: ?
+semester: 0
+maxstudents: 20
+
+116
+teacher: srrose
+courseID: 3184T2
+room: ?
+semester: 0
+maxstudents: 20
+
+117
+teacher: srrose
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+118
+teacher: srrose
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+119
+teacher: srrose
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+120
+teacher: soszko
+courseID: 521000
+room: ?
+semester: 0
+maxstudents: 20
+
+121
+teacher: tglarson
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+122
+teacher: tglarson
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+123
+teacher: tglarson
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+124
+teacher: tglarson
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+125
+teacher: tglarson
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+126
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+127
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+128
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+129
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+130
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+131
+teacher: asholman
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+132
+teacher: asholman
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+133
+teacher: asholman
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+134
+teacher: asholman
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+135
+teacher: asholman
+courseID: 4310T1
+room: ?
+semester: 0
+maxstudents: 20
+
+136
+teacher: bnpotoker
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+137
+teacher: bnpotoker
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+138
+teacher: bnpotoker
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+139
+teacher: bnpotoker
+courseID: 730000
+room: ?
+semester: 0
+maxstudents: 40
+
+140
+teacher: magendive
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+141
+teacher: magendive
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+142
+teacher: magendive
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+143
+teacher: magendive
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+144
+teacher: mceckel
+courseID: 318561
+room: ?
+semester: 0
+maxstudents: 20
+
+145
+teacher: mceckel
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+146
+teacher: mceckel
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+147
+teacher: mceckel
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+148
+teacher: mceckel
+courseID: 3184T1
+room: ?
+semester: 0
+maxstudents: 20
+
+149
+teacher: jcjames
+teacher: tglarson
+teacher: asholman
+teacher: sdelcerro
+teacher: jmrosenblum
+courseID: 000BIO
+room: ?
+semester: 0
+maxstudents: 0
+
+150
+teacher: mbkochman
+teacher: neglover
+teacher: eharris1
+teacher: slglotfelty
+teacher: mhmiller2
+courseID: 000ENG
+room: ?
+semester: 0
+maxstudents: 0
+
+151
+teacher: jcjames
+teacher: bnpotoker
+teacher: hesmith
+courseID: 000GYM
+room: ?
+semester: 0
+maxstudents: 0
+
+152
+teacher: calewis1
+teacher: djones3
+teacher: mggeiger
+teacher: jcseyler
+teacher: mspiccione
+courseID: 000D&T
+room: ?
+semester: 0
+maxstudents: 0
+
+153
+teacher: njkim
+teacher: mceckel
+teacher: srrose
+teacher: mlbillington
+courseID: 0000CS
+room: ?
+semester: 0
+maxstudents: 0
+
+154
+teacher: dlhill2
+teacher: ijcarey
+teacher: anlampazzi
+teacher: ajirariscavo
+teacher: cllightner
+courseID: 000MAT
+room: ?
+semester: 0
+maxstudents: 0

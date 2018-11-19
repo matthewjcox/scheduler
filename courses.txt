@@ -1,0 +1,39 @@
+English 9, English 9, 1130T1, year
+English 10, English 10, 1140T1, year
+English 11 (teamed with AP US History), English 11, 1150T1, year
+English Meeting, English Meeting, 000ENG, year
+Symphonic Band (Intermediate Level), Symphonic Band, 923315, year
+Symphonic Wind Ensemble Band (Advanced/Artist Level), Advanced Band, 923415, year
+Jazz Band, Jazz Ensemble, 924016, year
+Band Meeting, Band Meeting, 000BAN, year
+AP Calculus AB, AP Calculus AB, 317004, year
+AP Calculus BC, AP Calculus BC, 317704, year
+Multivariable Calculus, Multivar Calc, 317860, semester
+Differential Equations, Diff Equations, 317861, semester
+Matrix Algebra, Matrix Algebra, 319800, semester
+Math Meeting, Math Meeting, 000MAT, year
+Leadership Meeting, Leader Meeting, 000LEA, year
+Foundations of Computer Science, Foundations CompSci, 3184T1, year
+Foundations of Computer Science Accelerated, Foundations CompSci Acc, 3184T2, year
+AP Computer Science A plus Data Structures, AP Computer Sci A+, 318561, year
+Health and Physical Education 9, Health and PE 9, 730000, year
+TJHSST Math 3, TJ Math 3, 313753, year
+TJHSST Math 4, TJ Math 4, 313754, year
+TJHSST Math 5, TJ Math 5, 316055, year
+TJHSST Research & Statistics 1, TJ Res Stats 1, 3190T1, year
+Theatre Arts 1, Theatre Arts 1, 141032, year
+Advanced Orchestra (Concert), Advanced Orchestra, 923915, year
+Biology 1, Biology 1, 4310T1, year
+Design and Technology, Design and Tech, 984060, year
+Art 1, Art 1, 912032, year
+French 2, French 2, 512000, year
+German 1, German 1, 521000, year
+Latin 2, Latin 2, 532000, year
+Russian 1, Russian 1, 541000, year
+Spanish 2, Spanish 2, 552000, year
+Chinese 1, Chinese 1, 581000, year
+Japanese 1, Japanese 1, 591000, year
+Bio Meeting, Bio Meeting, 000BIO, year
+Gym Meeting, Gym Meeting, 000GYM, year
+DT Meeting, DT Meeting, 000D&T,year
+CS Meeting, CS Meeting, 0000CS, year

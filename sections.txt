@@ -1,0 +1,121 @@
+1
+teacher: mhmiller
+courseID: 1130T1
+room: 219
+semester: 0
+maxstudents: 10
+
+2
+teacher: mhmiller
+courseID: 1130T1
+room: 219
+semester: 0
+team: 1
+maxstudents: 10
+
+3
+teacher: mhmiller
+courseID: 1140T1
+room: 219
+semester: 0
+maxstudents: 10
+
+4
+teacher: mhmiller
+courseID: 000ENG
+room: ENG_MTG_RM
+semester: 0
+maxstudents: 0
+
+5
+teacher: mbkochman
+courseID: 1150T1
+room: 212
+semester: 0
+maxstudents: 10
+
+6
+teacher: mbkochman
+courseID: 1150T1
+room: 212
+semester: 0
+
+7
+teacher: mbkochman
+courseID: 1140T1
+room: 212
+semester: 0
+maxstudents: 10
+
+4
+teacher:mbkochman
+
+9
+teacher: awforeman
+courseID: 923315
+room: 134
+semester: 0
+maxstudents: 10
+
+10
+teacher: awforeman
+courseID: 923415
+room: 134
+semester: 0
+maxstudents: 10
+
+11
+teacher: awforeman
+courseID: 924016
+room: 134
+semester: 0
+maxstudents: 10
+
+12
+teacher: awforeman
+courseID: 000BAN
+room: BAND_MTG_RM
+semester: 0
+maxstudents: 0
+
+13
+teacher: jaosborne
+courseID: 317004
+room: 81
+semester: 0
+maxstudents: 10
+
+14
+teacher: jaosborne
+courseID: 317860
+room: 81
+semester: 1
+maxstudents: 10
+
+15
+teacher: jaosborne
+courseID: 317860
+room: 81
+semester: 1
+maxstudents: 10
+
+16
+teacher: jaosborne
+courseID: 317861
+room: 81
+semester: 2
+maxstudents: 10
+
+17
+teacher: jaosborne
+courseID: 319800
+room: 81
+semester: 2
+maxstudents: 10
+
+18
+teacher: jaosborne
+courseID: 000MAT
+room: MATH_MTG_RM
+semester: 0
+maxstudents: 0

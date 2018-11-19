@@ -1,0 +1,122 @@
+1
+teacher: tA
+courseID: 1130T1
+room: 101
+semester: 0
+maxstudents: 25
+
+2
+teacher: tB
+courseID: 1140T1
+room: 102
+semester: 0
+maxstudents: 25
+
+3
+teacher: tC
+courseID: 924016
+room: 103
+semester: 0
+maxstudents: 25
+
+4
+teacher: tD
+courseID: 319800
+room: 104
+semester: 0
+maxstudents: 25
+
+5
+teacher: tF
+teacher: tG
+courseID: 000LEA
+room: 105
+semester: 0
+
+6
+teacher: tE
+courseID: 000PLA
+room: 106
+semester: 0
+
+7
+teacher: tF
+courseID: 317861
+room: ?
+semester: 0
+maxstudents: 25
+
+8
+teacher: tB
+courseID: 1140T1
+room: ?
+semester: 0
+maxstudents: 25
+
+9
+teacher: tE
+courseID: 317704
+room: ?
+semester: 0
+maxstudents: 25
+
+10
+teacher: tG
+courseID: 923315
+room: ?
+semester: 0
+maxstudents: 25
+
+11
+teacher: tA
+teacher: tC
+courseID: 000BAN
+room: ?
+semester: 0
+
+12
+teacher: tD
+courseID: 000PLA
+room: ?
+semester: 0
+
+13
+teacher: tE
+courseID: 317004
+room: ?
+semester: 0
+maxstudents: 25
+
+14
+teacher: tA
+courseID: 1130T1
+room: ?
+semester: 0
+maxstudents: 25
+
+15
+teacher: tD
+courseID: 317860
+room: ?
+semester: 0
+maxstudents: 25
+
+16
+teacher: tC
+courseID: 924016
+room: ?
+semester: 0
+maxstudents: 25
+
+17
+teacher: tB
+teacher: tF
+courseID: 000ENG
+room: ?
+semester: 0
+
+18
+teacher: tG
+courseID: 000PLA
+room: ?
+semester: 0
