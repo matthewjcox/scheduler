@@ -699,7 +699,7 @@ class hill_climb_solo_2:
             new_organism.initialize_weights()
             for _ in range(3):
                 for i in new_organism.students.values():
-                    new_organism.optimize_student(i,max_it=int(3+3*random.random()))
+                    new_organism.optimize_student(i,max_it=4)
             new_score=new_organism.preliminary_score()
             old_score=self.population.preliminary_score()
             if new_score>=old_score:
