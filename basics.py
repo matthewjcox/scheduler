@@ -189,7 +189,7 @@ class Section:
         self.id=id
         self.teachers = set()
         self.students=set()
-        self.courses=set()
+        self.courses=list()
         self.classrooms=set()
         self.period=1#random.randint(1,_num_periods)
         self.semester=None#0 is full year, 1 is S1, 2 is S2
@@ -235,7 +235,7 @@ class Section:
 
     def add_course(self, course):
         if course not in self.courses:
-            self.courses.add(course)
+            self.courses.append(course)
         # course.sched.add(self)
 
     def remove_course(self, course):

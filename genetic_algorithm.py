@@ -389,6 +389,7 @@ class master_schedule(chromosome):
         #         base_score += self.duplicate_correct_course_score_delta
 
         return (base_score+addl_score,base_score)
+
     def score_student_sections(self,student):
         base_score = 0
         periods_yr = set()
@@ -448,7 +449,8 @@ class master_schedule(chromosome):
                 return
             courses={}
             old_sections = []
-            courses_randomized=sorted(student.courses.courses, key=lambda i: random.random())
+            courses_randomized=list(student.courses.courses)
+            random.shuffle(courses_randomized)#sorted(student.courses.courses, key=lambda i: random.random())
             for _ in range(2):
                 for j in courses_randomized:
                     courses[j]=[]
@@ -459,12 +461,10 @@ class master_schedule(chromosome):
                     if len(courses[i])==0:
                         break
                 else:
-                    # return
                     i=courses_randomized[0]
                     sect=random.choice(courses[i])
                     sect.remove_student(student)
                     old_sections.append(sect)
-                    # raise NotImplementedError################Fix this?
                     continue
                 break
 
