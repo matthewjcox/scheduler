@@ -714,6 +714,7 @@ def fill_in_schedule(sched,num_it=3):
     sched.initialize_weights()
     it=0
     m_it=num_it*len(sched.students)
+    print('Beginning post-processing.')
     for i in range(num_it):
         for student in sched.students.values():
             it+=1
