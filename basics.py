@@ -74,8 +74,6 @@ class Teacher:
         return f'{self.firstName} {self.lastName} ({self.teacherID})'
 
     def __hash__(self):
-        return self.t_hash()
-    def t_hash(self):
         return hash(self.teacherID)
 
     def __eq__(self,other):
@@ -101,8 +99,6 @@ class Classroom:
         return 'Room {}'.format(self.num)
 
     def __hash__(self):
-        return self.cl_hash()
-    def cl_hash(self):
         return hash(object.__repr__(self))
 
 class Course:
@@ -145,8 +141,6 @@ class Course:
         return str(self)
 
     def __hash__(self):
-        return self.co_hash()
-    def co_hash(self):
         return hash(self.courseID)
 
 class Student:
@@ -185,8 +179,6 @@ class Student:
         return Student(self.lastName,self.firstName,self.studentID,self.courses,keep_record=0)
 
     def __hash__(self):
-        return self.st_hash()
-    def st_hash(self):
         return hash(self.studentID)
 
     def __eq__(self,other):
@@ -297,8 +289,6 @@ class Section:
         return f'Section {self.id}: {next(iter(self.teachers)).lastName if self.teachers else "Teacherless"} {next(iter(self.courses)).name if self.courses else "Courseless"} P{self.period} {"YR" if not self.semester else "S"+str(self.semester)}'
 
     def __hash__(self):
-        return self.se_hash()
-    def se_hash(self):
         return hash(object.__repr__(self))
 
 
