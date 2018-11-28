@@ -23,6 +23,8 @@ _all_students={}
 _all_sections={}
 # End global vars
 
+
+
 class School:
     num_periods=_num_periods
     courses=_courses

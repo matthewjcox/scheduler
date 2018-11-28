@@ -132,7 +132,7 @@ if __name__=="__main__":
     #     print((time_func()-t)/time_scale)
 
     solver = hill_climb_solo_2(master_schedule)
-    winner=solver.solve(num_iterations=100, verbose=0,print_every=5)
+    winner=solver.solve(num_iterations=1200, verbose=0,print_every=5)
     initial_score=winner.score()
     winner=fill_in_schedule(winner)
     print(winner)

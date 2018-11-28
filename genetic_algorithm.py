@@ -697,7 +697,7 @@ class hill_climb_solo_2:
             for i in range(int(1+5*random.random()*(1-_ITERATION/_NUM_ITERATIONS))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
-            for _ in range(3):
+            for _ in range(2):
                 for i in new_organism.students.values():
                     new_organism.optimize_student(i,max_it=15)
             new_score=new_organism.preliminary_score()
@@ -708,6 +708,12 @@ class hill_climb_solo_2:
         if verbose:
             print(f'Winner: {winner}')
         return winner
+
+def diagnostics(master_sched):
+    #Teacher conflicts
+    #Student conflicts
+    #Student schedule fills
+    pass
 
 def fill_in_schedule(sched,num_it=3):
     sections=sched.course_sections
@@ -729,7 +735,7 @@ def post_process(sched):
     #assign homerooms
     #distribute IBET, HUM, sem/global, CHUM, GHUM
     #8th online period?
-
+    # add See Counselor
     return sched
 
 def current_time_formatted():
