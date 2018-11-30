@@ -1,8 +1,8 @@
 from genetic_algorithm import *
 
-teacher_input='sample_3_teachers.txt'
+teacher_input='teamed_3_teachers.txt'
 student_input='sample_3_students.txt'
-section_input='sample_3_sections.txt'
+section_input='teamed_3_sections.txt'
 #
 # teacher_input='teachers_copy.txt'
 # student_input='students.txt'
