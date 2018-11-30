@@ -15,7 +15,9 @@ import random
 # Global vars:
 _courses={}
 _num_periods=7
-course_file_name='courses.txt'
+param_file_name='runs/run_params.txt'
+with open(param_file_name,'r') as f:
+    classroom_fn, course_fn, section_fn, student_fn, teacher_fn=['runs/request_files/' + i.strip() for i in f.readlines()]
 _course_creation_disabled= 1
 _classrooms={}
 _all_teachers={}
@@ -309,9 +311,9 @@ class Student_Courses:
         alts='\n\t\t'.join(['']+self.alternates) if self.alternates else '\n\t\tNone'
         return f'\tCourses:{cs}\n\tAlternates:{alts}'
 
-with open(course_file_name,'r') as f:
+with open(course_fn,'r') as f:
     for i in f:
-        line=[j.strip() for j in i.split(',')]
+        line=[j.strip() for j in i.split('|')]
         try:
             course=Course.create_new(*line)
         except:
@@ -319,7 +321,7 @@ with open(course_file_name,'r') as f:
             raise
         _courses[course.courseID]=course
 
-with open('classrooms.txt','r') as f:
+with open(classroom_fn, 'r') as f:
     for i in f:
         Classroom.classroom(i.strip())
 

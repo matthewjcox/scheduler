@@ -14,35 +14,35 @@ maxstudents: 20
 
 100129
 teacher: anlampazzi
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100132
 teacher: anlampazzi
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100134
 teacher: anlampazzi
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100136
 teacher: anlampazzi
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100139
 teacher: anlampazzi
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
@@ -97,91 +97,91 @@ allowed_periods: 5,6,7
 
 100072
 teacher: jcjames
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100074
 teacher: jcjames
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100077
 teacher: jcjames
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100082
 teacher: jcjames
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100073
 teacher: bnpotoker
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100079
 teacher: bnpotoker
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100080
 teacher: bnpotoker
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100081
 teacher: bnpotoker
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100057
 teacher: mlbillington
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100059
 teacher: mlbillington
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100060
 teacher: mlbillington
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100064
 teacher: mlbillington
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100065
 teacher: mlbillington
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
@@ -505,28 +505,28 @@ maxstudents: 20
 
 100061
 teacher: srrose
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100063
 teacher: srrose
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100066
 teacher: srrose
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100068
 teacher: srrose
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
@@ -547,49 +547,49 @@ maxstudents: 20
 
 100075
 teacher: hesmith
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100076
 teacher: hesmith
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100078
 teacher: hesmith
-courseID: 730000
+courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100110
 teacher: cllightner
-courseID: 317004
+courseID: 317093
 room: ?
 semester: 0
 maxstudents: 20
 
 100127
 teacher: cllightner
-courseID: 316055
+courseID: TJA3160
 room: ?
 semester: 0
 maxstudents: 20
 
 100137
 teacher: cllightner
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100144
 teacher: cllightner
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
@@ -720,14 +720,14 @@ maxstudents: 20
 
 100142
 teacher: dlhill2
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100145
 teacher: dlhill2
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
@@ -796,56 +796,56 @@ maxstudents: 20
 
 100130
 teacher: ajirariscavo
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100133
 teacher: ajirariscavo
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100135
 teacher: ajirariscavo
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100141
 teacher: ajirariscavo
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100058
 teacher: mceckel
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100062
 teacher: mceckel
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100067
 teacher: mceckel
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
 100070
 teacher: mceckel
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
@@ -873,28 +873,28 @@ maxstudents: 20
 
 100131
 teacher: ijcarey
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100138
 teacher: ijcarey
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100140
 teacher: ijcarey
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
 
 100143
 teacher: ijcarey
-courseID: 3190T1
+courseID: TJA3190
 room: ?
 semester: 0
 maxstudents: 20
@@ -1067,7 +1067,7 @@ maxstudents: 20
 
 100069
 teacher: njkim
-courseID: 3184T1
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20

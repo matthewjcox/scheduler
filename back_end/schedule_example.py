@@ -1,13 +1,5 @@
 from genetic_algorithm import *
-
-teacher_input='teamed_3_teachers.txt'
-student_input='sample_3_students.txt'
-section_input='teamed_3_sections.txt'
-#
-# teacher_input='teachers_copy.txt'
-# student_input='students.txt'
-# section_input='sections.txt'
-
+#]
 def set_attribute(s,field,value):
     if field == 'teacher':
         v = School.teachers[value]
@@ -42,7 +34,7 @@ def set_attribute(s,field,value):
         raise ReferenceError
 
 if __name__=="__main__":
-    with open(teacher_input,'r') as f:
+    with open(teacher_fn, 'r') as f:
         data=f.readlines()
         i=0
         while 1:
@@ -58,7 +50,7 @@ if __name__=="__main__":
                 # i+=2
             except IndexError:
                 break
-    with open(section_input,'r') as f:
+    with open(section_fn, 'r') as f:
         lines=f.readlines()
         j=0
         try:
@@ -85,7 +77,7 @@ if __name__=="__main__":
             pass
 
 
-    with open(student_input,'r') as f:
+    with open(student_fn, 'r') as f:
         data=f.readlines()
         i=0
         while 1:
