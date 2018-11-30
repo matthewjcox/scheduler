@@ -6,6 +6,7 @@ import time
 _NUM_ITERATIONS=None
 _ITERATION=None
 _START_TIME=time.perf_counter()
+_SAVE_TIME=10
 
 class NotImplemented(Exception):
     pass
@@ -319,7 +320,7 @@ class master_schedule(chromosome):
         self.correct_course_score_delta = 4
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 8 * (1 - (_ITERATION / _NUM_ITERATIONS))
-        self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
+        # self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-1
 
@@ -410,9 +411,9 @@ class master_schedule(chromosome):
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
-            for i in j.teamed_sections:
-                if i not in student.sched:
-                    addl_score += self.missing_teamed_class_delta
+            # for i in j.teamed_sections:
+            #     if i not in student.sched:
+            #         addl_score += self.missing_teamed_class_delta
             addl_score += self.rare_class_bonus * len(self.course_sections[next(iter(j.courses))]) ** -2.5
         return base_score,addl_score
 
@@ -670,30 +671,30 @@ class master_schedule(chromosome):
 #         return winner
 
 class hill_climb_solo_2:
-    def __init__(self, dataclass, population_size=1, *args, **kwargs):
+    def __init__(self, dataclass, population_size=1,outfolder='runs/schedule_data.sched', *args, **kwargs):
         self.dataclass = dataclass
         assert issubclass(self.dataclass, chromosome)
-        self.population = None
-        self.num_organisms = population_size
-        for i in range(self.num_organisms):
-            j = self.dataclass(*args, **kwargs)
+        self.current_sched = None
+        self.outfolder=outfolder
+        j = self.dataclass(*args, **kwargs)
+        j.randomize_new()
+        while not j.is_viable():
             j.randomize_new()
-            while not j.is_viable():
-                j.randomize_new()
-            self.population=j
+        self.current_sched=j
 
 
-    def solve(self, num_iterations=0, verbose=0, print_every=500,):
+    def solve(self, num_iterations=0, verbose=0, print_every=500):
         global _NUM_ITERATIONS
         global _ITERATION
         _NUM_ITERATIONS=num_iterations
+        last_save=-1
         for i in range(1,num_iterations+1):
             # if i%200==0:
             #     print(i)
             _ITERATION=i
             if i<10 or i % print_every == 0:
-                print(f'Round {i}: score {self.population.score():.2f} ({self.population.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
-            new_organism = self.population.copy()
+                print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
+            new_organism = self.current_sched.copy()
             for i in range(int(1+5*random.random()*(1-_ITERATION/_NUM_ITERATIONS))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
@@ -701,13 +702,23 @@ class hill_climb_solo_2:
                 for i in new_organism.students.values():
                     new_organism.optimize_student(i,max_it=15)
             new_score=new_organism.preliminary_score()
-            old_score=self.population.preliminary_score()
+            old_score=self.current_sched.preliminary_score()
             if new_score>=old_score:
-                self.population=new_organism
-        winner=self.population
+                self.current_sched=new_organism
+            if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
+                last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
+                save_schedule(self.current_sched, self.outfolder)
+        winner=self.current_sched
         if verbose:
             print(f'Winner: {winner}')
         return winner
+
+def save_schedule(master_sched,outfolder):
+    print('Saving schedules not yet implemented.')
+    outfile=outfolder+'/schedule.sched'
+    with open(outfile,'w') as f:
+        pass
+
 
 def diagnostics(master_sched):
     #Teacher conflicts

@@ -217,14 +217,20 @@ class Section:
         teacher.sched.remove(self)
 
     def add_student(self, student):
+        if student in self.students:
+            return
         self.students.add(student)
         student.sched.add(self)
+        for i in self.teamed_sections:
+            i.add_student(student)
 
     def remove_student(self, student):
         if student not in self.students:
-            raise ReferenceError
+            return#no error because teaming might direct us back here
         self.students.remove(student)
         student.sched.remove(self)
+        for i in self.teamed_sections:
+            i.remove_student(student)
 
     def add_classroom(self, room):
         if room not in self.classrooms:
