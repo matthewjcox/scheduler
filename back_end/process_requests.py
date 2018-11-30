@@ -132,9 +132,11 @@ if __name__=="__main__":
     #     print(i.long_string())
     #     print()
     with open('winning_schedule.txt','w') as f:
+        i.write(str(len(winner.sections))+'\n')
         for i in winner.sections.values():
             f.write(i.long_string())
             f.write('\n\n')
+        i.write(str(len(winner.students)) + '\n')
         for i in winner.students.values():
             f.write(str(i))
             f.write(i.medium_string())
