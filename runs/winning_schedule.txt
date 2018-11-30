@@ -1,3 +1,4 @@
+167
 		Section ID: 100051
 		Period: 4
 		Max student count: 20
@@ -1334,6 +1335,7 @@
 		Room(s): Room ?
 		Student(s) (0): 
 
+400
 Student 0 (0)	Courses:
 		984060 Design and Technology
 		1130T1 English 9
