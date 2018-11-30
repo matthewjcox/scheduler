@@ -319,7 +319,7 @@ class master_schedule(chromosome):
         self.correct_course_score_delta = 4
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 8 * (1 - (_ITERATION / _NUM_ITERATIONS))
-        self.missing_teamed_class_delta=-2
+        self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-1
 
@@ -411,8 +411,8 @@ class master_schedule(chromosome):
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
             for i in j.teamed_sections:
-                if i not in j.sched:
-                    base_score += self.missing_teamed_class_delta
+                if i not in student.sched:
+                    addl_score += self.missing_teamed_class_delta
             addl_score += self.rare_class_bonus * len(self.course_sections[next(iter(j.courses))]) ** -2.5
         return base_score,addl_score
 
@@ -712,7 +712,7 @@ class hill_climb_solo_2:
 def diagnostics(master_sched):
     #Teacher conflicts
     #Student conflicts
-    #Student schedule fills
+    #Student schedule fills (w/ see counselor)
     pass
 
 def fill_in_schedule(sched,num_it=3):
