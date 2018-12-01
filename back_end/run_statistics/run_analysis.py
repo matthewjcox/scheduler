@@ -10,9 +10,9 @@ Statistics to include
 import re
 import sys
 
-toInterpret = sys.argv[1]
-coursesText = sys.argv[2]
-teachersText = sys.argv[3]
+toInterpret = sys.argv[1]  # Currently, ../../runs/winning_schedule.txt
+coursesText = sys.argv[2]  # Currently, ../../runs/constraint_files/courses.txt
+teachersText = sys.argv[3]  # Currently, ../../runs/constraint_files/teamed_3_teachers.txt
 
 # Sections is a dictionary of section:[period, maxStudents, courseID, [teacherIDs], room, classSize, [students], [teamed courses]].
 sections = {}
