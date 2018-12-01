@@ -17,7 +17,7 @@ _courses={}
 _num_periods=7
 param_file_name='runs/run_params.txt'
 with open(param_file_name,'r') as f:
-    classroom_fn, course_fn, section_fn, student_fn, teacher_fn=['runs/request_files/' + i.strip() for i in f.readlines()]
+    classroom_fn, course_fn, section_fn, student_fn, teacher_fn=['runs/constraint_files/' + i.strip() for i in f.readlines()]
 _course_creation_disabled= 1
 _classrooms={}
 _all_teachers={}

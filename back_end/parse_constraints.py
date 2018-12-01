@@ -1,5 +1,5 @@
 from genetic_algorithm import *
-#]
+
 def set_attribute(s,field,value):
     if field == 'teacher':
         v = School.teachers[value]
