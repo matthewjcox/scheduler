@@ -10,36 +10,52 @@ Statistics to include
 import re
 import sys
 
+# First command line argument: file with run data to interpret
 toInterpret = sys.argv[1]  # Currently, ../../runs/winning_schedule.txt
+# Second command line argument: file with course information used in that run
 coursesText = sys.argv[2]  # Currently, ../../runs/constraint_files/courses.txt
+# Third command line argument: file with teacher information used in that run
 teachersText = sys.argv[3]  # Currently, ../../runs/constraint_files/teamed_3_teachers.txt
 
-# Sections is a dictionary of section:[period, maxStudents, courseID, [teacherIDs], room, classSize, [students], [teamed courses]].
+# Sections is a dictionary of sectionID:[secionID, period, maxStudents, courseID, [teacherIDs], room, classSize, [students], [teamed courses]].
 sections = {}
 
-#This changes the current directory to runs
+# Opens the file with run information to analyze
 file = open(toInterpret, 'r')
-# print(file.readline()[:-1])
-for x in range(int(file.readline()[:-1])): # 167 sections is epcific to this file. Must generalize.
-    # Read every seven lines and then skip the 8th to put into sections dict.
+# Initiates a for-loop that runs once for every section in the schedule
+for x in range(int(file.readline()[:-1])):
+    # Reads the data with the sectionID and stores it in "section."
     line = file.readline()[2:-1]
     section = re.search('[0-9]+', line).group(0)
+    # Adds sectionID to the list associated with sectionID. Redundant, but useful for for-loops that loop over items in sections.values().
+    # Also adds period to sections[section] as an int.
     sections[section] = [section, int(file.readline()[10])]
+    # Adds max students to sections[section] as an int.
     sections[section].append(int(file.readline()[21:-1]))
+    # Adds courseID to sections[section] as a string.
     sections[section].append(re.search(r'[0-9A-Z]+', file.readline()[13:-1]).group(0))
+    # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
     sections[section].append([re.search(r'\(.+\)', curLine).group(0)[1:-1] for curLine in file.readline()[14:-1].split(", ")])
+    # Adds room to section[sections] as a string.
     sections[section].append(file.readline()[16:-1])
     # Reads line with student data. Stored so as to be able to access multiple times.
     nextLine = file.readline()
+    # Adds class size to sections[section] as an int.
     sections[section].append(int(re.search(r'\([0-9]+\)', nextLine[13:-1]).group(0)[1:-1]))
+    # Adds an empty list to section[sections] if the section has no students.
     if sections[section][6] == 0:
         sections[section].append([])
+    # Adds a list of students, represented by student numbers held as strings, to sections[section] if class size > 0.
     else:
         sections[section].append([re.search(r'\([0-9]+\)', curLine).group(0)[1:-1] for curLine in re.search(': .*', nextLine).group(0)[2:].split(", ")])
+    # Reads the next line to check if it has teaming data.
     nextLine = file.readline()
+    # If the next line has teaming data, adds teaming data to sections[section] as list of strings of section IDs/
     if re.search('Teamed with:', nextLine):
         sections[section].append([re.search('[0-9]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
         file.readline()
+    # If next line does not have teaming data, adds an empty list to sections[section] to represent no teaming.
     else:
         sections[section].append([])
+    # Prints sections[section] for debugging.
     print(sections[section])
