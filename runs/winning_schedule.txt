@@ -1,4 +1,4 @@
-167
+158
 		Section ID: 100051
 		Period: 4
 		Max student count: 20
