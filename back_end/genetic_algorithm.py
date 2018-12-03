@@ -2,12 +2,14 @@ from basics import *
 import random
 # import numpy as np
 import time
+import datetime
+import sqlite3
 # VERBOSE=1
-_NUM_ITERATIONS=None
-_ITERATION=None
+# _NUM_ITERATIONS=None
+# _ITERATION=None
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
-
+_CLOSENESS_TO_COMPLETION=0
 class NotImplemented(Exception):
     pass
 class InvalidPeriodError(Exception):
@@ -180,6 +182,8 @@ class master_schedule(chromosome):
         self.sections={}
         self.initialized = 0
         self.course_sections = {}
+        self.correct_course_score_delta = 4
+        self.theoretical_max_score=self.correct_course_score_delta*len(School.students)*self.num_periods
 
 
     def blank_new(self):
@@ -327,7 +331,7 @@ class master_schedule(chromosome):
         self.student_conflict_score_delta = -200 #* (_ITERATION / _NUM_ITERATIONS + .1) ** 2.2
         self.teacher_conflict_score_delta = -250  # *(_ITERATION/_NUM_ITERATIONS+.1)
         # missing_score_delta=-1#*(_ITERATION/_NUM_ITERATIONS)**2
-        self.correct_course_score_delta = 4
+
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 8 * (1 - (_ITERATION / _NUM_ITERATIONS))
         # self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
@@ -338,12 +342,14 @@ class master_schedule(chromosome):
         if not self.initialized:
             raise ReferenceError
         score=0
+        addl_score=0
 
         self.initialize_weights()
 
         for i in self.students.values():
             student_score,_=self.score_student(i)
-            score+=(student_score if not static else _)
+            score+=_
+            addl_score+=student_score-_
 
         for i in self.teachers.values():
             periods_yr = set()
@@ -381,7 +387,10 @@ class master_schedule(chromosome):
         for i in self.sections.values():
             if len(i.students)>i.maxstudents:
                 score-=100
-        return score
+
+        global closeness_to_completion
+        closeness_to_completion = max(0,score/self.theoretical_max_score)
+        return score if not static else score+addl_score
 
 
     def score_student(self,student):

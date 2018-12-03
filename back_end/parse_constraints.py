@@ -124,14 +124,14 @@ if __name__=="__main__":
     #     print((time_func()-t)/time_scale)
 
     solver = hill_climb_solo_2(master_schedule)
-    winner=solver.solve(num_iterations=100, verbose=0,print_every=5)
+    winner=solver.solve(num_iterations=10, verbose=0,print_every=5)
     initial_score=winner.score()
     winner=fill_in_schedule(winner)
     print(winner)
     # for i in winner.sections.values():
     #     print(i.long_string())
     #     print()
-    with open('winning_schedule.txt','w') as f:
+    with open('winning_schedule_'+datetime.datetime.strftime(datetime.datetime.utcnow(),'%Y_%m_%d__%H_%M_%S')+'.txt','w') as f:
         f.write(str(len(winner.sections))+'\n')
         for i in winner.sections.values():
             f.write(i.long_string())
