@@ -724,10 +724,11 @@ class hill_climb_solo_2:
         return winner
 
 def save_schedule(master_sched,outfolder):
-    print('Saving schedules not yet implemented.')
-    outfile=outfolder+'/schedule.sched'
-    with open(outfile,'w') as f:
-        pass
+    return
+    # print('Saving schedules not yet implemented.')
+    # outfile=outfolder+'/schedule.sched'
+    # with open(outfile,'w') as f:
+    #     pass
 
 
 def diagnostics(master_sched):
