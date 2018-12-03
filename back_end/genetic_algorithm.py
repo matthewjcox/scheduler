@@ -10,7 +10,8 @@ _SAVE_TIME=10
 
 class NotImplemented(Exception):
     pass
-
+class InvalidPeriodError(Exception):
+    pass
 class chromosome:
     def __init__(self,*args,**kwargs):
         pass
@@ -296,22 +297,31 @@ class master_schedule(chromosome):
                 return
             if student not in mutating_section.students and len(mutating_section.students)<mutating_section.maxstudents:
                 mutating_section.add_student(student)
-
+    
     def mutate_period(self):
         mutating_section = random.choice(tuple(self.sections.values()))
         p = random.choice(mutating_section.allowed_periods)
-        self.change_to_period(mutating_section, p, [])
+        try:
+            self.change_to_period(mutating_section, p, [])
+        except InvalidPeriodError:
+            pass
 
     def change_to_period(self, section, new_period, reached):
         if new_period==section.period or section in reached:
             return
+        if new_period not in section.allowed_periods:
+            raise InvalidPeriodError
         reached.append(section)
         old_period=section.period
         section.set_period(new_period)
-        for i in section.teachers:
-            for j in i.sched:
-                if j.period==new_period:
-                    self.change_to_period(j,old_period,reached)
+        try:
+            for i in section.teachers:
+                for j in i.sched:
+                    if j.period==new_period:
+                        self.change_to_period(j,old_period,reached)
+        except InvalidPeriodError:
+            section.set_period(old_period)
+            raise
 
     def initialize_weights(self):
         self.student_conflict_score_delta = -200 #* (_ITERATION / _NUM_ITERATIONS + .1) ** 2.2
@@ -695,7 +705,7 @@ class hill_climb_solo_2:
             if i<10 or i % print_every == 0:
                 print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
             new_organism = self.current_sched.copy()
-            for i in range(int(1+5*random.random()*(1-_ITERATION/_NUM_ITERATIONS))):
+            for i in range(int(1+15*random.random()*(1-_ITERATION/_NUM_ITERATIONS))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -714,10 +724,11 @@ class hill_climb_solo_2:
         return winner
 
 def save_schedule(master_sched,outfolder):
-    print('Saving schedules not yet implemented.')
-    outfile=outfolder+'/schedule.sched'
-    with open(outfile,'w') as f:
-        pass
+    return
+    # print('Saving schedules not yet implemented.')
+    # outfile=outfolder+'/schedule.sched'
+    # with open(outfile,'w') as f:
+    #     pass
 
 
 def diagnostics(master_sched):

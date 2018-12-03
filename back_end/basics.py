@@ -195,7 +195,7 @@ class Section:
         self.students=set()
         self.courses=list()
         self.classrooms=set()
-        self.period=0#random.randint(1,_num_periods)
+        self.period=1#random.randint(1,_num_periods)
         self.semester=None#0 is full year, 1 is S1, 2 is S2
         self.period_fixed=0
         self.teamed_sections=set()
@@ -275,6 +275,7 @@ class Section:
 
     def set_allowed_periods(self,allowed_periods):
         self.allowed_periods=allowed_periods
+        self.period=self.allowed_periods[0]
 
     def space_available(self):
         return len(self.students)<=self.maxstudents-1
