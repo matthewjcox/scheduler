@@ -1,20 +1,20 @@
-from genetic_algorithm import *
+from basics import *
 
-def set_attribute(s,field,value):
+def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
     if field == 'teacher':
-        v = School.teachers[value]
+        v = teachers[value]
         s.add_teacher(v)
     elif field == 'student':
-        v = School.students[value]
+        v = students[value]
         s.add_student(v)
     elif field == 'courseID':
-        v = School.courses[value]
+        v = courses[value]
         s.add_course(v)
     elif field == 'room':
-        v = School.classrooms[value]
+        v = classrooms[value]
         s.add_classroom(v)
     elif field == 'team':
-        v = School.sections[value]
+        v = sections[value]
         s.team_with(v)
     elif field == 'period':
         v = int(value)
@@ -33,54 +33,52 @@ def set_attribute(s,field,value):
         print(f'Error entering data for section {s.id}: no attribute {field}')
         raise ReferenceError
 
-if __name__=="__main__":
-    with open(teacher_fn, 'r') as f:
+def read_classrooms(classroom_fn,classrooms):
+    with open(classroom_fn, 'r') as f:
+        for i in f:
+            num=i.strip()
+            classrooms[num]=Classroom.classroom(num)
+
+def read_courses(course_fn,courses):
+    with open(course_fn, 'r') as f:
+        for i in f:
+            line = [j.strip() for j in i.split('|')]
+            try:
+                course = Course.create_new(*line)
+            except:
+                print(f'Error reading course: {line}')
+                raise
+            courses[course.courseID] = course
+
+
+def read_teachers(teacherfn,teachers):
+    with open(teacherfn, 'r') as f:
         data=f.readlines()
         i=0
-        while 1:
+        for i in range(len(data)):
             try:
                 teacherinfo=data[i].strip()
-                i += 1
+                teacherinfo=data[i].strip()
+                if len(teacherinfo)==0:
+                    continue
                 fn,ln,teacher_id=teacherinfo.split(',')
                 fn=fn.strip()
                 ln=ln.strip()
                 teacher_id=teacher_id.strip()
-                # periods_available=[int(j) for j in data[i].split(',')]
-                Teacher(ln, fn, teacher_id, None)
-                # i+=2
-            except IndexError:
-                break
-    with open(section_fn, 'r') as f:
-        lines=f.readlines()
-        j=0
-        try:
-            while 1:
-                i = lines[j].strip()
-                j+=1
-                if not i:
-                    continue
-                if i in School.sections:
-                    s=School.sections[i]
-                else:
-                    s=Section(i)
-                i = lines[j].strip()
-                j+=1
-                while i:
-                    field,value=i.split(':')
-                    field=field.strip()
-                    value=value.strip()
-                    set_attribute(s,field,value)
-                    i = lines[j].strip()
-                    j+=1
-        except IndexError as e:
-            print(e)
-            pass
+                tchr=Teacher(ln, fn, teacher_id, None)
+                teachers[teacher_id]=tchr
+            except IndexError as e:
+                print(e)
+                raise
 
 
-    with open(student_fn, 'r') as f:
+
+
+def read_students(studentfn,students,all_courses):
+    with open(studentfn, 'r') as f:
         data=f.readlines()
         i=0
-        while 1:
+        while i<len(data):
             try:
                 studentinfo=data[i].strip()
                 i+=1
@@ -93,55 +91,39 @@ if __name__=="__main__":
                 classes=[]
                 for j in range(num_classes):
                     classes.append(data[i+j].strip())
-                courses=Student_Courses(classes)
-                Student(ln, fn, id, courses)
+                courses=Student_Courses(classes,all_courses)
+                stud=Student(ln, fn, id, courses)
+                students[id]=stud
                 i += num_classes+1
-            except IndexError:
-                break
+            except IndexError as e:
+                print(e)
+                raise
 
-    # for i in School.teachers.values():
-    #     print(i.long_string())
-    # # for i in School.students.values():
-    # #     print(i.long_string())
-    # print("_______________________________________________________________________")
-    # s=master_schedule()
-    # s.fill_new()
-    # s.sections['17'].set_period(3)
-    # s.sections['17'].fix_period()
-    # s.sections['17'].set_period(5)
-    # for i in s.teachers.values():
-    #     print(i.long_string())
-    # for i in s.students.values():
-    #     print(i.long_string())
 
-    # time_func=time.process_time_ns
-    # # time_func=time.perf_counter_ns
-    # time_scale=1e9
-    # for i in range(1):
-    #     t=time_func()
-    #     for i in range(100000):
-    #         master_schedule().fill_new()
-    #     print((time_func()-t)/time_scale)
-
-    solver = hill_climb_solo_2(master_schedule)
-    winner=solver.solve(num_iterations=1000, verbose=0,print_every=5)
-    initial_score=winner.score()
-    winner=fill_in_schedule(winner)
-    print(winner)
-    # for i in winner.sections.values():
-    #     print(i.long_string())
-    #     print()
-    filename='winning_schedule_'+datetime.datetime.strftime(datetime.datetime.utcnow(),'%Y_%m_%d__%H_%M_%S')+'.txt'
-    with open(filename,'w') as f:
-        f.write(str(len(winner.sections))+'\n')
-        for i in winner.sections.values():
-            f.write(i.long_string())
-            f.write('\n\n')
-        f.write(str(len(winner.students)) + '\n')
-        for i in winner.students.values():
-            f.write(str(i))
-            f.write(i.medium_string())
-            f.write('\n\n')
-    print(f'Schedule was printed to {filename}.')
-    print(f'Initial score: {initial_score}')
-    print(f'Score after processing: {winner.score()}')
+def read_sections(sectionfn,sections,num_periods,classrooms,courses,teachers,students):
+    with open(sectionfn, 'r') as f:
+        lines=f.readlines()
+        j=0
+        try:
+            while j<len(lines):
+                i = lines[j].strip()
+                j+=1
+                if not i:
+                    continue
+                if i in sections:
+                    s=sections[i]
+                else:
+                    s=Section(i)
+                    sections[i]=s
+                i = lines[j].strip()
+                j+=1
+                while i:
+                    field,value=i.split(':')
+                    field=field.strip()
+                    value=value.strip()
+                    set_attribute(s,field,value,sections,classrooms,courses,teachers,students)
+                    i = lines[j].strip()
+                    j+=1
+        except IndexError as e:
+            print(e)
+            raise
