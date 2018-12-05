@@ -1,12 +1,8 @@
 from basics import *
 import random
-# import numpy as np
 import time
-import datetime
-import sqlite3
-# VERBOSE=1
-# _NUM_ITERATIONS=None
-# _ITERATION=None
+
+
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
 _CLOSENESS_TO_COMPLETION=0
