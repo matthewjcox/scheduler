@@ -13,32 +13,15 @@ List of problems that need to be addressed:
 """
 import random
 # Global vars:
-_courses={}
-_num_periods=7
-param_file_name='runs/run_params.txt'
-with open(param_file_name,'r') as f:
-    classroom_fn, course_fn, section_fn, student_fn, teacher_fn=['runs/constraint_files/' + i.strip() for i in f.readlines()]
 _course_creation_disabled= 1
-_classrooms={}
-_all_teachers={}
-_all_students={}
-_all_sections={}
 # End global vars
 
-
-
-class School:
-    num_periods=_num_periods
-    courses=_courses
-    classrooms=_classrooms
-    teachers=_all_teachers
-    students=_all_students
-    sections=_all_sections
-
-
+def set_global_num_periods(num_perds):
+    global num_periods
+    num_periods=num_perds
 
 class Teacher:
-    def __init__(self, myLastName, myFirstName, teacherID, willTeach, keep_record=1):
+    def __init__(self, myLastName, myFirstName, teacherID, willTeach):
         # willTeach is a dictionary that stores the courses that a teacher will teach. It stores the course
         # and associates it with the number of sections of that course the teacher is teaching.
         self.willTeach = willTeach#teacherCourses object
@@ -62,9 +45,9 @@ class Teacher:
         # sched stores period number:section.
         # NOTE TO SELF: Consider automatically filling blocks when teacher won't be here with empty courses.
         self.sched = set()
-        if keep_record:
-            global _all_teachers
-            _all_teachers[self.teacherID]=self
+        # if keep_record:
+        #     global _all_teachers
+        #     _all_teachers[self.teacherID]=self
 
     def long_string(self):
         # courses=self.willTeach.to_str() if self.willTeach else '\n\tNone'
@@ -72,7 +55,7 @@ class Teacher:
         return f'{self.firstName} {self.lastName} ({self.teacherID})\n\tSchedule:\n{schedule}'
 
     def copy(self):
-        return Teacher(self.lastName,self.firstName,self.teacherID, self.willTeach, keep_record=0)
+        return Teacher(self.lastName,self.firstName,self.teacherID, self.willTeach)
 
     def __str__(self):
         return f'{self.firstName} {self.lastName} ({self.teacherID})'
@@ -94,10 +77,7 @@ class Classroom:
 
     @staticmethod
     def classroom(roomNum):
-        global _classrooms
-        if roomNum not in _classrooms:
-            _classrooms[roomNum]=Classroom(roomNum)
-        return _classrooms[roomNum]
+        return Classroom(roomNum)
 
     def __str__(self):
         return 'Room {}'.format(self.num)
@@ -123,12 +103,12 @@ class Course:
         # as needed to list all of the sections of this course that are taught.
         # self.sched = set()
 
-    @staticmethod
-    def course(myID):
-        if myID not in _courses:
-            raise ReferenceError
-            # courses[myID]=Course(myName, shortName, myID)
-        return _courses[myID]
+    # @staticmethod
+    # def course(myID):
+    #     if myID not in _courses:
+    #         raise ReferenceError
+    #         # courses[myID]=Course(myName, shortName, myID)
+    #     return _courses[myID]
 
     @staticmethod
     def create_new(myName, shortName, myID, duration):
@@ -148,7 +128,7 @@ class Course:
         return hash(self.courseID)
 
 class Student:
-    def __init__(self,myLastName, myFirstName,myID,myCourses,keep_record=1):
+    def __init__(self,myLastName, myFirstName,myID,myCourses):
 
         # studentID is a string that stores a student's student ID.
         self.studentID = myID
@@ -161,9 +141,9 @@ class Student:
 
         # sched is a variable that holds an array of seven sections representing a student's schedule
         self.sched = set()
-        if keep_record:
-            global _all_students
-            _all_students[self.studentID]=self
+        # if keep_record:
+        #     global _all_students
+        #     _all_students[self.studentID]=self
 
     def long_string(self):
         requests=self.courses.to_str() if self.courses else '\n\t\tNone'
@@ -180,7 +160,7 @@ class Student:
 
 
     def copy(self):
-        return Student(self.lastName,self.firstName,self.studentID,self.courses,keep_record=0)
+        return Student(self.lastName,self.firstName,self.studentID,self.courses)
 
     def __hash__(self):
         return hash(self.studentID)
@@ -189,7 +169,7 @@ class Student:
         return isinstance(other,Student) and self.studentID==other.studentID
 
 class Section:
-    def __init__(self, id, keep_record=1):
+    def __init__(self, id):
         self.id=id
         self.teachers = set()
         self.students=set()
@@ -200,10 +180,7 @@ class Section:
         self.period_fixed=0
         self.teamed_sections=set()
         self.maxstudents=0
-        self.allowed_periods=list(range(1,_num_periods+1))
-        if keep_record:
-            global _all_sections
-            _all_sections[self.id]=self
+        self.allowed_periods=list(range(1,num_periods+1))
 
     def add_teacher(self,teacher):
         if teacher not in self.teachers:
@@ -304,33 +281,23 @@ class Section:
 
 
 class Student_Courses:
-    def __init__(self,course_list,alts=None):
+    def __init__(self,course_list,all_courses,alts=None):
         self.courses = set()
         self.alternates=set()
         if alts is not None:
             raise ValueError('Alternate courses not yet supported.')
         for i in course_list:
             i = i.strip()
-            self.courses.add(Course.course(i))
+            self.courses.add(all_courses[i])
 
     def to_str(self):
         cs='\n\t\t'.join(['']+[str(i) for i in self.courses]) if self.courses else '\n\t\tNone'
         alts='\n\t\t'.join(['']+self.alternates) if self.alternates else '\n\t\tNone'
         return f'\tCourses:{cs}\n\tAlternates:{alts}'
 
-with open(course_fn,'r') as f:
-    for i in f:
-        line=[j.strip() for j in i.split('|')]
-        try:
-            course=Course.create_new(*line)
-        except:
-            print(f'Error reading course: {line}')
-            raise
-        _courses[course.courseID]=course
 
-with open(classroom_fn, 'r') as f:
-    for i in f:
-        Classroom.classroom(i.strip())
+
+
 
 
 
