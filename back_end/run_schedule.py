@@ -1,19 +1,29 @@
 from basics import *
 from genetic_algorithm import *
 from parse_constraints import *
+import datetime
+import sqlite3
+import os
+import shutil
 
 def run_scheduler(save=None):
     if save is None:
-        pass
-        #create folder
-        #copy in initial conditions into folder
-        #create empty SQL DB and table for schedule
-    param_file_name = 'runs/run_params.txt'
+        save=f'runs/past_runs/{datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")}'
+        os.mkdir(save)
+        param_file_name = 'runs/run_params.txt'
+        shutil.copy2(param_file_name,save)
+        raise NotImplementedError#create SQL DB
+    else:
+        save='runs/past_runs/'+save
+        param_file_name = save+'/run_params.txt'
     with open(param_file_name, 'r') as f:
-        num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=f.readlines()
+        num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[i.strip() for i in f.readlines()]
+    for i in classroom_fn, course_fn, teacher_fn, student_fn, section_fn:
+        if not os.path.isfile(f'{save}/{i}'):
+            shutil.copy2(i, save)
     num_periods=int(num_periods.strip())
     set_global_num_periods(num_periods)
-    classroom_fn, course_fn, teacher_fn, student_fn, section_fn=['runs/constraint_files/' + i.strip() for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
+    classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[f'{save}/{i}' for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
     classrooms={}
     courses={}
     teachers={}
@@ -30,9 +40,7 @@ def run_scheduler(save=None):
     initial_score = winner.score()
     winner = fill_in_schedule(winner)
     print(winner)
-    # for i in winner.sections.values():
-    #     print(i.long_string())
-    #     print()
+
     filename = 'winning_schedule_' + datetime.datetime.strftime(datetime.datetime.utcnow(),
                                                                 '%Y_%m_%d__%H_%M_%S') + '.txt'
     with open(filename, 'w') as f:
