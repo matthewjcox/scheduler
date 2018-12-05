@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e655b7d2-0645-46a7-90fd-1fcbf98085cc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runs/winning_schedule.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back_end/run_statistics/run_analysis.py" afterPath="$PROJECT_DIR$/back_end/run_statistics/run_analysis.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,24 +15,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="winning_schedule.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runs/winning_schedule.txt">
+      <file leaf-file-name="run_analysis.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12825">
-              <caret line="855" column="44" lean-forward="false" selection-start-line="855" selection-start-column="44" selection-end-line="855" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="492">
+              <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+              <folding>
+                <element signature="e#281#290#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_analysis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py">
+      <file leaf-file-name="perfect_schedule.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runs/perfect_schedule.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="45" lean-forward="false" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
-              <folding>
-                <element signature="e#281#290#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4080">
+              <caret line="272" column="25" lean-forward="false" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,6 +53,10 @@
       <find>psych</find>
       <find>100157</find>
       <find>100100</find>
+      <find>Period: 0</find>
+      <find>x</find>
+      <find>396</find>
+      <find>984060</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,24 +116,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="runs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scheduler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constraint_files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,16 +371,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runs/winning_schedule.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12825">
-          <caret line="855" column="44" lean-forward="false" selection-start-line="855" selection-start-column="44" selection-end-line="855" selection-end-column="44" />
+        <state relative-caret-position="70">
+          <caret line="1612" column="36" lean-forward="false" selection-start-line="1612" selection-start-column="36" selection-end-line="1612" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/perfect_schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="272" column="25" lean-forward="false" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="45" lean-forward="false" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        <state relative-caret-position="492">
+          <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
           <folding>
             <element signature="e#281#290#0" expanded="true" />
           </folding>
