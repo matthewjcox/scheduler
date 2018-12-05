@@ -1,0 +1,8 @@
+Minimum Empty Seats: 460
+Empty seats: 1830
+Number of empty spots in student schedules: 1370
+Percentage of Course Requests Fulfilled: 51.07142857142857%
+Number of student conflicts: 0
+Students with conflicts: None
+Number of teacher conflicts: 40
+Teachers with conflicts: anlampazzi, asholman, jcjames, bnpotoker, mlbillington, neglover, djones3, sdelcerro, slglotfelty, phlister, cvandekampwa, jjames1, clconklin, srrose, hesmith, cllightner, calewis1, tglarson, dlhill2, mggeiger, ajirariscavo, mceckel, ijcarey, nmateo, mbkochman, jcseyler, magendive, njkim, eharris1

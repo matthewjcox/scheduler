@@ -1,0 +1,8 @@
+Minimum Empty Seats: 400
+Empty seats: 400
+Number of empty spots in student schedules: 0
+Percentage of Course Requests Fulfilled: 100.0%
+Number of student conflicts: 0
+Students with conflicts: None
+Number of teacher conflicts: 0
+Teachers with conflicts: None
