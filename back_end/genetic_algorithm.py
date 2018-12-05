@@ -1,13 +1,11 @@
 from basics import *
 import random
-# import numpy as np
 import time
-# VERBOSE=1
-_NUM_ITERATIONS=None
-_ITERATION=None
+
+
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
-
+_CLOSENESS_TO_COMPLETION=0
 class NotImplemented(Exception):
     pass
 class InvalidPeriodError(Exception):
@@ -111,75 +109,22 @@ def weighted_choice(elements,n,weights):
         weights*=1-n
     return res
 
-# class genetic_solver:
-#     def __init__(self,dataclass,population_size=100,*args,**kwargs):
-#         self.dataclass=dataclass
-#         assert issubclass(self.dataclass,chromosome)
-#         self.population=[]
-#         self.num_organisms=population_size
-#         # self.population=np.empty(self.num_organisms)
-#         for i in range(self.num_organisms):
-#             j=self.dataclass(*args,**kwargs)
-#             j.randomize_new()
-#             while not j.is_viable():
-#                 j.randomize_new()
-#             self.population.append(j)
-#
-#
-#
-#     def prune_population(self):
-#         # print('PRUNING POPULATION')
-#         self.population.sort(key=lambda i:-i.weighted_score())
-#         self.population=self.population[:self.num_organisms]
-#
-#
-#     def solve(self, num_iterations=0, verbose=0,print_every=500):
-#         global _NUM_ITERATIONS
-#         global _ITERATION
-#         _NUM_ITERATIONS=num_iterations
-#         self.population = [i for i in self.population if i.is_viable()]
-#         for i in range(num_iterations):
-#             _ITERATION=i
-#             if verbose:
-#                 print(f'---------Round {i}---------')
-#                 print([i.score() for i in self.population])
-#                 print(f'Max score: {max([i.score() for i in self.population])}')
-#             else:
-#                 if i%print_every==0:
-#                     print(f'Round {i}: max {max([i.score() for i in self.population])}')
-#             if len(self.population)<2:
-#                 print('No viable population to breed. Exiting operation.')
-#                 return
-#             if len(self.population)>10*self.num_organisms:
-#                 self.prune_population()
-#
-#             weights=np.array([o.weighted_score() for o in self.population])
-#             weights/=sum(weights)
-#
-#             a,b=weighted_choice(self.population,2,weights)
-#             for i in range(5):
-#                 new_organism=self.dataclass.breed(a,b)
-#                 # if verbose:
-#                 #     print(f'Breed {a} and {b}; result is {new_organism}')
-#                 if new_organism.is_viable:
-#                     self.population.append(new_organism)
-#                 org2=new_organism.copy()
-#                 org2.mutate()
-#                 if org2.is_viable:
-#                     self.population.append(org2)
-#         winner=max(self.population,key=lambda i:i.score())
-#         if verbose:
-#             print(f'Winner: {winner}')
-#         return winner
 
 class master_schedule(chromosome):
     #criteria, data structures
-    def __init__(self,*args,**kwargs):
+    def __init__(self,num_periods,classrooms,courses,teachers,students,sections,*args,**kwargs):
         super(master_schedule, self).__init__(*args, **kwargs)
-        self.num_periods=School.num_periods
+        self.num_periods=num_periods
+        self.stock_classrooms=classrooms
+        self.stock_courses=courses
+        self.stock_teachers=teachers
+        self.stock_students=students
+        self.stock_sections=sections
         self.sections={}
         self.initialized = 0
         self.course_sections = {}
+        self.correct_course_score_delta = 4
+        self.theoretical_max_score=self.correct_course_score_delta*len(self.stock_students)*self.num_periods
 
 
     def blank_new(self):
@@ -189,17 +134,17 @@ class master_schedule(chromosome):
         self.teachers={}
         self.students={}
         self.classrooms={}
-        for i in School.teachers.values():
+        for i in self.stock_teachers.values():
             self.teachers[i.teacherID]=i.copy()
-        for i in School.students.values():
+        for i in self.stock_students.values():
             self.students[i.studentID]=i.copy()
-        for i in School.classrooms.values():
+        for i in self.stock_classrooms.values():
             self.classrooms[i.num]=Classroom(i.num)
         self.teams=[]
         self.initialized=1
         if fill_sections:
-            for i in School.sections.values():
-                s=Section(i.id,keep_record=0)
+            for i in self.stock_sections.values():
+                s=Section(i.id)
                 self.sections[s.id]=s
                 for j in i.teachers:
                     teacher=self.teachers[j.teacherID]
@@ -211,7 +156,7 @@ class master_schedule(chromosome):
                     classroom=self.classrooms[j.num]
                     s.add_classroom(classroom)
                 for j in i.courses:
-                    course=School.courses[j.courseID]
+                    course=self.stock_courses[j.courseID]
                     s.add_course(course)
                 s.set_semester(i.semester)
                 s.set_max_students(i.maxstudents)
@@ -233,71 +178,7 @@ class master_schedule(chromosome):
     def randomize_new(self):
         self.fill_new()
 
-    def mutate(self):
-        # if random.random()<.5:
-        #     return
-        # for _ in range(random.randint(1,5)):
 
-        # if random.random()<.9:
-        #     continue
-        if (random.random()<(1-.9*(_ITERATION/_NUM_ITERATIONS)) or mutating_section.maxstudents==0) and not mutating_section.period_fixed:
-            self.mutate_period()
-            return
-
-        mutating_section = random.choice(tuple(self.sections.values()))
-        if random.random()<.5 and mutating_section.students:
-            student=random.choice(tuple(mutating_section.students))
-            mutating_section.remove_student(student)
-            courses=[]
-            for requested_course in student.courses.courses:
-                for section_taking in student.sched:
-                    if requested_course in section_taking.courses:
-                        break
-                else:
-                    courses.append(requested_course)
-            occupied_periods=set()
-            for i in student.sched:
-                occupied_periods.add(i.period)
-            for course_to_add in courses:
-                for section_of_course in self.course_sections[course_to_add]:
-                    if section_of_course.period not in occupied_periods and section_of_course.space_available():
-                        section_of_course.add_student(student)
-                        return
-            # for j in self.sections.values():
-            #     if len(j.students)>j.maxstudents:
-            #         continue
-            #     for n in j.courses:
-            #         if n in student.courses.courses:
-            #             for m in student.sched:
-            #                 if n in m.courses:
-            #                     break
-            #             else:
-            #                 for m in student.sched:
-            #                     if j.period==m.period and not {m.semester,j.semester}=={1,2}:
-            #                         break
-            #                 else:
-            #                     j.add_student(student)
-            #                     break
-            #     else:
-            #         continue
-            #     break
-
-
-        else:
-            for j in range(30):
-                student = random.choice(tuple(self.students.values()))
-                if any([j in student.courses.courses for j in mutating_section.courses]):
-                    l=[j for j in mutating_section.courses if j in student.courses.courses]
-                    for m in l:
-                        for j in student.sched:
-                            if m in j.courses:
-                                continue
-                    break
-            else:
-                return
-            if student not in mutating_section.students and len(mutating_section.students)<mutating_section.maxstudents:
-                mutating_section.add_student(student)
-    
     def mutate_period(self):
         mutating_section = random.choice(tuple(self.sections.values()))
         p = random.choice(mutating_section.allowed_periods)
@@ -327,7 +208,7 @@ class master_schedule(chromosome):
         self.student_conflict_score_delta = -200 #* (_ITERATION / _NUM_ITERATIONS + .1) ** 2.2
         self.teacher_conflict_score_delta = -250  # *(_ITERATION/_NUM_ITERATIONS+.1)
         # missing_score_delta=-1#*(_ITERATION/_NUM_ITERATIONS)**2
-        self.correct_course_score_delta = 4
+
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 8 * (1 - (_ITERATION / _NUM_ITERATIONS))
         # self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
@@ -338,12 +219,14 @@ class master_schedule(chromosome):
         if not self.initialized:
             raise ReferenceError
         score=0
+        addl_score=0
 
         self.initialize_weights()
 
         for i in self.students.values():
             student_score,_=self.score_student(i)
-            score+=(student_score if not static else _)
+            score+=_
+            addl_score+=student_score-_
 
         for i in self.teachers.values():
             periods_yr = set()
@@ -372,7 +255,7 @@ class master_schedule(chromosome):
                 period_counts[j.period]+=1
             for j in period_counts.values():
                 if j>1:
-                    score+=j**2*self.course_period_overlap if not static else 0
+                    addl_score+=j**2*self.course_period_overlap
 
         for i in self.sections.values():
             if i.period not in i.allowed_periods:
@@ -381,7 +264,10 @@ class master_schedule(chromosome):
         for i in self.sections.values():
             if len(i.students)>i.maxstudents:
                 score-=100
-        return score
+
+        global closeness_to_completion
+        closeness_to_completion = max(0,score/self.theoretical_max_score)
+        return score if static else score+addl_score
 
 
     def score_student(self,student):
@@ -513,7 +399,7 @@ class master_schedule(chromosome):
                 s=a.sections[i.id]
             else:
                 s=b.sections[i.id]
-            s=Section(s.id,keep_record=0)
+            s=Section(s.id)
             sched.sections[s.id] = s
             for j in i.teachers:
                 teacher = sched.teachers[j.teacherID]
@@ -525,7 +411,7 @@ class master_schedule(chromosome):
                 classroom = sched.classrooms[j.num]
                 s.add_classroom(classroom)
             for j in i.courses:
-                course = School.courses[j.courseID]
+                course = self.stock_courses[j.courseID]
                 s.add_course(course)
             s.set_semester(i.semester)
             s.set_max_students(i.maxstudents)
@@ -545,148 +431,55 @@ class master_schedule(chromosome):
         return sched
 
 
+    # def copy(self):
+    #     return master_schedule.breed(self,self)
+
     def copy(self):
-        return master_schedule.breed(self,self)
+        sched=master_schedule(self.num_periods, self.stock_classrooms, self.stock_courses, self.stock_teachers, self.stock_students, self.stock_sections)
+        sched.fill_new(fill_sections=0)
+        for i in self.sections.values():
+            s=Section(i.id)
+            sched.sections[s.id] = s
+            for j in i.teachers:
+                teacher = sched.teachers[j.teacherID]
+                s.add_teacher(teacher)
+            for j in i.students:
+                student = sched.students[j.studentID]
+                s.add_student(student)
+            for j in i.classrooms:
+                classroom = sched.classrooms[j.num]
+                s.add_classroom(classroom)
+            for j in i.courses:
+                course = self.stock_courses[j.courseID]
+                s.add_course(course)
+            s.set_semester(i.semester)
+            s.set_max_students(i.maxstudents)
+            s.set_period(i.period)
+            if i.period_fixed:
+                s.fix_period()
+            for j in i.teamed_sections:
+                sched.teams.append((s, j.id))
+        for i,j in sched.teams:
+            other=sched.sections[j]
+            i.team_with(other)
+        for sect in sched.sections.values():
+            for course in sect.courses:
+                if course not in sched.course_sections:
+                    sched.course_sections[course] = []
+                sched.course_sections[course].append(sect)
+        return sched
 
     def __str__(self):
         return f'{self.__class__.__name__} object, score={self.score()} ({self.preliminary_score(static=1)})'
 
-# class hill_climb:
-#     def __init__(self, dataclass, population_size=100, *args, **kwargs):
-#         self.dataclass = dataclass
-#         assert issubclass(self.dataclass, chromosome)
-#         self.population = []
-#         self.num_organisms = population_size
-#         # self.population=np.empty(self.num_organisms)
-#         for i in range(self.num_organisms):
-#             j = self.dataclass(*args, **kwargs)
-#             j.randomize_new()
-#             while not j.is_viable():
-#                 j.randomize_new()
-#             self.population.append(j)
-#
-#     def prune_population(self):
-#         # print('PRUNING POPULATION')
-#         self.population.sort(key=lambda i: -i.weighted_score())
-#         self.population = self.population[:self.num_organisms]
-#
-#     def solve(self, num_iterations=0, verbose=0, print_every=500,):
-#         global _NUM_ITERATIONS
-#         global _ITERATION
-#         _NUM_ITERATIONS=num_iterations
-#         self.population = [i for i in self.population if i.is_viable()]
-#         for i in range(1,num_iterations+1):
-#             if i%200==0:
-#                 print(i)
-#             _ITERATION=i+1
-#             if verbose:
-#                 print(f'---------Round {i}---------')
-#                 print([i.score() for i in self.population])
-#                 print(f'Max score: {max([i.score() for i in self.population])}')
-#             else:
-#                 if i % print_every == 0:
-#                     print(f'Round {i}: max {max([i.score() for i in self.population])}')
-#             # if len(self.population) < 1:
-#             #     print('No viable population to breed. Exiting operation.')
-#             #     return
-#             if len(self.population) > 2 * self.num_organisms:
-#                 self.prune_population()
-#
-#             weights = np.array([o.weighted_score() for o in self.population])
-#             weights /= sum(weights)
-#
-#             # l = weighted_choice(self.population, 2, weights)
-#             l=[]
-#
-#             for a in self.population:
-#                 l.append(a)
-#                 new_organism = a.copy()
-#                 new_organism.mutate()
-#                 if new_organism.is_viable:
-#                     l.append(new_organism)
-#                 # a=new_organism
-#             self.population=l
-#
-#         winner = max(self.population, key=lambda i: i.score())
-#         if verbose:
-#             print(f'Winner: {winner}')
-#         return winner
-#
-# class hill_climb_solo:
-#     def __init__(self, dataclass, population_size=100, *args, **kwargs):
-#         self.dataclass = dataclass
-#         assert issubclass(self.dataclass, chromosome)
-#         self.population = None
-#         self.num_organisms = population_size
-#         # self.population=np.empty(self.num_organisms)
-#         for i in range(self.num_organisms):
-#             j = self.dataclass(*args, **kwargs)
-#             j.randomize_new()
-#             while not j.is_viable():
-#                 j.randomize_new()
-#             self.population=j
-#
-#     def prune_population(self):
-#         # print('PRUNING POPULATION')
-#         self.population.sort(key=lambda i: -i.weighted_score())
-#         self.population = self.population[:self.num_organisms]
-#
-#     def solve(self, num_iterations=0, verbose=0, print_every=500,):
-#         global _NUM_ITERATIONS
-#         global _ITERATION
-#         _NUM_ITERATIONS=num_iterations
-#         # self.population = [i for i in self.population if i.is_viable()]
-#         for i in range(1,num_iterations+1):
-#             if i%200==0:
-#                 print(i)
-#             _ITERATION=i
-#             # if verbose:
-#             #     print(f'---------Round {i}---------')
-#             #     print([i.score() for i in self.population])
-#             #     print(f'Max score: {max([i.score() for i in self.population])}')
-#             # else:
-#             if i % print_every == 0:
-#                 print(f'Round {i}: score {self.population.preliminary_score()}')
-#             # if len(self.population) < 1:
-#             #     print('No viable population to breed. Exiting operation.')
-#             #     return
-#             # if len(self.population) > 2 * self.num_organisms:
-#             #     self.prune_population()
-#
-#             # weights = np.array([o.weighted_score() for o in self.population])
-#             # weights /= sum(weights)
-#
-#             # l = weighted_choice(self.population, 2, weights)
-#             # l=[]
-#
-#             # for a in self.population:
-#             new_organism = self.population.copy()
-#             # if num_iterations*2/3<=i<=num_iterations*2/3+1:
-#             #     new_organism=fill_in_schedule(new_organism)
-#             # else:
-#             new_organism.mutate()
-#             # if new_organism.is_viable:
-#                 # l.append(new_organism)
-#             new_score=new_organism.preliminary_score()
-#             old_score=self.population.preliminary_score()
-#             if new_score>=old_score:
-#                 self.population=new_organism
-#                 # a=new_organism
-#             # self.population=l
-#
-#         # winner = max(self.population, key=lambda i: i.score())
-#         winner=self.population
-#         if verbose:
-#             print(f'Winner: {winner}')
-#         return winner
 
 class hill_climb_solo_2:
-    def __init__(self, dataclass, population_size=1,outfolder='runs/schedule_data.sched', *args, **kwargs):
+    def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder='runs/schedule_data', *args, **kwargs):
         self.dataclass = dataclass
         assert issubclass(self.dataclass, chromosome)
         self.current_sched = None
         self.outfolder=outfolder
-        j = self.dataclass(*args, **kwargs)
+        j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
         j.randomize_new()
         while not j.is_viable():
             j.randomize_new()

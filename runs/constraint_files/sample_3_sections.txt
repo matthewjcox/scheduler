@@ -50,21 +50,21 @@ maxstudents: 20
 
 7
 teacher: dlhill2
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 8
 teacher: dlhill2
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 9
 teacher: dlhill2
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
@@ -148,21 +148,21 @@ maxstudents: 20
 
 21
 teacher: ijcarey
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 22
 teacher: ijcarey
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 23
 teacher: ijcarey
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
@@ -260,28 +260,28 @@ maxstudents: 20
 
 37
 teacher: cllightner
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 38
 teacher: cllightner
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 39
 teacher: cllightner
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 40
 teacher: cllightner
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
@@ -547,28 +547,28 @@ maxstudents: 20
 
 78
 teacher: anlampazzi
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 79
 teacher: anlampazzi
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 80
 teacher: anlampazzi
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 81
 teacher: anlampazzi
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
@@ -659,21 +659,21 @@ maxstudents: 20
 
 94
 teacher: ajirariscavo
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 95
 teacher: ajirariscavo
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20
 
 96
 teacher: ajirariscavo
-courseID: TJA3190
+courseID: 3190T1
 room: ?
 semester: 0
 maxstudents: 20

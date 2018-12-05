@@ -11,20 +11,22 @@ import re
 import sys
 
 # First command line argument: file with run data to interpret
-toInterpret = sys.argv[1]  # Currently, ../../runs/winning_schedule.txt
+toInterpret = sys.argv[1]  # Currently, ../../runs/perfect_schedule.txt
 # Second command line argument: file with course information used in that run
 coursesText = sys.argv[2]  # Currently, ../../runs/constraint_files/courses.txt
 # Third command line argument: file with teacher information used in that run
 teachersText = sys.argv[3]  # Currently, ../../runs/constraint_files/teamed_3_teachers.txt
 
-# Sections is a dictionary of sectionID:[secionID, period, maxStudents, courseID, [teacherIDs], room, classSize, [students], [teamed courses]].
-sections = {}
-
 # Opens the file with run information to analyze
 file = open(toInterpret, 'r')
+
+# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [teamed courses]].
+sections = {}
+
+numSections = int(file.readline()[:-1])
 # Initiates a for-loop that runs once for every section in the schedule
-for x in range(int(file.readline()[:-1])):
-    # Reads the data with the sectionID and stores it in "section."
+for x in range(numSections):
+    # Reads the data with the sectionID and stores it in "section" as a string.
     line = file.readline()[2:-1]
     section = re.search('[0-9]+', line).group(0)
     # Adds sectionID to the list associated with sectionID. Redundant, but useful for for-loops that loop over items in sections.values().
@@ -58,4 +60,111 @@ for x in range(int(file.readline()[:-1])):
     else:
         sections[section].append([])
     # Prints sections[section] for debugging.
-    print(sections[section])
+    # print(sections[section])
+
+# students is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
+students = {}
+
+numStuds = int(file.readline()[:-1])
+# Initiates a for-loop that runs for each student in the case.
+for x in range(numStuds):
+    # Finds the student ID of the current student as a string.
+    curStud = re.search(r'\(.*\)', file.readline()).group(0)[1:-1]
+    # Adds the student number as a key in students and initiats a list as the associated value with the first element as the student ID.
+    students[curStud] = [curStud, [], [], []]
+    nextLine = file.readline()
+    while not re.search('Alternates:', nextLine):
+        students[curStud][1].append(re.search(r'\w*(?= )', nextLine).group(0))
+        nextLine = file.readline()
+    nextLine = file.readline()
+    while not re.search('None', nextLine) and not re.search('Schedule:', nextLine):
+        students[curStud][2].append(re.search(r'\w*(?= )', nextLine).group(0))
+        nextLine = file.readline()
+    if re.search('None', nextLine):
+        file.readline()
+    nextLine = file.readline()
+    while not nextLine == "\n":
+        students[curStud][3].append(re.search(r'\w*(?=:)', nextLine[9:]).group(0))
+        nextLine = file.readline()
+    #print(students[curStud])
+
+for student in students.values():
+    student.append([])
+    for section in student[3]:
+        student[4].append(sections[section][3])
+    #print(student)
+
+# Creates a statistic file named for the file plus _stats
+statFile = open(toInterpret[:-4] + "_stats.txt", "w")
+
+theoreticalEmptySeats = (sum([sect[2] for sect in sections.values()]) - numStuds*7)
+statFile.write("Minimum Empty Seats: " + theoreticalEmptySeats.__str__() + "\n")
+emptySeats = sum([sect[2]-sect[6] for sect in sections.values()])
+statFile.write("Empty seats: " + emptySeats.__str__() + "\n")
+statFile.write("Number of empty spots in student schedules: " + (emptySeats-theoreticalEmptySeats).__str__() + "\n")
+
+# Calculate percent course requests fulfilled
+totalRequests = 0
+fulfilledRequests = 0
+unrecievedCourses = {}
+for student in students.values():
+    unfulfilledSet = {*student[1]}.difference({*student[4]})
+    totalRequests += len(student[1])
+    fulfilledRequests += len(student[1]) - len(unfulfilledSet)
+    for sect in unfulfilledSet:
+        if sect in unfulfilledSet:
+            unrecievedCourses[sect] = 0
+        unrecievedCourses[sect] += 1
+percentFulfilled = (fulfilledRequests/totalRequests*100).__str__() + "%"
+statFile.write("Percentage of Course Requests Fulfilled: " + percentFulfilled + "\n")
+
+# Calculate number of student conflicts (number of periods during which one student has two sections)
+studentConflicts = 0
+studentsWithConflicts = []
+for student in students.values():
+    periods = {}
+    for sect in student[3]:
+        per = sections[sect][1]
+        if not per in periods.keys():
+            periods[per] = 0
+        periods[per] += 1
+    newConflicts = sum([0 if period <= 1 else 1 for period in periods.values()])
+    studentConflicts += newConflicts
+    if newConflicts > 0:
+        studentsWithConflicts.append(student[0])
+statFile.write("Number of student conflicts: " + studentConflicts.__str__() + "\n")
+statFile.write("Students with conflicts: ")
+if studentsWithConflicts:
+    statFile.write( ", ".join(studentsWithConflicts) + "\n")
+else:
+    statFile.write("None\n")
+
+# Calculate number of teacher conflicts (number of periods during which one teacher has two sections)
+teachers = {}
+for sect in sections.values():
+    for teacher in sect[4]:
+        if not teacher in teachers.keys():
+            teachers[teacher] = []
+        teachers[teacher].append(sect[1])
+teachersWithCons = []
+teacherConflicts = 0
+for teacher in teachers.keys():
+    periods = {}
+    for period in teachers[teacher]:
+        if not period in periods.keys():
+            periods[period] = 0
+        periods[period] += 1
+    newConflicts = sum([0 if period <= 1 else 1 for period in periods.values()])
+    teacherConflicts += newConflicts
+    if newConflicts > 0:
+        teachersWithCons.append(teacher)
+statFile.write("Number of teacher conflicts: " + teacherConflicts.__str__() + "\n")
+statFile.write("Teachers with conflicts: ")
+if teachersWithCons:
+    statFile.write(", ".join(teachersWithCons) + "\n")
+else:
+    statFile.write("None\n")
+
+# Calculate the number of sections with class sizes exceeding maxStudents
+
+# Calculate the number of seats available each period
