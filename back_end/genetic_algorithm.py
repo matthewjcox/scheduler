@@ -378,7 +378,7 @@ class master_schedule(chromosome):
                 period_counts[j.period]+=1
             for j in period_counts.values():
                 if j>1:
-                    score+=j**2*self.course_period_overlap if not static else 0
+                    addl_score+=j**2*self.course_period_overlap
 
         for i in self.sections.values():
             if i.period not in i.allowed_periods:
@@ -390,7 +390,7 @@ class master_schedule(chromosome):
 
         global closeness_to_completion
         closeness_to_completion = max(0,score/self.theoretical_max_score)
-        return score if not static else score+addl_score
+        return score if static else score+addl_score
 
 
     def score_student(self,student):

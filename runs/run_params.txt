@@ -1,5 +1,5 @@
 classrooms.txt
-newCourses.txt
-teamed_3_sections.txt
-sample_3_students.txt
-teamed_3_teachers.txt
+courses.txt
+sample_3_sections.txt
+sample_3_students_old.txt
+sample_3_teachers.txt
