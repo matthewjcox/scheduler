@@ -1,6 +1,7 @@
 from basics import *
 import random
 import time
+import sqlite3
 
 
 _START_TIME=time.perf_counter()
@@ -9,6 +10,8 @@ _CLOSENESS_TO_COMPLETION=0
 class NotImplemented(Exception):
     pass
 class InvalidPeriodError(Exception):
+    pass
+class UnviableScheduleError(Exception):
     pass
 class chromosome:
     def __init__(self,*args,**kwargs):
@@ -174,6 +177,26 @@ class master_schedule(chromosome):
                 other=self.sections[j]
                 i.team_with(other)
 
+    def retrieve_schedule(self,outfolder):
+        self.fill_new()
+        outfile = outfolder + '/schedule.db'
+        connection = sqlite3.connect(outfile)
+        cursor = connection.cursor()
+        cursor.execute("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='schedule';")
+        table_exists=cursor.fetchone()[0]
+        print(table_exists)
+        if table_exists:
+            data=cursor.execute("SELECT * FROM schedule")
+            for section,students,period in data:
+                s=self.sections[section]
+                s.set_period(int(period))
+                for i in students.split('|'):
+                    if i:
+                        s.add_student(self.students[i])
+        else:
+            pass#do nothing
+        #DON'T COMMIT
+        connection.close()
 
     def randomize_new(self):
         self.fill_new()
@@ -205,13 +228,11 @@ class master_schedule(chromosome):
             raise
 
     def initialize_weights(self):
-        self.student_conflict_score_delta = -200 #* (_ITERATION / _NUM_ITERATIONS + .1) ** 2.2
-        self.teacher_conflict_score_delta = -250  # *(_ITERATION/_NUM_ITERATIONS+.1)
-        # missing_score_delta=-1#*(_ITERATION/_NUM_ITERATIONS)**2
+        self.student_conflict_score_delta = -200
+        self.teacher_conflict_score_delta = -250
 
         self.duplicate_correct_course_score_delta = -5
-        self.rare_class_bonus = 8 * (1 - (_ITERATION / _NUM_ITERATIONS))
-        # self.missing_teamed_class_delta=-2*(_ITERATION/_NUM_ITERATIONS)
+        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-1
 
@@ -265,8 +286,9 @@ class master_schedule(chromosome):
             if len(i.students)>i.maxstudents:
                 score-=100
 
-        global closeness_to_completion
-        closeness_to_completion = max(0,score/self.theoretical_max_score)
+        global _CLOSENESS_TO_COMPLETION
+        _CLOSENESS_TO_COMPLETION = max(0,score/self.theoretical_max_score)
+        self.initialize_weights()
         return score if static else score+addl_score
 
 
@@ -474,31 +496,34 @@ class master_schedule(chromosome):
 
 
 class hill_climb_solo_2:
-    def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder='runs/schedule_data', *args, **kwargs):
+    def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
         self.dataclass = dataclass
         assert issubclass(self.dataclass, chromosome)
         self.current_sched = None
         self.outfolder=outfolder
         j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
-        j.randomize_new()
-        while not j.is_viable():
-            j.randomize_new()
+        j.retrieve_schedule(outfolder)
+        if not j.is_viable():
+            raise UnviableScheduleError
         self.current_sched=j
 
 
     def solve(self, num_iterations=0, verbose=0, print_every=500):
-        global _NUM_ITERATIONS
-        global _ITERATION
-        _NUM_ITERATIONS=num_iterations
+        # global _NUM_ITERATIONS
+        # global _ITERATION
+        # _NUM_ITERATIONS=num_iterations
         last_save=-1
         for i in range(1,num_iterations+1):
             # if i%200==0:
             #     print(i)
-            _ITERATION=i
+            if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
+                last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
+                save_schedule(self.current_sched, self.outfolder)
+            # _ITERATION=i
             if i<10 or i % print_every == 0:
                 print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
             new_organism = self.current_sched.copy()
-            for i in range(int(1+15*random.random()*(1-_ITERATION/_NUM_ITERATIONS))):
+            for i in range(int(1+15*random.random()*(1-_CLOSENESS_TO_COMPLETION))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -508,20 +533,30 @@ class hill_climb_solo_2:
             old_score=self.current_sched.preliminary_score()
             if new_score>=old_score:
                 self.current_sched=new_organism
-            if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
-                last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
-                save_schedule(self.current_sched, self.outfolder)
+
         winner=self.current_sched
         if verbose:
             print(f'Winner: {winner}')
         return winner
 
-def save_schedule(master_sched,outfolder):
-    return
+
+def save_schedule(master_sched,outfolder,verbose=1):
+    # return
     # print('Saving schedules not yet implemented.')
-    # outfile=outfolder+'/schedule.sched'
-    # with open(outfile,'w') as f:
-    #     pass
+    # print('Saving progress. '+current_time_formatted(round=0))
+    if verbose:
+        print('Saving schedule.')
+    outfile=outfolder+'/schedule.db'
+    connection = sqlite3.connect(outfile)
+    cursor = connection.cursor()
+    cursor.execute('DROP TABLE IF EXISTS schedule ;')
+    cursor.execute('CREATE TABLE schedule (section text,students text,period text);')
+    command='INSERT INTO schedule(section,students,period) VALUES(?,?,?);'
+    for i in master_sched.sections.values():
+        cursor.execute(command,(i.id,'|'.join((j.studentID for j in i.students)),i.period))
+    connection.commit()
+    connection.close()
+    # print('Finished saving progress. '+current_time_formatted(round=0))
 
 
 def diagnostics(master_sched):
@@ -553,14 +588,17 @@ def post_process(sched):
     # add See Counselor
     return sched
 
-def current_time_formatted():
+def current_time_formatted(round=1):
     t=time.perf_counter()-_START_TIME
     min=int(t//60)
     sec=t%60
-    if min>0:
-        return f'{min} min, {sec:.2f} sec'
+    if round:
+        if min>0:
+            return f'{min} min, {sec:.2f} sec'
+        else:
+            return f'{sec:.2f} sec'
     else:
-        return f'{sec:.2f} sec'
+        return str(t)
 
 if __name__=='__main__':
     pass
