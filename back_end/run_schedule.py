@@ -12,7 +12,10 @@ def run_scheduler(save=None):
         os.mkdir(save)
         param_file_name = 'runs/run_params.txt'
         shutil.copy2(param_file_name,save)
-        raise NotImplementedError#create SQL DB
+        connection = sqlite3.connect(save+'/schedule.db')
+        cursor=connection.cursor()
+        connection.commit()
+        connection.close()
     else:
         save='runs/past_runs/'+save
         param_file_name = save+'/run_params.txt'
@@ -20,7 +23,7 @@ def run_scheduler(save=None):
         num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[i.strip() for i in f.readlines()]
     for i in classroom_fn, course_fn, teacher_fn, student_fn, section_fn:
         if not os.path.isfile(f'{save}/{i}'):
-            shutil.copy2(i, save)
+            shutil.copy2('runs/constraint_files/'+i, save)
     num_periods=int(num_periods.strip())
     set_global_num_periods(num_periods)
     classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[f'{save}/{i}' for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
@@ -35,7 +38,7 @@ def run_scheduler(save=None):
     read_students(student_fn,students,courses)
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
-    solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections)
+    solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
     winner = solver.solve(num_iterations=1000, verbose=0, print_every=5)
     initial_score = winner.score()
     winner = fill_in_schedule(winner)
@@ -61,4 +64,4 @@ def run_scheduler(save=None):
 
 
 if __name__=="__main__":
-    run_scheduler(save=None)
+    run_scheduler(save="2018_12_07__18_52_41")
