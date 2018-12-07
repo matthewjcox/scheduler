@@ -5,10 +5,15 @@ Statistics to include
 - Number of student conflicts
 - Number of teacher conflicts
 - There are more but think about them later.
+
+Figure out what Young can transfer to us.
+Add mean empty seats and standard deviations per course to statistics.
 '''
 
 import re
 import sys
+import statistics
+import tabulate
 
 # First command line argument: file with run data to interpret
 toInterpret = sys.argv[1]  # Currently, ../../runs/perfect_schedule.txt
@@ -168,3 +173,20 @@ else:
 # Calculate the number of sections with class sizes exceeding maxStudents
 
 # Calculate the number of seats available each period
+
+# Calculate the mean empty seats and standard deviation for each course
+courseToEmpty = {}
+for sect in sections.values():
+    curCourse = sect[3]
+    if not curCourse in courseToEmpty.keys():
+        courseToEmpty[curCourse] = []
+    courseToEmpty[curCourse].append(sect[2]-sect[6])
+table = {"Course":[*courseToEmpty.keys()], "Mean Empty Spaces":[sum(courseToEmpty[course])/len(courseToEmpty[course]) for course in courseToEmpty.keys()], "Standard Deviation":[statistics.stdev(courseToEmpty[course])if len(courseToEmpty[course]) > 1 else "Undefined" for course in courseToEmpty.keys()]}
+statFile.write("\n")
+statFile.write(tabulate.tabulate(table, headers="keys", tablefmt="grid"))
+'''statFile.write('\nCourse\t|\tMean Empty Spaces\t|\tStandard Deviation\n-----------------------------------------------------------\n')
+for course in courseToEmpty.keys():
+    if len(courseToEmpty[course]) > 1:
+        statFile.write('{}\t|\t{}\t|\t{}\n'.format(course, sum(courseToEmpty[course])/len(courseToEmpty[course]), statistics.stdev(courseToEmpty[course])))
+    else:
+        statFile.write('{}\t|\t{}\t|\t{}\n'.format(course, sum(courseToEmpty[course])/len(courseToEmpty[course]), "Undefined"))'''
