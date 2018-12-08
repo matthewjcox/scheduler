@@ -126,8 +126,6 @@ class master_schedule(chromosome):
         self.sections={}
         self.initialized = 0
         self.course_sections = {}
-        self.correct_course_score_delta = 4
-        self.theoretical_max_score=self.correct_course_score_delta*len(self.stock_students)*self.num_periods
 
 
     def blank_new(self):
@@ -168,11 +166,11 @@ class master_schedule(chromosome):
                     s.fix_period()
                 for j in i.teamed_sections:
                     self.teams.append((s,j.id))
-                for sect in self.sections.values():
-                    for course in sect.courses:
-                        if course not in self.course_sections:
-                            self.course_sections[course] = []
-                        self.course_sections[course].append(sect)
+            for sect in self.sections.values():
+                for course in sect.courses:
+                    if course not in self.course_sections:
+                        self.course_sections[course] = []
+                    self.course_sections[course].append(sect)
             for i,j in self.teams:
                 other=self.sections[j]
                 i.team_with(other)
@@ -230,9 +228,11 @@ class master_schedule(chromosome):
     def initialize_weights(self):
         self.student_conflict_score_delta = -200
         self.teacher_conflict_score_delta = -250
+        self.correct_course_score_delta = 4
+        self.theoretical_max_score = self.correct_course_score_delta * len(self.stock_students) * self.num_periods
 
         self.duplicate_correct_course_score_delta = -5
-        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION)
+        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-1
 
@@ -519,11 +519,12 @@ class hill_climb_solo_2:
             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
                 save_schedule(self.current_sched, self.outfolder)
+                print_schedule(self.current_sched, self.outfolder)
             # _ITERATION=i
             if i<10 or i % print_every == 0:
                 print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
             new_organism = self.current_sched.copy()
-            for i in range(int(1+15*random.random()*(1-_CLOSENESS_TO_COMPLETION))):
+            for i in range(int(1+15*random.random()*(1-_CLOSENESS_TO_COMPLETION**2))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -558,6 +559,22 @@ def save_schedule(master_sched,outfolder,verbose=1):
     connection.close()
     # print('Finished saving progress. '+current_time_formatted(round=0))
 
+def print_schedule(master_sched,outfolder):
+    # master_sched = fill_in_schedule(master_sched)
+    # print(master_sched)
+
+    filename = outfolder+'/readable_schedule.txt'
+
+    with open(filename, 'w') as f:
+        f.write(str(len(master_sched.sections)) + '\n')
+        for i in master_sched.sections.values():
+            f.write(i.long_string())
+            f.write('\n\n')
+        f.write(str(len(master_sched.students)) + '\n')
+        for i in master_sched.students.values():
+            f.write(str(i))
+            f.write(i.medium_string())
+            f.write('\n\n')
 
 def diagnostics(master_sched):
     #Teacher conflicts

@@ -180,6 +180,7 @@ class Section:
         self.period_fixed=0
         self.teamed_sections=set()
         self.maxstudents=0
+        self.minstudents=10
         self.allowed_periods=list(range(1,num_periods+1))
 
     def add_teacher(self,teacher):
@@ -249,6 +250,11 @@ class Section:
 
     def set_max_students(self,num):
         self.maxstudents=num
+        if num==0:
+            self.minstudents=0
+
+    def set_min_students(self,num):
+        self.minstudents=num
 
     def set_allowed_periods(self,allowed_periods):
         self.allowed_periods=allowed_periods
