@@ -1,0 +1,742 @@
+2018-12-08 03:34:01,390:INFO:29960:1
+2018-12-08 03:34:01,399:INFO:29960:Saving schedule. (6076)
+2018-12-08 03:34:01,494:INFO:29960:Round 6077: score 12152.31 (11112). Elapsed time: 142 min, 40.52 sec.
+2018-12-08 03:34:08,273:INFO:29960:Round 6080: score 10723.71 (11112). Elapsed time: 142 min, 47.30 sec.
+2018-12-08 03:34:11,398:INFO:29960:Saving schedule. (6081)
+2018-12-08 03:34:16,026:INFO:29960:Round 6085: score 10723.71 (11112). Elapsed time: 142 min, 55.05 sec.
+2018-12-08 03:34:21,584:INFO:29960:Saving schedule. (6088)
+2018-12-08 03:34:23,390:INFO:29960:Round 6090: score 10723.71 (11112). Elapsed time: 143 min, 2.41 sec.
+2018-12-08 03:34:30,340:INFO:29960:Round 6095: score 10723.71 (11112). Elapsed time: 143 min, 9.36 sec.
+2018-12-08 03:34:31,776:INFO:29960:Saving schedule. (6095)
+2018-12-08 03:34:37,575:INFO:29960:Round 6100: score 10723.71 (11112). Elapsed time: 143 min, 16.60 sec.
+2018-12-08 03:34:41,582:INFO:29960:Saving schedule. (6102)
+2018-12-08 03:34:44,418:INFO:29960:Round 6105: score 10723.71 (11112). Elapsed time: 143 min, 23.44 sec.
+2018-12-08 03:34:51,764:INFO:29960:Saving schedule. (6108)
+2018-12-08 03:34:54,229:INFO:29960:Round 6110: score 10723.71 (11112). Elapsed time: 143 min, 33.25 sec.
+2018-12-08 03:35:02,542:INFO:29960:Saving schedule. (6114)
+2018-12-08 03:35:02,621:INFO:29960:Round 6115: score 10723.71 (11112). Elapsed time: 143 min, 41.65 sec.
+2018-12-08 03:35:10,366:INFO:29960:Round 6120: score 10723.71 (11112). Elapsed time: 143 min, 49.39 sec.
+2018-12-08 03:35:12,078:INFO:29960:Saving schedule. (6120)
+2018-12-08 03:35:17,943:INFO:29960:Round 6125: score 10723.71 (11112). Elapsed time: 143 min, 56.97 sec.
+2018-12-08 03:35:21,568:INFO:29960:Saving schedule. (6126)
+2018-12-08 03:35:26,879:INFO:29960:Round 6130: score 10723.71 (11112). Elapsed time: 144 min, 5.90 sec.
+2018-12-08 03:35:31,107:INFO:29960:Saving schedule. (6132)
+2018-12-08 03:35:37,012|:INFO|28008|1
+2018-12-08 03:35:37,020|:INFO|28008|Saving schedule. (6132)
+2018-12-08 03:35:37,102|:INFO|28008|Round 6133: score 12152.31 (11112). Elapsed time: 144 min, 10.28 sec.
+2018-12-08 03:35:40,027|:INFO|28008|Round 6135: score 10723.71 (11112). Elapsed time: 144 min, 13.21 sec.
+2018-12-08 03:35:47,951|:INFO|28008|Saving schedule. (6139)
+2018-12-08 03:35:48,047|:INFO|28008|Round 6140: score 10723.71 (11112). Elapsed time: 144 min, 21.23 sec.
+2018-12-08 03:35:57,207|:INFO|28008|Saving schedule. (6144)
+2018-12-08 03:35:57,380|:INFO|28008|Round 6145: score 10723.71 (11112). Elapsed time: 144 min, 30.56 sec.
+2018-12-08 03:36:04,649|:INFO|28008|Round 6150: score 10723.71 (11112). Elapsed time: 144 min, 37.83 sec.
+2018-12-08 03:36:07,477|:INFO|28008|Saving schedule. (6151)
+2018-12-08 03:36:11,826|:INFO|28008|Round 6155: score 10723.71 (11112). Elapsed time: 144 min, 45.01 sec.
+2018-12-08 03:36:17,945|:INFO|28008|Saving schedule. (6158)
+2018-12-08 03:36:19,443|:INFO|28008|Round 6160: score 10723.71 (11112). Elapsed time: 144 min, 52.62 sec.
+2018-12-08 03:36:26,899|:INFO|28008|Saving schedule. (6164)
+2018-12-08 03:36:27,007|:INFO|28008|Round 6165: score 10723.71 (11112). Elapsed time: 145 min, 0.19 sec.
+2018-12-08 03:36:35,343|:INFO|28008|Round 6170: score 10723.71 (11112). Elapsed time: 145 min, 8.52 sec.
+2018-12-08 03:36:38,091|:INFO|28008|Saving schedule. (6171)
+2018-12-08 03:36:43,990|:INFO|28008|Round 6175: score 10723.71 (11112). Elapsed time: 145 min, 17.17 sec.
+2018-12-08 03:36:46,832|:INFO|28008|Saving schedule. (6176)
+2018-12-08 03:36:51,225|:INFO|28008|Round 6180: score 10723.71 (11112). Elapsed time: 145 min, 24.41 sec.
+2018-12-08 03:36:57,354|:INFO|28008|Saving schedule. (6183)
+2018-12-08 03:36:58,869|:INFO|28008|Round 6185: score 10723.71 (11112). Elapsed time: 145 min, 32.05 sec.
+2018-12-08 03:37:06,444|:INFO|28008|Round 6190: score 10723.71 (11112). Elapsed time: 145 min, 39.63 sec.
+2018-12-08 03:37:08,103|:INFO|28008|Saving schedule. (6190)
+2018-12-08 03:37:15,146|:INFO|28008|Round 6195: score 10723.71 (11112). Elapsed time: 145 min, 48.33 sec.
+2018-12-08 03:37:17,917|:INFO|28008|Saving schedule. (6196)
+2018-12-08 03:37:22,152|:INFO|28008|Round 6200: score 10723.71 (11112). Elapsed time: 145 min, 55.33 sec.
+2018-12-08 03:37:27,005|:INFO|28008|Saving schedule. (6202)
+2018-12-08 03:37:29,923|:INFO|28008|Round 6205: score 10723.71 (11112). Elapsed time: 146 min, 3.10 sec.
+2018-12-08 03:37:37,490|:INFO|28008|Saving schedule. (6209)
+2018-12-08 03:37:37,569|:INFO|28008|Round 6210: score 10723.71 (11112). Elapsed time: 146 min, 10.75 sec.
+2018-12-08 03:37:45,758|:INFO|28008|Round 6215: score 10723.71 (11112). Elapsed time: 146 min, 18.94 sec.
+2018-12-08 03:37:48,055|:INFO|28008|Saving schedule. (6215)
+2018-12-08 03:37:55,413|:INFO|28008|Round 6220: score 10723.71 (11112). Elapsed time: 146 min, 28.59 sec.
+2018-12-08 03:37:58,201|:INFO|28008|Saving schedule. (6221)
+2018-12-08 03:38:02,563|:INFO|28008|Round 6225: score 10723.71 (11112). Elapsed time: 146 min, 35.74 sec.
+2018-12-08 03:38:06,883|:INFO|28008|Saving schedule. (6227)
+2018-12-08 03:38:09,908|:INFO|28008|Round 6230: score 10723.71 (11112). Elapsed time: 146 min, 43.09 sec.
+2018-12-08 03:38:17,344|:INFO|28008|Saving schedule. (6234)
+2018-12-08 03:38:17,423|:INFO|28008|Round 6235: score 10723.71 (11112). Elapsed time: 146 min, 50.60 sec.
+2018-12-08 03:38:24,681|:INFO|28008|Round 6240: score 10723.71 (11112). Elapsed time: 146 min, 57.86 sec.
+2018-12-08 03:38:27,928|:INFO|28008|Saving schedule. (6241)
+2018-12-08 03:38:32,270|:INFO|28008|Round 6245: score 10723.71 (11112). Elapsed time: 147 min, 5.45 sec.
+2018-12-08 03:38:38,322|INFO|24212|1
+2018-12-08 03:38:38,330|INFO|24212|Saving schedule. (6241)
+2018-12-08 03:38:38,414|INFO|24212|Round 6242: score 12152.31 (11112). Elapsed time: 147 min, 1.26 sec.
+2018-12-08 03:38:42,688|INFO|24212|Round 6245: score 10723.71 (11112). Elapsed time: 147 min, 5.54 sec.
+2018-12-08 03:38:47,969|INFO|24212|Saving schedule. (6247)
+2018-12-08 03:38:51,129|INFO|24212|Round 6250: score 10723.71 (11112). Elapsed time: 147 min, 13.98 sec.
+2018-12-08 03:38:57,632|INFO|24212|Saving schedule. (6253)
+2018-12-08 03:39:01,513|INFO|24212|Round 6255: score 10723.71 (11112). Elapsed time: 147 min, 24.36 sec.
+2018-12-08 03:39:07,426|INFO|24212|Saving schedule. (6257)
+2018-12-08 03:39:10,553|INFO|24212|Round 6260: score 10723.71 (11112). Elapsed time: 147 min, 33.40 sec.
+2018-12-08 03:39:17,137|INFO|24212|Round 6265: score 10723.71 (11112). Elapsed time: 147 min, 39.99 sec.
+2018-12-08 03:39:18,539|INFO|24212|Saving schedule. (6265)
+2018-12-08 03:39:27,370|INFO|24212|Saving schedule. (6268)
+2018-12-08 03:39:30,550|INFO|24212|Round 6270: score 10723.71 (11112). Elapsed time: 147 min, 53.40 sec.
+2018-12-08 03:39:38,561|INFO|24212|Saving schedule. (6271)
+2018-12-08 03:39:48,730|INFO|24212|Saving schedule. (6274)
+2018-12-08 03:39:49,485|INFO|24212|Round 6275: score 10723.71 (11112). Elapsed time: 148 min, 12.34 sec.
+2018-12-08 03:39:58,100|INFO|24212|Saving schedule. (6279)
+2018-12-08 03:39:58,215|INFO|24212|Round 6280: score 10723.71 (11112). Elapsed time: 148 min, 21.07 sec.
+2018-12-08 03:40:08,209|INFO|24212|Saving schedule. (6282)
+2018-12-08 03:40:11,570|INFO|24212|Round 6285: score 10723.71 (11112). Elapsed time: 148 min, 34.42 sec.
+2018-12-08 03:40:17,277|INFO|24212|Saving schedule. (6288)
+2018-12-08 03:40:18,743|INFO|24212|Round 6290: score 10723.71 (11112). Elapsed time: 148 min, 41.59 sec.
+2018-12-08 03:40:26,779|INFO|24212|Round 6295: score 10723.71 (11112). Elapsed time: 148 min, 49.63 sec.
+2018-12-08 03:40:28,164|INFO|24212|Saving schedule. (6295)
+2018-12-08 03:40:33,657|INFO|24212|Round 6300: score 10723.71 (11112). Elapsed time: 148 min, 56.51 sec.
+2018-12-08 03:40:37,973|INFO|24212|Saving schedule. (6302)
+2018-12-08 03:40:40,787|INFO|24212|Round 6305: score 10723.71 (11112). Elapsed time: 149 min, 3.64 sec.
+2018-12-08 03:40:48,078|INFO|24212|Saving schedule. (6309)
+2018-12-08 03:40:48,159|INFO|24212|Round 6310: score 10723.71 (11112). Elapsed time: 149 min, 11.01 sec.
+2018-12-08 03:40:54,762|INFO|24212|Round 6315: score 10723.71 (11112). Elapsed time: 149 min, 17.61 sec.
+2018-12-08 03:40:57,499|INFO|24212|Saving schedule. (6316)
+2018-12-08 03:41:01,869|INFO|24212|Round 6320: score 10723.71 (11112). Elapsed time: 149 min, 24.72 sec.
+2018-12-08 03:41:07,695|INFO|24212|Saving schedule. (6323)
+2018-12-08 03:41:09,474|INFO|24212|Round 6325: score 10723.71 (11112). Elapsed time: 149 min, 32.32 sec.
+2018-12-08 03:41:17,811|INFO|24212|Saving schedule. (6329)
+2018-12-08 03:41:17,928|INFO|24212|Round 6330: score 10723.71 (11112). Elapsed time: 149 min, 40.78 sec.
+2018-12-08 03:41:25,545|INFO|24212|Round 6335: score 10723.71 (11112). Elapsed time: 149 min, 48.40 sec.
+2018-12-08 03:41:27,428|INFO|24212|Saving schedule. (6335)
+2018-12-08 03:41:34,820|INFO|24212|Round 6340: score 10723.71 (11112). Elapsed time: 149 min, 57.67 sec.
+2018-12-08 03:41:38,969|INFO|24212|Saving schedule. (6341)
+2018-12-08 03:41:47,217|INFO|24212|Saving schedule. (6344)
+2018-12-08 03:41:47,379|INFO|24212|Round 6345: score 10723.71 (11112). Elapsed time: 150 min, 10.23 sec.
+2018-12-08 03:41:55,521|INFO|24212|Round 6350: score 10723.71 (11112). Elapsed time: 150 min, 18.37 sec.
+2018-12-08 03:41:57,953|INFO|24212|Saving schedule. (6350)
+2018-12-08 03:42:04,214|INFO|24212|Round 6355: score 10723.71 (11112). Elapsed time: 150 min, 27.06 sec.
+2018-12-08 03:42:08,442|INFO|24212|Saving schedule. (6357)
+2018-12-08 03:42:11,367|INFO|24212|Round 6360: score 10723.71 (11112). Elapsed time: 150 min, 34.22 sec.
+2018-12-08 03:42:18,037|INFO|24212|Saving schedule. (6363)
+2018-12-08 03:42:19,573|INFO|24212|Round 6365: score 10723.71 (11112). Elapsed time: 150 min, 42.42 sec.
+2018-12-08 03:42:26,780|INFO|24212|Round 6370: score 10723.71 (11112). Elapsed time: 150 min, 49.63 sec.
+2018-12-08 03:42:28,250|INFO|24212|Saving schedule. (6370)
+2018-12-08 03:42:35,989|INFO|24212|Round 6375: score 10723.71 (11112). Elapsed time: 150 min, 58.84 sec.
+2018-12-08 03:42:37,421|INFO|24212|Saving schedule. (6375)
+2018-12-08 03:42:44,189|INFO|24212|Round 6380: score 10723.71 (11112). Elapsed time: 151 min, 7.04 sec.
+2018-12-08 03:42:48,263|INFO|24212|Saving schedule. (6382)
+2018-12-08 03:42:52,698|INFO|24212|Round 6385: score 10723.71 (11112). Elapsed time: 151 min, 15.55 sec.
+2018-12-08 03:42:58,505|INFO|24212|Saving schedule. (6388)
+2018-12-08 03:43:00,102|INFO|24212|Round 6390: score 10723.71 (11112). Elapsed time: 151 min, 22.95 sec.
+2018-12-08 03:43:08,701|INFO|24212|Saving schedule. (6394)
+2018-12-08 03:43:08,804|INFO|24212|Round 6395: score 10723.71 (11112). Elapsed time: 151 min, 31.65 sec.
+2018-12-08 03:43:15,861|INFO|24212|Round 6400: score 10723.71 (11112). Elapsed time: 151 min, 38.71 sec.
+2018-12-08 03:43:17,230|INFO|24212|Saving schedule. (6400)
+2018-12-08 03:43:24,075|INFO|24212|Round 6405: score 10723.71 (11112). Elapsed time: 151 min, 46.93 sec.
+2018-12-08 03:43:27,220|INFO|24212|Saving schedule. (6406)
+2018-12-08 03:43:33,429|INFO|24212|Round 6410: score 10723.71 (11112). Elapsed time: 151 min, 56.28 sec.
+2018-12-08 03:43:38,428|INFO|24212|Saving schedule. (6412)
+2018-12-08 03:43:41,596|INFO|24212|Round 6415: score 10723.71 (11112). Elapsed time: 152 min, 4.45 sec.
+2018-12-08 03:43:48,361|INFO|24212|Saving schedule. (6419)
+2018-12-08 03:43:48,446|INFO|24212|Round 6420: score 10723.71 (11112). Elapsed time: 152 min, 11.30 sec.
+2018-12-08 03:43:55,261|INFO|24212|Round 6425: score 10723.71 (11112). Elapsed time: 152 min, 18.11 sec.
+2018-12-08 03:43:58,055|INFO|24212|Saving schedule. (6426)
+2018-12-08 03:44:05,071|INFO|24212|Round 6430: score 10723.71 (11112). Elapsed time: 152 min, 27.92 sec.
+2018-12-08 03:44:08,628|INFO|24212|Saving schedule. (6430)
+2018-12-08 03:44:17,536|INFO|24212|Saving schedule. (6434)
+2018-12-08 03:44:17,622|INFO|24212|Round 6435: score 10723.71 (11112). Elapsed time: 152 min, 40.47 sec.
+2018-12-08 03:44:26,936|INFO|24212|Round 6440: score 10723.71 (11112). Elapsed time: 152 min, 49.79 sec.
+2018-12-08 03:44:28,533|INFO|24212|Saving schedule. (6440)
+2018-12-08 03:44:35,569|INFO|24212|Round 6445: score 10723.71 (11112). Elapsed time: 152 min, 58.42 sec.
+2018-12-08 03:44:38,388|INFO|24212|Saving schedule. (6446)
+2018-12-08 03:44:42,643|INFO|24212|Round 6450: score 10723.71 (11112). Elapsed time: 153 min, 5.49 sec.
+2018-12-08 03:44:48,582|INFO|24212|Saving schedule. (6452)
+2018-12-08 03:44:51,847|INFO|24212|Round 6455: score 10723.71 (11112). Elapsed time: 153 min, 14.70 sec.
+2018-12-08 03:44:58,691|INFO|24212|Saving schedule. (6458)
+2018-12-08 03:45:00,928|INFO|24212|Round 6460: score 10723.71 (11112). Elapsed time: 153 min, 23.78 sec.
+2018-12-08 03:45:07,770|INFO|24212|Saving schedule. (6464)
+2018-12-08 03:45:07,887|INFO|24212|Round 6465: score 10723.71 (11112). Elapsed time: 153 min, 30.74 sec.
+2018-12-08 03:45:14,922|INFO|24212|Round 6470: score 10723.71 (11112). Elapsed time: 153 min, 37.77 sec.
+2018-12-08 03:45:18,042|INFO|24212|Saving schedule. (6471)
+2018-12-08 03:45:22,314|INFO|24212|Round 6475: score 10723.71 (11112). Elapsed time: 153 min, 45.16 sec.
+2018-12-08 03:45:28,477|INFO|24212|Saving schedule. (6476)
+2018-12-08 03:45:34,144|INFO|24212|Round 6480: score 10723.71 (11112). Elapsed time: 153 min, 57.00 sec.
+2018-12-08 03:45:38,694|INFO|24212|Saving schedule. (6481)
+2018-12-08 03:45:44,567|INFO|24212|Round 6485: score 10723.71 (11112). Elapsed time: 154 min, 7.42 sec.
+2018-12-08 03:45:47,378|INFO|24212|Saving schedule. (6486)
+2018-12-08 03:45:51,756|INFO|24212|Round 6490: score 10723.71 (11112). Elapsed time: 154 min, 14.61 sec.
+2018-12-08 03:45:58,487|INFO|24212|Saving schedule. (6494)
+2018-12-08 03:45:58,603|INFO|24212|Round 6495: score 10723.71 (11112). Elapsed time: 154 min, 21.45 sec.
+2018-12-08 03:46:05,435|INFO|24212|Round 6500: score 10723.71 (11112). Elapsed time: 154 min, 28.29 sec.
+2018-12-08 03:46:08,149|INFO|24212|Saving schedule. (6501)
+2018-12-08 03:46:12,528|INFO|24212|Round 6505: score 10723.71 (11112). Elapsed time: 154 min, 35.38 sec.
+2018-12-08 03:46:18,430|INFO|24212|Saving schedule. (6507)
+2018-12-08 03:46:22,957|INFO|24212|Round 6510: score 10723.71 (11112). Elapsed time: 154 min, 45.81 sec.
+2018-12-08 03:46:28,218|INFO|24212|Saving schedule. (6512)
+2018-12-08 03:46:32,489|INFO|24212|Round 6515: score 10723.71 (11112). Elapsed time: 154 min, 55.34 sec.
+2018-12-08 03:46:37,483|INFO|24212|Saving schedule. (6517)
+2018-12-08 03:46:40,532|INFO|24212|Round 6520: score 10723.71 (11112). Elapsed time: 155 min, 3.38 sec.
+2018-12-08 03:46:49,290|INFO|24212|Saving schedule. (6524)
+2018-12-08 03:46:49,805|INFO|24212|Round 6525: score 10723.71 (11112). Elapsed time: 155 min, 12.66 sec.
+2018-12-08 03:46:57,468|INFO|24212|Saving schedule. (6529)
+2018-12-08 03:46:57,597|INFO|24212|Round 6530: score 10723.71 (11112). Elapsed time: 155 min, 20.45 sec.
+2018-12-08 03:47:06,752|INFO|24212|Round 6535: score 10723.71 (11112). Elapsed time: 155 min, 29.60 sec.
+2018-12-08 03:47:08,113|INFO|24212|Saving schedule. (6535)
+2018-12-08 03:47:13,787|INFO|24212|Round 6540: score 10723.71 (11112). Elapsed time: 155 min, 36.64 sec.
+2018-12-08 03:47:17,975|INFO|24212|Saving schedule. (6542)
+2018-12-08 03:47:20,888|INFO|24212|Round 6545: score 10723.71 (11112). Elapsed time: 155 min, 43.74 sec.
+2018-12-08 03:47:27,845|INFO|24212|Saving schedule. (6549)
+2018-12-08 03:47:27,930|INFO|24212|Round 6550: score 10723.71 (11112). Elapsed time: 155 min, 50.78 sec.
+2018-12-08 03:47:35,982|INFO|24212|Round 6555: score 10723.71 (11112). Elapsed time: 155 min, 58.83 sec.
+2018-12-08 03:47:37,283|INFO|24212|Saving schedule. (6555)
+2018-12-08 03:47:42,851|INFO|24212|Round 6560: score 10723.71 (11112). Elapsed time: 156 min, 5.70 sec.
+2018-12-08 03:47:48,307|INFO|24212|Saving schedule. (6563)
+2018-12-08 03:47:49,750|INFO|24212|Round 6565: score 10723.71 (11112). Elapsed time: 156 min, 12.60 sec.
+2018-12-08 03:47:56,629|INFO|24212|Round 6570: score 10723.71 (11112). Elapsed time: 156 min, 19.48 sec.
+2018-12-08 03:47:57,989|INFO|24212|Saving schedule. (6570)
+2018-12-08 03:48:03,548|INFO|24212|Round 6575: score 10723.71 (11112). Elapsed time: 156 min, 26.40 sec.
+2018-12-08 03:48:08,895|INFO|24212|Saving schedule. (6577)
+2018-12-08 03:48:12,166|INFO|24212|Round 6580: score 10723.71 (11112). Elapsed time: 156 min, 35.02 sec.
+2018-12-08 03:48:19,510|INFO|24212|Saving schedule. (6582)
+2018-12-08 03:48:24,276|INFO|24212|Round 6585: score 10723.71 (11112). Elapsed time: 156 min, 47.13 sec.
+2018-12-08 03:48:28,040|INFO|24212|Saving schedule. (6586)
+2018-12-08 03:48:33,090|INFO|24212|Round 6590: score 10723.71 (11112). Elapsed time: 156 min, 55.94 sec.
+2018-12-08 03:48:37,919|INFO|24212|Saving schedule. (6592)
+2018-12-08 03:48:44,287|INFO|24212|Round 6595: score 10723.71 (11112). Elapsed time: 157 min, 7.14 sec.
+2018-12-08 03:48:48,234|INFO|24212|Saving schedule. (6596)
+2018-12-08 03:48:53,029|INFO|24212|Round 6600: score 10723.71 (11112). Elapsed time: 157 min, 15.88 sec.
+2018-12-08 03:48:58,347|INFO|24212|Saving schedule. (6603)
+2018-12-08 03:48:59,792|INFO|24212|Round 6605: score 10723.71 (11112). Elapsed time: 157 min, 22.64 sec.
+2018-12-08 03:49:09,061|INFO|24212|Saving schedule. (6607)
+2018-12-08 03:49:14,682|INFO|24212|Round 6610: score 10723.71 (11112). Elapsed time: 157 min, 37.53 sec.
+2018-12-08 03:49:17,364|INFO|24212|Saving schedule. (6611)
+2018-12-08 03:49:21,528|INFO|24212|Round 6615: score 10723.71 (11112). Elapsed time: 157 min, 44.38 sec.
+2018-12-08 03:49:28,305|INFO|24212|Saving schedule. (6619)
+2018-12-08 03:49:28,385|INFO|24212|Round 6620: score 10723.71 (11112). Elapsed time: 157 min, 51.24 sec.
+2018-12-08 03:49:35,454|INFO|24212|Round 6625: score 10723.71 (11112). Elapsed time: 157 min, 58.31 sec.
+2018-12-08 03:49:38,092|INFO|24212|Saving schedule. (6626)
+2018-12-08 03:49:42,230|INFO|24212|Round 6630: score 10723.71 (11112). Elapsed time: 158 min, 5.08 sec.
+2018-12-08 03:49:47,599|INFO|24212|Saving schedule. (6633)
+2018-12-08 03:49:49,033|INFO|24212|Round 6635: score 10723.71 (11112). Elapsed time: 158 min, 11.88 sec.
+2018-12-08 03:49:55,687|INFO|24212|Round 6640: score 10723.71 (11112). Elapsed time: 158 min, 18.54 sec.
+2018-12-08 03:49:58,677|INFO|24212|Saving schedule. (6641)
+2018-12-08 03:50:03,512|INFO|24212|Round 6645: score 10723.71 (11112). Elapsed time: 158 min, 26.36 sec.
+2018-12-08 03:50:08,251|INFO|24212|Saving schedule. (6647)
+2018-12-08 03:50:11,701|INFO|24212|Round 6650: score 10723.71 (11112). Elapsed time: 158 min, 34.55 sec.
+2018-12-08 03:50:17,906|INFO|24212|Saving schedule. (6653)
+2018-12-08 03:50:19,421|INFO|24212|Round 6655: score 10723.71 (11112). Elapsed time: 158 min, 42.27 sec.
+2018-12-08 03:50:26,886|INFO|24212|Round 6660: score 10723.71 (11112). Elapsed time: 158 min, 49.74 sec.
+2018-12-08 03:50:28,271|INFO|24212|Saving schedule. (6660)
+2018-12-08 03:50:34,228|INFO|24212|Round 6665: score 10723.71 (11112). Elapsed time: 158 min, 57.08 sec.
+2018-12-08 03:50:37,220|INFO|24212|Saving schedule. (6666)
+2018-12-08 03:50:42,527|INFO|24212|Round 6670: score 10723.71 (11112). Elapsed time: 159 min, 5.38 sec.
+2018-12-08 03:50:48,297|INFO|24212|Saving schedule. (6672)
+2018-12-08 03:50:51,269|INFO|24212|Round 6675: score 10723.71 (11112). Elapsed time: 159 min, 14.12 sec.
+2018-12-08 03:50:58,594|INFO|24212|Saving schedule. (6679)
+2018-12-08 03:50:58,678|INFO|24212|Round 6680: score 10723.71 (11112). Elapsed time: 159 min, 21.53 sec.
+2018-12-08 03:51:07,495|INFO|24212|Saving schedule. (6684)
+2018-12-08 03:51:07,615|INFO|24212|Round 6685: score 10723.71 (11112). Elapsed time: 159 min, 30.47 sec.
+2018-12-08 03:51:16,034|INFO|24212|Round 6690: score 10723.71 (11112). Elapsed time: 159 min, 38.89 sec.
+2018-12-08 03:51:17,508|INFO|24212|Saving schedule. (6690)
+2018-12-08 03:51:23,155|INFO|24212|Round 6695: score 10723.71 (11112). Elapsed time: 159 min, 46.01 sec.
+2018-12-08 03:51:27,509|INFO|24212|Saving schedule. (6697)
+2018-12-08 03:51:30,623|INFO|24212|Round 6700: score 10723.71 (11112). Elapsed time: 159 min, 53.47 sec.
+2018-12-08 03:51:37,955|INFO|24212|Saving schedule. (6703)
+2018-12-08 03:51:40,600|INFO|24212|Round 6705: score 10723.71 (11112). Elapsed time: 160 min, 3.45 sec.
+2018-12-08 03:51:47,247|INFO|24212|Saving schedule. (6708)
+2018-12-08 03:51:48,713|INFO|24212|Round 6710: score 10723.71 (11112). Elapsed time: 160 min, 11.56 sec.
+2018-12-08 03:51:57,206|INFO|24212|Saving schedule. (6714)
+2018-12-08 03:51:57,320|INFO|24212|Round 6715: score 10723.71 (11112). Elapsed time: 160 min, 20.17 sec.
+2018-12-08 03:52:05,160|INFO|24212|Round 6720: score 10723.71 (11112). Elapsed time: 160 min, 28.01 sec.
+2018-12-08 03:52:08,074|INFO|24212|Saving schedule. (6721)
+2018-12-08 03:52:12,987|INFO|24212|Round 6725: score 10723.71 (11112). Elapsed time: 160 min, 35.84 sec.
+2018-12-08 03:52:17,904|INFO|24212|Saving schedule. (6727)
+2018-12-08 03:52:21,920|INFO|24212|Round 6730: score 10723.71 (11112). Elapsed time: 160 min, 44.77 sec.
+2018-12-08 03:52:28,210|INFO|24212|Saving schedule. (6733)
+2018-12-08 03:52:30,762|INFO|24212|Round 6735: score 10723.71 (11112). Elapsed time: 160 min, 53.61 sec.
+2018-12-08 03:52:38,056|INFO|24212|Saving schedule. (6738)
+2018-12-08 03:52:39,843|INFO|24212|Round 6740: score 10723.71 (11112). Elapsed time: 161 min, 2.69 sec.
+2018-12-08 03:52:47,118|INFO|24212|Round 6745: score 10723.71 (11112). Elapsed time: 161 min, 9.97 sec.
+2018-12-08 03:52:48,436|INFO|24212|Saving schedule. (6745)
+2018-12-08 03:52:53,969|INFO|24212|Round 6750: score 10723.71 (11112). Elapsed time: 161 min, 16.82 sec.
+2018-12-08 03:52:58,334|INFO|24212|Saving schedule. (6752)
+2018-12-08 03:53:01,294|INFO|24212|Round 6755: score 10723.71 (11112). Elapsed time: 161 min, 24.15 sec.
+2018-12-08 03:56:36,451|INFO|32016|1
+2018-12-08 03:56:36,460|INFO|32016|Saving schedule. (6752)
+2018-12-08 03:56:36,548|INFO|32016|Round 6753: score 12152.31 (11112). Elapsed time: 161 min, 21.36 sec.
+2018-12-08 03:56:39,288|INFO|32016|Round 6755: score 10723.71 (11112). Elapsed time: 161 min, 24.09 sec.
+2018-12-08 03:56:41,491|INFO|14720|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 03:56:41,518|ERROR|14720|Traceback (most recent call last):
+2018-12-08 03:56:41,519|ERROR|14720|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 81, in <module>
+2018-12-08 03:56:41,519|ERROR|14720|main()
+2018-12-08 03:56:41,519|ERROR|14720|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 71, in main
+2018-12-08 03:56:41,519|ERROR|14720|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 03:56:41,519|ERROR|14720|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 31, in run_scheduler
+2018-12-08 03:56:41,520|ERROR|14720|cursor.execute("CREATE TABLE lock(lock int);")
+2018-12-08 03:56:41,520|ERROR|14720|sqlite3
+2018-12-08 03:56:41,520|ERROR|14720|.
+2018-12-08 03:56:41,520|ERROR|14720|OperationalError
+2018-12-08 03:56:41,520|ERROR|14720|:
+2018-12-08 03:56:41,520|ERROR|14720|table lock already exists
+2018-12-08 03:56:46,584|INFO|32016|Saving schedule. (6759)
+2018-12-08 03:56:46,670|INFO|32016|Round 6760: score 10723.71 (11112). Elapsed time: 161 min, 31.48 sec.
+2018-12-08 03:56:53,594|INFO|32016|Round 6765: score 10723.71 (11112). Elapsed time: 161 min, 38.40 sec.
+2018-12-08 03:56:56,274|INFO|32016|Saving schedule. (6766)
+2018-12-08 03:56:57,928|INFO|15176|1
+2018-12-08 03:56:57,938|INFO|15176|Saving schedule. (6766)
+2018-12-08 03:56:58,021|INFO|15176|Round 6767: score 12152.31 (11112). Elapsed time: 161 min, 41.26 sec.
+2018-12-08 03:57:01,170|INFO|32016|Round 6770: score 10723.71 (11112). Elapsed time: 161 min, 45.98 sec.
+2018-12-08 03:57:02,949|INFO|15176|Round 6770: score 10723.71 (11112). Elapsed time: 161 min, 46.19 sec.
+2018-12-08 03:57:06,275|INFO|32016|Saving schedule. (6772)
+2018-12-08 03:59:21,488|INFO|29440|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:02:03,608|INFO|25972|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:02:03,623|INFO|25972|1
+2018-12-08 04:02:03,631|INFO|25972|Saving schedule. (6772)
+2018-12-08 04:02:03,744|INFO|25972|Round 6773: score 12152.31 (11112). Elapsed time: 161 min, 51.30 sec.
+2018-12-08 04:02:06,590|INFO|25972|Round 6775: score 10723.71 (11112). Elapsed time: 161 min, 54.15 sec.
+2018-12-08 04:02:11,030|INFO|29020|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:02:11,046|INFO|29020|1
+2018-12-08 04:02:11,054|INFO|29020|Saving schedule. (6772)
+2018-12-08 04:02:11,156|INFO|29020|Round 6773: score 12152.31 (11112). Elapsed time: 161 min, 51.38 sec.
+2018-12-08 04:02:14,058|INFO|25972|Saving schedule. (6779)
+2018-12-08 04:02:14,181|INFO|25972|Round 6780: score 10723.71 (11112). Elapsed time: 162 min, 1.74 sec.
+2018-12-08 04:02:14,485|INFO|29020|Round 6775: score 10723.71 (11112). Elapsed time: 161 min, 54.71 sec.
+2018-12-08 04:02:20,807|INFO|29020|Saving schedule. (6778)
+2018-12-08 04:02:51,818|INFO|24656|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:02:51,819|ERROR|24656|Traceback (most recent call last):
+2018-12-08 04:02:51,819|ERROR|24656|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 35, in run_scheduler
+2018-12-08 04:02:51,819|ERROR|24656|cursor.execute("CREATE TABLE lock(lock int);")
+2018-12-08 04:02:51,819|ERROR|24656|sqlite3
+2018-12-08 04:02:51,819|ERROR|24656|.
+2018-12-08 04:02:51,819|ERROR|24656|OperationalError
+2018-12-08 04:02:51,819|ERROR|24656|:
+2018-12-08 04:02:51,819|ERROR|24656|table lock already exists
+2018-12-08 04:02:51,819|ERROR|24656|During handling of the above exception, another exception occurred:
+2018-12-08 04:02:51,820|ERROR|24656|Traceback (most recent call last):
+2018-12-08 04:02:51,820|ERROR|24656|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 90, in <module>
+2018-12-08 04:02:51,820|ERROR|24656|main()
+2018-12-08 04:02:51,820|ERROR|24656|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 76, in main
+2018-12-08 04:02:51,820|ERROR|24656|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:02:51,820|ERROR|24656|File "C:/Users/Matthew/PycharmProjects/Genetic Algorithm Test/scheduler/back_end/run_schedule.py", line 41, in run_scheduler
+2018-12-08 04:02:51,821|ERROR|24656|raise LockError
+2018-12-08 04:02:51,821|ERROR|24656|__main__
+2018-12-08 04:02:51,821|ERROR|24656|.
+2018-12-08 04:02:51,821|ERROR|24656|LockError
+2018-12-08 04:03:02,981|INFO|9792|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:03:39,018|INFO|32420|1
+2018-12-08 04:03:39,026|INFO|32420|Saving schedule. (6779)
+2018-12-08 04:03:39,361|INFO|32420|Round 6780: score 12152.31 (11112). Elapsed time: 162 min, 2.15 sec.
+2018-12-08 04:03:46,538|INFO|32420|Round 6785: score 10723.71 (11112). Elapsed time: 162 min, 9.33 sec.
+2018-12-08 04:03:47,960|INFO|32420|Saving schedule. (6785)
+2018-12-08 04:03:53,727|INFO|32420|Round 6790: score 10723.71 (11112). Elapsed time: 162 min, 16.52 sec.
+2018-12-08 04:03:57,774|INFO|32420|Saving schedule. (6792)
+2018-12-08 04:03:58,391|INFO|11296|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:04:01,409|INFO|32420|Round 6795: score 10723.71 (11112). Elapsed time: 162 min, 24.20 sec.
+2018-12-08 04:04:07,349|INFO|32420|Saving schedule. (6798)
+2018-12-08 04:04:08,957|INFO|32420|Round 6800: score 10723.71 (11112). Elapsed time: 162 min, 31.75 sec.
+2018-12-08 04:04:09,178|INFO|23536|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:04:15,002|INFO|32424|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:06:05,015|INFO|26120|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:06:05,016|INFO|26120|Unlocking.
+2018-12-08 04:06:47,550|INFO|26588|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:07:19,661|INFO|19600|1
+2018-12-08 04:07:19,673|INFO|19600|Saving schedule. (6798)
+2018-12-08 04:07:19,764|INFO|19600|Round 6799: score 12152.31 (11112). Elapsed time: 162 min, 30.32 sec.
+2018-12-08 04:07:21,262|INFO|19600|Round 6800: score 10723.71 (11112). Elapsed time: 162 min, 31.82 sec.
+2018-12-08 04:07:28,249|INFO|19600|Round 6805: score 10723.71 (11112). Elapsed time: 162 min, 38.81 sec.
+2018-12-08 04:07:29,622|INFO|19600|Saving schedule. (6805)
+2018-12-08 04:07:52,829|INFO|5760|1
+2018-12-08 04:07:52,840|INFO|5760|Saving schedule. (6805)
+2018-12-08 04:07:52,960|INFO|5760|Round 6806: score 12152.31 (11112). Elapsed time: 162 min, 40.39 sec.
+2018-12-08 04:07:59,049|INFO|5760|Round 6810: score 10723.71 (11112). Elapsed time: 162 min, 46.48 sec.
+2018-12-08 04:08:03,261|INFO|5760|Saving schedule. (6812)
+2018-12-08 04:08:06,127|INFO|5760|Round 6815: score 10723.71 (11112). Elapsed time: 162 min, 53.56 sec.
+2018-12-08 04:10:44,249|INFO|5960|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:10:44,249|INFO|5960|Unlocking.
+2018-12-08 04:10:52,813|INFO|3180|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:11:06,686|INFO|12436|1
+2018-12-08 04:11:06,695|INFO|12436|Saving schedule. (6812)
+2018-12-08 04:11:06,777|INFO|12436|Round 6813: score 12152.31 (11112). Elapsed time: 162 min, 50.87 sec.
+2018-12-08 04:11:09,594|INFO|12436|Round 6815: score 10723.71 (11112). Elapsed time: 162 min, 53.68 sec.
+2018-12-08 04:16:31,476|INFO|22360|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:16:50,901|INFO|31684|1
+2018-12-08 04:16:50,909|INFO|31684|Saving schedule. (6812)
+2018-12-08 04:16:51,180|INFO|31684|Round 6813: score 12152.31 (11112). Elapsed time: 162 min, 51.14 sec.
+2018-12-08 04:20:04,026|INFO|19140|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:20:04,026|INFO|19140|Trying to unlock.
+2018-12-08 04:20:59,116|INFO|17084|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:21:11,070|INFO|29560|1
+2018-12-08 04:21:11,079|INFO|29560|Saving schedule. (6812)
+2018-12-08 04:21:11,204|INFO|29560|Round 6813: score 12152.31 (11112). Elapsed time: 162 min, 51.23 sec.
+2018-12-08 04:21:13,873|INFO|29560|Round 6815: score 10723.71 (11112). Elapsed time: 162 min, 53.90 sec.
+2018-12-08 04:21:20,483|INFO|29560|Saving schedule. (6819)
+2018-12-08 04:21:20,601|INFO|29560|Round 6820: score 10723.71 (11112). Elapsed time: 163 min, 0.63 sec.
+2018-12-08 04:21:23,368|ERROR|29560|Traceback (most recent call last):
+2018-12-08 04:21:23,369|ERROR|29560|File "back_end/run_schedule.py", line 99, in <module>
+2018-12-08 04:21:23,369|ERROR|29560|main()
+2018-12-08 04:21:23,369|ERROR|29560|File "back_end/run_schedule.py", line 77, in main
+2018-12-08 04:21:23,370|ERROR|29560|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:21:23,371|ERROR|29560|File "back_end/run_schedule.py", line 68, in run_scheduler
+2018-12-08 04:21:23,371|ERROR|29560|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:21:23,372|ERROR|29560|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:21:23,372|ERROR|29560|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:21:23,373|ERROR|29560|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 417, in optimize_student
+2018-12-08 04:21:23,373|ERROR|29560|new_score = self.score_student(student)[0]
+2018-12-08 04:21:23,374|ERROR|29560|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 306, in score_student
+2018-12-08 04:21:23,374|ERROR|29560|base_score+=self.score_student_courses(student)
+2018-12-08 04:21:23,375|ERROR|29560|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 353, in score_student_courses
+2018-12-08 04:21:23,375|ERROR|29560|courses[j]=0
+2018-12-08 04:21:23,375|ERROR|29560|TypeError
+2018-12-08 04:21:23,376|ERROR|29560|:
+2018-12-08 04:21:23,376|ERROR|29560|unlock() takes 0 positional arguments but 2 were given
+2018-12-08 04:22:40,321|INFO|17440|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:22:55,126|INFO|21100|1
+2018-12-08 04:22:55,135|INFO|21100|Saving schedule. (6819)
+2018-12-08 04:22:55,220|INFO|21100|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 0.74 sec.
+2018-12-08 04:22:58,556|ERROR|21100|Traceback (most recent call last):
+2018-12-08 04:22:58,557|ERROR|21100|File "back_end/run_schedule.py", line 99, in <module>
+2018-12-08 04:22:58,558|ERROR|21100|main()
+2018-12-08 04:22:58,558|ERROR|21100|File "back_end/run_schedule.py", line 77, in main
+2018-12-08 04:22:58,559|ERROR|21100|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:22:58,559|ERROR|21100|File "back_end/run_schedule.py", line 68, in run_scheduler
+2018-12-08 04:22:58,559|ERROR|21100|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:22:58,560|ERROR|21100|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:22:58,561|ERROR|21100|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:22:58,561|ERROR|21100|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 417, in optimize_student
+2018-12-08 04:22:58,561|ERROR|21100|new_score = self.score_student(student)[0]
+2018-12-08 04:22:58,562|ERROR|21100|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 305, in score_student
+2018-12-08 04:22:58,562|ERROR|21100|base_score,addl_score=self.score_student_sections(student)
+2018-12-08 04:22:58,563|ERROR|21100|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 332, in score_student_sections
+2018-12-08 04:22:58,563|ERROR|21100|periods_yr.add(k)
+2018-12-08 04:22:58,563|ERROR|21100|KeyboardInterrupt
+2018-12-08 04:23:16,335|INFO|28504|Another process is optimizing the same schedule. Unable to obtain a lock.
+2018-12-08 04:23:35,605|INFO|29572|1
+2018-12-08 04:23:35,616|INFO|29572|Saving schedule. (6819)
+2018-12-08 04:23:35,695|INFO|29572|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 0.82 sec.
+2018-12-08 04:23:41,390|ERROR|29572|Traceback (most recent call last):
+2018-12-08 04:23:41,391|ERROR|29572|File "back_end/run_schedule.py", line 99, in <module>
+2018-12-08 04:23:41,391|ERROR|29572|main()
+2018-12-08 04:23:41,392|ERROR|29572|File "back_end/run_schedule.py", line 77, in main
+2018-12-08 04:23:41,392|ERROR|29572|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:23:41,394|ERROR|29572|File "back_end/run_schedule.py", line 68, in run_scheduler
+2018-12-08 04:23:41,395|ERROR|29572|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:23:41,396|ERROR|29572|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:23:41,396|ERROR|29572|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:23:41,397|ERROR|29572|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 417, in optimize_student
+2018-12-08 04:23:41,397|ERROR|29572|new_score = self.score_student(student)[0]
+2018-12-08 04:23:41,398|ERROR|29572|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 306, in score_student
+2018-12-08 04:23:41,398|ERROR|29572|base_score+=self.score_student_courses(student)
+2018-12-08 04:23:41,399|ERROR|29572|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 354, in score_student_courses
+2018-12-08 04:23:41,399|ERROR|29572|courses[j]+=1
+2018-12-08 04:23:41,402|ERROR|29572|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\basics.py", line 175, in __hash__
+2018-12-08 04:23:41,402|ERROR|29572|def __hash__(self):
+2018-12-08 04:23:41,403|ERROR|29572|KeyboardInterrupt
+2018-12-08 04:23:41,403|INFO|29572|Unlocking.
+2018-12-08 04:25:05,986|INFO|31632|1
+2018-12-08 04:25:05,995|INFO|31632|Saving schedule. (6819)
+2018-12-08 04:25:06,091|INFO|31632|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 0.92 sec.
+2018-12-08 04:25:08,921|ERROR|31632|Traceback (most recent call last):
+2018-12-08 04:25:08,921|ERROR|31632|File "back_end/run_schedule.py", line 98, in <module>
+2018-12-08 04:25:08,922|ERROR|31632|main()
+2018-12-08 04:25:08,923|ERROR|31632|File "back_end/run_schedule.py", line 76, in main
+2018-12-08 04:25:08,923|ERROR|31632|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:25:08,924|ERROR|31632|File "back_end/run_schedule.py", line 67, in run_scheduler
+2018-12-08 04:25:08,924|ERROR|31632|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:25:08,924|ERROR|31632|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:25:08,925|ERROR|31632|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:25:08,926|ERROR|31632|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 387, in optimize_student
+2018-12-08 04:25:08,927|ERROR|31632|courses[j].append(k)
+2018-12-08 04:25:08,927|ERROR|31632|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\basics.py", line 178, in __hash__
+2018-12-08 04:25:08,927|ERROR|31632|return hash(self.courseID)
+2018-12-08 04:25:08,928|ERROR|31632|KeyboardInterrupt
+2018-12-08 04:25:08,929|INFO|31632|Unlocking.
+2018-12-08 04:25:08,932|ERROR|31632|Error in atexit._run_exitfuncs:
+2018-12-08 04:25:08,932|ERROR|31632|Traceback (most recent call last):
+2018-12-08 04:25:08,932|ERROR|31632|File "back_end/run_schedule.py", line 85, in unlock
+2018-12-08 04:25:08,933|ERROR|31632|connection = sqlite3.connect(save + '/schedule.db')
+2018-12-08 04:25:08,933|ERROR|31632|TypeError
+2018-12-08 04:25:08,933|ERROR|31632|:
+2018-12-08 04:25:08,933|ERROR|31632|unsupported operand type(s) for +: 'function' and 'str'
+2018-12-08 04:25:24,957|INFO|5608|1
+2018-12-08 04:25:24,969|INFO|5608|Saving schedule. (6819)
+2018-12-08 04:25:25,049|INFO|5608|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 0.99 sec.
+2018-12-08 04:25:26,839|ERROR|5608|Traceback (most recent call last):
+2018-12-08 04:25:26,839|ERROR|5608|File "back_end/run_schedule.py", line 98, in <module>
+2018-12-08 04:25:26,840|ERROR|5608|main()
+2018-12-08 04:25:26,843|ERROR|5608|File "back_end/run_schedule.py", line 76, in main
+2018-12-08 04:25:26,844|ERROR|5608|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:25:26,845|ERROR|5608|File "back_end/run_schedule.py", line 67, in run_scheduler
+2018-12-08 04:25:26,845|ERROR|5608|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:25:26,847|ERROR|5608|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:25:26,849|ERROR|5608|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:25:26,850|ERROR|5608|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 385, in optimize_student
+2018-12-08 04:25:26,851|ERROR|5608|for k in student.sched:
+2018-12-08 04:25:26,851|ERROR|5608|KeyboardInterrupt
+2018-12-08 04:25:26,852|INFO|5608|Unlocking.
+2018-12-08 04:25:26,854|INFO|5608|runs/past_runs/2018_12_08__01_09_10/schedule.db
+2018-12-08 04:25:26,886|INFO|5608|Unlocked.
+2018-12-08 04:25:39,959|INFO|30416|1
+2018-12-08 04:25:39,969|INFO|30416|Saving schedule. (6819)
+2018-12-08 04:25:40,052|INFO|30416|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 1.08 sec.
+2018-12-08 04:25:42,161|ERROR|30416|Traceback (most recent call last):
+2018-12-08 04:25:42,162|ERROR|30416|File "back_end/run_schedule.py", line 98, in <module>
+2018-12-08 04:25:42,162|ERROR|30416|main()
+2018-12-08 04:25:42,163|ERROR|30416|File "back_end/run_schedule.py", line 76, in main
+2018-12-08 04:25:42,163|ERROR|30416|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-08 04:25:42,164|ERROR|30416|File "back_end/run_schedule.py", line 67, in run_scheduler
+2018-12-08 04:25:42,165|ERROR|30416|solver.solve(verbose=0, print_every=5)
+2018-12-08 04:25:42,168|ERROR|30416|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 542, in solve
+2018-12-08 04:25:42,169|ERROR|30416|new_organism.optimize_student(i,max_it=15)
+2018-12-08 04:25:42,172|ERROR|30416|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 417, in optimize_student
+2018-12-08 04:25:42,173|ERROR|30416|new_score = self.score_student(student)[0]
+2018-12-08 04:25:42,174|ERROR|30416|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 306, in score_student
+2018-12-08 04:25:42,174|ERROR|30416|base_score+=self.score_student_courses(student)
+2018-12-08 04:25:42,177|ERROR|30416|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\genetic_algorithm.py", line 352, in score_student_courses
+2018-12-08 04:25:42,177|ERROR|30416|if j not in courses:
+2018-12-08 04:25:42,178|ERROR|30416|File "C:\Users\Matthew\PycharmProjects\Genetic Algorithm Test\scheduler\back_end\basics.py", line 178, in __hash__
+2018-12-08 04:25:42,179|ERROR|30416|return hash(self.courseID)
+2018-12-08 04:25:42,179|ERROR|30416|KeyboardInterrupt
+2018-12-08 04:25:45,074|INFO|29020|1
+2018-12-08 04:25:45,086|INFO|29020|Saving schedule. (6819)
+2018-12-08 04:25:45,167|INFO|29020|Round 6820: score 12152.31 (11112). Elapsed time: 163 min, 1.16 sec.
+2018-12-08 04:25:51,837|INFO|29020|Round 6825: score 10723.71 (11112). Elapsed time: 163 min, 7.83 sec.
+2018-12-08 04:25:54,435|INFO|29020|Saving schedule. (6826)
+2018-12-08 04:25:58,620|INFO|29020|Round 6830: score 10723.71 (11112). Elapsed time: 163 min, 14.61 sec.
+2018-12-08 04:26:04,183|INFO|29020|Saving schedule. (6833)
+2018-12-08 04:26:06,024|INFO|29020|Round 6835: score 10723.71 (11112). Elapsed time: 163 min, 22.02 sec.
+2018-12-08 04:26:12,687|INFO|29020|Round 6840: score 10723.71 (11112). Elapsed time: 163 min, 28.68 sec.
+2018-12-08 04:26:14,062|INFO|29020|Saving schedule. (6840)
+2018-12-08 04:26:19,498|INFO|29020|Round 6845: score 10723.71 (11112). Elapsed time: 163 min, 35.49 sec.
+2018-12-08 04:26:24,992|INFO|29020|Saving schedule. (6848)
+2018-12-08 04:26:41,085|INFO|29064|1
+2018-12-08 04:26:41,094|INFO|29064|Saving schedule. (6840)
+2018-12-08 04:26:41,178|INFO|29064|Round 6841: score 12152.31 (11112). Elapsed time: 163 min, 30.25 sec.
+2018-12-08 04:26:47,034|INFO|29064|Round 6845: score 10723.71 (11112). Elapsed time: 163 min, 36.10 sec.
+2018-12-08 04:26:51,178|INFO|29064|Saving schedule. (6847)
+2018-12-08 04:26:54,292|INFO|29064|Round 6850: score 10723.71 (11112). Elapsed time: 163 min, 43.36 sec.
+2018-12-08 04:27:45,440|INFO|30280|1
+2018-12-08 04:27:45,449|INFO|30280|Saving schedule. (6847)
+2018-12-08 04:27:45,535|INFO|30280|Round 6848: score 12152.31 (11112). Elapsed time: 163 min, 40.41 sec.
+2018-12-08 04:27:48,245|INFO|30280|Round 6850: score 10723.71 (11112). Elapsed time: 163 min, 43.12 sec.
+2018-12-08 04:27:54,934|INFO|30280|Round 6855: score 10723.71 (11112). Elapsed time: 163 min, 49.81 sec.
+2018-12-08 04:35:02,668|INFO|26296|1
+2018-12-08 04:35:02,678|INFO|26296|Saving schedule. (6847)
+2018-12-08 04:35:02,784|INFO|26296|Round 6848: score 12152.31 (11112). Elapsed time: 163 min, 41.21 sec.
+2018-12-08 04:35:05,544|INFO|26296|Round 6850: score 10723.71 (11112). Elapsed time: 163 min, 43.97 sec.
+2018-12-08 04:35:12,895|INFO|26296|Saving schedule. (6854)
+2018-12-08 04:35:12,977|INFO|26296|Round 6855: score 10723.71 (11112). Elapsed time: 163 min, 51.41 sec.
+2018-12-08 04:35:19,720|INFO|26296|Round 6860: score 10723.71 (11112). Elapsed time: 163 min, 58.15 sec.
+2018-12-08 04:35:22,361|INFO|26296|Saving schedule. (6861)
+2018-12-08 04:35:26,605|INFO|26296|Round 6865: score 10723.71 (11112). Elapsed time: 164 min, 5.04 sec.
+2018-12-08 04:35:31,987|INFO|26296|Saving schedule. (6868)
+2018-12-08 04:35:33,488|INFO|26296|Round 6870: score 10723.71 (11112). Elapsed time: 164 min, 11.92 sec.
+2018-12-08 04:35:38,591|INFO|18024|1
+2018-12-08 04:35:38,601|INFO|18024|Saving schedule. (6868)
+2018-12-08 04:35:38,704|INFO|18024|Round 6869: score 12152.31 (11112). Elapsed time: 164 min, 10.80 sec.
+2018-12-08 04:35:40,156|INFO|18024|Round 6870: score 10723.71 (11112). Elapsed time: 164 min, 12.25 sec.
+2018-12-08 04:35:40,453|INFO|26296|Round 6875: score 10723.71 (11112). Elapsed time: 164 min, 18.88 sec.
+2018-12-08 04:35:41,898|INFO|26296|Saving schedule. (6875)
+2018-12-08 04:35:49,440|INFO|26296|Round 6880: score 10723.71 (11112). Elapsed time: 164 min, 27.87 sec.
+2018-12-08 04:35:53,994|INFO|26296|Saving schedule. (6881)
+2018-12-08 04:35:58,360|INFO|26296|Round 6885: score 10723.71 (11112). Elapsed time: 164 min, 36.79 sec.
+2018-12-08 04:36:01,726|INFO|26296|Saving schedule. (6886)
+2018-12-08 04:36:06,841|INFO|26296|Round 6890: score 10723.71 (11112). Elapsed time: 164 min, 45.27 sec.
+2018-12-08 04:36:12,301|INFO|26296|Saving schedule. (6893)
+2018-12-08 04:36:13,748|INFO|26296|Round 6895: score 10723.71 (11112). Elapsed time: 164 min, 52.18 sec.
+2018-12-08 04:36:20,686|INFO|26296|Round 6900: score 10723.71 (11112). Elapsed time: 164 min, 59.12 sec.
+2018-12-08 04:36:22,093|INFO|26296|Saving schedule. (6900)
+2018-12-08 04:36:27,551|INFO|26296|Round 6905: score 10723.71 (11112). Elapsed time: 165 min, 5.98 sec.
+2018-12-08 04:36:32,943|INFO|26296|Saving schedule. (6908)
+2018-12-08 04:36:34,416|INFO|26296|Round 6910: score 10723.71 (11112). Elapsed time: 165 min, 12.85 sec.
+2018-12-08 04:36:41,237|INFO|26296|Round 6915: score 10723.71 (11112). Elapsed time: 165 min, 19.67 sec.
+2018-12-08 04:36:42,550|INFO|26296|Saving schedule. (6915)
+2018-12-08 04:36:47,985|INFO|26296|Round 6920: score 10723.71 (11112). Elapsed time: 165 min, 26.42 sec.
+2018-12-08 04:36:52,245|INFO|26296|Saving schedule. (6922)
+2018-12-08 04:36:55,289|INFO|26296|Round 6925: score 10723.71 (11112). Elapsed time: 165 min, 33.72 sec.
+2018-12-08 04:37:02,293|INFO|26296|Saving schedule. (6929)
+2018-12-08 04:37:02,516|INFO|26296|Round 6930: score 10723.71 (11112). Elapsed time: 165 min, 40.95 sec.
+2018-12-08 04:37:09,342|INFO|26296|Round 6935: score 10723.71 (11112). Elapsed time: 165 min, 47.77 sec.
+2018-12-08 04:37:12,094|INFO|26296|Saving schedule. (6936)
+2018-12-08 04:37:16,743|INFO|26296|Round 6940: score 10723.71 (11112). Elapsed time: 165 min, 55.17 sec.
+2018-12-08 04:37:22,898|INFO|26296|Saving schedule. (6943)
+2018-12-08 04:37:24,580|INFO|26296|Round 6945: score 10723.71 (11112). Elapsed time: 166 min, 3.01 sec.
+2018-12-08 04:37:31,580|INFO|26296|Saving schedule. (6949)
+2018-12-08 04:37:31,663|INFO|26296|Round 6950: score 10723.71 (11112). Elapsed time: 166 min, 10.09 sec.
+2018-12-08 04:37:38,687|INFO|26296|Round 6955: score 10723.71 (11112). Elapsed time: 166 min, 17.12 sec.
+2018-12-08 04:37:42,728|INFO|26296|Saving schedule. (6957)
+2018-12-08 04:37:45,739|INFO|26296|Round 6960: score 10723.71 (11112). Elapsed time: 166 min, 24.17 sec.
+2018-12-08 04:37:51,871|INFO|13960|1
+2018-12-08 04:37:51,880|INFO|13960|Saving schedule. (6957)
+2018-12-08 04:37:52,257|INFO|13960|Round 6958: score 12152.31 (11112). Elapsed time: 166 min, 21.80 sec.
+2018-12-08 04:37:52,927|INFO|26296|Saving schedule. (6964)
+2018-12-08 04:37:53,051|INFO|26296|Round 6965: score 10723.71 (11112). Elapsed time: 166 min, 31.48 sec.
+2018-12-08 04:37:57,784|INFO|32096|1
+2018-12-08 04:37:57,792|INFO|32096|Saving schedule. (6964)
+2018-12-08 04:37:58,107|INFO|32096|Round 6965: score 12152.31 (11112). Elapsed time: 166 min, 31.95 sec.
+2018-12-08 04:38:05,752|INFO|32096|Round 6970: score 10723.71 (11112). Elapsed time: 166 min, 39.59 sec.
+2018-12-08 04:38:07,573|INFO|32096|Saving schedule. (6970)
+2018-12-08 04:38:13,490|INFO|32096|Round 6975: score 10723.71 (11112). Elapsed time: 166 min, 47.33 sec.
+2018-12-08 04:38:17,327|INFO|32096|Saving schedule. (6976)
+2018-12-08 04:38:21,801|INFO|32096|Round 6980: score 10723.71 (11112). Elapsed time: 166 min, 55.64 sec.
+2018-12-08 04:38:27,449|INFO|32096|Saving schedule. (6983)
+2018-12-08 04:38:29,045|INFO|32096|Round 6985: score 10723.71 (11112). Elapsed time: 167 min, 2.89 sec.
+2018-12-08 04:38:36,698|INFO|32096|Saving schedule. (6989)
+2018-12-08 04:38:36,784|INFO|32096|Round 6990: score 10723.71 (11112). Elapsed time: 167 min, 10.63 sec.
+2018-12-08 04:38:43,950|INFO|32096|Round 6995: score 10723.71 (11112). Elapsed time: 167 min, 17.79 sec.
+2018-12-08 04:38:46,653|INFO|32096|Saving schedule. (6996)
+2018-12-08 04:38:52,137|INFO|32096|Round 7000: score 10723.71 (11112). Elapsed time: 167 min, 25.98 sec.
+2018-12-08 04:38:56,725|INFO|32096|Saving schedule. (7002)
+2018-12-08 04:39:00,009|INFO|32096|Round 7005: score 10723.71 (11112). Elapsed time: 167 min, 33.85 sec.
+2018-12-08 04:39:08,678|INFO|32096|Saving schedule. (7009)
+2018-12-08 04:39:08,798|INFO|32096|Round 7010: score 10723.71 (11112). Elapsed time: 167 min, 42.64 sec.
+2018-12-08 04:39:17,290|INFO|32096|Saving schedule. (7013)
+2018-12-08 04:39:20,573|INFO|32096|Round 7015: score 10723.71 (11112). Elapsed time: 167 min, 54.42 sec.
+2018-12-08 04:39:28,622|INFO|32096|Saving schedule. (7017)
+2018-12-08 04:39:34,244|INFO|32096|Round 7020: score 10723.71 (11112). Elapsed time: 168 min, 8.09 sec.
+2018-12-08 04:39:36,617|INFO|32096|Saving schedule. (7020)
+2018-12-08 04:39:46,314|INFO|32096|Saving schedule. (7024)
+2018-12-08 04:39:46,444|INFO|32096|Round 7025: score 10723.71 (11112). Elapsed time: 168 min, 20.29 sec.
+2018-12-08 04:39:53,083|INFO|9184|1
+2018-12-08 04:39:53,091|INFO|9184|Saving schedule. (7024)
+2018-12-08 04:39:53,189|INFO|9184|Round 7025: score 12152.31 (11112). Elapsed time: 168 min, 20.57 sec.
+2018-12-08 04:39:57,603|INFO|25176|1
+2018-12-08 04:39:57,613|INFO|25176|Saving schedule. (7024)
+2018-12-08 04:39:57,755|INFO|25176|Round 7025: score 12152.31 (11112). Elapsed time: 168 min, 20.94 sec.
+2018-12-08 04:40:02,440|INFO|9184|Round 7030: score 10723.71 (11112). Elapsed time: 168 min, 29.82 sec.
+2018-12-08 04:40:04,155|INFO|9184|Saving schedule. (7030)
+2018-12-08 04:40:13,022|INFO|9184|Saving schedule. (7033)
+2018-12-08 04:40:16,026|INFO|9184|Round 7035: score 10723.71 (11112). Elapsed time: 168 min, 43.40 sec.
+2018-12-08 04:40:24,013|INFO|9184|Saving schedule. (7037)
+2018-12-08 04:40:27,871|INFO|9184|Round 7040: score 10723.71 (11112). Elapsed time: 168 min, 55.25 sec.
+2018-12-08 04:40:33,145|INFO|9184|Saving schedule. (7042)
+2018-12-08 04:40:37,348|INFO|9184|Round 7045: score 10723.71 (11112). Elapsed time: 169 min, 4.72 sec.
+2018-12-08 04:40:42,683|INFO|9184|Saving schedule. (7047)
+2018-12-08 04:40:51,376|INFO|9184|Round 7050: score 10723.71 (11112). Elapsed time: 169 min, 18.75 sec.
+2018-12-08 04:40:56,034|INFO|9184|Saving schedule. (7050)
+2018-12-08 04:41:02,209|INFO|9184|Round 7055: score 10723.71 (11112). Elapsed time: 169 min, 29.59 sec.
+2018-12-08 04:41:03,621|INFO|9184|Saving schedule. (7055)
+2018-12-08 04:41:10,241|INFO|9184|Round 7060: score 10723.71 (11112). Elapsed time: 169 min, 37.62 sec.
+2018-12-08 04:41:13,138|INFO|9184|Saving schedule. (7061)
+2018-12-08 04:41:17,792|INFO|9184|Round 7065: score 10723.71 (11112). Elapsed time: 169 min, 45.17 sec.
+2018-12-08 04:41:22,960|INFO|9184|Saving schedule. (7067)
+2018-12-08 04:41:26,000|INFO|9184|Round 7070: score 10723.71 (11112). Elapsed time: 169 min, 53.38 sec.
+2018-12-08 04:41:33,915|INFO|9184|Saving schedule. (7074)
+2018-12-08 04:41:34,011|INFO|9184|Round 7075: score 10723.71 (11112). Elapsed time: 170 min, 1.39 sec.
+2018-12-08 04:41:41,736|INFO|9184|Round 7080: score 10723.71 (11112). Elapsed time: 170 min, 9.11 sec.
+2018-12-08 04:41:43,081|INFO|9184|Saving schedule. (7080)
+2018-12-08 04:41:48,808|INFO|9184|Round 7085: score 10723.71 (11112). Elapsed time: 170 min, 16.18 sec.
+2018-12-08 04:41:52,943|INFO|9184|Saving schedule. (7087)
+2018-12-08 04:41:56,016|INFO|9184|Round 7090: score 10723.71 (11112). Elapsed time: 170 min, 23.39 sec.
+2018-12-08 04:42:03,667|INFO|9184|Saving schedule. (7094)
+2018-12-08 04:42:03,760|INFO|9184|Round 7095: score 10723.71 (11112). Elapsed time: 170 min, 31.14 sec.
+2018-12-08 04:42:13,008|INFO|9184|Saving schedule. (7099)
+2018-12-08 04:42:13,183|INFO|9184|Round 7100: score 10723.71 (11112). Elapsed time: 170 min, 40.56 sec.
+2018-12-08 04:42:21,895|INFO|9184|Round 7105: score 10723.71 (11112). Elapsed time: 170 min, 49.27 sec.
+2018-12-08 04:42:23,441|INFO|9184|Saving schedule. (7105)
+2018-12-08 04:42:30,715|INFO|9184|Round 7110: score 10723.71 (11112). Elapsed time: 170 min, 58.09 sec.
+2018-12-08 04:42:34,059|INFO|9184|Saving schedule. (7111)
+2018-12-08 04:42:38,989|INFO|9184|Round 7115: score 10723.71 (11112). Elapsed time: 171 min, 6.36 sec.
+2018-12-08 04:42:43,997|INFO|9184|Saving schedule. (7116)
+2018-12-08 04:42:48,613|INFO|9184|Round 7120: score 10723.71 (11112). Elapsed time: 171 min, 15.99 sec.
+2018-12-08 04:42:53,151|INFO|9184|Saving schedule. (7122)
+2018-12-08 04:42:56,045|INFO|9184|Round 7125: score 10723.71 (11112). Elapsed time: 171 min, 23.42 sec.
+2018-12-08 04:43:03,413|INFO|9184|Saving schedule. (7128)
+2018-12-08 04:43:05,963|INFO|9184|Round 7130: score 10723.71 (11112). Elapsed time: 171 min, 33.34 sec.
+2018-12-08 04:43:12,676|INFO|9184|Saving schedule. (7133)
+2018-12-08 04:43:14,838|INFO|9184|Round 7135: score 10723.71 (11112). Elapsed time: 171 min, 42.21 sec.
+2018-12-08 04:43:23,201|INFO|9184|Saving schedule. (7139)
+2018-12-08 04:43:23,293|INFO|9184|Round 7140: score 10723.71 (11112). Elapsed time: 171 min, 50.67 sec.
+2018-12-08 04:43:25,486|INFO|29728|1
+2018-12-08 04:43:25,514|INFO|29728|Saving schedule. (7139)
+2018-12-08 04:43:25,604|INFO|29728|Round 7140: score 12152.31 (11112). Elapsed time: 171 min, 50.97 sec.
+2018-12-08 04:43:32,962|INFO|29728|Round 7145: score 10723.71 (11112). Elapsed time: 171 min, 58.33 sec.
+2018-12-08 04:43:34,683|INFO|29728|Saving schedule. (7145)
+2018-12-08 04:43:40,446|INFO|29728|Round 7150: score 10723.71 (11112). Elapsed time: 172 min, 5.82 sec.
+2018-12-08 04:43:44,709|INFO|29728|Saving schedule. (7152)
+2018-12-08 04:43:47,725|INFO|29728|Round 7155: score 10723.71 (11112). Elapsed time: 172 min, 13.09 sec.
+2018-12-08 04:43:54,727|INFO|29728|Saving schedule. (7159)
+2018-12-08 04:43:55,063|INFO|29728|Round 7160: score 10723.71 (11112). Elapsed time: 172 min, 20.43 sec.
+2018-12-08 04:44:02,628|INFO|29728|Round 7165: score 10723.71 (11112). Elapsed time: 172 min, 28.00 sec.
+2018-12-08 04:44:05,660|INFO|29728|Saving schedule. (7165)
+2018-12-08 04:44:14,875|INFO|29728|Saving schedule. (7168)
+2018-12-08 04:44:19,224|INFO|29728|Round 7170: score 10723.71 (11112). Elapsed time: 172 min, 44.59 sec.
+2018-12-08 04:44:25,425|INFO|29728|Saving schedule. (7172)
+2018-12-08 04:44:28,744|INFO|29728|Round 7175: score 10723.71 (11112). Elapsed time: 172 min, 54.11 sec.
+2018-12-08 04:44:34,851|INFO|29728|Saving schedule. (7178)
+2018-12-08 04:44:36,890|INFO|29728|Round 7180: score 10723.71 (11112). Elapsed time: 173 min, 2.26 sec.
+2018-12-08 04:44:44,369|INFO|29728|Round 7185: score 10723.71 (11112). Elapsed time: 173 min, 9.74 sec.
+2018-12-08 04:44:46,044|INFO|29728|Saving schedule. (7185)
+2018-12-08 04:44:53,018|INFO|29728|Round 7190: score 10723.71 (11112). Elapsed time: 173 min, 18.39 sec.
+2018-12-08 04:44:55,790|INFO|29728|Saving schedule. (7191)
+2018-12-08 04:45:02,228|INFO|29728|Round 7195: score 10723.71 (11112). Elapsed time: 173 min, 27.60 sec.
+2018-12-08 04:45:05,175|INFO|29728|Saving schedule. (7196)
+2018-12-08 04:45:10,346|INFO|29728|Round 7200: score 10723.71 (11112). Elapsed time: 173 min, 35.72 sec.
+2018-12-08 04:45:15,546|INFO|29728|Saving schedule. (7202)
+2018-12-08 04:45:19,024|INFO|29728|Round 7205: score 10723.71 (11112). Elapsed time: 173 min, 44.39 sec.
+2018-12-08 04:45:25,354|INFO|29728|Saving schedule. (7207)
+2018-12-08 04:45:29,370|INFO|29728|Round 7210: score 10723.71 (11112). Elapsed time: 173 min, 54.74 sec.
+2018-12-08 04:45:34,742|INFO|29728|Saving schedule. (7213)
+2018-12-08 04:45:36,386|INFO|29728|Round 7215: score 10723.71 (11112). Elapsed time: 174 min, 1.76 sec.
+2018-12-08 04:45:44,030|INFO|29728|Round 7220: score 10723.71 (11112). Elapsed time: 174 min, 9.40 sec.
+2018-12-08 04:45:45,534|INFO|29728|Saving schedule. (7220)
+2018-12-08 04:45:51,744|INFO|29728|Round 7225: score 10723.71 (11112). Elapsed time: 174 min, 17.11 sec.
+2018-12-08 04:45:54,838|INFO|29728|Saving schedule. (7226)
+2018-12-08 04:45:59,651|INFO|29728|Round 7230: score 10723.71 (11112). Elapsed time: 174 min, 25.02 sec.
+2018-12-08 04:46:05,822|INFO|29728|Saving schedule. (7233)
+2018-12-08 04:46:07,614|INFO|29728|Round 7235: score 10723.71 (11112). Elapsed time: 174 min, 32.98 sec.
+2018-12-08 04:46:16,648|INFO|29728|Saving schedule. (7238)
+2018-12-08 04:46:18,961|INFO|29728|Round 7240: score 10723.71 (11112). Elapsed time: 174 min, 44.33 sec.
+2018-12-08 04:46:25,931|INFO|29728|Saving schedule. (7243)
+2018-12-08 04:46:27,480|INFO|29728|Round 7245: score 10723.71 (11112). Elapsed time: 174 min, 52.85 sec.
+2018-12-08 04:46:34,739|INFO|29728|Saving schedule. (7249)
+2018-12-08 04:46:34,822|INFO|29728|Round 7250: score 10723.71 (11112). Elapsed time: 175 min, 0.19 sec.
+2018-12-08 04:46:41,707|INFO|29728|Round 7255: score 10723.71 (11112). Elapsed time: 175 min, 7.08 sec.
+2018-12-08 04:46:45,787|INFO|29728|Saving schedule. (7257)
+2018-12-08 04:46:48,624|INFO|29728|Round 7260: score 10723.71 (11112). Elapsed time: 175 min, 13.99 sec.
+2018-12-08 04:46:55,203|INFO|29728|Saving schedule. (7264)
+2018-12-08 04:46:55,284|INFO|29728|Round 7265: score 10723.71 (11112). Elapsed time: 175 min, 20.65 sec.
+2018-12-08 04:47:02,184|INFO|29728|Round 7270: score 10723.71 (11112). Elapsed time: 175 min, 27.55 sec.
+2018-12-08 04:47:05,039|INFO|29728|Saving schedule. (7271)
+2018-12-08 04:47:10,607|INFO|29728|Round 7275: score 10723.71 (11112). Elapsed time: 175 min, 35.98 sec.
+2018-12-08 04:47:15,532|INFO|29728|Saving schedule. (7277)
+2018-12-08 04:47:18,927|INFO|29728|Round 7280: score 10723.71 (11112). Elapsed time: 175 min, 44.30 sec.
+2018-12-08 04:47:24,980|INFO|29728|Saving schedule. (7283)
+2018-12-08 04:47:26,629|INFO|29728|Round 7285: score 10723.71 (11112). Elapsed time: 175 min, 52.00 sec.
+2018-12-08 04:47:34,653|INFO|29728|Saving schedule. (7289)
+2018-12-08 04:47:34,751|INFO|29728|Round 7290: score 10723.71 (11112). Elapsed time: 176 min, 0.12 sec.
+2018-12-08 04:47:42,160|INFO|29728|Round 7295: score 10723.71 (11112). Elapsed time: 176 min, 7.53 sec.
+2018-12-08 04:47:45,115|INFO|29728|Saving schedule. (7296)
+2018-12-08 04:47:50,117|INFO|29728|Round 7300: score 10723.71 (11112). Elapsed time: 176 min, 15.49 sec.
+2018-12-08 04:47:55,338|INFO|29728|Saving schedule. (7302)
+2018-12-08 04:47:58,620|INFO|29728|Round 7305: score 10723.71 (11112). Elapsed time: 176 min, 23.99 sec.
+2018-12-08 04:48:05,990|INFO|29728|Saving schedule. (7309)
+2018-12-08 04:48:06,092|INFO|29728|Round 7310: score 10723.71 (11112). Elapsed time: 176 min, 31.46 sec.
+2018-12-08 04:48:13,239|INFO|29728|Round 7315: score 10723.71 (11112). Elapsed time: 176 min, 38.61 sec.
+2018-12-08 04:48:14,655|INFO|29728|Saving schedule. (7315)
+2018-12-08 04:48:20,686|INFO|29728|Round 7320: score 10723.71 (11112). Elapsed time: 176 min, 46.06 sec.
+2018-12-08 04:48:24,892|INFO|29728|Saving schedule. (7322)
+2018-12-08 04:48:28,033|INFO|29728|Round 7325: score 10723.71 (11112). Elapsed time: 176 min, 53.40 sec.
+2018-12-08 04:48:35,364|INFO|29728|Saving schedule. (7329)
+2018-12-08 04:48:35,445|INFO|29728|Round 7330: score 10723.71 (11112). Elapsed time: 177 min, 0.81 sec.
+2018-12-08 04:48:42,580|INFO|29728|Round 7335: score 10723.71 (11112). Elapsed time: 177 min, 7.95 sec.
+2018-12-08 04:48:45,355|INFO|29728|Saving schedule. (7336)
+2018-12-08 04:48:49,689|INFO|29728|Round 7340: score 10723.71 (11112). Elapsed time: 177 min, 15.06 sec.
+2018-12-08 04:48:55,186|INFO|29728|Saving schedule. (7343)
+2018-12-08 04:48:56,867|INFO|29728|Round 7345: score 10723.71 (11112). Elapsed time: 177 min, 22.24 sec.
+2018-12-08 04:49:03,700|INFO|29728|Round 7350: score 10723.71 (11112). Elapsed time: 177 min, 29.07 sec.
+2018-12-08 04:49:05,059|INFO|29728|Saving schedule. (7350)
+2018-12-08 04:49:10,707|INFO|29728|Round 7355: score 10723.71 (11112). Elapsed time: 177 min, 36.08 sec.
+2018-12-08 04:49:14,934|INFO|29728|Saving schedule. (7357)
+2018-12-08 04:49:18,189|INFO|29728|Round 7360: score 10723.71 (11112). Elapsed time: 177 min, 43.56 sec.
+2018-12-08 04:49:25,368|INFO|29728|Saving schedule. (7364)
+2018-12-08 04:49:25,470|INFO|29728|Round 7365: score 10723.71 (11112). Elapsed time: 177 min, 50.84 sec.
+2018-12-08 04:49:32,804|INFO|29728|Round 7370: score 10723.71 (11112). Elapsed time: 177 min, 58.17 sec.
+2018-12-08 04:49:35,504|INFO|29728|Saving schedule. (7371)
+2018-12-08 04:49:39,838|INFO|29728|Round 7375: score 10723.71 (11112). Elapsed time: 178 min, 5.21 sec.
+2018-12-08 04:49:45,595|INFO|29728|Saving schedule. (7378)
+2018-12-08 04:49:47,143|INFO|29728|Round 7380: score 10723.71 (11112). Elapsed time: 178 min, 12.51 sec.
+2018-12-08 04:49:54,256|INFO|29728|Round 7385: score 10723.71 (11112). Elapsed time: 178 min, 19.63 sec.
+2018-12-08 04:49:55,718|INFO|29728|Saving schedule. (7385)
+2018-12-08 04:50:01,748|INFO|29728|Round 7390: score 10723.71 (11112). Elapsed time: 178 min, 27.12 sec.
+2018-12-08 04:50:05,954|INFO|29728|Saving schedule. (7392)
+2018-12-08 04:50:09,931|INFO|29728|Round 7395: score 10723.71 (11112). Elapsed time: 178 min, 35.30 sec.
+2018-12-08 04:50:15,563|INFO|29728|Saving schedule. (7397)
+2018-12-08 04:50:18,757|INFO|29728|Round 7400: score 10723.71 (11112). Elapsed time: 178 min, 44.13 sec.
+2018-12-08 04:50:26,056|INFO|29728|Saving schedule. (7404)
+2018-12-08 04:50:26,144|INFO|29728|Round 7405: score 10723.71 (11112). Elapsed time: 178 min, 51.51 sec.
+2018-12-08 04:50:33,941|INFO|29728|Round 7410: score 10723.71 (11112). Elapsed time: 178 min, 59.31 sec.

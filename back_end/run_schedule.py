@@ -5,20 +5,36 @@ import datetime
 import sqlite3
 import os
 import shutil
+from tendo import singleton
+lock=singleton.SingleInstance()
 
+lock_failed=0
+class LockError(Exception):
+    pass
 def run_scheduler(save=None):
     if save is None:
         save=f'runs/past_runs/{datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")}'
         os.mkdir(save)
+        start_logging(save)
         param_file_name = 'runs/run_params.txt'
         shutil.copy2(param_file_name,save)
         connection = sqlite3.connect(save+'/schedule.db')
         cursor=connection.cursor()
+        cursor.execute("CREATE TABLE metadata(iteration int,time_elapsed real);")
+        cursor.execute('INSERT INTO metadata(iteration,time_elapsed) VALUES (0,0)')
         connection.commit()
         connection.close()
     else:
         save='runs/past_runs/'+save
+        start_logging(save)
         param_file_name = save+'/run_params.txt'
+        connection = sqlite3.connect(save + '/schedule.db')
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM metadata')
+        it,time_el=cursor.fetchone()
+        set_global_parameters(it,time_el)
+        connection.commit()
+        connection.close()
     with open(param_file_name, 'r') as f:
         num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[i.strip() for i in f.readlines()]
     for i in classroom_fn, course_fn, teacher_fn, student_fn, section_fn:
@@ -39,7 +55,7 @@ def run_scheduler(save=None):
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
-    winner = solver.solve(num_iterations=1000, verbose=0, print_every=5)
+    solver.solve(verbose=0, print_every=5)
     # initial_score = winner.score()
 
     # print(f'Schedule was printed to {filename}.')
@@ -47,7 +63,9 @@ def run_scheduler(save=None):
     # print(f'Score after processing: {winner.score()}')
     #allow for quit at any time?
 
+def main():
+    run_scheduler(save='2018_12_08__01_09_10')
 
 
 if __name__=="__main__":
-    run_scheduler(save="2018_12_07__18_52_41")
+    main()

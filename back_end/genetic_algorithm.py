@@ -3,10 +3,19 @@ import random
 import time
 import sqlite3
 
-
+_ITERATION=0
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
 _CLOSENESS_TO_COMPLETION=0
+
+def set_global_parameters(iteration,time_el):
+    global _ITERATION
+    global _START_TIME
+    _ITERATION=iteration
+    _START_TIME-=time_el
+
+
+
 class NotImplemented(Exception):
     pass
 class InvalidPeriodError(Exception):
@@ -287,7 +296,7 @@ class master_schedule(chromosome):
                 score-=100
 
         global _CLOSENESS_TO_COMPLETION
-        _CLOSENESS_TO_COMPLETION = max(0,score/self.theoretical_max_score)
+        _CLOSENESS_TO_COMPLETION = max(0,(score+.01)/self.theoretical_max_score)
         self.initialize_weights()
         return score if static else score+addl_score
 
@@ -508,23 +517,24 @@ class hill_climb_solo_2:
         self.current_sched=j
 
 
-    def solve(self, num_iterations=0, verbose=0, print_every=500):
+    def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
-        # global _ITERATION
+        global _ITERATION
         # _NUM_ITERATIONS=num_iterations
         last_save=-1
-        for i in range(1,num_iterations+1):
-            # if i%200==0:
-            #     print(i)
+        first_it=1
+        while 1:
             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
                 save_schedule(self.current_sched, self.outfolder)
                 print_schedule(self.current_sched, self.outfolder)
-            # _ITERATION=i
-            if i<10 or i % print_every == 0:
+            _ITERATION+=1
+            i=_ITERATION
+            if first_it==1 or i<10 or i % print_every == 0:
+                first_it=0
                 print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
             new_organism = self.current_sched.copy()
-            for i in range(int(1+15*random.random()*(1-_CLOSENESS_TO_COMPLETION**2))):
+            for i in range(int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION**6)))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -534,11 +544,14 @@ class hill_climb_solo_2:
             old_score=self.current_sched.preliminary_score()
             if new_score>=old_score:
                 self.current_sched=new_organism
+            if _CLOSENESS_TO_COMPLETION>1:
+                print('Scheduling complete.')
+                break
 
-        winner=self.current_sched
-        if verbose:
-            print(f'Winner: {winner}')
-        return winner
+        # winner=self.current_sched
+        # if verbose:
+        #     print(f'Winner: {winner}')
+        # return winner
 
 
 def save_schedule(master_sched,outfolder,verbose=1):
@@ -546,7 +559,7 @@ def save_schedule(master_sched,outfolder,verbose=1):
     # print('Saving schedules not yet implemented.')
     # print('Saving progress. '+current_time_formatted(round=0))
     if verbose:
-        print('Saving schedule.')
+        print(f'Saving schedule. ({_ITERATION})')
     outfile=outfolder+'/schedule.db'
     connection = sqlite3.connect(outfile)
     cursor = connection.cursor()
@@ -555,6 +568,7 @@ def save_schedule(master_sched,outfolder,verbose=1):
     command='INSERT INTO schedule(section,students,period) VALUES(?,?,?);'
     for i in master_sched.sections.values():
         cursor.execute(command,(i.id,'|'.join((j.studentID for j in i.students)),i.period))
+    cursor.execute('UPDATE metadata SET iteration=?,time_elapsed=?',(_ITERATION,time.perf_counter()-_START_TIME))
     connection.commit()
     connection.close()
     # print('Finished saving progress. '+current_time_formatted(round=0))

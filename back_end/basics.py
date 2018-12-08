@@ -12,9 +12,59 @@ List of problems that need to be addressed:
           define
 """
 import random
+import sys
+import logging
+import os
+import time
 # Global vars:
 _course_creation_disabled= 1
 # End global vars
+
+def start_logging(save):
+    logging.basicConfig(filename=f'{save}/log.log',level=logging.DEBUG, format=f"%(asctime)s|%(levelname)s|{os.getpid()}|%(message)s")
+    logging.Formatter.converter = time.gmtime
+
+    class Logger(object):
+        # Takes the place of stdout so everything printed to the console, in addition to being printed, also automatically gets logged.
+
+        def __init__(self):
+            self.terminal = sys.stdout
+            self.dir=save
+
+        def write(self, message):
+            self.terminal.write(message)
+            msg = message.strip()
+            if msg:
+                logging.info(msg)
+
+        def flush(self):
+            self.terminal.flush()
+
+
+    class Err_Logger(object):
+        # Takes the place of stdout so errors, in addition to being printed, also automatically get logged.
+
+        def __init__(self):
+            self.terminal = sys.stderr
+            self.dir = save
+
+        def write(self, message):
+            self.terminal.write(message)
+            msg = message.strip()
+            if msg:
+                logging.error(msg)
+
+        def flush(self):
+            self.terminal.flush()
+
+
+    sys.stdout = Logger()
+    sys.stderr = Err_Logger()
+    global _SAVE
+    _SAVE=save
+
+def get_save_loc():
+    return _SAVE
 
 def set_global_num_periods(num_perds):
     global num_periods
