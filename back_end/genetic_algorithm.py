@@ -621,10 +621,13 @@ def post_process(sched):
 
 def current_time_formatted(round=1):
     t=time.perf_counter()-_START_TIME
-    min=int(t//60)
+    hr=int(t//3600)
+    min=int(t//60)%60
     sec=t%60
     if round:
-        if min>0:
+        if hr>0:
+            return f'{hr} hr, {min} min, {sec:.2f} sec'
+        elif min>0:
             return f'{min} min, {sec:.2f} sec'
         else:
             return f'{sec:.2f} sec'
