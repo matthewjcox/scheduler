@@ -1,0 +1,9 @@
+{% if app_list %}
+    <ul>
+    {% for app in app_list %}
+        <li><a href="{% url app %}" >{{ app|slice:"0:-6" }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
