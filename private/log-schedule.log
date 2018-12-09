@@ -9219,3 +9219,26 @@ Not Found: /studentInput/stdView
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+[2018-12-08 22:54:53 -0500] [17684] [INFO] Starting gunicorn 19.9.0
+[2018-12-08 22:54:53 -0500] [17684] [INFO] Listening at: http://127.0.0.1:11356 (17684)
+[2018-12-08 22:54:53 -0500] [17684] [INFO] Using worker: sync
+[2018-12-08 22:54:53 -0500] [17687] [INFO] Booting worker with pid: 17687
+[2018-12-08 22:54:53 -0500] [17689] [INFO] Booting worker with pid: 17689
+[2018-12-08 22:54:53 -0500] [17690] [INFO] Booting worker with pid: 17690
+[2018-12-08 22:54:53 -0500] [17693] [INFO] Booting worker with pid: 17693
+[2018-12-09 04:15:15 +0000] [17689] [INFO] Worker exiting (pid: 17689)
+/web/projects/schedule/public/scheduleServer
+[2018-12-09 04:15:15 +0000] [17690] [INFO] Worker exiting (pid: 17690)
+[2018-12-09 04:15:15 +0000] [17693] [INFO] Worker exiting (pid: 17693)
+[2018-12-09 04:15:15 +0000] [17687] [INFO] Worker exiting (pid: 17687)
+[2018-12-08 23:15:15 -0500] [17684] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2018-12-08 23:15:16 -0500] [21528] [INFO] Starting gunicorn 19.9.0
+[2018-12-08 23:15:16 -0500] [21528] [INFO] Listening at: http://127.0.0.1:11356 (21528)
+[2018-12-08 23:15:16 -0500] [21528] [INFO] Using worker: sync
+[2018-12-08 23:15:16 -0500] [21531] [INFO] Booting worker with pid: 21531
+[2018-12-08 23:15:16 -0500] [21532] [INFO] Booting worker with pid: 21532
+[2018-12-08 23:15:16 -0500] [21534] [INFO] Booting worker with pid: 21534
+[2018-12-08 23:15:16 -0500] [21537] [INFO] Booting worker with pid: 21537
