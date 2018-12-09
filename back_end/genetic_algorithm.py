@@ -46,7 +46,7 @@ class chromosome:
         raise NotImplemented
 
     def __str__(self):
-        return f'{self.__class__.__name__} object, score={self.score()}'
+        return '{} object, score={}'.format(self.__class__.__name__,self.score())
 
 class knapsack(chromosome):
     def __init__(self,*args,**kwargs):
@@ -104,7 +104,7 @@ class knapsack(chromosome):
         return child
 
     def __str__(self):
-        return f'{self.l}, score={self.score()}'
+        return '{}, score={}'.format(self.l,self.score())
 
 def weighted_choice(elements,n,weights):
     assert .999<=sum(weights)<=1.001
@@ -501,7 +501,7 @@ class master_schedule(chromosome):
         return sched
 
     def __str__(self):
-        return f'{self.__class__.__name__} object, score={self.score()} ({self.preliminary_score(static=1)})'
+        return '{} object, score={} ({})'.format(self.__class__.__name__,self.score(),self.preliminary_score(static=1))
 
 
 class hill_climb_solo_2:
@@ -532,7 +532,7 @@ class hill_climb_solo_2:
             i=_ITERATION
             if first_it==1 or i<10 or i % print_every == 0:
                 first_it=0
-                print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
+                print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
             for i in range(int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION**6)))):
                 new_organism.mutate_period()
@@ -548,18 +548,12 @@ class hill_climb_solo_2:
                 print('Scheduling complete.')
                 break
 
-        # winner=self.current_sched
-        # if verbose:
-        #     print(f'Winner: {winner}')
-        # return winner
-
-
 def save_schedule(master_sched,outfolder,verbose=1):
     # return
     # print('Saving schedules not yet implemented.')
     # print('Saving progress. '+current_time_formatted(round=0))
     if verbose:
-        print(f'Saving schedule. ({_ITERATION})')
+        print('Saving schedule. ({})'.format(_ITERATION))
     outfile=outfolder+'/schedule.db'
     connection = sqlite3.connect(outfile)
     cursor = connection.cursor()
@@ -606,9 +600,9 @@ def fill_in_schedule(sched,num_it=3):
         for student in sched.students.values():
             it+=1
             if it%100==0:
-                print(f'Post-processing item {it} of {m_it}')
+                print('Post-processing item {} of {}'.format(it,m_it))
             sched.optimize_student(student,max_it=200,skip_if_filled=0)
-    print(f'Elapsed time: {current_time_formatted()}.')
+    print('Elapsed time: {}.'.format(current_time_formatted()))
     return sched
 #remove duplicated periods
 
@@ -626,11 +620,11 @@ def current_time_formatted(round=1):
     sec=t%60
     if round:
         if hr>0:
-            return f'{hr} hr, {min} min, {sec:.2f} sec'
+            return '{} hr, {} min, {:.2f} sec'.format(hr,min,sec)
         elif min>0:
-            return f'{min} min, {sec:.2f} sec'
+            return '{} min, {:.2f} sec'.format(min,sec)
         else:
-            return f'{sec:.2f} sec'
+            return '{:.2f} sec'.format(sec)
     else:
         return str(t)
 

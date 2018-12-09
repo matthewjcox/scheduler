@@ -13,7 +13,7 @@ class LockError(Exception):
     pass
 def run_scheduler(save=None):
     if save is None:
-        save=f'runs/past_runs/{datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")}'
+        save='runs/past_runs/'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
         os.mkdir(save)
         start_logging(save)
         param_file_name = 'runs/run_params.txt'
@@ -38,11 +38,11 @@ def run_scheduler(save=None):
     with open(param_file_name, 'r') as f:
         num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[i.strip() for i in f.readlines()]
     for i in classroom_fn, course_fn, teacher_fn, student_fn, section_fn:
-        if not os.path.isfile(f'{save}/{i}'):
+        if not os.path.isfile(save+'/'+i):
             shutil.copy2('runs/constraint_files/'+i, save)
     num_periods=int(num_periods.strip())
     set_global_num_periods(num_periods)
-    classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[f'{save}/{i}' for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
+    classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[save+'/'+i for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
     classrooms={}
     courses={}
     teachers={}
@@ -56,12 +56,7 @@ def run_scheduler(save=None):
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
     solver.solve(verbose=0, print_every=5)
-    # initial_score = winner.score()
 
-    # print(f'Schedule was printed to {filename}.')
-    # print(f'Initial score: {initial_score}')
-    # print(f'Score after processing: {winner.score()}')
-    #allow for quit at any time?
 
 def main():
     run_scheduler(save='2018_12_08__01_09_10')

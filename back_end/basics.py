@@ -21,7 +21,7 @@ _course_creation_disabled= 1
 # End global vars
 
 def start_logging(save):
-    logging.basicConfig(filename=f'{save}/log.log',level=logging.DEBUG, format=f"%(asctime)s|%(levelname)s|{os.getpid()}|%(message)s")
+    logging.basicConfig(filename=save+'/log.log',level=logging.DEBUG, format="%(asctime)s|%(levelname)s|{}|%(message)s".format(os.getpid()))
     logging.Formatter.converter = time.gmtime
 
     class Logger(object):
@@ -102,13 +102,13 @@ class Teacher:
     def long_string(self):
         # courses=self.willTeach.to_str() if self.willTeach else '\n\tNone'
         schedule='\n\n'.join([i.long_string() for i in self.sched]) if self.sched else '\n\tNot yet assigned.'
-        return f'{self.firstName} {self.lastName} ({self.teacherID})\n\tSchedule:\n{schedule}'
+        return '{} {} ({})\n\tSchedule:\n{}'.format(self.firstName,self.lastName,self.teacherID,schedule)
 
     def copy(self):
         return Teacher(self.lastName,self.firstName,self.teacherID, self.willTeach)
 
     def __str__(self):
-        return f'{self.firstName} {self.lastName} ({self.teacherID})'
+        return '{} {} ({})'.format(self.firstName,self.lastName,self.teacherID)
 
     def __hash__(self):
         return hash(self.teacherID)
@@ -198,15 +198,15 @@ class Student:
     def long_string(self):
         requests=self.courses.to_str() if self.courses else '\n\t\tNone'
         schedule='\n\t'.join(self.sched) if self.sched else '\n\t\tNot yet assigned.'
-        return f'{self.firstName} {self.lastName} ({self.studentID})\nRequests:\n{requests}\nSchedule:{schedule}'
+        return '{} {} ({})\nRequests:\n{}\nSchedule:{}'.format(self.firstName,self.lastName,self.studentID,requests,schedule)
 
     def medium_string(self):
         requests = self.courses.to_str() if self.courses else '\n\t\tNone'
         sched='\n\t\t'.join([i.__repr__() for i in self.sched])
-        return f'{requests}\n\tSchedule:\n\t\t{sched}'
+        return '{}\n\tSchedule:\n\t\t{}'.format(requests,sched)
 
     def __str__(self):
-        return f'{self.firstName} {self.lastName} ({self.studentID})'
+        return '{} {} ({})'.format(self.firstName,self.lastName,self.studentID)
 
 
     def copy(self):
@@ -320,17 +320,17 @@ class Section:
         students = ", ".join([str(i) for i in self.students])
         # periods=", ".join([str(i) for i in self.period])
         teamedwith=', '.join([str(i) for i in self.teamed_sections])
-        res=f'\t\tSection ID: {self.id}\n\t\tPeriod: {self.period}\n\t\tMax student count: {self.maxstudents}\n\t\tCourse(s): {courses}\n\t\tTeacher(s): {teachers}\n\t\tRoom(s): {rooms}\n\t\tStudent(s) ({len(self.students)}): {students}'
+        res='\t\tSection ID: {}\n\t\tPeriod: {}\n\t\tMax student count: {}\n\t\tCourse(s): {}\n\t\tTeacher(s): {}\n\t\tRoom(s): {}\n\t\tStudent(s) ({}): {}'.format(self.id,self.period,self.maxstudents,courses,teachers,rooms,len(self.students),students)
         if self.teamed_sections:
-            res+=f'\n\t\tTeamed with: {teamedwith}'
+            res+='\n\t\tTeamed with: '+teamedwith
         return res
 
 
     def __str__(self):
-        return f'Section {self.id}'
+        return 'Section '+self.id
 
     def __repr__(self):
-        return f'Section {self.id}: {next(iter(self.teachers)).lastName if self.teachers else "Teacherless"} {next(iter(self.courses)).name if self.courses else "Courseless"} P{self.period} {"YR" if not self.semester else "S"+str(self.semester)}'
+        return 'Section {}: {} {} P{} {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester))
 
     def __hash__(self):
         return hash(object.__repr__(self))
@@ -349,7 +349,7 @@ class Student_Courses:
     def to_str(self):
         cs='\n\t\t'.join(['']+[str(i) for i in self.courses]) if self.courses else '\n\t\tNone'
         alts='\n\t\t'.join(['']+self.alternates) if self.alternates else '\n\t\tNone'
-        return f'\tCourses:{cs}\n\tAlternates:{alts}'
+        return '\tCourses:{}\n\tAlternates:{}'.format(cs,alts)
 
 
 
