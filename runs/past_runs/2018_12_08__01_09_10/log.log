@@ -18974,6 +18974,35 @@
 2018-12-09 03:52:28,789|INFO|33528|Round 61220: score 10739.60 (11128). Elapsed time: 23 hr, 41 min, 35.59 sec.
 2018-12-09 03:52:34,368|INFO|33528|Saving schedule. (61223)
 2018-12-09 03:52:35,958|INFO|33528|Round 61225: score 10739.60 (11128). Elapsed time: 23 hr, 41 min, 42.76 sec.
+<<<<<<< HEAD
+2018-12-09 04:03:17,476|INFO|19255|1
+2018-12-09 04:03:17,490|INFO|19255|Saving schedule. (61223)
+2018-12-09 04:03:17,847|INFO|19255|Round 61224: score 12172.35 (11128). Elapsed time: 23 hr, 41 min, 41.81 sec.
+2018-12-09 04:03:19,802|INFO|19255|Round 61225: score 10739.60 (11128). Elapsed time: 23 hr, 41 min, 43.77 sec.
+2018-12-09 04:03:27,554|INFO|19255|Saving schedule. (61228)
+2018-12-09 04:03:29,833|INFO|19255|Round 61230: score 10739.60 (11128). Elapsed time: 23 hr, 41 min, 53.80 sec.
+2018-12-09 04:03:36,556|INFO|19255|Saving schedule. (61233)
+2018-12-09 04:03:39,029|INFO|19255|Round 61235: score 10739.60 (11128). Elapsed time: 23 hr, 42 min, 3.00 sec.
+2018-12-09 04:03:46,053|INFO|19255|Saving schedule. (61238)
+2018-12-09 04:03:48,218|INFO|19255|Round 61240: score 10739.60 (11128). Elapsed time: 23 hr, 42 min, 12.19 sec.
+2018-12-09 04:03:57,181|INFO|19255|Saving schedule. (61244)
+2018-12-09 04:03:57,757|INFO|19255|Round 61245: score 10739.60 (11128). Elapsed time: 23 hr, 42 min, 21.72 sec.
+2018-12-09 04:04:07,184|INFO|19255|Saving schedule. (61249)
+2018-12-09 04:04:07,542|INFO|19255|Round 61250: score 10739.60 (11128). Elapsed time: 23 hr, 42 min, 31.51 sec.
+2018-12-09 04:04:15,460|ERROR|19255|Traceback (most recent call last):
+2018-12-09 04:04:15,460|ERROR|19255|File "back_end/run_schedule.py", line 66, in <module>
+2018-12-09 04:04:15,460|ERROR|19255|main()
+2018-12-09 04:04:15,461|ERROR|19255|File "back_end/run_schedule.py", line 62, in main
+2018-12-09 04:04:15,461|ERROR|19255|run_scheduler(save='2018_12_08__01_09_10')
+2018-12-09 04:04:15,461|ERROR|19255|File "back_end/run_schedule.py", line 58, in run_scheduler
+2018-12-09 04:04:15,461|ERROR|19255|solver.solve(verbose=0, print_every=5)
+2018-12-09 04:04:15,461|ERROR|19255|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 542, in solve
+2018-12-09 04:04:15,462|ERROR|19255|new_organism.optimize_student(i,max_it=15)
+2018-12-09 04:04:15,462|ERROR|19255|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 384, in optimize_student
+2018-12-09 04:04:15,462|ERROR|19255|courses[j]=[]
+2018-12-09 04:04:15,462|ERROR|19255|File "/web/projects/schedule/back_end/basics.py", line 178, in __hash__
+2018-12-09 04:04:15,463|ERROR|19255|return hash(self.courseID)
+2018-12-09 04:04:15,463|ERROR|19255|KeyboardInterrupt
 2018-12-09 04:09:28,700|INFO|28292|1
 2018-12-09 04:09:28,851|INFO|28292|Saving schedule. (61223)
 2018-12-09 04:09:29,162|INFO|28292|Round 61224: score 12172.35 (11128). Elapsed time: 23 hr, 41 min, 41.91 sec.
