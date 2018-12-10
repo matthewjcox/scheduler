@@ -304,18 +304,6 @@ class master_schedule(chromosome):
     def score_student(self,student):
         base_score,addl_score=self.score_student_sections(student)
         base_score+=self.score_student_courses(student)
-
-
-        # for j in student.courses.courses:
-        #     times_represented = 0
-        #     for k in student.sched:
-        #         if j in k.courses:
-        #             times_represented += 1
-        #     if times_represented == 1:
-        #         base_score += self.correct_course_score_delta
-        #     elif times_represented > 1:
-        #         base_score += self.duplicate_correct_course_score_delta
-
         return (base_score+addl_score,base_score)
 
     def score_student_sections(self,student):
@@ -338,9 +326,6 @@ class master_schedule(chromosome):
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
-            # for i in j.teamed_sections:
-            #     if i not in student.sched:
-            #         addl_score += self.missing_teamed_class_delta
             addl_score += self.rare_class_bonus * len(self.course_sections[next(iter(j.courses))]) ** -2.5
         return base_score,addl_score
 
@@ -397,13 +382,13 @@ class master_schedule(chromosome):
                 break
 
             s=sorted(self.course_sections[i],key=lambda i:random.random())
+            new_section=None
             for i in s:
                 if i.space_available():
                     new_section=i
                     break
-            # else:
-            #     continue
-
+            if new_section is None:
+                continue
 
             for i in student.sched:
                 if i.period==new_section.period:
