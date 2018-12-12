@@ -1,4 +1,7 @@
 '''
+NOTE: Code assumes files are stored in folders with a file called read_params.txt, and that all files listed in
+read_params.txt are in that folder as well.
+
 Statistics to include
 - Percentage of course requests fulfilled
 - Number of students with empty periods (or just total number of empty periods on students' schedules)
@@ -17,10 +20,20 @@ import tabulate
 
 # First command line argument: file with run data to interpret
 toInterpret = sys.argv[1]  # Currently, ../../runs/perfect_schedule.txt
-# Second command line argument: file with course information used in that run
-coursesText = sys.argv[2]  # Currently, ../../runs/constraint_files/courses.txt
-# Third command line argument: file with teacher information used in that run
-teachersText = sys.argv[3]  # Currently, ../../runs/constraint_files/teamed_3_teachers.txt
+
+directory = re.search('/.*', toInterpret[::-1]).group(0)[::-1][:-1]
+
+runParamsFile = open(directory + "/run_params.txt")
+# runParams is an array of the run paramters (text files used in run). [(0) periods in a day, (1) classrooms.txt, (2) courses.txt, (3) teachers.txt, (4) students.txt, (5) sections.txt]
+runParams = [line.strip() for line in runParamsFile.readlines()]
+print(runParams)
+
+# Creates dictionary of course IDs to relevant info about courses from the courses.txt file
+courseFile = open(directory +"/" + runParams[2])
+# FIX THIS COMMAND SO IT BUILDS THE CORRECT DICTIONARY!!!!
+print([line.split("| ") for line in courseFile.readlines()])
+courses = {course[2]:course[:2] + [course[3]] for course in [line.split("| ") for line in courseFile.readlines()]}
+print(courses)
 
 # Opens the file with run information to analyze
 file = open(toInterpret, 'r')
@@ -68,32 +81,32 @@ for x in range(numSections):
     # print(sections[section])
 
 # students is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
-students = {}
+studentScheds = {}
 
 numStuds = int(file.readline()[:-1])
 # Initiates a for-loop that runs for each student in the case.
 for x in range(numStuds):
     # Finds the student ID of the current student as a string.
     curStud = re.search(r'\(.*\)', file.readline()).group(0)[1:-1]
-    # Adds the student number as a key in students and initiats a list as the associated value with the first element as the student ID.
-    students[curStud] = [curStud, [], [], []]
+    # Adds the student number as a key in studentScheds and initiats a list as the associated value with the first element as the student ID.
+    studentScheds[curStud] = [curStud, [], [], []]
     nextLine = file.readline()
     while not re.search('Alternates:', nextLine):
-        students[curStud][1].append(re.search(r'\w*(?= )', nextLine).group(0))
+        studentScheds[curStud][1].append(re.search(r'\w*(?= )', nextLine).group(0))
         nextLine = file.readline()
     nextLine = file.readline()
     while not re.search('None', nextLine) and not re.search('Schedule:', nextLine):
-        students[curStud][2].append(re.search(r'\w*(?= )', nextLine).group(0))
+        studentScheds[curStud][2].append(re.search(r'\w*(?= )', nextLine).group(0))
         nextLine = file.readline()
     if re.search('None', nextLine):
         file.readline()
     nextLine = file.readline()
     while not nextLine == "\n":
-        students[curStud][3].append(re.search(r'\w*(?=:)', nextLine[9:]).group(0))
+        studentScheds[curStud][3].append(re.search(r'\w*(?=:)', nextLine[9:]).group(0))
         nextLine = file.readline()
-    #print(students[curStud])
+    #print(studentScheds[curStud])
 
-for student in students.values():
+for student in studentScheds.values():
     student.append([])
     for section in student[3]:
         student[4].append(sections[section][3])
@@ -112,7 +125,7 @@ statFile.write("Number of empty spots in student schedules: " + (emptySeats-theo
 totalRequests = 0
 fulfilledRequests = 0
 unrecievedCourses = {}
-for student in students.values():
+for student in studentScheds.values():
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
     fulfilledRequests += len(student[1]) - len(unfulfilledSet)
@@ -126,7 +139,7 @@ statFile.write("Percentage of Course Requests Fulfilled: " + percentFulfilled + 
 # Calculate number of student conflicts (number of periods during which one student has two sections)
 studentConflicts = 0
 studentsWithConflicts = []
-for student in students.values():
+for student in studentScheds.values():
     periods = {}
     for sect in student[3]:
         per = sections[sect][1]
@@ -145,17 +158,17 @@ else:
     statFile.write("None\n")
 
 # Calculate number of teacher conflicts (number of periods during which one teacher has two sections)
-teachers = {}
+teacherCons = {}
 for sect in sections.values():
     for teacher in sect[4]:
-        if not teacher in teachers.keys():
-            teachers[teacher] = []
-        teachers[teacher].append(sect[1])
+        if not teacher in teacherCons.keys():
+            teacherCons[teacher] = []
+        teacherCons[teacher].append(sect[1])
 teachersWithCons = []
 teacherConflicts = 0
-for teacher in teachers.keys():
+for teacher in teacherCons.keys():
     periods = {}
-    for period in teachers[teacher]:
+    for period in teacherCons[teacher]:
         if not period in periods.keys():
             periods[period] = 0
         periods[period] += 1
