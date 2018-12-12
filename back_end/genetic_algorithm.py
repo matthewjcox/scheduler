@@ -230,6 +230,9 @@ class master_schedule(chromosome):
                 for j in i.sched:
                     if j.period==new_period:
                         self.change_to_period(j,old_period,reached)
+            for j in section.teamed_sections:
+                if j.period == new_period:
+                    self.change_to_period(j, old_period, reached)
         except InvalidPeriodError:
             section.set_period(old_period)
             raise
@@ -243,7 +246,7 @@ class master_schedule(chromosome):
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-1000
-        self.course_period_overlap=-1
+        self.course_period_overlap=-10
 
     def preliminary_score(self,static=0):
         if not self.initialized:
@@ -295,9 +298,6 @@ class master_schedule(chromosome):
             if len(i.students)>i.maxstudents:
                 score-=100
 
-        # global _CLOSENESS_TO_COMPLETION
-        # _CLOSENESS_TO_COMPLETION = max(0,(score+.01)/self.theoretical_max_score)
-        # self.initialize_weights()
         return score if static else score+addl_score
 
 
@@ -525,7 +525,8 @@ class hill_climb_solo_2:
                 first_it=0
                 print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
-            for i in range(int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION**6)))):
+            num_mutations=int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION)))
+            for i in range(num_mutations):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -539,6 +540,9 @@ class hill_climb_solo_2:
             if _CLOSENESS_TO_COMPLETION>1:
                 print('Scheduling complete.')
                 break
+
+            # if _ITERATION>420:
+            #     break
 
 def save_schedule(master_sched,outfolder,verbose=1):
     # return

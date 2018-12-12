@@ -193,25 +193,25 @@ class Student:
 
         self.sched = set()
 
-    def add_section(self,section):
-        if section in self.sched:
-            return
-        self.sched.add(section)
-        section.students.add(self)
-        for i in section.courses:
-            if i in self.teamed:
-                for j in self.teamed[i]:
-                     section.add_student(j)
-
-    def remove_section(self,section):
-        if section not in self.sched:
-            return
-        self.sched.remove(section)
-        section.students.remove(self)
-        for i in section.courses:
-            if i in self.teamed:
-                for j in self.teamed[i]:
-                    section.remove_student(j)
+    # def add_section(self,section):
+    #     if section in self.sched:
+    #         return
+    #     self.sched.add(section)
+    #     section.students.add(self)
+    #     for i in section.courses:
+    #         if i in self.teamed:
+    #             for j in self.teamed[i]:
+    #                  section.add_student(j)
+    #
+    # def remove_section(self,section):
+    #     if section not in self.sched:
+    #         return
+    #     self.sched.remove(section)
+    #     section.students.remove(self)
+    #     for i in section.courses:
+    #         if i in self.teamed:
+    #             for j in self.teamed[i]:
+    #                 section.remove_student(j)
 
     def team(self,course,student):
         if course not in self.teamed:
@@ -271,7 +271,12 @@ class Section:
         # self.add_student_old(student)
         if student in self.students:
             return
-        student.add_section(self)
+        student.sched.add(self)
+        self.students.add(student)
+        for i in self.courses:
+            if i in student.teamed:
+                for j in student.teamed[i]:
+                    self.add_student(j)
         for i in self.teamed_sections:
             i.add_student(student)
 
@@ -279,9 +284,15 @@ class Section:
         # self.remove_student_old(student)
         if student not in self.students:
             return
-        student.remove_section(self)
+        student.sched.remove(self)
+        self.students.remove(student)
+        for i in self.courses:
+            if i in student.teamed:
+                for j in student.teamed[i]:
+                    self.remove_student(j)
         for i in self.teamed_sections:
             i.remove_student(student)
+
 
     # def add_student_old(self, student):
     #     if student in self.students:
