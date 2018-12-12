@@ -102,6 +102,28 @@ def read_students(studentfn,students,all_courses):
                 print(e)
                 raise
 
+def read_student_teaming(studentteamfn,students,all_courses):
+    with open(studentteamfn, 'r') as f:
+        data = f.readlines()
+        i = 0
+        while i < len(data):
+            try:
+                courseid,num_students = [i.strip() for i in data[i].split(' ')]
+                i += 1
+                course=all_courses[courseid]
+                num_students=int(num_students)
+                stud0=None
+                for j in range(num_students):
+                    if stud0 is None:
+                        stud0=students[data[i].strip()]
+                    else:
+                        stud=students[data[i].strip()]
+                        stud0.team(course,stud)
+                i += num_students + 1
+            except IndexError as e:
+                print(e)
+                raise
+
 
 def read_sections(sectionfn,sections,num_periods,classrooms,courses,teachers,students):
     with open(sectionfn, 'r') as f:
