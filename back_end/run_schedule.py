@@ -36,13 +36,13 @@ def run_scheduler(save=None):
         connection.commit()
         connection.close()
     with open(param_file_name, 'r') as f:
-        num_periods,classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[i.strip() for i in f.readlines()]
-    for i in classroom_fn, course_fn, teacher_fn, student_fn, section_fn:
+        num_periods,classroom_fn, course_fn, teacher_fn, student_fn, student_team_fn, section_fn=[i.strip() for i in f.readlines()]
+    for i in classroom_fn, course_fn, teacher_fn, student_fn, student_team_fn, section_fn:
         if not os.path.isfile(save+'/'+i):
             shutil.copy2('runs/constraint_files/'+i, save)
     num_periods=int(num_periods.strip())
     set_global_num_periods(num_periods)
-    classroom_fn, course_fn, teacher_fn, student_fn, section_fn=[save+'/'+i for i in (classroom_fn, course_fn,  teacher_fn, student_fn, section_fn)]
+    classroom_fn, course_fn, teacher_fn, student_fn,student_team_fn, section_fn=[save+'/'+i for i in (classroom_fn, course_fn,  teacher_fn, student_fn,student_team_fn, section_fn)]
     classrooms={}
     courses={}
     teachers={}
@@ -52,6 +52,7 @@ def run_scheduler(save=None):
     read_courses(course_fn,courses)
     read_teachers(teacher_fn,teachers)
     read_students(student_fn,students,courses)
+    read_student_teaming(student_team_fn,students,courses)
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)

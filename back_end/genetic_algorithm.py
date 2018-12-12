@@ -295,11 +295,17 @@ class master_schedule(chromosome):
             if len(i.students)>i.maxstudents:
                 score-=100
 
-        global _CLOSENESS_TO_COMPLETION
-        _CLOSENESS_TO_COMPLETION = max(0,(score+.01)/self.theoretical_max_score)
-        self.initialize_weights()
+        # global _CLOSENESS_TO_COMPLETION
+        # _CLOSENESS_TO_COMPLETION = max(0,(score+.01)/self.theoretical_max_score)
+        # self.initialize_weights()
         return score if static else score+addl_score
 
+
+    def set_progress(self):
+        score=self.preliminary_score(static=1)
+        global _CLOSENESS_TO_COMPLETION
+        _CLOSENESS_TO_COMPLETION = max(0, (score + .01) / self.theoretical_max_score)
+        self.initialize_weights
 
     def score_student(self,student):
         base_score,addl_score=self.score_student_sections(student)
@@ -529,6 +535,7 @@ class hill_climb_solo_2:
             old_score=self.current_sched.preliminary_score()
             if new_score>=old_score:
                 self.current_sched=new_organism
+            self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
                 print('Scheduling complete.')
                 break
