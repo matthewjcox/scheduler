@@ -26,11 +26,14 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
     elif field == 'maxstudents':
         v = int(value)
         s.set_max_students(v)
+    elif field == 'minstudents':
+        v = int(value)
+        s.set_min_students(v)
     elif field == 'allowed_periods':
         v=[int(i.strip()) for i in value.split(',')]
         s.set_allowed_periods(v)
     else:
-        print(f'Error entering data for section {s.id}: no attribute {field}')
+        print('Error entering data for section {}: no attribute {}'.format(s.id,field))
         raise ReferenceError
 
 def read_classrooms(classroom_fn,classrooms):
@@ -46,7 +49,7 @@ def read_courses(course_fn,courses):
             try:
                 course = Course.create_new(*line)
             except:
-                print(f'Error reading course: {line}')
+                print('Error reading course: '+line)
                 raise
             courses[course.courseID] = course
 

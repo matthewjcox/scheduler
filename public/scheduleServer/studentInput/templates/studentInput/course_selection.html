@@ -1,0 +1,28 @@
+<h1>Course Selection</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+
+<form action="{% url 'studentInput:submit' %}" method="post">
+{% csrf_token %}
+Username (eg. 2021jbrown):<br>
+<input type = "text" name = "username"><br>
+<br>
+{% for num in courseNum %}
+    Course {{ forloop.counter }}:
+    <input type ="text" name = "course{{ forloop.counter }}" onblur="displayCourseName({{ forloop.counter }})">
+    <div id="name{{ forloop.counter }}" style="display:inline-block"></div>
+    <br>
+{% endfor %}
+<input type="submit" value="Submit Course Request">
+</form>
+
+
+<script>
+    function displayCourseName(numCourse){
+        document.getElementById("name" + numCourse).innerHTML = "validated";
+    }
+</script>
+
+{% include "projectIndex/expandable_course_list.html" %}

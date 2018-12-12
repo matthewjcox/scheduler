@@ -1,0 +1,44 @@
+<!-- Takes in category_list as input/context -->
+<style>
+    th {
+        text-align: left;
+    }
+</style>
+
+{% for category in category_list %}
+    <script>
+        function toggle{{category|cut:" "|cut:":"}}() {
+            var x = document.getElementById("{{category|cut:" "|cut:":"}}");
+            if (x.style.display == "none"){
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <button onclick="toggle{{category|cut:" "|cut:":"}}()">{{category}}</button>
+    <div id = "{{category|cut:" "|cut:":"}}" style = "display:none">
+        <style>
+        th {
+            text-align: left;
+        }
+    </style>
+    <table style = "width:100%">
+        <tr>
+            <th>Course Name</th>
+            <th>Course ID</th>
+            <th>Credits</th>
+            <th>Description</th>
+        </tr>
+        {% for course in category.course_set.all%}
+            <tr>
+                <td>{{course.course_name}}</td>
+                <td>{{course.course_id}}</td>
+                <td>{{course.course_credits}} / weighted +{{course.course_weight}}</td>
+                <td>{{course.course_description}}</td>
+            </tr>
+        {%endfor%}
+    </table>
+    </div>
+    <br>
+{% endfor %}

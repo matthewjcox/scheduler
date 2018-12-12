@@ -1,0 +1,13 @@
+<h1>Request Editor</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+
+<form action="{% url 'counselorEditor:edit' %}" method="post">
+{% csrf_token %}
+Username (eg. 2021jbrown):<br>
+<input type = "text" name = "username"><br>
+<br>
+<button type = 'submit' accesskey="f"><u>F</u>ind Student</button>
+</form>

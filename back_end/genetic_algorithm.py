@@ -3,10 +3,19 @@ import random
 import time
 import sqlite3
 
-
+_ITERATION=0
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
 _CLOSENESS_TO_COMPLETION=0
+
+def set_global_parameters(iteration,time_el):
+    global _ITERATION
+    global _START_TIME
+    _ITERATION=iteration
+    _START_TIME-=time_el
+
+
+
 class NotImplemented(Exception):
     pass
 class InvalidPeriodError(Exception):
@@ -37,7 +46,7 @@ class chromosome:
         raise NotImplemented
 
     def __str__(self):
-        return f'{self.__class__.__name__} object, score={self.score()}'
+        return '{} object, score={}'.format(self.__class__.__name__,self.score())
 
 class knapsack(chromosome):
     def __init__(self,*args,**kwargs):
@@ -95,7 +104,7 @@ class knapsack(chromosome):
         return child
 
     def __str__(self):
-        return f'{self.l}, score={self.score()}'
+        return '{}, score={}'.format(self.l,self.score())
 
 def weighted_choice(elements,n,weights):
     assert .999<=sum(weights)<=1.001
@@ -126,8 +135,6 @@ class master_schedule(chromosome):
         self.sections={}
         self.initialized = 0
         self.course_sections = {}
-        self.correct_course_score_delta = 4
-        self.theoretical_max_score=self.correct_course_score_delta*len(self.stock_students)*self.num_periods
 
 
     def blank_new(self):
@@ -168,11 +175,11 @@ class master_schedule(chromosome):
                     s.fix_period()
                 for j in i.teamed_sections:
                     self.teams.append((s,j.id))
-                for sect in self.sections.values():
-                    for course in sect.courses:
-                        if course not in self.course_sections:
-                            self.course_sections[course] = []
-                        self.course_sections[course].append(sect)
+            for sect in self.sections.values():
+                for course in sect.courses:
+                    if course not in self.course_sections:
+                        self.course_sections[course] = []
+                    self.course_sections[course].append(sect)
             for i,j in self.teams:
                 other=self.sections[j]
                 i.team_with(other)
@@ -230,9 +237,11 @@ class master_schedule(chromosome):
     def initialize_weights(self):
         self.student_conflict_score_delta = -200
         self.teacher_conflict_score_delta = -250
+        self.correct_course_score_delta = 4
+        self.theoretical_max_score = self.correct_course_score_delta * len(self.stock_students) * self.num_periods
 
         self.duplicate_correct_course_score_delta = -5
-        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION)
+        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-1
 
@@ -287,7 +296,7 @@ class master_schedule(chromosome):
                 score-=100
 
         global _CLOSENESS_TO_COMPLETION
-        _CLOSENESS_TO_COMPLETION = max(0,score/self.theoretical_max_score)
+        _CLOSENESS_TO_COMPLETION = max(0,(score+.01)/self.theoretical_max_score)
         self.initialize_weights()
         return score if static else score+addl_score
 
@@ -295,18 +304,6 @@ class master_schedule(chromosome):
     def score_student(self,student):
         base_score,addl_score=self.score_student_sections(student)
         base_score+=self.score_student_courses(student)
-
-
-        # for j in student.courses.courses:
-        #     times_represented = 0
-        #     for k in student.sched:
-        #         if j in k.courses:
-        #             times_represented += 1
-        #     if times_represented == 1:
-        #         base_score += self.correct_course_score_delta
-        #     elif times_represented > 1:
-        #         base_score += self.duplicate_correct_course_score_delta
-
         return (base_score+addl_score,base_score)
 
     def score_student_sections(self,student):
@@ -329,9 +326,6 @@ class master_schedule(chromosome):
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
-            # for i in j.teamed_sections:
-            #     if i not in student.sched:
-            #         addl_score += self.missing_teamed_class_delta
             addl_score += self.rare_class_bonus * len(self.course_sections[next(iter(j.courses))]) ** -2.5
         return base_score,addl_score
 
@@ -388,13 +382,13 @@ class master_schedule(chromosome):
                 break
 
             s=sorted(self.course_sections[i],key=lambda i:random.random())
+            new_section=None
             for i in s:
                 if i.space_available():
                     new_section=i
                     break
-            # else:
-            #     continue
-
+            if new_section is None:
+                continue
 
             for i in student.sched:
                 if i.period==new_section.period:
@@ -492,7 +486,7 @@ class master_schedule(chromosome):
         return sched
 
     def __str__(self):
-        return f'{self.__class__.__name__} object, score={self.score()} ({self.preliminary_score(static=1)})'
+        return '{} object, score={} ({})'.format(self.__class__.__name__,self.score(),self.preliminary_score(static=1))
 
 
 class hill_climb_solo_2:
@@ -508,22 +502,24 @@ class hill_climb_solo_2:
         self.current_sched=j
 
 
-    def solve(self, num_iterations=0, verbose=0, print_every=500):
+    def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
-        # global _ITERATION
+        global _ITERATION
         # _NUM_ITERATIONS=num_iterations
         last_save=-1
-        for i in range(1,num_iterations+1):
-            # if i%200==0:
-            #     print(i)
+        first_it=1
+        while 1:
             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
                 save_schedule(self.current_sched, self.outfolder)
-            # _ITERATION=i
-            if i<10 or i % print_every == 0:
-                print(f'Round {i}: score {self.current_sched.score():.2f} ({self.current_sched.preliminary_score(static=1)}). Elapsed time: {current_time_formatted()}.')
+                print_schedule(self.current_sched, self.outfolder)
+            _ITERATION+=1
+            i=_ITERATION
+            if first_it==1 or i<10 or i % print_every == 0:
+                first_it=0
+                print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
-            for i in range(int(1+15*random.random()*(1-_CLOSENESS_TO_COMPLETION))):
+            for i in range(int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION**6)))):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
             for _ in range(2):
@@ -533,19 +529,16 @@ class hill_climb_solo_2:
             old_score=self.current_sched.preliminary_score()
             if new_score>=old_score:
                 self.current_sched=new_organism
-
-        winner=self.current_sched
-        if verbose:
-            print(f'Winner: {winner}')
-        return winner
-
+            if _CLOSENESS_TO_COMPLETION>1:
+                print('Scheduling complete.')
+                break
 
 def save_schedule(master_sched,outfolder,verbose=1):
     # return
     # print('Saving schedules not yet implemented.')
     # print('Saving progress. '+current_time_formatted(round=0))
     if verbose:
-        print('Saving schedule.')
+        print('Saving schedule. ({})'.format(_ITERATION))
     outfile=outfolder+'/schedule.db'
     connection = sqlite3.connect(outfile)
     cursor = connection.cursor()
@@ -554,10 +547,27 @@ def save_schedule(master_sched,outfolder,verbose=1):
     command='INSERT INTO schedule(section,students,period) VALUES(?,?,?);'
     for i in master_sched.sections.values():
         cursor.execute(command,(i.id,'|'.join((j.studentID for j in i.students)),i.period))
+    cursor.execute('UPDATE metadata SET iteration=?,time_elapsed=?',(_ITERATION,time.perf_counter()-_START_TIME))
     connection.commit()
     connection.close()
     # print('Finished saving progress. '+current_time_formatted(round=0))
 
+def print_schedule(master_sched,outfolder):
+    # master_sched = fill_in_schedule(master_sched)
+    # print(master_sched)
+
+    filename = outfolder+'/readable_schedule.txt'
+
+    with open(filename, 'w') as f:
+        f.write(str(len(master_sched.sections)) + '\n')
+        for i in master_sched.sections.values():
+            f.write(i.long_string())
+            f.write('\n\n')
+        f.write(str(len(master_sched.students)) + '\n')
+        for i in master_sched.students.values():
+            f.write(str(i))
+            f.write(i.medium_string())
+            f.write('\n\n')
 
 def diagnostics(master_sched):
     #Teacher conflicts
@@ -575,9 +585,9 @@ def fill_in_schedule(sched,num_it=3):
         for student in sched.students.values():
             it+=1
             if it%100==0:
-                print(f'Post-processing item {it} of {m_it}')
+                print('Post-processing item {} of {}'.format(it,m_it))
             sched.optimize_student(student,max_it=200,skip_if_filled=0)
-    print(f'Elapsed time: {current_time_formatted()}.')
+    print('Elapsed time: {}.'.format(current_time_formatted()))
     return sched
 #remove duplicated periods
 
@@ -590,13 +600,16 @@ def post_process(sched):
 
 def current_time_formatted(round=1):
     t=time.perf_counter()-_START_TIME
-    min=int(t//60)
+    hr=int(t//3600)
+    min=int(t//60)%60
     sec=t%60
     if round:
-        if min>0:
-            return f'{min} min, {sec:.2f} sec'
+        if hr>0:
+            return '{} hr, {} min, {:.2f} sec'.format(hr,min,sec)
+        elif min>0:
+            return '{} min, {:.2f} sec'.format(min,sec)
         else:
-            return f'{sec:.2f} sec'
+            return '{:.2f} sec'.format(sec)
     else:
         return str(t)
 

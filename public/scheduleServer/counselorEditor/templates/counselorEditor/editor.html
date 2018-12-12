@@ -1,0 +1,25 @@
+{% include "counselorEditor/search.html"%}
+
+<form action="{% url 'counselorEditor:search' %}" method="post">
+{% csrf_token %}
+<br>
+{% for course in course_list %}
+    Course {{ forloop.counter }}:
+    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course.course_id}}" onblur="displayCourseName({{ forloop.counter }})">
+    <div id="name{{ forloop.counter }}" style="display:inline-block">Course Name</div>
+    <br>
+{% endfor %}
+<input type="hidden" name="username" value="{{student}}">
+<input type="hidden" name="message" value="Changes Saved">
+<button type = 'submit' accesskey='s' ><u>S</u>ubmit Course Request</button>
+</form>
+
+<script>
+    function displayCourseName(numCourse){
+        document.getElementById("name" + numCourse).innerHTML = "update Course Name";
+    }
+</script>
+
+
+<br>
+{% include "projectIndex/expandable_course_list.html" %}
