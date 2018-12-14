@@ -61,7 +61,6 @@ def read_teachers(teacherfn,teachers):
         for i in range(len(data)):
             try:
                 teacherinfo=data[i].strip()
-                teacherinfo=data[i].strip()
                 if len(teacherinfo)==0:
                     continue
                 fn,ln,teacher_id=teacherinfo.split(',')
@@ -115,9 +114,9 @@ def read_student_teaming(studentteamfn,students,all_courses):
                 stud0=None
                 for j in range(num_students):
                     if stud0 is None:
-                        stud0=students[data[i].strip()]
+                        stud0=students[data[i+j].strip()]
                     else:
-                        stud=students[data[i].strip()]
+                        stud=students[data[i+j].strip()]
                         stud0.team(course,stud)
                 i += num_students + 1
             except IndexError as e:

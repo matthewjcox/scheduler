@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 
 from . import views
 
@@ -9,5 +9,5 @@ urlpatterns = [
 
     path('search/', views.search, name='search'),
     
-    path('edit/', views.edit, name = 'edit')
+    path('edit/', views.edit, name = 'edit'),
 ]
