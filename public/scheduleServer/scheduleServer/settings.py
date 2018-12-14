@@ -25,7 +25,7 @@ SECRET_KEY = 'w(*7u#=%cmg@0pacpa*yjhz*mw#bw9*_$-yg&1q$b&kyu1ye@)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','schedule.sites.tjhsst.edu']
+ALLOWED_HOSTS = ['127.0.0.1',]#'schedule.sites.tjhsst.edu',]
 
 
 # Application definition
@@ -33,7 +33,8 @@ ALLOWED_HOSTS = ['127.0.0.1','schedule.sites.tjhsst.edu']
 MY_APPS = [
     'projectIndex.apps.projectIndexConfig',
     'studentInput.apps.studentInputConfig',
-    'counselorEditor.apps.counselorEditorConfig'
+    'counselorEditor.apps.counselorEditorConfig',
+    'loginPage.apps.loginPageConfig',
 ]
 
 INSTALLED_APPS = [
@@ -43,20 +44,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'social_django',
+    
 ]+MY_APPS
 
-"""
 AUTHENTICATION_BACKENDS = [
-    'oauth2_provider.backends.OAuth2Backend',
-    # Uncomment following if you want to access the admin
-    #'django.contrib.auth.backends.ModelBackend'
-]
-"""
+    'ion_oauth.oauth.IonOauth2',
+#    'django.contrib.auth.backends.ModelBackend',
+] 
+SOCIAL_AUTH_ION_KEY = 'zN7yQ1B2w0mNFZBBAsHlEHk2KFLcxrKrJ0Dvu4cI'
+SOCIAL_AUTH_ION_SECRET = 'pYU4OqLzNBaRCqFsIJCt31qCVQcJ0xNa6apmOEFZ3Y77BTJvjuvMkCsdoGgcV2htbL8RkodS37Lt2fo4QHGniJ75VDDscjSJPBw4wNVWShWReTtgweMmRO54mx4oOt7x'
+LOGIN_URL = 'https://schedule.sites.tjhsst.edu'
+LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
+
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    #'django.contrib.auth.middleware.SessionAuthenticationMiddleware', #wtf does this do?!
-#    'oauth2_provider.middleware.OAuth2TokenMiddleware',
-    
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -79,6 +83,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
