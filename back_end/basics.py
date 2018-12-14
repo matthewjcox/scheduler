@@ -217,6 +217,9 @@ class Student:
         if course not in self.teamed:
             self.teamed[course]=[]
         self.teamed[course].append(student)
+        if course not in student.teamed:
+            student.teamed[course]=[]
+        student.teamed[course].append(self)
 
     def long_string(self):
         requests=self.courses.to_str() if self.courses else '\n\t\tNone'
