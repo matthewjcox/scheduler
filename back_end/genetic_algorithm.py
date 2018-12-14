@@ -387,7 +387,8 @@ class master_schedule(chromosome):
                     continue
                 break
 
-            s=sorted(self.course_sections[i],key=lambda i:random.random())
+            s=self.course_sections[i]
+            random.shuffle(s)
             new_section=None
             for i in s:
                 if i.space_available():
