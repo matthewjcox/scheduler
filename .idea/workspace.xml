@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e655b7d2-0645-46a7-90fd-1fcbf98085cc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scheduler.iml" afterDir="false" />
+    <list default="true" id="e655b7d2-0645-46a7-90fd-1fcbf98085cc" name="Default" comment="Worked on issues with student teaming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/basics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/genetic_algorithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/parse_constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/parse_constraints.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +54,7 @@
     <session id="2013812299">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -84,12 +79,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="245" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="Python" value="245" />
         </counts>
       </usages-collector>
@@ -459,6 +454,14 @@
       <option name="presentableId" value="Default" />
       <updated>1543547662746</updated>
     </task>
+    <task id="LOCAL-00001" summary="Worked on issues with student teaming">
+      <created>1544810242479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544810242479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -472,7 +475,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1123" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19275825" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -480,14 +482,14 @@
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4978701" weight="0.32931727" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49520767" visible="true" weight="0.32730925" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49520767" weight="0.32730925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4968051" weight="0.3995984" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49713877" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49713877" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49946752" weight="0.32931727" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50479233" side_tool="true" visible="true" weight="0.32730925" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50479233" side_tool="true" visible="true" weight="0.32831326" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.32931727" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -504,6 +506,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Worked on issues with student teaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on issues with student teaming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
