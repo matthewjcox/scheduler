@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e655b7d2-0645-46a7-90fd-1fcbf98085cc" name="Default" comment="Worked on issues with student teaming">
+    <list default="true" id="e655b7d2-0645-46a7-90fd-1fcbf98085cc" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back_end/test_case_generation/full_school.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back_end/run_statistics/run_analysis.py" afterPath="$PROJECT_DIR$/back_end/run_statistics/run_analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/readable_schedule_stats.txt" afterPath="$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/readable_schedule_stats.txt" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scheduler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/basics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/genetic_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/parse_constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/parse_constraints.py" afterDir="false" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +66,7 @@
     <session id="2013812299">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -79,24 +91,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="245" />
-          <entry key="txt" value="47" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="47" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="245" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="run_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="177" column="85" lean-forward="false" selection-start-line="177" selection-start-column="85" selection-end-line="177" selection-end-column="85" />
+=======
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="920">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -104,6 +125,14 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="full_school.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/back_end/test_case_generation/full_school.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <folding />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_14__17_39_46/readable_schedule.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,10 +156,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
               <caret line="500" selection-start-line="500" selection-end-line="500" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="readable_schedule_stats.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_09__04_23_20/readable_schedule_stats.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="92" lean-forward="false" selection-start-line="36" selection-start-column="92" selection-end-line="36" selection-end-column="92" />
+              <folding />
+=======
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back_end/basics.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,6 +183,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
               <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
             </state>
           </provider>
         </entry>
@@ -172,6 +211,14 @@
       <find>anlampazzi</find>
       <find>923915</find>
       <find>3184T1</find>
+<<<<<<< HEAD
+      <find>000D</find>
+      <find>Student 4</find>
+      <find>Student 10</find>
+      <find>Student 12</find>
+      <find>Student 12</find>
+      <find>TJA3190</find>
+=======
       <find>100014</find>
       <find>100130</find>
       <find>246</find>
@@ -183,6 +230,7 @@
       <find>copy</find>
       <find>team(sel</find>
       <find>(246)</find>
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,12 +245,18 @@
         <option value="$PROJECT_DIR$/runs/winning_schedule.txt" />
         <option value="$PROJECT_DIR$/runs/perfect_schedule.txt" />
         <option value="$PROJECT_DIR$/runs/constraint_files/teamed_3_teachers.txt" />
+        <option value="$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/newCourses.txt" />
+        <option value="$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/readable_schedule_stats.txt" />
         <option value="$PROJECT_DIR$/back_end/run_statistics/run_analysis.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/back_end/test_case_generation/full_school.py" />
+=======
         <option value="$PROJECT_DIR$/back_end/parse_constraints.py" />
         <option value="$PROJECT_DIR$/back_end/genetic_algorithm.py" />
         <option value="$PROJECT_DIR$/back_end/run_schedule.py" />
         <option value="$PROJECT_DIR$/runs/past_runs/2018_12_14__17_39_46/readable_schedule.txt" />
         <option value="$PROJECT_DIR$/back_end/basics.py" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
       </list>
     </option>
   </component>
@@ -225,6 +279,50 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back_end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back_end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_case_generation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+=======
           <expand>
             <path>
               <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
@@ -261,6 +359,7 @@
             </path>
           </expand>
           <select />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -399,16 +498,26 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Python.run_analysis.py">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+=======
   <component name="RunManager">
     <configuration name="run_schedule" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="scheduler" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
+<<<<<<< HEAD
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="" />
+=======
       <option name="SDK_HOME" value="$PROJECT_DIR$/../../untitled/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -437,11 +546,35 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+    <configuration default="false" name="run_analysis.py" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scheduler" />
+      <option name="SCRIPT_NAME" value="back_end/run_statistics/run_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.run_analysis.py" />
+    </list>
+=======
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_schedule" />
       </list>
     </recent_temporary>
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -454,14 +587,6 @@
       <option name="presentableId" value="Default" />
       <updated>1543547662746</updated>
     </task>
-    <task id="LOCAL-00001" summary="Worked on issues with student teaming">
-      <created>1544810242479</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1544810242479</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -474,7 +599,51 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="23" width="1440" height="796" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.51502144" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.48497853" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.49427754" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.51502144" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.48497853" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.49427754" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+=======
     <frame x="-3" y="31" width="1926" height="1123" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19275825" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -482,14 +651,14 @@
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4978701" weight="0.32931727" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49520767" weight="0.32730925" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49520767" visible="true" weight="0.32730925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4968051" weight="0.3995984" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49713877" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49713877" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49946752" weight="0.32931727" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50479233" side_tool="true" visible="true" weight="0.32831326" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50479233" side_tool="true" visible="true" weight="0.32730925" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946752" weight="0.32931727" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -503,18 +672,43 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Worked on issues with student teaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on issues with student teaming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+<<<<<<< HEAD
+          <url>file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py</url>
+          <line>240</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py</url>
+          <line>188</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/back_end/run_statistics/run_analysis.py</url>
+          <line>185</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+=======
           <url>file://$PROJECT_DIR$/back_end/basics.py</url>
           <line>280</line>
           <option name="timeStamp" value="6" />
@@ -530,6 +724,7 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -642,6 +837,37 @@
     <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_14__17_05_47/run_params.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/runs/perfect_schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20753">
+          <caret line="1494" column="14" lean-forward="false" selection-start-line="1494" selection-start-column="8" selection-end-line="1494" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/run_params.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/newCourses.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="248" column="31" lean-forward="false" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="453" column="0" lean-forward="false" selection-start-line="453" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/back_end/parse_constraints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -666,11 +892,81 @@
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_14__17_39_46/readable_schedule.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="378">
+          <caret line="1013" column="20" lean-forward="false" selection-start-line="1013" selection-start-column="20" selection-end-line="1013" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_12__19_12_59/readable_schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_08__01_09_10/readable_schedule.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/winning_schedule_2018_12_03__20_59_24_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/perfect_schedule_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_07__18_52_41/readable_schedule_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_12__19_12_59/readable_schedule_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1631">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2018_12_09__04_23_20/readable_schedule_stats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="92" lean-forward="false" selection-start-line="36" selection-start-column="92" selection-end-line="36" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runs/constraint_files/teachers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+=======
         <state relative-caret-position="84">
           <caret line="4255" column="13" selection-start-line="4255" selection-start-column="13" selection-end-line="4255" selection-end-column="13" />
         </state>
@@ -694,13 +990,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="145" column="228" selection-start-line="145" selection-start-column="228" selection-end-line="145" selection-end-column="228" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/back_end/basics.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="294">
+          <caret line="177" column="85" lean-forward="false" selection-start-line="177" selection-start-column="85" selection-end-line="177" selection-end-column="85" />
+          <folding>
+            <element signature="e#552#561#0" expanded="true" />
+          </folding>
+=======
         <state relative-caret-position="233">
           <caret line="219" column="40" lean-forward="true" selection-start-line="219" selection-start-column="40" selection-end-line="219" selection-end-column="40" />
+>>>>>>> aab0bc1168385c3937c669da0e7e6e669d2d2b9a
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/test_case_generation/full_school.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
