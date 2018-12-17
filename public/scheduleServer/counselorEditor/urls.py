@@ -10,4 +10,8 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     
     path('edit/', views.edit, name = 'edit'),
+    
+    path('upload/', views.upload, name = 'upload'),
+    
+    path('success/', views.success, name = 'success'),
 ]

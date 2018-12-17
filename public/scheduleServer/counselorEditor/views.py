@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
+from django.urls import reverse
 #from django.contrib.auth.decorators import login_required
+import os.path
 
 
 from studentInput.models import Student, Category,Course
@@ -29,3 +31,20 @@ def edit(request):
         'category_list': Category.objects.all(),
     })
 
+def upload(request):
+    return render(request,'counselorEditor/upload.html')
+    
+def success(request):
+    inFile = request.FILES.get(request.POST.get('parameters',False),False)
+    if not inFile:
+        print(request.POST)
+        return HttpResponseRedirect(reverse('counselorEditor:index'))#error
+    if inFile.multiple_chunks():
+        return HttpResponseRedirect(reverse('counselorEditor:index'))#error 
+    outFile = open(os.path('web/projects/schedule/private','parameters.txt'),'w+')
+    data = inFile.read()
+    print("data:\n")
+    print(data)
+    ouFile.write(data)
+    outFile.close()
+    return HttpResponseRedirect(reverse('counselorEditor:index'))#success

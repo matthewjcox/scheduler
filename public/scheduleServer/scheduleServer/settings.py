@@ -25,7 +25,7 @@ SECRET_KEY = 'w(*7u#=%cmg@0pacpa*yjhz*mw#bw9*_$-yg&1q$b&kyu1ye@)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1',]#'schedule.sites.tjhsst.edu',]
+ALLOWED_HOSTS = ['127.0.0.1','schedule.sites.tjhsst.edu',]
 
 
 # Application definition
