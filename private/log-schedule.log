@@ -12682,3 +12682,37 @@ Bad Request: /auth/login/Ion/
 [2018-12-18 13:07:13 -0500] [22055] [INFO] Booting worker with pid: 22055
 [2018-12-18 13:07:13 -0500] [22056] [INFO] Booting worker with pid: 22056
 [2018-12-18 13:07:13 -0500] [22058] [INFO] Booting worker with pid: 22058
+[2018-12-18 18:11:27 +0000] [22055] [INFO] Worker exiting (pid: 22055)
+[2018-12-18 18:11:27 +0000] [22058] [INFO] Worker exiting (pid: 22058)
+[2018-12-18 18:11:27 +0000] [22056] [INFO] Worker exiting (pid: 22056)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2018-12-18 13:11:27 -0500] [22047] [INFO] Handling signal: term
+[2018-12-18 18:11:27 +0000] [22054] [INFO] Worker exiting (pid: 22054)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2018-12-18 13:11:28 -0500] [22869] [INFO] Starting gunicorn 19.9.0
+[2018-12-18 13:11:28 -0500] [22869] [INFO] Listening at: http://127.0.0.1:11356 (22869)
+[2018-12-18 13:11:28 -0500] [22869] [INFO] Using worker: sync
+[2018-12-18 13:11:28 -0500] [22872] [INFO] Booting worker with pid: 22872
+[2018-12-18 13:11:29 -0500] [22874] [INFO] Booting worker with pid: 22874
+[2018-12-18 13:11:29 -0500] [22875] [INFO] Booting worker with pid: 22875
+[2018-12-18 13:11:29 -0500] [22876] [INFO] Booting worker with pid: 22876
+[2018-12-18 18:26:45 +0000] [22874] [INFO] Worker exiting (pid: 22874)
+[2018-12-18 18:26:45 +0000] [22872] [INFO] Worker exiting (pid: 22872)
+[2018-12-18 18:26:45 +0000] [22876] [INFO] Worker exiting (pid: 22876)
+/web/projects/schedule/public/scheduleServer
+[2018-12-18 13:26:45 -0500] [22869] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2018-12-18 18:26:45 +0000] [22875] [INFO] Worker exiting (pid: 22875)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2018-12-18 13:26:46 -0500] [31025] [INFO] Starting gunicorn 19.9.0
+[2018-12-18 13:26:46 -0500] [31025] [INFO] Listening at: http://127.0.0.1:11356 (31025)
+[2018-12-18 13:26:46 -0500] [31025] [INFO] Using worker: sync
+[2018-12-18 13:26:46 -0500] [31034] [INFO] Booting worker with pid: 31034
+[2018-12-18 13:26:46 -0500] [31035] [INFO] Booting worker with pid: 31035
+[2018-12-18 13:26:46 -0500] [31036] [INFO] Booting worker with pid: 31036
+[2018-12-18 13:26:46 -0500] [31041] [INFO] Booting worker with pid: 31041

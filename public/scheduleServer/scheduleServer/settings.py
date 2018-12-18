@@ -63,6 +63,9 @@ SOCIAL_AUTH_SANITIZE_REDIRECTS = False
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
 USE_X_FORWARDED_HOST = True
 X_FORWARDED_HOST = 'schedule.sites.tjhsst.edu'
+SOCIAL_AUTH_ION_AUTH_EXTRA_ARGUMENTS = {
+    'redirect_uri': 'https://schedule.sites.tjhsst.edu'
+}
 
 
 MIDDLEWARE = [
