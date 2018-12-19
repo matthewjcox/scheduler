@@ -141,43 +141,6 @@ for student in studentScheds.values():
 percentFulfilled = (fulfilledRequests/totalRequests*100).__str__() + "%"
 statFile.write("Percentage of Course Requests Fulfilled: " + percentFulfilled + "\n")
 
-# Make table of courses to number of students who requested but did not get that course
-unfulfilledCourses = {}
-for student in studentScheds.values():
-    missedSet = set(student[1]).difference(set(student[4]))
-    availablePers = {1,2,3,4,5,6,7}.difference({sections[sect][1] for sect in student[3]})
-    for course in student[1]:
-        if not course in unfulfilledCourses.keys():
-            unfulfilledCourses[course] = [courses[course][1] + " (" + course + ")"] + [0 for x in range(int(runParams[0]))]
-        if course in missedSet:
-            # ADD SOMETHING such that 1 is added to unfulfilledCourses[course][period].
-            # i.e. must figure out available periods for student.
-            for per in availablePers:
-                unfulfilledCourses[course][per] += 1/len(availablePers)
-print(unfulfilledCourses)
-#statFile.write("\n" + tabulate.tabulate([[thing[0],sum(thing[1:])] for thing in unfulfilledCourses.values()], headers=["Course", "Number of students who requested but did not get this course"], tablefmt="grid") + "\n")
-
-# Make a table of courses to empty spaces per period
-courseToEmptyPer = {}
-for sect in sections.values():
-    if not sect[3] in courseToEmptyPer.keys():
-        courseToEmptyPer[sect[3]] = [courses[sect[3]][1] + " (" + sect[3]+ ")"] + [0 for x in range(int(runParams[0]))]
-    courseToEmptyPer[sect[3]][sect[1]] += sect[2]-sect[6]
-
-toTable = {}
-for course in courseToEmptyPer.keys():
-    toTable[course] = [courses[course][1] + " (" + course + ")"]
-    for x in range(1,int(runParams[0])+1):
-        toTable[course].append(courseToEmptyPer[course][x])
-        if not course in unfulfilledCourses.keys():
-            unfulfilledCourses[course] = [courses[course][1] + " (" + course + ")"] + [0 for x in range(int(runParams[0]))]
-        toTable[course].append(unfulfilledCourses[course][x])
-    toTable[course].insert(1,sum(courseToEmptyPer[course][1:]))
-    toTable[course].insert(2,sum(unfulfilledCourses[course][1:]))
-statFile.write("\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
-statFile.write(tabulate.tabulate(toTable.values(), headers=["Course", "T ES", "T SM", "P1 ES", "SM P1","P2 ES", "SM P2","P3 ES", "SM P3", "P4 ES", "SM P4", "P5 ES", "SM P5", "P6 ES", "SM P6", "P7 ES", "SM P7"], tablefmt="grid"))
-statFile.write("\n")
-
 # Calculate number of student conflicts (number of periods during which one student has two sections)
 studentConflicts = 0
 studentsWithConflicts = []
@@ -227,7 +190,33 @@ else:
 
 # Calculate the number of sections with class sizes exceeding maxStudents
 
+# Make table of courses to number of students who requested but did not get that course
+unfulfilledCourses = {}
+for student in studentScheds.values():
+    missedSet = set(student[1]).difference(set(student[4]))
+    availablePers = {1,2,3,4,5,6,7}.difference({sections[sect][1] for sect in student[3]})
+    for course in student[1]:
+        if not course in unfulfilledCourses.keys():
+            unfulfilledCourses[course] = [courses[course][1] + " (" + course + ")"] + [0 for x in range(int(runParams[0]))]
+        if course in missedSet:
+            # ADD SOMETHING such that 1 is added to unfulfilledCourses[course][period].
+            # i.e. must figure out available periods for student.
+            for per in availablePers:
+                unfulfilledCourses[course][per] += 1/len(availablePers)
+#statFile.write("\n" + tabulate.tabulate([[thing[0],sum(thing[1:])] for thing in unfulfilledCourses.values()], headers=["Course", "Number of students who requested but did not get this course"], tablefmt="grid") + "\n")
+
+# Make a table of courses to empty spaces per period
+courseToEmptyPer = {}
+for sect in sections.values():
+    if not sect[3] in courseToEmptyPer.keys():
+        courseToEmptyPer[sect[3]] = [courses[sect[3]][1] + " (" + sect[3]+ ")"] + [0 for x in range(int(runParams[0]))]
+    courseToEmptyPer[sect[3]][sect[1]] += sect[2]-sect[6]
+
 # Calculate the number of seats available each period
+perToEmpty = ["Total Empty Seats"]
+for x in range(1, int(runParams[0])+1):
+    perToEmpty.append(sum([cour[x] for cour in courseToEmptyPer.values()]).__str__())
+statFile.write("\nTotal Empty Seats by Period\n" + tabulate.tabulate([perToEmpty], headers=["","P1","P2","P3","P4","P5","P6","P7"], tablefmt="grid") + "\n")
 
 # Calculate the mean empty seats and standard deviation for each course
 courseToEmpty = {}
@@ -237,8 +226,21 @@ for sect in sections.values():
         courseToEmpty[curCourse] = []
     courseToEmpty[curCourse].append(sect[2]-sect[6])
 courseToEmptyList = [*courseToEmpty.keys()]
-print(courseToEmptyList)
-table1 = {"Course":[courses[course][1] +" (" + course + ")" for course in courseToEmptyList], "Mean Empty Spaces":[sum(courseToEmpty[course])/len(courseToEmpty[course]) for course in courseToEmptyList], "Standard Deviation":[statistics.stdev(courseToEmpty[course])if len(courseToEmpty[course]) > 1 else "Undefined" for course in courseToEmptyList]}
+table1 = {"Course":[courses[course][1] + " (" + course + ")" for course in courseToEmptyList], "Mean Empty Spaces":[sum(courseToEmpty[course])/len(courseToEmpty[course]) for course in courseToEmptyList], "Standard Deviation":[statistics.stdev(courseToEmpty[course])if len(courseToEmpty[course]) > 1 else "Undefined" for course in courseToEmptyList]}
 statFile.write("\n")
 statFile.write("Courses to Average Number of Empty Seats and Standard Deviation\n")
 statFile.write(tabulate.tabulate(table1, headers="keys", tablefmt="grid"))
+
+toTable = {}
+for course in courseToEmptyPer.keys():
+    toTable[course] = [courses[course][1] + " (" + course + ")"]
+    for x in range(1,int(runParams[0])+1):
+        toTable[course].append(courseToEmptyPer[course][x])
+        if not course in unfulfilledCourses.keys():
+            unfulfilledCourses[course] = [courses[course][1] + " (" + course + ")"] + [0 for x in range(int(runParams[0]))]
+        toTable[course].append(unfulfilledCourses[course][x])
+    toTable[course].insert(1,sum(courseToEmptyPer[course][1:]))
+    toTable[course].insert(2,sum(unfulfilledCourses[course][1:]))
+statFile.write("\n\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
+statFile.write(tabulate.tabulate(toTable.values(), headers=["Course", "T ES", "T SM", "P1 ES", "SM P1","P2 ES", "SM P2","P3 ES", "SM P3", "P4 ES", "SM P4", "P5 ES", "SM P5", "P6 ES", "SM P6", "P7 ES", "SM P7"], tablefmt="grid"))
+statFile.write("\n")

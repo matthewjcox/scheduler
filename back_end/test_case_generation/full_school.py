@@ -57,6 +57,17 @@ Juniors
         Law and Soc
         AP Psych
         AP Econ
+        Art
+        Band
+        Orchestra
+        Theater
+        AP Theory
+        Robo
+        Proto
+        Electronics
+        Energy systems
+        Philosophy
+
     Elective
     Elective
 Seniors
