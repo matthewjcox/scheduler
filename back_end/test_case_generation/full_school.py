@@ -31,10 +31,32 @@ Sophomores
         AP Bio
 Juniors
     English
+        90% take English 11 (APUSH HUM)
+        10% take English 11 (VA HUM)
     History
+        90% take APUSH
+        10% take VA History
     Math
+        40% take AP Calculus BC
+        40% take AP Calculus AB
+        10% take TJ Math 5
+        10% take TJ Math 4
     Science
+        80% take Physics 1
+        20% take AP Physics
     Elective
+        Marine Biology
+        DNA Science
+        Languages
+        AI
+        Computer Vision
+        Neuro
+        Parallel
+        Mobile/Web
+        AP Chemistry
+        Law and Soc
+        AP Psych
+        AP Econ
     Elective
     Elective
 Seniors
