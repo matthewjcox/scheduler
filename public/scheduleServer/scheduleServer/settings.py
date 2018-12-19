@@ -25,8 +25,7 @@ SECRET_KEY = 'w(*7u#=%cmg@0pacpa*yjhz*mw#bw9*_$-yg&1q$b&kyu1ye@)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','schedule.sites.tjhsst.edu',]
-
+ALLOWED_HOSTS = ['schedule.sites.tjhsst.edu','127.0.0.1',]
 
 # Application definition
 
@@ -53,10 +52,21 @@ AUTHENTICATION_BACKENDS = [
     'ion_oauth.oauth.IonOauth2',
 #    'django.contrib.auth.backends.ModelBackend',
 ] 
+
+
 SOCIAL_AUTH_ION_KEY = 'zN7yQ1B2w0mNFZBBAsHlEHk2KFLcxrKrJ0Dvu4cI'
 SOCIAL_AUTH_ION_SECRET = 'pYU4OqLzNBaRCqFsIJCt31qCVQcJ0xNa6apmOEFZ3Y77BTJvjuvMkCsdoGgcV2htbL8RkodS37Lt2fo4QHGniJ75VDDscjSJPBw4wNVWShWReTtgweMmRO54mx4oOt7x'
-LOGIN_URL = 'https://schedule.sites.tjhsst.edu'
+LOGIN_URL = 'https://schedule.sites.tjhsst.edu/loginPage'
 LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
+SANITIZE_REDIRECTS = False
+SOCIAL_AUTH_SANITIZE_REDIRECTS = False
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
+USE_X_FORWARDED_HOST = True
+X_FORWARDED_HOST = 'schedule.sites.tjhsst.edu'
+SOCIAL_AUTH_ION_AUTH_EXTRA_ARGUMENTS = {
+    'redirect_uri': 'https://schedule.sites.tjhsst.edu'
+}
+
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',

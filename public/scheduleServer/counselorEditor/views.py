@@ -32,19 +32,20 @@ def edit(request):
     })
 
 def upload(request):
-    return render(request,'counselorEditor/upload.html')
+    return render(request,'counselorEditor/upload.html',{
+        'error_message': '',
+    })
     
 def success(request):
-    inFile = request.FILES.get(request.POST.get('parameters',False),False)
-    if not inFile:
-        print(request.POST)
-        return HttpResponseRedirect(reverse('counselorEditor:index'))#error
+    inFile = request.FILES.get('parameters',False)
     if inFile.multiple_chunks():
-        return HttpResponseRedirect(reverse('counselorEditor:index'))#error 
-    outFile = open(os.path('web/projects/schedule/private','parameters.txt'),'w+')
+        return render(request,'counselorEditor/upload.html',{
+        'error_message': 'Error: File size too large',
+    })
+    outFile = open('../../private/parameters.txt','w+')
     data = inFile.read()
     print("data:\n")
     print(data)
-    ouFile.write(data)
+    outFile.write(data.decode())
     outFile.close()
     return HttpResponseRedirect(reverse('counselorEditor:index'))#success
