@@ -7,6 +7,7 @@ Number of student conflicts: 1
 Students with conflicts: 373
 Number of teacher conflicts: 4
 Teachers with conflicts: mbkochman, mceckel, srrose, djones3
+Number of students in some but not all of a set of teamed sections: 0
 
 Total Empty Seats by Period
 +-------------------+------+------+------+------+------+------+------+
