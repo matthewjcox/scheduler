@@ -370,10 +370,11 @@ class Section:
         courses=", ".join([str(i) for i in self.courses])
         teachers = ", ".join([str(i) for i in self.teachers])
         rooms = ", ".join([str(i) for i in self.classrooms])
+        allowed_pers = ' '+",".join([str(i) for i in self.allowed_periods])
         students = ", ".join([str(i) for i in self.students])
         # periods=", ".join([str(i) for i in self.period])
         teamedwith=', '.join([str(i) for i in self.teamed_sections])
-        res='\t\tSection ID: {}\n\t\tPeriod: {}\n\t\tMax student count: {}\n\t\tCourse(s): {}\n\t\tTeacher(s): {}\n\t\tRoom(s): {}\n\t\tStudent(s) ({}): {}'.format(self.id,self.period,self.maxstudents,courses,teachers,rooms,len(self.students),students)
+        res='\t\tSection ID: {}\n\t\tPeriod: {}\n\t\tAllowed periods:{}\n\t\tSemester: {}\n\t\tMax student count: {}\n\t\tCourse(s): {}\n\t\tTeacher(s): {}\n\t\tRoom(s): {}\n\t\tStudent(s) ({}): {}'.format(self.id,self.period,allowed_pers,'year' if self.semester==0 else self.semester,self.maxstudents,courses,teachers,rooms,len(self.students),students)
         if self.teamed_sections:
             res+='\n\t\tTeamed with: '+teamedwith
         return res
