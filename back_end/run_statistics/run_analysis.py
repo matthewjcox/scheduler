@@ -188,6 +188,30 @@ if teachersWithCons:
 else:
     statFile.write("None\n")
 
+# Check that teaming works (calculates the number of students in some but not all of a set of teamed sections)
+teamMistakes = 0
+checked = set()
+for sect in sections.values():
+    if sect[0] in checked:
+        continue
+    teamed = set()
+    # This is finite. Should rewrite to be recursive if teaming grows beyond 3 sections.
+    for sec in sect[8]:
+        teamed.add(sec)
+        for s in sections[sec][8]:
+            teamed.add(s)
+    sharedStuds = {}
+    for sec in teamed:
+        for stud in sections[sec][7]:
+            if not stud in sharedStuds.keys():
+                sharedStuds[stud] = 0
+            sharedStuds[stud] += 1
+    checked = checked.union(teamed)
+    for stud in sharedStuds.values():
+        if stud < len(teamed):
+            teamMistakes += 1
+statFile.write("Number of students in some but not all of a set of teamed sections: " + teamMistakes.__str__() + "\n")
+
 # Calculate the number of sections with class sizes exceeding maxStudents
 
 # Make table of courses to number of students who requested but did not get that course
