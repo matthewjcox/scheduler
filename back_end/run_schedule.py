@@ -62,11 +62,11 @@ def run_scheduler(save=None):
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
-    solver.solve(verbose=0, print_every=5)
+    solver.solve(verbose=0, print_every=1)
 
 
 def main():
-    run_scheduler(save=None)
+    run_scheduler(save='2018_12_21__18_41_25')
 
 
 if __name__=="__main__":

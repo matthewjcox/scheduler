@@ -412,7 +412,7 @@ class master_schedule(chromosome):
                     pass
             new_section.add_student(student)
             new_score = self.score_student(student)[0]
-            if new_score<score and random.random()<.8+_CLOSENESS_TO_COMPLETION*.2:
+            if new_score<score and random.random()<.999:
                 new_section.remove_student(student)
                 for i in old_sections:
                     i.add_student(student)
@@ -496,12 +496,13 @@ class hill_climb_solo_2:
             for i in range(num_mutations):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
-            for _ in range(2):
+            for _ in range(5):
                 for i in new_organism.students.values():
-                    new_organism.optimize_student(i,max_it=15)
+                    new_organism.optimize_student(i,max_it=4)
             new_score=new_organism.preliminary_score()
             old_score=self.current_sched.preliminary_score()
-            if new_score>=old_score:
+            delta_score=old_score-new_score
+            if new_score>=old_score or random.random()>.8+30*(delta_score/self.current_sched.theoretical_max_score):
                 self.current_sched=new_organism
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
@@ -546,6 +547,7 @@ def print_schedule(master_sched,outfolder):
             f.write(str(i))
             f.write(i.medium_string())
             f.write('\n\n')
+
 
 def diagnostics(master_sched):
     #Teacher conflicts
