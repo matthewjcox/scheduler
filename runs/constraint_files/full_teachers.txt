@@ -1,0 +1,30 @@
+Smith, Adam          
+Physics Teacher, HS          
+acsmith1@fcps.edu          
+Smith, Heidi          
+Health & Physical Education Teacher, HS          
+hesmith@fcps.edu          
+Smith, Andrea          
+School Counselor, HS          
+agsmith1@fcps.edu          
+Spoden, Myra          
+Mathematics Teacher, HS          
+msspoden@fcps.edu          
+Stickler, Shawn          
+Lab Technology Teacher, HS          
+smstickler@fcps.edu          
+Stile, Melissa          
+Health & Physical Education Teacher, HS          
+mmstile@fcps.edu          
+Taylor, Robin          
+Chemistry Teacher, HS          
+rbtaylor@fcps.edu          
+Tecuci, Miruna          
+School Based Technology Specialist          
+mgtecuci@fcps.edu          
+Tinkelman, Ilsa          
+History & Social Studies Teacher, HS          
+imtinkelman@fcps.edu          
+Tipton, Ann          
+Instructional Assistant          
+amtipton@fcps.edu          

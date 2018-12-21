@@ -1,0 +1,1097 @@
+
+
+       
+          
+          
+          
+  
+  
+    window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NDP35T');
+
+    Staff Directory | Thomas Jefferson High School for Science and Technology
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+      
+    
+  
+    Skip to main content
+  
+  
+  Full Menu
+
+
+          
+
+
+
+
+      
+        Homepage
+
+
+      
+
+
+
+      
+        About
+
+
+          
+
+
+
+
+      
+        Administration
+
+
+      
+
+
+
+      
+        Attendance
+
+
+      
+
+
+
+      
+        Bell Schedules
+
+
+      
+
+
+
+      
+        FCPS School Profile
+
+
+      
+
+
+
+      
+        School Improvement & Innovation Plan
+
+
+      
+
+
+
+      
+        Staff Directory
+
+
+      
+
+
+
+      
+        TJHSST Honor Code
+
+
+      
+
+
+
+      
+        TJHSST Student Advocacy
+
+
+      
+
+
+
+      
+        Transportation
+
+
+      
+
+    
+
+
+
+      
+
+
+
+      
+        Admission
+
+
+      
+
+
+
+      
+        Academics
+
+
+          
+
+
+
+
+      
+        Computer Science
+
+
+      
+
+
+
+      
+        Fine Arts
+
+
+      
+
+
+
+      
+        Humanities
+
+
+          
+
+
+
+
+      
+        English
+
+
+      
+
+
+
+      
+        Social Studies
+
+
+      
+
+    
+
+
+
+      
+
+
+
+      
+        Mathematics
+
+
+      
+
+
+
+      
+        Mentorship
+
+
+      
+
+
+
+      
+        PE, Health, Driver Education
+
+
+      
+
+
+
+      
+        Research Program
+
+
+      
+
+
+
+      
+        Science and Technology
+
+
+      
+
+
+
+      
+        TJHSST Course Catalog
+
+
+      
+
+
+
+      
+        World Languages
+
+
+      
+
+    
+
+
+
+      
+
+
+
+      
+        Announcements
+
+
+      
+
+
+
+      
+        Events
+
+
+      
+
+
+
+      
+        Get Involved
+
+
+      
+
+
+
+      
+        Library
+
+
+      
+
+
+
+      
+        Resources
+
+
+      
+
+
+
+      
+        Staff Directory
+
+
+      
+
+
+
+      
+        Student Life and Activities
+
+
+          
+
+
+
+
+      
+        8th Period Activities
+
+
+      
+
+
+
+      
+        Athletics
+
+
+      
+
+
+
+      
+        Publications
+
+
+      
+
+    
+
+
+
+      
+
+
+
+      
+        Student Services
+
+
+          
+
+
+
+
+      
+        College and Career Center
+
+
+      
+
+
+
+      
+        Curricular Resources
+
+
+      
+
+
+
+      
+        Special Services
+
+
+      
+
+
+
+      
+        Transcript Requests
+
+
+      
+
+    
+
+
+
+      
+
+
+
+      
+        Contact
+
+
+      
+
+    
+
+
+
+
+  
+
+
+  
+    Menu
+     &nbsp; Alerts
+    Thomas Jefferson High School for Science and Technology
+    FCPS
+  
+
+
+
+
+
+  
+    
+      
+          
+  Main Menu
+
+              
+
+
+
+      
+        Full Menu
+              
+
+
+
+      
+        About
+              
+
+
+
+      
+        Academics
+              
+
+
+
+      
+        Activities
+              
+
+
+
+      
+        Resources
+              
+
+
+
+      
+        Contact
+              
+        
+
+
+
+  
+
+  
+    
+    
+      Search FCPS
+      
+        
+          
+        
+        
+        Cancel
+      
+    
+  
+
+
+
+  
+    Language
+    Search
+    Alerts
+  
+
+
+  
+    Thomas Jefferson High School for Science and Technology
+    
+      
+        FCPS
+      
+    
+  
+
+
+  
+    
+
+
+
+/* <![CDATA[ */
+eval(unescape("eval%28function%28p%2Ca%2Cc%2Ck%2Ce%2Cr%29%7Be%3Dfunction%28c%29%7Breturn%28c%3Ca%3F%27%27%3Ae%28parseInt%28c/a%29%29%29+%28%28c%3Dc%25a%29%3E35%3FString.fromCharCode%28c+29%29%3Ac.toString%2836%29%29%7D%3Bif%28%21%27%27.replace%28/%5E/%2CString%29%29%7Bwhile%28c--%29r%5Be%28c%29%5D%3Dk%5Bc%5D%7C%7Ce%28c%29%3Bk%3D%5Bfunction%28e%29%7Breturn%20r%5Be%5D%7D%5D%3Be%3Dfunction%28%29%7Breturn%27%5C%5Cw+%27%7D%3Bc%3D1%7D%3Bwhile%28c--%29if%28k%5Bc%5D%29p%3Dp.replace%28new%20RegExp%28%27%5C%5Cb%27+e%28c%29+%27%5C%5Cb%27%2C%27g%27%29%2Ck%5Bc%5D%29%3Breturn%20p%7D%28%276%207%28a%2Cb%29%7Bn%7B4%282.9%29%7B3%20c%3D2.9%28%22o%22%29%3Bc.p%28b%2Cf%2Cf%29%3Ba.q%28c%29%7Dg%7B3%20c%3D2.r%28%29%3Ba.s%28%5C%27t%5C%27+b%2Cc%29%7D%7Du%28e%29%7B%7D%7D6%20h%28a%29%7B4%28a.8%29a%3Da.8%3B4%28a%3D%3D%5C%27%5C%27%29v%3B3%20b%3Da.w%28%5C%27%7C%5C%27%29%5B1%5D%3B3%20c%3B3%20d%3D2.x%28%5C%27y%5C%27%29%3Bz%283%20i%3D0%3Bi%3Cd.5%3Bi++%294%28d%5Bi%5D.A%3D%3D%5C%27B-C-D%5C%27%29c%3Dd%5Bi%5D%3B4%282.j%28%5C%27k%5C%27%29%3D%3DE%7C%7C2.j%28%5C%27k%5C%27%29.l.5%3D%3D0%7C%7Cc.5%3D%3D0%7C%7Cc.l.5%3D%3D0%29%7BF%286%28%29%7Bh%28a%29%7D%2CG%29%7Dg%7Bc.8%3Db%3B7%28c%2C%5C%27m%5C%27%29%3B7%28c%2C%5C%27m%5C%27%29%7D%7D%27%2C43%2C43%2C%27%7C%7Cdocument%7Cvar%7Cif%7Clength%7Cfunction%7CGTranslateFireEvent%7Cvalue%7CcreateEvent%7C%7C%7C%7C%7C%7Ctrue%7Celse%7CdoGTranslate%7C%7CgetElementById%7Cgoogle_translate_element2%7CinnerHTML%7Cchange%7Ctry%7CHTMLEvents%7CinitEvent%7CdispatchEvent%7CcreateEventObject%7CfireEvent%7Con%7Ccatch%7Creturn%7Csplit%7CgetElementsByTagName%7Cselect%7Cfor%7CclassName%7Cgoog%7Cte%7Ccombo%7Cnull%7CsetTimeout%7C500%27.split%28%27%7C%27%29%2C0%2C%7B%7D%29%29"))
+/* ]]> */
+
+<!--
+#goog-gt-tt {display:none !important;}
+
+.goog-te-banner-frame {display:none !important;}
+
+.goog-te-menu-value:hover {text-decoration:none !important;}
+
+body {top:0 !important;}
+
+#google_translate_element2 {display:none!important;}
+-->
+
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element2');}
+
+<!--
+a.gtflag {background-image:url('/modules/contrib/gtranslate/gtranslate-files/16a.png');}
+a.gtflag:hover {background-image:url('/modules/contrib/gtranslate/gtranslate-files/16.png');}
+-->
+        Select LanguageEnglishAfrikaansAlbanianArabicArmenianAzerbaijaniBasqueBelarusianBengaliBosnianBulgarianCatalanCebuanoChinese (Simplified)Chinese (Traditional)CroatianCzechDanishDutchEsperantoEstonianFilipinoFinnishFrenchGalicianGeorgianGermanGreekGujaratiHaitian CreoleHausaHebrewHindiHmongHungarianIcelandicIgboIndonesianIrishItalianJapaneseJavaneseKannadaKhmerKoreanLaoLatinLatvianLithuanianMacedonianMalayMalteseMaoriMarathiMongolianNepaliNorwegianPersianPolishPortuguesePunjabiRomanianRussianSerbianSlovakSlovenianSomaliSpanishSwahiliSwedishTamilTeluguThaiTurkishUkrainianUrduVietnameseWelshYiddishYorubaZulu
+
+    Close
+  
+
+
+
+      
+    
+  
+
+
+  
+    
+
+  Footer Menu
+
+
+
+              
+
+
+      
+        FCPS 24-7 Learning
+              
+
+
+      
+        SIS
+              
+
+
+      
+        G Suite
+              
+
+
+      
+        Library
+              
+
+
+      
+        Lunch Menus
+              
+
+
+      
+        MySchoolBucks
+              
+
+
+      
+        Employee Resources
+              
+        
+
+
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+  
+    
+    Staff Directory
+
+  
+
+  
+  
+      The following is an alphabetical directory of the TJHSST staff. Type in a staff member’s last name and select Search for quick results. Or you can search by department or job title. For example, to find all of the staff who teach English, you can type “English” and select Search.
+
+  
+
+
+  
+  
+
+
+
+
+    
+      
+        
+  
+        
+
+        
+
+
+
+
+
+
+      
+      Results 161 - 170 out of 197
+    
+
+
+          
+        
+        
+      
+                                                  Name
+                                                  Position
+                                                  Email
+              
+    
+    
+          
+                                                                                        Smith, Adam          
+                                                                                        Physics Teacher, HS          
+                                                                                        acsmith1@fcps.edu          
+              
+          
+                                                                                        Smith, Heidi          
+                                                                                        Health & Physical Education Teacher, HS          
+                                                                                        hesmith@fcps.edu          
+              
+          
+                                                                                        Smith, Andrea          
+                                                                                        School Counselor, HS          
+                                                                                        agsmith1@fcps.edu          
+              
+          
+                                                                                        Spoden, Myra          
+                                                                                        Mathematics Teacher, HS          
+                                                                                        msspoden@fcps.edu          
+              
+          
+                                                                                        Stickler, Shawn          
+                                                                                        Lab Technology Teacher, HS          
+                                                                                        smstickler@fcps.edu          
+              
+          
+                                                                                        Stile, Melissa          
+                                                                                        Health & Physical Education Teacher, HS          
+                                                                                        mmstile@fcps.edu          
+              
+          
+                                                                                        Taylor, Robin          
+                                                                                        Chemistry Teacher, HS          
+                                                                                        rbtaylor@fcps.edu          
+              
+          
+                                                                                        Tecuci, Miruna          
+                                                                                        School Based Technology Specialist          
+                                                                                        mgtecuci@fcps.edu          
+              
+          
+                                                                                        Tinkelman, Ilsa          
+                                                                                        History & Social Studies Teacher, HS          
+                                                                                        imtinkelman@fcps.edu          
+              
+          
+                                                                                        Tipton, Ann          
+                                                                                        Instructional Assistant          
+                                                                                        amtipton@fcps.edu          
+              
+      
+
+
+      
+
+            
+    Pagination
+    
+
+                    
+          
+            First page
+            
+          
+        
+
+                    
+          
+            Previous page
+            
+          
+        
+
+                    &hellip;
+
+                    
+
+                      
+              
+                Page
+              12
+                  
+              
+
+                      
+              
+                Page
+              13
+                  
+              
+
+                      
+              
+                Page
+              14
+                  
+              
+
+                      
+              
+                Page
+              15
+                  
+              
+
+                      
+              
+                Page
+              16
+                  
+              
+
+                        
+                Current page
+              17        
+              
+
+                      
+              
+                Page
+              18
+                  
+              
+
+                      
+              
+                Page
+              19
+                  
+              
+
+                      
+              
+                Page
+              20
+                  
+
+
+                    
+          
+            Next page
+            
+          
+        
+
+                    
+          
+            Last page
+            
+          
+        
+
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+      
+
+  
+    
+  
+    Stay updated with what's happening at Thomas Jefferson High School for Science and Technology with News You Choose Sign Up Now
+  
+
+
+
+              
+
+
+      
+        FCPS 24-7 Learning
+              
+
+
+      
+        SIS
+              
+
+
+      
+        G Suite
+              
+
+
+      
+        Library
+              
+
+
+      
+        Lunch Menus
+              
+
+
+      
+        MySchoolBucks
+              
+
+
+      
+        Employee Resources
+              
+        
+
+
+
+
+    
+  
+        
+
+
+
+    
+      Bell Schedule
+
+  
+
+
+  
+  
+        
+
+
+
+    
+      Library
+
+  
+
+
+  
+  
+        
+
+
+
+    
+      Lunch Menu
+
+  
+
+
+  
+  
+        
+
+
+
+    
+      Contact Us
+
+  
+
+
+
+
+
+  
+
+
+      
+        
+          
+            
+
+              
+                
+                  
+                  Thomas Jefferson High School for Science and Technology
+                    
+                      6560 Braddock Rd
+Alexandria VA 22312
+                    
+                  
+                
+              
+
+              
+                Main Office
+                703-750-8300
+                8:00 a.m. - 4:15 p.m.
+              
+
+              
+                Attendance
+                                703-750-8315 
+                                                ThomasJeffersonHigh.Attendance@fcps.edu
+                                                  Attendance Procedures
+                              
+
+              
+                Principal
+                Ann Bonitatibus
+                anbonitatibu@fcps.edu
+              
+
+            
+          
+        
+
+        
+          
+                                    Twitter
+                                                          
+        
+
+        
+          Fairfax County Public Schools
+        
+
+
+              
+
+      
+        Web Accessibility Guidelines
+              
+
+      
+        Freedom of Information Act
+              
+
+      
+        Policies and Regulations
+              
+
+      
+        Web Privacy Policy
+              
+
+      
+        Nondiscrimination
+              
+        
+
+
+
+
+
+        © 2018 Fairfax County Public Schools, Fairfax County, Virginia
+
+      
+    
+
+
+
+  
+
+
+    {"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/851","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"keywords":"","page":"16"}},"pluralDelimiter":"\u0003","back_to_top":{"back_to_top_button_trigger":"100","back_to_top_prevent_on_mobile":0,"back_to_top_prevent_in_admin":0,"back_to_top_button_type":"image","back_to_top_button_text":"Back to top"},"ajaxTrustedUrl":{"\/staff-directory":true},"facility_id":"2300","alerts_target_url":"https:\/\/www.fcps.edu","user":{"uid":0,"permissionsHash":"d4bcdef46f75dc96383e95d71a72baccc06a471bb01edbd46384f0a9df49670a"}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"869a1a293e","applicationID":"71440368","transactionName":"ZwEAY0BXXUZZBREKDV5LI1RGX1xbFxYEBAdvBwNUWlM=","queueTime":0,"applicationTime":29,"atts":"S0YDFQhNTkg=","errorBeacon":"bam.nr-data.net","agent":""}
+
+

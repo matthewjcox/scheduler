@@ -1,5 +1,7 @@
 import re
 
+# NOTE: THIS FILE WILL NOT WORK ON GIT. Uses pathways for Sarah's laptop.
+
 '''
 file = open("/Users/SarahGold/Documents/School/SysLab/20181017/coursesHtml.txt", "r")
 newFile = open("/Users/SarahGold/Documents/School/SysLab/20181017/courseHtmlMinus<>.txt", "w")
