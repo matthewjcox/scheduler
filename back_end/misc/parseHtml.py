@@ -9,6 +9,7 @@ temp = re.sub(r'<.*?>', "", file.read())
 newFile.write(re.sub(r'&amp;', "&", temp))
 '''
 
+#'''
 file = open("/Users/SarahGold/Documents/School/SysLab/20181017/courseHtmlMinus<>.txt", "r")
 newFile = open("newCourses.txt", "w")
 courses = {}
@@ -37,5 +38,5 @@ for line in file.read().splitlines():
 for course in courses.keys():
     newFile.write("| ".join(courses[course]))
     newFile.write("\n")
-
+#'''
 
