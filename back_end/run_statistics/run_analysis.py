@@ -237,10 +237,14 @@ for sect in sections.values():
     courseToEmptyPer[sect[3]][sect[1]] += sect[2]-sect[6]
 
 # Calculate the number of seats available each period
-perToEmpty = ["Total Empty Seats"]
+# EDIT TO CORRECTLY FORM TABLE OF TOTAL EMPTY SEATS AND TOTAL SEATS BY PERIOD
+perToEmpty = [{"Total Empty Seats":[]}]
 for x in range(1, int(runParams[0])+1):
-    perToEmpty.append(sum([cour[x] for cour in courseToEmptyPer.values()]).__str__())
-statFile.write("\nTotal Empty Seats by Period\n" + tabulate.tabulate([perToEmpty], headers=["","P1","P2","P3","P4","P5","P6","P7"], tablefmt="grid") + "\n")
+    perToEmpty[0]["Total Empty Seats"].append(sum([cour[x] for cour in courseToEmptyPer.values()]).__str__())
+perToEmpty.append({"Total Seats":[0 for x in range(int(runParams[0]))]})
+for sect in sections.values():
+    perToEmpty[1]["Total Seats"][sect[1]-1] += sect[2]
+statFile.write("\nTotal Seats and Empty Seats by Period\n" + tabulate.tabulate([perToEmpty], headers=["","P1","P2","P3","P4","P5","P6","P7"], tablefmt="grid") + "\n")
 
 # Calculate the mean empty seats and standard deviation for each course
 courseToEmpty = {}
