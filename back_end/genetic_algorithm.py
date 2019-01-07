@@ -183,6 +183,11 @@ class master_schedule(chromosome):
             for i,j in self.teams:
                 other=self.sections[j]
                 i.team_with(other)
+            for i in self.stock_students.values():
+                for course,students in i.teamed.items():
+                    for j in students:
+                        self.students[i.studentID].team(course, self.students[j.studentID])
+
 
     def retrieve_schedule(self,outfolder):
         self.fill_new()
@@ -407,55 +412,10 @@ class master_schedule(chromosome):
                     pass
             new_section.add_student(student)
             new_score = self.score_student(student)[0]
-            if new_score<score:
+            if new_score<score and random.random()<.999:
                 new_section.remove_student(student)
                 for i in old_sections:
                     i.add_student(student)
-
-
-    @staticmethod
-    def breed(a,b):
-        sched=master_schedule()
-        sched.fill_new(fill_sections=0)
-        for i in a.sections.values():
-            if random.getrandbits(1):
-                s=a.sections[i.id]
-            else:
-                s=b.sections[i.id]
-            s=Section(s.id)
-            sched.sections[s.id] = s
-            for j in i.teachers:
-                teacher = sched.teachers[j.teacherID]
-                s.add_teacher(teacher)
-            for j in i.students:
-                student = sched.students[j.studentID]
-                s.add_student(student)
-            for j in i.classrooms:
-                classroom = sched.classrooms[j.num]
-                s.add_classroom(classroom)
-            for j in i.courses:
-                course = self.stock_courses[j.courseID]
-                s.add_course(course)
-            s.set_semester(i.semester)
-            s.set_max_students(i.maxstudents)
-            s.set_period(i.period)
-            if i.period_fixed:
-                s.fix_period()
-            for j in i.teamed_sections:
-                sched.teams.append((s, j.id))
-        for i,j in sched.teams:
-            other=sched.sections[j]
-            i.team_with(other)
-        for sect in sched.sections.values():
-            for course in sect.courses:
-                if course not in sched.course_sections:
-                    sched.course_sections[course] = []
-                sched.course_sections[course].append(sect)
-        return sched
-
-
-    # def copy(self):
-    #     return master_schedule.breed(self,self)
 
     def copy(self):
         sched=master_schedule(self.num_periods, self.stock_classrooms, self.stock_courses, self.stock_teachers, self.stock_students, self.stock_sections)
@@ -490,6 +450,10 @@ class master_schedule(chromosome):
                 if course not in sched.course_sections:
                     sched.course_sections[course] = []
                 sched.course_sections[course].append(sect)
+        for i in self.stock_students.values():
+            for course, students in i.teamed.items():
+                for j in students:
+                    sched.students[i.studentID].team(course, sched.students[j.studentID])
         return sched
 
     def __str__(self):
@@ -506,7 +470,9 @@ class hill_climb_solo_2:
         j.retrieve_schedule(outfolder)
         if not j.is_viable():
             raise UnviableScheduleError
+        print('5' in j.stock_students)
         self.current_sched=j
+
 
 
     def solve(self, verbose=0, print_every=500):
@@ -530,12 +496,13 @@ class hill_climb_solo_2:
             for i in range(num_mutations):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
-            for _ in range(2):
+            for _ in range(5):
                 for i in new_organism.students.values():
-                    new_organism.optimize_student(i,max_it=15)
+                    new_organism.optimize_student(i,max_it=4)
             new_score=new_organism.preliminary_score()
             old_score=self.current_sched.preliminary_score()
-            if new_score>=old_score:
+            delta_score=old_score-new_score
+            if new_score>=old_score or random.random()>.8+30*(delta_score/self.current_sched.theoretical_max_score):
                 self.current_sched=new_organism
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
@@ -580,6 +547,7 @@ def print_schedule(master_sched,outfolder):
             f.write(str(i))
             f.write(i.medium_string())
             f.write('\n\n')
+
 
 def diagnostics(master_sched):
     #Teacher conflicts

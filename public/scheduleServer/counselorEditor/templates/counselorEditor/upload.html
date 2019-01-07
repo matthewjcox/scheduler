@@ -1,0 +1,12 @@
+<h1>Upload Schedule Parameters</h1>
+
+<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+<br><br>
+<form action = "{%url 'counselorEditor:success' %}" method = "post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h3>Upload txt file of Schedule Parameters</h3> 
+    {{ error_message }}
+    <input type = "file" name = "parameters" accept=".txt">
+    <br><br>
+    <button type = 'submit' accesskey='s' ><u>S</u>ubmit Parameters</button>
+</form>

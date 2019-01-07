@@ -1,0 +1,6538 @@
+158
+		Section ID: 100083
+		Period: 1
+		Max student count: 20
+		Course(s): 313753 TJHSST Math 3
+		Teacher(s): Isaac Carey (ijcarey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100050
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100018
+
+		Section ID: 100029
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100003
+
+		Section ID: 100093
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100014
+
+		Section ID: 100018
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100050, Section 100097
+
+		Section ID: 100121
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Margaret Gendive (magendive)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100028
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100002
+
+		Section ID: 100134
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Amy Lampazzi (anlampazzi)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100020
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100034, Section 100099
+
+		Section ID: 100147
+		Period: 1
+		Max student count: 20
+		Course(s): 3184T2 Foundations of Computer Science Accelerated
+		Teacher(s): Stephen Rose (srrose)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100045
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100013
+
+		Section ID: 100144
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100123
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Margaret Gendive (magendive)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100136
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Amy Lampazzi (anlampazzi)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100082
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Jeffrey James (jcjames)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100094
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100015
+
+		Section ID: 100101
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100022
+
+		Section ID: 100084
+		Period: 1
+		Max student count: 20
+		Course(s): 313753 TJHSST Math 3
+		Teacher(s): David Hill (dlhill2)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100119
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Margaret Gendive (magendive)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100061
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Stephen Rose (srrose)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100055
+		Period: 1
+		Max student count: 20
+		Course(s): 512000 French 2
+		Teacher(s): Cynthia Van de Kamp (cvandekampwa)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100090
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100005
+
+		Section ID: 100103
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100024
+
+		Section ID: 100092
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100013
+
+		Section ID: 100040
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100008
+
+		Section ID: 100046
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100014
+
+		Section ID: 100130
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100076
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Heidi Smith (hesmith)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100128
+		Period: 1
+		Max student count: 20
+		Course(s): 912032 Art 1
+		Teacher(s): Timothy Davis (tadavis2)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100060
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Marion Billington (mlbillington)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100010
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100042, Section 100107
+
+		Section ID: 100077
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Jeffrey James (jcjames)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100053
+		Period: 1
+		Max student count: 20
+		Course(s): 512000 French 2
+		Teacher(s): Cynthia Van de Kamp (cvandekampwa)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100054
+		Period: 1
+		Max student count: 20
+		Course(s): 512000 French 2
+		Teacher(s): Cynthia Van de Kamp (cvandekampwa)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100143
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Isaac Carey (ijcarey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100052
+		Period: 1
+		Max student count: 20
+		Course(s): 512000 French 2
+		Teacher(s): Cynthia Van de Kamp (cvandekampwa)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100047
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100015
+
+		Section ID: 100065
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Marion Billington (mlbillington)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100003
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100029, Section 100088
+
+		Section ID: 100002
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100028, Section 100087
+
+		Section ID: 100000
+		Period: 1
+		Max student count: 20
+		Course(s): 141032 Theatre Arts 1
+		Teacher(s): Andrew Reid (amreid)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100152
+		Period: 1
+		Max student count: 0
+		Course(s): 000BIO Bio Meeting
+		Teacher(s): Thomas Larson (tglarson), Jennifer James (jjames1), Sonia Del Cerro (sdelcerro), Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100019
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100033, Section 100098
+
+		Section ID: 100080
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Barry Potoker (bnpotoker)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100137
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100059
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Marion Billington (mlbillington)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100088
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100003
+
+		Section ID: 100032
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100006
+
+		Section ID: 100150
+		Period: 1
+		Max student count: 20
+		Course(s): 541000 Russian 1
+		Teacher(s): Elizabeth Sandstrom (ecsandstrom)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100036
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100022
+
+		Section ID: 100072
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Jeffrey James (jcjames)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100146
+		Period: 1
+		Max student count: 20
+		Course(s): 581000 Chinese 1
+		Teacher(s): Qin Xu (qxu1)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100007
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100104, Section 100039
+
+		Section ID: 100063
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Stephen Rose (srrose)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100075
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Heidi Smith (hesmith)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100105
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100008
+
+		Section ID: 100104
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100007
+
+		Section ID: 100106
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100009
+
+		Section ID: 100097
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100018
+
+		Section ID: 100039
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100007
+
+		Section ID: 100048
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100016
+
+		Section ID: 100049
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Mary Kochman (mbkochman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100017
+
+		Section ID: 100115
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Christine Conklin (clconklin)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100110
+		Period: 1
+		Max student count: 20
+		Course(s): 317093 AP Calculus AB
+		Teacher(s): Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100131
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Isaac Carey (ijcarey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100107
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100010
+
+		Section ID: 100057
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Marion Billington (mlbillington)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100089
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100004
+
+		Section ID: 100098
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100019
+
+		Section ID: 100017
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100049, Section 100096
+
+		Section ID: 100025
+		Period: 1
+		Max student count: 20
+		Course(s): 923915 Advanced Orchestra (Concert)
+		Teacher(s): Allison Bailey (akbailey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100030
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100004
+
+		Section ID: 100027
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100001
+
+		Section ID: 100138
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Isaac Carey (ijcarey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100015
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100047, Section 100094
+
+		Section ID: 100022
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100101, Section 100036
+
+		Section ID: 100141
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100009
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100106, Section 100041
+
+		Section ID: 100157
+		Period: 1
+		Max student count: 0
+		Course(s): 000MAT Math Meeting
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo), Isaac Carey (ijcarey), David Hill (dlhill2), Amy Lampazzi (anlampazzi), Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100122
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Nannette Mateo (nmateo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100016
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100048, Section 100095
+
+		Section ID: 100012
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100044, Section 100109
+
+		Section ID: 100148
+		Period: 1
+		Max student count: 20
+		Course(s): 3184T2 Foundations of Computer Science Accelerated
+		Teacher(s): Nicole Kim (njkim)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100079
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Barry Potoker (bnpotoker)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100108
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100011
+
+		Section ID: 100149
+		Period: 1
+		Max student count: 20
+		Course(s): 3184T2 Foundations of Computer Science Accelerated
+		Teacher(s): Nicole Kim (njkim)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100125
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Nannette Mateo (nmateo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100042
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100010
+
+		Section ID: 100135
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100068
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Stephen Rose (srrose)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100041
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100009
+
+		Section ID: 100073
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Barry Potoker (bnpotoker)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100142
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): David Hill (dlhill2)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100117
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Nannette Mateo (nmateo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100064
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Marion Billington (mlbillington)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100070
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Malcolm Eckel (mceckel)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100113
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Patricia Lister (phlister)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100001
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100086, Section 100027
+
+		Section ID: 100133
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100100
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100021
+
+		Section ID: 100155
+		Period: 1
+		Max student count: 0
+		Course(s): 000D&T DT Meeting
+		Teacher(s): Monica Geiger (mggeiger), Jared Seyler (jcseyler), Darcie Jones (djones3), Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100154
+		Period: 1
+		Max student count: 0
+		Course(s): 000GYM Gym Meeting
+		Teacher(s): Barry Potoker (bnpotoker), Jeffrey James (jcjames), Heidi Smith (hesmith)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100034
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100020
+
+		Section ID: 100069
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Nicole Kim (njkim)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100021
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100100, Section 100035
+
+		Section ID: 100132
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Amy Lampazzi (anlampazzi)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100024
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100038, Section 100103
+
+		Section ID: 100151
+		Period: 1
+		Max student count: 20
+		Course(s): 313754 TJHSST Math 4
+		Teacher(s): Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100074
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Jeffrey James (jcjames)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100023
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Aubrie Holman (asholman)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100102, Section 100037
+
+		Section ID: 100071
+		Period: 1
+		Max student count: 20
+		Course(s): 318561 AP Computer Science A plus Data Structures
+		Teacher(s): Malcolm Eckel (mceckel)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100067
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Malcolm Eckel (mceckel)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100062
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Malcolm Eckel (mceckel)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100129
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Amy Lampazzi (anlampazzi)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100102
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100023
+
+		Section ID: 100116
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Patricia Lister (phlister)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100091
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100006
+
+		Section ID: 100087
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100002
+
+		Section ID: 100153
+		Period: 1
+		Max student count: 0
+		Course(s): 000ENG English Meeting
+		Teacher(s): Stephanie Glotfelty (slglotfelty), Mary Kochman (mbkochman), Nancy Glover (neglover), Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100120
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Margaret Gendive (magendive)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100051
+		Period: 1
+		Max student count: 20
+		Course(s): 521000 German 1
+		Teacher(s): Szilvia Oszko (soszko)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100112
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Christine Conklin (clconklin)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100099
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Monica Geiger (mggeiger)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100020
+
+		Section ID: 100066
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Stephen Rose (srrose)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100044
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100012
+
+		Section ID: 100014
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100046, Section 100093
+
+		Section ID: 100124
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Nannette Mateo (nmateo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100085
+		Period: 1
+		Max student count: 20
+		Course(s): 313753 TJHSST Math 3
+		Teacher(s): Alouf Jirari-Scavotto (ajirariscavo)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100004
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100089, Section 100030
+
+		Section ID: 100026
+		Period: 1
+		Max student count: 20
+		Course(s): 923315 Symphonic Band (Intermediate Level)
+		Teacher(s): Adam Foreman (awforeman)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100096
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100017
+
+		Section ID: 100033
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100019
+
+		Section ID: 100008
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100105, Section 100040
+
+		Section ID: 100037
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100023
+
+		Section ID: 100043
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Nancy Glover (neglover)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100011
+
+		Section ID: 100038
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100024
+
+		Section ID: 100118
+		Period: 1
+		Max student count: 20
+		Course(s): 552000 Spanish 2
+		Teacher(s): Margaret Gendive (magendive)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100140
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Isaac Carey (ijcarey)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100056
+		Period: 1
+		Max student count: 20
+		Course(s): 512000 French 2
+		Teacher(s): Cynthia Van de Kamp (cvandekampwa)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100005
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100090, Section 100031
+
+		Section ID: 100086
+		Period: 1
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Jared Seyler (jcseyler)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100001
+
+		Section ID: 100078
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Heidi Smith (hesmith)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100013
+		Period: 1
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Jennifer James (jjames1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100092, Section 100045
+
+		Section ID: 100035
+		Period: 1
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Erinn Harris (eharris1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100021
+
+		Section ID: 100058
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3184 Foundations of Computer Science
+		Teacher(s): Malcolm Eckel (mceckel)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100156
+		Period: 1
+		Max student count: 0
+		Course(s): 0000CS CS Meeting
+		Teacher(s): Marion Billington (mlbillington), Stephen Rose (srrose), Malcolm Eckel (mceckel), Nicole Kim (njkim)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100011
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Thomas Larson (tglarson)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100043, Section 100108
+
+		Section ID: 100109
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Darcie Jones (djones3)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100012
+
+		Section ID: 100114
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Patricia Lister (phlister)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100031
+		Period: 5
+		Max student count: 20
+		Course(s): 1130T1 English 9
+		Teacher(s): Stephanie Glotfelty (slglotfelty)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100005
+
+		Section ID: 100145
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): David Hill (dlhill2)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100126
+		Period: 1
+		Max student count: 20
+		Course(s): 591000 Japanese 1
+		Teacher(s): Koji Otani (kotani)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100095
+		Period: 5
+		Max student count: 20
+		Course(s): 984060 Design and Technology
+		Teacher(s): Craig Lewis (calewis1)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100016
+
+		Section ID: 100081
+		Period: 1
+		Max student count: 40
+		Course(s): 730099 Health and Physical Education 9
+		Teacher(s): Barry Potoker (bnpotoker)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100111
+		Period: 1
+		Max student count: 20
+		Course(s): 532000 Latin 2
+		Teacher(s): Christine Conklin (clconklin)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100127
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3160 TJHSST Math 5
+		Teacher(s): Corey Lightner (cllightner)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100139
+		Period: 1
+		Max student count: 20
+		Course(s): TJA3190 TJHSST Research & Statistics 1
+		Teacher(s): Amy Lampazzi (anlampazzi)
+		Room(s): Room ?
+		Student(s) (0): 
+
+		Section ID: 100006
+		Period: 5
+		Max student count: 20
+		Course(s): 4310T1 Biology 1
+		Teacher(s): Sonia Del Cerro (sdelcerro)
+		Room(s): Room ?
+		Student(s) (0): 
+		Teamed with: Section 100032, Section 100091
+
+400
+Student 118 (118)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 227 (227)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 4 (4)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 135 (135)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 192 (192)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 43 (43)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 181 (181)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 200 (200)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 217 (217)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 190 (190)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 288 (288)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 276 (276)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 347 (347)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 66 (66)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 256 (256)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 147 (147)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 157 (157)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 25 (25)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 332 (332)	Courses:
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 119 (119)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 391 (391)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 176 (176)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 45 (45)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 146 (146)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 63 (63)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 229 (229)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 267 (267)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 105 (105)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 271 (271)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 254 (254)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 178 (178)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 182 (182)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 87 (87)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 387 (387)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 366 (366)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 108 (108)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 156 (156)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 220 (220)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 111 (111)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 359 (359)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 116 (116)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 201 (201)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 290 (290)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 292 (292)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 194 (194)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 368 (368)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 65 (65)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 376 (376)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 213 (213)	Courses:
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 113 (113)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 389 (389)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 12 (12)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 273 (273)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 165 (165)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 88 (88)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 86 (86)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 79 (79)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 158 (158)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 132 (132)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 197 (197)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 312 (312)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 127 (127)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		541000 Russian 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 83 (83)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 326 (326)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		141032 Theatre Arts 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 103 (103)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 319 (319)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 50 (50)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 33 (33)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 39 (39)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 297 (297)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 59 (59)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 285 (285)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 47 (47)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 344 (344)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 73 (73)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 17 (17)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 41 (41)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 349 (349)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 320 (320)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 185 (185)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 242 (242)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 265 (265)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 331 (331)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 175 (175)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 14 (14)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		141032 Theatre Arts 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 155 (155)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 361 (361)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 174 (174)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 381 (381)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 38 (38)	Courses:
+		591000 Japanese 1
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 143 (143)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 205 (205)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 335 (335)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 89 (89)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 122 (122)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 345 (345)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 382 (382)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 9 (9)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 364 (364)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 141 (141)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 15 (15)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 67 (67)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 284 (284)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 57 (57)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 161 (161)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 100 (100)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 311 (311)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 40 (40)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 193 (193)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 8 (8)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 125 (125)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 30 (30)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 11 (11)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 377 (377)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 172 (172)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 253 (253)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 291 (291)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 163 (163)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 231 (231)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 351 (351)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 399 (399)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 112 (112)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 51 (51)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 226 (226)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 31 (31)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 166 (166)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 394 (394)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 150 (150)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 54 (54)	Courses:
+		4310T1 Biology 1
+		521000 German 1
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 164 (164)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 235 (235)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 305 (305)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 203 (203)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 22 (22)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 314 (314)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 97 (97)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 378 (378)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 71 (71)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 70 (70)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 316 (316)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 191 (191)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 380 (380)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 64 (64)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 315 (315)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 295 (295)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 329 (329)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		923315 Symphonic Band (Intermediate Level)
+		317093 AP Calculus AB
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 310 (310)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 207 (207)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 346 (346)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 212 (212)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 233 (233)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 243 (243)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 306 (306)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 354 (354)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 239 (239)	Courses:
+		4310T1 Biology 1
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 322 (322)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 318 (318)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 140 (140)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 115 (115)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 383 (383)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 321 (321)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 189 (189)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 250 (250)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 129 (129)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 270 (270)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 263 (263)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 3 (3)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 173 (173)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 32 (32)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 232 (232)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 228 (228)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 350 (350)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 110 (110)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 237 (237)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 183 (183)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 196 (196)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 219 (219)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 241 (241)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 58 (58)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 29 (29)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 69 (69)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 18 (18)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 44 (44)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 384 (384)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 280 (280)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 372 (372)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		521000 German 1
+		984060 Design and Technology
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 328 (328)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 259 (259)	Courses:
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 154 (154)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 252 (252)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 302 (302)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 107 (107)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 131 (131)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 188 (188)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 257 (257)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 281 (281)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 278 (278)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 142 (142)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 28 (28)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 224 (224)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 234 (234)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 78 (78)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 5 (5)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 99 (99)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 336 (336)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 356 (356)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 304 (304)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 261 (261)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 363 (363)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 283 (283)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 81 (81)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 323 (323)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 360 (360)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 37 (37)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 1 (1)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 375 (375)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 195 (195)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 202 (202)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 53 (53)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 102 (102)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 262 (262)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 301 (301)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 36 (36)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 238 (238)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 139 (139)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 236 (236)	Courses:
+		4310T1 Biology 1
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 24 (24)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 327 (327)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 167 (167)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 180 (180)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 26 (26)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 341 (341)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 300 (300)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 109 (109)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 249 (249)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 19 (19)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 23 (23)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 48 (48)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 299 (299)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 169 (169)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		317093 AP Calculus AB
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 98 (98)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 287 (287)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 199 (199)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 216 (216)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 374 (374)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		317093 AP Calculus AB
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 397 (397)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 221 (221)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 348 (348)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 333 (333)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 171 (171)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 20 (20)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 279 (279)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 268 (268)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 303 (303)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 388 (388)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 370 (370)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 371 (371)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 74 (74)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 120 (120)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 138 (138)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 21 (21)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 379 (379)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 260 (260)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		541000 Russian 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 325 (325)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		141032 Theatre Arts 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 68 (68)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 76 (76)	Courses:
+		581000 Chinese 1
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 230 (230)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 80 (80)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 46 (46)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 92 (92)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 395 (395)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 362 (362)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 358 (358)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 248 (248)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 56 (56)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 85 (85)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 208 (208)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 134 (134)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 390 (390)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 309 (309)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 123 (123)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 282 (282)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 121 (121)	Courses:
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 293 (293)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 392 (392)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 133 (133)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 91 (91)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 159 (159)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 206 (206)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 160 (160)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 355 (355)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 153 (153)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 367 (367)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 93 (93)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 7 (7)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 386 (386)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 179 (179)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 168 (168)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 94 (94)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 247 (247)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 330 (330)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 246 (246)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 269 (269)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 277 (277)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 240 (240)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 353 (353)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 55 (55)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 49 (49)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 214 (214)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 90 (90)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 258 (258)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 0 (0)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 398 (398)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 313 (313)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 114 (114)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 307 (307)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 61 (61)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 106 (106)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 16 (16)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 373 (373)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 162 (162)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 365 (365)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 145 (145)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 177 (177)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 77 (77)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 2 (2)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		318561 AP Computer Science A plus Data Structures
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 84 (84)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 13 (13)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 184 (184)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 126 (126)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 151 (151)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 275 (275)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 352 (352)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		541000 Russian 1
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 337 (337)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		317093 AP Calculus AB
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 210 (210)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 342 (342)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 244 (244)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 82 (82)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 308 (308)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 294 (294)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 298 (298)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 52 (52)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 124 (124)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 128 (128)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 251 (251)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 170 (170)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 289 (289)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 75 (75)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 255 (255)	Courses:
+		512000 French 2
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 137 (137)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 338 (338)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 245 (245)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 266 (266)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 144 (144)	Courses:
+		4310T1 Biology 1
+		3184T2 Foundations of Computer Science Accelerated
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 62 (62)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 136 (136)	Courses:
+		4310T1 Biology 1
+		141032 Theatre Arts 1
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 148 (148)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 96 (96)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 272 (272)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 225 (225)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 198 (198)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 209 (209)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 27 (27)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 343 (343)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 385 (385)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 101 (101)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 187 (187)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 215 (215)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 396 (396)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 130 (130)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 211 (211)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		TJA3160 TJHSST Math 5
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 34 (34)	Courses:
+		581000 Chinese 1
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 369 (369)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 186 (186)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 42 (42)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		313754 TJHSST Math 4
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 10 (10)	Courses:
+		4310T1 Biology 1
+		923315 Symphonic Band (Intermediate Level)
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 117 (117)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 72 (72)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		317093 AP Calculus AB
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 223 (223)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 104 (104)	Courses:
+		591000 Japanese 1
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 393 (393)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 324 (324)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 264 (264)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 340 (340)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 95 (95)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 222 (222)	Courses:
+		512000 French 2
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 274 (274)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		521000 German 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 35 (35)	Courses:
+		581000 Chinese 1
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 6 (6)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 149 (149)	Courses:
+		4310T1 Biology 1
+		318561 AP Computer Science A plus Data Structures
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 204 (204)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 218 (218)	Courses:
+		591000 Japanese 1
+		4310T1 Biology 1
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 357 (357)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3184 Foundations of Computer Science
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 296 (296)	Courses:
+		4310T1 Biology 1
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+		912032 Art 1
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 152 (152)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 60 (60)	Courses:
+		313753 TJHSST Math 3
+		4310T1 Biology 1
+		552000 Spanish 2
+		923315 Symphonic Band (Intermediate Level)
+		984060 Design and Technology
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 334 (334)	Courses:
+		4310T1 Biology 1
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		923915 Advanced Orchestra (Concert)
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 286 (286)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 339 (339)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		552000 Spanish 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+
+Student 317 (317)	Courses:
+		4310T1 Biology 1
+		TJA3184 Foundations of Computer Science
+		532000 Latin 2
+		984060 Design and Technology
+		TJA3190 TJHSST Research & Statistics 1
+		1130T1 English 9
+		730099 Health and Physical Education 9
+	Alternates:
+		None
+	Schedule:
+		
+

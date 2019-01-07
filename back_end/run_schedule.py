@@ -17,7 +17,10 @@ def run_scheduler(save=None):
         os.mkdir(save)
         start_logging(save)
         param_file_name = 'runs/run_params.txt'
-        shutil.copy2(param_file_name,save)
+        try:
+            shutil.copy2(param_file_name,save)
+        except TypeError:
+            raise FileNotFoundError
         connection = sqlite3.connect(save+'/schedule.db')
         cursor=connection.cursor()
         cursor.execute("CREATE TABLE metadata(iteration int,time_elapsed real);")
@@ -39,7 +42,10 @@ def run_scheduler(save=None):
         num_periods,classroom_fn, course_fn, teacher_fn, student_fn, student_team_fn, section_fn=[i.strip() for i in f.readlines()]
     for i in classroom_fn, course_fn, teacher_fn, student_fn, student_team_fn, section_fn:
         if not os.path.isfile(save+'/'+i):
-            shutil.copy2('runs/constraint_files/'+i, save)
+            try:
+                shutil.copy2('runs/constraint_files/'+i, save)
+            except TypeError:
+                raise FileNotFoundError
     num_periods=int(num_periods.strip())
     set_global_num_periods(num_periods)
     classroom_fn, course_fn, teacher_fn, student_fn,student_team_fn, section_fn=[save+'/'+i for i in (classroom_fn, course_fn,  teacher_fn, student_fn,student_team_fn, section_fn)]
@@ -56,11 +62,11 @@ def run_scheduler(save=None):
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
-    solver.solve(verbose=0, print_every=5)
+    solver.solve(verbose=0, print_every=1)
 
 
 def main():
-    run_scheduler(save=None)
+    run_scheduler(save='2018_12_21__18_41_25')
 
 
 if __name__=="__main__":
