@@ -66,7 +66,7 @@ def run_scheduler(save=None):
 
 
 def main():
-    run_scheduler(save='2018_12_21__18_41_25')
+    run_scheduler(save=None)
 
 
 if __name__=="__main__":
