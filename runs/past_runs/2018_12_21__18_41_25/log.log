@@ -3421,3 +3421,53 @@
 2018-12-21 19:14:19,737|ERROR|13840|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/basics.py", line 178, in __hash__
 2018-12-21 19:14:19,737|ERROR|13840|return hash(self.courseID)
 2018-12-21 19:14:19,737|ERROR|13840|KeyboardInterrupt
+2019-01-07 20:52:40,229|INFO|9014|1
+2019-01-07 20:52:40,235|INFO|9014|True
+2019-01-07 20:52:40,236|INFO|9014|Saving schedule. (2911)
+2019-01-07 20:52:41,157|INFO|9014|Round 2912: score 8126.44 (10896). Elapsed time: 31 min, 11.39 sec.
+2019-01-07 20:52:41,330|INFO|9014|Round 2913: score 6924.03 (10896). Elapsed time: 31 min, 11.56 sec.
+2019-01-07 20:52:41,499|INFO|9014|Round 2914: score 6924.03 (10896). Elapsed time: 31 min, 11.73 sec.
+2019-01-07 20:52:41,668|INFO|9014|Round 2915: score 6924.03 (10896). Elapsed time: 31 min, 11.90 sec.
+2019-01-07 20:52:41,837|INFO|9014|Round 2916: score 6924.03 (10896). Elapsed time: 31 min, 12.07 sec.
+2019-01-07 20:52:42,003|INFO|9014|Round 2917: score 6924.03 (10896). Elapsed time: 31 min, 12.23 sec.
+2019-01-07 20:52:42,172|INFO|9014|Round 2918: score 6924.03 (10896). Elapsed time: 31 min, 12.40 sec.
+2019-01-07 20:52:42,337|INFO|9014|Round 2919: score 6924.03 (10896). Elapsed time: 31 min, 12.57 sec.
+2019-01-07 20:52:42,501|INFO|9014|Round 2920: score 6924.03 (10896). Elapsed time: 31 min, 12.73 sec.
+2019-01-07 20:52:42,670|INFO|9014|Round 2921: score 6924.03 (10896). Elapsed time: 31 min, 12.90 sec.
+2019-01-07 20:52:42,842|INFO|9014|Round 2922: score 6924.03 (10896). Elapsed time: 31 min, 13.07 sec.
+2019-01-07 20:52:43,010|INFO|9014|Round 2923: score 6924.03 (10896). Elapsed time: 31 min, 13.24 sec.
+2019-01-07 20:52:43,178|INFO|9014|Round 2924: score 6924.03 (10896). Elapsed time: 31 min, 13.41 sec.
+2019-01-07 20:52:43,341|INFO|9014|Round 2925: score 6924.03 (10896). Elapsed time: 31 min, 13.57 sec.
+2019-01-07 20:52:43,504|INFO|9014|Round 2926: score 6924.03 (10896). Elapsed time: 31 min, 13.73 sec.
+2019-01-07 20:52:43,689|INFO|9014|Round 2927: score 6924.03 (10896). Elapsed time: 31 min, 13.92 sec.
+2019-01-07 20:52:43,862|INFO|9014|Round 2928: score 6924.03 (10896). Elapsed time: 31 min, 14.09 sec.
+2019-01-07 20:52:44,025|INFO|9014|Round 2929: score 6924.03 (10896). Elapsed time: 31 min, 14.25 sec.
+2019-01-07 20:52:44,194|INFO|9014|Round 2930: score 6924.03 (10896). Elapsed time: 31 min, 14.42 sec.
+2019-01-07 20:52:44,361|INFO|9014|Round 2931: score 6924.03 (10896). Elapsed time: 31 min, 14.59 sec.
+2019-01-07 20:52:44,530|INFO|9014|Round 2932: score 6924.03 (10896). Elapsed time: 31 min, 14.76 sec.
+2019-01-07 20:52:44,700|INFO|9014|Round 2933: score 6924.03 (10896). Elapsed time: 31 min, 14.93 sec.
+2019-01-07 20:52:44,868|INFO|9014|Round 2934: score 6924.03 (10896). Elapsed time: 31 min, 15.10 sec.
+2019-01-07 20:52:45,038|INFO|9014|Round 2935: score 6924.03 (10896). Elapsed time: 31 min, 15.27 sec.
+2019-01-07 20:52:45,205|INFO|9014|Round 2936: score 6924.03 (10896). Elapsed time: 31 min, 15.43 sec.
+2019-01-07 20:52:45,374|INFO|9014|Round 2937: score 6924.03 (10896). Elapsed time: 31 min, 15.60 sec.
+2019-01-07 20:52:45,560|INFO|9014|Round 2938: score 6924.03 (10896). Elapsed time: 31 min, 15.79 sec.
+2019-01-07 20:52:45,741|INFO|9014|Round 2939: score 6924.03 (10896). Elapsed time: 31 min, 15.97 sec.
+2019-01-07 20:52:45,911|INFO|9014|Round 2940: score 6924.03 (10896). Elapsed time: 31 min, 16.14 sec.
+2019-01-07 20:52:46,088|INFO|9014|Round 2941: score 6924.03 (10896). Elapsed time: 31 min, 16.32 sec.
+2019-01-07 20:52:46,262|INFO|9014|Round 2942: score 6924.03 (10896). Elapsed time: 31 min, 16.49 sec.
+2019-01-07 20:52:46,433|INFO|9014|Round 2943: score 6924.03 (10896). Elapsed time: 31 min, 16.66 sec.
+2019-01-07 20:52:46,609|INFO|9014|Round 2944: score 6924.03 (10896). Elapsed time: 31 min, 16.84 sec.
+2019-01-07 20:52:46,778|INFO|9014|Round 2945: score 6924.03 (10896). Elapsed time: 31 min, 17.01 sec.
+2019-01-07 20:52:46,945|INFO|9014|Round 2946: score 6924.03 (10896). Elapsed time: 31 min, 17.17 sec.
+2019-01-07 20:52:47,027|ERROR|9014|Traceback (most recent call last):
+2019-01-07 20:52:47,027|ERROR|9014|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/run_schedule.py", line 73, in <module>
+2019-01-07 20:52:47,027|ERROR|9014|main()
+2019-01-07 20:52:47,028|ERROR|9014|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/run_schedule.py", line 69, in main
+2019-01-07 20:52:47,028|ERROR|9014|run_scheduler(save='2018_12_21__18_41_25')
+2019-01-07 20:52:47,028|ERROR|9014|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/run_schedule.py", line 65, in run_scheduler
+2019-01-07 20:52:47,028|ERROR|9014|solver.solve(verbose=0, print_every=1)
+2019-01-07 20:52:47,028|ERROR|9014|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/genetic_algorithm.py", line 503, in solve
+2019-01-07 20:52:47,028|ERROR|9014|new_organism.optimize_student(i,max_it=4)
+2019-01-07 20:52:47,028|ERROR|9014|File "/afs/csl.tjhsst.edu/students/2019/2019mcox/PycharmProjects/Scheduler/scheduler/back_end/genetic_algorithm.py", line 381, in optimize_student
+2019-01-07 20:52:47,029|ERROR|9014|for k in student.sched:
+2019-01-07 20:52:47,029|ERROR|9014|KeyboardInterrupt

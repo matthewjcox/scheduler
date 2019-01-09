@@ -337,7 +337,7 @@ class master_schedule(chromosome):
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
-            addl_score += self.rare_class_bonus * len(self.course_sections[next(iter(j.courses))]) ** -2.5
+            addl_score += self.rare_class_bonus * len(self.course_sections[j.courses[0]]) ** -2.5
         return base_score,addl_score
 
     def score_student_courses(self,student):
@@ -412,10 +412,14 @@ class master_schedule(chromosome):
                     pass
             new_section.add_student(student)
             new_score = self.score_student(student)[0]
-            if new_score<score and random.random()<.999:
+
+            if new_score>=score or random.random()<1.99+.01*2*(score-new_score):
+                pass
+            else:
                 new_section.remove_student(student)
                 for i in old_sections:
                     i.add_student(student)
+        print(score, self.score_student(student)[0])
 
     def copy(self):
         sched=master_schedule(self.num_periods, self.stock_classrooms, self.stock_courses, self.stock_teachers, self.stock_students, self.stock_sections)
@@ -502,7 +506,7 @@ class hill_climb_solo_2:
             new_score=new_organism.preliminary_score()
             old_score=self.current_sched.preliminary_score()
             delta_score=old_score-new_score
-            if new_score>=old_score or random.random()>.8+30*(delta_score/self.current_sched.theoretical_max_score):
+            if new_score>=old_score or random.random()>.9+.1*(150*(delta_score/self.current_sched.theoretical_max_score)):
                 self.current_sched=new_organism
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
