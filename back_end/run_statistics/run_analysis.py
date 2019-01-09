@@ -19,7 +19,7 @@ import statistics
 import tabulate
 
 # First command line argument: file with run data to interpret
-toInterpret = sys.argv[1] # "../../runs/past_runs/2018_12_07__18_52_41/readable_schedule.txt"  # Currently, ../../runs/perfect_schedule.txt
+toInterpret = "../../runs/past_runs/" + sys.argv[1] + "/readable_schedule.txt" # "../../runs/past_runs/2018_12_07__18_52_41/readable_schedule.txt"  # Currently, ../../runs/perfect_schedule.txt
 
 directory = re.search('/.*', toInterpret[::-1]).group(0)[::-1][:-1]
 
@@ -36,7 +36,7 @@ courses = {course[2]:course[:2] for course in [[thing.strip() for thing in line.
 # Opens the file with run information to analyze
 file = open(toInterpret, 'r')
 
-# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [teamed courses]].
+# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [teamed courses], (9) [allowed periods]].
 sections = {}
 
 numSections = int(file.readline()[:-1])
@@ -48,8 +48,18 @@ for x in range(numSections):
     # Adds sectionID to the list associated with sectionID. Redundant, but useful for for-loops that loop over items in sections.values().
     # Also adds period to sections[section] as an int.
     sections[section] = [section, int(file.readline()[10])]
+    # Temporarily store allowable periods (add to the end as the final index)
+    nextLine = file.readline()
+    if "Allowed periods" in nextLine:
+        temp = re.search(r'[0-9][0-9, ]+', nextLine).group(0).split(",")
+        print(temp)
+        nextLine = file.readline()
+        print(nextLine)
+    else:
+        temp = []
+    # ADD SEMESTER READING IN AND SHOVE ON END OF SECTIONS!!!!!!
     # Adds max students to sections[section] as an int.
-    sections[section].append(int(file.readline()[21:-1]))
+    sections[section].append(int(nextLine[21:-1]))
     # Adds courseID to sections[section] as a string.
     sections[section].append(re.search(r'[0-9A-Z&]+', file.readline()[13:-1]).group(0))
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
@@ -75,6 +85,8 @@ for x in range(numSections):
     # If next line does not have teaming data, adds an empty list to sections[section] to represent no teaming.
     else:
         sections[section].append([])
+    # Adds list of allowed periods.
+    sections[section].append(temp)
     # Prints sections[section] for debugging.
     # print(sections[section])
 
@@ -241,9 +253,9 @@ for sect in sections.values():
 perToEmpty = [{"Total Empty Seats":[]}]
 for x in range(1, int(runParams[0])+1):
     perToEmpty[0]["Total Empty Seats"].append(sum([cour[x] for cour in courseToEmptyPer.values()]).__str__())
-perToEmpty.append({"Total Seats":[0 for x in range(int(runParams[0]))]})
+perToEmpty[0]["Total Seats"] = [0 for x in range(int(runParams[0]))]
 for sect in sections.values():
-    perToEmpty[1]["Total Seats"][sect[1]-1] += sect[2]
+    perToEmpty[0]["Total Seats"][sect[1]-1] += sect[2]
 statFile.write("\nTotal Seats and Empty Seats by Period\n" + tabulate.tabulate([perToEmpty], headers=["","P1","P2","P3","P4","P5","P6","P7"], tablefmt="grid") + "\n")
 
 # Calculate the mean empty seats and standard deviation for each course
