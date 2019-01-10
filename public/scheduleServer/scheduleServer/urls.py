@@ -18,6 +18,7 @@ from django.urls import path,include
 from django.contrib.auth import views
 
 urlpatterns = [
+    path('accounts/', include('django.contrib.auth.urls'), name = "login"),
     path('studentInput/', include('studentInput.urls'), name = 'studentInput'),
     path('admin/', admin.site.urls),
     path('counselorEditor/', include('counselorEditor.urls'), name = 'counselorEditor'),
