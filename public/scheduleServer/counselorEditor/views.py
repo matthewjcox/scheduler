@@ -51,6 +51,6 @@ def success(request):
     return HttpResponseRedirect(reverse('counselorEditor:index'))#success
     
 def big_red_button(request):
-    
+    return
     
     
