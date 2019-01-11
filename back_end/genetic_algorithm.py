@@ -385,14 +385,19 @@ class master_schedule(chromosome):
             conflicts=-1
             while conflicts!=0:
                 n+=1
-                if n>100:
+                if n>100000:
                     # print(i.teacherID)
+                    print('Teacher {} has unresolveable conflicts. Exiting operation.'.format(i.teaacherID))
+                    raise ValueError
                 conflicts=0
                 periods_yr = set()
                 periods_s1 = set()
                 periods_s2 = set()
                 for j in sorted(i.sched,key=lambda i:random.random()):
                     k = j.period
+                    if k==0:
+                        self.mutate_period(j)
+                        conflicts+=1
                     if j.semester == 0:
                         if k in periods_yr or k in periods_s1 or k in periods_s2:
                             self.mutate_period(j)
@@ -544,13 +549,13 @@ class hill_climb_solo_2:
                 first_it=0
                 print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
-            num_mutations=1#int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION)))
+            num_mutations=int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION))) if i!=1 else 0
             for i in range(num_mutations):
                 new_organism.mutate_period()
             new_organism.initialize_weights()
-            for _ in range(5):
+            for _ in range(2):
                 for i in new_organism.students.values():
-                    new_organism.optimize_student(i,max_it=4)
+                    new_organism.optimize_student(i,max_it=10)
             new_score=new_organism.preliminary_score()
             old_score=self.current_sched.preliminary_score()
             delta_score=old_score-new_score
