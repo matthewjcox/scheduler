@@ -85,16 +85,17 @@ def read_students(studentfn,students,all_courses):
                 studentinfo=data[i].strip()
                 i+=1
                 # print(studentinfo)
-                id,fn,ln,num_classes=studentinfo.split(',')
+                id,fn,ln,grade,num_classes=studentinfo.split(',')
                 id=id.strip()
                 fn = fn.strip()
                 ln = ln.strip()
+                grade=grade.strip()
                 num_classes = int(num_classes)
                 classes=[]
                 for j in range(num_classes):
                     classes.append(data[i+j].strip())
                 courses=Student_Courses(classes,all_courses)
-                stud=Student(ln, fn, id, courses)
+                stud=Student(ln, fn, id, grade, courses)
                 students[id]=stud
                 i += num_classes+1
             except IndexError as e:

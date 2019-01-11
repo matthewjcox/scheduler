@@ -49,3 +49,8 @@ def success(request):
     outFile.write(data.decode())
     outFile.close()
     return HttpResponseRedirect(reverse('counselorEditor:index'))#success
+    
+def big_red_button(request):
+    return
+    
+    

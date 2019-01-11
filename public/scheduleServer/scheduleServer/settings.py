@@ -50,14 +50,16 @@ INSTALLED_APPS = [
 
 AUTHENTICATION_BACKENDS = [
     'ion_oauth.oauth.IonOauth2',
-#    'django.contrib.auth.backends.ModelBackend',
+    'django.contrib.auth.backends.ModelBackend',
 ] 
 
 
 SOCIAL_AUTH_ION_KEY = 'zN7yQ1B2w0mNFZBBAsHlEHk2KFLcxrKrJ0Dvu4cI'
 SOCIAL_AUTH_ION_SECRET = 'pYU4OqLzNBaRCqFsIJCt31qCVQcJ0xNa6apmOEFZ3Y77BTJvjuvMkCsdoGgcV2htbL8RkodS37Lt2fo4QHGniJ75VDDscjSJPBw4wNVWShWReTtgweMmRO54mx4oOt7x'
 LOGIN_URL = 'https://schedule.sites.tjhsst.edu/loginPage'
-LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/loginPage'
+
 SANITIZE_REDIRECTS = False
 SOCIAL_AUTH_SANITIZE_REDIRECTS = False
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
@@ -85,7 +87,7 @@ ROOT_URLCONF = 'scheduleServer.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

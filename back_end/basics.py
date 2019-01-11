@@ -178,7 +178,7 @@ class Course:
         return hash(self.courseID)
 
 class Student:
-    def __init__(self,myLastName, myFirstName,myID,myCourses):
+    def __init__(self,myLastName, myFirstName,myID,grade,myCourses):
 
         # studentID is a string that stores a student's student ID.
         self.studentID = myID
@@ -186,6 +186,8 @@ class Student:
         self.firstName = myFirstName
 
         self.lastName = myLastName
+
+        self.grade=grade
 
         self.courses=myCourses#Student_Courses object
 
@@ -236,7 +238,7 @@ class Student:
 
 
     def copy(self):
-        return Student(self.lastName,self.firstName,self.studentID,self.courses)
+        return Student(self.lastName,self.firstName,self.studentID,self.grade,self.courses)
 
     def __hash__(self):
         return hash(self.studentID)

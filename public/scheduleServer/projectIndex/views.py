@@ -7,6 +7,7 @@ from django.urls import reverse
 import re
 from django.apps import apps
 from scheduleServer.settings import MY_APPS
+from django.contrib.auth.models import User
 
 def index(request):
     app_list = [re.match("^.*?(?=\.)",appName).group(0) for appName in MY_APPS]
@@ -19,5 +20,17 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
     
-def redirect(request, appName):
-    return 
+def oauthProcessing(request):
+    user = findUser(request)
+    return HttpResponseRedirect(reverse('projectIndex:index'))
+    
+    
+def findUser(username):
+    user = User.objects.get("username")
+    
+    
+    
+    
+    
+    
+    
