@@ -18,9 +18,20 @@ for r in range(2,16000):
         file.write(ws.cell(row=r,column=4).value.__str__()+"\n")
 '''
 
-curStud = 0
+curStud = 1
 r = 2
 # FINISH MODIFYING to count how many course requests each student has before printing to text file (store course requests in list)
-while ws.cell(row=r, column=1):
-    while ws.cell(row=r,column=1)==curStud:
-
+while ws.cell(row=r, column=1).value:
+    studRequests = []
+    while ws.cell(row=r,column=1).value==curStud:
+        #print("HI")
+        if not ws.cell(row=r,column=5).value == "See Counselor":
+            studRequests.append(ws.cell(row=r,column=4).value.__str__())
+        r += 1
+    file.write(curStud.__str__() + ", Student, " + curStud.__str__() + ", " + ws.cell(row=r-1, column=3).value.__str__() + ", " + len(studRequests).__str__() + "\n")
+    for x in range(len(studRequests)):
+        file.write(studRequests[x] + "\n")
+    file.write("\n")
+    #print(curStud)
+    #print(studRequests)
+    curStud = ws.cell(row=r, column=1).value
