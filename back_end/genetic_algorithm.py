@@ -461,7 +461,7 @@ class master_schedule(chromosome):
             new_section.add_student(student)
             new_score = self.score_student(student)[0]
 
-            if new_score>=score:# or random.random()<20**(-score+new_score)
+            if new_score>=score or random.random()<2**(-10*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
