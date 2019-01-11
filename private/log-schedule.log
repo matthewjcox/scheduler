@@ -12716,3 +12716,893 @@ Bad Request: /auth/login/Ion/
 [2018-12-18 13:26:46 -0500] [31035] [INFO] Booting worker with pid: 31035
 [2018-12-18 13:26:46 -0500] [31036] [INFO] Booting worker with pid: 31036
 [2018-12-18 13:26:46 -0500] [31041] [INFO] Booting worker with pid: 31041
+[2018-12-18 18:30:06 +0000] [31034] [INFO] Worker exiting (pid: 31034)
+[2018-12-18 18:30:06 +0000] [31041] [INFO] Worker exiting (pid: 31041)
+[2018-12-18 18:30:06 +0000] [31036] [INFO] Worker exiting (pid: 31036)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2018-12-18 13:30:07 -0500] [32538] [INFO] Starting gunicorn 19.9.0
+[2018-12-18 13:30:07 -0500] [32538] [INFO] Listening at: http://127.0.0.1:11356 (32538)
+[2018-12-18 13:30:07 -0500] [32538] [INFO] Using worker: sync
+[2018-12-18 13:30:07 -0500] [32549] [INFO] Booting worker with pid: 32549
+[2018-12-18 13:30:07 -0500] [32551] [INFO] Booting worker with pid: 32551
+[2018-12-18 13:30:07 -0500] [32553] [INFO] Booting worker with pid: 32553
+[2018-12-18 13:30:07 -0500] [32555] [INFO] Booting worker with pid: 32555
+\n\n\n starting new server run \n
+[2018-12-19 12:50:29 -0500] [12812] [INFO] Starting gunicorn 19.9.0
+[2018-12-19 12:50:29 -0500] [12812] [INFO] Listening at: http://127.0.0.1:11356 (12812)
+[2018-12-19 12:50:29 -0500] [12812] [INFO] Using worker: sync
+[2018-12-19 12:50:29 -0500] [12815] [INFO] Booting worker with pid: 12815
+[2018-12-19 12:50:29 -0500] [12816] [INFO] Booting worker with pid: 12816
+[2018-12-19 12:50:29 -0500] [12821] [INFO] Booting worker with pid: 12821
+[2018-12-19 12:50:29 -0500] [12822] [INFO] Booting worker with pid: 12822
+\n\n\n starting new server run \n
+[2018-12-19 14:15:35 -0500] [1074] [INFO] Starting gunicorn 19.9.0
+[2018-12-19 14:15:35 -0500] [1074] [INFO] Listening at: http://127.0.0.1:11356 (1074)
+[2018-12-19 14:15:35 -0500] [1074] [INFO] Using worker: sync
+[2018-12-19 14:15:35 -0500] [1077] [INFO] Booting worker with pid: 1077
+[2018-12-19 14:15:35 -0500] [1078] [INFO] Booting worker with pid: 1078
+[2018-12-19 14:15:35 -0500] [1081] [INFO] Booting worker with pid: 1081
+[2018-12-19 14:15:35 -0500] [1082] [INFO] Booting worker with pid: 1082
+\n\n\n starting new server run \n
+[2018-12-21 13:23:50 -0500] [18844] [INFO] Starting gunicorn 19.9.0
+[2018-12-21 13:23:50 -0500] [18844] [INFO] Listening at: http://127.0.0.1:11356 (18844)
+[2018-12-21 13:23:50 -0500] [18844] [INFO] Using worker: sync
+[2018-12-21 13:23:50 -0500] [18847] [INFO] Booting worker with pid: 18847
+[2018-12-21 13:23:50 -0500] [18853] [INFO] Booting worker with pid: 18853
+[2018-12-21 13:23:50 -0500] [18856] [INFO] Booting worker with pid: 18856
+[2018-12-21 13:23:50 -0500] [18857] [INFO] Booting worker with pid: 18857
+\n\n\n starting new server run \n
+[2018-12-21 14:16:50 -0500] [22052] [INFO] Starting gunicorn 19.9.0
+[2018-12-21 14:16:50 -0500] [22052] [INFO] Listening at: http://127.0.0.1:11356 (22052)
+[2018-12-21 14:16:50 -0500] [22052] [INFO] Using worker: sync
+[2018-12-21 14:16:50 -0500] [22055] [INFO] Booting worker with pid: 22055
+[2018-12-21 14:16:50 -0500] [22057] [INFO] Booting worker with pid: 22057
+[2018-12-21 14:16:50 -0500] [22058] [INFO] Booting worker with pid: 22058
+[2018-12-21 14:16:50 -0500] [22061] [INFO] Booting worker with pid: 22061
+[2018-12-21 19:17:19 +0000] [22057] [INFO] Worker exiting (pid: 22057)
+/web/projects/schedule/public/scheduleServer
+[2018-12-21 19:17:19 +0000] [22061] [INFO] Worker exiting (pid: 22061)
+\n\n\n starting new server run \n
+[2018-12-21 14:17:20 -0500] [22102] [INFO] Starting gunicorn 19.9.0
+[2018-12-21 14:17:20 -0500] [22102] [INFO] Listening at: http://127.0.0.1:11356 (22102)
+[2018-12-21 14:17:20 -0500] [22102] [INFO] Using worker: sync
+[2018-12-21 14:17:20 -0500] [22105] [INFO] Booting worker with pid: 22105
+[2018-12-21 14:17:20 -0500] [22107] [INFO] Booting worker with pid: 22107
+[2018-12-21 14:17:21 -0500] [22108] [INFO] Booting worker with pid: 22108
+[2018-12-21 14:17:21 -0500] [22111] [INFO] Booting worker with pid: 22111
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-01-04 20:04:55 -0500] [11264] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:04:55 -0500] [11264] [INFO] Listening at: http://127.0.0.1:11356 (11264)
+[2019-01-04 20:04:55 -0500] [11264] [INFO] Using worker: sync
+[2019-01-04 20:04:55 -0500] [11271] [INFO] Booting worker with pid: 11271
+[2019-01-04 20:04:55 -0500] [11273] [INFO] Booting worker with pid: 11273
+[2019-01-04 20:04:55 -0500] [11275] [INFO] Booting worker with pid: 11275
+[2019-01-04 20:04:55 -0500] [11276] [INFO] Booting worker with pid: 11276
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', auth_views.login, name = "login"),
+NameError: name 'auth_views' is not defined
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', auth_views.login, name = "login"),
+NameError: name 'auth_views' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', views.login, name = "login"),
+AttributeError: module 'django.contrib.auth.views' has no attribute 'login'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', views.login, name = "login"),
+AttributeError: module 'django.contrib.auth.views' has no attribute 'login'
+[2019-01-05 01:05:55 +0000] [11271] [INFO] Worker exiting (pid: 11271)
+[2019-01-05 01:05:55 +0000] [11273] [INFO] Worker exiting (pid: 11273)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 20:05:55 -0500] [11264] [INFO] Handling signal: term
+[2019-01-05 01:05:55 +0000] [11275] [INFO] Worker exiting (pid: 11275)
+[2019-01-05 01:05:55 +0000] [11276] [INFO] Worker exiting (pid: 11276)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:05:56 -0500] [11414] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:05:56 -0500] [11414] [INFO] Listening at: http://127.0.0.1:11356 (11414)
+[2019-01-04 20:05:56 -0500] [11414] [INFO] Using worker: sync
+[2019-01-04 20:05:56 -0500] [11421] [INFO] Booting worker with pid: 11421
+[2019-01-04 20:05:56 -0500] [11422] [INFO] Booting worker with pid: 11422
+[2019-01-04 20:05:56 -0500] [11423] [INFO] Booting worker with pid: 11423
+[2019-01-04 20:05:56 -0500] [11425] [INFO] Booting worker with pid: 11425
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', views.login, name = "login"),
+AttributeError: module 'django.contrib.auth.views' has no attribute 'login'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', views.login, name = "login"),
+AttributeError: module 'django.contrib.auth.views' has no attribute 'login'
+[2019-01-05 01:08:34 +0000] [11421] [INFO] Worker exiting (pid: 11421)
+[2019-01-05 01:08:34 +0000] [11422] [INFO] Worker exiting (pid: 11422)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 20:08:34 -0500] [11414] [INFO] Handling signal: term
+[2019-01-05 01:08:34 +0000] [11423] [INFO] Worker exiting (pid: 11423)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:08:35 -0500] [11965] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:08:35 -0500] [11965] [INFO] Listening at: http://127.0.0.1:11356 (11965)
+[2019-01-04 20:08:35 -0500] [11965] [INFO] Using worker: sync
+[2019-01-04 20:08:35 -0500] [11972] [INFO] Booting worker with pid: 11972
+[2019-01-04 20:08:35 -0500] [11973] [INFO] Booting worker with pid: 11973
+[2019-01-04 20:08:35 -0500] [11976] [INFO] Booting worker with pid: 11976
+[2019-01-04 20:08:35 -0500] [11977] [INFO] Booting worker with pid: 11977
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', urls.login, name = "login"),
+AttributeError: module 'django.contrib.auth.urls' has no attribute 'login'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('login/', urls.login, name = "login"),
+AttributeError: module 'django.contrib.auth.urls' has no attribute 'login'
+[2019-01-05 01:10:06 +0000] [11976] [INFO] Worker exiting (pid: 11976)
+/web/projects/schedule/public/scheduleServer
+[2019-01-05 01:10:06 +0000] [11973] [INFO] Worker exiting (pid: 11973)
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 20:10:06 -0500] [11965] [INFO] Handling signal: term
+[2019-01-05 01:10:06 +0000] [11972] [INFO] Worker exiting (pid: 11972)
+[2019-01-05 01:10:06 +0000] [11977] [INFO] Worker exiting (pid: 11977)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:10:08 -0500] [12167] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:10:08 -0500] [12167] [INFO] Listening at: http://127.0.0.1:11356 (12167)
+[2019-01-04 20:10:08 -0500] [12167] [INFO] Using worker: sync
+[2019-01-04 20:10:08 -0500] [12174] [INFO] Booting worker with pid: 12174
+[2019-01-04 20:10:08 -0500] [12175] [INFO] Booting worker with pid: 12175
+[2019-01-04 20:10:08 -0500] [12177] [INFO] Booting worker with pid: 12177
+[2019-01-04 20:10:08 -0500] [12179] [INFO] Booting worker with pid: 12179
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('account/', include('djang.contrib.auth.urls'), name = "login"),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'djang'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 21, in <module>
+    path('account/', include('djang.contrib.auth.urls'), name = "login"),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'djang'
+[2019-01-05 01:10:24 +0000] [12179] [INFO] Worker exiting (pid: 12179)
+/web/projects/schedule/public/scheduleServer
+[2019-01-05 01:10:24 +0000] [12177] [INFO] Worker exiting (pid: 12177)
+[2019-01-05 01:10:24 +0000] [12175] [INFO] Worker exiting (pid: 12175)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 20:10:24 -0500] [12167] [INFO] Handling signal: term
+[2019-01-05 01:10:24 +0000] [12174] [INFO] Worker exiting (pid: 12174)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:10:25 -0500] [12203] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:10:25 -0500] [12203] [INFO] Listening at: http://127.0.0.1:11356 (12203)
+[2019-01-04 20:10:25 -0500] [12203] [INFO] Using worker: sync
+[2019-01-04 20:10:25 -0500] [12210] [INFO] Booting worker with pid: 12210
+[2019-01-04 20:10:25 -0500] [12211] [INFO] Booting worker with pid: 12211
+[2019-01-04 20:10:25 -0500] [12213] [INFO] Booting worker with pid: 12213
+[2019-01-04 20:10:25 -0500] [12216] [INFO] Booting worker with pid: 12216
+Not Found: /favicon.ico
+Not Found: /accounts
+Not Found: /account
+Not Found: /accounts
+[2019-01-05 01:53:08 +0000] [12213] [INFO] Worker exiting (pid: 12213)
+/web/projects/schedule/public/scheduleServer
+[2019-01-05 01:53:08 +0000] [12210] [INFO] Worker exiting (pid: 12210)
+[2019-01-05 01:53:08 +0000] [12211] [INFO] Worker exiting (pid: 12211)
+[2019-01-05 01:53:08 +0000] [12216] [INFO] Worker exiting (pid: 12216)
+[2019-01-04 20:53:08 -0500] [12203] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:53:10 -0500] [17161] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:53:10 -0500] [17161] [INFO] Listening at: http://127.0.0.1:11356 (17161)
+[2019-01-04 20:53:10 -0500] [17161] [INFO] Using worker: sync
+[2019-01-04 20:53:10 -0500] [17168] [INFO] Booting worker with pid: 17168
+[2019-01-04 20:53:10 -0500] [17170] [INFO] Booting worker with pid: 17170
+[2019-01-04 20:53:10 -0500] [17171] [INFO] Booting worker with pid: 17171
+[2019-01-04 20:53:10 -0500] [17173] [INFO] Booting worker with pid: 17173
+Not Found: /accounts
+[2019-01-05 01:58:21 +0000] [17171] [INFO] Worker exiting (pid: 17171)
+[2019-01-05 01:58:21 +0000] [17170] [INFO] Worker exiting (pid: 17170)
+[2019-01-05 01:58:21 +0000] [17173] [INFO] Worker exiting (pid: 17173)
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 20:58:21 -0500] [17161] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-01-05 01:58:21 +0000] [17168] [INFO] Worker exiting (pid: 17168)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 20:58:22 -0500] [17739] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 20:58:22 -0500] [17739] [INFO] Listening at: http://127.0.0.1:11356 (17739)
+[2019-01-04 20:58:22 -0500] [17739] [INFO] Using worker: sync
+[2019-01-04 20:58:22 -0500] [17746] [INFO] Booting worker with pid: 17746
+[2019-01-04 20:58:22 -0500] [17747] [INFO] Booting worker with pid: 17747
+[2019-01-04 20:58:22 -0500] [17749] [INFO] Booting worker with pid: 17749
+[2019-01-04 20:58:22 -0500] [17751] [INFO] Booting worker with pid: 17751
+[2019-01-05 02:03:24 +0000] [17751] [INFO] Worker exiting (pid: 17751)
+[2019-01-05 02:03:24 +0000] [17749] [INFO] Worker exiting (pid: 17749)
+[2019-01-05 02:03:24 +0000] [17746] [INFO] Worker exiting (pid: 17746)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-04 21:03:24 -0500] [17739] [INFO] Handling signal: term
+[2019-01-05 02:03:24 +0000] [17747] [INFO] Worker exiting (pid: 17747)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-04 21:03:25 -0500] [18322] [INFO] Starting gunicorn 19.9.0
+[2019-01-04 21:03:25 -0500] [18322] [INFO] Listening at: http://127.0.0.1:11356 (18322)
+[2019-01-04 21:03:25 -0500] [18322] [INFO] Using worker: sync
+[2019-01-04 21:03:25 -0500] [18329] [INFO] Booting worker with pid: 18329
+[2019-01-04 21:03:25 -0500] [18330] [INFO] Booting worker with pid: 18330
+[2019-01-04 21:03:25 -0500] [18332] [INFO] Booting worker with pid: 18332
+[2019-01-04 21:03:25 -0500] [18333] [INFO] Booting worker with pid: 18333
+Not Found: /login
+Not Found: /auth/login
+\n\n\n starting new server run \n
+[2019-01-07 09:52:15 -0500] [17497] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 09:52:15 -0500] [17497] [INFO] Listening at: http://127.0.0.1:11356 (17497)
+[2019-01-07 09:52:15 -0500] [17497] [INFO] Using worker: sync
+[2019-01-07 09:52:15 -0500] [17504] [INFO] Booting worker with pid: 17504
+[2019-01-07 09:52:15 -0500] [17505] [INFO] Booting worker with pid: 17505
+[2019-01-07 09:52:15 -0500] [17507] [INFO] Booting worker with pid: 17507
+[2019-01-07 09:52:15 -0500] [17508] [INFO] Booting worker with pid: 17508
+Not Found: /schedule.sites.tjhsst.edu/accounts/login
+Not Found: /schedule.sites.tjhsst.edu/accounts/login
+[2019-01-07 14:53:17 +0000] [17508] [INFO] Worker exiting (pid: 17508)
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 14:53:17 +0000] [17505] [INFO] Worker exiting (pid: 17505)
+[2019-01-07 14:53:17 +0000] [17504] [INFO] Worker exiting (pid: 17504)
+[2019-01-07 14:53:17 +0000] [17507] [INFO] Worker exiting (pid: 17507)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 09:53:17 -0500] [17497] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-07 09:53:18 -0500] [17640] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 09:53:18 -0500] [17640] [INFO] Listening at: http://127.0.0.1:11356 (17640)
+[2019-01-07 09:53:18 -0500] [17640] [INFO] Using worker: sync
+[2019-01-07 09:53:18 -0500] [17647] [INFO] Booting worker with pid: 17647
+[2019-01-07 09:53:18 -0500] [17648] [INFO] Booting worker with pid: 17648
+[2019-01-07 09:53:18 -0500] [17649] [INFO] Booting worker with pid: 17649
+[2019-01-07 09:53:18 -0500] [17651] [INFO] Booting worker with pid: 17651
+[2019-01-07 14:55:17 +0000] [17651] [INFO] Worker exiting (pid: 17651)
+[2019-01-07 14:55:17 +0000] [17649] [INFO] Worker exiting (pid: 17649)
+[2019-01-07 14:55:17 +0000] [17648] [INFO] Worker exiting (pid: 17648)
+[2019-01-07 14:55:17 +0000] [17647] [INFO] Worker exiting (pid: 17647)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 09:55:17 -0500] [17640] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-07 09:55:19 -0500] [18098] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 09:55:19 -0500] [18098] [INFO] Listening at: http://127.0.0.1:11356 (18098)
+[2019-01-07 09:55:19 -0500] [18098] [INFO] Using worker: sync
+[2019-01-07 09:55:19 -0500] [18105] [INFO] Booting worker with pid: 18105
+[2019-01-07 09:55:19 -0500] [18106] [INFO] Booting worker with pid: 18106
+[2019-01-07 09:55:19 -0500] [18107] [INFO] Booting worker with pid: 18107
+[2019-01-07 09:55:19 -0500] [18111] [INFO] Booting worker with pid: 18111
+[2019-01-07 14:58:40 +0000] [18106] [INFO] Worker exiting (pid: 18106)
+[2019-01-07 14:58:40 +0000] [18107] [INFO] Worker exiting (pid: 18107)
+[2019-01-07 14:58:40 +0000] [18105] [INFO] Worker exiting (pid: 18105)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 14:58:40 +0000] [18111] [INFO] Worker exiting (pid: 18111)
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 09:58:40 -0500] [18098] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-07 09:58:41 -0500] [21599] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 09:58:41 -0500] [21599] [INFO] Listening at: http://127.0.0.1:11356 (21599)
+[2019-01-07 09:58:41 -0500] [21599] [INFO] Using worker: sync
+[2019-01-07 09:58:41 -0500] [21602] [INFO] Booting worker with pid: 21602
+[2019-01-07 09:58:41 -0500] [21603] [INFO] Booting worker with pid: 21603
+[2019-01-07 09:58:41 -0500] [21605] [INFO] Booting worker with pid: 21605
+[2019-01-07 09:58:41 -0500] [21606] [INFO] Booting worker with pid: 21606
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 61, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 91, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 65, in get_success_url
+    return url or resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'projectIndex' not found. 'projectIndex' is not a valid view function or pattern name.
+Forbidden (CSRF token missing or incorrect.): /accounts/login/
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 61, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 91, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 65, in get_success_url
+    return url or resolve_url(settings.LOGIN_REDIRECT_URL)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'projectIndex' not found. 'projectIndex' is not a valid view function or pattern name.
+[2019-01-07 15:00:01 +0000] [21605] [INFO] Worker exiting (pid: 21605)
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 10:00:01 -0500] [21599] [INFO] Handling signal: term
+[2019-01-07 15:00:01 +0000] [21606] [INFO] Worker exiting (pid: 21606)
+[2019-01-07 15:00:01 +0000] [21602] [INFO] Worker exiting (pid: 21602)
+[2019-01-07 15:00:01 +0000] [21603] [INFO] Worker exiting (pid: 21603)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-07 10:00:02 -0500] [22099] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 10:00:02 -0500] [22099] [INFO] Listening at: http://127.0.0.1:11356 (22099)
+[2019-01-07 10:00:02 -0500] [22099] [INFO] Using worker: sync
+[2019-01-07 10:00:02 -0500] [22120] [INFO] Booting worker with pid: 22120
+[2019-01-07 10:00:02 -0500] [22121] [INFO] Booting worker with pid: 22121
+[2019-01-07 10:00:02 -0500] [22123] [INFO] Booting worker with pid: 22123
+[2019-01-07 10:00:02 -0500] [22124] [INFO] Booting worker with pid: 22124
+Internal Server Error: /accounts/logout/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 117, in dispatch
+    next_page = self.get_next_page()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/views.py", line 131, in get_next_page
+    next_page = resolve_url(settings.LOGOUT_REDIRECT_URL)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 622, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'loginPage' not found. 'loginPage' is not a valid view function or pattern name.
+[2019-01-07 15:00:53 +0000] [22124] [INFO] Worker exiting (pid: 22124)
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 10:00:53 -0500] [22099] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-07 10:00:54 -0500] [22329] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 10:00:54 -0500] [22329] [INFO] Listening at: http://127.0.0.1:11356 (22329)
+[2019-01-07 10:00:54 -0500] [22329] [INFO] Using worker: sync
+[2019-01-07 10:00:54 -0500] [22336] [INFO] Booting worker with pid: 22336
+[2019-01-07 10:00:54 -0500] [22337] [INFO] Booting worker with pid: 22337
+[2019-01-07 10:00:54 -0500] [22341] [INFO] Booting worker with pid: 22341
+[2019-01-07 10:00:54 -0500] [22344] [INFO] Booting worker with pid: 22344
+\n\n\n starting new server run \n
+[2019-01-07 15:14:42 -0500] [19725] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 15:14:42 -0500] [19725] [INFO] Listening at: http://127.0.0.1:11356 (19725)
+[2019-01-07 15:14:42 -0500] [19725] [INFO] Using worker: sync
+[2019-01-07 15:14:42 -0500] [19731] [INFO] Booting worker with pid: 19731
+[2019-01-07 15:14:42 -0500] [19732] [INFO] Booting worker with pid: 19732
+[2019-01-07 15:14:42 -0500] [19741] [INFO] Booting worker with pid: 19741
+[2019-01-07 15:14:42 -0500] [19743] [INFO] Booting worker with pid: 19743
+[2019-01-07 20:38:24 +0000] [19743] [INFO] Worker exiting (pid: 19743)
+[2019-01-07 15:38:24 -0500] [19725] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 20:38:24 +0000] [19731] [INFO] Worker exiting (pid: 19731)
+[2019-01-07 20:38:24 +0000] [19741] [INFO] Worker exiting (pid: 19741)
+[2019-01-07 20:38:24 +0000] [19732] [INFO] Worker exiting (pid: 19732)
+\n\n\n starting new server run \n
+[2019-01-07 15:38:25 -0500] [14584] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 15:38:25 -0500] [14584] [INFO] Listening at: http://127.0.0.1:11356 (14584)
+[2019-01-07 15:38:25 -0500] [14584] [INFO] Using worker: sync
+[2019-01-07 15:38:25 -0500] [14615] [INFO] Booting worker with pid: 14615
+[2019-01-07 15:38:25 -0500] [14620] [INFO] Booting worker with pid: 14620
+[2019-01-07 15:38:25 -0500] [14627] [INFO] Booting worker with pid: 14627
+[2019-01-07 15:38:25 -0500] [14630] [INFO] Booting worker with pid: 14630
+[2019-01-07 20:42:15 +0000] [14620] [INFO] Worker exiting (pid: 14620)
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 20:42:15 +0000] [14615] [INFO] Worker exiting (pid: 14615)
+[2019-01-07 20:42:15 +0000] [14627] [INFO] Worker exiting (pid: 14627)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 20:42:15 +0000] [14630] [INFO] Worker exiting (pid: 14630)
+\n\n\n starting new server run \n
+[2019-01-07 15:42:17 -0500] [26928] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 15:42:17 -0500] [26928] [INFO] Listening at: http://127.0.0.1:11356 (26928)
+[2019-01-07 15:42:17 -0500] [26928] [INFO] Using worker: sync
+[2019-01-07 15:42:17 -0500] [26931] [INFO] Booting worker with pid: 26931
+[2019-01-07 15:42:17 -0500] [26932] [INFO] Booting worker with pid: 26932
+[2019-01-07 15:42:17 -0500] [26933] [INFO] Booting worker with pid: 26933
+[2019-01-07 15:42:17 -0500] [26937] [INFO] Booting worker with pid: 26937
+[2019-01-07 21:00:58 +0000] [26931] [INFO] Worker exiting (pid: 26931)
+[2019-01-07 21:00:58 +0000] [26933] [INFO] Worker exiting (pid: 26933)
+[2019-01-07 21:00:58 +0000] [26932] [INFO] Worker exiting (pid: 26932)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 21:00:58 +0000] [26937] [INFO] Worker exiting (pid: 26937)
+[2019-01-07 16:00:58 -0500] [26928] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-07 16:01:00 -0500] [23932] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 16:01:00 -0500] [23932] [INFO] Listening at: http://127.0.0.1:11356 (23932)
+[2019-01-07 16:01:00 -0500] [23932] [INFO] Using worker: sync
+[2019-01-07 16:01:00 -0500] [24208] [INFO] Booting worker with pid: 24208
+[2019-01-07 16:01:00 -0500] [24216] [INFO] Booting worker with pid: 24216
+[2019-01-07 16:01:00 -0500] [24218] [INFO] Booting worker with pid: 24218
+[2019-01-07 16:01:00 -0500] [24224] [INFO] Booting worker with pid: 24224
+[2019-01-07 21:02:07 +0000] [24208] [INFO] Worker exiting (pid: 24208)
+[2019-01-07 21:02:07 +0000] [24218] [INFO] Worker exiting (pid: 24218)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-07 21:02:07 +0000] [24216] [INFO] Worker exiting (pid: 24216)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-07 16:02:08 -0500] [5561] [INFO] Starting gunicorn 19.9.0
+[2019-01-07 16:02:08 -0500] [5561] [INFO] Listening at: http://127.0.0.1:11356 (5561)
+[2019-01-07 16:02:08 -0500] [5561] [INFO] Using worker: sync
+[2019-01-07 16:02:08 -0500] [5652] [INFO] Booting worker with pid: 5652
+[2019-01-07 16:02:08 -0500] [5656] [INFO] Booting worker with pid: 5656
+[2019-01-07 16:02:08 -0500] [5657] [INFO] Booting worker with pid: 5657
+[2019-01-07 16:02:08 -0500] [5670] [INFO] Booting worker with pid: 5670
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 27, in <module>
+    path('', include('projectIndex.urls'), name = 'projectIndex'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/urls.py", line 3, in <module>
+    from . import views
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 23
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2019-01-08 15:53:10 +0000] [5656] [INFO] Worker exiting (pid: 5656)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-08 10:53:11 -0500] [26360] [INFO] Starting gunicorn 19.9.0
+[2019-01-08 10:53:11 -0500] [26360] [INFO] Listening at: http://127.0.0.1:11356 (26360)
+[2019-01-08 10:53:11 -0500] [26360] [INFO] Using worker: sync
+[2019-01-08 10:53:11 -0500] [26367] [INFO] Booting worker with pid: 26367
+[2019-01-08 10:53:12 -0500] [26368] [INFO] Booting worker with pid: 26368
+[2019-01-08 10:53:12 -0500] [26370] [INFO] Booting worker with pid: 26370
+[2019-01-08 10:53:12 -0500] [26372] [INFO] Booting worker with pid: 26372
+[2019-01-09 13:52:26 -0500] [26360] [INFO] Handling signal: term
+[2019-01-09 18:52:26 +0000] [26367] [INFO] Worker exiting (pid: 26367)
+[2019-01-09 18:52:26 +0000] [26368] [INFO] Worker exiting (pid: 26368)
+[2019-01-09 18:52:26 +0000] [26372] [INFO] Worker exiting (pid: 26372)
+\n\n\n starting new server run \n
+[2019-01-09 13:52:27 -0500] [21257] [INFO] Starting gunicorn 19.9.0
+[2019-01-09 13:52:27 -0500] [21257] [INFO] Listening at: http://127.0.0.1:11356 (21257)
+[2019-01-09 13:52:27 -0500] [21257] [INFO] Using worker: sync
+[2019-01-09 13:52:27 -0500] [21266] [INFO] Booting worker with pid: 21266
+[2019-01-09 13:52:27 -0500] [21267] [INFO] Booting worker with pid: 21267
+[2019-01-09 13:52:27 -0500] [21271] [INFO] Booting worker with pid: 21271
+[2019-01-09 13:52:28 -0500] [21276] [INFO] Booting worker with pid: 21276
+[2019-01-09 19:18:23 +0000] [21276] [INFO] Worker exiting (pid: 21276)
+[2019-01-09 19:18:23 +0000] [21271] [INFO] Worker exiting (pid: 21271)
+[2019-01-09 19:18:23 +0000] [21267] [INFO] Worker exiting (pid: 21267)
+[2019-01-09 14:18:23 -0500] [21257] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-09 19:18:23 +0000] [21266] [INFO] Worker exiting (pid: 21266)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-09 14:18:24 -0500] [30972] [INFO] Starting gunicorn 19.9.0
+[2019-01-09 14:18:24 -0500] [30972] [INFO] Listening at: http://127.0.0.1:11356 (30972)
+[2019-01-09 14:18:24 -0500] [30972] [INFO] Using worker: sync
+[2019-01-09 14:18:24 -0500] [30976] [INFO] Booting worker with pid: 30976
+[2019-01-09 14:18:24 -0500] [30977] [INFO] Booting worker with pid: 30977
+[2019-01-09 14:18:24 -0500] [30984] [INFO] Booting worker with pid: 30984
+[2019-01-09 14:18:24 -0500] [30985] [INFO] Booting worker with pid: 30985
+[2019-01-09 17:24:15 -0500] [30972] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-09 17:24:16 -0500] [9996] [INFO] Starting gunicorn 19.9.0
+[2019-01-09 17:24:16 -0500] [9996] [INFO] Listening at: http://127.0.0.1:11356 (9996)
+[2019-01-09 17:24:16 -0500] [9996] [INFO] Using worker: sync
+[2019-01-09 17:24:16 -0500] [10000] [INFO] Booting worker with pid: 10000
+[2019-01-09 17:24:16 -0500] [10001] [INFO] Booting worker with pid: 10001
+[2019-01-09 17:24:16 -0500] [10003] [INFO] Booting worker with pid: 10003
+[2019-01-09 17:24:16 -0500] [10005] [INFO] Booting worker with pid: 10005

@@ -14,4 +14,6 @@ urlpatterns = [
     path('upload/', views.upload, name = 'upload'),
     
     path('success/', views.success, name = 'success'),
+    
+    path('big_red_button/', views.big_red_button, name = 'big_red_button')
 ]
