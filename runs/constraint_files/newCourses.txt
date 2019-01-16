@@ -246,5 +246,9 @@ Band Meeting| Band Meeting| 000BAN| year
 Math Meeting| Math Meeting| 000MAT| year
 Leadership Meeting| Leader Meeting| 000LEA| year
 Gym Meeting| Gym Meeting| 000GYM| year
-DT Meeting| DT Meeting| 000D&T|year
+DT Meeting| DT Meeting| 000D&T| year
 CS Meeting| CS Meeting| 0000CS| year
+TJHSST Math 3| TJ Math 3| 313753| semester
+TJHSST Math 4| TJ Math 4| 313754| semester
+TJHSST Math 5| TJ Math 5| 316055| semester
+TJHSST Research & Statistics 1| TJ Res Stats 1| 3190T1| semester
