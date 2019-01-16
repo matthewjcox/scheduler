@@ -215,14 +215,41 @@ class master_schedule(chromosome):
         self.fill_new()
 
 
-    def mutate_period(self,mutating_section=None):
+    def mutate_period(self,mutating_section=None,p=None,verbose=1):
         if mutating_section is None:
-            mutating_section = random.choice(tuple(self.sections.values()))
-        p = random.choice(mutating_section.allowed_periods)
+            mutating_section,p=self.choose_mutating_section()
+        if p is None:
+            p = random.choice(mutating_section.allowed_periods)
+        if verbose:
+            print(repr(mutating_section),p)
         try:
             self.change_to_period(mutating_section, p, [])
         except InvalidPeriodError:
             pass
+
+
+    def choose_mutating_section(self):
+        period=None
+        while 1:
+            section=random.choice(tuple(self.sections.values()))
+            if section.maxstudents==0:
+                continue
+            courses={}
+            for i in section.teachers:
+                for j in i.sched:
+                    if j.period not in courses:
+                        courses[j.period]=[]
+                    for k in j.courses:
+                        courses[j.period].append(k)
+            for i in sorted(section.allowed_periods,key=lambda i:random.random()):
+                if i not in courses or not any([j in courses[i] for j in section.courses]):
+                    period=i
+                    break
+            if period is not None:
+                break
+
+        # period=random.choice(section.allowed_periods)
+        return section,period
 
     def change_to_period(self, section, new_period, reached):
         if new_period==section.period or section in reached:
@@ -255,7 +282,7 @@ class master_schedule(chromosome):
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-10*(1-_CLOSENESS_TO_COMPLETION)**2
 
-    def preliminary_score(self,static=0,print_score_report=0):
+    def preliminary_score(self,static=0,verbose=0):
         if not self.initialized:
             raise ReferenceError
         score=0
@@ -313,8 +340,9 @@ class master_schedule(chromosome):
                 section_penalty_score-=100
         score+=section_penalty_score
 
-        print(student_base_score,student_addl_score,teacher_conflict_score,period_spread_score,section_penalty_score)
-        print(score,score+addl_score)
+        if verbose:
+            print("St base: {}, St addl: {}, T conflict: {}, Per spread: {}, Sec penalty: {}".format(student_base_score,student_addl_score,teacher_conflict_score,period_spread_score,section_penalty_score))
+            print(score,score+addl_score)
 
         return score if static else score+addl_score
 
@@ -396,21 +424,21 @@ class master_schedule(chromosome):
                 for j in sorted(i.sched,key=lambda i:random.random()):
                     k = j.period
                     if k==0:
-                        self.mutate_period(j)
+                        self.mutate_period(j,verbose=0)
                         conflicts+=1
                     if j.semester == 0:
                         if k in periods_yr or k in periods_s1 or k in periods_s2:
-                            self.mutate_period(j)
+                            self.mutate_period(j,verbose=0)
                             conflicts+=1
                         periods_yr.add(j.period)
                     elif j.semester == 1:
                         if k in periods_yr or k in periods_s1:
-                            self.mutate_period(j)
+                            self.mutate_period(j,verbose=0)
                             conflicts+=1
                         periods_s1.add(j.period)
                     elif j.semester == 2:
                         if k in periods_yr or k in periods_s2:
-                            self.mutate_period(j)
+                            self.mutate_period(j,verbose=0)
                             conflicts+=1
                         periods_s2.add(j.period)
 
@@ -528,8 +556,6 @@ class hill_climb_solo_2:
         print('5' in j.stock_students)
         self.current_sched=j
 
-
-
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
         global _ITERATION
@@ -549,19 +575,26 @@ class hill_climb_solo_2:
                 first_it=0
                 print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
-            num_mutations=int(1+random.random()*(3+15*(1-_CLOSENESS_TO_COMPLETION))) if i!=1 else 0
-            for i in range(num_mutations):
-                new_organism.mutate_period()
             new_organism.initialize_weights()
-            for _ in range(2):
-                for i in new_organism.students.values():
-                    new_organism.optimize_student(i,max_it=10)
-            new_score=new_organism.preliminary_score()
-            old_score=self.current_sched.preliminary_score()
+            if i%20==1:
+                for _ in range(10):
+                    for i in new_organism.students.values():
+                        new_organism.optimize_student(i, max_it=10)
+            else:
+                num_mutations=int(1+random.random()*(1*(1-_CLOSENESS_TO_COMPLETION))) if i%20!=1 else 0
+                for i in range(num_mutations):
+                    new_organism.mutate_period()
+                for _ in range(2):
+                    for i in new_organism.students.values():
+                        new_organism.optimize_student(i,max_it=5)
+            print('New:')
+            new_score=new_organism.preliminary_score(verbose=1)
+            print('Old:')
+            old_score=self.current_sched.preliminary_score(verbose=1)
             delta_score=old_score-new_score
             if new_score>=old_score or random.random()<10**(-1000*delta_score/self.current_sched.theoretical_max_score):
                 self.current_sched=new_organism
-            print('',old_score,'\n',new_score)
+            # print('',old_score,'\n',new_score)
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
                 print('Scheduling complete.')
