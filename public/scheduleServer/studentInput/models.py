@@ -15,8 +15,8 @@ class Course(models.Model):
     category = models.ForeignKey(Category, on_delete = models.CASCADE) #cascade is filler, 
     #category = models.ForeignKey(Category, on_delete = models.SET_DEFAULT) <- need to figure this out
     course_name = models.CharField(max_length = 100)
-    course_id = models.CharField(max_length = 7)
-    course_description = models.CharField(max_length=1000)
+    course_id = models.CharField(max_length = 12)
+    course_description = models.CharField(max_length=10000)
     course_credits = models.FloatField(default = 0.5)
     course_weight = models.FloatField(default = 0.5)
 #    course_prerequisites = set()

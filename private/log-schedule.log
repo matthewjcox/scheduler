@@ -13606,3 +13606,95 @@ SyntaxError: unexpected EOF while parsing
 [2019-01-09 17:24:16 -0500] [10001] [INFO] Booting worker with pid: 10001
 [2019-01-09 17:24:16 -0500] [10003] [INFO] Booting worker with pid: 10003
 [2019-01-09 17:24:16 -0500] [10005] [INFO] Booting worker with pid: 10005
+\n\n\n starting new server run \n
+[2019-01-10 11:58:59 -0500] [14927] [INFO] Starting gunicorn 19.9.0
+[2019-01-10 11:58:59 -0500] [14927] [INFO] Listening at: http://127.0.0.1:11356 (14927)
+[2019-01-10 11:58:59 -0500] [14927] [INFO] Using worker: sync
+[2019-01-10 11:58:59 -0500] [14930] [INFO] Booting worker with pid: 14930
+[2019-01-10 11:58:59 -0500] [14931] [INFO] Booting worker with pid: 14931
+[2019-01-10 11:58:59 -0500] [14932] [INFO] Booting worker with pid: 14932
+[2019-01-10 11:58:59 -0500] [14935] [INFO] Booting worker with pid: 14935
+\n\n\n starting new server run \n
+[2019-01-11 13:17:00 -0500] [31367] [INFO] Starting gunicorn 19.9.0
+[2019-01-11 13:17:00 -0500] [31367] [INFO] Listening at: http://127.0.0.1:11356 (31367)
+[2019-01-11 13:17:00 -0500] [31367] [INFO] Using worker: sync
+[2019-01-11 13:17:00 -0500] [31370] [INFO] Booting worker with pid: 31370
+[2019-01-11 13:17:00 -0500] [31371] [INFO] Booting worker with pid: 31371
+[2019-01-11 13:17:00 -0500] [31372] [INFO] Booting worker with pid: 31372
+[2019-01-11 13:17:00 -0500] [31373] [INFO] Booting worker with pid: 31373
+\n\n\n starting new server run \n
+[2019-01-11 13:21:49 -0500] [302] [INFO] Starting gunicorn 19.9.0
+[2019-01-11 13:21:49 -0500] [302] [INFO] Listening at: http://127.0.0.1:11356 (302)
+[2019-01-11 13:21:49 -0500] [302] [INFO] Using worker: sync
+[2019-01-11 13:21:49 -0500] [305] [INFO] Booting worker with pid: 305
+[2019-01-11 13:21:49 -0500] [307] [INFO] Booting worker with pid: 307
+[2019-01-11 13:21:49 -0500] [308] [INFO] Booting worker with pid: 308
+[2019-01-11 13:21:49 -0500] [310] [INFO] Booting worker with pid: 310
+\n\n\n starting new server run \n
+[2019-01-11 14:12:45 -0500] [11558] [INFO] Starting gunicorn 19.9.0
+[2019-01-11 14:12:45 -0500] [11558] [INFO] Listening at: http://127.0.0.1:11356 (11558)
+[2019-01-11 14:12:45 -0500] [11558] [INFO] Using worker: sync
+[2019-01-11 14:12:45 -0500] [11563] [INFO] Booting worker with pid: 11563
+[2019-01-11 14:12:45 -0500] [11564] [INFO] Booting worker with pid: 11564
+[2019-01-11 14:12:45 -0500] [11568] [INFO] Booting worker with pid: 11568
+[2019-01-11 14:12:45 -0500] [11576] [INFO] Booting worker with pid: 11576
+[2019-01-11 19:16:36 +0000] [11563] [INFO] Worker exiting (pid: 11563)
+[2019-01-11 19:16:36 +0000] [11576] [INFO] Worker exiting (pid: 11576)
+/web/projects/schedule/public/scheduleServer
+[2019-01-11 14:16:36 -0500] [11558] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-01-11 19:16:36 +0000] [11568] [INFO] Worker exiting (pid: 11568)
+[2019-01-11 19:16:36 +0000] [11564] [INFO] Worker exiting (pid: 11564)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-11 14:16:37 -0500] [13051] [INFO] Starting gunicorn 19.9.0
+[2019-01-11 14:16:37 -0500] [13051] [INFO] Listening at: http://127.0.0.1:11356 (13051)
+[2019-01-11 14:16:37 -0500] [13051] [INFO] Using worker: sync
+[2019-01-11 14:16:37 -0500] [13054] [INFO] Booting worker with pid: 13054
+[2019-01-11 14:16:37 -0500] [13055] [INFO] Booting worker with pid: 13055
+[2019-01-11 14:16:37 -0500] [13056] [INFO] Booting worker with pid: 13056
+[2019-01-11 14:16:37 -0500] [13059] [INFO] Booting worker with pid: 13059
+[2019-01-11 22:10:26 +0000] [13055] [INFO] Worker exiting (pid: 13055)
+/web/projects/schedule/public/scheduleServer
+[2019-01-11 17:10:26 -0500] [13051] [INFO] Handling signal: term
+[2019-01-11 22:10:26 +0000] [13056] [INFO] Worker exiting (pid: 13056)
+[2019-01-11 22:10:26 +0000] [13054] [INFO] Worker exiting (pid: 13054)
+[2019-01-11 22:10:26 +0000] [13059] [INFO] Worker exiting (pid: 13059)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-11 17:10:27 -0500] [12540] [INFO] Starting gunicorn 19.9.0
+[2019-01-11 17:10:27 -0500] [12540] [INFO] Listening at: http://127.0.0.1:11356 (12540)
+[2019-01-11 17:10:27 -0500] [12540] [INFO] Using worker: sync
+[2019-01-11 17:10:27 -0500] [12543] [INFO] Booting worker with pid: 12543
+[2019-01-11 17:10:27 -0500] [12544] [INFO] Booting worker with pid: 12544
+[2019-01-11 17:10:28 -0500] [12546] [INFO] Booting worker with pid: 12546
+[2019-01-11 17:10:28 -0500] [12549] [INFO] Booting worker with pid: 12549
+\n\n\n starting new server run \n
+[2019-01-16 15:58:02 -0500] [6682] [INFO] Starting gunicorn 19.9.0
+[2019-01-16 15:58:02 -0500] [6682] [INFO] Listening at: http://127.0.0.1:11356 (6682)
+[2019-01-16 15:58:02 -0500] [6682] [INFO] Using worker: sync
+[2019-01-16 15:58:02 -0500] [6685] [INFO] Booting worker with pid: 6685
+[2019-01-16 15:58:02 -0500] [6690] [INFO] Booting worker with pid: 6690
+[2019-01-16 15:58:02 -0500] [6691] [INFO] Booting worker with pid: 6691
+[2019-01-16 15:58:02 -0500] [6692] [INFO] Booting worker with pid: 6692
+[2019-01-16 21:00:46 +0000] [6692] [INFO] Worker exiting (pid: 6692)
+/web/projects/schedule/public/scheduleServer
+[2019-01-16 16:00:46 -0500] [6682] [INFO] Handling signal: term
+[2019-01-16 21:00:46 +0000] [6691] [INFO] Worker exiting (pid: 6691)
+[2019-01-16 21:00:46 +0000] [6690] [INFO] Worker exiting (pid: 6690)
+[2019-01-16 21:00:46 +0000] [6685] [INFO] Worker exiting (pid: 6685)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-16 16:00:48 -0500] [7458] [INFO] Starting gunicorn 19.9.0
+[2019-01-16 16:00:48 -0500] [7458] [INFO] Listening at: http://127.0.0.1:11356 (7458)
+[2019-01-16 16:00:48 -0500] [7458] [INFO] Using worker: sync
+[2019-01-16 16:00:48 -0500] [7462] [INFO] Booting worker with pid: 7462
+[2019-01-16 16:00:48 -0500] [7463] [INFO] Booting worker with pid: 7463
+[2019-01-16 16:00:48 -0500] [7464] [INFO] Booting worker with pid: 7464
+[2019-01-16 16:00:48 -0500] [7467] [INFO] Booting worker with pid: 7467
+Not Found: /favicon.ico
