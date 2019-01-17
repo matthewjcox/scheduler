@@ -13698,3 +13698,203 @@ SyntaxError: unexpected EOF while parsing
 [2019-01-16 16:00:48 -0500] [7464] [INFO] Booting worker with pid: 7464
 [2019-01-16 16:00:48 -0500] [7467] [INFO] Booting worker with pid: 7467
 Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-01-17 10:29:09 -0500] [3617] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 10:29:09 -0500] [3617] [INFO] Listening at: http://127.0.0.1:11356 (3617)
+[2019-01-17 10:29:09 -0500] [3617] [INFO] Using worker: sync
+[2019-01-17 10:29:09 -0500] [3621] [INFO] Booting worker with pid: 3621
+[2019-01-17 10:29:09 -0500] [3629] [INFO] Booting worker with pid: 3629
+[2019-01-17 10:29:09 -0500] [3638] [INFO] Booting worker with pid: 3638
+[2019-01-17 10:29:09 -0500] [3648] [INFO] Booting worker with pid: 3648
+Not Found: /favicon.ico
+[2019-01-17 16:42:04 +0000] [3621] [INFO] Worker exiting (pid: 3621)
+[2019-01-17 16:42:04 +0000] [3638] [INFO] Worker exiting (pid: 3638)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-17 16:42:04 +0000] [3648] [INFO] Worker exiting (pid: 3648)
+\n\n\n starting new server run \n
+[2019-01-17 11:42:06 -0500] [28757] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 11:42:06 -0500] [28757] [INFO] Listening at: http://127.0.0.1:11356 (28757)
+[2019-01-17 11:42:06 -0500] [28757] [INFO] Using worker: sync
+[2019-01-17 11:42:06 -0500] [28764] [INFO] Booting worker with pid: 28764
+[2019-01-17 11:42:06 -0500] [28765] [INFO] Booting worker with pid: 28765
+[2019-01-17 11:42:06 -0500] [28766] [INFO] Booting worker with pid: 28766
+[2019-01-17 11:42:06 -0500] [28767] [INFO] Booting worker with pid: 28767
+Internal Server Error: /counselorEditor/edit/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 33, in edit
+    'courseDict': Course.objects.all(),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 809, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'Course.objects.all()'
+Internal Server Error: /counselorEditor/edit/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 33, in edit
+    'courseDict': Course.objects.all(),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 544, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 19: 'for'. Looking for one of: empty, endfor.
+[2019-01-17 16:43:10 +0000] [28765] [INFO] Worker exiting (pid: 28765)
+[2019-01-17 16:43:10 +0000] [28767] [INFO] Worker exiting (pid: 28767)
+[2019-01-17 16:43:10 +0000] [28764] [INFO] Worker exiting (pid: 28764)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-17 16:43:10 +0000] [28766] [INFO] Worker exiting (pid: 28766)
+[2019-01-17 11:43:10 -0500] [28757] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-17 11:43:11 -0500] [28898] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 11:43:11 -0500] [28898] [INFO] Listening at: http://127.0.0.1:11356 (28898)
+[2019-01-17 11:43:11 -0500] [28898] [INFO] Using worker: sync
+[2019-01-17 11:43:11 -0500] [28905] [INFO] Booting worker with pid: 28905
+[2019-01-17 11:43:12 -0500] [28906] [INFO] Booting worker with pid: 28906
+[2019-01-17 11:43:12 -0500] [28908] [INFO] Booting worker with pid: 28908
+[2019-01-17 11:43:12 -0500] [28909] [INFO] Booting worker with pid: 28909
+Internal Server Error: /counselorEditor/edit/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 33, in edit
+    'courseDict': Course.objects.all(),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 483, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 544, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 19: 'for'. Looking for one of: empty, endfor.
+[2019-01-17 16:45:03 +0000] [28905] [INFO] Worker exiting (pid: 28905)
+[2019-01-17 16:45:03 +0000] [28906] [INFO] Worker exiting (pid: 28906)
+[2019-01-17 16:45:03 +0000] [28908] [INFO] Worker exiting (pid: 28908)
+[2019-01-17 11:45:03 -0500] [28898] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-17 16:45:03 +0000] [28909] [INFO] Worker exiting (pid: 28909)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-17 11:45:05 -0500] [29455] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 11:45:05 -0500] [29455] [INFO] Listening at: http://127.0.0.1:11356 (29455)
+[2019-01-17 11:45:05 -0500] [29455] [INFO] Using worker: sync
+[2019-01-17 11:45:05 -0500] [29462] [INFO] Booting worker with pid: 29462
+[2019-01-17 11:45:05 -0500] [29463] [INFO] Booting worker with pid: 29463
+[2019-01-17 11:45:05 -0500] [29464] [INFO] Booting worker with pid: 29464
+[2019-01-17 11:45:05 -0500] [29466] [INFO] Booting worker with pid: 29466
+[2019-01-17 16:47:17 +0000] [29464] [INFO] Worker exiting (pid: 29464)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-17 11:47:18 -0500] [30795] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 11:47:18 -0500] [30795] [INFO] Listening at: http://127.0.0.1:11356 (30795)
+[2019-01-17 11:47:18 -0500] [30795] [INFO] Using worker: sync
+[2019-01-17 11:47:18 -0500] [30803] [INFO] Booting worker with pid: 30803
+[2019-01-17 11:47:18 -0500] [30804] [INFO] Booting worker with pid: 30804
+[2019-01-17 11:47:18 -0500] [30806] [INFO] Booting worker with pid: 30806
+[2019-01-17 11:47:18 -0500] [30807] [INFO] Booting worker with pid: 30807
+[2019-01-17 16:49:32 +0000] [30807] [INFO] Worker exiting (pid: 30807)
+[2019-01-17 16:49:32 +0000] [30803] [INFO] Worker exiting (pid: 30803)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-17 16:49:32 +0000] [30804] [INFO] Worker exiting (pid: 30804)
+[2019-01-17 11:49:32 -0500] [30795] [INFO] Handling signal: term
+[2019-01-17 16:49:32 +0000] [30806] [INFO] Worker exiting (pid: 30806)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-17 11:49:33 -0500] [31139] [INFO] Starting gunicorn 19.9.0
+[2019-01-17 11:49:33 -0500] [31139] [INFO] Listening at: http://127.0.0.1:11356 (31139)
+[2019-01-17 11:49:33 -0500] [31139] [INFO] Using worker: sync
+[2019-01-17 11:49:33 -0500] [31146] [INFO] Booting worker with pid: 31146
+[2019-01-17 11:49:33 -0500] [31148] [INFO] Booting worker with pid: 31148
+[2019-01-17 11:49:33 -0500] [31150] [INFO] Booting worker with pid: 31150
+[2019-01-17 11:49:34 -0500] [31152] [INFO] Booting worker with pid: 31152

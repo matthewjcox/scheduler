@@ -19,11 +19,19 @@
     <button onclick="toggle{{category|cut:" "|cut:":"}}()">{{category}}</button>
     <div id = "{{category|cut:" "|cut:":"}}" style = "display:none">
         <style>
-        th {
+        th,td {
             text-align: left;
         }
+        th {
+            padding: 8px;
+        }
+        td{
+            padding-right: 8px;
+            padding-left: 8px;
+        }
         table {
-            border-collapse: collapse
+            border-collapse: collapse;
+            width: 100%;
         }
         table,th,td {
             border: 1px solid black;
@@ -40,7 +48,7 @@
             <tr>
                 <td>{{course.course_name}}</td>
                 <td>{{course.course_id}}</td>
-                <td>{{course.course_credits}} / weighted +{{course.course_weight}}</td>
+                <td nowrap="nowrap" >{{course.course_credits}} / weighted +{{course.course_weight}}</td>
                 <td>{{course.course_description}}</td>
             </tr>
         {%endfor%}

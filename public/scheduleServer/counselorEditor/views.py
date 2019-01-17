@@ -25,10 +25,12 @@ def edit(request):
         return render(request, 'counselorEditor/search.html', {
             'error_message': "User not found",
         })
+    
     return render(request, 'counselorEditor/editor.html', {
         'student': student.student_id,
         'course_list': student.student_course_request.all(),
         'category_list': Category.objects.all(),
+        'courseDict': Course.objects.all(),
     })
 
 def upload(request):
