@@ -13,7 +13,7 @@ Biology 1| Biology 1| 4310T1| year
 MicroElectronics Research| MicroElectronics Res| 9826T2| year
 20th Century World History| 20th Cen Wrld Hist| TJA2340| semester
 Creative Writing 2| Creative Writing 2| 117298| semester
-Economics & Personal Finance (Self Paced)| Econ/Pers Finance| 6120SD| year
+Economics & Personal Finance (Self Paced)| Econ/Pers Finance| 6120VV| year
 Psychology: Mind, Body, & Behavior| Psych: Brain& Beh| 2900T1| semester
 AP Chinese| AP Chinese| 584004| year
 TJHSST Math 5| TJ Math 5| TJA3160| semester

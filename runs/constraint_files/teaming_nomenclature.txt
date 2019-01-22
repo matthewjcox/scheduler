@@ -1,0 +1,6 @@
+- Teaming:
+    - team_1: Sections teamed to have same students and different periods
+    - team_2: Sections teamed to have different students and same period
+        - Orchestra
+    - team_3: Sections teamed to have the same students and same period, provided that students have requested class
+        - Arabics
