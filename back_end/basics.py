@@ -191,7 +191,7 @@ class Student:
 
         self.courses=myCourses#Student_Courses object
 
-        self.teamed={}
+        # self.teamed={}
 
         self.sched = set()
 
@@ -276,14 +276,50 @@ class Section:
         # self.add_student_old(student)
         if student in self.students:
             return
+        # if ignore_conflicts==0:
+        #     conflicting_sections = []
+        #     for i in student.sched:
+        #         if i.period==self.period:
+        #             if i.semester==self.semester or i.semester==0 or self.semester==0:
+        #                 conflicting_sections.append(i)
+        #     for i in conflicting_sections:
+        #         i.remove_student(student)
         student.sched.add(self)
         self.students.add(student)
-        for i in self.courses:
-            if i in student.teamed:
-                for j in student.teamed[i]:
-                    self.add_student(j)
+        # for i in self.courses:
+        #     if i in student.teamed:
+        #         for j in student.teamed[i]:
+        #             self.add_student(j)
         for i in self.teamed_sections:
             i.add_student(student)
+
+    def add_student_removing_conflicts(self, student):
+        print(self.__repr__())
+        self.add_student_removing_conflicts_helper(student)
+
+    def add_student_removing_conflicts_helper(self,student):
+        # self.add_student_old(student)
+        removed=[]
+        if student in self.students:
+            return removed
+        conflicting_sections = []
+        for i in student.sched:
+            if i.period==self.period:
+                if i.semester==self.semester or i.semester==0 or self.semester==0:
+                    conflicting_sections.append(i)
+        for i in conflicting_sections:
+            i.remove_student(student)
+            removed.append(i)
+        student.sched.add(self)
+        self.students.add(student)
+        # for i in self.courses:
+        #     if i in student.teamed:
+        #         for j in student.teamed[i]:
+        #             self.add_student_removing_conflicts(j)
+        for i in self.teamed_sections:
+            rem=i.add_student_removing_conflicts_helper(student)
+            removed+=rem
+        return removed
 
     def remove_student(self, student):
         # self.remove_student_old(student)
@@ -291,10 +327,10 @@ class Section:
             return
         student.sched.remove(self)
         self.students.remove(student)
-        for i in self.courses:
-            if i in student.teamed:
-                for j in student.teamed[i]:
-                    self.remove_student(j)
+        # for i in self.courses:
+        #     if i in student.teamed:
+        #         for j in student.teamed[i]:
+        #             self.remove_student(j)
         for i in self.teamed_sections:
             i.remove_student(student)
 

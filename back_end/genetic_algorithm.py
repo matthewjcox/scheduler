@@ -184,10 +184,10 @@ class master_schedule(chromosome):
             for i,j in self.teams:
                 other=self.sections[j]
                 i.team_with(other)
-            for i in self.stock_students.values():
-                for course,students in i.teamed.items():
-                    for j in students:
-                        self.students[i.studentID].team(course, self.students[j.studentID])
+            # for i in self.stock_students.values():
+            #     for course,students in i.teamed.items():
+            #         for j in students:
+            #             self.students[i.studentID].team(course, self.students[j.studentID])
 
 
     def retrieve_schedule(self,outfolder):
@@ -215,7 +215,7 @@ class master_schedule(chromosome):
         self.fill_new()
 
 
-    def mutate_period(self,mutating_section=None,p=None,verbose=1):
+    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0):
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
@@ -223,7 +223,7 @@ class master_schedule(chromosome):
         if verbose:
             print(repr(mutating_section),p)
         try:
-            self.change_to_period(mutating_section, p, [])
+            self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness)
         except InvalidPeriodError:
             pass
 
@@ -251,7 +251,7 @@ class master_schedule(chromosome):
         # period=random.choice(section.allowed_periods)
         return section,period
 
-    def change_to_period(self, section, new_period, reached):
+    def change_to_period(self, section, new_period, reached,allow_randomness=0):
         if new_period==section.period or section in reached:
             return
         if new_period not in section.allowed_periods:
@@ -263,10 +263,10 @@ class master_schedule(chromosome):
             for i in section.teachers:
                 for j in i.sched:
                     if j.period==new_period:
-                        self.change_to_period(j,old_period,reached)
+                        self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
             for j in section.teamed_sections:
                 if j.period == new_period:
-                    self.change_to_period(j, old_period, reached)
+                    self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached)
         except InvalidPeriodError:
             section.set_period(old_period)
             raise
@@ -351,7 +351,7 @@ class master_schedule(chromosome):
         score=self.preliminary_score(static=1)
         global _CLOSENESS_TO_COMPLETION
         _CLOSENESS_TO_COMPLETION = max(0, (score + .01) / self.theoretical_max_score)
-        self.initialize_weights
+        self.initialize_weights()
 
     def score_student(self,student):
         base_score,addl_score=self.score_student_sections(student)
@@ -408,6 +408,8 @@ class master_schedule(chromosome):
         return 1
 
     def remove_teacher_conflicts(self):
+        # outer_conflicts=-1
+        # while outer_conflicts!=0:
         for i in self.teachers.values():
             n=0
             conflicts=-1
@@ -441,6 +443,29 @@ class master_schedule(chromosome):
                             self.mutate_period(j,verbose=0)
                             conflicts+=1
                         periods_s2.add(j.period)
+        conflicts=-1
+        while conflicts!=0:
+            conflicts=0
+            for i in self.sections.values():
+                inner_conflicts=-1
+                n=0
+                while inner_conflicts!=0:
+                    inner_conflicts=0
+                    n+=1
+                    if i.teamed_sections:
+                        periods=[i.period]
+                        for j in i.teamed_sections:
+                            periods.append(j.period)
+                        if len(set(periods))!=len(periods):
+                            conflicts+=1
+                            inner_conflicts+=1
+                            self.mutate_period(i,verbose=0,allow_randomness=1)
+                            for k in i.teamed_sections:
+                                self.mutate_period(k,verbose=0,allow_randomness=1)
+                    if n>100:
+                        print(i.__repr__())
+
+
 
     def optimize_student(self,student,max_it=1000,skip_if_filled=0):
         for i in range(max_it):
@@ -468,27 +493,55 @@ class master_schedule(chromosome):
                     continue
                 break
 
+            free_periods={}
+
+
+
             s=self.course_sections[i]
             random.shuffle(s)
-            new_section=None
-            for i in s:
-                if i.space_available():
-                    new_section=i
-                    break
-            if new_section is None:
-                continue
-
+            allow_full_period=random.random()<.05
+            for i in range(self.num_periods):
+                free_periods[i+1]=[1,2]
             for i in student.sched:
-                if i.period==new_section.period:
-                    old_sections.append(i)
-            for i in old_sections:
-                try:
-                    i.remove_student(student)
-                except ReferenceError:
-                    pass
-            new_section.add_student(student)
-            new_score = self.score_student(student)[0]
+                if i.semester==0:
+                    free_periods[i.period]=[]
+                else:
+                    try:
+                        free_periods[i.period].remove(i.semester)
+                    except ValueError:
+                        pass
+            new_section=None
+            if not allow_full_period:
+                for i in s:
+                    if i.space_available():
+                        p=i.period
+                        if i.semester==0:
+                            if not (1 in free_periods[i.period] and 2 in free_periods[i.period]):
+                                continue
+                        elif i.semester not in free_periods[i.period]:
+                            continue
+                        new_section=i
+                        break
+            if new_section is None:
+                for i in s:
+                    if i.space_available():
+                        new_section=i
+                        break
+                if new_section is None:
+                    continue
 
+            # for i in student.sched:
+            #     if i.period==new_section.period:
+            #         if {i.semester,new_section.semester}!={1,2}:
+            #             old_sections.append(i)
+            # for i in old_sections:
+            #     try:
+            #         i.remove_student(student)
+            #     except ReferenceError:
+            #         pass
+            old_sections=new_section.add_student_removing_conflicts(student)
+            new_score = self.score_student(student)[0]
+            # raise NotImplementedError#Need to check that teamed things can be slotted in too.
             if new_score>=score or random.random()<2**(-10*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
@@ -533,10 +586,10 @@ class master_schedule(chromosome):
                 if course not in sched.course_sections:
                     sched.course_sections[course] = []
                 sched.course_sections[course].append(sect)
-        for i in self.stock_students.values():
-            for course, students in i.teamed.items():
-                for j in students:
-                    sched.students[i.studentID].team(course, sched.students[j.studentID])
+        # for i in self.stock_students.values():
+        #     for course, students in i.teamed.items():
+        #         for j in students:
+        #             sched.students[i.studentID].team(course, sched.students[j.studentID])
         return sched
 
     def __str__(self):
@@ -584,9 +637,9 @@ class hill_climb_solo_2:
                 num_mutations=int(1+random.random()*(1*(1-_CLOSENESS_TO_COMPLETION))) if i%20!=1 else 0
                 for i in range(num_mutations):
                     new_organism.mutate_period()
-                for _ in range(2):
+                for _ in range(10):
                     for i in new_organism.students.values():
-                        new_organism.optimize_student(i,max_it=5)
+                        new_organism.optimize_student(i,max_it=1)
             print('New:')
             new_score=new_organism.preliminary_score(verbose=1)
             print('Old:')
