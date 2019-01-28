@@ -14309,3 +14309,182 @@ Traceback (most recent call last):
   File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 18, in redirect
     token = oauth.fetch_token("https://ion.tjhsst.edu/oauth/token/",
 NameError: name 'oauth' is not defined
+[2019-01-24 16:58:15 +0000] [13107] [INFO] Worker exiting (pid: 13107)
+[2019-01-24 16:58:15 +0000] [13099] [INFO] Worker exiting (pid: 13099)
+/web/projects/schedule/public/scheduleServer
+[2019-01-24 16:58:15 +0000] [13108] [INFO] Worker exiting (pid: 13108)
+[2019-01-24 16:58:15 +0000] [13104] [INFO] Worker exiting (pid: 13104)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-24 11:58:16 -0500] [2656] [INFO] Starting gunicorn 19.9.0
+[2019-01-24 11:58:16 -0500] [2656] [INFO] Listening at: http://127.0.0.1:11356 (2656)
+[2019-01-24 11:58:16 -0500] [2656] [INFO] Using worker: sync
+[2019-01-24 11:58:16 -0500] [2873] [INFO] Booting worker with pid: 2873
+[2019-01-24 11:58:16 -0500] [2875] [INFO] Booting worker with pid: 2875
+[2019-01-24 11:58:16 -0500] [2876] [INFO] Booting worker with pid: 2876
+[2019-01-24 11:58:16 -0500] [2878] [INFO] Booting worker with pid: 2878
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 19, in redirect
+    redirect_uri=REDIRECT_URI,
+NameError: name 'REDIRECT_URI' is not defined
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 19, in redirect
+    oauth = OAuth2Session(CLIENT_ID,
+NameError: name 'REDIRECT_URI' is not defined
+[2019-01-28 14:44:09 +0000] [2875] [INFO] Worker exiting (pid: 2875)
+[2019-01-28 14:44:09 +0000] [2876] [INFO] Worker exiting (pid: 2876)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-28 09:44:11 -0500] [12954] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:44:11 -0500] [12954] [INFO] Listening at: http://127.0.0.1:11356 (12954)
+[2019-01-28 09:44:11 -0500] [12954] [INFO] Using worker: sync
+[2019-01-28 09:44:11 -0500] [12968] [INFO] Booting worker with pid: 12968
+[2019-01-28 09:44:11 -0500] [12970] [INFO] Booting worker with pid: 12970
+[2019-01-28 09:44:11 -0500] [12975] [INFO] Booting worker with pid: 12975
+[2019-01-28 09:44:11 -0500] [12978] [INFO] Booting worker with pid: 12978
+[2019-01-28 14:48:57 +0000] [12978] [INFO] Worker exiting (pid: 12978)
+[2019-01-28 14:48:57 +0000] [12968] [INFO] Worker exiting (pid: 12968)
+[2019-01-28 14:48:57 +0000] [12975] [INFO] Worker exiting (pid: 12975)
+[2019-01-28 14:48:57 +0000] [12970] [INFO] Worker exiting (pid: 12970)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 09:48:57 -0500] [12954] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-28 09:48:58 -0500] [29248] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:48:58 -0500] [29248] [INFO] Listening at: http://127.0.0.1:11356 (29248)
+[2019-01-28 09:48:58 -0500] [29248] [INFO] Using worker: sync
+[2019-01-28 09:48:58 -0500] [29256] [INFO] Booting worker with pid: 29256
+[2019-01-28 09:48:58 -0500] [29258] [INFO] Booting worker with pid: 29258
+[2019-01-28 09:48:58 -0500] [29262] [INFO] Booting worker with pid: 29262
+[2019-01-28 09:48:58 -0500] [29263] [INFO] Booting worker with pid: 29263
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 28, in redirect
+    token = oauth.fetch_token("https://ion.tjhsst.edu/oauth/token/",
+NameError: name 'oauth' is not defined
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 31, in redirect
+    client_secret=CLIENT_SECRET)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) 
+[2019-01-28 14:52:14 +0000] [29262] [INFO] Worker exiting (pid: 29262)
+[2019-01-28 14:52:14 +0000] [29258] [INFO] Worker exiting (pid: 29258)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 14:52:14 +0000] [29263] [INFO] Worker exiting (pid: 29263)
+[2019-01-28 14:52:14 +0000] [29256] [INFO] Worker exiting (pid: 29256)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 09:52:14 -0500] [29248] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-28 09:52:15 -0500] [9042] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:52:15 -0500] [9042] [INFO] Listening at: http://127.0.0.1:11356 (9042)
+[2019-01-28 09:52:15 -0500] [9042] [INFO] Using worker: sync
+[2019-01-28 09:52:15 -0500] [9051] [INFO] Booting worker with pid: 9051
+[2019-01-28 09:52:15 -0500] [9052] [INFO] Booting worker with pid: 9052
+[2019-01-28 09:52:15 -0500] [9054] [INFO] Booting worker with pid: 9054
+[2019-01-28 09:52:15 -0500] [9061] [INFO] Booting worker with pid: 9061
+Internal Server Error: /loginPage/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view loginPage.views.index didn't return an HttpResponse object. It returned None instead.
+[2019-01-28 14:54:08 +0000] [9051] [INFO] Worker exiting (pid: 9051)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 14:54:08 +0000] [9054] [INFO] Worker exiting (pid: 9054)
+[2019-01-28 09:54:08 -0500] [9042] [INFO] Handling signal: term
+[2019-01-28 14:54:08 +0000] [9052] [INFO] Worker exiting (pid: 9052)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-28 09:54:10 -0500] [15001] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:54:10 -0500] [15001] [INFO] Listening at: http://127.0.0.1:11356 (15001)
+[2019-01-28 09:54:10 -0500] [15001] [INFO] Using worker: sync
+[2019-01-28 09:54:10 -0500] [15207] [INFO] Booting worker with pid: 15207
+[2019-01-28 09:54:10 -0500] [15208] [INFO] Booting worker with pid: 15208
+[2019-01-28 09:54:10 -0500] [15212] [INFO] Booting worker with pid: 15212
+[2019-01-28 09:54:10 -0500] [15213] [INFO] Booting worker with pid: 15213
+Internal Server Error: /loginPage/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view loginPage.views.index didn't return an HttpResponse object. It returned None instead.
+[2019-01-28 14:54:42 +0000] [15213] [INFO] Worker exiting (pid: 15213)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 14:54:42 +0000] [15207] [INFO] Worker exiting (pid: 15207)
+[2019-01-28 14:54:42 +0000] [15208] [INFO] Worker exiting (pid: 15208)
+[2019-01-28 14:54:42 +0000] [15212] [INFO] Worker exiting (pid: 15212)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 09:54:42 -0500] [15001] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-28 09:54:44 -0500] [16832] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:54:44 -0500] [16832] [INFO] Listening at: http://127.0.0.1:11356 (16832)
+[2019-01-28 09:54:44 -0500] [16832] [INFO] Using worker: sync
+[2019-01-28 09:54:44 -0500] [17501] [INFO] Booting worker with pid: 17501
+[2019-01-28 09:54:44 -0500] [17502] [INFO] Booting worker with pid: 17502
+[2019-01-28 09:54:44 -0500] [17504] [INFO] Booting worker with pid: 17504
+[2019-01-28 09:54:44 -0500] [17505] [INFO] Booting worker with pid: 17505
+[2019-01-28 14:55:23 +0000] [17504] [INFO] Worker exiting (pid: 17504)
+[2019-01-28 14:55:23 +0000] [17501] [INFO] Worker exiting (pid: 17501)
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 09:55:23 -0500] [16832] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-01-28 14:55:23 +0000] [17505] [INFO] Worker exiting (pid: 17505)
+[2019-01-28 14:55:23 +0000] [17502] [INFO] Worker exiting (pid: 17502)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-01-28 09:55:24 -0500] [19813] [INFO] Starting gunicorn 19.9.0
+[2019-01-28 09:55:24 -0500] [19813] [INFO] Listening at: http://127.0.0.1:11356 (19813)
+[2019-01-28 09:55:24 -0500] [19813] [INFO] Using worker: sync
+[2019-01-28 09:55:24 -0500] [19820] [INFO] Booting worker with pid: 19820
+[2019-01-28 09:55:24 -0500] [19821] [INFO] Booting worker with pid: 19821
+[2019-01-28 09:55:24 -0500] [19823] [INFO] Booting worker with pid: 19823
+[2019-01-28 09:55:24 -0500] [19825] [INFO] Booting worker with pid: 19825
