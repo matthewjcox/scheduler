@@ -136,7 +136,7 @@ def assignSections():
                 sections[secID] = [secID.__str__(), "teacher: "+teachers[teacher].split(", ")[2], "courseID: "+courseToNumber[course][0], "room: ?"]
                 if course in {"TJ Res Stats 1", "TJ Math 4"}:
                     sections[secID].append("semester: 1")
-                if course in {"TJ Math 3", "TJ Math 5"}:
+                elif course in {"TJ Math 3", "TJ Math 5"}:
                     sections[secID].append("semester: 2")
                 else:
                     sections[secID].append("semester: 0")

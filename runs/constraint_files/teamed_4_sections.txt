@@ -1,76 +1,8 @@
 100000
-teacher: ijcarey
+teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
-maxstudents: 20
-
-100006
-teacher: ijcarey
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100011
-teacher: ijcarey
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100014
-teacher: ijcarey
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100017
-teacher: ijcarey
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100031
-teacher: ijcarey
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100032
-teacher: ijcarey
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100035
-teacher: ijcarey
-courseID: 316055
-room: ?
-semester: 2
-maxstudents: 20
-
-100037
-teacher: ijcarey
-courseID: 313754
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100038
-teacher: ijcarey
-courseID: 317093
-room: ?
-semester: 0
 maxstudents: 20
 
 100001
@@ -78,23 +10,34 @@ teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
 maxstudents: 20
 
-100005
+100003
 teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
 maxstudents: 20
 
-100008
+100004
 teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
+maxstudents: 20
+
+100006
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100010
+teacher: cllightner
+courseID: 3190T1
+room: ?
+semester: 1
 maxstudents: 20
 
 100015
@@ -102,7 +45,6 @@ teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
 maxstudents: 20
 
 100016
@@ -110,31 +52,9 @@ teacher: cllightner
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
 maxstudents: 20
 
 100018
-teacher: cllightner
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100021
-teacher: cllightner
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100024
-teacher: cllightner
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100027
 teacher: cllightner
 courseID: 313753
 room: ?
@@ -146,129 +66,72 @@ teacher: anlampazzi
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
-maxstudents: 20
-
-100013
-teacher: anlampazzi
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100020
-teacher: anlampazzi
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100033
-teacher: anlampazzi
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100003
-teacher: ajirariscavo
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100007
-teacher: ajirariscavo
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100009
-teacher: ajirariscavo
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100010
-teacher: ajirariscavo
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
 maxstudents: 20
 
 100012
-teacher: ajirariscavo
+teacher: anlampazzi
 courseID: 3190T1
 room: ?
 semester: 1
-semester: 0
-maxstudents: 20
-
-100019
-teacher: ajirariscavo
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100004
-teacher: dlhill2
-courseID: 3190T1
-room: ?
-semester: 1
-semester: 0
-maxstudents: 20
-
-100022
-teacher: dlhill2
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100023
-teacher: dlhill2
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100025
-teacher: dlhill2
-courseID: 313753
-room: ?
-semester: 2
 maxstudents: 20
 
 100026
+teacher: anlampazzi
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100031
+teacher: anlampazzi
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100036
+teacher: anlampazzi
+courseID: 313754
+room: ?
+semester: 1
+maxstudents: 20
+
+100037
+teacher: anlampazzi
+courseID: 313754
+room: ?
+semester: 1
+maxstudents: 20
+
+100005
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100008
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100009
+teacher: dlhill2
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100017
 teacher: dlhill2
 courseID: 313753
 room: ?
 semester: 2
 maxstudents: 20
 
-100028
-teacher: dlhill2
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100029
-teacher: dlhill2
-courseID: 313753
-room: ?
-semester: 2
-maxstudents: 20
-
-100030
+100027
 teacher: dlhill2
 courseID: 313753
 room: ?
@@ -282,16 +145,134 @@ room: ?
 semester: 2
 maxstudents: 20
 
-100036
+100035
 teacher: dlhill2
-courseID: 313754
+courseID: 316055
+room: ?
+semester: 2
+maxstudents: 20
+
+100007
+teacher: ijcarey
+courseID: 3190T1
 room: ?
 semester: 1
+maxstudents: 20
+
+100011
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100013
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100014
+teacher: ijcarey
+courseID: 3190T1
+room: ?
+semester: 1
+maxstudents: 20
+
+100019
+teacher: ijcarey
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100024
+teacher: ijcarey
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100032
+teacher: ijcarey
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100033
+teacher: ijcarey
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100038
+teacher: ijcarey
+courseID: 317093
+room: ?
 semester: 0
 maxstudents: 20
 
+100020
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100021
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100022
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100023
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100025
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100028
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100029
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
+100030
+teacher: ajirariscavo
+courseID: 313753
+room: ?
+semester: 2
+maxstudents: 20
+
 100039
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -299,7 +280,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100040
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -307,7 +288,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100041
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -315,7 +296,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100042
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -323,7 +304,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100043
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -331,7 +312,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100044
-teacher: sdelcerro
+teacher: tglarson
 courseID: 4310T1
 room: ?
 semester: 0
@@ -339,7 +320,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100045
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -347,7 +328,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100046
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -355,7 +336,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100047
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -363,7 +344,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100048
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -371,7 +352,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100049
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -379,7 +360,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100050
-teacher: tglarson
+teacher: jjames1
 courseID: 4310T1
 room: ?
 semester: 0
@@ -387,7 +368,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100051
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -395,7 +376,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100052
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -403,7 +384,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100053
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -411,7 +392,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100054
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -419,7 +400,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100055
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -427,7 +408,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100056
-teacher: asholman
+teacher: sdelcerro
 courseID: 4310T1
 room: ?
 semester: 0
@@ -435,7 +416,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100057
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -443,7 +424,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100058
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -451,7 +432,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100059
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -459,7 +440,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100060
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -467,7 +448,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100061
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -475,7 +456,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100062
-teacher: jjames1
+teacher: asholman
 courseID: 4310T1
 room: ?
 semester: 0
@@ -531,7 +512,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100069
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -539,7 +520,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100070
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -547,7 +528,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100071
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -555,7 +536,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100072
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -563,7 +544,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100073
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -571,7 +552,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100074
-teacher: mbkochman
+teacher: neglover
 courseID: 1130T1
 room: ?
 semester: 0
@@ -579,7 +560,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100075
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -587,7 +568,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100076
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -595,7 +576,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100077
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -603,7 +584,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100078
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -611,7 +592,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100079
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -619,7 +600,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100080
-teacher: neglover
+teacher: mbkochman
 courseID: 1130T1
 room: ?
 semester: 0
@@ -723,7 +704,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100093
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -731,7 +712,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100094
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -739,7 +720,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100095
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -747,7 +728,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100096
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -755,7 +736,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100097
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -763,7 +744,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100098
-teacher: mggeiger
+teacher: calewis1
 courseID: 984060
 room: ?
 semester: 0
@@ -771,7 +752,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100099
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -779,7 +760,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100100
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -787,7 +768,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100101
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -795,7 +776,7 @@ maxstudents: 20
 allowed_periods: 1,2,3
 
 100102
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -803,7 +784,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100103
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -811,7 +792,7 @@ maxstudents: 20
 allowed_periods: 5,6,7
 
 100104
-teacher: calewis1
+teacher: mggeiger
 courseID: 984060
 room: ?
 semester: 0
@@ -873,22 +854,22 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100112
-teacher: clconklin
-courseID: 532000
-room: ?
-semester: 0
-maxstudents: 20
-
-100114
-teacher: clconklin
-courseID: 532000
-room: ?
-semester: 0
-maxstudents: 20
-
 100115
 teacher: clconklin
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+100116
+teacher: clconklin
+courseID: 532000
+room: ?
+semester: 0
+maxstudents: 20
+
+100112
+teacher: phlister
 courseID: 532000
 room: ?
 semester: 0
@@ -901,7 +882,7 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100116
+100114
 teacher: phlister
 courseID: 532000
 room: ?
@@ -944,7 +925,28 @@ semester: 0
 maxstudents: 20
 
 100122
-teacher: magendive
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+100124
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+100127
+teacher: nmateo
+courseID: 552000
+room: ?
+semester: 0
+maxstudents: 20
+
+100130
+teacher: nmateo
 courseID: 552000
 room: ?
 semester: 0
@@ -957,7 +959,7 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100124
+100125
 teacher: magendive
 courseID: 552000
 room: ?
@@ -971,36 +973,15 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100127
+100128
 teacher: magendive
 courseID: 552000
 room: ?
 semester: 0
 maxstudents: 20
 
-100125
-teacher: nmateo
-courseID: 552000
-room: ?
-semester: 0
-maxstudents: 20
-
-100128
-teacher: nmateo
-courseID: 552000
-room: ?
-semester: 0
-maxstudents: 20
-
 100129
-teacher: nmateo
-courseID: 552000
-room: ?
-semester: 0
-maxstudents: 20
-
-100130
-teacher: nmateo
+teacher: magendive
 courseID: 552000
 room: ?
 semester: 0
@@ -1035,14 +1016,63 @@ semester: 0
 maxstudents: 20
 
 100135
-teacher: hesmith
+teacher: bnpotoker
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100137
+teacher: bnpotoker
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100140
+teacher: bnpotoker
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100141
+teacher: bnpotoker
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100144
+teacher: bnpotoker
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100136
+teacher: jcjames
 courseID: 730099
 room: ?
 semester: 0
 maxstudents: 40
 
 100138
-teacher: hesmith
+teacher: jcjames
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100142
+teacher: jcjames
+courseID: 730099
+room: ?
+semester: 0
+maxstudents: 40
+
+100145
+teacher: jcjames
 courseID: 730099
 room: ?
 semester: 0
@@ -1062,58 +1092,30 @@ room: ?
 semester: 0
 maxstudents: 40
 
-100136
-teacher: bnpotoker
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100141
-teacher: bnpotoker
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100145
-teacher: bnpotoker
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100137
-teacher: jcjames
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100140
-teacher: jcjames
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100142
-teacher: jcjames
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
-100144
-teacher: jcjames
-courseID: 730099
-room: ?
-semester: 0
-maxstudents: 40
-
 100146
-teacher: njkim
+teacher: srrose
 courseID: TJA3184
+room: ?
+semester: 0
+maxstudents: 20
+
+100155
+teacher: srrose
+courseID: TJA3184
+room: ?
+semester: 0
+maxstudents: 20
+
+100161
+teacher: srrose
+courseID: 3184T2
+room: ?
+semester: 0
+maxstudents: 20
+
+100164
+teacher: srrose
+courseID: 318561
 room: ?
 semester: 0
 maxstudents: 20
@@ -1125,35 +1127,35 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100158
-teacher: njkim
-courseID: TJA3184
-room: ?
-semester: 0
-maxstudents: 20
-
-100159
-teacher: njkim
-courseID: TJA3184
-room: ?
-semester: 0
-maxstudents: 20
-
-100161
-teacher: njkim
-courseID: 3184T2
-room: ?
-semester: 0
-maxstudents: 20
-
 100148
-teacher: mceckel
+teacher: njkim
 courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
-100150
+100151
+teacher: njkim
+courseID: TJA3184
+room: ?
+semester: 0
+maxstudents: 20
+
+100152
+teacher: njkim
+courseID: TJA3184
+room: ?
+semester: 0
+maxstudents: 20
+
+100154
+teacher: njkim
+courseID: TJA3184
+room: ?
+semester: 0
+maxstudents: 20
+
+100149
 teacher: mceckel
 courseID: TJA3184
 room: ?
@@ -1167,35 +1169,35 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100154
+100158
 teacher: mceckel
 courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
-100164
+100159
 teacher: mceckel
-courseID: 318561
+courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
-100149
+100160
+teacher: mceckel
+courseID: 3184T2
+room: ?
+semester: 0
+maxstudents: 20
+
+100150
 teacher: mlbillington
 courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
 
-100152
-teacher: mlbillington
-courseID: TJA3184
-room: ?
-semester: 0
-maxstudents: 20
-
-100155
+100156
 teacher: mlbillington
 courseID: TJA3184
 room: ?
@@ -1209,29 +1211,8 @@ room: ?
 semester: 0
 maxstudents: 20
 
-100160
-teacher: mlbillington
-courseID: 3184T2
-room: ?
-semester: 0
-maxstudents: 20
-
-100151
-teacher: srrose
-courseID: TJA3184
-room: ?
-semester: 0
-maxstudents: 20
-
-100156
-teacher: srrose
-courseID: TJA3184
-room: ?
-semester: 0
-maxstudents: 20
-
 100162
-teacher: srrose
+teacher: mlbillington
 courseID: 3184T2
 room: ?
 semester: 0
@@ -1326,98 +1307,98 @@ semester: 0
 maxstudents: 0
 
 100039
-team_1: 100063
-team_1: 100105
+team: 100069
+team: 100087
 
 100040
-team_1: 100064
-team_1: 100106
+team: 100070
+team: 100088
 
 100041
-team_1: 100065
-team_1: 100107
+team: 100071
+team: 100089
 
 100042
-team_1: 100066
-team_1: 100108
+team: 100072
+team: 100090
 
 100043
-team_1: 100067
-team_1: 100109
+team: 100073
+team: 100091
 
 100044
-team_1: 100068
-team_1: 100110
+team: 100074
+team: 100092
 
 100045
-team_1: 100075
-team_1: 100087
+team: 100075
+team: 100093
 
 100046
-team_1: 100076
-team_1: 100088
+team: 100076
+team: 100094
 
 100047
-team_1: 100077
-team_1: 100089
+team: 100077
+team: 100095
 
 100048
-team_1: 100078
-team_1: 100090
+team: 100078
+team: 100096
 
 100049
-team_1: 100079
-team_1: 100091
+team: 100079
+team: 100097
 
 100050
-team_1: 100080
-team_1: 100092
+team: 100080
+team: 100098
 
 100051
-team_1: 100081
-team_1: 100093
+team: 100063
+team: 100105
 
 100052
-team_1: 100082
-team_1: 100094
+team: 100064
+team: 100106
 
 100053
-team_1: 100083
-team_1: 100095
+team: 100065
+team: 100107
 
 100054
-team_1: 100084
-team_1: 100096
+team: 100066
+team: 100108
 
 100055
-team_1: 100085
-team_1: 100097
+team: 100067
+team: 100109
 
 100056
-team_1: 100086
-team_1: 100098
+team: 100068
+team: 100110
 
 100057
-team_1: 100069
-team_1: 100099
+team: 100081
+team: 100099
 
 100058
-team_1: 100070
-team_1: 100100
+team: 100082
+team: 100100
 
 100059
-team_1: 100071
-team_1: 100101
+team: 100083
+team: 100101
 
 100060
-team_1: 100072
-team_1: 100102
+team: 100084
+team: 100102
 
 100061
-team_1: 100073
-team_1: 100103
+team: 100085
+team: 100103
 
 100062
-team_1: 100074
-team_1: 100104
+team: 100086
+team: 100104
 
