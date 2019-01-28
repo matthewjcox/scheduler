@@ -58,7 +58,7 @@ def run_scheduler(save=None):
     read_courses(course_fn,courses)
     read_teachers(teacher_fn,teachers)
     read_students(student_fn,students,courses)
-    read_student_teaming(student_team_fn,students,courses)
+    # read_student_teaming(student_team_fn,students,courses) #STUDENT TEAMING IS NOT YET FUNCTIONAL
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
@@ -66,7 +66,7 @@ def run_scheduler(save=None):
 
 
 def main():
-    run_scheduler(save=None)
+    run_scheduler(save="2019_01_16__20_53_43")
 
 
 if __name__=="__main__":

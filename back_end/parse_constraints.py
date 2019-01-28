@@ -32,6 +32,8 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
     elif field == 'allowed_periods':
         v=[int(i.strip()) for i in value.split(',')]
         s.set_allowed_periods(v)
+    elif field=="same_periods":
+        raise NotImplementedError
     else:
         print('Error entering data for section {}: no attribute {}'.format(s.id,field))
         raise ReferenceError
@@ -102,27 +104,27 @@ def read_students(studentfn,students,all_courses):
                 print(e)
                 raise
 
-def read_student_teaming(studentteamfn,students,all_courses):
-    with open(studentteamfn, 'r') as f:
-        data = f.readlines()
-        i = 0
-        while i < len(data):
-            try:
-                courseid,num_students = [i.strip() for i in data[i].split(' ')]
-                i += 1
-                course=all_courses[courseid]
-                num_students=int(num_students)
-                stud0=None
-                for j in range(num_students):
-                    if stud0 is None:
-                        stud0=students[data[i+j].strip()]
-                    else:
-                        stud=students[data[i+j].strip()]
-                        stud0.team(course,stud)
-                i += num_students + 1
-            except IndexError as e:
-                print(e)
-                raise
+# def read_student_teaming(studentteamfn,students,all_courses):
+#     with open(studentteamfn, 'r') as f:
+#         data = f.readlines()
+#         i = 0
+#         while i < len(data):
+#             try:
+#                 courseid,num_students = [i.strip() for i in data[i].split(' ')]
+#                 i += 1
+#                 course=all_courses[courseid]
+#                 num_students=int(num_students)
+#                 stud0=None
+#                 for j in range(num_students):
+#                     if stud0 is None:
+#                         stud0=students[data[i+j].strip()]
+#                     else:
+#                         stud=students[data[i+j].strip()]
+#                         stud0.team(course,stud)
+#                 i += num_students + 1
+#             except IndexError as e:
+#                 print(e)
+#                 raise
 
 
 def read_sections(sectionfn,sections,num_periods,classrooms,courses,teachers,students):

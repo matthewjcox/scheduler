@@ -57,16 +57,16 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_ION_KEY = 'zN7yQ1B2w0mNFZBBAsHlEHk2KFLcxrKrJ0Dvu4cI'
 SOCIAL_AUTH_ION_SECRET = 'pYU4OqLzNBaRCqFsIJCt31qCVQcJ0xNa6apmOEFZ3Y77BTJvjuvMkCsdoGgcV2htbL8RkodS37Lt2fo4QHGniJ75VDDscjSJPBw4wNVWShWReTtgweMmRO54mx4oOt7x'
 LOGIN_URL = 'https://schedule.sites.tjhsst.edu/loginPage'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/loginPage'
+LOGIN_REDIRECT_URL = '/loginPage/redirect'
+LOGOUT_REDIRECT_URL = '/'
 
 SANITIZE_REDIRECTS = False
 SOCIAL_AUTH_SANITIZE_REDIRECTS = False
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'https://schedule.sites.tjhsst.edu'+LOGIN_REDIRECT_URL
 USE_X_FORWARDED_HOST = True
 X_FORWARDED_HOST = 'schedule.sites.tjhsst.edu'
 SOCIAL_AUTH_ION_AUTH_EXTRA_ARGUMENTS = {
-    'redirect_uri': 'https://schedule.sites.tjhsst.edu'
+    'redirect_uri': SOCIAL_AUTH_LOGIN_REDIRECT_URL
 }
 
 
