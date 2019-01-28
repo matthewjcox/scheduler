@@ -294,8 +294,8 @@ class Section:
             i.add_student(student)
 
     def add_student_removing_conflicts(self, student):
-        print(self.__repr__())
-        self.add_student_removing_conflicts_helper(student)
+        # print(self.__repr__())
+        return self.add_student_removing_conflicts_helper(student)
 
     def add_student_removing_conflicts_helper(self,student):
         # self.add_student_old(student)
@@ -420,7 +420,7 @@ class Section:
 
 
     def __str__(self):
-        return 'Section '+self.id
+        return self.__repr__()#'Section '+self.id
 
     def __repr__(self):
         return 'Section {}: {} {} P{} {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester))

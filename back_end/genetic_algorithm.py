@@ -231,9 +231,13 @@ class master_schedule(chromosome):
     def choose_mutating_section(self):
         period=None
         while 1:
+            #Select a section:
             section=random.choice(tuple(self.sections.values()))
             if section.maxstudents==0:
                 continue
+
+            #Choose the new period for the section.
+                #Avoid moving the section to a period in which the teacher is already teaching the same course:
             courses={}
             for i in section.teachers:
                 for j in i.sched:
@@ -248,7 +252,6 @@ class master_schedule(chromosome):
             if period is not None:
                 break
 
-        # period=random.choice(section.allowed_periods)
         return section,period
 
     def change_to_period(self, section, new_period, reached,allow_randomness=0):
@@ -408,62 +411,68 @@ class master_schedule(chromosome):
         return 1
 
     def remove_teacher_conflicts(self):
-        # outer_conflicts=-1
-        # while outer_conflicts!=0:
-        for i in self.teachers.values():
-            n=0
+        outer_conflicts=-1
+        while outer_conflicts!=0:
+            outer_conflicts=0
+            for i in self.teachers.values():
+                n=0
+                conflicts=-1
+                while conflicts!=0:
+                    n+=1
+                    if n>100000:
+                        # print(i.teacherID)
+                        print('Teacher {} has unresolveable conflicts. Exiting operation.'.format(i.teacherID))
+                        raise ValueError
+                    conflicts=0
+                    periods_yr = set()
+                    periods_s1 = set()
+                    periods_s2 = set()
+                    for j in sorted(i.sched,key=lambda i:random.random()):
+                        k = j.period
+                        if k==0:
+                            self.mutate_period(j,verbose=0)
+                            conflicts+=1
+                            outer_conflicts+=1
+                        if j.semester == 0:
+                            if k in periods_yr or k in periods_s1 or k in periods_s2:
+                                self.mutate_period(j,verbose=0)
+                                conflicts+=1
+                                outer_conflicts += 1
+                            periods_yr.add(j.period)
+                        elif j.semester == 1:
+                            if k in periods_yr or k in periods_s1:
+                                self.mutate_period(j,verbose=0)
+                                conflicts+=1
+                                outer_conflicts += 1
+                            periods_s1.add(j.period)
+                        elif j.semester == 2:
+                            if k in periods_yr or k in periods_s2:
+                                self.mutate_period(j,verbose=0)
+                                conflicts+=1
+                                outer_conflicts += 1
+                            periods_s2.add(j.period)
             conflicts=-1
             while conflicts!=0:
-                n+=1
-                if n>100000:
-                    # print(i.teacherID)
-                    print('Teacher {} has unresolveable conflicts. Exiting operation.'.format(i.teaacherID))
-                    raise ValueError
                 conflicts=0
-                periods_yr = set()
-                periods_s1 = set()
-                periods_s2 = set()
-                for j in sorted(i.sched,key=lambda i:random.random()):
-                    k = j.period
-                    if k==0:
-                        self.mutate_period(j,verbose=0)
-                        conflicts+=1
-                    if j.semester == 0:
-                        if k in periods_yr or k in periods_s1 or k in periods_s2:
-                            self.mutate_period(j,verbose=0)
-                            conflicts+=1
-                        periods_yr.add(j.period)
-                    elif j.semester == 1:
-                        if k in periods_yr or k in periods_s1:
-                            self.mutate_period(j,verbose=0)
-                            conflicts+=1
-                        periods_s1.add(j.period)
-                    elif j.semester == 2:
-                        if k in periods_yr or k in periods_s2:
-                            self.mutate_period(j,verbose=0)
-                            conflicts+=1
-                        periods_s2.add(j.period)
-        conflicts=-1
-        while conflicts!=0:
-            conflicts=0
-            for i in self.sections.values():
-                inner_conflicts=-1
-                n=0
-                while inner_conflicts!=0:
-                    inner_conflicts=0
-                    n+=1
-                    if i.teamed_sections:
-                        periods=[i.period]
-                        for j in i.teamed_sections:
-                            periods.append(j.period)
-                        if len(set(periods))!=len(periods):
-                            conflicts+=1
-                            inner_conflicts+=1
-                            self.mutate_period(i,verbose=0,allow_randomness=1)
-                            for k in i.teamed_sections:
-                                self.mutate_period(k,verbose=0,allow_randomness=1)
-                    if n>100:
-                        print(i.__repr__())
+                for i in self.sections.values():
+                    inner_conflicts=-1
+                    n=0
+                    while inner_conflicts!=0:
+                        inner_conflicts=0
+                        n+=1
+                        if i.teamed_sections:
+                            periods=[i.period]
+                            for j in i.teamed_sections:
+                                periods.append(j.period)
+                            if len(set(periods))!=len(periods):
+                                conflicts+=1
+                                inner_conflicts+=1
+                                outer_conflicts += 1
+                                self.mutate_period(i,verbose=0,allow_randomness=1)
+                                for k in i.teamed_sections:
+                                    self.mutate_period(k,verbose=0,allow_randomness=1)
+                        if n>100:
+                            print(i.__repr__())
 
 
 
