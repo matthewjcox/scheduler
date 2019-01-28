@@ -110,7 +110,7 @@ def assignStudents(dist):
 def writeStuds():
     file = open("../../runs/constraint_files/sample_4_students.txt", "w")
     for student in students.keys():
-        toAdd = student.__str__() + ", Student, " + student.__str__() + ", " +  len(students[student]).__str__() + "\n"
+        toAdd = student.__str__() + ", Student, " + student.__str__() + ", 9, " +  len(students[student]).__str__() + "\n"
         file.write(toAdd)
         for course in students[student]:
             file.write(course + "\n")
