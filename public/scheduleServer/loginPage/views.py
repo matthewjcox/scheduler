@@ -3,7 +3,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from requests_oauthlib import OAuth2Session
 import json
-    
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
+
 # Create your views here.
 
     
@@ -37,10 +39,19 @@ def redirect(request):
         #return HttpResponseRedirect(reverse('loginPage:index'))
     
     info = json.loads(profile.content.decode())
+    """
     return render(request, 'loginPage/info.html',{
         'info':info
     })
-    #return HttpResponseRedirect(reverse('projectIndex:index'))
+    """
+    user = authenticate(username = info['ion_username'], password = '12345')
+    if user is None:
+        user = User.objects.create_user(info['ion_username'], info['tj_email'],'12345')
+    request.session.set_expiry(86400)
+    user.first_name = info['first_name']
+    user.last_name = info['last_name']
+    login(request,user)
+    return HttpResponseRedirect(reverse('projectIndex:'+info['user_type']))
 
 
 

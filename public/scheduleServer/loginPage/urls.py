@@ -5,5 +5,5 @@ from . import views
 app_name = 'loginPage'
 urlpatterns = [
     path('', views.index, name='index'),
-    re_path(r'^redirect/$', views.redirect, name = 'redirect')
+    re_path(r'^redirect/$', views.redirect, name = 'redirect'),
 ]

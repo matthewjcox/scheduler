@@ -20,14 +20,14 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
     
-def oauthProcessing(request):
-    user = findUser(request)
-    return HttpResponseRedirect(reverse('projectIndex:index'))
+def redirectS(request):
+    HttpResponseRedirect(reverse('studentInput:index'))
     
+def redirectT(request):
+    HttpResponseRedirect(reverse('counselorEditor:index'))
     
-def findUser(username):
-    user = User.objects.get("username")
-    
+def redirectC(request):
+    HttpResponseRedirect(reverse('projectIndex:index'))
     
     
     
