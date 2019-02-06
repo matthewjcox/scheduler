@@ -551,7 +551,7 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score or random.random()<2**(-10*(score-new_score)):
+            if new_score>=score or random.random()<2**(-8*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
@@ -654,7 +654,7 @@ class hill_climb_solo_2:
             print('Old:')
             old_score=self.current_sched.preliminary_score(verbose=1)
             delta_score=old_score-new_score
-            if new_score>=old_score or random.random()<10**(-1000*delta_score/self.current_sched.theoretical_max_score):
+            if new_score>=old_score or random.random()<10**(-800*delta_score/self.current_sched.theoretical_max_score):
                 self.current_sched=new_organism
             # print('',old_score,'\n',new_score)
             self.current_sched.set_progress()
