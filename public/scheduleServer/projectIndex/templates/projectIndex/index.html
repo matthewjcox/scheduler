@@ -4,7 +4,7 @@
     }
 </style>
 
-<h1>This is a Title</h1>
+<h1>Hidden site index</h1>
 {% if app_list %}
     <ul>
     {% for app in app_list %}
@@ -20,5 +20,5 @@
   <p><a href="{% url 'logout' %}">logout</a></p>
 {% else %}
   <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a>
+  <!-- <a href="{% url 'login' %}">login</a> -->
 {% endif %}

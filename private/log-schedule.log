@@ -15304,3 +15304,176 @@ SyntaxError: invalid syntax
 [2019-01-29 10:43:27 -0500] [22075] [INFO] Booting worker with pid: 22075
 [2019-01-29 10:43:27 -0500] [22077] [INFO] Booting worker with pid: 22077
 [2019-01-29 10:43:27 -0500] [22079] [INFO] Booting worker with pid: 22079
+[2019-01-29 16:00:52 +0000] [22077] [INFO] Worker exiting (pid: 22077)
+[2019-01-29 16:00:52 +0000] [22079] [INFO] Worker exiting (pid: 22079)
+[2019-01-29 16:00:52 +0000] [22072] [INFO] Worker exiting (pid: 22072)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-01-29 16:00:52 +0000] [22075] [INFO] Worker exiting (pid: 22075)
+/web/projects/schedule/public/scheduleServer
+[2019-01-29 11:00:52 -0500] [22065] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-01-29 11:00:53 -0500] [20489] [INFO] Starting gunicorn 19.9.0
+[2019-01-29 11:00:53 -0500] [20489] [INFO] Listening at: http://127.0.0.1:11356 (20489)
+[2019-01-29 11:00:53 -0500] [20489] [INFO] Using worker: sync
+[2019-01-29 11:00:53 -0500] [20500] [INFO] Booting worker with pid: 20500
+[2019-01-29 11:00:53 -0500] [20503] [INFO] Booting worker with pid: 20503
+[2019-01-29 11:00:53 -0500] [20504] [INFO] Booting worker with pid: 20504
+[2019-01-29 11:00:53 -0500] [20506] [INFO] Booting worker with pid: 20506
+Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-02-07 10:34:38 -0500] [28102] [INFO] Starting gunicorn 19.9.0
+[2019-02-07 10:34:38 -0500] [28102] [INFO] Listening at: http://127.0.0.1:11356 (28102)
+[2019-02-07 10:34:38 -0500] [28102] [INFO] Using worker: sync
+[2019-02-07 10:34:38 -0500] [28110] [INFO] Booting worker with pid: 28110
+[2019-02-07 10:34:38 -0500] [28111] [INFO] Booting worker with pid: 28111
+[2019-02-07 10:34:38 -0500] [28112] [INFO] Booting worker with pid: 28112
+[2019-02-07 10:34:38 -0500] [28113] [INFO] Booting worker with pid: 28113
+[2019-02-07 15:50:30 +0000] [28113] [INFO] Worker exiting (pid: 28113)
+[2019-02-07 15:50:30 +0000] [28112] [INFO] Worker exiting (pid: 28112)
+[2019-02-07 15:50:30 +0000] [28111] [INFO] Worker exiting (pid: 28111)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-02-07 10:50:30 -0500] [28102] [INFO] Handling signal: term
+[2019-02-07 15:50:30 +0000] [28110] [INFO] Worker exiting (pid: 28110)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-02-07 10:50:31 -0500] [30739] [INFO] Starting gunicorn 19.9.0
+[2019-02-07 10:50:31 -0500] [30739] [INFO] Listening at: http://127.0.0.1:11356 (30739)
+[2019-02-07 10:50:31 -0500] [30739] [INFO] Using worker: sync
+[2019-02-07 10:50:31 -0500] [30749] [INFO] Booting worker with pid: 30749
+[2019-02-07 10:50:31 -0500] [30751] [INFO] Booting worker with pid: 30751
+[2019-02-07 10:50:31 -0500] [30753] [INFO] Booting worker with pid: 30753
+[2019-02-07 10:50:31 -0500] [30754] [INFO] Booting worker with pid: 30754
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 28, in <module>
+    path('', views.homePage , name = 'homePage'),
+AttributeError: module 'django.contrib.auth.views' has no attribute 'homePage'
+[2019-02-07 15:53:06 +0000] [30753] [INFO] Worker exiting (pid: 30753)
+/web/projects/schedule/public/scheduleServer
+[2019-02-07 15:53:06 +0000] [30751] [INFO] Worker exiting (pid: 30751)
+/web/projects/schedule/public/scheduleServer
+[2019-02-07 10:53:06 -0500] [30739] [INFO] Handling signal: term
+[2019-02-07 15:53:06 +0000] [30749] [INFO] Worker exiting (pid: 30749)
+[2019-02-07 15:53:06 +0000] [30754] [INFO] Worker exiting (pid: 30754)
+\n\n\n starting new server run \n
+[2019-02-07 10:53:07 -0500] [31410] [INFO] Starting gunicorn 19.9.0
+[2019-02-07 10:53:07 -0500] [31410] [INFO] Listening at: http://127.0.0.1:11356 (31410)
+[2019-02-07 10:53:07 -0500] [31410] [INFO] Using worker: sync
+[2019-02-07 10:53:07 -0500] [31417] [INFO] Booting worker with pid: 31417
+[2019-02-07 10:53:07 -0500] [31418] [INFO] Booting worker with pid: 31418
+[2019-02-07 10:53:07 -0500] [31420] [INFO] Booting worker with pid: 31420
+[2019-02-07 10:53:07 -0500] [31423] [INFO] Booting worker with pid: 31423
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 27, in <module>
+    path('', include('projectIndex.urls'), name = 'projectIndex'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/urls.py", line 8
+    path('index/', views.index, name='index'),
+       ^
+SyntaxError: invalid syntax
+Not Found: /static/css/base.css
+Not Found: /static/css/schedule.css
+Not Found: /static/css/login.css
+Not Found: /static/css/theme.blue.css
+Not Found: /static/css/events.css
+Not Found: /static/js/vendor/jquery-1.10.2.min.js
+Not Found: /static/js/vendor/jquery.cookie.js
+Not Found: /static/js/vendor/modernizr.js
+Not Found: /static/js/common.js
+Not Found: /static/js/swregistration.js
+Not Found: /static/js/schedule.js
+Not Found: /static/js/login.js
+Not Found: /static/js/vendor/spin.min.js
+Not Found: /static/img/patterns/pw_pattern.png
+Not Found: /static/img/logos/touch/touch-icon128.png
+Not Found: /static/img/logos/touch/touch-icon144.png
+Not Found: /static/img/logos/touch/touch-icon192.png
+Not Found: /static/img/favicon.png
+Not Found: /static/css/base.css
+Not Found: /static/css/login.css
+Not Found: /static/css/theme.blue.css
+Not Found: /static/css/schedule.css
+Not Found: /static/css/events.css
+Not Found: /static/js/vendor/jquery-1.10.2.min.js
+Not Found: /static/js/vendor/jquery.cookie.js
+Not Found: /static/js/vendor/modernizr.js
+Not Found: /static/js/common.js
+Not Found: /static/js/swregistration.js
+Not Found: /static/js/schedule.js
+Not Found: /static/js/login.js
+Not Found: /static/js/vendor/spin.min.js
+Not Found: /static/img/patterns/pw_pattern.png
+Not Found: /static/css/base.css
+Not Found: /static/css/events.css
+Not Found: /static/css/login.css
+Not Found: /static/css/schedule.css
+Not Found: /static/css/theme.blue.css
+Not Found: /static/js/vendor/jquery-1.10.2.min.js
+Not Found: /static/js/vendor/jquery.cookie.js
+Not Found: /static/js/vendor/modernizr.js
+Not Found: /static/js/common.js
+Not Found: /static/js/swregistration.js
+Not Found: /static/js/schedule.js
+Not Found: /static/js/login.js
+Not Found: /static/js/vendor/spin.min.js
+Not Found: /static/img/patterns/pw_pattern.png

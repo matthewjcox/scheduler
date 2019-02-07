@@ -14,6 +14,10 @@ file = open("studentRequests.txt",'w',encoding = 'utf-8')
 for student in Student.objects.all():
     file.write(student.student_id)
     file.write(', ')
+    file.write(student.student_first_name)
+    file.write(', ')
+    file.write(student.student_last_name)
+    file.write(', ')
     file.write(str(len(student.student_course_request.all())))
     file.write('\n')
     for course in student.student_course_request.all():
