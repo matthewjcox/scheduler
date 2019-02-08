@@ -26,3 +26,5 @@ class Student(models.Model):
         return self.student_id
     student_id = models.CharField(max_length = 50)
     student_course_request = models.ManyToManyField(Course)
+    student_first_name = models.CharField(max_length = 50)
+    student_last_name = models.CharField(max_length = 50)

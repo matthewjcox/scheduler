@@ -9,6 +9,9 @@ from django.apps import apps
 from scheduleServer.settings import MY_APPS
 from django.contrib.auth.models import User
 
+def home(request):
+    return render(request, 'projectIndex/homePage.html',{})
+
 def index(request):
     app_list = [re.match("^.*?(?=\.)",appName).group(0) for appName in MY_APPS]
     template = loader.get_template('projectIndex/index.html')
@@ -20,14 +23,14 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
     
-def oauthProcessing(request):
-    user = findUser(request)
-    return HttpResponseRedirect(reverse('projectIndex:index'))
+def redirectS(request):
+    HttpResponseRedirect(reverse('studentInput:index'))
     
+def redirectT(request):
+    HttpResponseRedirect(reverse('counselorEditor:index'))
     
-def findUser(username):
-    user = User.objects.get("username")
-    
+def redirectC(request):
+    HttpResponseRedirect(reverse('projectIndex:index'))
     
     
     
