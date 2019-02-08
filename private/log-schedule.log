@@ -17037,3 +17037,20 @@ Could not connect to database
 [2019-02-08 15:24:28 -0500] [6069] [INFO] Booting worker with pid: 6069
 [2019-02-08 15:24:28 -0500] [6094] [INFO] Booting worker with pid: 6094
 [2019-02-08 15:24:28 -0500] [6095] [INFO] Booting worker with pid: 6095
+[2019-02-08 20:27:07 +0000] [6067] [INFO] Worker exiting (pid: 6067)
+[2019-02-08 20:27:07 +0000] [6095] [INFO] Worker exiting (pid: 6095)
+[2019-02-08 20:27:07 +0000] [6069] [INFO] Worker exiting (pid: 6069)
+[2019-02-08 20:27:07 +0000] [6094] [INFO] Worker exiting (pid: 6094)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-02-08 15:27:07 -0500] [6061] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-02-08 15:27:08 -0500] [7797] [INFO] Starting gunicorn 19.9.0
+[2019-02-08 15:27:08 -0500] [7797] [INFO] Listening at: http://127.0.0.1:11356 (7797)
+[2019-02-08 15:27:08 -0500] [7797] [INFO] Using worker: sync
+[2019-02-08 15:27:08 -0500] [7800] [INFO] Booting worker with pid: 7800
+[2019-02-08 15:27:08 -0500] [7801] [INFO] Booting worker with pid: 7801
+[2019-02-08 15:27:08 -0500] [7803] [INFO] Booting worker with pid: 7803
+[2019-02-08 15:27:08 -0500] [7805] [INFO] Booting worker with pid: 7805
