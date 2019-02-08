@@ -94,3 +94,4 @@ for teacher in teacherToSects.keys():
     perDist = {l:[] for l in range(1,8)}
     for x in range(len(teacherToSects[teacher])):
         perDist[teacherToSects[x][1]].append(x)
+    #Just testing
