@@ -94,4 +94,10 @@ for teacher in teacherToSects.keys():
     perDist = {l:[] for l in range(1,8)}
     for x in range(len(teacherToSects[teacher])):
         perDist[teacherToSects[x][1]].append(x)
-    #Just testing
+    # Remember to restrict allowed periods for IBETs outside of the restrictions listed here
+    if perDist.keys() in {1,2,3,4}:
+        allwowedPers = {1,2,3,4}
+    elif perDist.keys() in {5,6,7}:
+        allowedPers = {5,6,7}
+    else:
+        allowedPers = {1,2,3,4,5,6,7}
