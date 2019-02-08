@@ -73,11 +73,11 @@ courseToTeacher["TJ Math 4"] = courseToTeacher["TJ Res Stats 1"]
 courseToTeacher["TJ Math 5"] = courseToTeacher["TJ Res Stats 1"]
 courseToTeacher["AP Calculus AB"] = courseToTeacher["TJ Res Stats 1"]
 
-courseToSections = {"TJ Res Stats 1":17, "TJ Math 3":17, "TJ Math 5":2, "TJ Math 4":2, "AP Calculus AB":1, "Biology 1":24, "English 9":24, "Design and Tech":24, "Latin 2":6, "French 2":5, "Spanish 2":9, "Japanese 1":1, "Chinese 1":1, "Russian 1":1, "German 1":1, "Health and PE 9":11, "Foundations CompSci":14, "Foundations CompSci Acc":3, "Symphonic Band":1, "AP Computer Sci A+":1, "Advanced Orchestra":1, "Theatre Arts 1":1, "Art 1":1}
+courseToSections = {"TJ Res Stats 1":17, "TJ Math 4": 4, "AP Calculus AB":1, "Biology 1":24, "English 9":24, "Design and Tech":24, "Latin 2":6, "French 2":5, "Spanish 2":9, "Japanese 1":1, "Chinese 1":1, "Russian 1":1, "German 1":1, "Health and PE 9":11, "Foundations CompSci":14, "Foundations CompSci Acc":3, "Symphonic Band":1, "AP Computer Sci A+":1, "Advanced Orchestra":1, "Theatre Arts 1":1, "Art 1":1}
 print(sum(v for v in courseToSections.values()))
 
-courseToNumber = {line.split("| ")[1]:[line.split("| ")[2], line.split("| ")[3]] for line in open("../../runs/constraint_files/newCourses.txt", "r").read().splitlines()}
-numberToCourse = {line.split("| ")[2]:[line.split("| ")[1], line.split("| ")[3]] for line in open("../../runs/constraint_files/newCourses.txt", "r").read().splitlines()}
+courseToNumber = {line.split("| ")[1]: [line.split("| ")[2], line.split("| ")[3]] for line in open("../../runs/constraint_files/newCourses.txt", "r").read().splitlines()}
+numberToCourse = {line.split("| ")[2]:  [line.split("| ")[1], line.split("| ")[3]] for line in open("../../runs/constraint_files/newCourses.txt", "r").read().splitlines()}
 
 teacherToSection = {}
 sections = {}
@@ -114,30 +114,41 @@ def assignSections():
         else:
             for y in range(courseToSections[course]):
                 teacher = random.choice(courseToTeacher[course])
-                r = 5
+                total = 0
                 if not teacher in teacherToSection.keys():
                     teacherToSection[teacher] = []
                 for c in teacherToSection[teacher]:
                     if numberToCourse[re.search(r'[A-Z]*[0-9]+[A-Z]*[0-9]*', sections[c][2]).group(0)][1] == "semester":
-                        r += 1
-                while teacher in teacherToSection.keys() and len(teacherToSection[teacher]) >= r:
+                        total += 0.5
+                    else:
+                        total += 1
+                while teacher in teacherToSection.keys() and total >= 5:
                     teacher = random.choice(courseToTeacher[course])
                     if not teacher in teacherToSection.keys():
                         teacherToSection[teacher] = []
-                    r = 5
-                    sem = 0
+                    total = 0
                     for c in teacherToSection[teacher]:
                         if numberToCourse[re.search(r'[A-Z]*[0-9]+[A-Z]*[0-9]*', sections[c][2]).group(0)][1] == "semester":
-                            sem += 1
-                    if sem%2 == 1:
-                        sem += 1
-                    r += sem/2
+                            total += 0.5
+                        else:
+                            total += 1
                     #print("Hi")
                 sections[secID] = [secID.__str__(), "teacher: "+teachers[teacher].split(", ")[2], "courseID: "+courseToNumber[course][0], "room: ?"]
                 if course in {"TJ Res Stats 1", "TJ Math 4"}:
                     sections[secID].append("semester: 1")
-                elif course in {"TJ Math 3", "TJ Math 5"}:
-                    sections[secID].append("semester: 2")
+                    sections[secID].append("maxstudents: 20")
+                    teacherToSection[teacher].append(secID)
+                    #print(sections[secID])
+                    secID += 1
+                    if course == "TJ Res Stats 1":
+                        cour = "TJ Math 3"
+                    else:
+                        cour = "TJ Math 5"
+                    sections[secID] = [secID.__str__(), "teacher: "+teachers[teacher].split(", ")[2], "courseID: "+courseToNumber[cour][0], "room: ?", "semester: 2", "maxstudents: 20"]
+                    teacherToSection[teacher].append(secID)
+                    #print(sections[secID])
+                    secID += 1
+                    continue
                 else:
                     sections[secID].append("semester: 0")
                 if course == "Health and PE 9":
@@ -146,6 +157,7 @@ def assignSections():
                     sections[secID].append("maxstudents: 20")
                 teacherToSection[teacher].append(secID)
                 secID += 1
+        #print(sections)
 
 # Teams IBETs by teams listed in function. Teaming info is stored under the bio teachers'
 def teamSections():
@@ -166,6 +178,7 @@ def writeSections():
             if len(sections[section]) > 6:
                 sectionFile.write("\n")
                 sectionFile.write(sections[section][6])
+                #print(sections[section])
             sectionFile.write("\n\n")
             if len(sections[section]) > 7:
                 teamed.append(section)
