@@ -17029,3 +17029,11 @@ Could not connect to database
 [2019-02-08 14:16:00 -0500] [5352] [INFO] Booting worker with pid: 5352
 [2019-02-08 14:16:00 -0500] [5354] [INFO] Booting worker with pid: 5354
 [2019-02-08 14:16:00 -0500] [5363] [INFO] Booting worker with pid: 5363
+\n\n\n starting new server run \n
+[2019-02-08 15:24:28 -0500] [6061] [INFO] Starting gunicorn 19.9.0
+[2019-02-08 15:24:28 -0500] [6061] [INFO] Listening at: http://127.0.0.1:11356 (6061)
+[2019-02-08 15:24:28 -0500] [6061] [INFO] Using worker: sync
+[2019-02-08 15:24:28 -0500] [6067] [INFO] Booting worker with pid: 6067
+[2019-02-08 15:24:28 -0500] [6069] [INFO] Booting worker with pid: 6069
+[2019-02-08 15:24:28 -0500] [6094] [INFO] Booting worker with pid: 6094
+[2019-02-08 15:24:28 -0500] [6095] [INFO] Booting worker with pid: 6095
