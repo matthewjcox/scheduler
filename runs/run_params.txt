@@ -1,7 +1,7 @@
 7
 classrooms.txt
 newCourses.txt
-teamed_3_teachers.txt
-sample_3_students.txt
+teamed_4_teachers.txt
+sample_4_students.txt
 blank_file.txt
-teamed_3_sections.txt
+teamed_4_sections.txt
