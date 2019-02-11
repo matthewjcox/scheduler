@@ -9,6 +9,9 @@ from django.apps import apps
 from scheduleServer.settings import MY_APPS
 from django.contrib.auth.models import User
 
+def home(request):
+    return render(request, 'projectIndex/homePage.html',{})
+
 def index(request):
     app_list = [re.match("^.*?(?=\.)",appName).group(0) for appName in MY_APPS]
     template = loader.get_template('projectIndex/index.html')

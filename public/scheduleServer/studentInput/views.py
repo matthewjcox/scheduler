@@ -1,13 +1,16 @@
+#Matthew added this comment to test git updates
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 
 from .models import Course, Category, Student
 
 numCoursesSelected = 7
 
 # Create your views here.
+@login_required
 def index(request):
     template = loader.get_template('studentInput/index.html')
     context = {
