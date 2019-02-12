@@ -265,8 +265,9 @@ class master_schedule(chromosome):
         try:
             for i in section.teachers:
                 for j in i.sched:
-                    if j.period==new_period:
-                        self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
+                    if section.semester==0 or j.semester==0 or section.semester==j.semester:
+                        if j.period==new_period:
+                            self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
             for j in section.teamed_sections:
                 if j.period == new_period:
                     self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached)
@@ -277,11 +278,19 @@ class master_schedule(chromosome):
     def initialize_weights(self):
         self.student_conflict_score_delta = -200
         self.teacher_conflict_score_delta = -10000
-        self.correct_course_score_delta = 4
-        self.theoretical_max_score = self.correct_course_score_delta * len(self.stock_students) * self.num_periods
+        self.correct_yr_course_score_delta = 4
+        self.correct_sem_course_score_delta = 2
+        self.theoretical_max_score=0
+        for i in self.stock_students.values():
+            for j in i.courses.courses:
+                if j.duration=='year':
+                    self.theoretical_max_score+=self.correct_yr_course_score_delta
+                else:
+                    self.theoretical_max_score+=self.correct_sem_course_score_delta
+         # = self.correct_yr_course_score_delta * len(self.stock_students) * self.num_periods
 
         self.duplicate_correct_course_score_delta = -5
-        self.rare_class_bonus = 8 * (1 - _CLOSENESS_TO_COMPLETION**2)
+        self.rare_class_bonus = 20 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-1000
         self.course_period_overlap=-10*(1-_CLOSENESS_TO_COMPLETION)**2
 
@@ -395,7 +404,10 @@ class master_schedule(chromosome):
         for i,j in courses.items():
             if i in student.courses.courses:
                 if j==1:
-                    base_score += self.correct_course_score_delta
+                    if i.duration=='year':
+                        base_score += self.correct_yr_course_score_delta
+                    else:
+                        base_score += self.correct_sem_course_score_delta
                 else:
                     base_score += self.duplicate_correct_course_score_delta
         return base_score
@@ -551,7 +563,7 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score or random.random()<2**(-10*(score-new_score)):
+            if new_score>=score or random.random()<2**(-8*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
@@ -633,6 +645,8 @@ class hill_climb_solo_2:
             i=_ITERATION
             if first_it == 1:
                 self.current_sched.remove_teacher_conflicts()
+                self.current_sched.score()
+                self.current_sched.initialize_weights()
             if first_it==1 or i<10 or i % print_every == 0:
                 first_it=0
                 print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
@@ -654,7 +668,7 @@ class hill_climb_solo_2:
             print('Old:')
             old_score=self.current_sched.preliminary_score(verbose=1)
             delta_score=old_score-new_score
-            if new_score>=old_score or random.random()<10**(-1000*delta_score/self.current_sched.theoretical_max_score):
+            if new_score>=old_score or random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3:#10**(-5*_CLOSENESS_TO_COMPLETION)*
                 self.current_sched=new_organism
             # print('',old_score,'\n',new_score)
             self.current_sched.set_progress()
