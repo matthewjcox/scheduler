@@ -13,13 +13,13 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
     elif field == 'room':
         v = classrooms[value]
         s.add_classroom(v)
-    elif field == 'team' or field=='team_1':
+    elif field == 'team' or field=='team_1' or field=='team1':
         v = sections[value]
         s.team_1(v)
-    elif field=='team_2':
+    elif field=='team_2' or field=='team2':
         v = sections[value]
         s.team_2(v)
-    elif field=='team_3':
+    elif field=='team_3' or field=='team3':
         v = sections[value]
         s.team_3(v)
     elif field == 'period':
@@ -134,7 +134,7 @@ def read_students(studentfn,students,all_courses):
 
 
 def read_sections(sectionfn,sections,num_periods,classrooms,courses,teachers,students):
-    with open(sectionfn, 'r') as f:
+    with open(sectionfn, 'r') as f:#Read twice: first time, just get IDs, then second time, populate with teacher, periods, etc. Necessary in order to allow teaming cross-referencing.
         lines=f.readlines()
         j=0
         try:
@@ -154,9 +154,33 @@ def read_sections(sectionfn,sections,num_periods,classrooms,courses,teachers,stu
                     field,value=i.split(':')
                     field=field.strip()
                     value=value.strip()
-                    set_attribute(s,field,value,sections,classrooms,courses,teachers,students)
+                    # set_attribute(s,field,value,sections,classrooms,courses,teachers,students)
                     i = lines[j].strip()
                     j+=1
+        except IndexError as e:
+            print(e)
+            raise
+        j = 0
+        try:
+            while j < len(lines):
+                i = lines[j].strip()
+                j += 1
+                if not i:
+                    continue
+                if i in sections:
+                    s = sections[i]
+                else:
+                    s = Section(i)
+                    sections[i] = s
+                i = lines[j].strip()
+                j += 1
+                while i:
+                    field, value = i.split(':')
+                    field = field.strip()
+                    value = value.strip()
+                    set_attribute(s, field, value, sections, classrooms, courses, teachers, students)
+                    i = lines[j].strip()
+                    j += 1
         except IndexError as e:
             print(e)
             raise

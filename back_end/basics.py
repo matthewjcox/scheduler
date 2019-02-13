@@ -386,6 +386,8 @@ class Section:
         self.period_fixed=1
 
     def set_period(self,period,override=0):
+        if self.period==period:
+            return
         if not self.period_fixed or override:
             self.period=period
             for i in self.teamed2:
@@ -451,7 +453,7 @@ class Section:
 
     def __repr__(self):
         return 'Section {}: {} {} P{} {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester))
-
+    #     return 'Section {}: {} {} P{} {} - {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester),object.__repr__(self))
     def __hash__(self):
         return hash(object.__repr__(self))
 

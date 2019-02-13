@@ -131,15 +131,18 @@ class master_schedule(chromosome):
                     if course not in self.course_sections:
                         self.course_sections[course] = []
                     self.course_sections[course].append(sect)
-            for i,j in self.teams1:
-                other=self.sections[j]
-                i.team_1(other)
-            for i,j in self.teams2:
-                other=self.sections[j]
-                i.team_2(other)
-            for i,j in self.teams3:
-                other=self.sections[j]
-                i.team_3(other)
+            for i, j in self.teams1:
+                other = self.sections[j]
+                if other not in i.teamed1:
+                    i.team_1(other)
+            for i, j in self.teams2:
+                other = self.sections[j]
+                if other not in i.teamed2:
+                    i.team_2(other)
+            for i, j in self.teams3:
+                other = self.sections[j]
+                if other not in i.teamed3:
+                    i.team_3(other)
 
 
     def retrieve_schedule(self,outfolder):
@@ -217,7 +220,7 @@ class master_schedule(chromosome):
         try:
             for i in section.teachers:
                 for j in i.sched:
-                    if section.semester==0 or j.semester==0 or section.semester==j.semester:
+                    if (section.semester==0 or j.semester==0 or section.semester==j.semester) and j not in section.teamed2:
                         if j.period==new_period:
                             self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
             for j in section.teamed1:
@@ -264,23 +267,33 @@ class master_schedule(chromosome):
 
         teacher_conflict_score=0
         for i in self.teachers.values():
-            periods_yr = set()
-            periods_s1 = set()
-            periods_s2 = set()
+            periods_yr = {}
+            periods_s1 = {}
+            periods_s2 = {}
             for j in i.sched:
                 k = j.period
+                if k not in periods_yr:
+                    periods_yr[k] = []
+                if k not in periods_s1:
+                    periods_s1[k] = []
+                if k not in periods_s2:
+                    periods_s2[k] = []
+                same_period=periods_yr[k]+periods_s1[k]+periods_s2[k]
                 if j.semester == 0:
-                    if k in periods_yr or k in periods_s1 or k in periods_s2:
+                    # k in periods_yr or k in periods_s1 or k in periods_s2:
+                    for m in same_period:
+                        if m not in j.teamed2:#CONTINUE FIXING FOR TEAM2 CONFLICTS
+                        raise NotImplementedError
                         teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_yr.add(k)
+                    # periods_yr[k].append(k)
                 elif j.semester == 1:
                     if k in periods_yr or k in periods_s1:
                         teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_s1.add(k)
+                    # periods_s1.add(k)
                 elif j.semester == 2:
                     if k in periods_yr or k in periods_s2:
                         teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_s2.add(k)
+                    # periods_s2.add(k)
         score+=teacher_conflict_score
 
         period_spread_score=0
@@ -550,20 +563,23 @@ class master_schedule(chromosome):
             if i.period_fixed:
                 s.fix_period()
             for j in i.teamed1:
-                self.teams1.append((s, j.id))
+                sched.teams1.append((s, j.id))
             for j in i.teamed2:
-                self.teams2.append((s, j.id))
+                sched.teams2.append((s, j.id))
             for j in i.teamed3:
-                self.teams3.append((s, j.id))
-        for i, j in self.teams1:
-            other = self.sections[j]
-            i.team_1(other)
-        for i, j in self.teams2:
-            other = self.sections[j]
-            i.team_2(other)
-        for i, j in self.teams3:
-            other = self.sections[j]
-            i.team_3(other)
+                sched.teams3.append((s, j.id))
+        for i, j in sched.teams1:
+            other = sched.sections[j]
+            if other not in i.teamed1:
+                i.team_1(other)
+        for i, j in sched.teams2:
+            other = sched.sections[j]
+            if other not in i.teamed2:
+                i.team_2(other)
+        for i, j in sched.teams3:
+            other = sched.sections[j]
+            if other not in i.teamed3:
+                i.team_3(other)
         for sect in sched.sections.values():
             for course in sect.courses:
                 if course not in sched.course_sections:
