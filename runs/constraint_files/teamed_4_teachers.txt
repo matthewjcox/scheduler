@@ -1,25 +1,25 @@
-Amy, Lampazzi, anlampazzi
 Isaac, Carey, ijcarey
-Corey, Lightner, cllightner
 Alouf, Jirari-Scavotto, ajirariscavo
+Corey, Lightner, cllightner
 David, Hill, dlhill2
-Sonia, Del Cerro, sdelcerro
-Thomas, Larson, tglarson
-Jennifer, James, jjames1
+Amy, Lampazzi, anlampazzi
 Aubrie, Holman, asholman
+Sonia, Del Cerro, sdelcerro
+Jennifer, James, jjames1
+Thomas, Larson, tglarson
+Stephanie, Glotfelty, slglotfelty
 Erinn, Harris, eharris1
 Mary, Kochman, mbkochman
-Stephanie, Glotfelty, slglotfelty
 Nancy, Glover, neglover
-Craig, Lewis, calewis1
-Jared, Seyler, jcseyler
 Darcie, Jones, djones3
 Monica, Geiger, mggeiger
-Patricia, Lister, phlister
+Jared, Seyler, jcseyler
+Craig, Lewis, calewis1
 Christine, Conklin, clconklin
+Patricia, Lister, phlister
 Cynthia, Van de Kamp, cvandekampwa
-Margaret, Gendive, magendive
 Nannette, Mateo, nmateo
+Margaret, Gendive, magendive
 Koji, Otani, kotani
 Qin, Xu, qxu1
 Elizabeth, Sandstrom, ecsandstrom
@@ -28,9 +28,9 @@ Heidi, Smith, hesmith
 Jeffrey, James, jcjames
 Barry, Potoker, bnpotoker
 Nicole, Kim, njkim
-Malcolm, Eckel, mceckel
 Stephen, Rose, srrose
 Marion, Billington, mlbillington
+Malcolm, Eckel, mceckel
 Adam, Foreman, awforeman
 Allison, Bailey, akbailey
 Andrew, Reid, amreid
