@@ -15,7 +15,13 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
         s.add_classroom(v)
     elif field == 'team' or field=='team_1':
         v = sections[value]
-        s.team_with(v)
+        s.team_1(v)
+    elif field=='team_2':
+        v = sections[value]
+        s.team_2(v)
+    elif field=='team_3':
+        v = sections[value]
+        s.team_3(v)
     elif field == 'period':
         v = int(value)
         s.set_period(v)
