@@ -137,6 +137,7 @@ def assignSections():
                 if course in {"TJ Res Stats 1", "TJ Math 4"}:
                     sections[secID].append("semester: 1")
                     sections[secID].append("maxstudents: 20")
+                    sections[secID].append("team_3: " + (secID + 1).__str__())
                     teacherToSection[teacher].append(secID)
                     #print(sections[secID])
                     secID += 1
@@ -144,7 +145,7 @@ def assignSections():
                         cour = "TJ Math 3"
                     else:
                         cour = "TJ Math 5"
-                    sections[secID] = [secID.__str__(), "teacher: "+teachers[teacher].split(", ")[2], "courseID: "+courseToNumber[cour][0], "room: ?", "semester: 2", "maxstudents: 20"]
+                    sections[secID] = [secID.__str__(), "teacher: "+teachers[teacher].split(", ")[2], "courseID: "+courseToNumber[cour][0], "room: ?", "semester: 2", "maxstudents: 20", "team_3: " + (secID - 1).__str__()]
                     teacherToSection[teacher].append(secID)
                     #print(sections[secID])
                     secID += 1
@@ -164,8 +165,8 @@ def teamSections():
     teams = [["James", "Kochman", "Lewis"], ["Larson", "Glover", "Jones"], ["Holman", "Harris", "Geiger"], ["Del Cerro", "Glotfelty", "Seyler"]]
     for team in teams:
         for x in range(6):
-            sections[teacherToSection[team[0]][x]].append("team: " + teacherToSection[team[1]][x].__str__())
-            sections[teacherToSection[team[0]][x]].append("team: " + teacherToSection[team[2]][x].__str__())
+            sections[teacherToSection[team[0]][x]].append("team_1: " + teacherToSection[team[1]][x].__str__())
+            sections[teacherToSection[team[0]][x]].append("team_1: " + teacherToSection[team[2]][x].__str__())
 
 def writeSections():
     global secID
