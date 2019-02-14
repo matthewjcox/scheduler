@@ -17054,3 +17054,157 @@ Could not connect to database
 [2019-02-08 15:27:08 -0500] [7801] [INFO] Booting worker with pid: 7801
 [2019-02-08 15:27:08 -0500] [7803] [INFO] Booting worker with pid: 7803
 [2019-02-08 15:27:08 -0500] [7805] [INFO] Booting worker with pid: 7805
+[2019-02-08 20:30:53 +0000] [7801] [INFO] Worker exiting (pid: 7801)
+[2019-02-08 20:30:53 +0000] [7800] [INFO] Worker exiting (pid: 7800)
+[2019-02-08 15:30:53 -0500] [7797] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-02-08 20:30:53 +0000] [7803] [INFO] Worker exiting (pid: 7803)
+\n\n\n starting new server run \n
+[2019-02-08 15:30:54 -0500] [12603] [INFO] Starting gunicorn 19.9.0
+[2019-02-08 15:30:54 -0500] [12603] [INFO] Listening at: http://127.0.0.1:11356 (12603)
+[2019-02-08 15:30:54 -0500] [12603] [INFO] Using worker: sync
+[2019-02-08 15:30:54 -0500] [12608] [INFO] Booting worker with pid: 12608
+[2019-02-08 15:30:54 -0500] [12609] [INFO] Booting worker with pid: 12609
+[2019-02-08 15:30:54 -0500] [12610] [INFO] Booting worker with pid: 12610
+[2019-02-08 15:30:54 -0500] [12614] [INFO] Booting worker with pid: 12614
+[2019-02-11 14:03:43 -0500] [12603] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-02-11 14:03:45 -0500] [12243] [INFO] Starting gunicorn 19.9.0
+[2019-02-11 14:03:45 -0500] [12243] [INFO] Listening at: http://127.0.0.1:11356 (12243)
+[2019-02-11 14:03:45 -0500] [12243] [INFO] Using worker: sync
+[2019-02-11 14:03:45 -0500] [12246] [INFO] Booting worker with pid: 12246
+[2019-02-11 14:03:45 -0500] [12248] [INFO] Booting worker with pid: 12248
+[2019-02-11 14:03:45 -0500] [12250] [INFO] Booting worker with pid: 12250
+[2019-02-11 14:03:45 -0500] [12251] [INFO] Booting worker with pid: 12251
+\n\n\n starting new server run \n
+[2019-02-11 15:10:39 -0500] [21000] [INFO] Starting gunicorn 19.9.0
+[2019-02-11 15:10:39 -0500] [21000] [INFO] Listening at: http://127.0.0.1:11356 (21000)
+[2019-02-11 15:10:39 -0500] [21000] [INFO] Using worker: sync
+[2019-02-11 15:10:39 -0500] [21003] [INFO] Booting worker with pid: 21003
+[2019-02-11 15:10:39 -0500] [21005] [INFO] Booting worker with pid: 21005
+[2019-02-11 15:10:39 -0500] [21006] [INFO] Booting worker with pid: 21006
+[2019-02-11 15:10:39 -0500] [21007] [INFO] Booting worker with pid: 21007
+\n\n\n starting new server run \n
+[2019-02-11 23:02:11 -0500] [28893] [INFO] Starting gunicorn 19.9.0
+[2019-02-11 23:02:11 -0500] [28893] [INFO] Listening at: http://127.0.0.1:11356 (28893)
+[2019-02-11 23:02:11 -0500] [28893] [INFO] Using worker: sync
+[2019-02-11 23:02:11 -0500] [28900] [INFO] Booting worker with pid: 28900
+[2019-02-11 23:02:11 -0500] [28901] [INFO] Booting worker with pid: 28901
+[2019-02-11 23:02:11 -0500] [28902] [INFO] Booting worker with pid: 28902
+[2019-02-11 23:02:11 -0500] [28904] [INFO] Booting worker with pid: 28904
+Not Found: /studentInput/results
+\n\n\n starting new server run \n
+[2019-02-13 15:37:55 -0500] [30103] [INFO] Starting gunicorn 19.9.0
+[2019-02-13 15:37:55 -0500] [30103] [INFO] Listening at: http://127.0.0.1:11356 (30103)
+[2019-02-13 15:37:55 -0500] [30103] [INFO] Using worker: sync
+[2019-02-13 15:37:55 -0500] [30108] [INFO] Booting worker with pid: 30108
+[2019-02-13 15:37:55 -0500] [30109] [INFO] Booting worker with pid: 30109
+[2019-02-13 15:37:55 -0500] [30110] [INFO] Booting worker with pid: 30110
+[2019-02-13 15:37:55 -0500] [30113] [INFO] Booting worker with pid: 30113
+[2019-02-13 20:56:09 +0000] [30113] [INFO] Worker exiting (pid: 30113)
+[2019-02-13 20:56:09 +0000] [30108] [INFO] Worker exiting (pid: 30108)
+[2019-02-13 20:56:09 +0000] [30109] [INFO] Worker exiting (pid: 30109)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-02-13 15:56:09 -0500] [30103] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-02-13 15:56:11 -0500] [10437] [INFO] Starting gunicorn 19.9.0
+[2019-02-13 15:56:11 -0500] [10437] [INFO] Listening at: http://127.0.0.1:11356 (10437)
+[2019-02-13 15:56:11 -0500] [10437] [INFO] Using worker: sync
+[2019-02-13 15:56:11 -0500] [10447] [INFO] Booting worker with pid: 10447
+[2019-02-13 15:56:11 -0500] [10448] [INFO] Booting worker with pid: 10448
+[2019-02-13 15:56:11 -0500] [10452] [INFO] Booting worker with pid: 10452
+[2019-02-13 15:56:11 -0500] [10454] [INFO] Booting worker with pid: 10454
+Not Found: /favicon.ico
+[2019-02-14 16:14:30 +0000] [10454] [INFO] Worker exiting (pid: 10454)
+[2019-02-14 16:14:30 +0000] [10447] [INFO] Worker exiting (pid: 10447)
+\n\n\n starting new server run \n
+[2019-02-14 11:14:31 -0500] [8760] [INFO] Starting gunicorn 19.9.0
+[2019-02-14 11:14:31 -0500] [8760] [INFO] Listening at: http://127.0.0.1:11356 (8760)
+[2019-02-14 11:14:31 -0500] [8760] [INFO] Using worker: sync
+[2019-02-14 11:14:31 -0500] [8769] [INFO] Booting worker with pid: 8769
+[2019-02-14 11:14:32 -0500] [8773] [INFO] Booting worker with pid: 8773
+[2019-02-14 11:14:32 -0500] [8775] [INFO] Booting worker with pid: 8775
+[2019-02-14 11:14:32 -0500] [8777] [INFO] Booting worker with pid: 8777
+Internal Server Error: /loginPage/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 35, in index
+    return HttpResponseRedirect(reverse('social:begin', 'Ion'))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 58, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 477, in app_dict
+    self._populate()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 413, in _populate
+    for url_pattern in reversed(self.url_patterns):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'Ion'
+[2019-02-14 16:16:19 +0000] [8769] [INFO] Worker exiting (pid: 8769)
+[2019-02-14 16:16:19 +0000] [8777] [INFO] Worker exiting (pid: 8777)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-02-14 16:16:19 +0000] [8775] [INFO] Worker exiting (pid: 8775)
+\n\n\n starting new server run \n
+[2019-02-14 11:16:21 -0500] [10022] [INFO] Starting gunicorn 19.9.0
+[2019-02-14 11:16:21 -0500] [10022] [INFO] Listening at: http://127.0.0.1:11356 (10022)
+[2019-02-14 11:16:21 -0500] [10022] [INFO] Using worker: sync
+[2019-02-14 11:16:21 -0500] [10025] [INFO] Booting worker with pid: 10025
+[2019-02-14 11:16:21 -0500] [10027] [INFO] Booting worker with pid: 10027
+[2019-02-14 11:16:21 -0500] [10029] [INFO] Booting worker with pid: 10029
+[2019-02-14 11:16:21 -0500] [10049] [INFO] Booting worker with pid: 10049
+[2019-02-14 16:16:24 +0000] [10027] [INFO] Worker exiting (pid: 10027)
+/web/projects/schedule/public/scheduleServer
+[2019-02-14 16:16:24 +0000] [10025] [INFO] Worker exiting (pid: 10025)
+\n\n\n starting new server run \n
+[2019-02-14 11:16:25 -0500] [10177] [INFO] Starting gunicorn 19.9.0
+[2019-02-14 11:16:25 -0500] [10177] [INFO] Listening at: http://127.0.0.1:11356 (10177)
+[2019-02-14 11:16:25 -0500] [10177] [INFO] Using worker: sync
+[2019-02-14 11:16:25 -0500] [10182] [INFO] Booting worker with pid: 10182
+[2019-02-14 11:16:25 -0500] [10183] [INFO] Booting worker with pid: 10183
+[2019-02-14 11:16:26 -0500] [10188] [INFO] Booting worker with pid: 10188
+[2019-02-14 11:16:26 -0500] [10189] [INFO] Booting worker with pid: 10189
+[2019-02-14 16:16:30 +0000] [10182] [INFO] Worker exiting (pid: 10182)
+[2019-02-14 16:16:30 +0000] [10183] [INFO] Worker exiting (pid: 10183)
+[2019-02-14 11:16:30 -0500] [10177] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-02-14 11:16:31 -0500] [10273] [INFO] Starting gunicorn 19.9.0
+[2019-02-14 11:16:31 -0500] [10273] [INFO] Listening at: http://127.0.0.1:11356 (10273)
+[2019-02-14 11:16:31 -0500] [10273] [INFO] Using worker: sync
+[2019-02-14 11:16:31 -0500] [10280] [INFO] Booting worker with pid: 10280
+[2019-02-14 11:16:32 -0500] [10281] [INFO] Booting worker with pid: 10281
+[2019-02-14 11:16:32 -0500] [10283] [INFO] Booting worker with pid: 10283
+[2019-02-14 11:16:32 -0500] [10284] [INFO] Booting worker with pid: 10284
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 41, in redirect
+    client_secret=CLIENT_SECRET)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/requests_oauthlib/oauth2_session.py", line 192, in fetch_token
+    raise ValueError('Please supply either code or '
+ValueError: Please supply either code or authorization_response parameters.

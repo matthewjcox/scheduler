@@ -2,7 +2,9 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+<!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
+<!-- <a href="{% url 'studentInput:index' %}" >Back to Index</a> -->
+<a href="{% url 'projectIndex:student' %}" >Back to Index</a>
 
 <form action="{% url 'studentInput:submit' %}" method="post">
 {% csrf_token %}
