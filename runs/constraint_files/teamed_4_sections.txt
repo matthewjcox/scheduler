@@ -1168,7 +1168,6 @@ courseID: TJA3184
 room: ?
 semester: 0
 maxstudents: 20
-team_2: 100151
 
 100151
 teacher: njkim
