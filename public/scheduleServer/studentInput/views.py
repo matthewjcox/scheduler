@@ -10,6 +10,8 @@ from .models import Course, Category, Student
 numCoursesSelected = 7
 
 # Create your views here.
+#@permission_required('counselorEditor.can_view')
+#this one works better but I have no clue how it works
 @login_required
 def index(request):
     template = loader.get_template('studentInput/index.html')

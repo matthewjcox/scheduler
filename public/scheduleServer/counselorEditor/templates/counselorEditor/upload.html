@@ -1,6 +1,7 @@
 <h1>Upload Schedule Parameters</h1>
 
-<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+<!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
+<a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
 <br><br>
 <form action = "{%url 'counselorEditor:success' %}" method = "post" enctype="multipart/form-data">
     {% csrf_token %}

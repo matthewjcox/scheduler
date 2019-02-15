@@ -2,7 +2,8 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a>
+<!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
+<a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
 
 <form action="{% url 'counselorEditor:edit' %}" method="post">
 {% csrf_token %}

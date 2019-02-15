@@ -30,7 +30,9 @@ def index(request):
         scope=["read","write"])
     authorization_url, state = oauth.authorization_url("https://ion.tjhsst.edu/oauth/authorize/")
     
-    return render(request, 'loginPage/index.html')
+    #return render(request, 'loginPage/index.html')
+    
+    return HttpResponseRedirect(reverse('social:begin', args=['Ion']))
     
 
 def redirect(request):

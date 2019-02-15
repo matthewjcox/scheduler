@@ -48,63 +48,7 @@ class chromosome:
     def __str__(self):
         return '{} object, score={}'.format(self.__class__.__name__,self.score())
 
-class knapsack(chromosome):
-    def __init__(self,*args,**kwargs):
-        super(knapsack,self).__init__(*args,**kwargs)
-        self.items = [(10, 10), (6, 5), (7, 8), (2, 1), (3,3), (7,2),(9,1),(0, 0)]
-        self.capacity = 20
-        self.num_items=4
-        self.score_var=None
-        self.weighted_score_var=None
-        self.recompute_score=1
 
-    def blank_new(self):
-        self.l=[None for i in range(self.num_items)]
-        self.recompute_score=1
-
-    def randomize_new(self):
-        self.l=[]
-        for i in range(self.num_items):
-            self.l.append(random.choice(self.items))
-        self.recompute_score=1
-
-    def mutate(self):
-        index=random.randint(0, self.num_items - 1)
-        self.l[index]=random.choice(self.items)
-        self.recompute_score=1
-
-    def score(self):
-        if self.score_var is None or self.recompute_score:
-            if sum((i[0] for i in self.l))>self.capacity:
-                self.score_var=-1
-            else:
-                self.score_var=sum((i[1] for i in self.l))
-        return self.score_var
-
-    def weighted_score(self):
-        if self.weighted_score_var is None:
-            self.weighted_score_var=1.2**self.score()
-        return self.weighted_score_var
-
-    def is_viable(self):
-        return self.score()>=0
-
-    @staticmethod
-    def breed(a,b):
-        child=knapsack()
-        child.blank_new()
-        # min_a,max_a=sorted([random.randint(0,a.num_items),random.randint(0,a.num_items)])
-        for i in range(a.num_items):
-            if random.getrandbits(1):
-                child.l[i]=a.l[i]
-            else:
-                child.l[i]=b.l[i]
-        if random.random()<.2:
-            child.mutate()
-        return child
-
-    def __str__(self):
-        return '{}, score={}'.format(self.l,self.score())
 
 def weighted_choice(elements,n,weights):
     assert .999<=sum(weights)<=1.001
@@ -150,7 +94,9 @@ class master_schedule(chromosome):
             self.students[i.studentID]=i.copy()
         for i in self.stock_classrooms.values():
             self.classrooms[i.num]=Classroom(i.num)
-        self.teams=[]
+        self.teams1=[]
+        self.teams2 = []
+        self.teams3 = []
         self.initialized=1
         if fill_sections:
             for i in self.stock_sections.values():
@@ -174,20 +120,29 @@ class master_schedule(chromosome):
                 if i.period_fixed:
                     s.fix_period()
                 s.set_allowed_periods(i.allowed_periods)
-                for j in i.teamed_sections:
-                    self.teams.append((s,j.id))
+                for j in i.teamed1:
+                    self.teams1.append((s,j.id))
+                for j in i.teamed2:
+                    self.teams2.append((s,j.id))
+                for j in i.teamed3:
+                    self.teams3.append((s,j.id))
             for sect in self.sections.values():
                 for course in sect.courses:
                     if course not in self.course_sections:
                         self.course_sections[course] = []
                     self.course_sections[course].append(sect)
-            for i,j in self.teams:
-                other=self.sections[j]
-                i.team_with(other)
-            # for i in self.stock_students.values():
-            #     for course,students in i.teamed.items():
-            #         for j in students:
-            #             self.students[i.studentID].team(course, self.students[j.studentID])
+            for i, j in self.teams1:
+                other = self.sections[j]
+                if other not in i.teamed1:
+                    i.team_1(other)
+            for i, j in self.teams2:
+                other = self.sections[j]
+                if other not in i.teamed2:
+                    i.team_2(other)
+            for i, j in self.teams3:
+                other = self.sections[j]
+                if other not in i.teamed3:
+                    i.team_3(other)
 
 
     def retrieve_schedule(self,outfolder):
@@ -265,10 +220,10 @@ class master_schedule(chromosome):
         try:
             for i in section.teachers:
                 for j in i.sched:
-                    if section.semester==0 or j.semester==0 or section.semester==j.semester:
+                    if (section.semester==0 or j.semester==0 or section.semester==j.semester) and j not in section.teamed2:
                         if j.period==new_period:
                             self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
-            for j in section.teamed_sections:
+            for j in section.teamed1:
                 if j.period == new_period:
                     self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached)
         except InvalidPeriodError:
@@ -276,7 +231,7 @@ class master_schedule(chromosome):
             raise
 
     def initialize_weights(self):
-        self.student_conflict_score_delta = -200
+        self.student_conflict_score_delta = -4.1
         self.teacher_conflict_score_delta = -10000
         self.correct_yr_course_score_delta = 4
         self.correct_sem_course_score_delta = 2
@@ -302,33 +257,45 @@ class master_schedule(chromosome):
         self.initialize_weights()
         student_base_score=0
         student_addl_score=0
+        student_conflict_score=0
         for i in self.students.values():
-            student_score,_=self.score_student(i)
+            student_score,_,conflicts=self.score_student(i)
             student_base_score+=_
             student_addl_score+=student_score-_
+            student_conflict_score+=conflicts
 
         score+=student_base_score
         addl_score+=student_addl_score
 
         teacher_conflict_score=0
         for i in self.teachers.values():
-            periods_yr = set()
-            periods_s1 = set()
-            periods_s2 = set()
+            periods= {}
             for j in i.sched:
                 k = j.period
+                if k not in periods:
+                    periods[k] = []
+                same_period=periods[k]
                 if j.semester == 0:
-                    if k in periods_yr or k in periods_s1 or k in periods_s2:
-                        teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_yr.add(k)
+                    # k in periods_yr or k in periods_s1 or k in periods_s2:
+                    for m in same_period:
+                        if m not in j.teamed2:
+                            teacher_conflict_score += self.teacher_conflict_score_delta
+                            break
+                    periods[k].append(j)
                 elif j.semester == 1:
-                    if k in periods_yr or k in periods_s1:
-                        teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_s1.add(k)
+                    for m in same_period:
+                        if m not in j.teamed2:
+                            if m.semester==1 or m.semester==0:
+                                teacher_conflict_score += self.teacher_conflict_score_delta
+                                break
+                    periods[k].append(j)
                 elif j.semester == 2:
-                    if k in periods_yr or k in periods_s2:
-                        teacher_conflict_score += self.teacher_conflict_score_delta
-                    periods_s2.add(k)
+                    for m in same_period:
+                        if m not in j.teamed2:
+                            if m.semester==2 or m.semester==0:
+                                teacher_conflict_score += self.teacher_conflict_score_delta
+                                break
+                    periods[k].append(j)
         score+=teacher_conflict_score
 
         period_spread_score=0
@@ -353,7 +320,7 @@ class master_schedule(chromosome):
         score+=section_penalty_score
 
         if verbose:
-            print("St base: {}, St addl: {}, T conflict: {}, Per spread: {}, Sec penalty: {}".format(student_base_score,student_addl_score,teacher_conflict_score,period_spread_score,section_penalty_score))
+            print("St base: {}, St addl: {}, S conflict: {}, T conflict: {}, Per spread: {}, Sec penalty: {}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
             print(score,score+addl_score)
 
         return score if static else score+addl_score
@@ -366,9 +333,10 @@ class master_schedule(chromosome):
         self.initialize_weights()
 
     def score_student(self,student):
-        base_score,addl_score=self.score_student_sections(student)
+        st_conflict_score,addl_score=self.score_student_sections(student)
+        base_score=st_conflict_score
         base_score+=self.score_student_courses(student)
-        return (base_score+addl_score,base_score)
+        return (base_score+addl_score,base_score,st_conflict_score)
 
     def score_student_sections(self,student):
         base_score = 0
@@ -436,33 +404,42 @@ class master_schedule(chromosome):
                         print('Teacher {} has unresolveable conflicts. Exiting operation.'.format(i.teacherID))
                         raise ValueError
                     conflicts=0
-                    periods_yr = set()
-                    periods_s1 = set()
-                    periods_s2 = set()
+                    periods={}
                     for j in sorted(i.sched,key=lambda i:random.random()):
                         k = j.period
+                        if k not in periods:
+                            periods[k] = []
+                        same_period = periods[k]
                         if k==0:
                             self.mutate_period(j,verbose=0)
                             conflicts+=1
                             outer_conflicts+=1
                         if j.semester == 0:
-                            if k in periods_yr or k in periods_s1 or k in periods_s2:
-                                self.mutate_period(j,verbose=0)
-                                conflicts+=1
-                                outer_conflicts += 1
-                            periods_yr.add(j.period)
+                            for m in same_period:
+                                if m not in j.teamed2:
+                                    self.mutate_period(j,verbose=0)
+                                    conflicts+=1
+                                    outer_conflicts += 1
+                                    break
+                            periods[k].append(j)
                         elif j.semester == 1:
-                            if k in periods_yr or k in periods_s1:
-                                self.mutate_period(j,verbose=0)
-                                conflicts+=1
-                                outer_conflicts += 1
-                            periods_s1.add(j.period)
+                            for m in same_period:
+                                if m not in j.teamed2:
+                                    if m.semester == 1 or m.semester == 0:
+                                        self.mutate_period(j,verbose=0)
+                                        conflicts+=1
+                                        outer_conflicts += 1
+                                        break
+                            periods[k].append(j)
                         elif j.semester == 2:
-                            if k in periods_yr or k in periods_s2:
-                                self.mutate_period(j,verbose=0)
-                                conflicts+=1
-                                outer_conflicts += 1
-                            periods_s2.add(j.period)
+                            for m in same_period:
+                                if m not in j.teamed2:
+                                    if m.semester == 2 or m.semester == 0:
+                                        self.mutate_period(j,verbose=0)
+                                        conflicts+=1
+                                        outer_conflicts += 1
+                                        break
+                            periods[k].append(j)
             conflicts=-1
             while conflicts!=0:
                 conflicts=0
@@ -472,16 +449,16 @@ class master_schedule(chromosome):
                     while inner_conflicts!=0:
                         inner_conflicts=0
                         n+=1
-                        if i.teamed_sections:
+                        if i.teamed1:
                             periods=[i.period]
-                            for j in i.teamed_sections:
+                            for j in i.teamed1:
                                 periods.append(j.period)
                             if len(set(periods))!=len(periods):
                                 conflicts+=1
                                 inner_conflicts+=1
                                 outer_conflicts += 1
                                 self.mutate_period(i,verbose=0,allow_randomness=1)
-                                for k in i.teamed_sections:
+                                for k in i.teamed1:
                                     self.mutate_period(k,verbose=0,allow_randomness=1)
                         if n>100:
                             print(i.__repr__())
@@ -490,7 +467,7 @@ class master_schedule(chromosome):
 
     def optimize_student(self,student,max_it=1000,skip_if_filled=0):
         for i in range(max_it):
-            score,student_score=self.score_student(student)
+            score,student_score=self.score_student(student)#conflict score is 3rd returned value; not yet fixing bc need to check elsewhere
             if skip_if_filled and student_score==self.num_periods*self.correct_course_score_delta:
                 return
             courses={}
@@ -597,20 +574,32 @@ class master_schedule(chromosome):
             s.set_allowed_periods(i.allowed_periods)
             if i.period_fixed:
                 s.fix_period()
-            for j in i.teamed_sections:
-                sched.teams.append((s, j.id))
-        for i,j in sched.teams:
-            other=sched.sections[j]
-            i.team_with(other)
+            for j in i.teamed1:
+                sched.teams1.append((s, j.id))
+            for j in i.teamed2:
+                sched.teams2.append((s, j.id))
+            for j in i.teamed3:
+                sched.teams3.append((s, j.id))
+        for i, j in sched.teams1:
+            other = sched.sections[j]
+            if other not in i.teamed1:
+                i.team_1(other)
+        for i, j in sched.teams2:
+            other = sched.sections[j]
+            if other not in i.teamed2:
+                i.team_2(other)
+        for i, j in sched.teams3:
+            other = sched.sections[j]
+            if other not in i.teamed3:
+                i.team_3(other)
         for sect in sched.sections.values():
             for course in sect.courses:
                 if course not in sched.course_sections:
                     sched.course_sections[course] = []
                 sched.course_sections[course].append(sect)
-        # for i in self.stock_students.values():
-        #     for course, students in i.teamed.items():
-        #         for j in students:
-        #             sched.students[i.studentID].team(course, sched.students[j.studentID])
+
+
+
         return sched
 
     def __str__(self):
