@@ -21,6 +21,7 @@ Rules to follow:
 
 from openpyxl import load_workbook
 import re
+import random
 
 secList = load_workbook(filename='../../runs/constraint_files/SecList 8-14@1300.xlsx')
 secSheet = secList['D1BC6ACA-A78F-4688-9C6D-42D84ED']
@@ -70,21 +71,21 @@ ibetIDs = {'4310T1', '984060', '1130T1'}
 # Read in data from HUMs and IBETs workbook
 n = 1
 for r in range(1,45):
-    sec1 = humSheet(row=r, column=1).value
-    sec2 = humSheet(row=r, column=5).value
-    sec3 = humSheet(row=r, column=9).value
+    sec1 = humSheet.cell(row=r, column=1).value
+    sec2 = humSheet.cell(row=r, column=5).value
+    sec3 = humSheet.cell(row=r, column=9).value
     secToHum[sec1] = [sec2]
     secToHum[sec2] = [sec1]
     if sec3:
         secToHum[sec1].append(sec3)
         secToHum[sec2].append(sec3)
         secToHum[sec3] = [sec1, sec2]
-    if not humSheet(row=r, column=4).value:
+    if not humSheet.cell(row=r, column=4).value:
         if n:
-            humsTeam2[sec1] = humSheet(row=r+1, column=5).value
-            humsTeam2[humSheet(row=r+1, column=5).value] = sec1
-            humsTeam2[sec2] = humSheet(row=r+1, column=1).value
-            humsTeam2[humSheet(row=r+1, column=1).value] = sec2
+            humsTeam2[sec1] = humSheet.cell(row=r+1, column=5).value
+            humsTeam2[humSheet.cell(row=r+1, column=5).value] = sec1
+            humsTeam2[sec2] = humSheet.cell(row=r+1, column=1).value
+            humsTeam2[humSheet.cell(row=r+1, column=1).value] = sec2
         n = 1 - n
     else:
         n = 1
@@ -124,7 +125,11 @@ for r in range(2, 859):
         teacherToSects[teacher][-1].append(None)
     else:
         teacherToSects[teacher][-1].append(secSheet.cell(row=r, column=6).value.split(", ")[1])
-        teacherToSects[teacher][-1].append(teacherToSects[teacher][7][0] + teacher[:7])
+        # print(teacherToSects[teacher][-1])
+        '''if teacher == "Jirari Scavotto":
+            teacherToSects[teacher][-1].append("AJirari")'''
+        #else:
+        teacherToSects[teacher][-1].append(teacherToSects[teacher][-1][7][0] + teacher[:7].replace(" ", "").replace("-", ""))
 
 # Parse data from sections workbook on teacher-by-teacher basis
 for teacher in teacherToSects.keys():
@@ -134,31 +139,36 @@ for teacher in teacherToSects.keys():
         # Creates dict of gym teachers to full teacher naming data
         teacherToName = {"Stile": ["Melissa", "Stile", "mmstile"], "Smith": ["Heidi", "Smith", "hesmith"], "Potoker": ["Barry", "Potoker", "bnpotoker"], "Arthur": ["David", "Arthur", "drarthur"], "James": ["Jeffery", "James", "jcjames"]}
         for curPer in teacherToSects[teacher]:
-            gymTeach = random.choice(teacherToNumber.keys())
+            gymTeach = random.choice([*teacherToNumber.keys()])
             while teacherToNumber[gymTeach] <= 0:
-                gymTeach = random.choice(teacherToNumber.keys())
-            sections[curPer[0]] = [curPer[3], curPer[2], curPer[4], teacherToName[gymTeach][2], curPer[5], curPer[6], None, None, None, allowedPers, teacherToName[gymTeach][0], gymTeach]
+                gymTeach = random.choice([*teacherToNumber.keys()])
+            teacherToNumber[gymTeach] -= 1
+            sections[curPer[0]] = [curPer[3], curPer[2], curPer[4], teacherToName[gymTeach][2], curPer[5], curPer[6], None, None, None, None, teacherToName[gymTeach][0], gymTeach]
+        continue
     if teacher == "Counselor":
         secID = 1
         for per in range(1,8):
             for sem in range(3):
                 sections["000932-" + "{:02d}".format(secID)] = ["000932", sem, "See Counselor", None, None, 10000, None, None, None, [per], None, None]
                 secID += 1
+        continue
     if teacher == "None":
         for curPer in teacherToSects[teacher]:
             sections[curPer[0]] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], curPer[6], None, None, None, [1,2,3,4,5,6,7], curPer[7], None]
+        continue
     # perDist is a dict of {period: [indeces of classes in teacherToSects[teacher] during that period]}
     perDist = {l:[] for l in range(1,8)}
     for x in range(len(teacherToSects[teacher])):
-        perDist[teacherToSects[x][1]].append(x)
+        perDist[teacherToSects[teacher][x][1]].append(x)
     # Remember to restrict allowed periods for IBETs and CHUMs outside of the restrictions listed here
-    if perDist.keys() in {1,2,3,4}:
+    if set(perDist.keys()).issubset({1,2,3,4}):
         allwowedPers = [1,2,3,4]
-    elif perDist.keys() in {5,6,7}:
+    elif set(perDist.keys()).issubset({5,6,7}):
         allowedPers = [5,6,7]
     else:
         allowedPers = [1,2,3,4,5,6,7]
-    for per in range(len(perDist.keys())):
+    for per in range(1, 1+len(perDist.keys())):
+        print(teacherToSects[teacher])
         curPers = [teacherToSects[teacher][perDist[per][k]] for k in range(len(perDist[per]))]
         # Handles periods during which a teacher is only teaching one course
         if len(curPers) == 1:
@@ -169,7 +179,7 @@ for teacher in teacherToSects.keys():
                 sections[curPer[0]][6] = secToHum[curPer[0]]
                 # Handles team_2 for HUMs
                 if curPer[0] in humsTeam2:
-                    sections[curPer[0]][7] = humsTeam2[curPer[0]]
+                    sections[curPer[0]][7] = [humsTeam2[curPer[0]]]
                 # Handles allowed periods for IBETs and CHUMs
                 else:
                     if per in {5,6,7}:
@@ -183,16 +193,17 @@ for teacher in teacherToSects.keys():
             # Builds set of sections in period still to handle
             secsToHandle = {curPers[k][0]:curPers[k] for k in range(len(curPers))}
             # Creates team_3 sections for arabics and learning seminars
-            while secsToHandle.keys().intersection(teamedToSems.keys()):
-                year = [*secsToHandle.keys().intersection(teamedToSems.keys())][0]
+            while set(secsToHandle.keys()).intersection(teamedToSems.keys()):
+                year = [*set(secsToHandle.keys()).intersection(teamedToSems.keys())][0]
                 for sec in teamedToSems[year]:
                     if sec in secsToHandle.keys():
                         curPer = secsToHandle[sec]
-                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], curPer[6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
+                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
                         del secsToHandle[sec]
                 del secsToHandle[year]
             # Loops over sections left to handle that aren't learning sems or arabics
-            for sec in secsToHandle.keys():
+            tempSecSet = set(secsToHandle.keys())
+            for sec in tempSecSet:
                 # Creates curPer, a variable storing the section data for sec.
                 curPer = secsToHandle[sec]
                 # Creates a section for sec
@@ -214,14 +225,39 @@ for teacher in teacherToSects.keys():
 # teacherToSects = {teacher's last name: [[(0) secID, (1) period, (2) term, (3) courseID, (4) courseTitle, (5) room, (6) cap, (7) teacher first name, (8) teacherID]]}
 
 # Writes sections and teachers to files
-teacherFile = file.open("../../runs/constraint_files/full_school_teachers.txt", "w")
-secFile = file.open("../../runs/constraint)files/full_school_sections.txt", "w")
+teacherFile = open("../../runs/constraint_files/full_school_teachers.txt", "w")
+secFile = open("../../runs/constraint_files/full_school_sections.txt", "w")
 
 teacherIDSet = set()
 for section in sections.items():
-    secFile.write(section[0])
+    secFile.write(section[0] + "\n")
     if section[1][3]:
         secFile.write("teacher: " + section[1][3] + "\n")
+    secFile.write("courseID: " + section[1][0] + "\n")
+    if section[1][4]:
+        secFile.write("room: " + section[1][4].__str__() + "\n")
+    secFile.write("semester: " + section[1][1].__str__() + "\n")
+    secFile.write("maxstudents: " + section[1][5].__str__() + "\n")
+    if section[1][6]:
+        for sec in section[1][6]:
+            secFile.write("team_1: " + sec + "\n")
+    if section[1][7]:
+        for sec in section[1][7]:
+            secFile.write("team_2: " + sec + "\n")
+    if section[1][8]:
+        for sec in section[1][8]:
+            secFile.write("team_3: " + sec + "\n")
+    if section[1][9]:
+        print(section[1])
+        print(section[1][9])
+        secFile.write("allowed_periods: ")
+        secFile.write(section[1][9][0].__str__())
+        for k in range(1,len(section[1][9])):
+            secFile.write("," + section[1][9][k].__str__())
+        secFile.write("\n")
 
+    if section[1][3] and not section[1][3] in teacherIDSet:
+        teacherFile.write(section[1][10] + ", " + section[1][11] + ", " + section[1][3] + "\n")
+        teacherIDSet.add(section[1][3])
     # Below is the last line for writing secFile
     secFile.write("\n")
