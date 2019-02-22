@@ -1,0 +1,7 @@
+7
+classrooms.txt
+newCourses.txt
+teamed_4_teachers.txt
+sample_4_students.txt
+blank_file.txt
+teamed_4_sections.txt

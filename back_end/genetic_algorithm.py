@@ -229,7 +229,7 @@ class master_schedule(chromosome):
             raise
 
     def initialize_weights(self):
-        self.student_conflict_score_delta = -4.1
+        self.student_conflict_score_delta = -3
         self.teacher_conflict_score_delta = -10000
         self.correct_yr_course_score_delta = 4
         self.correct_sem_course_score_delta = 2

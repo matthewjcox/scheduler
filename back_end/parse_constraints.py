@@ -102,7 +102,11 @@ def read_students(studentfn,students,all_courses):
                 classes=[]
                 for j in range(num_classes):
                     classes.append(data[i+j].strip())
-                courses=Student_Courses(classes,all_courses)
+                try:
+                    courses=Student_Courses(classes,all_courses)
+                except:
+                    print(id)
+                    raise
                 stud=Student(ln, fn, id, grade, courses)
                 students[id]=stud
                 i += num_classes+1
