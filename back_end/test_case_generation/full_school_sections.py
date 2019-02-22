@@ -278,7 +278,7 @@ for section in sections.items():
         teacherIDSet.add(section[1][3])
 
     if section[1][0] and not section[1][0] in courseIDSet:
-        courseFile.write("- | " + section[1][2].__str__() + "| " + section[1][0].__str__() + "| ")
+        courseFile.write(section[1][2].__str__() + "| " + section[1][2].__str__() + "| " + section[1][0].__str__() + "| ")
         if section[1][1] == 0:
             courseFile.write("year\n")
         else:
