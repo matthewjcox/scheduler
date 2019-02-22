@@ -1,8 +1,8 @@
+Heidi, Smith, hesmith
 Barry, Potoker, bnpotoker
+David, Arthur, drarthur
 Jeffery, James, jcjames
 Melissa, Stile, mmstile
-Heidi, Smith, hesmith
-David, Arthur, drarthur
 Michael, Auerbach, MAuerbac
 Allison K., Bailey, ABailey
 Clinton, Behling, CBehling

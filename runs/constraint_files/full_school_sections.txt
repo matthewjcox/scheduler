@@ -149,32 +149,38 @@ semester: 0
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
+6120SD-01
+courseID: 6120SD
+semester: 0
+maxstudents: 35
+allowed_periods: 1,2,3,4,5,6,7
+
 730000-01
-teacher: bnpotoker
+teacher: hesmith
 courseID: 730000
 semester: 0
 maxstudents: 36
 
 730000-08
-teacher: jcjames
+teacher: bnpotoker
 courseID: 730000
 semester: 0
 maxstudents: 0
 
 740500-01
-teacher: bnpotoker
+teacher: hesmith
 courseID: 740500
 semester: 0
 maxstudents: 72
 
 740500-08
-teacher: mmstile
+teacher: hesmith
 courseID: 740500
 semester: 0
 maxstudents: 0
 
 730000-02
-teacher: hesmith
+teacher: bnpotoker
 courseID: 730000
 semester: 0
 maxstudents: 36
@@ -186,43 +192,43 @@ semester: 0
 maxstudents: 0
 
 740500-02
-teacher: hesmith
+teacher: drarthur
 courseID: 740500
 semester: 0
 maxstudents: 72
 
 740500-09
-teacher: mmstile
-courseID: 740500
-semester: 0
-maxstudents: 0
-
-730000-03
-teacher: mmstile
-courseID: 730000
-semester: 0
-maxstudents: 108
-
-730000-10
-teacher: bnpotoker
-courseID: 730000
-semester: 0
-maxstudents: 0
-
-740500-03
-teacher: hesmith
-courseID: 740500
-semester: 0
-maxstudents: 36
-
-740500-10
 teacher: jcjames
 courseID: 740500
 semester: 0
 maxstudents: 0
 
+730000-03
+teacher: jcjames
+courseID: 730000
+semester: 0
+maxstudents: 108
+
+730000-10
+teacher: hesmith
+courseID: 730000
+semester: 0
+maxstudents: 0
+
+740500-03
+teacher: jcjames
+courseID: 740500
+semester: 0
+maxstudents: 36
+
+740500-10
+teacher: drarthur
+courseID: 740500
+semester: 0
+maxstudents: 0
+
 730000-04
-teacher: mmstile
+teacher: hesmith
 courseID: 730000
 semester: 0
 maxstudents: 108
@@ -234,55 +240,55 @@ semester: 0
 maxstudents: 0
 
 740500-04
-teacher: mmstile
+teacher: bnpotoker
 courseID: 740500
 semester: 0
 maxstudents: 36
 
 740500-11
-teacher: hesmith
+teacher: bnpotoker
 courseID: 740500
 semester: 0
 maxstudents: 0
 
 730000-05
-teacher: jcjames
+teacher: drarthur
 courseID: 730000
 semester: 0
 maxstudents: 36
 
 730000-12
-teacher: bnpotoker
+teacher: jcjames
 courseID: 730000
 semester: 0
 maxstudents: 0
 
 740500-05
-teacher: hesmith
+teacher: mmstile
 courseID: 740500
 semester: 0
 maxstudents: 72
 
 740500-12
-teacher: jcjames
+teacher: mmstile
 courseID: 740500
 semester: 0
 maxstudents: 0
 
 730000-06
-teacher: drarthur
+teacher: mmstile
 courseID: 730000
 semester: 0
 maxstudents: 108
 
 730000-13
-teacher: drarthur
+teacher: jcjames
 courseID: 730000
 semester: 0
 maxstudents: 0
 
 740500-06
-teacher: drarthur
+teacher: mmstile
 courseID: 740500
 semester: 0
 maxstudents: 36
@@ -294,13 +300,13 @@ semester: 0
 maxstudents: 72
 
 730000-14
-teacher: jcjames
+teacher: drarthur
 courseID: 730000
 semester: 0
 maxstudents: 0
 
 740500-07
-teacher: drarthur
+teacher: mmstile
 courseID: 740500
 semester: 0
 maxstudents: 108
@@ -329,19 +335,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-316055-01
-teacher: MAuerbac
-courseID: 316055
-room: 85
-semester: 1
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 313754-01
 teacher: MAuerbac
 courseID: 313754
 room: 85
 semester: 2
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+316055-01
+teacher: MAuerbac
+courseID: 316055
+room: 85
+semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -369,17 +375,6 @@ semester: 0
 maxstudents: 60
 allowed_periods: 1,2,3,4,5,6,7
 
-923816-04
-teacher: ABailey
-courseID: 923816
-room: 131
-semester: 0
-maxstudents: 10
-team_2: 923815-04
-team_2: 923915-04
-team_2: 923916-04
-allowed_periods: 1,2,3,4,5,6,7
-
 923916-04
 teacher: ABailey
 courseID: 923916
@@ -387,6 +382,7 @@ room: 131
 semester: 0
 maxstudents: 30
 team_2: 923815-04
+team_2: 923816-04
 team_2: 923915-04
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -396,6 +392,16 @@ courseID: 923915
 room: 131
 semester: 0
 maxstudents: 30
+team_2: 923815-04
+team_2: 923816-04
+allowed_periods: 1,2,3,4,5,6,7
+
+923816-04
+teacher: ABailey
+courseID: 923816
+room: 131
+semester: 0
+maxstudents: 10
 team_2: 923815-04
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -407,27 +413,6 @@ semester: 0
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
-923816-05
-teacher: ABailey
-courseID: 923816
-room: 131
-semester: 0
-maxstudents: 10
-team_2: 923815-05
-team_2: 923915-05
-team_2: 923916-05
-allowed_periods: 1,2,3,4,5,6,7
-
-923915-05
-teacher: ABailey
-courseID: 923915
-room: 131
-semester: 0
-maxstudents: 30
-team_2: 923815-05
-team_2: 923916-05
-allowed_periods: 1,2,3,4,5,6,7
-
 923916-05
 teacher: ABailey
 courseID: 923916
@@ -435,6 +420,8 @@ room: 131
 semester: 0
 maxstudents: 30
 team_2: 923815-05
+team_2: 923816-05
+team_2: 923915-05
 allowed_periods: 1,2,3,4,5,6,7
 
 923815-05
@@ -443,6 +430,36 @@ courseID: 923815
 room: 131
 semester: 0
 maxstudents: 5
+team_2: 923816-05
+team_2: 923915-05
+allowed_periods: 1,2,3,4,5,6,7
+
+923816-05
+teacher: ABailey
+courseID: 923816
+room: 131
+semester: 0
+maxstudents: 10
+team_2: 923915-05
+allowed_periods: 1,2,3,4,5,6,7
+
+923915-05
+teacher: ABailey
+courseID: 923915
+room: 131
+semester: 0
+maxstudents: 30
+allowed_periods: 1,2,3,4,5,6,7
+
+923816-07
+teacher: ABailey
+courseID: 923816
+room: 131
+semester: 0
+maxstudents: 10
+team_2: 923815-07
+team_2: 923915-07
+team_2: 923916-07
 allowed_periods: 1,2,3,4,5,6,7
 
 923915-07
@@ -452,7 +469,15 @@ room: 131
 semester: 0
 maxstudents: 30
 team_2: 923815-07
-team_2: 923816-07
+team_2: 923916-07
+allowed_periods: 1,2,3,4,5,6,7
+
+923815-07
+teacher: ABailey
+courseID: 923815
+room: 131
+semester: 0
+maxstudents: 5
 team_2: 923916-07
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -462,25 +487,6 @@ courseID: 923916
 room: 131
 semester: 0
 maxstudents: 30
-team_2: 923815-07
-team_2: 923816-07
-allowed_periods: 1,2,3,4,5,6,7
-
-923815-07
-teacher: ABailey
-courseID: 923815
-room: 131
-semester: 0
-maxstudents: 5
-team_2: 923816-07
-allowed_periods: 1,2,3,4,5,6,7
-
-923816-07
-teacher: ABailey
-courseID: 923816
-room: 131
-semester: 0
-maxstudents: 10
 allowed_periods: 1,2,3,4,5,6,7
 
 9828T4-01
@@ -547,6 +553,14 @@ semester: 0
 maxstudents: 15
 allowed_periods: 1,2,3,4,5,6,7
 
+9826T0-01
+teacher: DBell
+courseID: 9826T0
+room: 208
+semester: 2
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
 9826T1-01
 teacher: DBell
 courseID: 9826T1
@@ -555,9 +569,9 @@ semester: 1
 maxstudents: 26
 allowed_periods: 1,2,3,4,5,6,7
 
-9826T0-01
+9826T6-01
 teacher: DBell
-courseID: 9826T0
+courseID: 9826T6
 room: 208
 semester: 2
 maxstudents: 28
@@ -571,11 +585,11 @@ semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-9826T6-01
+9826T5-02
 teacher: DBell
-courseID: 9826T6
+courseID: 9826T5
 room: 208
-semester: 2
+semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -587,14 +601,6 @@ semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-9826T5-02
-teacher: DBell
-courseID: 9826T5
-room: 208
-semester: 1
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 9826T2-01
 teacher: DBell
 courseID: 9826T2
@@ -603,19 +609,19 @@ semester: 0
 maxstudents: 15
 allowed_periods: 1,2,3,4,5,6,7
 
-9826T6-03
-teacher: DBell
-courseID: 9826T6
-room: 208
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 9826T5-03
 teacher: DBell
 courseID: 9826T5
 room: 208
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+9826T6-03
+teacher: DBell
+courseID: 9826T6
+room: 208
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -679,19 +685,19 @@ team_1: 119662-01
 team_2: 119662-02
 allowed_periods: 1,2,3,4,5,6,7
 
-2950T1-02
-teacher: MBourjai
-courseID: 2950T1
-room: 37
-semester: 2
-maxstudents: 30
-allowed_periods: 1,2,3,4,5,6,7
-
 2950T1-01
 teacher: MBourjai
 courseID: 2950T1
 room: 37
 semester: 1
+maxstudents: 30
+allowed_periods: 1,2,3,4,5,6,7
+
+2950T1-02
+teacher: MBourjai
+courseID: 2950T1
+room: 37
+semester: 2
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -759,14 +765,6 @@ team_1: 231905-14
 team_2: 231905-13
 allowed_periods: 1,2,3,4,5,6,7
 
-4320T6-06
-teacher: MBurnett
-courseID: 4320T6
-room: 203
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 4320T2-01
 teacher: MBurnett
 courseID: 4320T2
@@ -775,11 +773,11 @@ semester: 1
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-4320T6-02
+4320T6-06
 teacher: MBurnett
 courseID: 4320T6
 room: 203
-semester: 1
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -788,6 +786,14 @@ teacher: MBurnett
 courseID: 4320T7
 room: 203
 semester: 2
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+4320T6-02
+teacher: MBurnett
+courseID: 4320T6
+room: 203
+semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -1025,14 +1031,6 @@ maxstudents: 28
 team_3: 313754-08
 allowed_periods: 1,2,3,4,5,6,7
 
-316055-08
-teacher: HChoi
-courseID: 316055
-semester: 2
-maxstudents: 28
-team_3: 313754-04
-allowed_periods: 1,2,3,4,5,6,7
-
 313754-04
 teacher: HChoi
 courseID: 313754
@@ -1040,6 +1038,14 @@ room: 84
 semester: 1
 maxstudents: 28
 team_3: 316055-08
+allowed_periods: 1,2,3,4,5,6,7
+
+316055-08
+teacher: HChoi
+courseID: 316055
+semester: 2
+maxstudents: 28
+team_3: 313754-04
 allowed_periods: 1,2,3,4,5,6,7
 
 4320T3-01
@@ -1082,19 +1088,19 @@ semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-4320T7-04
-teacher: ACobb
-courseID: 4320T7
-room: 203
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 4320T6-05
 teacher: ACobb
 courseID: 4320T6
 room: 203
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+4320T7-04
+teacher: ACobb
+courseID: 4320T7
+room: 203
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -1286,19 +1292,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-918132-01
-teacher: TDavis
-courseID: 918132
-room: 111
-semester: 2
-maxstudents: 26
-allowed_periods: 1,2,3,4,5,6,7
-
 918032-01
 teacher: TDavis
 courseID: 918032
 room: 111
 semester: 1
+maxstudents: 26
+allowed_periods: 1,2,3,4,5,6,7
+
+918132-01
+teacher: TDavis
+courseID: 918132
+room: 111
+semester: 2
 maxstudents: 26
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -1326,19 +1332,19 @@ semester: 0
 maxstudents: 26
 allowed_periods: 1,2,3,4,5,6,7
 
-919432-01
-teacher: TDavis
-courseID: 919432
-room: 111
-semester: 2
-maxstudents: 26
-allowed_periods: 1,2,3,4,5,6,7
-
 919332-01
 teacher: TDavis
 courseID: 919332
 room: 111
 semester: 1
+maxstudents: 26
+allowed_periods: 1,2,3,4,5,6,7
+
+919432-01
+teacher: TDavis
+courseID: 919432
+room: 111
+semester: 2
 maxstudents: 26
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -1430,14 +1436,6 @@ semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-9826T8-03
-teacher: CDelaCu
-courseID: 9826T8
-room: 207
-semester: 1
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 9826T7-03
 teacher: CDelaCu
 courseID: 9826T7
@@ -1446,13 +1444,12 @@ semester: 2
 maxstudents: 26
 allowed_periods: 1,2,3,4,5,6,7
 
-5150T2-01
-teacher: GDelfoss
-courseID: 5150T2
-room: 66
-semester: 2
-maxstudents: 10
-team_2: 515000-01
+9826T8-03
+teacher: CDelaCu
+courseID: 9826T8
+room: 207
+semester: 1
+maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
 5150T1-01
@@ -1460,6 +1457,15 @@ teacher: GDelfoss
 courseID: 5150T1
 room: 66
 semester: 1
+maxstudents: 10
+team_2: 515000-01
+allowed_periods: 1,2,3,4,5,6,7
+
+5150T2-01
+teacher: GDelfoss
+courseID: 5150T2
+room: 66
+semester: 2
 maxstudents: 10
 team_2: 515000-01
 allowed_periods: 1,2,3,4,5,6,7
@@ -1591,68 +1597,14 @@ semester: 0
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
-116097-01
-teacher: SFCPSOn
-courseID: 116097
-semester: 0
-maxstudents: 10
-team_2: 119693-01
-team_2: 244593-01
-team_2: 280493-01
-team_2: 290299-01
-team_2: 553099-01
-team_2: 557093-01
-team_2: 558093-01
-team_2: 587099-01
-team_2: 587599-01
-team_2: 588099-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-119693-01
-teacher: SFCPSOn
-courseID: 119693
-semester: 0
-maxstudents: 5
-team_2: 244593-01
-team_2: 280493-01
-team_2: 290299-01
-team_2: 553099-01
-team_2: 557093-01
-team_2: 558093-01
-team_2: 587099-01
-team_2: 587599-01
-team_2: 588099-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-244593-01
-teacher: SFCPSOn
-courseID: 244593
-semester: 0
-maxstudents: 60
-team_2: 280493-01
-team_2: 290299-01
-team_2: 553099-01
-team_2: 557093-01
-team_2: 558093-01
-team_2: 587099-01
-team_2: 587599-01
-team_2: 588099-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
 553099-01
 teacher: SFCPSOn
 courseID: 553099
 semester: 0
 maxstudents: 10
+team_2: 116097-01
+team_2: 119693-01
+team_2: 244593-01
 team_2: 280493-01
 team_2: 290299-01
 team_2: 557093-01
@@ -1663,122 +1615,266 @@ team_2: 588099-01
 team_2: 612099-01
 team_2: 730099-01
 team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-557093-01
-teacher: SFCPSOn
-courseID: 557093
-semester: 0
-maxstudents: 15
-team_2: 280493-01
-team_2: 290299-01
-team_2: 558093-01
-team_2: 587099-01
-team_2: 587599-01
-team_2: 588099-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-588099-01
-teacher: SFCPSOn
-courseID: 588099
-semester: 0
-maxstudents: 5
-team_2: 280493-01
-team_2: 290299-01
-team_2: 558093-01
-team_2: 587099-01
-team_2: 587599-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-587099-01
-teacher: SFCPSOn
-courseID: 587099
-semester: 0
-maxstudents: 5
-team_2: 280493-01
-team_2: 290299-01
-team_2: 558093-01
-team_2: 587599-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-280493-01
-teacher: SFCPSOn
-courseID: 280493
-semester: 0
-maxstudents: 85
-team_2: 290299-01
-team_2: 558093-01
-team_2: 587599-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-558093-01
-teacher: SFCPSOn
-courseID: 558093
-semester: 0
-maxstudents: 5
-team_2: 290299-01
-team_2: 587599-01
-team_2: 612099-01
-team_2: 730099-01
-team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 280493-09
+team_2: 290299-09
+team_2: 557093-09
+team_2: 558093-09
+allowed_periods: 1
 
 587599-01
 teacher: SFCPSOn
 courseID: 587599
 semester: 0
 maxstudents: 5
+team_2: 116097-01
+team_2: 119693-01
+team_2: 244593-01
+team_2: 280493-01
 team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
 team_2: 612099-01
 team_2: 730099-01
 team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 280493-09
+team_2: 290299-09
+team_2: 557093-09
+team_2: 558093-09
+allowed_periods: 1
 
-612099-01
+290299-09
 teacher: SFCPSOn
-courseID: 612099
+courseID: 290299
 semester: 0
-maxstudents: 15
+maxstudents: 0
+team_2: 116097-01
+team_2: 119693-01
+team_2: 244593-01
+team_2: 280493-01
 team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
+team_2: 612099-01
 team_2: 730099-01
 team_2: 740599-01
-allowed_periods: 1,2,3,4,5,6,7
-
-740599-01
-teacher: SFCPSOn
-courseID: 740599
-semester: 0
-maxstudents: 10
-team_2: 290299-01
-team_2: 730099-01
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 280493-09
+team_2: 557093-09
+team_2: 558093-09
+allowed_periods: 1
 
 730099-01
 teacher: SFCPSOn
 courseID: 730099
 semester: 0
 maxstudents: 5
+team_2: 116097-01
+team_2: 119693-01
+team_2: 244593-01
+team_2: 280493-01
 team_2: 290299-01
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+team_2: 558093-09
+allowed_periods: 1
+
+558093-09
+teacher: SFCPSOn
+courseID: 558093
+semester: 0
+maxstudents: 0
+team_2: 116097-01
+team_2: 119693-01
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+119693-01
+teacher: SFCPSOn
+courseID: 119693
+semester: 0
+maxstudents: 5
+team_2: 116097-01
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+116097-01
+teacher: SFCPSOn
+courseID: 116097
+semester: 0
+maxstudents: 10
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 587099-01
+team_2: 588099-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+587099-01
+teacher: SFCPSOn
+courseID: 587099
+semester: 0
+maxstudents: 5
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 588099-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+588099-01
+teacher: SFCPSOn
+courseID: 588099
+semester: 0
+maxstudents: 5
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 740599-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+740599-01
+teacher: SFCPSOn
+courseID: 740599
+semester: 0
+maxstudents: 10
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 280493-09
+team_2: 557093-09
+allowed_periods: 1
+
+280493-09
+teacher: SFCPSOn
+courseID: 280493
+semester: 0
+maxstudents: 45
+team_2: 244593-01
+team_2: 280493-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 557093-09
+allowed_periods: 1
+
+280493-01
+teacher: SFCPSOn
+courseID: 280493
+semester: 0
+maxstudents: 85
+team_2: 244593-01
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 557093-09
+allowed_periods: 1
+
+244593-01
+teacher: SFCPSOn
+courseID: 244593
+semester: 0
+maxstudents: 60
+team_2: 290299-01
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 557093-09
+allowed_periods: 1
 
 290299-01
 teacher: SFCPSOn
 courseID: 290299
 semester: 0
 maxstudents: 15
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 557093-01
+team_2: 558093-01
+team_2: 612099-01
+team_2: 557093-09
+allowed_periods: 1
+
+612099-01
+teacher: SFCPSOn
+courseID: 612099
+semester: 0
+maxstudents: 15
+team_2: 557093-01
+team_2: 558093-01
+team_2: 557093-09
+allowed_periods: 1
+
+557093-09
+teacher: SFCPSOn
+courseID: 557093
+semester: 0
+maxstudents: 0
+team_2: 557093-01
+team_2: 558093-01
+allowed_periods: 1
+
+558093-01
+teacher: SFCPSOn
+courseID: 558093
+semester: 0
+maxstudents: 5
+team_2: 557093-01
+allowed_periods: 1
+
+557093-01
+teacher: SFCPSOn
+courseID: 557093
+semester: 0
+maxstudents: 15
+allowed_periods: 1
 
 730099-04
 teacher: SFCPSOn
@@ -1786,14 +1882,50 @@ courseID: 730099
 semester: 0
 maxstudents: 0
 team_2: 740599-04
-allowed_periods: 1,2,3,4,5,6,7
+allowed_periods: 4
 
 740599-04
 teacher: SFCPSOn
 courseID: 740599
 semester: 0
 maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
+allowed_periods: 4
+
+557093-05
+teacher: SFCPSOn
+courseID: 557093
+semester: 0
+maxstudents: 1
+team_2: 221997-01
+team_2: 234093-01
+team_2: 244593-05
+team_2: 280493-05
+team_2: 317093-01
+team_2: 117198-01
+allowed_periods: 5
+
+280493-05
+teacher: SFCPSOn
+courseID: 280493
+semester: 0
+maxstudents: 4
+team_2: 221997-01
+team_2: 234093-01
+team_2: 244593-05
+team_2: 317093-01
+team_2: 117198-01
+allowed_periods: 5
+
+117198-01
+teacher: SFCPSOn
+courseID: 117198
+semester: 1
+maxstudents: 1
+team_2: 221997-01
+team_2: 234093-01
+team_2: 244593-05
+team_2: 317093-01
+allowed_periods: 5
 
 221997-01
 teacher: SFCPSOn
@@ -1802,34 +1934,8 @@ semester: 0
 maxstudents: 1
 team_2: 234093-01
 team_2: 244593-05
-team_2: 280493-05
 team_2: 317093-01
-team_2: 557093-05
-team_2: 117198-01
-allowed_periods: 1,2,3,4,5,6,7
-
-117198-01
-teacher: SFCPSOn
-courseID: 117198
-semester: 1
-maxstudents: 1
-team_2: 234093-01
-team_2: 244593-05
-team_2: 280493-05
-team_2: 317093-01
-team_2: 557093-05
-allowed_periods: 1,2,3,4,5,6,7
-
-244593-05
-teacher: SFCPSOn
-courseID: 244593
-semester: 0
-maxstudents: 35
-team_2: 234093-01
-team_2: 280493-05
-team_2: 317093-01
-team_2: 557093-05
-allowed_periods: 1,2,3,4,5,6,7
+allowed_periods: 5
 
 317093-01
 teacher: SFCPSOn
@@ -1837,33 +1943,23 @@ courseID: 317093
 semester: 0
 maxstudents: 1
 team_2: 234093-01
-team_2: 280493-05
-team_2: 557093-05
-allowed_periods: 1,2,3,4,5,6,7
-
-557093-05
-teacher: SFCPSOn
-courseID: 557093
-semester: 0
-maxstudents: 1
-team_2: 234093-01
-team_2: 280493-05
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 244593-05
+allowed_periods: 5
 
 234093-01
 teacher: SFCPSOn
 courseID: 234093
 semester: 0
 maxstudents: 1
-team_2: 280493-05
-allowed_periods: 1,2,3,4,5,6,7
+team_2: 244593-05
+allowed_periods: 5
 
-280493-05
+244593-05
 teacher: SFCPSOn
-courseID: 280493
+courseID: 244593
 semester: 0
-maxstudents: 4
-allowed_periods: 1,2,3,4,5,6,7
+maxstudents: 35
+allowed_periods: 5
 
 244504-02
 teacher: BField
@@ -2061,19 +2157,19 @@ semester: 0
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
-3199J2-02
-teacher: RGalanos
-courseID: 3199J2
-room: 17
-semester: 1
-maxstudents: 5
-allowed_periods: 1,2,3,4,5,6,7
-
 3199J2-05
 teacher: RGalanos
 courseID: 3199J2
 room: 17
 semester: 2
+maxstudents: 5
+allowed_periods: 1,2,3,4,5,6,7
+
+3199J2-02
+teacher: RGalanos
+courseID: 3199J2
+room: 17
+semester: 1
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -2332,21 +2428,21 @@ maxstudents: 23
 team_2: 457004-03
 allowed_periods: 1,2,3,4
 
-457004-03
-teacher: MHannum
-courseID: 457004
-room: 235
-semester: 0
-maxstudents: 28
-team_2: 4320T5-02
-allowed_periods: 1,2,3,4
-
 4320T5-02
 teacher: MHannum
 courseID: 4320T5
 room: 5
 semester: 2
 maxstudents: 25
+team_2: 457004-03
+allowed_periods: 1,2,3,4
+
+457004-03
+teacher: MHannum
+courseID: 457004
+room: 235
+semester: 0
+maxstudents: 28
 allowed_periods: 1,2,3,4
 
 1130T1-09
@@ -2373,14 +2469,14 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-121000-01
+121100-01
 teacher: EHarris
-courseID: 121000
+courseID: 121100
 room: 31
 semester: 0
 maxstudents: 10
 team_2: 120000-01
-team_2: 121100-01
+team_2: 121000-01
 team_2: 121200-01
 team_2: 122000-01
 allowed_periods: 1,2,3,4,5,6,7
@@ -2391,17 +2487,7 @@ courseID: 120000
 room: 31
 semester: 0
 maxstudents: 28
-team_2: 121100-01
-team_2: 121200-01
-team_2: 122000-01
-allowed_periods: 1,2,3,4,5,6,7
-
-121100-01
-teacher: EHarris
-courseID: 121100
-room: 31
-semester: 0
-maxstudents: 10
+team_2: 121000-01
 team_2: 121200-01
 team_2: 122000-01
 allowed_periods: 1,2,3,4,5,6,7
@@ -2412,6 +2498,7 @@ courseID: 122000
 room: 31
 semester: 0
 maxstudents: 10
+team_2: 121000-01
 team_2: 121200-01
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -2421,6 +2508,25 @@ courseID: 121200
 room: 31
 semester: 0
 maxstudents: 5
+team_2: 121000-01
+allowed_periods: 1,2,3,4,5,6,7
+
+121000-01
+teacher: EHarris
+courseID: 121000
+room: 31
+semester: 0
+maxstudents: 10
+allowed_periods: 1,2,3,4,5,6,7
+
+121600-01
+teacher: EHarris
+courseID: 121600
+room: 31
+semester: 0
+maxstudents: 10
+team_2: 121500-01
+team_2: 121700-01
 allowed_periods: 1,2,3,4,5,6,7
 
 121700-01
@@ -2430,7 +2536,6 @@ room: 31
 semester: 0
 maxstudents: 5
 team_2: 121500-01
-team_2: 121600-01
 allowed_periods: 1,2,3,4,5,6,7
 
 121500-01
@@ -2439,15 +2544,6 @@ courseID: 121500
 room: 31
 semester: 0
 maxstudents: 28
-team_2: 121600-01
-allowed_periods: 1,2,3,4,5,6,7
-
-121600-01
-teacher: EHarris
-courseID: 121600
-room: 31
-semester: 0
-maxstudents: 10
 allowed_periods: 1,2,3,4,5,6,7
 
 4260T4-01
@@ -2543,19 +2639,19 @@ semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-313753-03
-teacher: DHill
-courseID: 313753
-room: 285
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 313753-01
 teacher: DHill
 courseID: 313753
 room: 285
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+313753-03
+teacher: DHill
+courseID: 313753
+room: 285
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -2567,15 +2663,6 @@ semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-316055-02
-teacher: DHill
-courseID: 316055
-room: 285
-semester: 2
-maxstudents: 28
-team_3: 313754-10
-allowed_periods: 1,2,3,4,5,6,7
-
 313754-10
 teacher: DHill
 courseID: 313754
@@ -2583,6 +2670,15 @@ room: 285
 semester: 1
 maxstudents: 28
 team_3: 316055-02
+allowed_periods: 1,2,3,4,5,6,7
+
+316055-02
+teacher: DHill
+courseID: 316055
+room: 285
+semester: 2
+maxstudents: 28
+team_3: 313754-10
 allowed_periods: 1,2,3,4,5,6,7
 
 313754-11
@@ -2649,19 +2745,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-2374T1-02
-teacher: AHurowit
-courseID: 2374T1
-room: 229
-semester: 2
-maxstudents: 30
-allowed_periods: 1,2,3,4,5,6,7
-
 2374T1-01
 teacher: AHurowit
 courseID: 2374T1
 room: 229
 semester: 1
+maxstudents: 30
+allowed_periods: 1,2,3,4,5,6,7
+
+2374T1-02
+teacher: AHurowit
+courseID: 2374T1
+room: 229
+semester: 2
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -2757,20 +2853,20 @@ semester: 0
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
-317860-07
-teacher: AJirari
-courseID: 317860
-room: 86
-semester: 1
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 319800-05
 teacher: AJirari
 courseID: 319800
 room: 86
 semester: 2
 maxstudents: 2
+allowed_periods: 1,2,3,4,5,6,7
+
+317860-07
+teacher: AJirari
+courseID: 317860
+room: 86
+semester: 1
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 313754-12
@@ -2899,21 +2995,29 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-4410T1-07
-teacher: AJones
-courseID: 4410T1
-room: 51
-semester: 0
-maxstudents: 28
-team_2: 984060-16
-allowed_periods: 1,2,3,4,5,6,7
-
 984060-16
 teacher: DJones
 courseID: 984060
 room: 34
 semester: 0
 maxstudents: 28
+team_2: 4410T1-07
+allowed_periods: 1,2,3,4,5,6,7
+
+4410T1-07
+teacher: AJones
+courseID: 4410T1
+room: 51
+semester: 0
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+313753-11
+teacher: EJurj
+courseID: 313753
+semester: 2
+maxstudents: 28
+team_3: 3190T1-05
 allowed_periods: 1,2,3,4,5,6,7
 
 3190T1-05
@@ -2923,14 +3027,6 @@ room: 14
 semester: 1
 maxstudents: 28
 team_3: 313753-11
-allowed_periods: 1,2,3,4,5,6,7
-
-313753-11
-teacher: EJurj
-courseID: 313753
-semester: 2
-maxstudents: 28
-team_3: 3190T1-05
 allowed_periods: 1,2,3,4,5,6,7
 
 318561-08
@@ -2957,14 +3053,6 @@ semester: 0
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
-313753-12
-teacher: EJurj
-courseID: 313753
-semester: 2
-maxstudents: 28
-team_3: 3190T1-06
-allowed_periods: 1,2,3,4,5,6,7
-
 3190T1-06
 teacher: EJurj
 courseID: 3190T1
@@ -2972,6 +3060,14 @@ room: 14
 semester: 1
 maxstudents: 28
 team_3: 313753-12
+allowed_periods: 1,2,3,4,5,6,7
+
+313753-12
+teacher: EJurj
+courseID: 313753
+semester: 2
+maxstudents: 28
+team_3: 3190T1-06
 allowed_periods: 1,2,3,4,5,6,7
 
 447004-01
@@ -3199,19 +3295,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4
 
-3199J1-05
-teacher: PKosek
-courseID: 3199J1
-room: 206
-semester: 2
-maxstudents: 5
-allowed_periods: 1,2,3,4,5,6,7
-
 3199J2-03
 teacher: PKosek
 courseID: 3199J2
 room: 206
 semester: 1
+maxstudents: 5
+allowed_periods: 1,2,3,4,5,6,7
+
+3199J1-05
+teacher: PKosek
+courseID: 3199J1
+room: 206
+semester: 2
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -3356,19 +3452,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-316056-02
-teacher: ALampazz
-courseID: 316056
-room: 282
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 316055-05
 teacher: ALampazz
 courseID: 316055
 room: 282
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+316056-02
+teacher: ALampazz
+courseID: 316056
+room: 282
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -3515,6 +3611,14 @@ team_1: 2221T1-07
 team_2: 2221T1-06
 allowed_periods: 1,2,3,4,5,6,7
 
+3190T1-07
+teacher: CLightne
+courseID: 3190T1
+room: 87
+semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
 316055-09
 teacher: CLightne
 courseID: 316055
@@ -3522,12 +3626,11 @@ semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-3190T1-07
+316055-10
 teacher: CLightne
-courseID: 3190T1
-room: 87
-semester: 1
-maxstudents: 28
+courseID: 316055
+semester: 2
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 3190T1-01
@@ -3538,11 +3641,12 @@ semester: 1
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-316055-10
+316055-11
 teacher: CLightne
 courseID: 316055
 semester: 2
-maxstudents: 0
+maxstudents: 28
+team_3: 313754-14
 allowed_periods: 1,2,3,4,5,6,7
 
 313754-14
@@ -3552,14 +3656,6 @@ room: 87
 semester: 1
 maxstudents: 28
 team_3: 316055-11
-allowed_periods: 1,2,3,4,5,6,7
-
-316055-11
-teacher: CLightne
-courseID: 316055
-semester: 2
-maxstudents: 28
-team_3: 313754-14
 allowed_periods: 1,2,3,4,5,6,7
 
 313754-15
@@ -3634,19 +3730,19 @@ semester: 0
 maxstudents: 32
 allowed_periods: 1,2,3,4,5,6,7
 
-4610T6-01
-teacher: LLocklea
-courseID: 4610T6
-room: 5
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 4320T8-01
 teacher: LLocklea
 courseID: 4320T8
 room: 5
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+4610T6-01
+teacher: LLocklea
+courseID: 4610T6
+room: 5
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -3690,11 +3786,11 @@ semester: 0
 maxstudents: 28
 allowed_periods: 5,6,7
 
-928032-01
+928032-02
 teacher: JLowery
 courseID: 928032
 room: 135
-semester: 1
+semester: 2
 maxstudents: 10
 team_2: 928915-01
 allowed_periods: 5,6,7
@@ -3705,25 +3801,25 @@ courseID: 928915
 room: 135
 semester: 0
 maxstudents: 28
-team_2: 928032-02
+team_2: 928032-01
 allowed_periods: 5,6,7
 
-928032-02
+928032-01
 teacher: JLowery
 courseID: 928032
 room: 135
-semester: 2
+semester: 1
 maxstudents: 10
 allowed_periods: 5,6,7
 
-143532-01
+143032-01
 teacher: JLowery
-courseID: 143532
+courseID: 143032
 room: 135
 semester: 1
 maxstudents: 10
 team_2: 141032-01
-team_2: 143032-01
+team_2: 143532-01
 allowed_periods: 5,6,7
 
 142032-01
@@ -3741,7 +3837,7 @@ courseID: 141032
 room: 135
 semester: 1
 maxstudents: 28
-team_2: 143032-01
+team_2: 143532-01
 allowed_periods: 5,6,7
 
 144032-01
@@ -3752,20 +3848,12 @@ semester: 2
 maxstudents: 5
 allowed_periods: 5,6,7
 
-143032-01
+143532-01
 teacher: JLowery
-courseID: 143032
+courseID: 143532
 room: 135
 semester: 1
 maxstudents: 10
-allowed_periods: 5,6,7
-
-4520T1-01
-teacher: XLuo
-courseID: 4520T1
-room: 7
-semester: 2
-maxstudents: 24
 allowed_periods: 5,6,7
 
 4520T8-01
@@ -3774,6 +3862,14 @@ courseID: 4520T8
 room: 7
 semester: 1
 maxstudents: 26
+allowed_periods: 5,6,7
+
+4520T1-01
+teacher: XLuo
+courseID: 4520T1
+room: 7
+semester: 2
+maxstudents: 24
 allowed_periods: 5,6,7
 
 4520T4-01
@@ -3824,30 +3920,21 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-114000-04
-teacher: MMiller
-courseID: 114000
-room: 219
-semester: 0
-maxstudents: 24
-team_2: 1140T1-13
-allowed_periods: 1,2,3,4,5,6,7
-
 1140T1-13
 teacher: MMiller
 courseID: 1140T1
 room: 219
 semester: 0
 maxstudents: 0
+team_2: 114000-04
 allowed_periods: 1,2,3,4,5,6,7
 
-1140T1-14
+114000-04
 teacher: MMiller
-courseID: 1140T1
+courseID: 114000
 room: 219
 semester: 0
-maxstudents: 0
-team_2: 114000-05
+maxstudents: 24
 allowed_periods: 1,2,3,4,5,6,7
 
 114000-05
@@ -3856,6 +3943,15 @@ courseID: 114000
 room: 219
 semester: 0
 maxstudents: 24
+team_2: 1140T1-14
+allowed_periods: 1,2,3,4,5,6,7
+
+1140T1-14
+teacher: MMiller
+courseID: 1140T1
+room: 219
+semester: 0
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 1140T1-03
@@ -3898,21 +3994,21 @@ team_1: 1140T1-03
 team_2: 1140T1-02
 allowed_periods: 1,2,3,4,5,6,7
 
-222100-05
-teacher: RMonteve
-courseID: 222100
-room: 217
-semester: 0
-maxstudents: 24
-team_2: 2221T1-14
-allowed_periods: 1,2,3,4,5,6,7
-
 2221T1-14
 teacher: RMonteve
 courseID: 2221T1
 room: 217
 semester: 0
 maxstudents: 0
+team_2: 222100-05
+allowed_periods: 1,2,3,4,5,6,7
+
+222100-05
+teacher: RMonteve
+courseID: 222100
+room: 217
+semester: 0
+maxstudents: 24
 allowed_periods: 1,2,3,4,5,6,7
 
 2221T1-13
@@ -4012,14 +4108,6 @@ semester: 1
 maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
-317860-02
-teacher: JOsborne
-courseID: 317860
-room: 81
-semester: 1
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 319800-01
 teacher: JOsborne
 courseID: 319800
@@ -4028,12 +4116,12 @@ semester: 2
 maxstudents: 2
 allowed_periods: 1,2,3,4,5,6,7
 
-317860-03
+317860-02
 teacher: JOsborne
 courseID: 317860
 room: 81
 semester: 1
-maxstudents: 30
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 319862-02
@@ -4042,6 +4130,14 @@ courseID: 319862
 room: 81
 semester: 2
 maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+317860-03
+teacher: JOsborne
+courseID: 317860
+room: 81
+semester: 1
+maxstudents: 30
 allowed_periods: 1,2,3,4,5,6,7
 
 319800-02
@@ -4060,14 +4156,6 @@ semester: 1
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-317862-01
-teacher: JOsborne
-courseID: 317862
-room: 81
-semester: 1
-maxstudents: 32
-allowed_periods: 1,2,3,4,5,6,7
-
 317861-01
 teacher: JOsborne
 courseID: 317861
@@ -4076,14 +4164,12 @@ semester: 2
 maxstudents: 36
 allowed_periods: 1,2,3,4,5,6,7
 
-5250T1-01
-teacher: SOszko
-courseID: 5250T1
-room: 61
+317862-01
+teacher: JOsborne
+courseID: 317862
+room: 81
 semester: 1
-maxstudents: 5
-team_2: 525000-01
-team_2: 527004-01
+maxstudents: 32
 allowed_periods: 1,2,3,4,5,6,7
 
 527004-01
@@ -4093,6 +4179,7 @@ room: 61
 semester: 0
 maxstudents: 28
 team_2: 525000-01
+team_2: 5250T1-01
 allowed_periods: 1,2,3,4,5,6,7
 
 525000-01
@@ -4101,6 +4188,15 @@ courseID: 525000
 room: 61
 semester: 0
 maxstudents: 28
+team_2: 5250T1-01
+allowed_periods: 1,2,3,4,5,6,7
+
+5250T1-01
+teacher: SOszko
+courseID: 5250T1
+room: 61
+semester: 1
+maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
 521000-01
@@ -4135,22 +4231,13 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-594000-01
-teacher: KOtani
-courseID: 594000
-room: 75
-semester: 0
-maxstudents: 1
-team_2: 597004-01
-team_2: 5950T1-01
-allowed_periods: 1,2,3,4,5,6,7
-
 597004-01
 teacher: KOtani
 courseID: 597004
 room: 75
 semester: 0
 maxstudents: 28
+team_2: 594000-01
 team_2: 5950T1-01
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -4160,6 +4247,15 @@ courseID: 5950T1
 room: 75
 semester: 1
 maxstudents: 2
+team_2: 594000-01
+allowed_periods: 1,2,3,4,5,6,7
+
+594000-01
+teacher: KOtani
+courseID: 594000
+room: 75
+semester: 0
+maxstudents: 1
 allowed_periods: 1,2,3,4,5,6,7
 
 591000-01
@@ -4186,19 +4282,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-9828J1-01
-teacher: MPiccion
-courseID: 9828J1
-room: 9
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 9828T2-01
 teacher: MPiccion
 courseID: 9828T2
 room: 9
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+9828J1-01
+teacher: MPiccion
+courseID: 9828J1
+room: 9
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -4254,19 +4350,19 @@ team_1: 2221T1-05
 team_2: 2221T1-04
 allowed_periods: 1,2,3,4,5,6,7
 
-144632-02
-teacher: VPollet
-courseID: 144632
-room: 245
-semester: 2
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 144632-01
 teacher: VPollet
 courseID: 144632
 room: 245
 semester: 1
+maxstudents: 28
+allowed_periods: 1,2,3,4,5,6,7
+
+144632-02
+teacher: VPollet
+courseID: 144632
+room: 245
+semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -4657,14 +4753,6 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-316055-14
-teacher: KSchmitt
-courseID: 316055
-semester: 2
-maxstudents: 28
-team_3: 313754-16
-allowed_periods: 1,2,3,4,5,6,7
-
 313754-16
 teacher: KSchmitt
 courseID: 313754
@@ -4672,6 +4760,14 @@ room: 286
 semester: 1
 maxstudents: 28
 team_3: 316055-14
+allowed_periods: 1,2,3,4,5,6,7
+
+316055-14
+teacher: KSchmitt
+courseID: 316055
+semester: 2
+maxstudents: 28
+team_3: 313754-16
 allowed_periods: 1,2,3,4,5,6,7
 
 316055-15
@@ -4731,6 +4827,14 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
+316055-16
+teacher: CScott
+courseID: 316055
+semester: 2
+maxstudents: 28
+team_3: 313754-05
+allowed_periods: 1,2,3,4,5,6,7
+
 313754-05
 teacher: CScott
 courseID: 313754
@@ -4738,14 +4842,6 @@ room: 83
 semester: 1
 maxstudents: 28
 team_3: 316055-16
-allowed_periods: 1,2,3,4,5,6,7
-
-316055-16
-teacher: CScott
-courseID: 316055
-semester: 2
-maxstudents: 28
-team_3: 313754-05
 allowed_periods: 1,2,3,4,5,6,7
 
 313753-13
@@ -4799,6 +4895,14 @@ semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
+313753-14
+teacher: CScott
+courseID: 313753
+semester: 2
+maxstudents: 28
+team_3: 3190T1-10
+allowed_periods: 1,2,3,4,5,6,7
+
 3190T1-10
 teacher: CScott
 courseID: 3190T1
@@ -4808,12 +4912,13 @@ maxstudents: 28
 team_3: 313753-14
 allowed_periods: 1,2,3,4,5,6,7
 
-313753-14
-teacher: CScott
-courseID: 313753
-semester: 2
-maxstudents: 28
-team_3: 3190T1-10
+1140T1-17
+teacher: JSeavey
+courseID: 1140T1
+room: 50
+semester: 0
+maxstudents: 0
+team_2: 114000-02
 allowed_periods: 1,2,3,4,5,6,7
 
 114000-02
@@ -4822,24 +4927,6 @@ courseID: 114000
 room: 50
 semester: 0
 maxstudents: 24
-team_2: 1140T1-17
-allowed_periods: 1,2,3,4,5,6,7
-
-1140T1-17
-teacher: JSeavey
-courseID: 1140T1
-room: 50
-semester: 0
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
-114000-03
-teacher: JSeavey
-courseID: 114000
-room: 50
-semester: 0
-maxstudents: 24
-team_2: 1140T1-15
 allowed_periods: 1,2,3,4,5,6,7
 
 1140T1-15
@@ -4848,15 +4935,15 @@ courseID: 1140T1
 room: 50
 semester: 0
 maxstudents: 0
+team_2: 114000-03
 allowed_periods: 1,2,3,4,5,6,7
 
-114000-01
+114000-03
 teacher: JSeavey
 courseID: 114000
 room: 50
 semester: 0
 maxstudents: 24
-team_2: 1140T1-16
 allowed_periods: 1,2,3,4,5,6,7
 
 1140T1-16
@@ -4865,6 +4952,15 @@ courseID: 1140T1
 room: 50
 semester: 0
 maxstudents: 0
+team_2: 114000-01
+allowed_periods: 1,2,3,4,5,6,7
+
+114000-01
+teacher: JSeavey
+courseID: 114000
+room: 50
+semester: 0
+maxstudents: 24
 allowed_periods: 1,2,3,4,5,6,7
 
 119604-03
@@ -5020,20 +5116,20 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-317860-05
-teacher: MSpoden
-courseID: 317860
-room: 82
-semester: 1
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 319800-03
 teacher: MSpoden
 courseID: 319800
 room: 82
 semester: 2
 maxstudents: 2
+allowed_periods: 1,2,3,4,5,6,7
+
+317860-05
+teacher: MSpoden
+courseID: 317860
+room: 82
+semester: 1
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 317704-13
@@ -5109,6 +5205,14 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
+313753-16
+teacher: SStickle
+courseID: 313753
+semester: 2
+maxstudents: 28
+team_3: 3190T1-11
+allowed_periods: 1,2,3,4,5,6,7
+
 3190T1-11
 teacher: SStickle
 courseID: 3190T1
@@ -5116,14 +5220,6 @@ room: 251
 semester: 1
 maxstudents: 28
 team_3: 313753-16
-allowed_periods: 1,2,3,4,5,6,7
-
-313753-16
-teacher: SStickle
-courseID: 313753
-semester: 2
-maxstudents: 28
-team_3: 3190T1-11
 allowed_periods: 1,2,3,4,5,6,7
 
 4220T1-10
@@ -5223,19 +5319,19 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-3199T2-01
-teacher: STorbert
-courseID: 3199T2
-room: 200
-semester: 2
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 3199T1-01
 teacher: STorbert
 courseID: 3199T1
 room: 200
 semester: 1
+maxstudents: 0
+allowed_periods: 1,2,3,4,5,6,7
+
+3199T2-01
+teacher: STorbert
+courseID: 3199T2
+room: 200
+semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -5279,19 +5375,19 @@ semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-3199J1-04
-teacher: STorbert
-courseID: 3199J1
-room: 206
-semester: 2
-maxstudents: 5
-allowed_periods: 1,2,3,4,5,6,7
-
 3199J1-02
 teacher: STorbert
 courseID: 3199J1
 room: 206
 semester: 1
+maxstudents: 5
+allowed_periods: 1,2,3,4,5,6,7
+
+3199J1-04
+teacher: STorbert
+courseID: 3199J1
+room: 206
+semester: 2
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
@@ -5327,20 +5423,20 @@ semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-319967-06
-teacher: BVacancy
-courseID: 319967
-room: 202
-semester: 2
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 319966-06
 teacher: BVacancy
 courseID: 319966
 room: 202
 semester: 1
 maxstudents: 3
+allowed_periods: 1,2,3,4,5,6,7
+
+319967-06
+teacher: BVacancy
+courseID: 319967
+room: 202
+semester: 2
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 3199T3-04
@@ -5351,20 +5447,20 @@ semester: 0
 maxstudents: 15
 allowed_periods: 1,2,3,4,5,6,7
 
-319967-08
-teacher: BVacancy
-courseID: 319967
-room: 202
-semester: 2
-maxstudents: 0
-allowed_periods: 1,2,3,4,5,6,7
-
 319966-08
 teacher: BVacancy
 courseID: 319966
 room: 202
 semester: 1
 maxstudents: 3
+allowed_periods: 1,2,3,4,5,6,7
+
+319967-08
+teacher: BVacancy
+courseID: 319967
+room: 202
+semester: 2
+maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
 513000-01
@@ -5458,20 +5554,20 @@ semester: 0
 maxstudents: 24
 allowed_periods: 1,2,3,4
 
-319966-02
-teacher: PWhite
-courseID: 319966
-room: 202
-semester: 1
-maxstudents: 3
-allowed_periods: 1,2,3,4,5,6,7
-
 319967-02
 teacher: PWhite
 courseID: 319967
 room: 202
 semester: 2
 maxstudents: 0
+allowed_periods: 1,2,3,4,5,6,7
+
+319966-02
+teacher: PWhite
+courseID: 319966
+room: 202
+semester: 1
+maxstudents: 3
 allowed_periods: 1,2,3,4,5,6,7
 
 3199T0-03
@@ -5538,19 +5634,19 @@ semester: 0
 maxstudents: 30
 allowed_periods: 5,6,7
 
-2374T1-03
-teacher: JWicklif
-courseID: 2374T1
-room: 48
-semester: 1
-maxstudents: 30
-allowed_periods: 5,6,7
-
 2374T1-04
 teacher: JWicklif
 courseID: 2374T1
 room: 48
 semester: 2
+maxstudents: 30
+allowed_periods: 5,6,7
+
+2374T1-03
+teacher: JWicklif
+courseID: 2374T1
+room: 48
+semester: 1
 maxstudents: 30
 allowed_periods: 5,6,7
 
@@ -5654,14 +5750,6 @@ semester: 0
 maxstudents: 15
 allowed_periods: 1,2,3,4,5,6,7
 
-4320T1-01
-teacher: LWu
-courseID: 4320T1
-room: 2
-semester: 1
-maxstudents: 28
-allowed_periods: 1,2,3,4,5,6,7
-
 4320T1-03
 teacher: LWu
 courseID: 4320T1
@@ -5670,7 +5758,7 @@ semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-4320T1-02
+4320T1-01
 teacher: LWu
 courseID: 4320T1
 room: 2
@@ -5686,13 +5774,12 @@ semester: 2
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-585000-01
-teacher: QXu
-courseID: 585000
-room: 74
-semester: 0
-maxstudents: 2
-team_2: 584004-01
+4320T1-02
+teacher: LWu
+courseID: 4320T1
+room: 2
+semester: 1
+maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
 584004-01
@@ -5701,6 +5788,15 @@ courseID: 584004
 room: 74
 semester: 0
 maxstudents: 28
+team_2: 585000-01
+allowed_periods: 1,2,3,4,5,6,7
+
+585000-01
+teacher: QXu
+courseID: 585000
+room: 74
+semester: 0
+maxstudents: 2
 allowed_periods: 1,2,3,4,5,6,7
 
 582000-02
@@ -5719,21 +5815,21 @@ semester: 0
 maxstudents: 28
 allowed_periods: 1,2,3,4,5,6,7
 
-585000-02
-teacher: QXu
-courseID: 585000
-room: 74
-semester: 0
-maxstudents: 2
-team_2: 584004-02
-allowed_periods: 1,2,3,4,5,6,7
-
 584004-02
 teacher: QXu
 courseID: 584004
 room: 74
 semester: 0
 maxstudents: 28
+team_2: 585000-02
+allowed_periods: 1,2,3,4,5,6,7
+
+585000-02
+teacher: QXu
+courseID: 585000
+room: 74
+semester: 0
+maxstudents: 2
 allowed_periods: 1,2,3,4,5,6,7
 
 583000-02
@@ -5808,14 +5904,6 @@ semester: 2
 maxstudents: 0
 allowed_periods: 1,2,3,4,5,6,7
 
-319917-01
-teacher: JZachari
-courseID: 319917
-room: 200
-semester: 2
-maxstudents: 5
-allowed_periods: 1,2,3,4,5,6,7
-
 319916-01
 teacher: JZachari
 courseID: 319916
@@ -5824,7 +5912,7 @@ semester: 1
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 
-319917-02
+319917-01
 teacher: JZachari
 courseID: 319917
 room: 200
@@ -5837,6 +5925,14 @@ teacher: JZachari
 courseID: 319916
 room: 200
 semester: 1
+maxstudents: 5
+allowed_periods: 1,2,3,4,5,6,7
+
+319917-02
+teacher: JZachari
+courseID: 319917
+room: 200
+semester: 2
 maxstudents: 5
 allowed_periods: 1,2,3,4,5,6,7
 

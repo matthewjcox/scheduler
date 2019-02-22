@@ -92,7 +92,7 @@ for r in range(1,45):
 
 # Read in data from sections workbook
 for r in range(2, 859):
-    if secSheet.cell(row=r, column=2).value >= 8:
+    if secSheet.cell(row=r, column=2).value == 8:
         continue
     if secSheet.cell(row=r, column=6).value:
         teacher = secSheet.cell(row=r, column=6).value.split(", ")[0]
@@ -107,7 +107,10 @@ for r in range(2, 859):
         teacherToSects[teacher] = []
     teacherToSects[teacher].append([])
     teacherToSects[teacher][-1].append(secSheet.cell(row=r, column=1).value)
-    teacherToSects[teacher][-1].append(secSheet.cell(row=r, column = 2).value)
+    if secSheet.cell(row=r, column=2).value <= 7:
+        teacherToSects[teacher][-1].append(secSheet.cell(row=r, column = 2).value)
+    else:
+        teacherToSects[teacher][-1].append(1)
     term = secSheet.cell(row=r, column=3).value
     if term == "YR":
         term = 0
@@ -169,15 +172,15 @@ for teacher in teacherToSects.keys():
         allowedPers = [5,6,7]
     else:
         allowedPers = [1,2,3,4,5,6,7]
-    if teacher == "Waters":
+    '''if teacher == "Waters":
         print(allowedPers)
-        print(perDist)
+        print(perDist)'''
     for per in range(1, 1+len(perDist.keys())):
         curPers = [teacherToSects[teacher][perDist[per][k]] for k in range(len(perDist[per]))]
-        if teacher == "Waters":
+        '''if teacher == "Waters":
             print(per)
             print(curPers)
-            print("\n")
+            print("\n")'''
         # Handles periods during which a teacher is only teaching one course
         if len(curPers) == 1:
             curPer = curPers[0]
@@ -216,6 +219,8 @@ for teacher in teacherToSects.keys():
                 curPer = secsToHandle[sec]
                 # Creates a section for sec
                 sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], curPer[6], None, None, None, allowedPers, curPer[7], teacher]
+                if teacher == "FCPS Online Campus":
+                    sections[sec][9] = [curPer[1]]
                 # Deal with team_2 here (all classes that are the same period and not semesters 1 and 2 should be team_2. Meaning same period, same term; and same period, year and semester.). Otherwise, no teaming.
                 # Builds term distribution for sections remaining in secsToHandle
                 termDist = {0:[], 1:[], 2:[]}
