@@ -152,7 +152,11 @@ for teacher in teacherToSects.keys():
         secID = 1
         for per in range(1,8):
             for sem in range(3):
-                sections["000932-" + "{:02d}".format(secID)] = ["000932", sem, "See Counselor", None, None, 10000, None, None, None, [per], None, None]
+                if sem == 0:
+                    id = "000932"
+                else:
+                    id = "000933"
+                sections["000932-" + "{:02d}".format(secID)] = [id, sem, "See Counselor", None, None, 10000, None, None, None, [per], None, None]
                 secID += 1
         continue
     if teacher == "None":
@@ -240,8 +244,10 @@ for teacher in teacherToSects.keys():
 # Writes sections and teachers to files
 teacherFile = open("../../runs/constraint_files/full_school_teachers.txt", "w")
 secFile = open("../../runs/constraint_files/full_school_sections.txt", "w")
+courseFile = open("../../runs/constraint_files/full_school_courses.txt", "w")
 
 teacherIDSet = set()
+courseIDSet = set()
 for section in sections.items():
     secFile.write(section[0] + "\n")
     if section[1][3]:
@@ -270,5 +276,13 @@ for section in sections.items():
     if section[1][3] and not section[1][3] in teacherIDSet:
         teacherFile.write(section[1][10] + ", " + section[1][11] + ", " + section[1][3] + "\n")
         teacherIDSet.add(section[1][3])
+
+    if section[1][0] and not section[1][0] in courseIDSet:
+        courseFile.write("- | " + section[1][2].__str__() + "| " + section[1][0].__str__() + "| ")
+        if section[1][1] == 0:
+            courseFile.write("year\n")
+        else:
+            courseFile.write("semester\n")
+        courseIDSet.add(section[1][0])
     # Below is the last line for writing secFile
     secFile.write("\n")
