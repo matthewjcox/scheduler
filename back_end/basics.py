@@ -251,7 +251,7 @@ class Section:
         self.id=id
         self.teachers = set()
         self.students=set()
-        self.courses=list()
+        self.course=None
         self.classrooms=set()
         self.period=0#random.randint(1,_num_periods)
         self.semester=None#0 is full year, 1 is S1, 2 is S2
@@ -274,28 +274,21 @@ class Section:
         self.teachers.remove(teacher)
         teacher.sched.remove(self)
 
-    def add_student(self, student):
-        # self.add_student_old(student)
+    # def add_student(self, student):
+    #     if student in self.students:
+    #         return
+    #     student.sched.add(self)
+    #     self.students.add(student)
+    #     for i in self.teamed1:
+    #         i.add_student(student)
+    #     for i in self.teamed3:
+    #         i.add_student(student)
+
+    def add_student_basic(self,student):
         if student in self.students:
             return
-        # if ignore_conflicts==0:
-        #     conflicting_sections = []
-        #     for i in student.sched:
-        #         if i.period==self.period:
-        #             if i.semester==self.semester or i.semester==0 or self.semester==0:
-        #                 conflicting_sections.append(i)
-        #     for i in conflicting_sections:
-        #         i.remove_student(student)
         student.sched.add(self)
         self.students.add(student)
-        # for i in self.courses:
-        #     if i in student.teamed:
-        #         for j in student.teamed[i]:
-        #             self.add_student(j)
-        for i in self.teamed1:
-            i.add_student(student)
-        for i in self.teamed3:
-            i.add_student(student)
 
     def add_student_removing_conflicts(self, student):
         # print(self.__repr__())
@@ -304,7 +297,7 @@ class Section:
     def add_student_removing_conflicts_helper(self,student):
         # self.add_student_old(student)
         removed=[]
-        if student in self.students:
+        if student in self.students or self.course not in student.courses.courses:
             return removed
         conflicting_sections = []
         for i in student.sched:
@@ -371,16 +364,15 @@ class Section:
         self.classrooms.remove(room)
         room.sched.remove(self)
 
-    def add_course(self, course):
-        if course not in self.courses:
-            self.courses.append(course)
+    def set_course(self, course):
+        self.course=course
         # course.sched.add(self)
 
-    def remove_course(self, course):
-        if course not in self.courses:
-            raise ReferenceError
-        self.courses.remove(course)
-        # course.sched.remove(self)
+    # def remove_course(self, course):
+    #     if course not in self.courses:
+    #         raise ReferenceError
+    #     self.courses.remove(course)
+    #     # course.sched.remove(self)
 
     def fix_period(self):
         self.period_fixed=1
@@ -429,7 +421,7 @@ class Section:
         return len(self.students)<=self.maxstudents-1
 
     def long_string(self):
-        courses=", ".join([str(i) for i in self.courses])
+        course=str(self.course)
         teachers = ", ".join([str(i) for i in self.teachers])
         rooms = ", ".join([str(i) for i in self.classrooms])
         allowed_pers = ' '+",".join([str(i) for i in self.allowed_periods])
@@ -438,7 +430,7 @@ class Section:
         teamed1with=', '.join([str(i) for i in self.teamed1])
         teamed2with = ', '.join([str(i) for i in self.teamed2])
         teamed3with = ', '.join([str(i) for i in self.teamed3])
-        res='\t\tSection ID: {}\n\t\tPeriod: {}\n\t\tAllowed periods:{}\n\t\tSemester: {}\n\t\tMax student count: {}\n\t\tCourse(s): {}\n\t\tTeacher(s): {}\n\t\tRoom(s): {}\n\t\tStudent(s) ({}): {}'.format(self.id,self.period,allowed_pers,'year' if self.semester==0 else self.semester,self.maxstudents,courses,teachers,rooms,len(self.students),students)
+        res='\t\tSection ID: {}\n\t\tPeriod: {}\n\t\tAllowed periods:{}\n\t\tSemester: {}\n\t\tMax student count: {}\n\t\tCourse: {}\n\t\tTeacher(s): {}\n\t\tRoom(s): {}\n\t\tStudent(s) ({}): {}'.format(self.id,self.period,allowed_pers,'year' if self.semester==0 else self.semester,self.maxstudents,course,teachers,rooms,len(self.students),students)
         if self.teamed1:
             res+='\n\t\tTeamed 1 with: '+teamed1with
         if self.teamed2:
@@ -452,7 +444,7 @@ class Section:
         return self.__repr__()#'Section '+self.id
 
     def __repr__(self):
-        return 'Section {}: {} {} P{} {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester))
+        return 'Section {}: {} {} P{} {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", str(self.course) if self.course is not None else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester))
     #     return 'Section {}: {} {} P{} {} - {}'.format(self.id,next(iter(self.teachers)).lastName if self.teachers else "Teacherless", next(iter(self.courses)).name if self.courses else "Courseless",self.period,"YR" if not self.semester else "S"+str(self.semester),object.__repr__(self))
     def __hash__(self):
         return hash(object.__repr__(self))

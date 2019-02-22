@@ -107,13 +107,12 @@ class master_schedule(chromosome):
                     s.add_teacher(teacher)
                 for j in i.students:
                     student=self.students[j.studentID]
-                    s.add_student(student)
+                    s.add_student_basic(student)
                 for j in i.classrooms:
                     classroom=self.classrooms[j.num]
                     s.add_classroom(classroom)
-                for j in i.courses:
-                    course=self.stock_courses[j.courseID]
-                    s.add_course(course)
+                course=self.stock_courses[i.course.courseID]
+                s.set_course(course)
                 s.set_semester(i.semester)
                 s.set_max_students(i.maxstudents)
                 s.set_period(i.period)
@@ -127,10 +126,10 @@ class master_schedule(chromosome):
                 for j in i.teamed3:
                     self.teams3.append((s,j.id))
             for sect in self.sections.values():
-                for course in sect.courses:
-                    if course not in self.course_sections:
-                        self.course_sections[course] = []
-                    self.course_sections[course].append(sect)
+                course=sect.course
+                if course not in self.course_sections:
+                    self.course_sections[course] = []
+                self.course_sections[course].append(sect)
             for i, j in self.teams1:
                 other = self.sections[j]
                 if other not in i.teamed1:
@@ -160,7 +159,7 @@ class master_schedule(chromosome):
                 s.set_period(int(period))
                 for i in students.split('|'):
                     if i:
-                        s.add_student(self.students[i])
+                        s.add_student_basic(self.students[i])
         else:
             pass#do nothing
         #DON'T COMMIT
@@ -198,10 +197,9 @@ class master_schedule(chromosome):
                 for j in i.sched:
                     if j.period not in courses:
                         courses[j.period]=[]
-                    for k in j.courses:
-                        courses[j.period].append(k)
+                    courses[j.period].append(j.course)
             for i in sorted(section.allowed_periods,key=lambda i:random.random()):
-                if i not in courses or not any([j in courses[i] for j in section.courses]):
+                if i not in courses or not section.course in courses[i]:
                     period=i
                     break
             if period is not None:
@@ -320,7 +318,7 @@ class master_schedule(chromosome):
         score+=section_penalty_score
 
         if verbose:
-            print("St base: {}, St addl: {}, S conflict: {}, T conflict: {}, Per spread: {}, Sec penalty: {}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
+            print("St base: {:.2f}, St addl: {:.2f}, S conflict: {:.2f}, T conflict: {:.2f}, Per spread: {:.2f}, Sec penalty: {:.2f}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
             print(score,score+addl_score)
 
         return score if static else score+addl_score
@@ -358,17 +356,16 @@ class master_schedule(chromosome):
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
                 periods_s2.add(k)
-            addl_score += self.rare_class_bonus * len(self.course_sections[j.courses[0]]) ** -2.5
+            addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
         return base_score,addl_score
 
     def score_student_courses(self,student):
         courses={}
         base_score=0
         for i in student.sched:
-            for j in i.courses:
-                if j not in courses:
-                    courses[j]=0
-                courses[j]+=1
+            if i.course not in courses:
+                courses[i.course]=0
+            courses[i.course]+=1
         for i,j in courses.items():
             if i in student.courses.courses:
                 if j==1:
@@ -467,7 +464,7 @@ class master_schedule(chromosome):
 
     def optimize_student(self,student,max_it=1000,skip_if_filled=0):
         for i in range(max_it):
-            score,student_score=self.score_student(student)#conflict score is 3rd returned value; not yet fixing bc need to check elsewhere
+            score,student_score,conflict_score=self.score_student(student)
             if skip_if_filled and student_score==self.num_periods*self.correct_course_score_delta:
                 return
             courses={}
@@ -478,7 +475,7 @@ class master_schedule(chromosome):
                 for j in courses_randomized:
                     courses[j]=[]
                     for k in student.sched:
-                        if j in k.courses:
+                        if j==k.course:
                             courses[j].append(k)
                 for i in courses_randomized:
                     if len(courses[i])==0:
@@ -547,7 +544,7 @@ class master_schedule(chromosome):
             else:
                 new_section.remove_student(student)
                 for i in old_sections:
-                    i.add_student(student)
+                    i.add_student_basic(student)
         # print(score, self.score_student(student)[0])
 
     def copy(self):
@@ -561,13 +558,13 @@ class master_schedule(chromosome):
                 s.add_teacher(teacher)
             for j in i.students:
                 student = sched.students[j.studentID]
-                s.add_student(student)
+                s.add_student_basic(student)
             for j in i.classrooms:
                 classroom = sched.classrooms[j.num]
                 s.add_classroom(classroom)
-            for j in i.courses:
-                course = self.stock_courses[j.courseID]
-                s.add_course(course)
+
+            course = self.stock_courses[i.course.courseID]
+            s.set_course(course)
             s.set_semester(i.semester)
             s.set_max_students(i.maxstudents)
             s.set_period(i.period)
@@ -593,10 +590,10 @@ class master_schedule(chromosome):
             if other not in i.teamed3:
                 i.team_3(other)
         for sect in sched.sections.values():
-            for course in sect.courses:
-                if course not in sched.course_sections:
-                    sched.course_sections[course] = []
-                sched.course_sections[course].append(sect)
+            course=sect.course
+            if course not in sched.course_sections:
+                sched.course_sections[course] = []
+            sched.course_sections[course].append(sect)
 
 
 
@@ -638,7 +635,7 @@ class hill_climb_solo_2:
                 self.current_sched.initialize_weights()
             if first_it==1 or i<10 or i % print_every == 0:
                 first_it=0
-                print('Round {}: score {:.2f} ({}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
+                print('Round {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if i%20==1:

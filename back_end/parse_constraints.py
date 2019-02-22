@@ -6,10 +6,10 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
         s.add_teacher(v)
     elif field == 'student':
         v = students[value]
-        s.add_student(v)
+        s.add_student_basic(v)
     elif field == 'courseID':
         v = courses[value]
-        s.add_course(v)
+        s.set_course(v)
     elif field == 'room':
         v = classrooms[value]
         s.add_classroom(v)
