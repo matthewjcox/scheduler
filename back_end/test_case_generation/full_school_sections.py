@@ -158,18 +158,26 @@ for teacher in teacherToSects.keys():
         continue
     # perDist is a dict of {period: [indeces of classes in teacherToSects[teacher] during that period]}
     perDist = {l:[] for l in range(1,8)}
+    perSet = set()
     for x in range(len(teacherToSects[teacher])):
         perDist[teacherToSects[teacher][x][1]].append(x)
+        perSet.add(teacherToSects[teacher][x][1])
     # Remember to restrict allowed periods for IBETs and CHUMs outside of the restrictions listed here
-    if set(perDist.keys()).issubset({1,2,3,4}):
-        allwowedPers = [1,2,3,4]
-    elif set(perDist.keys()).issubset({5,6,7}):
+    if perSet.issubset({1,2,3,4}):
+        allowedPers = [1,2,3,4]
+    elif perSet.issubset({5,6,7}):
         allowedPers = [5,6,7]
     else:
         allowedPers = [1,2,3,4,5,6,7]
+    if teacher == "Waters":
+        print(allowedPers)
+        print(perDist)
     for per in range(1, 1+len(perDist.keys())):
-        print(teacherToSects[teacher])
         curPers = [teacherToSects[teacher][perDist[per][k]] for k in range(len(perDist[per]))]
+        if teacher == "Waters":
+            print(per)
+            print(curPers)
+            print("\n")
         # Handles periods during which a teacher is only teaching one course
         if len(curPers) == 1:
             curPer = curPers[0]
@@ -248,8 +256,6 @@ for section in sections.items():
         for sec in section[1][8]:
             secFile.write("team_3: " + sec + "\n")
     if section[1][9]:
-        print(section[1])
-        print(section[1][9])
         secFile.write("allowed_periods: ")
         secFile.write(section[1][9][0].__str__())
         for k in range(1,len(section[1][9])):
