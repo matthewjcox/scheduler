@@ -31,24 +31,31 @@ while ws.cell(row=r, column=1).value:
     studRequests = []
     while ws.cell(row=r,column=1).value==curStud:
         #print("HI")
-        if not ws.cell(row=r,column=5).value == "See Counselor" and not re.search("Arabic", ws.cell(row=r, column=5).value):
-            studRequests.append(ws.cell(row=r,column=4).value.__str__())
-        elif re.search("Arabic", ws.cell(row=r, column=5).value):
-            if ws.cell(row=r, column=4).value.__str__() == "503000":
-                studRequests.append("3190T1")
-                studRequests.append("313753")
-            if ws.cell(row=r, column=4).value.__str__() == "505000":
-                studRequests.append("313754")
-                studRequests.append("316055")
-            if ws.cell(row=r, column=4).value.__str__() == "501000":
-                studRequests.append("3190T1")
-                studRequests.append("314351")
-            if ws.cell(row=r, column=4).value.__str__() == "502000":
-                studRequests.append("313753")
-                studRequests.append("313754")
-            if ws.cell(row=r, column=4).value.__str__() == "504000":
-                studRequests.append("3190T1")
-                studRequests.append("313754")
+        if ws.cell(row=r,column=5).value == "See Counselor":
+            r+=1
+            continue
+        sectID = ws.cell(row=r, column=4).value.__str__()
+        if sectID == "503000":
+            studRequests.append("3190T1")
+            studRequests.append("313753")
+        elif sectID == "505000":
+            studRequests.append("313754")
+            studRequests.append("316055")
+        elif sectID == "501000":
+            studRequests.append("3190T1")
+            studRequests.append("314351")
+        elif sectID == "502000":
+            studRequests.append("313753")
+            studRequests.append("313754")
+        elif sectID == "504000":
+            studRequests.append("3190T1")
+            studRequests.append("313754")
+        elif sectID == "231904":
+            studRequests.append("231905")
+        elif sectID == "2340T1":
+            studRequests.append("234093")
+        else:
+            studRequests.append(ws.cell(row=r, column=4).value.__str__())
         r += 1
     file.write(curStud.__str__() + ", Student, " + curStud.__str__() + ", " + ws.cell(row=r-1, column=3).value.__str__() + ", " + len(studRequests).__str__() + "\n")
     for x in range(len(studRequests)):
