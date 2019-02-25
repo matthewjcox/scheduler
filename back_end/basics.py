@@ -108,7 +108,7 @@ class Teacher:
         return Teacher(self.lastName,self.firstName,self.teacherID, self.willTeach)
 
     def __str__(self):
-        return '{} {} ({})'.format(self.firstName,self.lastName,self.teacherID)
+        return 'Teacher {} {} ({})'.format(self.firstName,self.lastName,self.teacherID)
 
     def __hash__(self):
         return hash(self.teacherID)
@@ -169,7 +169,7 @@ class Course:
         return course
 
     def __str__(self):
-        return '{} {}'.format(self.courseID,self.name)
+        return 'Course {} {}'.format(self.courseID,self.name)
 
     def __repr__(self):
         return str(self)
@@ -234,7 +234,7 @@ class Student:
         return '{}\n\tSchedule:\n\t\t{}'.format(requests,sched)
 
     def __str__(self):
-        return '{} {} ({})'.format(self.firstName,self.lastName,self.studentID)
+        return 'Student {} {} ({})'.format(self.firstName,self.lastName,self.studentID)
 
 
     def copy(self):
@@ -285,7 +285,7 @@ class Section:
     #         i.add_student(student)
 
     def add_student_basic(self,student):
-        if student in self.students:
+        if student in self.students or len(self.students)>=self.maxstudents:
             return
         student.sched.add(self)
         self.students.add(student)
@@ -297,7 +297,7 @@ class Section:
     def add_student_removing_conflicts_helper(self,student):
         # self.add_student_old(student)
         removed=[]
-        if student in self.students or self.course not in student.courses.courses:
+        if student in self.students or self.course not in student.courses.courses or len(self.students)>=self.maxstudents:
             return removed
         conflicting_sections = []
         for i in student.sched:

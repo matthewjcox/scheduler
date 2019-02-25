@@ -244,15 +244,17 @@ class master_schedule(chromosome):
 
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 20 * (1 - _CLOSENESS_TO_COMPLETION**2)
-        self.section_in_prohibited_period_delta=-1000
+        self.section_in_prohibited_period_delta=-5000
         self.course_period_overlap=-10*(1-_CLOSENESS_TO_COMPLETION)**2
+
+        self.section_exceeds_max_students_delta=-100
 
     def preliminary_score(self,static=0,verbose=0):
         if not self.initialized:
             raise ReferenceError
         score=0
         addl_score=0
-        self.initialize_weights()
+        # self.initialize_weights()
         student_base_score=0
         student_addl_score=0
         student_conflict_score=0
@@ -314,7 +316,7 @@ class master_schedule(chromosome):
                 section_penalty_score+=self.section_in_prohibited_period_delta
         for i in self.sections.values():
             if len(i.students)>i.maxstudents:
-                section_penalty_score-=100
+                section_penalty_score+=self.section_exceeds_max_students_delta
         score+=section_penalty_score
 
         if verbose:
@@ -446,6 +448,11 @@ class master_schedule(chromosome):
                     while inner_conflicts!=0:
                         inner_conflicts=0
                         n+=1
+                        if i.period not in i.allowed_periods:
+                            conflicts += 1
+                            inner_conflicts += 1
+                            outer_conflicts += 1
+                            self.mutate_period(i, verbose=0, allow_randomness=1)
                         if i.teamed1:
                             periods=[i.period]
                             for j in i.teamed1:
@@ -492,7 +499,7 @@ class master_schedule(chromosome):
 
 
 
-            s=self.course_sections[i]
+            s=self.course_sections[i] if i in self.course_sections else []
             random.shuffle(s)
             allow_full_period=random.random()<.05
             for i in range(self.num_periods):
@@ -611,10 +618,19 @@ class hill_climb_solo_2:
         self.outfolder=outfolder
         j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
         j.retrieve_schedule(outfolder)
-        if not j.is_viable():
-            raise UnviableScheduleError
-        print('5' in j.stock_students)
+        # if not j.is_viable():
+        #     raise UnviableScheduleError
         self.current_sched=j
+        # crss=[]
+        # for i in j.stock_students.values():
+        #     for k in i.courses.courses:
+        #         if k not in j.course_sections and k not in crss:
+        #             crss.append(k)
+        # print(len(crss))
+        # for i in crss:
+        #     print(i)
+        self.current_sched.initialize_weights()
+
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
@@ -623,6 +639,7 @@ class hill_climb_solo_2:
         last_save=-1
         first_it=1
         while 1:
+            self.current_sched.initialize_weights()
             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
                 save_schedule(self.current_sched, self.outfolder)
