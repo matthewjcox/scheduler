@@ -70,7 +70,7 @@ ibetIDs = {'4310T1', '984060', '1130T1'}
 
 # Read in data from HUMs and IBETs workbook
 n = 1
-for r in range(1,45):
+for r in range(2,45):
     sec1 = humSheet.cell(row=r, column=1).value
     sec2 = humSheet.cell(row=r, column=5).value
     sec3 = humSheet.cell(row=r, column=9).value

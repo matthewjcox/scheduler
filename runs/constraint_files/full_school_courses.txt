@@ -11,12 +11,12 @@ TJ Math 4| TJ Math 4| 313754| semester
 AP Calculus BC| AP Calculus BC| 317704| year
 TJ Math 5| TJ Math 5| 316055| semester
 Advanced Orchestra| Advanced Orchestra| 923917| year
-Advanced Orchestra| Advanced Orchestra| 923915| year
-Advanced Orchestra| Advanced Orchestra| 923916| year
-Intermed Orchestra| Intermed Orchestra| 923815| year
 Intermed Orchestra| Intermed Orchestra| 923816| year
-Prototype Dev 1| Prototype Dev 1| 9828T0| semester
+Advanced Orchestra| Advanced Orchestra| 923916| year
+Advanced Orchestra| Advanced Orchestra| 923915| year
+Intermed Orchestra| Intermed Orchestra| 923815| year
 Prototype Dev 2| Prototype Dev 2| 9828T4| semester
+Prototype Dev 1| Prototype Dev 1| 9828T0| semester
 Prototype Dev Res| Prototype Dev Res| 9828T6| year
 Audio Electronics| Audio Electronics| 9826T0| semester
 Adv Microproc Sys| Adv Microproc Sys| 9826T1| semester
@@ -31,8 +31,8 @@ AP US History| AP US History| 231905| year
 AP English Lan/Com| AP English Lan/Com| 119604| year
 AP Art History| AP Art History| 915104| year
 English 11| English 11| 1150T1| year
-Biotech Research| Biotech Research| 4320T2| semester
 DNA Science 1| DNA Science 1| 4320T6| semester
+Biotech Research| Biotech Research| 4320T2| semester
 DNA Science 2| DNA Science 2| 4320T7| semester
 Biotech Research| Biotech Research| 4320T3| year
 TJ Math 3| TJ Math 3| 313753| semester
@@ -47,9 +47,9 @@ AP Calculus AB| AP Calculus AB| 317004| year
 TJ Math 1| TJ Math 1| 314351| semester
 TJ Research Stat 2| TJ Research Stat 2| 3190T2| semester
 TJ Math 2| TJ Math 2| 314352| semester
-Latin 5| Latin 5| 535000| year
-Latin 5| Latin 5| 5350T2| semester
 Latin 5| Latin 5| 5350T1| semester
+Latin 5| Latin 5| 5350T2| semester
+Latin 5| Latin 5| 535000| year
 Latin 3| Latin 3| 533000| year
 Latin 1| Latin 1| 531000| year
 Geosystems| Geosystems| 4220T1| year
@@ -63,8 +63,8 @@ Photography 1| Photography 1| 919332| semester
 Photography 2| Photography 2| 919432| semester
 AP Biology| AP Biology| 437004| year
 Aut/Rob Res| Aut/Rob Res| 9826T9| year
-Aut/Rob-Micro Sys| Aut/Rob-Micro Sys| 9826T7| semester
 Aut/Rob-Systems| Aut/Rob-Systems| 9826T8| semester
+Aut/Rob-Micro Sys| Aut/Rob-Micro Sys| 9826T7| semester
 French 5| French 5| 5150T2| semester
 French 5| French 5| 515000| year
 French 5| French 5| 5150T1| semester
@@ -73,19 +73,19 @@ French 2| French 2| 512000| year
 AP French Lang| AP French Lang| 517004| year
 Electrodynamics| Electrodynamics| 4520T9| year
 Cryptography| Cryptography| 3199T0| semester
-Econ & Pers Fin| Econ & Pers Fin| 612099| year
-Health & PE 9| Health & PE 9| 730099| year
-Korean 3| Korean 3| 588099| year
-AP Spanish Lang| AP Spanish Lang| 557093| year
-AP Spanish Lit| AP Spanish Lit| 558093| year
-AP English Lan/Com| AP English Lan/Com| 119693| year
-AP Psychology| AP Psychology| 290299| year
 English 12 HN| English 12 HN| 116097| year
-AP Government| AP Government| 244593| year
-AP Mac/Mic Econ| AP Mac/Mic Econ| 280493| year
+AP English Lan/Com| AP English Lan/Com| 119693| year
 Spanish 3| Spanish 3| 553099| year
-Korean 1| Korean 1| 587099| year
+AP Spanish Lang| AP Spanish Lang| 557093| year
+AP Mac/Mic Econ| AP Mac/Mic Econ| 280493| year
+AP Spanish Lit| AP Spanish Lit| 558093| year
+AP Psychology| AP Psychology| 290299| year
+Korean 3| Korean 3| 588099| year
+AP Government| AP Government| 244593| year
 Korean 2| Korean 2| 587599| year
+Korean 1| Korean 1| 587099| year
+Health & PE 9| Health & PE 9| 730099| year
+Econ & Pers Fin| Econ & Pers Fin| 612099| year
 Health & PE 10| Health & PE 10| 740599| year
 AP World History| AP World History| 234093| year
 Creative Writing 1| Creative Writing 1| 117198| semester
@@ -108,14 +108,14 @@ AP English Lit/Com| AP English Lit/Com| 119561| year
 English 9| English 9| 1130T1| year
 US VA History| US VA History| 2360T1| year
 Neuroscience Res| Neuroscience Res| 4320T5| semester
-Journalism 3| Journalism 3| 121100| year
 Broadcast Journ 1| Broadcast Journ 1| 122000| year
+Journalism 3| Journalism 3| 121100| year
 Journalism 2| Journalism 2| 121000| year
 Journalism 1| Journalism 1| 120000| year
 Journalism 4| Journalism 4| 121200| year
+Photo Journalism 1| Photo Journalism 1| 121500| year
 Photo Journalism 2| Photo Journalism 2| 121600| year
 Photo Journalism 3| Photo Journalism 3| 121700| year
-Photo Journalism 1| Photo Journalism 1| 121500| year
 Adv Astr Universe| Adv Astr Universe| 4260T5| semester
 Adv Astr Solar Sys| Adv Astr Solar Sys| 4260T4| semester
 Astronomy Res| Astronomy Res| 4260T2| year
@@ -123,8 +123,8 @@ English 11| English 11| 1150T2| year
 Biology 1| Biology 1| 4310T1| year
 Anthro Studies| Anthro Studies| 2374T1| semester
 AP Mac/Mic Econ| AP Mac/Mic Econ| 280404| year
-Matrix Algebra| Matrix Algebra| 319800| semester
 Multivar Calculus| Multivar Calculus| 317860| semester
+Matrix Algebra| Matrix Algebra| 319800| semester
 AP Chemistry| AP Chemistry| 447004| year
 Chem Analysis Res| Chem Analysis Res| 4420T2| year
 Intro Org Chem 1| Intro Org Chem 1| 4420T4| semester
@@ -135,18 +135,18 @@ Geosystems Ment| Geosystems Ment| 4220T3| semester
 AP English Lan/Com| AP English Lan/Com| 119662| year
 AP Latin-Vergil| AP Latin-Vergil| 537004| year
 Latin 2| Latin 2| 532000| year
-Bionanotechnology| Bionanotechnology| 4610T6| semester
 Neurobiology| Neurobiology| 4320T8| semester
+Bionanotechnology| Bionanotechnology| 4610T6| semester
 AP Music Theory| AP Music Theory| 922604| year
-Vocal Ensemble| Vocal Ensemble| 928032| semester
 Adv Mixed Chorus| Adv Mixed Chorus| 928915| year
+Vocal Ensemble| Vocal Ensemble| 928032| semester
 Theatre Arts 3| Theatre Arts 3| 143032| semester
 Theatre Arts 1| Theatre Arts 1| 141032| semester
 Tech Theatre 1| Tech Theatre 1| 143532| semester
-Theatre Arts 4| Theatre Arts 4| 144032| semester
 Theatre Arts 2| Theatre Arts 2| 142032| semester
-Computational Phys| Computational Phys| 4520T1| semester
+Theatre Arts 4| Theatre Arts 4| 144032| semester
 Optical Systems| Optical Systems| 4520T8| semester
+Computational Phys| Computational Phys| 4520T1| semester
 Optics Research| Optics Research| 4520T4| year
 English 10| English 10| 114000| year
 World Hist/Geog 2| World Hist/Geog 2| 2221T1| year
@@ -154,25 +154,25 @@ World Hist/Geog 2| World Hist/Geog 2| 222100| year
 AP Psychology| AP Psychology| 290204| year
 Psych: Brain& Beh| Psych: Brain& Beh| 2900T1| semester
 Math Techniques| Math Techniques| 319862| semester
-Complex Analysis| Complex Analysis| 317862| semester
 El Diff Equations| El Diff Equations| 317861| semester
+Complex Analysis| Complex Analysis| 317862| semester
 AP German Lang| AP German Lang| 527004| year
-German 5| German 5| 525000| year
 German 5| German 5| 5250T1| semester
+German 5| German 5| 525000| year
 German 1| German 1| 521000| year
 German 2| German 2| 522000| year
 German 3| German 3| 523000| year
 Japanese 3| Japanese 3| 593000| year
+Japanese 4| Japanese 4| 594000| year
 Japanese 5| Japanese 5| 5950T1| semester
 AP Japanese| AP Japanese| 597004| year
-Japanese 4| Japanese 4| 594000| year
 Japanese 1| Japanese 1| 591000| year
 Japanese 2| Japanese 2| 592000| year
-Spec Comp Asst Des| Spec Comp Asst Des| 9828T2| semester
 Engineering Des| Engineering Des| 9828J1| semester
+Spec Comp Asst Des| Spec Comp Asst Des| 9828T2| semester
 Engineer Des Res| Engineer Des Res| 9828T3| year
-Energy Systems 2| Energy Systems 2| 9828T8| semester
 Energy Systems 1| Energy Systems 1| 9828T9| semester
+Energy Systems 2| Energy Systems 2| 9828T8| semester
 Energy System Res| Energy System Res| 9828T1| year
 Film Study| Film Study| 144632| semester
 AP Spanish Lit| AP Spanish Lit| 558004| year
