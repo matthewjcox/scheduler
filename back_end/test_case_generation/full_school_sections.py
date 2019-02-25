@@ -95,6 +95,7 @@ for r in range(2, 859):
     if secSheet.cell(row=r, column=2).value == 8:
         continue
     if secSheet.cell(row=r, column=6).value:
+        #if secSheet.cell(row=r, column=6)
         teacher = secSheet.cell(row=r, column=6).value.split(", ")[0]
     elif secSheet.cell(row=r, column=5).value == "See Counselor":
         teacher = "Counselor"
@@ -245,9 +246,11 @@ for teacher in teacherToSects.keys():
 teacherFile = open("../../runs/constraint_files/full_school_teachers.txt", "w")
 secFile = open("../../runs/constraint_files/full_school_sections.txt", "w")
 courseFile = open("../../runs/constraint_files/full_school_courses.txt", "w")
+classroomFile = open("../../runs/constraint_files/full_school_classrooms.txt", "w")
 
 teacherIDSet = set()
 courseIDSet = set()
+classroomSet = set()
 for section in sections.items():
     secFile.write(section[0] + "\n")
     if section[1][3]:
@@ -284,5 +287,9 @@ for section in sections.items():
         else:
             courseFile.write("semester\n")
         courseIDSet.add(section[1][0])
+
+    if section[1][4] and not section[1][4] in classroomSet:
+        classroomFile.write(section[1][4].__str__() + "\n")
+        classroomSet.add(section[1][4])
     # Below is the last line for writing secFile
     secFile.write("\n")
