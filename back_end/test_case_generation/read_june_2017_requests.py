@@ -1,11 +1,16 @@
 from openpyxl import load_workbook
+import re
+
+# EDIT SO THAT ARABICS ARE TRANSLATED TO TWO SEMESTER MATH COURSES!!
+#raise Exception("Didn't implement above change")
 
 wb = load_workbook(filename='../../runs/constraint_files/6-1-17@1430.xlsx')
 ws = wb['Sheet1']
 
 file = open("../../runs/constraint_files/full_school_2017_students.txt", "w")
 
-'''curStud = ws.cell(row=2,column=1).value
+'''
+curStud = ws.cell(row=2,column=1).value
 # ADJUST THE AUTOMATIC 7 COURSES TO BE INTELLIGENT!
 file.write(curStud.__str__() + ", Student, " + curStud.__str__() + ", " + ws.cell(row=2, column=3).value.__str__() + ", 7\n")
 for r in range(2,16000):
@@ -18,6 +23,7 @@ for r in range(2,16000):
         file.write(ws.cell(row=r,column=4).value.__str__()+"\n")
 '''
 
+#'''
 curStud = 1
 r = 2
 # FINISH MODIFYING to count how many course requests each student has before printing to text file (store course requests in list)
@@ -25,8 +31,24 @@ while ws.cell(row=r, column=1).value:
     studRequests = []
     while ws.cell(row=r,column=1).value==curStud:
         #print("HI")
-        if not ws.cell(row=r,column=5).value == "See Counselor":
+        if not ws.cell(row=r,column=5).value == "See Counselor" and not re.search("Arabic", ws.cell(row=r, column=5).value):
             studRequests.append(ws.cell(row=r,column=4).value.__str__())
+        elif re.search("Arabic", ws.cell(row=r, column=5).value):
+            if ws.cell(row=r, column=4).value.__str__() == "503000":
+                studRequests.append("3190T1")
+                studRequests.append("313753")
+            if ws.cell(row=r, column=4).value.__str__() == "505000":
+                studRequests.append("313754")
+                studRequests.append("316055")
+            if ws.cell(row=r, column=4).value.__str__() == "501000":
+                studRequests.append("3190T1")
+                studRequests.append("314351")
+            if ws.cell(row=r, column=4).value.__str__() == "502000":
+                studRequests.append("313753")
+                studRequests.append("313754")
+            if ws.cell(row=r, column=4).value.__str__() == "504000":
+                studRequests.append("3190T1")
+                studRequests.append("313754")
         r += 1
     file.write(curStud.__str__() + ", Student, " + curStud.__str__() + ", " + ws.cell(row=r-1, column=3).value.__str__() + ", " + len(studRequests).__str__() + "\n")
     for x in range(len(studRequests)):
@@ -35,3 +57,4 @@ while ws.cell(row=r, column=1).value:
     #print(curStud)
     #print(studRequests)
     curStud = ws.cell(row=r, column=1).value
+#'''
