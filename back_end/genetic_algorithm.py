@@ -254,7 +254,7 @@ class master_schedule(chromosome):
             raise ReferenceError
         score=0
         addl_score=0
-        # self.initialize_weights()
+        self.initialize_weights()
         student_base_score=0
         student_addl_score=0
         student_conflict_score=0
@@ -265,7 +265,7 @@ class master_schedule(chromosome):
             student_conflict_score+=conflicts
 
         score+=student_base_score
-        addl_score+=student_addl_score
+        # addl_score+=student_addl_score
 
         teacher_conflict_score=0
         for i in self.teachers.values():
@@ -544,7 +544,7 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score or random.random()<2**(-8*(score-new_score)):
+            if new_score>=score:# or random.random()<2**(-8*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
@@ -651,7 +651,6 @@ class hill_climb_solo_2:
                 self.current_sched.score()
                 self.current_sched.initialize_weights()
             if first_it==1 or i<10 or i % print_every == 0:
-                first_it=0
                 print('Round {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
@@ -671,14 +670,14 @@ class hill_climb_solo_2:
             print('Old:')
             old_score=self.current_sched.preliminary_score(verbose=1)
             delta_score=old_score-new_score
-            if new_score>=old_score or random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3:#10**(-5*_CLOSENESS_TO_COMPLETION)*
+            if new_score>=old_score or (first_it==0 and random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3):#10**(-5*_CLOSENESS_TO_COMPLETION)*
                 self.current_sched=new_organism
             # print('',old_score,'\n',new_score)
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
                 print('Scheduling complete.')
                 break
-
+            first_it = 0
             # if _ITERATION>420:
             #     break
 
