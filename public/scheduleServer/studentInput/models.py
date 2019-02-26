@@ -28,3 +28,21 @@ class Student(models.Model):
     student_course_request = models.ManyToManyField(Course)
     student_first_name = models.CharField(max_length = 50)
     student_last_name = models.CharField(max_length = 50)
+    
+class Teacher(models.Model):
+    def __str__(self):
+        return self.teacher_id
+    teacher_id = models.CharField(max_length = 50)
+    teacher_first_name = models.CharField(max_length = 50)
+    teacher_last_name = models.CharField(max_length = 50)
+    
+class Room(models.Model):
+    rmNum = models.IntegerField()
+
+class Section(models.Model):
+    section_id = models.CharField(max_length = 15)
+    course = models.ForeignKey(Course, on_delete = models.CASCADE)
+    teacher = models.ForeignKey(Teacher, on_delete = models.SET_NULL, null = True)
+    room = models.ForeignKey(Room, on_delete = models.SET_NULL, null = True)
+    students_num_max = models.IntegerField()
+    period = models.IntegerField()
