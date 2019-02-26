@@ -65,7 +65,7 @@ def input_sections(request):
     for num in range(1,8):
         if request.POST[str(num)]:
             course.section_set.create(
-                section_id = request.POST['section']+str(num)
+                section_id = request.POST['section']+str(num),
                 teacher = Teacher.objects.get(teacher_id = request.POST['teacher']),
                 room = Room.objects.get(rmNum = request.POST['room']),
                 student_num_max = request.POST['numStudent'],
