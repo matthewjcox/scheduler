@@ -20,6 +20,9 @@ import time
 _course_creation_disabled= 1
 # End global vars
 
+class InvalidPeriodError(Exception):
+    pass
+
 def start_logging(save):
     logging.basicConfig(filename=save+'/log.log',level=logging.DEBUG, format="%(asctime)s|%(levelname)s|{}|%(message)s".format(os.getpid()))
     logging.Formatter.converter = time.gmtime
@@ -377,17 +380,44 @@ class Section:
     def fix_period(self):
         self.period_fixed=1
 
-    def set_period(self,period,override=0):
+    def set_period(self, period, override_fixed=0,check_conflicts_team=1,reached=None,allow_randomness=0):
         if self.period==period:
             return
-        if not self.period_fixed or override:
-            self.period=period
-            for i in self.teamed2:
-                i.set_period(period,override)
-            for i in self.teamed3:
-                i.set_period(period,override)
-        else:
+        if self.period_fixed and not override_fixed:
             raise AttributeError
+        if not check_conflicts_team:
+            self.period=period
+            return
+
+        if reached==None:
+            reached=[]
+        if self in reached:
+            return
+        reached.append(self)
+
+        if period not in self.allowed_periods:
+            raise InvalidPeriodError
+
+        old_period=self.period
+        self.period=period
+        try:
+            for i in self.teachers:
+                for j in i.sched:
+                    if (self.semester==0 or j.semester==0 or self.semester==j.semester) and j not in self.teamed2:
+                        if j.period==period:
+                            j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+            for j in self.teamed1:
+                if j.period == period:
+                    j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+            for j in self.teamed2:
+                j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+            for j in self.teamed3:
+                j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+        except InvalidPeriodError:
+            self.period=old_period
+            raise
+
+
 
     def set_semester(self,sem):
         self.semester=sem

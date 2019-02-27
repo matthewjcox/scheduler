@@ -18,8 +18,7 @@ def set_global_parameters(iteration,time_el):
 
 class NotImplemented(Exception):
     pass
-class InvalidPeriodError(Exception):
-    pass
+
 class UnviableScheduleError(Exception):
     pass
 class chromosome:
@@ -115,7 +114,7 @@ class master_schedule(chromosome):
                 s.set_course(course)
                 s.set_semester(i.semester)
                 s.set_max_students(i.maxstudents)
-                s.set_period(i.period)
+                s.set_period(i.period,check_conflicts_team=0)
                 if i.period_fixed:
                     s.fix_period()
                 s.set_allowed_periods(i.allowed_periods)
@@ -156,7 +155,7 @@ class master_schedule(chromosome):
             data=cursor.execute("SELECT * FROM schedule")
             for section,students,period in data:
                 s=self.sections[section]
-                s.set_period(int(period))
+                s.set_period(int(period),check_conflicts_team=0)
                 for i in students.split('|'):
                     if i:
                         s.add_student_basic(self.students[i])
@@ -243,7 +242,7 @@ class master_schedule(chromosome):
          # = self.correct_yr_course_score_delta * len(self.stock_students) * self.num_periods
 
         self.duplicate_correct_course_score_delta = -5
-        self.rare_class_bonus = 20 * (1 - _CLOSENESS_TO_COMPLETION**2)
+        self.rare_class_bonus = 2 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-5000
         self.course_period_overlap=-10*(1-_CLOSENESS_TO_COMPLETION)**2
 
@@ -265,7 +264,7 @@ class master_schedule(chromosome):
             student_conflict_score+=conflicts
 
         score+=student_base_score
-        # addl_score+=student_addl_score
+        addl_score+=student_addl_score
 
         teacher_conflict_score=0
         for i in self.teachers.values():
@@ -544,14 +543,14 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score:# or random.random()<2**(-8*(score-new_score)):
+            if new_score>=score or random.random()<2**(-8*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
             else:
                 new_section.remove_student(student)
                 for i in old_sections:
-                    i.add_student_basic(student)
+                    i.add_student_removing_conflicts(student)
         # print(score, self.score_student(student)[0])
 
     def copy(self):
@@ -574,7 +573,7 @@ class master_schedule(chromosome):
             s.set_course(course)
             s.set_semester(i.semester)
             s.set_max_students(i.maxstudents)
-            s.set_period(i.period)
+            s.set_period(i.period,check_conflicts_team=0)
             s.set_allowed_periods(i.allowed_periods)
             if i.period_fixed:
                 s.fix_period()
@@ -655,11 +654,12 @@ class hill_climb_solo_2:
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if i%20==1:
-                for _ in range(10):
-                    for i in new_organism.students.values():
-                        new_organism.optimize_student(i, max_it=10)
+                pass
+                # for _ in range(10):
+                #     for i in new_organism.students.values():
+                #         new_organism.optimize_student(i, max_it=10)
             else:
-                num_mutations=int(1+random.random()*(1*(1-_CLOSENESS_TO_COMPLETION))) if i%20!=1 else 0
+                num_mutations=int(1+random.random()*9) if i%20!=1 else 0
                 for i in range(num_mutations):
                     new_organism.mutate_period()
                 for _ in range(10):
