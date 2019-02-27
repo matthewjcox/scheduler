@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 import os.path
 
 
-from studentInput.models import Student, Category,Course
+from studentInput.models import Student, Category,Course, Teacher, Room, Section
 # Create your views here.
 @login_required()
 def index(request):
@@ -51,6 +51,27 @@ def success(request):
     outFile.write(data.decode())
     outFile.close()
     return HttpResponseRedirect(reverse('counselorEditor:index'))#success
+    
+def sections(request):
+    return render(request,'counselorEditor/sections.html',{
+        'teacher_list':sorted(list(Teacher.objects.all()), key = lambda teacher: teacher.teacher_id),
+        'room_list':sorted(list(Room.objects.all()), key = lambda room: room.rmNum),
+        'course_list': sorted(list(Course.objects.all()), key = lambda course: course.course_id),
+    })
+    
+def input_sections(request):
+    
+    course = Course.objects.get(course_id =  request.POST['course'])
+    for num in range(1,8):
+        if request.POST[str(num)]:
+            course.section_set.create(
+                section_id = request.POST['section']+str(num),
+                teacher = Teacher.objects.get(teacher_id = request.POST['teacher']),
+                room = Room.objects.get(rmNum = request.POST['room']),
+                student_num_max = request.POST['numStudent'],
+                period = num,
+            )
+    return HttpResponseRedirect(reverse('counselorEditor:sections'))
     
 def big_red_button(request):
     return

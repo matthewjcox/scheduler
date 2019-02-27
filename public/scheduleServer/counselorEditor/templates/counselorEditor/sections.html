@@ -1,0 +1,78 @@
+<style>
+    body {
+        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
+        /*
+        Grey-themed background
+        background-image: linear-gradient(grey,white)
+        
+        Colorful background
+        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
+        */
+    }
+</style>
+<h1>
+<a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
+    <br>
+</h1>
+<body>
+{#Note to Young: all menu items should be in alphabetical order, except room numbers which should be numerical (e.g. 83 goes before 101. Make sure this still has, e.g., 83B before 101A)#}
+{# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> #}
+<form>
+    Section #: <input type = "text" name = "section"><br><br>
+    Course #: <select name = "course">
+        
+        {% for course in course_list %}
+            <option value = "{{course.course_id}}">{{course.course_id}} {{course.course_name}}</option>
+        {% endfor %}
+        
+        {% comment %}
+        <option>121100 Journalism 3</option>
+        <option>3190T4 Research Stat 1</option>
+        <option>4220T1 Geosystems</option>
+        <option>4310T1 Biology 1</option>
+        <option>552000 Spanish 2</option>
+        <option>9826T8 Aut/Rob-Systems</option>
+        {% endcomment %}
+    </select><br><br>
+    Teacher: <select multiple name = "teacher">
+        
+        {% for teacher in teacher_list %}
+            <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
+        {% endfor %}
+        
+        {% comment %}
+        <option>dteacher - Teacher, Dummy</option>
+        <option>akbailey - Bailey, Allison K.</option>
+        <option>anbonitatibu - Bonitatibus, Ann N.</option>
+        <option>awforeman - Foreman, Adam W.</option>
+        <option>mbkochman - Kochman, Mary B.</option>
+        <option>mhmiller - Miller, Michael H.</option>
+        {% endcomment %}
+    </select><br><br>
+    Room: <select name = "room">
+        
+        {% for room in room_list %}
+            <option value = "{{room.rmNum}}">{{room.rmNum}}</option>
+        {% endfor %}
+        
+        {% comment %}
+        <option>83</option>
+        <option>101</option>
+        <option>104</option>
+        <option>207</option>
+        <option>221B</option>
+        <option>247</option>
+        {% endcomment %}
+    </select><br><br>
+    Max students: <input type="number" min="0" value="30" name = "numStudent"><br><br>
+    Allowed periods:<br>
+    <button>All</button><button>None</button><button>Blue day</button><button>Red day</button><br>
+    {% for n in "x"|rjust:7 %}
+    <input type="checkbox" name = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
+    {% endfor %}
+    <br>
+
+    <button>Submit</button>
+
+</form>
+</body>
