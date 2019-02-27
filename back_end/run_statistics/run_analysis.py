@@ -36,7 +36,7 @@ courses = {course[2]:course[:2] for course in [[thing.strip() for thing in line.
 # Opens the file with run information to analyze
 file = open(toInterpret, 'r')
 
-# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [teamed courses], (9) [allowed periods]].
+# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [team_1], (9) [team_2], (10) [team_3], (11) [allowed_periods], (12) term].
 sections = {}
 
 numSections = int(file.readline()[:-1])
@@ -44,26 +44,40 @@ numSections = int(file.readline()[:-1])
 for x in range(numSections):
     # Reads the data with the sectionID and stores it in "section" as a string.
     line = file.readline()[2:-1]
-    section = re.search('[0-9]+', line).group(0)
+    print(line)
+    tempLine = line.split(": ")[1].strip()
+    section = tempLine
     # Adds sectionID to the list associated with sectionID. Redundant, but useful for for-loops that loop over items in sections.values().
     # Also adds period to sections[section] as an int.
     sections[section] = [section, int(file.readline()[10])]
-    # Temporarily store allowable periods (add to the end as the final index)
+    # Temporarily store allowable periods (add to the end as the second to last index)
     nextLine = file.readline()
     if "Allowed periods" in nextLine:
-        temp = re.search(r'[0-9][0-9, ]+', nextLine).group(0).split(",")
-        print(temp)
+        temp = re.search(r'[0-9][0-9, ]*', nextLine).group(0).split(",")
         nextLine = file.readline()
-        print(nextLine)
     else:
         temp = []
-    # ADD SEMESTER READING IN AND SHOVE ON END OF SECTIONS!!!!!!
+    # Reads semester and stores it in sem to add to end of list
+    if "Semester" in nextLine:
+        semTemp = re.search(r'year|1|2', nextLine).group(0)
+        if semTemp == "year":
+            sem = "0"
+        else:
+            sem = semTemp
+        nextLine = file.readline()
+    else:
+        sem = None
     # Adds max students to sections[section] as an int.
     sections[section].append(int(nextLine[21:-1]))
     # Adds courseID to sections[section] as a string.
     sections[section].append(re.search(r'[0-9A-Z&]+', file.readline()[13:-1]).group(0))
+    print(sections[section][-1])
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
-    sections[section].append([re.search(r'\(.+\)', curLine).group(0)[1:-1] for curLine in file.readline()[14:-1].split(", ")])
+    tempLine = file.readline()
+    if re.search(r'\([A-Za-z]+\)', tempLine.split(": ")[1].split(", ")[0]):
+        sections[section].append([re.search(r'\([A-Za-z]+\)', k).group(0)[1:-1] for k in tempLine.split(": ")[1].split(", ")])
+    else:
+        sections[section].append([])
     # Adds room to section[sections] as a string.
     sections[section].append(file.readline()[16:-1])
     # Reads line with student data. Stored so as to be able to access multiple times.
@@ -79,16 +93,32 @@ for x in range(numSections):
     # Reads the next line to check if it has teaming data.
     nextLine = file.readline()
     # If the next line has teaming data, adds teaming data to sections[section] as list of strings of section IDs/
-    if re.search('Teamed with:', nextLine):
-        sections[section].append([re.search('[0-9]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
-        file.readline()
+    if re.search('Teamed 1 with:', nextLine):
+        #sections[section].append([re.search('[0-9\-A-Z]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
+        sections[section].append([curLine.split(" ")[1][:-1] for curLine in nextLine[17:-1].split(", ")])
+        nextLine = file.readline()
     # If next line does not have teaming data, adds an empty list to sections[section] to represent no teaming.
     else:
         sections[section].append([])
+    if re.search('Teamed 2 with:', nextLine):
+        #sections[section].append([re.search(r'[0-9\-A-Z]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
+        print(nextLine[17:-1].split(", ")[0].split(" "))
+        sections[section].append([curLine.split(" ")[1][:-1] for curLine in nextLine[17:-1].split(", ")])
+        nextLine = file.readline()
+    else:
+        sections[section].append([])
+    if re.search('Teamed 3 with:', nextLine):
+        #sections[section].append([re.search(r'[0-9\-A-Z]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
+        sections[section].append([curLine.split(" ")[1][:-1] for curLine in nextLine[17:-1].split(", ")])
+        nextLine = file.readline()
+    else:sections[section].append([])
     # Adds list of allowed periods.
     sections[section].append(temp)
+    # Adds term
+    if sem:
+        sections[section].append(sem)
     # Prints sections[section] for debugging.
-    # print(sections[section])
+    print(sections[section])
 
 # students is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
 studentScheds = {}
@@ -102,7 +132,7 @@ for x in range(numStuds):
     studentScheds[curStud] = [curStud, [], [], []]
     nextLine = file.readline()
     while not re.search('Alternates:', nextLine):
-        studentScheds[curStud][1].append(re.search(r'\w*(?= )', nextLine).group(0))
+        studentScheds[curStud][1].append(nextLine.split(" ")[1])
         nextLine = file.readline()
     nextLine = file.readline()
     while not re.search('None', nextLine) and not re.search('Schedule:', nextLine):
@@ -112,13 +142,15 @@ for x in range(numStuds):
         file.readline()
     nextLine = file.readline()
     while not nextLine == "\n":
-        studentScheds[curStud][3].append(re.search(r'\w*(?=:)', nextLine[9:]).group(0))
+        studentScheds[curStud][3].append(nextLine.split(" ")[1][:-1])
         nextLine = file.readline()
     #print(studentScheds[curStud])
 
 for student in studentScheds.values():
+    #print(student)
     student.append([])
     for section in student[3]:
+        #print(section)
         student[4].append(sections[section][3])
     #print(student)
 
@@ -132,6 +164,7 @@ statFile.write("Empty seats: " + emptySeats.__str__() + "\n")
 statFile.write("Number of empty spots in student schedules: " + (emptySeats-theoreticalEmptySeats).__str__() + "\n")
 
 # Make list of all students who have empty spots in schedules
+raise Exception("This number is inaccurate because it doesn't account for semester classes. Fix!")
 studentsWithHoles = []
 for student in studentScheds.values():
     if len(student[3]) < int(runParams[0]):
@@ -201,15 +234,19 @@ else:
     statFile.write("None\n")
 
 # Check that teaming works (calculates the number of students in some but not all of a set of teamed sections)
+print("\n")
 teamMistakes = 0
 checked = set()
 for sect in sections.values():
+    print()
+    print(sect)
     if sect[0] in checked:
         continue
     teamed = set()
     # This is finite. Should rewrite to be recursive if teaming grows beyond 3 sections.
     for sec in sect[8]:
         teamed.add(sec)
+        print(sec)
         for s in sections[sec][8]:
             teamed.add(s)
     sharedStuds = {}

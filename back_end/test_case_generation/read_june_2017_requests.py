@@ -1,8 +1,8 @@
 from openpyxl import load_workbook
 import re
 
-# EDIT SO THAT ARABICS ARE TRANSLATED TO TWO SEMESTER MATH COURSES!!
-#raise Exception("Didn't implement above change")
+# Handle 280292 (semester) to 280493 (year).
+raise Exception("Didn't implement above change")
 
 wb = load_workbook(filename='../../runs/constraint_files/6-1-17@1430.xlsx')
 ws = wb['Sheet1']
