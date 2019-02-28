@@ -42,7 +42,7 @@ class Room(models.Model):
 class Section(models.Model):
     section_id = models.CharField(max_length = 15)
     course = models.ForeignKey(Course, on_delete = models.CASCADE)
-    teacher = models.ForeignKey(Teacher, on_delete = models.SET_NULL, null = True)
+    teachers = models.ManyToManyField(Teacher)
     room = models.ForeignKey(Room, on_delete = models.SET_NULL, null = True)
     students_num_max = models.IntegerField()
     period = models.IntegerField()

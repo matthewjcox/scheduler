@@ -16,9 +16,9 @@
 </h1>
 <body>
 {#Note to Young: all menu items should be in alphabetical order, except room numbers which should be numerical (e.g. 83 goes before 101. Make sure this still has, e.g., 83B before 101A)#}
-{# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> #}
+{# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> </form>#}
 <form>
-    Section #: <input type = "text" name = "section"><br><br>
+    {# Section #: <input type = "text" name = "section"><br><br> #}
     Course #: <select name = "course">
         
         {% for course in course_list %}
@@ -34,11 +34,22 @@
         <option>9826T8 Aut/Rob-Systems</option>
         {% endcomment %}
     </select><br><br>
+    
+    {% comment %}
     Teacher: <select multiple name = "teacher">
-        
         {% for teacher in teacher_list %}
             <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
         {% endfor %}
+        
+    </select>
+    {% endcomment %}
+        
+        
+    Teacher: <select name = "teacher">
+        {% for teacher in teacher_list %}
+            <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
+        {% endfor %}
+        
         
         {% comment %}
         <option>dteacher - Teacher, Dummy</option>
@@ -66,13 +77,55 @@
     </select><br><br>
     Max students: <input type="number" min="0" value="30" name = "numStudent"><br><br>
     Allowed periods:<br>
-    <button>All</button><button>None</button><button>Blue day</button><button>Red day</button><br>
+    <button onclick = "ALL()" type = "button">All</button><button onclick = "NONE()" type = "button">None</button><button onclick = "BLUE()" type = "button">Blue day</button><button onclick = "RED()" type = "button">Red day</button><br>
     {% for n in "x"|rjust:7 %}
-    <input type="checkbox" name = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
+    <input type="checkbox" name = "{{ forloop.counter }}" id = "{{ forloop.counter }}" value = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
     {% endfor %}
     <br>
 
-    <button>Submit</button>
+    <button type = "submit" onclick = "confirm()">Submit</button>
+
+<script>
+    function confirm(){
+        alert("submission successful");
+    }
+    function ALL() {
+        document.getElementById("1").checked = true;
+        document.getElementById("2").checked = true;
+        document.getElementById("3").checked = true;
+        document.getElementById("4").checked = true;
+        document.getElementById("5").checked = true;
+        document.getElementById("6").checked = true;
+        document.getElementById("7").checked = true;
+    }
+    function NONE() {
+        document.getElementById("1").checked = false;
+        document.getElementById("2").checked = false;
+        document.getElementById("3").checked = false;
+        document.getElementById("4").checked = false;
+        document.getElementById("5").checked = false;
+        document.getElementById("6").checked = false;
+        document.getElementById("7").checked = false;
+    }
+    function RED() {
+        document.getElementById("1").checked = false;
+        document.getElementById("2").checked = false;
+        document.getElementById("3").checked = false;
+        document.getElementById("4").checked = false;
+        document.getElementById("5").checked = true;
+        document.getElementById("6").checked = true;
+        document.getElementById("7").checked = true;
+    }
+    function BLUE() {
+        document.getElementById("1").checked = true;
+        document.getElementById("2").checked = true;
+        document.getElementById("3").checked = true;
+        document.getElementById("4").checked = true;
+        document.getElementById("5").checked = false;
+        document.getElementById("6").checked = false;
+        document.getElementById("7").checked = false;
+    }
+</script>
 
 </form>
 </body>

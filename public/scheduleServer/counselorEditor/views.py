@@ -60,6 +60,9 @@ def sections(request):
     })
     
 def input_sections(request):
+    return render((request, "counselorEditor/info.html", {
+        'info':request.POST,
+    }))
     
     course = Course.objects.get(course_id =  request.POST['course'])
     for num in range(1,8):
@@ -71,7 +74,9 @@ def input_sections(request):
                 student_num_max = request.POST['numStudent'],
                 period = num,
             )
+    
     return HttpResponseRedirect(reverse('counselorEditor:sections'))
+    
     
 def big_red_button(request):
     return
