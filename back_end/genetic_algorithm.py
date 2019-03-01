@@ -559,6 +559,12 @@ class master_schedule(chromosome):
         for i in self.sections.values():
             s=Section(i.id)
             sched.sections[s.id] = s
+            course = self.stock_courses[i.course.courseID]
+            s.set_course(course)
+            s.set_semester(i.semester)
+            s.set_max_students(i.maxstudents)
+            s.set_period(i.period, check_conflicts_team=0)
+            s.set_allowed_periods(i.allowed_periods)
             for j in i.teachers:
                 teacher = sched.teachers[j.teacherID]
                 s.add_teacher(teacher)
@@ -569,12 +575,7 @@ class master_schedule(chromosome):
                 classroom = sched.classrooms[j.num]
                 s.add_classroom(classroom)
 
-            course = self.stock_courses[i.course.courseID]
-            s.set_course(course)
-            s.set_semester(i.semester)
-            s.set_max_students(i.maxstudents)
-            s.set_period(i.period,check_conflicts_team=0)
-            s.set_allowed_periods(i.allowed_periods)
+
             if i.period_fixed:
                 s.fix_period()
             for j in i.teamed1:
@@ -583,6 +584,8 @@ class master_schedule(chromosome):
                 sched.teams2.append((s, j.id))
             for j in i.teamed3:
                 sched.teams3.append((s, j.id))
+            # for j in i.students:
+            #     i.add_student_basic(j)
         for i, j in sched.teams1:
             other = sched.sections[j]
             if other not in i.teamed1:
@@ -654,12 +657,11 @@ class hill_climb_solo_2:
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if i%20==1:
-                pass
-                # for _ in range(10):
-                #     for i in new_organism.students.values():
-                #         new_organism.optimize_student(i, max_it=10)
+                for _ in range(10):
+                    for i in new_organism.students.values():
+                        new_organism.optimize_student(i, max_it=10)
             else:
-                num_mutations=int(1+random.random()*9) if i%20!=1 else 0
+                num_mutations=int(1+random.random()*9) #if i%20!=1 else 0
                 for i in range(num_mutations):
                     new_organism.mutate_period()
                 for _ in range(10):
