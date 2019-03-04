@@ -17,7 +17,8 @@
 <body>
 {#Note to Young: all menu items should be in alphabetical order, except room numbers which should be numerical (e.g. 83 goes before 101. Make sure this still has, e.g., 83B before 101A)#}
 {# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> </form>#}
-<form>
+<form action="{% url 'counselorEditor:input_sections' %}" method="post">
+{% csrf_token %}
     {# Section #: <input type = "text" name = "section"><br><br> #}
     Course #: <select name = "course">
         
@@ -45,7 +46,7 @@
     {% endcomment %}
         
         
-    Teacher: <select name = "teacher">
+    Teacher: <select multiple name = "teacher">
         {% for teacher in teacher_list %}
             <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
         {% endfor %}
@@ -79,12 +80,12 @@
     Allowed periods:<br>
     <button onclick = "ALL()" type = "button">All</button><button onclick = "NONE()" type = "button">None</button><button onclick = "BLUE()" type = "button">Blue day</button><button onclick = "RED()" type = "button">Red day</button><br>
     {% for n in "x"|rjust:7 %}
-    <input type="checkbox" name = "{{ forloop.counter }}" id = "{{ forloop.counter }}" value = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
+    <input type="checkbox" name = "period" id = "{{ forloop.counter }}" value = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
     {% endfor %}
     <br>
 
-    <button type = "submit" onclick = "confirm()">Submit</button>
-
+    <button type = "submit">Submit</button>
+</form>
 <script>
     function confirm(){
         alert("submission successful");
@@ -127,5 +128,4 @@
     }
 </script>
 
-</form>
 </body>

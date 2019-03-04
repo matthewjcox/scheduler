@@ -60,20 +60,17 @@ def sections(request):
     })
     
 def input_sections(request):
-    return render((request, "counselorEditor/info.html", {
-        'info':request.POST,
-    }))
     
     course = Course.objects.get(course_id =  request.POST['course'])
-    for num in range(1,8):
-        if request.POST[str(num)]:
-            course.section_set.create(
-                section_id = request.POST['section']+str(num),
-                teacher = Teacher.objects.get(teacher_id = request.POST['teacher']),
-                room = Room.objects.get(rmNum = request.POST['room']),
-                student_num_max = request.POST['numStudent'],
-                period = num,
-            )
+    for num in request.POST.getlist('period'):
+        c = course.section_set.create(
+            section_id = request.POST['section']+str(num),
+            room = Room.objects.get(rmNum = request.POST['room']),
+            student_num_max = request.POST['numStudent'],
+            period = num,
+        )
+        for teacher in request.POST.getlist('teacher'):
+            c.teachers.add(Teacher.objects.get(teacher_id = teacher))
     
     return HttpResponseRedirect(reverse('counselorEditor:sections'))
     

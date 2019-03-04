@@ -18189,3 +18189,168 @@ IndentationError: unexpected indent
 [2019-03-04 10:06:36 -0500] [16475] [INFO] Booting worker with pid: 16475
 [2019-03-04 10:06:36 -0500] [16476] [INFO] Booting worker with pid: 16476
 [2019-03-04 10:06:36 -0500] [16478] [INFO] Booting worker with pid: 16478
+Forbidden (CSRF token missing or incorrect.): /counselorEditor/input_sections/
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 64, in input_sections
+    'info':request.POST,
+TypeError: render() missing 1 required positional argument: 'template_name'
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 64, in input_sections
+    'info':request.POST,
+TypeError: render() missing 1 required positional argument: 'template_name'
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 64, in input_sections
+    'info':request.POST,
+TypeError: render() missing 1 required positional argument: 'template_name'
+[2019-03-04 15:15:07 +0000] [16476] [INFO] Worker exiting (pid: 16476)
+[2019-03-04 15:15:07 +0000] [16475] [INFO] Worker exiting (pid: 16475)
+[2019-03-04 15:15:07 +0000] [16478] [INFO] Worker exiting (pid: 16478)
+[2019-03-04 15:15:07 +0000] [16474] [INFO] Worker exiting (pid: 16474)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-04 10:15:07 -0500] [16458] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-04 10:15:09 -0500] [19921] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 10:15:09 -0500] [19921] [INFO] Listening at: http://127.0.0.1:11356 (19921)
+[2019-03-04 10:15:09 -0500] [19921] [INFO] Using worker: sync
+[2019-03-04 10:15:09 -0500] [19928] [INFO] Booting worker with pid: 19928
+[2019-03-04 10:15:09 -0500] [19929] [INFO] Booting worker with pid: 19929
+[2019-03-04 10:15:09 -0500] [19932] [INFO] Booting worker with pid: 19932
+[2019-03-04 10:15:09 -0500] [19933] [INFO] Booting worker with pid: 19933
+[2019-03-04 15:22:20 +0000] [19928] [INFO] Worker exiting (pid: 19928)
+[2019-03-04 15:22:20 +0000] [19929] [INFO] Worker exiting (pid: 19929)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-04 15:22:20 +0000] [19933] [INFO] Worker exiting (pid: 19933)
+[2019-03-04 15:22:20 +0000] [19932] [INFO] Worker exiting (pid: 19932)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-04 10:22:21 -0500] [10938] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 10:22:21 -0500] [10938] [INFO] Listening at: http://127.0.0.1:11356 (10938)
+[2019-03-04 10:22:21 -0500] [10938] [INFO] Using worker: sync
+[2019-03-04 10:22:21 -0500] [10948] [INFO] Booting worker with pid: 10948
+[2019-03-04 10:22:22 -0500] [10949] [INFO] Booting worker with pid: 10949
+[2019-03-04 10:22:22 -0500] [10952] [INFO] Booting worker with pid: 10952
+[2019-03-04 10:22:22 -0500] [10953] [INFO] Booting worker with pid: 10953
+Internal Server Error: /counselorEditor/sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 24, in <module>
+    path('counselorEditor/', include('counselorEditor.urls'), name = 'counselorEditor'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/urls.py", line 3, in <module>
+    from . import views
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 65
+    temp++
+         ^
+SyntaxError: invalid syntax
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 67, in input_sections
+    'info':request.POST+str(temp),
+TypeError: unsupported operand type(s) for +: 'QueryDict' and 'str'
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 67, in input_sections
+    })
+TypeError: unsupported operand type(s) for +: 'QueryDict' and 'str'
+[2019-03-04 15:23:37 +0000] [10948] [INFO] Worker exiting (pid: 10948)
+[2019-03-04 15:23:37 +0000] [10952] [INFO] Worker exiting (pid: 10952)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-04 10:23:37 -0500] [10938] [INFO] Handling signal: term
+[2019-03-04 15:23:37 +0000] [10953] [INFO] Worker exiting (pid: 10953)
+[2019-03-04 15:23:37 +0000] [10949] [INFO] Worker exiting (pid: 10949)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-04 10:23:38 -0500] [11248] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 10:23:38 -0500] [11248] [INFO] Listening at: http://127.0.0.1:11356 (11248)
+[2019-03-04 10:23:38 -0500] [11248] [INFO] Using worker: sync
+[2019-03-04 10:23:38 -0500] [11255] [INFO] Booting worker with pid: 11255
+[2019-03-04 10:23:38 -0500] [11256] [INFO] Booting worker with pid: 11256
+[2019-03-04 10:23:38 -0500] [11259] [INFO] Booting worker with pid: 11259
+[2019-03-04 10:23:38 -0500] [11260] [INFO] Booting worker with pid: 11260
+[2019-03-04 15:27:03 +0000] [11260] [INFO] Worker exiting (pid: 11260)
+[2019-03-04 15:27:03 +0000] [11259] [INFO] Worker exiting (pid: 11259)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-04 10:27:03 -0500] [11248] [INFO] Handling signal: term
+[2019-03-04 15:27:03 +0000] [11255] [INFO] Worker exiting (pid: 11255)
+[2019-03-04 15:27:03 +0000] [11256] [INFO] Worker exiting (pid: 11256)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-04 10:27:04 -0500] [12476] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 10:27:04 -0500] [12476] [INFO] Listening at: http://127.0.0.1:11356 (12476)
+[2019-03-04 10:27:04 -0500] [12476] [INFO] Using worker: sync
+[2019-03-04 10:27:04 -0500] [12483] [INFO] Booting worker with pid: 12483
+[2019-03-04 10:27:05 -0500] [12485] [INFO] Booting worker with pid: 12485
+[2019-03-04 10:27:05 -0500] [12486] [INFO] Booting worker with pid: 12486
+[2019-03-04 10:27:05 -0500] [12488] [INFO] Booting worker with pid: 12488
