@@ -22,5 +22,5 @@ with open("runs/past_runs/2019_03_01__20_09_06/log.log") as f:
 # print(dynscores)
 # print(statscores)
 
-plt.plot(rounds,dynscores)
+plt.plot(rounds,statscores)
 plt.show()
