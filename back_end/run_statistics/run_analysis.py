@@ -44,7 +44,7 @@ numSections = int(file.readline()[:-1])
 for x in range(numSections):
     # Reads the data with the sectionID and stores it in "section" as a string.
     line = file.readline()[2:-1]
-    print(line)
+    # print(line)
     tempLine = line.split(": ")[1].strip()
     section = tempLine
     # Adds sectionID to the list associated with sectionID. Redundant, but useful for for-loops that loop over items in sections.values().
@@ -71,7 +71,7 @@ for x in range(numSections):
     sections[section].append(int(nextLine[21:-1]))
     # Adds courseID to sections[section] as a string.
     sections[section].append(re.search(r'[0-9A-Z&]+', file.readline()[13:-1]).group(0))
-    print(sections[section][-1])
+    # print(sections[section][-1])
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
     tempLine = file.readline()
     if re.search(r'\([A-Za-z]+\)', tempLine.split(": ")[1].split(", ")[0]):
@@ -102,7 +102,7 @@ for x in range(numSections):
         sections[section].append([])
     if re.search('Teamed 2 with:', nextLine):
         #sections[section].append([re.search(r'[0-9\-A-Z]+', curLine).group(0) for curLine in nextLine[15:-1].split(", ")])
-        print(nextLine[17:-1].split(", ")[0].split(" "))
+        # print(nextLine[17:-1].split(", ")[0].split(" "))
         sections[section].append([curLine.split(" ")[1][:-1] for curLine in nextLine[17:-1].split(", ")])
         nextLine = file.readline()
     else:
@@ -118,7 +118,7 @@ for x in range(numSections):
     if sem:
         sections[section].append(sem)
     # Prints sections[section] for debugging.
-    print(sections[section])
+    # print(sections[section])
 
 # students is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
 studentScheds = {}
@@ -157,14 +157,15 @@ for student in studentScheds.values():
 # Creates a statistic file named for the file plus _stats
 statFile = open(toInterpret[:-4] + "_stats.txt", "w")
 
-theoreticalEmptySeats = (sum([sect[2] for sect in sections.values()]) - numStuds*7)
+theoreticalEmptySeats = (sum([sect[2] for sect in sections.values()]) - numStuds*sum([len(stud[1]) for stud in studentScheds.values()]))
 statFile.write("Minimum Empty Seats: " + theoreticalEmptySeats.__str__() + "\n")
 emptySeats = sum([sect[2]-sect[6] for sect in sections.values()])
 statFile.write("Empty seats: " + emptySeats.__str__() + "\n")
 statFile.write("Number of empty spots in student schedules: " + (emptySeats-theoreticalEmptySeats).__str__() + "\n")
+#raise Exception("This number is inaccurate because it doesn't account for semester classes. Fix!")
 
 # Make list of all students who have empty spots in schedules
-raise Exception("This number is inaccurate because it doesn't account for semester classes. Fix!")
+# This is incorrect due to semesters. Just so you know.
 studentsWithHoles = []
 for student in studentScheds.values():
     if len(student[3]) < int(runParams[0]):
@@ -178,15 +179,19 @@ unrecievedCourses = {}
 for student in studentScheds.values():
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
-    fulfilledRequests += len(student[1]) - len(unfulfilledSet)
+    fulfilledRequests += (len(student[1]) - len(unfulfilledSet))
     for sect in unfulfilledSet:
-        if sect in unfulfilledSet:
+        if not sect in unrecievedCourses.keys():
             unrecievedCourses[sect] = 0
         unrecievedCourses[sect] += 1
 percentFulfilled = (fulfilledRequests/totalRequests*100).__str__() + "%"
 statFile.write("Percentage of Course Requests Fulfilled: " + percentFulfilled + "\n")
 
 # Calculate number of student conflicts (number of periods during which one student has two sections)
+# Semester conflicts should count as half a conflict
+'''
+BELOW IS OLD CODE FOR STUDENT CONFLICTS. Does not work for data with semester classes.
+raise Exception("This doesn't handle semesters or teaming. Should have 0 student conlficts on 2019_02_27__19_17_13")
 studentConflicts = 0
 studentsWithConflicts = []
 for student in studentScheds.values():
@@ -206,8 +211,35 @@ if studentsWithConflicts:
     statFile.write( ", ".join(studentsWithConflicts) + "\n")
 else:
     statFile.write("None\n")
+'''
+# Sections is a dictionary of sectionID:[(0) secionID, (1) period, (2) maxStudents, (3) courseID, (4) [teacherIDs], (5) room, (6) classSize, (7) [students], (8) [team_1], (9) [team_2], (10) [team_3], (11) [allowed_periods], (12) term].
+# studentScheds is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
+studentConflicts = 0
+studentsWithConflicts = set()
+for student in studentScheds.values():
+    periods = {t: {1: [], 2: []} for t in range(1,8)}
+    for sect in student[3]:
+        if sections[sect][12] == "0" or sections[sect][12] == "1":
+            periods[sections[sect][1]][1].append(sect)
+        if sections[sect][12] == "0" or sections[sect][12] == "2":
+            periods[sections[sect][1]][2].append(sect)
+    for t in range(1,8):
+        for l in range(1,3):
+            if len(periods[t][l]) > 1:
+                studentConflicts += 0.5
+                studentsWithConflicts.add(student)
+statFile.write("Number of student conflicts: " + studentConflicts.__str__() + "\n")
+statFile.write("Students with conflicts: ")
+if studentsWithConflicts:
+    statFile.write( ", ".join(studentsWithConflicts) + "\n")
+else:
+    statFile.write("None\n")
 
 # Calculate number of teacher conflicts (number of periods during which one teacher has two sections)
+# Semester conflicts should count as half a conflict.
+'''
+OLD CODE
+raise Exception("This doesn't handle semesters or teaming. Should have 0 teacher conlficts on 2019_02_27__19_17_13")
 teacherCons = {}
 for sect in sections.values():
     for teacher in sect[4]:
@@ -222,6 +254,35 @@ for teacher in teacherCons.keys():
         if not period in periods.keys():
             periods[period] = 0
         periods[period] += 1
+    newConflicts = sum([0 if period <= 1 else 1 for period in periods.values()])
+    teacherConflicts += newConflicts
+    if newConflicts > 0:
+        teachersWithCons.append(teacher)
+statFile.write("Number of teacher conflicts: " + teacherConflicts.__str__() + "\n")
+statFile.write("Teachers with conflicts: ")
+if teachersWithCons:
+    statFile.write(", ".join(teachersWithCons) + "\n")
+else:
+    statFile.write("None\n")'''
+
+raise Exception("This doesn't handle semesters or teaming. Should have 0 teacher conlficts on 2019_02_27__19_17_13")
+teacherCons = {}
+for sect in sections.values():
+    for teacher in sect[4]:
+        if not teacher in teacherCons.keys():
+            teacherCons[teacher] = []
+        teacherCons[teacher].append(sect[0])
+teachersWithCons = []
+teacherConflicts = 0
+for teacher in teacherCons.keys():
+    periods = {t:{1:[], 2:[]} for t in range(1,8)}
+    for sect in teacherCons[teacher]:
+        if sections[sect][12] == "0" or sections[sect][12] == "1":
+            periods[sections[sect][1]].append(sect)
+        if sections[sect][12] == "0" or sections[sect][12] == "2":
+            periods[sections[sect][2]].append(sect)
+
+    # Below is unedited and must be edited to accomodate semesters
     newConflicts = sum([0 if period <= 1 else 1 for period in periods.values()])
     teacherConflicts += newConflicts
     if newConflicts > 0:

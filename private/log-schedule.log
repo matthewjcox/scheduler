@@ -18136,3 +18136,56 @@ IndentationError: unexpected indent
 [2019-02-28 12:01:20 -0500] [26320] [INFO] Booting worker with pid: 26320
 [2019-02-28 12:01:20 -0500] [26321] [INFO] Booting worker with pid: 26321
 [2019-02-28 12:01:20 -0500] [26325] [INFO] Booting worker with pid: 26325
+\n\n\n starting new server run \n
+[2019-03-01 14:16:06 -0500] [2987] [INFO] Starting gunicorn 19.9.0
+[2019-03-01 14:16:06 -0500] [2987] [INFO] Listening at: http://127.0.0.1:11356 (2987)
+[2019-03-01 14:16:06 -0500] [2987] [INFO] Using worker: sync
+[2019-03-01 14:16:06 -0500] [2990] [INFO] Booting worker with pid: 2990
+[2019-03-01 14:16:06 -0500] [2991] [INFO] Booting worker with pid: 2991
+[2019-03-01 14:16:06 -0500] [2995] [INFO] Booting worker with pid: 2995
+[2019-03-01 14:16:06 -0500] [2996] [INFO] Booting worker with pid: 2996
+[2019-03-01 20:01:32 +0000] [2995] [INFO] Worker exiting (pid: 2995)
+[2019-03-01 15:01:32 -0500] [2987] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-03-01 20:01:32 +0000] [2996] [INFO] Worker exiting (pid: 2996)
+[2019-03-01 20:01:32 +0000] [2991] [INFO] Worker exiting (pid: 2991)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-01 20:01:32 +0000] [2990] [INFO] Worker exiting (pid: 2990)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-01 15:01:33 -0500] [19960] [INFO] Starting gunicorn 19.9.0
+[2019-03-01 15:01:33 -0500] [19960] [INFO] Listening at: http://127.0.0.1:11356 (19960)
+[2019-03-01 15:01:33 -0500] [19960] [INFO] Using worker: sync
+[2019-03-01 15:01:33 -0500] [19979] [INFO] Booting worker with pid: 19979
+[2019-03-01 15:01:33 -0500] [19980] [INFO] Booting worker with pid: 19980
+[2019-03-01 15:01:33 -0500] [19981] [INFO] Booting worker with pid: 19981
+[2019-03-01 15:01:33 -0500] [19982] [INFO] Booting worker with pid: 19982
+[2019-03-01 20:12:07 +0000] [19982] [INFO] Worker exiting (pid: 19982)
+[2019-03-01 20:12:07 +0000] [19981] [INFO] Worker exiting (pid: 19981)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-01 15:12:07 -0500] [19960] [INFO] Handling signal: term
+[2019-03-01 20:12:07 +0000] [19980] [INFO] Worker exiting (pid: 19980)
+[2019-03-01 20:12:07 +0000] [19979] [INFO] Worker exiting (pid: 19979)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-01 15:12:08 -0500] [23362] [INFO] Starting gunicorn 19.9.0
+[2019-03-01 15:12:08 -0500] [23362] [INFO] Listening at: http://127.0.0.1:11356 (23362)
+[2019-03-01 15:12:08 -0500] [23362] [INFO] Using worker: sync
+[2019-03-01 15:12:08 -0500] [23366] [INFO] Booting worker with pid: 23366
+[2019-03-01 15:12:08 -0500] [23367] [INFO] Booting worker with pid: 23367
+[2019-03-01 15:12:08 -0500] [23369] [INFO] Booting worker with pid: 23369
+[2019-03-01 15:12:08 -0500] [23372] [INFO] Booting worker with pid: 23372
+[2019-03-04 15:06:35 +0000] [23372] [INFO] Worker exiting (pid: 23372)
+/web/projects/schedule/public/scheduleServer
+[2019-03-04 10:06:35 -0500] [23362] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-03-04 10:06:36 -0500] [16458] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 10:06:36 -0500] [16458] [INFO] Listening at: http://127.0.0.1:11356 (16458)
+[2019-03-04 10:06:36 -0500] [16458] [INFO] Using worker: sync
+[2019-03-04 10:06:36 -0500] [16474] [INFO] Booting worker with pid: 16474
+[2019-03-04 10:06:36 -0500] [16475] [INFO] Booting worker with pid: 16475
+[2019-03-04 10:06:36 -0500] [16476] [INFO] Booting worker with pid: 16476
+[2019-03-04 10:06:36 -0500] [16478] [INFO] Booting worker with pid: 16478
