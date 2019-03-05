@@ -1,12 +1,12 @@
 {% include "counselorEditor/search.html"%}
 
-<form action="{% url 'counselorEditor:search' %}" method="post">
+<form action="{% url 'counselorEditor:submit' %}" method="post">
 {% csrf_token %}
 <br>
 {% for course in course_list %}
     Course {{ forloop.counter }}:
-    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course.course_id}}" onblur="displayCourseName({{ forloop.counter }}, this.value)">
-    <div id="name{{ forloop.counter }}" style="display:inline-block">Course Name</div>
+    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course.course_id}}" onchange="displayCourseName({{ forloop.counter }}, this.value)">
+    <div id="name{{ forloop.counter }}" style="display:inline-block">{{course.course_name}}</div>
     <br>
 {% endfor %}
 <input type="hidden" name="username" value="{{student}}">
@@ -23,14 +23,13 @@
     {% endfor %}
     
     function displayCourseName(numCourse, value){
-        document.getElementById("name" + numCourse).innerHTML = "test";
         if (courseDict[value]){
-            document.getElementById("name" + numCourse).innerHTML = "success!";
             document.getElementById("name" + numCourse).innerHTML = courseDict[value];
         }else{
             document.getElementById("name" + numCourse).innerHTML = "Error: Invalid Course ID";
         }
     }
+    
 </script>
 
 

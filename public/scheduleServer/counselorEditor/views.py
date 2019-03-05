@@ -5,6 +5,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import os.path
 
+numCoursesSelected = 7
 
 from studentInput.models import Student, Category,Course, Teacher, Room, Section
 # Create your views here.
@@ -17,6 +18,31 @@ def index(request):
 
 def search(request):
     return render(request, 'counselorEditor/search.html')
+
+def submit(request):
+    try:
+        student = Student.objects.get(student_id = request.POST['username'])
+        courseRequestList = []
+        for i in range(numCoursesSelected):
+            courseRequestList.append(Course.objects.get(course_id = request.POST['course'+str(i+1)]))
+        
+        student.student_course_request.clear()
+        for courseRequested in courseRequestList:
+            student.student_course_request.add(courseRequested)
+    except (KeyError, Course.DoesNotExist):
+        return render(request, 'counselorEditor/editor.html', {
+            'student': student.student_id,
+            'course_list': student.student_course_request.all(),
+            'category_list': Category.objects.all(),
+            'courseDict': Course.objects.all(),
+            'error_message': "Invalid CourseID",
+        })
+    else:
+        student.save()
+        # Always return an HttpResponseRedirect after successfully dealing
+        # with POST data. This prevents data from being posted twice if a
+        # user hits the Back button.
+        return HttpResponseRedirect(reverse('counselorEditor:search'))
 
 def edit(request):
     try:
@@ -32,6 +58,8 @@ def edit(request):
         'category_list': Category.objects.all(),
         'courseDict': Course.objects.all(),
     })
+
+
 
 def upload(request):
     return render(request,'counselorEditor/upload.html',{

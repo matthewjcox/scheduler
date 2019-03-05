@@ -18354,3 +18354,464 @@ TypeError: unsupported operand type(s) for +: 'QueryDict' and 'str'
 [2019-03-04 10:27:05 -0500] [12485] [INFO] Booting worker with pid: 12485
 [2019-03-04 10:27:05 -0500] [12486] [INFO] Booting worker with pid: 12486
 [2019-03-04 10:27:05 -0500] [12488] [INFO] Booting worker with pid: 12488
+\n\n\n starting new server run \n
+[2019-03-04 15:32:37 -0500] [15655] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 15:32:37 -0500] [15655] [INFO] Listening at: http://127.0.0.1:11356 (15655)
+[2019-03-04 15:32:37 -0500] [15655] [INFO] Using worker: sync
+[2019-03-04 15:32:37 -0500] [15662] [INFO] Booting worker with pid: 15662
+[2019-03-04 15:32:37 -0500] [15663] [INFO] Booting worker with pid: 15663
+[2019-03-04 15:32:37 -0500] [15664] [INFO] Booting worker with pid: 15664
+[2019-03-04 15:32:37 -0500] [15667] [INFO] Booting worker with pid: 15667
+[2019-03-04 20:50:47 +0000] [15667] [INFO] Worker exiting (pid: 15667)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-04 15:50:48 -0500] [28548] [INFO] Starting gunicorn 19.9.0
+[2019-03-04 15:50:48 -0500] [28548] [INFO] Listening at: http://127.0.0.1:11356 (28548)
+[2019-03-04 15:50:48 -0500] [28548] [INFO] Using worker: sync
+[2019-03-04 15:50:48 -0500] [28560] [INFO] Booting worker with pid: 28560
+[2019-03-04 15:50:49 -0500] [28562] [INFO] Booting worker with pid: 28562
+[2019-03-04 15:50:49 -0500] [28565] [INFO] Booting worker with pid: 28565
+[2019-03-04 15:50:49 -0500] [28567] [INFO] Booting worker with pid: 28567
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: projectIndex/homePage.html
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 24, in <module>
+    path('counselorEditor/', include('counselorEditor.urls'), name = 'counselorEditor'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 767, in get_code
+  File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/urls.py", line 12
+    path('upload/', views.upload, name = 'upload'),
+       ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: projectIndex/homePage.html
+Not Found: /counselorEditor/submit/
+[2019-03-05 15:49:18 +0000] [28560] [INFO] Worker exiting (pid: 28560)
+/web/projects/schedule/public/scheduleServer
+[2019-03-05 15:49:18 +0000] [28565] [INFO] Worker exiting (pid: 28565)
+/web/projects/schedule/public/scheduleServer
+[2019-03-05 10:49:18 -0500] [28548] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-03-05 10:49:19 -0500] [8812] [INFO] Starting gunicorn 19.9.0
+[2019-03-05 10:49:19 -0500] [8812] [INFO] Listening at: http://127.0.0.1:11356 (8812)
+[2019-03-05 10:49:19 -0500] [8812] [INFO] Using worker: sync
+[2019-03-05 10:49:19 -0500] [8824] [INFO] Booting worker with pid: 8824
+[2019-03-05 10:49:19 -0500] [8827] [INFO] Booting worker with pid: 8827
+[2019-03-05 10:49:19 -0500] [8830] [INFO] Booting worker with pid: 8830
+[2019-03-05 10:49:19 -0500] [8832] [INFO] Booting worker with pid: 8832
+Internal Server Error: /counselorEditor/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 44, in <lambda>
+    lambda u: u.is_authenticated,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+Internal Server Error: /counselorEditor/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 44, in <lambda>
+    lambda u: u.is_authenticated,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+Internal Server Error: /counselorEditor/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 44, in <lambda>
+    lambda u: u.is_authenticated,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+Internal Server Error: /auth/login/Ion/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_django/utils.py", line 49, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_django/views.py", line 23, in auth
+    return do_auth(request.backend, redirect_name=REDIRECT_FIELD_NAME)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_core/actions.py", line 27, in do_auth
+    return backend.start()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_core/backends/base.py", line 35, in start
+    return self.strategy.redirect(self.auth_url())
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_core/backends/oauth.py", line 334, in auth_url
+    state = self.get_or_create_state()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_core/backends/oauth.py", line 62, in get_or_create_state
+    state = self.strategy.session_get(name)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/social_django/strategy.py", line 117, in session_get
+    return self.session.get(name, default)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 66, in get
+    return self._session.get(key, default)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysql1.csl.tjhsst.edu' (111)")
+[2019-03-05 15:56:51 +0000] [8832] [INFO] Worker exiting (pid: 8832)
+/web/projects/schedule/public/scheduleServer
+[2019-03-05 15:56:51 +0000] [8827] [INFO] Worker exiting (pid: 8827)
+[2019-03-05 15:56:51 +0000] [8824] [INFO] Worker exiting (pid: 8824)
+\n\n\n starting new server run \n
+[2019-03-05 10:56:52 -0500] [13387] [INFO] Starting gunicorn 19.9.0
+[2019-03-05 10:56:52 -0500] [13387] [INFO] Listening at: http://127.0.0.1:11356 (13387)
+[2019-03-05 10:56:52 -0500] [13387] [INFO] Using worker: sync
+[2019-03-05 10:56:52 -0500] [13410] [INFO] Booting worker with pid: 13410
+[2019-03-05 10:56:52 -0500] [13411] [INFO] Booting worker with pid: 13411
+[2019-03-05 10:56:52 -0500] [13412] [INFO] Booting worker with pid: 13412
+[2019-03-05 10:56:52 -0500] [13413] [INFO] Booting worker with pid: 13413
