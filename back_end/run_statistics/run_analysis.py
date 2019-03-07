@@ -227,7 +227,7 @@ for student in studentScheds.values():
         for l in range(1,3):
             if len(periods[t][l]) > 1:
                 studentConflicts += 0.5
-                studentsWithConflicts.add(student)
+                studentsWithConflicts.add(student[0])
 statFile.write("Number of student conflicts: " + studentConflicts.__str__() + "\n")
 statFile.write("Students with conflicts: ")
 if studentsWithConflicts:
@@ -265,28 +265,27 @@ if teachersWithCons:
 else:
     statFile.write("None\n")'''
 
-raise Exception("This doesn't handle semesters or teaming. Should have 0 teacher conlficts on 2019_02_27__19_17_13")
 teacherCons = {}
 for sect in sections.values():
     for teacher in sect[4]:
         if not teacher in teacherCons.keys():
             teacherCons[teacher] = []
         teacherCons[teacher].append(sect[0])
-teachersWithCons = []
+teachersWithCons = set()
 teacherConflicts = 0
 for teacher in teacherCons.keys():
     periods = {t:{1:[], 2:[]} for t in range(1,8)}
     for sect in teacherCons[teacher]:
         if sections[sect][12] == "0" or sections[sect][12] == "1":
-            periods[sections[sect][1]].append(sect)
+            periods[sections[sect][1]][1].append(sect)
         if sections[sect][12] == "0" or sections[sect][12] == "2":
-            periods[sections[sect][2]].append(sect)
-
-    # Below is unedited and must be edited to accomodate semesters
-    newConflicts = sum([0 if period <= 1 else 1 for period in periods.values()])
-    teacherConflicts += newConflicts
-    if newConflicts > 0:
-        teachersWithCons.append(teacher)
+            periods[sections[sect][1]][2].append(sect)
+    for t in range(1,8):
+        for l in periods[t].values():
+            if len(l) > 1:
+                if set(l).difference(set(sections[l[0]][9]+[l[0]])):
+                    teacherConflicts += 1
+                    teachersWithCons.add(teacher)
 statFile.write("Number of teacher conflicts: " + teacherConflicts.__str__() + "\n")
 statFile.write("Teachers with conflicts: ")
 if teachersWithCons:
@@ -295,19 +294,19 @@ else:
     statFile.write("None\n")
 
 # Check that teaming works (calculates the number of students in some but not all of a set of teamed sections)
-print("\n")
+#print("\n")
 teamMistakes = 0
 checked = set()
 for sect in sections.values():
-    print()
-    print(sect)
+    #print()
+    #print(sect)
     if sect[0] in checked:
         continue
     teamed = set()
     # This is finite. Should rewrite to be recursive if teaming grows beyond 3 sections.
     for sec in sect[8]:
         teamed.add(sec)
-        print(sec)
+        #print(sec)
         for s in sections[sec][8]:
             teamed.add(s)
     sharedStuds = {}

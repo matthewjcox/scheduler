@@ -18815,3 +18815,12 @@ django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysq
 [2019-03-05 10:56:52 -0500] [13411] [INFO] Booting worker with pid: 13411
 [2019-03-05 10:56:52 -0500] [13412] [INFO] Booting worker with pid: 13412
 [2019-03-05 10:56:52 -0500] [13413] [INFO] Booting worker with pid: 13413
+[2019-03-06 14:09:22 -0500] [13387] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-03-06 14:09:24 -0500] [9168] [INFO] Starting gunicorn 19.9.0
+[2019-03-06 14:09:24 -0500] [9168] [INFO] Listening at: http://127.0.0.1:11356 (9168)
+[2019-03-06 14:09:24 -0500] [9168] [INFO] Using worker: sync
+[2019-03-06 14:09:24 -0500] [9171] [INFO] Booting worker with pid: 9171
+[2019-03-06 14:09:24 -0500] [9172] [INFO] Booting worker with pid: 9172
+[2019-03-06 14:09:24 -0500] [9173] [INFO] Booting worker with pid: 9173
+[2019-03-06 14:09:24 -0500] [9177] [INFO] Booting worker with pid: 9177
