@@ -216,20 +216,15 @@ for teacher in teacherToSects.keys():
             # Creates team_3 sections for arabics and learning seminars
             while set(secsToHandle.keys()).intersection(teamedToSems.keys()):
                 year = [*set(secsToHandle.keys()).intersection(teamedToSems.keys())][0]
-                if "3199J1-04" in secsToHandle:
-                    print("HI!!!!")
-                    print(teacher)
-                    print(secsToHandle)
-                    print(year)
                 for sec in teamedToSems[year]:
                     if sec in secsToHandle.keys():
                         curPer = secsToHandle[sec]
-                        print("curPer:", end=" ")
+                        '''print("curPer:", end=" ")
                         print(curPer)
                         print("secsToHandle[year]:", end=" ")
                         print(secsToHandle[year])
-                        print()
-                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
+                        print()'''
+                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, [*set(secsToHandle.keys()).difference(set(teamedToSems.keys()).union(teamedToSems[year]))], [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
                         del secsToHandle[sec]
                 del secsToHandle[year]
             # Loops over sections left to handle that aren't learning sems or arabics
