@@ -96,7 +96,9 @@ for r in range(2,45):
         n = 1
 
 # Read in data from sections workbook
-for r in range(2, 859):
+for r in range(2, 1000):
+    if secSheet.cell(row=r, column=1).value is None:
+        break
     if secSheet.cell(row=r, column=2).value == 8:
         continue
     if secSheet.cell(row=r, column=6).value:
