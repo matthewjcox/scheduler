@@ -1,8 +1,8 @@
-Melissa, Stile, mmstile
-David, Arthur, drarthur
-Heidi, Smith, hesmith
 Barry, Potoker, bnpotoker
+Melissa, Stile, mmstile
+Heidi, Smith, hesmith
 Jeffery, James, jcjames
+David, Arthur, drarthur
 Michael, Auerbach, MAuerbac
 Allison K., Bailey, ABailey
 Clinton, Behling, CBehling
@@ -49,8 +49,8 @@ Amanda D., Hurowitz, AHurowit
 Jennifer, James, JJames
 Malhaz, Jibladze, MJibladz
 Alouf, Jirari Scavotto, AJirari
-Ashley, Jones, AJones
 Darcie, Jones, DJones
+Ashley, Jones, AJones
 Emil, Jurj, EJurj
 Hadan, Kauffman, HKauffma
 Brian, Kennedy, BKennedy
