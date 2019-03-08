@@ -61,7 +61,7 @@ def run_scheduler(save=None):
     # read_student_teaming(student_team_fn,students,courses) #STUDENT TEAMING IS NOT YET FUNCTIONAL
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
-    solver = hill_climb_solo_2(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
+    solver = multiple_hill_climb(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
     solver.solve(verbose=0, print_every=1)
 
 
