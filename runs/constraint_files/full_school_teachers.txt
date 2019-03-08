@@ -1,7 +1,7 @@
-David, Arthur, drarthur
-Barry, Potoker, bnpotoker
 Melissa, Stile, mmstile
+David, Arthur, drarthur
 Heidi, Smith, hesmith
+Barry, Potoker, bnpotoker
 Jeffery, James, jcjames
 Michael, Auerbach, MAuerbac
 Allison K., Bailey, ABailey

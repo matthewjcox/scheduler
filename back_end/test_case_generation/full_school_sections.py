@@ -60,6 +60,11 @@ for r in range(2, 26):
     teamedToSems[curTeam] = {curSem1, curSem2}
     semsToTeam[curSem1] = curTeam
     semsToTeam[curSem2] = curTeam
+'''print("teamedToSems:", end=" ")
+print(teamedToSems)
+print()
+print("semsToTeam:", end=" ")
+print(semsToTeam)'''
 
 # Dict of section IDs to section IDs of clases with which it is teamed (team_1) in HUMs or CHUMs
 secToHum = {}
@@ -211,10 +216,19 @@ for teacher in teacherToSects.keys():
             # Creates team_3 sections for arabics and learning seminars
             while set(secsToHandle.keys()).intersection(teamedToSems.keys()):
                 year = [*set(secsToHandle.keys()).intersection(teamedToSems.keys())][0]
+                if "3199J1-04" in secsToHandle:
+                    print("HI!!!!")
+                    print(teacher)
+                    print(secsToHandle)
+                    print(year)
                 for sec in teamedToSems[year]:
                     if sec in secsToHandle.keys():
                         curPer = secsToHandle[sec]
+                        print("curPer:", end=" ")
+                        print(curPer)
+                        print("secsToHandle[year]:", end=" ")
                         print(secsToHandle[year])
+                        print()
                         sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
                         del secsToHandle[sec]
                 del secsToHandle[year]
