@@ -55,9 +55,9 @@ for r in range(3, 28):
     semsToTeam[curSem2] = curTeam
 for r in range(2, 26):
     curTeam = learningSems.cell(row=r, column=1).value
-    curSem1 = learningSems.cell(row=r, column=10).value
-    curSem2 = learningSems.cell(row=r, column=21).value
-    teamedToSems[curTeam] = [curSem1, curSem2]
+    curSem1 = learningSems.cell(row=r, column=11).value
+    curSem2 = learningSems.cell(row=r, column=18).value
+    teamedToSems[curTeam] = {curSem1, curSem2}
     semsToTeam[curSem1] = curTeam
     semsToTeam[curSem2] = curTeam
 
@@ -214,6 +214,7 @@ for teacher in teacherToSects.keys():
                 for sec in teamedToSems[year]:
                     if sec in secsToHandle.keys():
                         curPer = secsToHandle[sec]
+                        print(secsToHandle[year])
                         sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
                         del secsToHandle[sec]
                 del secsToHandle[year]
