@@ -613,7 +613,7 @@ class master_schedule(chromosome):
         return '{} object, score={} ({})'.format(self.__class__.__name__,self.score(),self.preliminary_score(static=1))
 
 
-class hill_climb_solo_2:
+class hill_climb:
     def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
         self.dataclass = dataclass
         assert issubclass(self.dataclass, chromosome)
@@ -670,6 +670,35 @@ class hill_climb_solo_2:
                 print('Scheduling complete.')
                 break
             first_it = 0
+def multi_improve_sched(q,resultq):
+    while 1:
+        sched=q.get()
+        print('Working')
+        if sched is None:
+            print('Ending process')
+            break
+        sched.remove_teacher_conflicts()
+        sched.score()
+        sched.initialize_weights()
+        for _ in range(10):
+            for j in sched.students.values():
+                sched.optimize_student(j, max_it=10)
+        sched.score()
+        sched.initialize_weights()
+        print(sched.score())
+        resultq.put(sched)
+def multi_improve_sched_2(sched):
+    print('Working')
+    sched.remove_teacher_conflicts()
+    sched.score()
+    sched.initialize_weights()
+    for _ in range(10):
+        for j in sched.students.values():
+            sched.optimize_student(j, max_it=10)
+    sched.score()
+    sched.initialize_weights()
+    print("Done.\nScore: ",sched.score())
+    return sched
 
 class multiple_hill_climb:
     def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
@@ -681,42 +710,6 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
-
-
-    def multi_improve_sched(self,q,resultq):
-        while 1:
-            sched=q.get()
-            print('Working')
-            if sched is None:
-                print('Ending process')
-                break
-            sched.remove_teacher_conflicts()
-            sched.score()
-            sched.initialize_weights()
-            for _ in range(10):
-                for j in sched.students.values():
-                    sched.optimize_student(j, max_it=10)
-            sched.score()
-            sched.initialize_weights()
-            print(sched.score())
-            resultq.put(sched)
-
-    def multi_improve_sched_2(self, sched):
-        print('Working')
-        # if sched is None:
-        #     print('Ending process')
-        #     break
-        # sched=self.current_sched.copy()
-        sched.remove_teacher_conflicts()
-        sched.score()
-        sched.initialize_weights()
-        for _ in range(10):
-            for j in sched.students.values():
-                sched.optimize_student(j, max_it=10)
-        sched.score()
-        sched.initialize_weights()
-        print(sched.score())
-        return sched
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
@@ -733,32 +726,32 @@ class multiple_hill_climb:
             _ITERATION+=1
             i=_ITERATION
             if first_it == 1:
-                num_processes=1
-                num_starting_scheds=20
+                num_processes=4
+                num_starting_scheds=10
                 starting_scheds=[self.current_sched.copy() for i in range(num_starting_scheds)]
-                # taskq=multiprocessing.Queue()
-                # resultq=multiprocessing.Queue()
-                processes=[]
-                # for i in range(num_processes):
-                #     processes.append(multiprocessing.Process(target=self.multi_improve_sched,args=(taskq,resultq)))
-                # for n,i in enumerate(starting_scheds):
-                #     taskq.put(i)
-                # for i in range(num_processes):
-                #     taskq.put(None)
-                # # for i in processes:
-                # #     i.start()
-                # self.multi_improve_sched(taskq,resultq)
-                # while taskq:
-                #     time.sleep(.5)
-                #
-                # scheds=[]
-                # while resultq:
-                #     scheds.append(resultq.get())
-                # sched_dict={}
+                # starting_scheds = [master_schedule(0,0,0,0,0,0) for i in range(num_starting_scheds)]
+
                 # for i in starting_scheds:
                 #     self.multi_improve_sched_2(i)
-                pool = multiprocessing.Pool(processes=num_processes)
-                scheds = pool.map(self.multi_improve_sched_2,starting_scheds)
+                print('Passing to processes')
+                # pool = multiprocessing.Pool(1)
+                #
+                # scheds = pool.map(multi_improve_sched_2,starting_scheds)
+                q=multiprocessing.Queue()
+                resultq=multiprocessing.Queue()
+                for i in starting_scheds:
+                    q.put(i)
+                processes=[]
+                for i in range(num_processes):
+                    processes.append(multiprocessing.Process(target=multi_improve_sched,args=(q,resultq)))
+                    q.put(None)
+                for i in processes:
+                    i.start()
+                scheds = []
+                while len(scheds)<num_starting_scheds:
+                    scheds.append(resultq.get())
+                    print("schedule finished")
+
                 for i in scheds:
                     i.score()
                     i.initialize_weights()
