@@ -18,26 +18,37 @@
 <!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
 <!-- <a href="{% url 'studentInput:index' %}" >Back to Index</a> -->
 <a href="{% url 'projectIndex:student' %}" >Back to Index</a>
-
+Hi {{student}}!
 <form action="{% url 'studentInput:submit' %}" method="post">
 {% csrf_token %}
-Username (eg. 2021jbrown):<br>
-<input type = "text" name = "username"><br>
 <br>
 {% for num in courseNum %}
     Course {{ forloop.counter }}:
-    <input type ="text" name = "course{{ forloop.counter }}" onblur="displayCourseName({{ forloop.counter }})">
-    <div id="name{{ forloop.counter }}" style="display:inline-block"></div>
+    <input type ="text" name = "course{{ forloop.counter }}" onchange="displayCourseName({{ forloop.counter }},this.value)">
+    <div id="name{{ forloop.counter }}" style="display:inline-block">Error: Invalid Course ID</div>
     <br>
 {% endfor %}
 <input type="submit" value="Submit Course Request">
+<input type="hidden" name="username" value="{{student}}">
 </form>
 
 
 <script>
-    function displayCourseName(numCourse){
-        document.getElementById("name" + numCourse).innerHTML = "validated";
+    
+    courseDict = {};
+    
+    {% for course in courseDict %}
+        courseDict["{{ course.course_id }}"] = "{{course.course_name}}";
+    {% endfor %}
+    
+    function displayCourseName(numCourse, value){
+        if (courseDict[value]){
+            document.getElementById("name" + numCourse).innerHTML = courseDict[value];
+        }else{
+            document.getElementById("name" + numCourse).innerHTML = "Error: Invalid Course ID";
+        }
     }
+    
 </script>
 
 {% include "projectIndex/expandable_course_list.html" %}

@@ -18824,3 +18824,85 @@ django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'mysq
 [2019-03-06 14:09:24 -0500] [9172] [INFO] Booting worker with pid: 9172
 [2019-03-06 14:09:24 -0500] [9173] [INFO] Booting worker with pid: 9173
 [2019-03-06 14:09:24 -0500] [9177] [INFO] Booting worker with pid: 9177
+\n\n\n starting new server run \n
+[2019-03-07 11:24:59 -0500] [26788] [INFO] Starting gunicorn 19.9.0
+[2019-03-07 11:24:59 -0500] [26788] [INFO] Listening at: http://127.0.0.1:11356 (26788)
+[2019-03-07 11:24:59 -0500] [26788] [INFO] Using worker: sync
+[2019-03-07 11:24:59 -0500] [26791] [INFO] Booting worker with pid: 26791
+[2019-03-07 11:24:59 -0500] [26792] [INFO] Booting worker with pid: 26792
+[2019-03-07 11:25:00 -0500] [26795] [INFO] Booting worker with pid: 26795
+[2019-03-07 11:25:00 -0500] [26796] [INFO] Booting worker with pid: 26796
+\n\n\n starting new server run \n
+[2019-03-08 13:05:07 -0500] [15688] [INFO] Starting gunicorn 19.9.0
+[2019-03-08 13:05:07 -0500] [15688] [INFO] Listening at: http://127.0.0.1:11356 (15688)
+[2019-03-08 13:05:07 -0500] [15688] [INFO] Using worker: sync
+[2019-03-08 13:05:07 -0500] [15692] [INFO] Booting worker with pid: 15692
+[2019-03-08 13:05:07 -0500] [15694] [INFO] Booting worker with pid: 15694
+[2019-03-08 13:05:07 -0500] [15695] [INFO] Booting worker with pid: 15695
+[2019-03-08 13:05:07 -0500] [15697] [INFO] Booting worker with pid: 15697
+[2019-03-08 13:36:14 -0500] [15688] [INFO] Handling signal: term
+[2019-03-08 18:36:14 +0000] [15692] [INFO] Worker exiting (pid: 15692)
+/web/projects/schedule/public/scheduleServer
+[2019-03-08 18:36:14 +0000] [15695] [INFO] Worker exiting (pid: 15695)
+[2019-03-08 18:36:14 +0000] [15697] [INFO] Worker exiting (pid: 15697)
+[2019-03-08 18:36:14 +0000] [15694] [INFO] Worker exiting (pid: 15694)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-08 13:36:15 -0500] [26085] [INFO] Starting gunicorn 19.9.0
+[2019-03-08 13:36:15 -0500] [26085] [INFO] Listening at: http://127.0.0.1:11356 (26085)
+[2019-03-08 13:36:15 -0500] [26085] [INFO] Using worker: sync
+[2019-03-08 13:36:15 -0500] [26093] [INFO] Booting worker with pid: 26093
+[2019-03-08 13:36:15 -0500] [26101] [INFO] Booting worker with pid: 26101
+[2019-03-08 13:36:15 -0500] [26103] [INFO] Booting worker with pid: 26103
+[2019-03-08 13:36:15 -0500] [26106] [INFO] Booting worker with pid: 26106
+\n\n\n starting new server run \n
+[2019-03-08 14:05:14 -0500] [5791] [INFO] Starting gunicorn 19.9.0
+[2019-03-08 14:05:14 -0500] [5791] [INFO] Listening at: http://127.0.0.1:11356 (5791)
+[2019-03-08 14:05:14 -0500] [5791] [INFO] Using worker: sync
+[2019-03-08 14:05:14 -0500] [5795] [INFO] Booting worker with pid: 5795
+[2019-03-08 14:05:14 -0500] [5796] [INFO] Booting worker with pid: 5796
+[2019-03-08 14:05:14 -0500] [5798] [INFO] Booting worker with pid: 5798
+[2019-03-08 14:05:14 -0500] [5800] [INFO] Booting worker with pid: 5800
+[2019-03-08 19:11:28 +0000] [5800] [INFO] Worker exiting (pid: 5800)
+[2019-03-08 19:11:28 +0000] [5796] [INFO] Worker exiting (pid: 5796)
+[2019-03-08 19:11:28 +0000] [5798] [INFO] Worker exiting (pid: 5798)
+[2019-03-08 19:11:28 +0000] [5795] [INFO] Worker exiting (pid: 5795)
+[2019-03-08 14:11:28 -0500] [5791] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-08 14:11:29 -0500] [10731] [INFO] Starting gunicorn 19.9.0
+[2019-03-08 14:11:29 -0500] [10731] [INFO] Listening at: http://127.0.0.1:11356 (10731)
+[2019-03-08 14:11:29 -0500] [10731] [INFO] Using worker: sync
+[2019-03-08 14:11:29 -0500] [10734] [INFO] Booting worker with pid: 10734
+[2019-03-08 14:11:30 -0500] [10736] [INFO] Booting worker with pid: 10736
+[2019-03-08 14:11:30 -0500] [10738] [INFO] Booting worker with pid: 10738
+[2019-03-08 14:11:30 -0500] [10740] [INFO] Booting worker with pid: 10740
+[2019-03-08 19:17:33 +0000] [10734] [INFO] Worker exiting (pid: 10734)
+[2019-03-08 19:17:33 +0000] [10738] [INFO] Worker exiting (pid: 10738)
+[2019-03-08 14:17:33 -0500] [10731] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-08 19:17:33 +0000] [10736] [INFO] Worker exiting (pid: 10736)
+[2019-03-08 19:17:33 +0000] [10740] [INFO] Worker exiting (pid: 10740)
+\n\n\n starting new server run \n
+[2019-03-08 14:17:34 -0500] [12645] [INFO] Starting gunicorn 19.9.0
+[2019-03-08 14:17:34 -0500] [12645] [INFO] Listening at: http://127.0.0.1:11356 (12645)
+[2019-03-08 14:17:34 -0500] [12645] [INFO] Using worker: sync
+[2019-03-08 14:17:34 -0500] [12648] [INFO] Booting worker with pid: 12648
+[2019-03-08 14:17:34 -0500] [12650] [INFO] Booting worker with pid: 12650
+[2019-03-08 14:17:34 -0500] [12651] [INFO] Booting worker with pid: 12651
+[2019-03-08 14:17:34 -0500] [12652] [INFO] Booting worker with pid: 12652
+Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-03-12 11:04:19 -0400] [19888] [INFO] Starting gunicorn 19.9.0
+[2019-03-12 11:04:19 -0400] [19888] [INFO] Listening at: http://127.0.0.1:11356 (19888)
+[2019-03-12 11:04:19 -0400] [19888] [INFO] Using worker: sync
+[2019-03-12 11:04:19 -0400] [19892] [INFO] Booting worker with pid: 19892
+[2019-03-12 11:04:19 -0400] [19893] [INFO] Booting worker with pid: 19893
+[2019-03-12 11:04:19 -0400] [19894] [INFO] Booting worker with pid: 19894
+[2019-03-12 11:04:19 -0400] [19895] [INFO] Booting worker with pid: 19895

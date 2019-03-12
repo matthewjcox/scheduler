@@ -16,7 +16,7 @@
 
 <script>
     
-    courseDict = {}
+    courseDict = {};
     
     {% for course in courseDict %}
         courseDict["{{ course.course_id }}"] = "{{course.course_name}}";

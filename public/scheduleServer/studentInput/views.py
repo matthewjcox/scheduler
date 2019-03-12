@@ -26,9 +26,10 @@ def index(request):
     
 def course_selection(request):
     context = {
-        'course_list': Course.objects.all(),
+        'courseDict': Course.objects.all(),
         'category_list': Category.objects.all(),
         'courseNum': "x"*numCoursesSelected,
+        'student': request.user.get_username(),
     }
     return render(request, 'studentInput/course_selection.html', context)
 
