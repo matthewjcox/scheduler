@@ -55,11 +55,16 @@ for r in range(3, 28):
     semsToTeam[curSem2] = curTeam
 for r in range(2, 26):
     curTeam = learningSems.cell(row=r, column=1).value
-    curSem1 = learningSems.cell(row=r, column=10).value
-    curSem2 = learningSems.cell(row=r, column=21).value
-    teamedToSems[curTeam] = [curSem1, curSem2]
+    curSem1 = learningSems.cell(row=r, column=11).value
+    curSem2 = learningSems.cell(row=r, column=18).value
+    teamedToSems[curTeam] = {curSem1, curSem2}
     semsToTeam[curSem1] = curTeam
     semsToTeam[curSem2] = curTeam
+'''print("teamedToSems:", end=" ")
+print(teamedToSems)
+print()
+print("semsToTeam:", end=" ")
+print(semsToTeam)'''
 
 # Dict of section IDs to section IDs of clases with which it is teamed (team_1) in HUMs or CHUMs
 secToHum = {}
@@ -91,7 +96,9 @@ for r in range(2,45):
         n = 1
 
 # Read in data from sections workbook
-for r in range(2, 859):
+for r in range(2, 1000):
+    if secSheet.cell(row=r, column=1).value is None:
+        break
     if secSheet.cell(row=r, column=2).value == 8:
         continue
     if secSheet.cell(row=r, column=6).value:
@@ -214,7 +221,12 @@ for teacher in teacherToSects.keys():
                 for sec in teamedToSems[year]:
                     if sec in secsToHandle.keys():
                         curPer = secsToHandle[sec]
-                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, None, [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
+                        '''print("curPer:", end=" ")
+                        print(curPer)
+                        print("secsToHandle[year]:", end=" ")
+                        print(secsToHandle[year])
+                        print()'''
+                        sections[sec] = [curPer[3], curPer[2], curPer[4], curPer[8], curPer[5], secsToHandle[year][6], None, [*set(secsToHandle.keys()).difference(set(teamedToSems.keys()).union(teamedToSems[year]))], [*teamedToSems[year].difference({sec})], allowedPers, curPer[7], teacher]
                         del secsToHandle[sec]
                 del secsToHandle[year]
             # Loops over sections left to handle that aren't learning sems or arabics

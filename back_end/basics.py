@@ -114,10 +114,11 @@ class Teacher:
         return 'Teacher {} {} ({})'.format(self.firstName,self.lastName,self.teacherID)
 
     def __hash__(self):
-        return hash(self.teacherID)
+        # print('Hashing teacher {}.'.format(self.teacherID))
+        return hash(object.__repr__(self))
 
-    def __eq__(self,other):
-        return isinstance(other, Teacher) and self.teacherID==other.teacherID
+    # def __eq__(self,other):
+    #     return isinstance(other, Teacher) and self.teacherID==other.teacherID
 
 
 class Classroom:
