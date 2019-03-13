@@ -2,6 +2,7 @@ from basics import *
 import random
 import time
 import sqlite3
+import multiprocessing
 
 _ITERATION=0
 _START_TIME=time.perf_counter()
@@ -612,7 +613,7 @@ class master_schedule(chromosome):
         return '{} object, score={} ({})'.format(self.__class__.__name__,self.score(),self.preliminary_score(static=1))
 
 
-class hill_climb_solo_2:
+class hill_climb:
     def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
         self.dataclass = dataclass
         assert issubclass(self.dataclass, chromosome)
@@ -620,17 +621,7 @@ class hill_climb_solo_2:
         self.outfolder=outfolder
         j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
         j.retrieve_schedule(outfolder)
-        # if not j.is_viable():
-        #     raise UnviableScheduleError
         self.current_sched=j
-        # crss=[]
-        # for i in j.stock_students.values():
-        #     for k in i.courses.courses:
-        #         if k not in j.course_sections and k not in crss:
-        #             crss.append(k)
-        # print(len(crss))
-        # for i in crss:
-        #     print(i)
         self.current_sched.initialize_weights()
 
 
@@ -653,7 +644,7 @@ class hill_climb_solo_2:
                 self.current_sched.score()
                 self.current_sched.initialize_weights()
             if first_it==1 or i<10 or i % print_every == 0:
-                print('Round {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
+                print('\n\nRound {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if i%20==1:
@@ -674,14 +665,127 @@ class hill_climb_solo_2:
             delta_score=old_score-new_score
             if new_score>=old_score:# or (first_it==0 and random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3):#10**(-5*_CLOSENESS_TO_COMPLETION)*
                 self.current_sched=new_organism
-            # print('',old_score,'\n',new_score)
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
                 print('Scheduling complete.')
                 break
             first_it = 0
-            # if _ITERATION>420:
-            #     break
+def multi_improve_sched(q,resultq):
+    while 1:
+        sched=q.get()
+        print('Working')
+        if sched is None:
+            print('Ending process')
+            break
+        sched.remove_teacher_conflicts()
+        sched.score()
+        sched.initialize_weights()
+        for _ in range(10):
+            for j in sched.students.values():
+                sched.optimize_student(j, max_it=10)
+        sched.score()
+        sched.initialize_weights()
+        print(sched.score())
+        resultq.put(sched)
+def multi_improve_sched_2(sched):
+    print('Working')
+    sched.remove_teacher_conflicts()
+    sched.score()
+    sched.initialize_weights()
+    for _ in range(10):
+        for j in sched.students.values():
+            sched.optimize_student(j, max_it=10)
+    sched.score()
+    sched.initialize_weights()
+    print("Done.\nScore: ",sched.score())
+    return sched
+
+class multiple_hill_climb:
+    def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
+        self.dataclass = dataclass
+        assert issubclass(self.dataclass, chromosome)
+        self.current_sched = None
+        self.outfolder=outfolder
+        j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
+        j.retrieve_schedule(outfolder)
+        self.current_sched=j.copy()
+        self.current_sched.initialize_weights()
+
+    def solve(self, verbose=0, print_every=500):
+        # global _NUM_ITERATIONS
+        global _ITERATION
+        # _NUM_ITERATIONS=num_iterations
+        last_save=-1
+        first_it=1
+        while 1:
+            self.current_sched.initialize_weights()
+            if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
+                last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
+                save_schedule(self.current_sched, self.outfolder)
+                print_schedule(self.current_sched, self.outfolder)
+            _ITERATION+=1
+            i=_ITERATION
+            if first_it == 1:
+                num_processes=4
+                num_starting_scheds=10
+                starting_scheds=[self.current_sched.copy() for i in range(num_starting_scheds)]
+                # starting_scheds = [master_schedule(0,0,0,0,0,0) for i in range(num_starting_scheds)]
+
+                # for i in starting_scheds:
+                #     self.multi_improve_sched_2(i)
+                print('Passing to processes')
+                # pool = multiprocessing.Pool(1)
+                #
+                # scheds = pool.map(multi_improve_sched_2,starting_scheds)
+                q=multiprocessing.Queue()
+                resultq=multiprocessing.Queue()
+                for i in starting_scheds:
+                    q.put(i)
+                processes=[]
+                for i in range(num_processes):
+                    processes.append(multiprocessing.Process(target=multi_improve_sched,args=(q,resultq)))
+                    q.put(None)
+                for i in processes:
+                    i.start()
+                scheds = []
+                while len(scheds)<num_starting_scheds:
+                    scheds.append(resultq.get())
+                    print("schedule finished")
+
+                for i in scheds:
+                    i.score()
+                    i.initialize_weights()
+                    sched_dict[i]=i.score()
+                self.current_sched=max(sched_dict.values(),key=lambda i:i[1])[0]
+                # self.current_sched.score()
+                # self.current_sched.initialize_weights()
+            if first_it==1 or i<10 or i % print_every == 0:
+                print('\n\nRound {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
+            new_organism = self.current_sched.copy()
+            new_organism.initialize_weights()
+            if i%20==1:
+                for _ in range(10):
+                    for i in new_organism.students.values():
+                        new_organism.optimize_student(i, max_it=10)
+            else:
+                num_mutations=int(1+random.random()*9) #if i%20!=1 else 0
+                for i in range(num_mutations):
+                    new_organism.mutate_period()
+                for _ in range(10):
+                    for i in new_organism.students.values():
+                        new_organism.optimize_student(i,max_it=1)
+            print('New:')
+            new_score=new_organism.preliminary_score(verbose=1)
+            print('Old:')
+            old_score=self.current_sched.preliminary_score(verbose=1)
+            delta_score=old_score-new_score
+            if new_score>=old_score:# or (first_it==0 and random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3):#10**(-5*_CLOSENESS_TO_COMPLETION)*
+                self.current_sched=new_organism
+            self.current_sched.set_progress()
+            if _CLOSENESS_TO_COMPLETION>1:
+                print('Scheduling complete.')
+                break
+            first_it = 0
 
 def save_schedule(master_sched,outfolder,verbose=1):
     # return
