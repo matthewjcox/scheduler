@@ -184,15 +184,8 @@ for teacher in teacherToSects.keys():
         allowedPers = [5,6,7]
     else:
         allowedPers = [1,2,3,4,5,6,7]
-    '''if teacher == "Waters":
-        print(allowedPers)
-        print(perDist)'''
     for per in range(1, 1+len(perDist.keys())):
         curPers = [teacherToSects[teacher][perDist[per][k]] for k in range(len(perDist[per]))]
-        '''if teacher == "Waters":
-            print(per)
-            print(curPers)
-            print("\n")'''
         # Handles periods during which a teacher is only teaching one course
         if len(curPers) == 1:
             curPer = curPers[0]
