@@ -18906,3 +18906,39 @@ Not Found: /favicon.ico
 [2019-03-12 11:04:19 -0400] [19893] [INFO] Booting worker with pid: 19893
 [2019-03-12 11:04:19 -0400] [19894] [INFO] Booting worker with pid: 19894
 [2019-03-12 11:04:19 -0400] [19895] [INFO] Booting worker with pid: 19895
+\n\n\n starting new server run \n
+[2019-03-13 13:44:01 -0400] [16716] [INFO] Starting gunicorn 19.9.0
+[2019-03-13 13:44:01 -0400] [16716] [INFO] Listening at: http://127.0.0.1:11356 (16716)
+[2019-03-13 13:44:01 -0400] [16716] [INFO] Using worker: sync
+[2019-03-13 13:44:01 -0400] [16719] [INFO] Booting worker with pid: 16719
+[2019-03-13 13:44:01 -0400] [16720] [INFO] Booting worker with pid: 16720
+[2019-03-13 13:44:01 -0400] [16721] [INFO] Booting worker with pid: 16721
+[2019-03-13 13:44:01 -0400] [16722] [INFO] Booting worker with pid: 16722
+[2019-03-13 18:15:21 +0000] [16720] [INFO] Worker exiting (pid: 16720)
+[2019-03-13 18:15:21 +0000] [16719] [INFO] Worker exiting (pid: 16719)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-13 14:15:22 -0400] [31638] [INFO] Starting gunicorn 19.9.0
+[2019-03-13 14:15:22 -0400] [31638] [INFO] Listening at: http://127.0.0.1:11356 (31638)
+[2019-03-13 14:15:22 -0400] [31638] [INFO] Using worker: sync
+[2019-03-13 14:15:22 -0400] [31652] [INFO] Booting worker with pid: 31652
+[2019-03-13 14:15:22 -0400] [31653] [INFO] Booting worker with pid: 31653
+[2019-03-13 14:15:22 -0400] [31654] [INFO] Booting worker with pid: 31654
+[2019-03-13 14:15:22 -0400] [31656] [INFO] Booting worker with pid: 31656
+[2019-03-13 15:57:05 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:31656)
+[2019-03-13 15:57:05 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:31652)
+[2019-03-13 15:57:05 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:31653)
+[2019-03-13 15:57:05 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:31654)
+[2019-03-13 15:58:03 -0400] [4959] [INFO] Booting worker with pid: 4959
+[2019-03-13 15:58:03 -0400] [4971] [INFO] Booting worker with pid: 4971
+[2019-03-13 15:58:03 -0400] [5041] [INFO] Booting worker with pid: 5041
+[2019-03-13 15:58:03 -0400] [5009] [INFO] Booting worker with pid: 5009
+[2019-03-13 16:01:26 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:5009)
+[2019-03-13 16:01:26 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:4971)
+[2019-03-13 16:01:27 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:5041)
+[2019-03-13 16:01:27 -0400] [31638] [CRITICAL] WORKER TIMEOUT (pid:4959)
+[2019-03-13 16:02:23 -0400] [6928] [INFO] Booting worker with pid: 6928
+[2019-03-13 16:02:23 -0400] [6934] [INFO] Booting worker with pid: 6934
+[2019-03-13 16:02:23 -0400] [6992] [INFO] Booting worker with pid: 6992
+[2019-03-13 16:02:23 -0400] [7144] [INFO] Booting worker with pid: 7144
