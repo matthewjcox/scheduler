@@ -90,6 +90,9 @@ def sections(request):
 def input_sections(request):
     
     course = Course.objects.get(course_id =  request.POST['course'])
+    return render(request, "counselorEditor/info.html", {
+        'info': request.POST,
+        })
     for num in request.POST.getlist('period'):
         c = course.section_set.create(
             section_id = request.POST['section']+str(num),

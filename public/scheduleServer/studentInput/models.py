@@ -37,7 +37,7 @@ class Teacher(models.Model):
     teacher_last_name = models.CharField(max_length = 50)
     
 class Room(models.Model):
-    rmNum = models.IntegerField()
+    rmNum = models.CharField(max_length = 15)
 
 class Section(models.Model):
     section_id = models.CharField(max_length = 15)

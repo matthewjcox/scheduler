@@ -18942,3 +18942,85 @@ Not Found: /favicon.ico
 [2019-03-13 16:02:23 -0400] [6934] [INFO] Booting worker with pid: 6934
 [2019-03-13 16:02:23 -0400] [6992] [INFO] Booting worker with pid: 6992
 [2019-03-13 16:02:23 -0400] [7144] [INFO] Booting worker with pid: 7144
+Not Found: /favicon.ico
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'section'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 95, in input_sections
+    section_id = request.POST['section']+str(num),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'section'
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'section'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 95, in input_sections
+    })
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'section'
+[2019-03-14 15:59:38 +0000] [7144] [INFO] Worker exiting (pid: 7144)
+\n\n\n starting new server run \n
+[2019-03-14 11:59:39 -0400] [19678] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 11:59:39 -0400] [19678] [INFO] Listening at: http://127.0.0.1:11356 (19678)
+[2019-03-14 11:59:39 -0400] [19678] [INFO] Using worker: sync
+[2019-03-14 11:59:39 -0400] [19681] [INFO] Booting worker with pid: 19681
+[2019-03-14 11:59:40 -0400] [19682] [INFO] Booting worker with pid: 19682
+[2019-03-14 11:59:40 -0400] [19685] [INFO] Booting worker with pid: 19685
+[2019-03-14 11:59:40 -0400] [19686] [INFO] Booting worker with pid: 19686
+Internal Server Error: /counselorEditor/input_sections/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/counselorEditor/views.py", line 94, in input_sections
+    'info': request.POST,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: info.html
+[2019-03-14 16:00:36 +0000] [19681] [INFO] Worker exiting (pid: 19681)
+[2019-03-14 16:00:36 +0000] [19686] [INFO] Worker exiting (pid: 19686)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-14 16:00:36 +0000] [19685] [INFO] Worker exiting (pid: 19685)
+/web/projects/schedule/public/scheduleServer
+[2019-03-14 12:00:36 -0400] [19678] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-03-14 12:00:38 -0400] [19855] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 12:00:38 -0400] [19855] [INFO] Listening at: http://127.0.0.1:11356 (19855)
+[2019-03-14 12:00:38 -0400] [19855] [INFO] Using worker: sync
+[2019-03-14 12:00:38 -0400] [19859] [INFO] Booting worker with pid: 19859
+[2019-03-14 12:00:38 -0400] [19860] [INFO] Booting worker with pid: 19860
+[2019-03-14 12:00:38 -0400] [19863] [INFO] Booting worker with pid: 19863
+[2019-03-14 12:00:38 -0400] [19864] [INFO] Booting worker with pid: 19864
