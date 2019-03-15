@@ -737,7 +737,8 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
-        self.pool = multiprocessing.Pool(100)
+        self.num_processes=8
+        self.pool = multiprocessing.Pool(self.num_processes)
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
@@ -755,7 +756,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1:
-                self.current_sched=self.improve_sched(10,5,200,self.current_sched)
+                self.current_sched=self.improve_sched(10,5,3*self.num_processes,self.current_sched)
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -763,12 +764,12 @@ class multiple_hill_climb:
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if it%20==1:
-                new_organism = self.improve_sched(10,5, 100, new_organism)
+                new_organism = self.improve_sched(10,5, self.num_processes, new_organism)
             else:
                 num_mutations=int(1+random.random()*9) #if i%20!=1 else 0
                 for i in range(num_mutations):
                     new_organism.mutate_period()
-                new_organism = self.improve_sched(10,1, 100, new_organism)
+                new_organism = self.improve_sched(10,1, self.num_processes, new_organism)
             print('New:')
             new_score=new_organism.preliminary_score(verbose=1)
             print('Old:')
