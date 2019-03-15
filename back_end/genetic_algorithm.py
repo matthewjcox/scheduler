@@ -737,7 +737,7 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
-        self.num_processes=8
+        self.num_processes=12
         self.pool = multiprocessing.Pool(self.num_processes)
 
     def solve(self, verbose=0, print_every=500):
