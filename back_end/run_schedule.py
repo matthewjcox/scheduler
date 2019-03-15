@@ -5,8 +5,8 @@ import datetime
 import sqlite3
 import os
 import shutil
-from tendo import singleton
-lock=singleton.SingleInstance()
+# from tendo import singleton
+# lock=singleton.SingleInstance()
 
 lock_failed=0
 class LockError(Exception):

@@ -706,7 +706,9 @@ class hill_climb:
 #         print(sched.score())
 #         resultq.put(sched.serialize_schedule())
 def multi_improve_sched(data):
-    i,blank_sched,num_rounds,num_subrounds,state=data
+    i,blank_sched,num_rounds,num_subrounds,state,closeness_to_completion=data
+    global _CLOSENESS_TO_COMPLETION
+    _CLOSENESS_TO_COMPLETION=closeness_to_completion
     sched=blank_sched.copy()
     sched.load_schedule(state)
     print('Working '+str(i))
@@ -735,7 +737,8 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
-        self.pool = multiprocessing.Pool(10)
+        self.num_processes=12
+        self.pool = multiprocessing.Pool(self.num_processes)
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
@@ -753,7 +756,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1:
-                self.current_sched=self.improve_sched(10,5,20,self.current_sched)
+                self.current_sched=self.improve_sched(10,5,3*self.num_processes,self.current_sched)
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -761,12 +764,12 @@ class multiple_hill_climb:
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if it%20==1:
-                new_organism = self.improve_sched(10,5, 5, new_organism)
+                new_organism = self.improve_sched(10,5, self.num_processes, new_organism)
             else:
                 num_mutations=int(1+random.random()*9) #if i%20!=1 else 0
                 for i in range(num_mutations):
                     new_organism.mutate_period()
-                new_organism = self.improve_sched(10,1, 5, new_organism)
+                new_organism = self.improve_sched(10,1, self.num_processes, new_organism)
             print('New:')
             new_score=new_organism.preliminary_score(verbose=1)
             print('Old:')
@@ -782,7 +785,7 @@ class multiple_hill_climb:
 
     def improve_sched(self,num_rounds,num_subrounds,num_scheds,sched_to_improve):
         ser_sched=sched_to_improve.serialize_schedule()
-        starting_scheds = [(i, self.blank_sched, num_rounds,num_subrounds, ser_sched) for i in range(num_scheds)]
+        starting_scheds = [(i, self.blank_sched, num_rounds,num_subrounds, ser_sched,_CLOSENESS_TO_COMPLETION) for i in range(num_scheds)]
         sched_info = self.pool.map(multi_improve_sched, starting_scheds)
         scheds = [sched_to_improve]
         for res in sched_info:
