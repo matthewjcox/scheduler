@@ -12,6 +12,8 @@ lock_failed=0
 class LockError(Exception):
     pass
 def run_scheduler(save=None):
+    if len(sys.argv)>1:
+        set_global_num_cores(sys.argv[1])#Default: 8
     if save is None:
         save='runs/past_runs/'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
         os.mkdir(save)

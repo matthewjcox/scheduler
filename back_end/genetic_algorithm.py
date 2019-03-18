@@ -10,13 +10,16 @@ _ITERATION=0
 _START_TIME=time.perf_counter()
 _SAVE_TIME=10
 _CLOSENESS_TO_COMPLETION=0
+_NUM_CORES=8
 
 def set_global_parameters(iteration,time_el):
     global _ITERATION
     global _START_TIME
     _ITERATION=iteration
     _START_TIME-=time_el
-
+def set_global_num_cores(num):
+    global _NUM_CORES
+    _NUM_CORES=num
 
 
 class NotImplemented(Exception):
@@ -737,7 +740,7 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
-        self.num_processes=24
+        self.num_processes=_NUM_CORES
         self.pool = multiprocessing.Pool(self.num_processes)
 
     def solve(self, verbose=0, print_every=500):
