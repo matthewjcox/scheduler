@@ -1,7 +1,0 @@
-7
-classrooms.txt
-newCourses.txt
-teamed_3_teachers.txt
-sample_3_students.txt
-student_teaming_3.txt
-teamed_3_sections_multi-course.txt
