@@ -1,0 +1,226 @@
+2019-03-15 16:49:36,636|INFO|3574|0
+2019-03-15 16:49:36,751|INFO|3574|Saving schedule. (0)
+2019-03-15 16:49:37,457|INFO|3574|Working 0
+2019-03-15 16:49:37,526|INFO|3574|Working 1
+2019-03-15 16:49:37,681|INFO|3574|Working 2
+2019-03-15 16:49:37,735|INFO|3574|Working 3
+2019-03-15 16:49:37,875|INFO|3574|Working 4
+2019-03-15 16:49:37,979|INFO|3574|Working 5
+2019-03-15 16:49:38,077|INFO|3574|Working 6
+2019-03-15 16:49:38,200|INFO|3574|Working 7
+2019-03-15 16:49:38,294|INFO|3574|Working 8
+2019-03-15 16:49:38,337|INFO|3574|Working 9
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-4:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-7:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-5:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-9:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-1:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-2:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-8:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-3:
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-10:
+2019-03-15 16:49:40,386|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,386|ERROR|3574|File "back_end/run_schedule.py", line 73, in <module>
+2019-03-15 16:49:40,386|ERROR|3574|Process ForkPoolWorker-6:
+2019-03-15 16:49:40,387|ERROR|3574|main()
+2019-03-15 16:49:40,387|ERROR|3574|File "back_end/run_schedule.py", line 69, in main
+2019-03-15 16:49:40,388|ERROR|3574|run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
+2019-03-15 16:49:40,388|ERROR|3574|File "back_end/run_schedule.py", line 65, in run_scheduler
+2019-03-15 16:49:40,388|ERROR|3574|solver.solve(verbose=0, print_every=1)
+2019-03-15 16:49:40,388|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 756, in solve
+2019-03-15 16:49:40,389|ERROR|3574|self.current_sched=self.improve_sched(10,5,20,self.current_sched)
+2019-03-15 16:49:40,389|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 786, in improve_sched
+2019-03-15 16:49:40,389|ERROR|3574|sched_info = self.pool.map(multi_improve_sched, starting_scheds)
+2019-03-15 16:49:40,389|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 260, in map
+2019-03-15 16:49:40,390|ERROR|3574|return self._map_async(func, iterable, mapstar, chunksize).get()
+2019-03-15 16:49:40,390|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 602, in get
+2019-03-15 16:49:40,391|ERROR|3574|self.wait(timeout)
+2019-03-15 16:49:40,391|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 599, in wait
+2019-03-15 16:49:40,391|ERROR|3574|self._event.wait(timeout)
+2019-03-15 16:49:40,391|ERROR|3574|File "/usr/lib/python3.5/threading.py", line 549, in wait
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,413|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,414|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 562, in optimize_student
+    new_score = self.score_student(student)[0]
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 503, in optimize_student
+    courses[j].append(k)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 491, in optimize_student
+    score,student_score,conflict_score=self.score_student(student)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 562, in optimize_student
+    new_score = self.score_student(student)[0]
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 353, in score_student
+    st_conflict_score,addl_score=self.score_student_sections(student)
+2019-03-15 16:49:40,414|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 355, in score_student
+    base_score+=self.score_student_courses(student)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 355, in score_student
+    base_score+=self.score_student_courses(student)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 378, in score_student_sections
+    addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 386, in score_student_courses
+    courses[i.course]=0
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 491, in optimize_student
+    score,student_score,conflict_score=self.score_student(student)
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 355, in score_student
+    base_score+=self.score_student_courses(student)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 385, in score_student_courses
+    if i.course not in courses:
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 562, in optimize_student
+    new_score = self.score_student(student)[0]
+2019-03-15 16:49:40,414|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 386, in score_student_courses
+    courses[i.course]=0
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 355, in score_student
+    base_score+=self.score_student_courses(student)
+2019-03-15 16:49:40,414|ERROR|3574|Traceback (most recent call last):
+2019-03-15 16:49:40,414|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 182, in __hash__
+    return hash(self.courseID)
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 387, in score_student_courses
+    courses[i.course]+=1
+2019-03-15 16:49:40,414|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,415|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 181, in __hash__
+    def __hash__(self):
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 497, in optimize_student
+    random.shuffle(courses_randomized)#sorted(student.courses.courses, key=lambda i: random.random())
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,414|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 562, in optimize_student
+    new_score = self.score_student(student)[0]
+2019-03-15 16:49:40,415|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/random.py", line 271, in shuffle
+    j = randbelow(i+1)
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 353, in score_student
+    st_conflict_score,addl_score=self.score_student_sections(student)
+2019-03-15 16:49:40,415|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,415|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,416|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 16:49:40,415|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 378, in score_student_sections
+    addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,416|ERROR|3574|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 561, in optimize_student
+    old_sections=new_section.add_student_removing_conflicts(student)
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 181, in __hash__
+    def __hash__(self):
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 299, in add_student_removing_conflicts
+    return self.add_student_removing_conflicts_helper(student)
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 718, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 315, in add_student_removing_conflicts_helper
+    self.students.add(student)
+2019-03-15 16:49:40,416|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,416|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 491, in optimize_student
+    score,student_score,conflict_score=self.score_student(student)
+2019-03-15 16:49:40,417|ERROR|3574|File "/web/projects/schedule/back_end/basics.py", line 248, in __hash__
+    return hash(self.studentID)
+2019-03-15 16:49:40,417|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 353, in score_student
+    st_conflict_score,addl_score=self.score_student_sections(student)
+2019-03-15 16:49:40,417|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,417|ERROR|3574|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 378, in score_student_sections
+    addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
+2019-03-15 16:49:40,418|ERROR|3574|KeyboardInterrupt
+2019-03-15 16:49:40,424|ERROR|3574|signaled = self._cond.wait(timeout)
+2019-03-15 16:49:40,424|ERROR|3574|File "/usr/lib/python3.5/threading.py", line 293, in wait
+2019-03-15 16:49:40,425|ERROR|3574|waiter.acquire()
+2019-03-15 16:49:40,425|ERROR|3574|KeyboardInterrupt

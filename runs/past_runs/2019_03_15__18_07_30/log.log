@@ -1,0 +1,401 @@
+2019-03-15 18:07:31,599|INFO|29942|0
+2019-03-15 18:07:31,698|INFO|29942|Saving schedule. (0)
+2019-03-15 18:07:32,240|INFO|29942|Working 0
+2019-03-15 18:07:32,306|INFO|29942|Working 1
+2019-03-15 18:07:32,363|INFO|29942|Working 2
+2019-03-15 18:07:32,449|INFO|29942|Working 3
+2019-03-15 18:07:32,526|INFO|29942|Working 4
+2019-03-15 18:07:32,606|INFO|29942|Working 5
+2019-03-15 18:07:32,669|INFO|29942|Working 6
+2019-03-15 18:07:32,717|INFO|29942|Working 7
+2019-03-15 18:07:32,875|INFO|29942|Working 9
+2019-03-15 18:07:32,904|INFO|29942|Working 8
+2019-03-15 18:07:32,937|INFO|29942|Working 10
+2019-03-15 18:07:33,119|INFO|29942|Working 11
+2019-03-15 18:07:45,456|INFO|29942|St base: 44860.00, St addl: 2200.11, S conflict: 0.00, T conflict: 0.00, Per spread: -10980.00, Sec penalty: 0.00
+2019-03-15 18:07:45,456|INFO|29942|44860
+2019-03-15 18:07:45,456|INFO|29942|36080.11116557042
+2019-03-15 18:07:45,609|INFO|29942|Done 1; score:
+2019-03-15 18:07:45,610|INFO|29942|36080.11116557042
+2019-03-15 18:07:45,800|INFO|29942|Working 12
+2019-03-15 18:07:45,851|INFO|29942|St base: 45362.00, St addl: 2208.53, S conflict: 0.00, T conflict: 0.00, Per spread: -10490.00, Sec penalty: 0.00
+2019-03-15 18:07:45,852|INFO|29942|45362
+2019-03-15 18:07:45,852|INFO|29942|37080.532777766435
+2019-03-15 18:07:45,998|INFO|29942|Done 5; score:
+2019-03-15 18:07:45,998|INFO|29942|37080.532777766435
+2019-03-15 18:07:46,032|INFO|29942|St base: 44788.00, St addl: 2200.77, S conflict: 0.00, T conflict: 0.00, Per spread: -10400.00, Sec penalty: 0.00
+2019-03-15 18:07:46,032|INFO|29942|44788
+2019-03-15 18:07:46,032|INFO|29942|36588.774695593376
+2019-03-15 18:07:46,182|INFO|29942|Working 13
+2019-03-15 18:07:46,186|INFO|29942|Done 10; score:
+2019-03-15 18:07:46,186|INFO|29942|36588.774695593376
+2019-03-15 18:07:46,274|INFO|29942|St base: 45116.00, St addl: 2206.24, S conflict: 0.00, T conflict: 0.00, Per spread: -10500.00, Sec penalty: 0.00
+2019-03-15 18:07:46,274|INFO|29942|45116
+2019-03-15 18:07:46,274|INFO|29942|36822.237317435414
+2019-03-15 18:07:46,324|INFO|29942|St base: 44800.00, St addl: 2223.17, S conflict: 0.00, T conflict: 0.00, Per spread: -10220.00, Sec penalty: 0.00
+2019-03-15 18:07:46,324|INFO|29942|44800
+2019-03-15 18:07:46,324|INFO|29942|36803.1674344986
+2019-03-15 18:07:46,394|INFO|29942|Working 14
+2019-03-15 18:07:46,424|INFO|29942|Done 6; score:
+2019-03-15 18:07:46,424|INFO|29942|36822.237317435414
+2019-03-15 18:07:46,472|INFO|29942|Done 2; score:
+2019-03-15 18:07:46,472|INFO|29942|36803.1674344986
+2019-03-15 18:07:46,619|INFO|29942|Working 15
+2019-03-15 18:07:46,855|INFO|29942|Working 16
+2019-03-15 18:07:46,880|INFO|29942|St base: 44862.00, St addl: 2189.99, S conflict: 0.00, T conflict: 0.00, Per spread: -10670.00, Sec penalty: 0.00
+2019-03-15 18:07:46,880|INFO|29942|44862
+2019-03-15 18:07:46,880|INFO|29942|36381.98942759735
+2019-03-15 18:07:46,939|INFO|29942|St base: 45124.00, St addl: 2154.17, S conflict: 0.00, T conflict: 0.00, Per spread: -10980.00, Sec penalty: 0.00
+2019-03-15 18:07:46,940|INFO|29942|45124
+2019-03-15 18:07:46,940|INFO|29942|36298.1727992308
+2019-03-15 18:07:47,046|INFO|29942|Done 11; score:
+2019-03-15 18:07:47,046|INFO|29942|36381.98942759735
+2019-03-15 18:07:47,098|INFO|29942|Done 0; score:
+2019-03-15 18:07:47,098|INFO|29942|36298.1727992308
+2019-03-15 18:07:47,225|INFO|29942|Working 17
+2019-03-15 18:07:47,304|INFO|29942|St base: 45016.00, St addl: 2250.64, S conflict: 0.00, T conflict: 0.00, Per spread: -11040.00, Sec penalty: 0.00
+2019-03-15 18:07:47,304|INFO|29942|45016
+2019-03-15 18:07:47,305|INFO|29942|36226.63552973771
+2019-03-15 18:07:47,451|INFO|29942|Done 4; score:
+2019-03-15 18:07:47,451|INFO|29942|36226.63552973771
+2019-03-15 18:07:47,507|INFO|29942|Working 18
+2019-03-15 18:07:47,624|INFO|29942|Working 19
+2019-03-15 18:07:47,647|INFO|29942|St base: 44682.00, St addl: 2254.19, S conflict: 0.00, T conflict: 0.00, Per spread: -10890.00, Sec penalty: 0.00
+2019-03-15 18:07:47,647|INFO|29942|44682
+2019-03-15 18:07:47,648|INFO|29942|36046.191662289064
+2019-03-15 18:07:47,720|INFO|29942|St base: 45058.00, St addl: 2230.00, S conflict: 0.00, T conflict: 0.00, Per spread: -10890.00, Sec penalty: 0.00
+2019-03-15 18:07:47,721|INFO|29942|45058
+2019-03-15 18:07:47,721|INFO|29942|36398.00206250274
+2019-03-15 18:07:47,789|INFO|29942|Done 3; score:
+2019-03-15 18:07:47,790|INFO|29942|36046.191662289064
+2019-03-15 18:07:47,859|INFO|29942|Done 8; score:
+2019-03-15 18:07:47,859|INFO|29942|36398.00206250274
+2019-03-15 18:07:47,971|INFO|29942|Working 20
+2019-03-15 18:07:47,990|INFO|29942|St base: 45094.00, St addl: 2263.69, S conflict: 0.00, T conflict: 0.00, Per spread: -10850.00, Sec penalty: 0.00
+2019-03-15 18:07:47,990|INFO|29942|45094
+2019-03-15 18:07:47,990|INFO|29942|36507.68781685502
+2019-03-15 18:07:48,116|INFO|29942|Working 21
+2019-03-15 18:07:48,151|INFO|29942|Done 7; score:
+2019-03-15 18:07:48,151|INFO|29942|36507.68781685502
+2019-03-15 18:07:48,325|INFO|29942|Working 22
+2019-03-15 18:07:48,524|INFO|29942|St base: 45312.00, St addl: 2245.92, S conflict: 0.00, T conflict: 0.00, Per spread: -10440.00, Sec penalty: 0.00
+2019-03-15 18:07:48,524|INFO|29942|45312
+2019-03-15 18:07:48,524|INFO|29942|37117.91515922536
+2019-03-15 18:07:48,664|INFO|29942|Done 9; score:
+2019-03-15 18:07:48,664|INFO|29942|37117.91515922536
+2019-03-15 18:07:48,835|INFO|29942|Working 23
+2019-03-15 18:07:58,746|INFO|29942|St base: 44588.00, St addl: 2230.56, S conflict: 0.00, T conflict: 0.00, Per spread: -10790.00, Sec penalty: 0.00
+2019-03-15 18:07:58,746|INFO|29942|44588
+2019-03-15 18:07:58,746|INFO|29942|36028.564023297105
+2019-03-15 18:07:58,888|INFO|29942|Done 14; score:
+2019-03-15 18:07:58,888|INFO|29942|36028.564023297105
+2019-03-15 18:07:59,119|INFO|29942|Working 24
+2019-03-15 18:07:59,647|INFO|29942|St base: 44636.00, St addl: 2184.30, S conflict: 0.00, T conflict: 0.00, Per spread: -11730.00, Sec penalty: 0.00
+2019-03-15 18:07:59,647|INFO|29942|44636
+2019-03-15 18:07:59,648|INFO|29942|35090.30030248567
+2019-03-15 18:07:59,791|INFO|29942|Done 15; score:
+2019-03-15 18:07:59,791|INFO|29942|35090.30030248567
+2019-03-15 18:07:59,976|INFO|29942|Working 25
+2019-03-15 18:08:00,244|INFO|29942|St base: 44876.00, St addl: 2224.61, S conflict: 0.00, T conflict: 0.00, Per spread: -10320.00, Sec penalty: 0.00
+2019-03-15 18:08:00,244|INFO|29942|44876
+2019-03-15 18:08:00,244|INFO|29942|36780.61496704355
+2019-03-15 18:08:00,392|INFO|29942|St base: 45206.00, St addl: 2216.98, S conflict: 0.00, T conflict: 0.00, Per spread: -10980.00, Sec penalty: 0.00
+2019-03-15 18:08:00,392|INFO|29942|45206
+2019-03-15 18:08:00,392|INFO|29942|36442.97618179661
+2019-03-15 18:08:00,395|INFO|29942|St base: 45046.00, St addl: 2202.31, S conflict: 0.00, T conflict: 0.00, Per spread: -10240.00, Sec penalty: 0.00
+2019-03-15 18:08:00,396|INFO|29942|45046
+2019-03-15 18:08:00,396|INFO|29942|37008.30973874087
+2019-03-15 18:08:00,407|INFO|29942|Done 18; score:
+2019-03-15 18:08:00,407|INFO|29942|36780.61496704355
+2019-03-15 18:08:00,548|INFO|29942|Done 13; score:
+2019-03-15 18:08:00,549|INFO|29942|37008.30973874087
+2019-03-15 18:08:00,566|INFO|29942|St base: 44718.00, St addl: 2236.20, S conflict: 0.00, T conflict: 0.00, Per spread: -10730.00, Sec penalty: 0.00
+2019-03-15 18:08:00,567|INFO|29942|44718
+2019-03-15 18:08:00,567|INFO|29942|36224.20206470583
+2019-03-15 18:08:00,572|INFO|29942|St base: 45184.00, St addl: 2187.13, S conflict: 0.00, T conflict: 0.00, Per spread: -10290.00, Sec penalty: 0.00
+2019-03-15 18:08:00,572|INFO|29942|45184
+2019-03-15 18:08:00,572|INFO|29942|37081.1311094346
+2019-03-15 18:08:00,633|INFO|29942|Done 16; score:
+2019-03-15 18:08:00,633|INFO|29942|36442.97618179661
+2019-03-15 18:08:00,727|INFO|29942|Done 17; score:
+2019-03-15 18:08:00,728|INFO|29942|36224.20206470583
+2019-03-15 18:08:00,739|INFO|29942|Working 26
+2019-03-15 18:08:00,803|INFO|29942|Done 12; score:
+2019-03-15 18:08:00,803|INFO|29942|37081.1311094346
+2019-03-15 18:08:00,826|INFO|29942|Working 28
+2019-03-15 18:08:00,829|INFO|29942|Working 27
+2019-03-15 18:08:00,937|INFO|29942|St base: 44578.00, St addl: 2224.45, S conflict: 0.00, T conflict: 0.00, Per spread: -10930.00, Sec penalty: 0.00
+2019-03-15 18:08:00,937|INFO|29942|44578
+2019-03-15 18:08:00,937|INFO|29942|Working 29
+2019-03-15 18:08:00,937|INFO|29942|35872.4496208584
+2019-03-15 18:08:01,087|INFO|29942|Done 20; score:
+2019-03-15 18:08:01,088|INFO|29942|35872.4496208584
+2019-03-15 18:08:01,130|INFO|29942|Working 30
+2019-03-15 18:08:01,209|INFO|29942|St base: 45110.00, St addl: 2245.50, S conflict: 0.00, T conflict: 0.00, Per spread: -10830.00, Sec penalty: 0.00
+2019-03-15 18:08:01,209|INFO|29942|45110
+2019-03-15 18:08:01,209|INFO|29942|36525.501204731656
+2019-03-15 18:08:01,280|INFO|29942|Working 31
+2019-03-15 18:08:01,355|INFO|29942|Done 19; score:
+2019-03-15 18:08:01,355|INFO|29942|36525.501204731656
+2019-03-15 18:08:01,381|INFO|29942|St base: 44802.00, St addl: 2251.06, S conflict: 0.00, T conflict: 0.00, Per spread: -10700.00, Sec penalty: 0.00
+2019-03-15 18:08:01,381|INFO|29942|44802
+2019-03-15 18:08:01,381|INFO|29942|36353.05870270616
+2019-03-15 18:08:01,528|INFO|29942|Done 21; score:
+2019-03-15 18:08:01,529|INFO|29942|36353.05870270616
+2019-03-15 18:08:01,540|INFO|29942|Working 32
+2019-03-15 18:08:01,716|INFO|29942|Working 33
+2019-03-15 18:08:01,876|INFO|29942|St base: 45474.00, St addl: 2208.00, S conflict: 0.00, T conflict: 0.00, Per spread: -10350.00, Sec penalty: 0.00
+2019-03-15 18:08:01,876|INFO|29942|45474
+2019-03-15 18:08:01,876|INFO|29942|37331.9966076921
+2019-03-15 18:08:02,024|INFO|29942|Done 23; score:
+2019-03-15 18:08:02,024|INFO|29942|37331.9966076921
+2019-03-15 18:08:02,217|INFO|29942|Working 34
+2019-03-15 18:08:02,235|INFO|29942|St base: 45002.00, St addl: 2176.46, S conflict: 0.00, T conflict: 0.00, Per spread: -10340.00, Sec penalty: 0.00
+2019-03-15 18:08:02,236|INFO|29942|45002
+2019-03-15 18:08:02,236|INFO|29942|36838.461155060504
+2019-03-15 18:08:02,374|INFO|29942|Done 22; score:
+2019-03-15 18:08:02,374|INFO|29942|36838.461155060504
+2019-03-15 18:08:02,596|INFO|29942|Working 35
+2019-03-15 18:08:11,568|INFO|29942|St base: 45416.00, St addl: 2237.13, S conflict: 0.00, T conflict: 0.00, Per spread: -10010.00, Sec penalty: 0.00
+2019-03-15 18:08:11,568|INFO|29942|45416
+2019-03-15 18:08:11,568|INFO|29942|37643.12678553266
+2019-03-15 18:08:11,710|INFO|29942|Done 24; score:
+2019-03-15 18:08:11,710|INFO|29942|37643.12678553266
+2019-03-15 18:08:13,806|INFO|29942|St base: 45206.00, St addl: 2173.42, S conflict: 0.00, T conflict: 0.00, Per spread: -11040.00, Sec penalty: 0.00
+2019-03-15 18:08:13,807|INFO|29942|45206
+2019-03-15 18:08:13,807|INFO|29942|36339.423353575694
+2019-03-15 18:08:13,950|INFO|29942|Done 25; score:
+2019-03-15 18:08:13,950|INFO|29942|36339.423353575694
+2019-03-15 18:08:14,219|INFO|29942|St base: 44442.00, St addl: 2176.39, S conflict: 0.00, T conflict: 0.00, Per spread: -10850.00, Sec penalty: 0.00
+2019-03-15 18:08:14,219|INFO|29942|44442
+2019-03-15 18:08:14,219|INFO|29942|35768.39217438329
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-2:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-1:
+2019-03-15 18:08:14,244|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-7:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-11:
+2019-03-15 18:08:14,244|ERROR|29942|File "back_end/run_schedule.py", line 73, in <module>
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-9:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-5:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-3:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-4:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-6:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-10:
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-12:
+2019-03-15 18:08:14,244|ERROR|29942|main()
+2019-03-15 18:08:14,244|ERROR|29942|Process ForkPoolWorker-8:
+2019-03-15 18:08:14,245|ERROR|29942|File "back_end/run_schedule.py", line 69, in main
+2019-03-15 18:08:14,245|ERROR|29942|run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
+2019-03-15 18:08:14,245|ERROR|29942|File "back_end/run_schedule.py", line 65, in run_scheduler
+2019-03-15 18:08:14,245|ERROR|29942|solver.solve(verbose=0, print_every=1)
+2019-03-15 18:08:14,245|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,245|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,245|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 759, in solve
+2019-03-15 18:08:14,245|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,245|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,245|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,245|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-03-15 18:08:14,246|ERROR|29942|self.current_sched=self.improve_sched(10,5,3*self.num_processes,self.current_sched)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 789, in improve_sched
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 715, in multi_improve_sched
+    sched.remove_teacher_conflicts()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 491, in optimize_student
+    score,student_score,conflict_score=self.score_student(student)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 546, in optimize_student
+    if i.space_available():
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 440, in remove_teacher_conflicts
+    periods[k].append(j)
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 353, in score_student
+    st_conflict_score,addl_score=self.score_student_sections(student)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,246|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 722, in multi_improve_sched
+    sched.score()
+2019-03-15 18:08:14,246|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 366, in score_student_sections
+    if j.semester == 0:
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,246|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 401, in score
+    return self.preliminary_score()
+2019-03-15 18:08:14,246|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,246|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 561, in optimize_student
+    old_sections=new_section.add_student_removing_conflicts(student)
+2019-03-15 18:08:14,246|ERROR|29942|sched_info = self.pool.map(multi_improve_sched, starting_scheds)
+2019-03-15 18:08:14,246|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,246|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 497, in optimize_student
+    random.shuffle(courses_randomized)#sorted(student.courses.courses, key=lambda i: random.random())
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 279, in preliminary_score
+    student_score,_,conflicts=self.score_student(i)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/basics.py", line 299, in add_student_removing_conflicts
+    return self.add_student_removing_conflicts_helper(student)
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 260, in map
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/random.py", line 271, in shuffle
+    j = randbelow(i+1)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 353, in score_student
+    st_conflict_score,addl_score=self.score_student_sections(student)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/basics.py", line 308, in add_student_removing_conflicts_helper
+    if i.period==self.period:
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/random.py", line 232, in _randbelow
+    r = getrandbits(k)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 571, in optimize_student
+    i.add_student_removing_conflicts(student)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 360, in score_student_sections
+    periods_yr = set()
+2019-03-15 18:08:14,247|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,247|ERROR|29942|return self._map_async(func, iterable, mapstar, chunksize).get()
+2019-03-15 18:08:14,247|ERROR|29942|Traceback (most recent call last):
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/basics.py", line 299, in add_student_removing_conflicts
+    return self.add_student_removing_conflicts_helper(student)
+2019-03-15 18:08:14,247|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,247|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 602, in get
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/basics.py", line 301, in add_student_removing_conflicts_helper
+    def add_student_removing_conflicts_helper(self,student):
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/queues.py", line 343, in get
+    res = self._reader.recv_bytes()
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-03-15 18:08:14,247|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+2019-03-15 18:08:14,247|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-03-15 18:08:14,247|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,248|ERROR|29942|self.wait(timeout)
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 599, in wait
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 562, in optimize_student
+    new_score = self.score_student(student)[0]
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 355, in score_student
+    base_score+=self.score_student_courses(student)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 503, in optimize_student
+    courses[j].append(k)
+2019-03-15 18:08:14,248|ERROR|29942|self._event.wait(timeout)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 720, in multi_improve_sched
+    sched.optimize_student(j, max_it=num_subrounds)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/basics.py", line 182, in __hash__
+    return hash(self.courseID)
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 392, in score_student_courses
+    base_score += self.correct_yr_course_score_delta
+2019-03-15 18:08:14,248|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,248|ERROR|29942|File "/usr/lib/python3.5/threading.py", line 549, in wait
+2019-03-15 18:08:14,248|ERROR|29942|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 500, in optimize_student
+    courses[j]=[]
+2019-03-15 18:08:14,249|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,249|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,249|ERROR|29942|KeyboardInterrupt
+2019-03-15 18:08:14,249|ERROR|29942|signaled = self._cond.wait(timeout)
+2019-03-15 18:08:14,249|ERROR|29942|File "/usr/lib/python3.5/threading.py", line 293, in wait
+2019-03-15 18:08:14,249|ERROR|29942|waiter.acquire()
+2019-03-15 18:08:14,250|ERROR|29942|KeyboardInterrupt

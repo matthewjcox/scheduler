@@ -19024,3 +19024,2097 @@ django.template.exceptions.TemplateDoesNotExist: info.html
 [2019-03-14 12:00:38 -0400] [19860] [INFO] Booting worker with pid: 19860
 [2019-03-14 12:00:38 -0400] [19863] [INFO] Booting worker with pid: 19863
 [2019-03-14 12:00:38 -0400] [19864] [INFO] Booting worker with pid: 19864
+\n\n\n starting new server run \n
+[2019-03-14 16:11:12 -0400] [12099] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:11:12 -0400] [12099] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:11:12 -0400] [12099] [ERROR] Retrying in 1 second.
+[2019-03-14 16:11:13 -0400] [12099] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:11:13 -0400] [12099] [ERROR] Retrying in 1 second.
+[2019-03-14 16:11:14 -0400] [12099] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:11:14 -0400] [12099] [ERROR] Retrying in 1 second.
+[2019-03-14 16:11:15 -0400] [12099] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:11:15 -0400] [12099] [ERROR] Retrying in 1 second.
+[2019-03-14 16:11:16 -0400] [12099] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:11:16 -0400] [12099] [ERROR] Retrying in 1 second.
+[2019-03-14 16:11:17 -0400] [12099] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:13:04 -0400] [17702] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:13:04 -0400] [17702] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:13:04 -0400] [17702] [ERROR] Retrying in 1 second.
+[2019-03-14 16:13:05 -0400] [17702] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:13:05 -0400] [17702] [ERROR] Retrying in 1 second.
+[2019-03-14 16:13:06 -0400] [17702] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:13:06 -0400] [17702] [ERROR] Retrying in 1 second.
+[2019-03-14 16:13:07 -0400] [17702] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:13:07 -0400] [17702] [ERROR] Retrying in 1 second.
+[2019-03-14 16:13:08 -0400] [17702] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:13:08 -0400] [17702] [ERROR] Retrying in 1 second.
+[2019-03-14 16:13:09 -0400] [17702] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:14:49 -0400] [22707] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:14:49 -0400] [22707] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:14:49 -0400] [22707] [ERROR] Retrying in 1 second.
+[2019-03-14 16:14:50 -0400] [22707] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:14:50 -0400] [22707] [ERROR] Retrying in 1 second.
+[2019-03-14 16:14:51 -0400] [22707] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:14:51 -0400] [22707] [ERROR] Retrying in 1 second.
+[2019-03-14 16:14:52 -0400] [22707] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:14:52 -0400] [22707] [ERROR] Retrying in 1 second.
+[2019-03-14 16:14:53 -0400] [22707] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:14:53 -0400] [22707] [ERROR] Retrying in 1 second.
+[2019-03-14 16:14:54 -0400] [22707] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:16:34 -0400] [27614] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:16:34 -0400] [27614] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:16:34 -0400] [27614] [ERROR] Retrying in 1 second.
+[2019-03-14 16:16:35 -0400] [27614] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:16:35 -0400] [27614] [ERROR] Retrying in 1 second.
+[2019-03-14 16:16:36 -0400] [27614] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:16:36 -0400] [27614] [ERROR] Retrying in 1 second.
+[2019-03-14 16:16:37 -0400] [27614] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:16:37 -0400] [27614] [ERROR] Retrying in 1 second.
+[2019-03-14 16:16:38 -0400] [27614] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:16:38 -0400] [27614] [ERROR] Retrying in 1 second.
+[2019-03-14 16:16:39 -0400] [27614] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:18:10 -0400] [32556] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:18:10 -0400] [32556] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:18:10 -0400] [32556] [ERROR] Retrying in 1 second.
+[2019-03-14 16:18:11 -0400] [32556] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:18:11 -0400] [32556] [ERROR] Retrying in 1 second.
+[2019-03-14 16:18:12 -0400] [32556] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:18:12 -0400] [32556] [ERROR] Retrying in 1 second.
+[2019-03-14 16:18:13 -0400] [32556] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:18:13 -0400] [32556] [ERROR] Retrying in 1 second.
+[2019-03-14 16:18:14 -0400] [32556] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:18:14 -0400] [32556] [ERROR] Retrying in 1 second.
+[2019-03-14 16:18:15 -0400] [32556] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:19:53 -0400] [9265] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:19:53 -0400] [9265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:19:53 -0400] [9265] [ERROR] Retrying in 1 second.
+[2019-03-14 16:19:54 -0400] [9265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:19:54 -0400] [9265] [ERROR] Retrying in 1 second.
+[2019-03-14 16:19:55 -0400] [9265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:19:55 -0400] [9265] [ERROR] Retrying in 1 second.
+[2019-03-14 16:19:56 -0400] [9265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:19:56 -0400] [9265] [ERROR] Retrying in 1 second.
+[2019-03-14 16:19:57 -0400] [9265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:19:57 -0400] [9265] [ERROR] Retrying in 1 second.
+[2019-03-14 16:19:58 -0400] [9265] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:21:48 -0400] [15729] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:21:48 -0400] [15729] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:21:48 -0400] [15729] [ERROR] Retrying in 1 second.
+[2019-03-14 16:21:49 -0400] [15729] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:21:49 -0400] [15729] [ERROR] Retrying in 1 second.
+[2019-03-14 16:21:50 -0400] [15729] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:21:50 -0400] [15729] [ERROR] Retrying in 1 second.
+[2019-03-14 16:21:51 -0400] [15729] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:21:51 -0400] [15729] [ERROR] Retrying in 1 second.
+[2019-03-14 16:21:52 -0400] [15729] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:21:52 -0400] [15729] [ERROR] Retrying in 1 second.
+[2019-03-14 16:21:53 -0400] [15729] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:26:09 -0400] [21407] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:26:09 -0400] [21407] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:26:09 -0400] [21407] [ERROR] Retrying in 1 second.
+[2019-03-14 16:26:10 -0400] [21407] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:26:10 -0400] [21407] [ERROR] Retrying in 1 second.
+[2019-03-14 16:26:11 -0400] [21407] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:26:11 -0400] [21407] [ERROR] Retrying in 1 second.
+[2019-03-14 16:26:12 -0400] [21407] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:26:12 -0400] [21407] [ERROR] Retrying in 1 second.
+[2019-03-14 16:26:13 -0400] [21407] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:26:13 -0400] [21407] [ERROR] Retrying in 1 second.
+[2019-03-14 16:26:14 -0400] [21407] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:28:38 -0400] [811] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:28:38 -0400] [811] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:28:38 -0400] [811] [ERROR] Retrying in 1 second.
+[2019-03-14 16:28:39 -0400] [811] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:28:39 -0400] [811] [ERROR] Retrying in 1 second.
+[2019-03-14 16:28:40 -0400] [811] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:28:40 -0400] [811] [ERROR] Retrying in 1 second.
+[2019-03-14 16:28:41 -0400] [811] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:28:41 -0400] [811] [ERROR] Retrying in 1 second.
+[2019-03-14 16:28:42 -0400] [811] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:28:42 -0400] [811] [ERROR] Retrying in 1 second.
+[2019-03-14 16:28:43 -0400] [811] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 16:37:42 -0400] [15590] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 16:37:42 -0400] [15590] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:37:42 -0400] [15590] [ERROR] Retrying in 1 second.
+[2019-03-14 16:37:43 -0400] [15590] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:37:43 -0400] [15590] [ERROR] Retrying in 1 second.
+[2019-03-14 16:37:44 -0400] [15590] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:37:44 -0400] [15590] [ERROR] Retrying in 1 second.
+[2019-03-14 16:37:45 -0400] [15590] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:37:45 -0400] [15590] [ERROR] Retrying in 1 second.
+[2019-03-14 16:37:46 -0400] [15590] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 16:37:47 -0400] [15590] [ERROR] Retrying in 1 second.
+[2019-03-14 16:38:01 -0400] [15590] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 17:36:02 -0400] [14271] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 17:36:02 -0400] [14271] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 17:36:02 -0400] [14271] [ERROR] Retrying in 1 second.
+[2019-03-14 17:36:03 -0400] [14271] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 17:36:03 -0400] [14271] [ERROR] Retrying in 1 second.
+[2019-03-14 17:36:04 -0400] [14271] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 17:36:07 -0400] [14271] [ERROR] Retrying in 1 second.
+[2019-03-14 17:36:10 -0400] [14271] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 17:36:18 -0400] [14271] [ERROR] Retrying in 1 second.
+[2019-03-14 17:36:23 -0400] [14271] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 17:36:24 -0400] [14271] [ERROR] Retrying in 1 second.
+[2019-03-14 17:36:25 -0400] [14271] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:46:03 -0400] [23648] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:46:03 -0400] [23648] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:46:03 -0400] [23648] [ERROR] Retrying in 1 second.
+[2019-03-14 19:46:04 -0400] [23648] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:46:04 -0400] [23648] [ERROR] Retrying in 1 second.
+[2019-03-14 19:46:05 -0400] [23648] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:46:05 -0400] [23648] [ERROR] Retrying in 1 second.
+[2019-03-14 19:46:06 -0400] [23648] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:46:06 -0400] [23648] [ERROR] Retrying in 1 second.
+[2019-03-14 19:46:07 -0400] [23648] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:46:07 -0400] [23648] [ERROR] Retrying in 1 second.
+[2019-03-14 19:46:08 -0400] [23648] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:48:01 -0400] [29589] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:48:01 -0400] [29589] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:48:01 -0400] [29589] [ERROR] Retrying in 1 second.
+[2019-03-14 19:48:02 -0400] [29589] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:48:02 -0400] [29589] [ERROR] Retrying in 1 second.
+[2019-03-14 19:48:03 -0400] [29589] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:48:03 -0400] [29589] [ERROR] Retrying in 1 second.
+[2019-03-14 19:48:04 -0400] [29589] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:48:04 -0400] [29589] [ERROR] Retrying in 1 second.
+[2019-03-14 19:48:05 -0400] [29589] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:48:05 -0400] [29589] [ERROR] Retrying in 1 second.
+[2019-03-14 19:48:06 -0400] [29589] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:49:37 -0400] [2849] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:49:37 -0400] [2849] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:49:37 -0400] [2849] [ERROR] Retrying in 1 second.
+[2019-03-14 19:49:38 -0400] [2849] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:49:38 -0400] [2849] [ERROR] Retrying in 1 second.
+[2019-03-14 19:49:39 -0400] [2849] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:49:39 -0400] [2849] [ERROR] Retrying in 1 second.
+[2019-03-14 19:49:40 -0400] [2849] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:49:40 -0400] [2849] [ERROR] Retrying in 1 second.
+[2019-03-14 19:49:41 -0400] [2849] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:49:41 -0400] [2849] [ERROR] Retrying in 1 second.
+[2019-03-14 19:49:42 -0400] [2849] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:52:56 -0400] [14969] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:52:56 -0400] [14969] [INFO] Listening at: http://127.0.0.1:11356 (14969)
+[2019-03-14 19:52:56 -0400] [14969] [INFO] Using worker: sync
+[2019-03-14 19:52:56 -0400] [15867] [INFO] Booting worker with pid: 15867
+[2019-03-14 19:52:57 -0400] [15877] [INFO] Booting worker with pid: 15877
+[2019-03-14 19:52:57 -0400] [15878] [INFO] Booting worker with pid: 15878
+[2019-03-14 19:52:57 -0400] [15883] [INFO] Booting worker with pid: 15883
+\n\n\n starting new server run \n
+[2019-03-14 19:55:02 -0400] [18765] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:55:02 -0400] [18765] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:02 -0400] [18765] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:03 -0400] [18765] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:03 -0400] [18765] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:04 -0400] [18765] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:04 -0400] [18765] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:05 -0400] [18765] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:05 -0400] [18765] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:06 -0400] [18765] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:06 -0400] [18765] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:07 -0400] [18765] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:55:22 -0400] [21197] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:55:22 -0400] [21197] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:22 -0400] [21197] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:23 -0400] [21197] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:23 -0400] [21197] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:24 -0400] [21197] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:24 -0400] [21197] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:25 -0400] [21197] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:25 -0400] [21197] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:26 -0400] [21197] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:26 -0400] [21197] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:27 -0400] [21197] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:55:41 -0400] [23483] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:55:41 -0400] [23483] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:41 -0400] [23483] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:42 -0400] [23483] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:42 -0400] [23483] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:43 -0400] [23483] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:43 -0400] [23483] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:44 -0400] [23483] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:44 -0400] [23483] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:45 -0400] [23483] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:55:45 -0400] [23483] [ERROR] Retrying in 1 second.
+[2019-03-14 19:55:46 -0400] [23483] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:56:08 -0400] [27115] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:56:08 -0400] [27115] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:08 -0400] [27115] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:09 -0400] [27115] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:09 -0400] [27115] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:10 -0400] [27115] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:10 -0400] [27115] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:11 -0400] [27115] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:11 -0400] [27115] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:12 -0400] [27115] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:12 -0400] [27115] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:13 -0400] [27115] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:56:33 -0400] [30246] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:56:33 -0400] [30246] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:33 -0400] [30246] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:34 -0400] [30246] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:34 -0400] [30246] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:35 -0400] [30246] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:35 -0400] [30246] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:36 -0400] [30246] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:36 -0400] [30246] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:37 -0400] [30246] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:37 -0400] [30246] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:38 -0400] [30246] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:56:58 -0400] [857] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:56:58 -0400] [857] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:58 -0400] [857] [ERROR] Retrying in 1 second.
+[2019-03-14 19:56:59 -0400] [857] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:56:59 -0400] [857] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:00 -0400] [857] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:00 -0400] [857] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:01 -0400] [857] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:01 -0400] [857] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:02 -0400] [857] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:02 -0400] [857] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:03 -0400] [857] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:57:20 -0400] [4114] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:57:20 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:20 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:21 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:21 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:22 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:22 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:23 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:23 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:24 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:24 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:25 -0400] [4114] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:57:44 -0400] [7409] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:57:44 -0400] [7409] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:44 -0400] [7409] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:45 -0400] [7409] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:45 -0400] [7409] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:46 -0400] [7409] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:46 -0400] [7409] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:47 -0400] [7409] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:47 -0400] [7409] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:48 -0400] [7409] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:57:48 -0400] [7409] [ERROR] Retrying in 1 second.
+[2019-03-14 19:57:49 -0400] [7409] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:58:09 -0400] [10469] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:58:09 -0400] [10469] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:09 -0400] [10469] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:10 -0400] [10469] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:10 -0400] [10469] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:11 -0400] [10469] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:11 -0400] [10469] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:12 -0400] [10469] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:12 -0400] [10469] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:13 -0400] [10469] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:13 -0400] [10469] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:14 -0400] [10469] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:58:34 -0400] [15526] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:58:34 -0400] [15526] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:34 -0400] [15526] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:35 -0400] [15526] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:35 -0400] [15526] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:36 -0400] [15526] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:36 -0400] [15526] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:37 -0400] [15526] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:37 -0400] [15526] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:38 -0400] [15526] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:38 -0400] [15526] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:39 -0400] [15526] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:58:56 -0400] [19090] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:58:56 -0400] [19090] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:56 -0400] [19090] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:57 -0400] [19090] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:57 -0400] [19090] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:58 -0400] [19090] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:58 -0400] [19090] [ERROR] Retrying in 1 second.
+[2019-03-14 19:58:59 -0400] [19090] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:58:59 -0400] [19090] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:00 -0400] [19090] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:00 -0400] [19090] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:01 -0400] [19090] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 19:59:12 -0400] [21144] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:59:12 -0400] [21144] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:12 -0400] [21144] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:13 -0400] [21144] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:13 -0400] [21144] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:14 -0400] [21144] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:14 -0400] [21144] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:15 -0400] [21144] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:15 -0400] [21144] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:16 -0400] [21144] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:16 -0400] [21144] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:17 -0400] [21144] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:59:36 -0400] [24637] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:59:36 -0400] [24637] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:36 -0400] [24637] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:37 -0400] [24637] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:37 -0400] [24637] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:38 -0400] [24637] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:38 -0400] [24637] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:39 -0400] [24637] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:39 -0400] [24637] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:40 -0400] [24637] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:40 -0400] [24637] [ERROR] Retrying in 1 second.
+[2019-03-14 19:59:41 -0400] [24637] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 19:59:59 -0400] [27825] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 19:59:59 -0400] [27825] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 19:59:59 -0400] [27825] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:00 -0400] [27825] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:00 -0400] [27825] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:01 -0400] [27825] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:01 -0400] [27825] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:02 -0400] [27825] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:02 -0400] [27825] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:03 -0400] [27825] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:03 -0400] [27825] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:04 -0400] [27825] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:00:15 -0400] [30062] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:00:15 -0400] [30062] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:15 -0400] [30062] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:16 -0400] [30062] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:16 -0400] [30062] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:17 -0400] [30062] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:17 -0400] [30062] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:18 -0400] [30062] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:18 -0400] [30062] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:19 -0400] [30062] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:19 -0400] [30062] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:20 -0400] [30062] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:00:35 -0400] [32710] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:00:35 -0400] [32710] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:35 -0400] [32710] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:36 -0400] [32710] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:36 -0400] [32710] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:37 -0400] [32710] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:37 -0400] [32710] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:38 -0400] [32710] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:38 -0400] [32710] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:39 -0400] [32710] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:39 -0400] [32710] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:40 -0400] [32710] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:00:56 -0400] [3169] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:00:56 -0400] [3169] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:56 -0400] [3169] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:57 -0400] [3169] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:57 -0400] [3169] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:58 -0400] [3169] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:58 -0400] [3169] [ERROR] Retrying in 1 second.
+[2019-03-14 20:00:59 -0400] [3169] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:00:59 -0400] [3169] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:00 -0400] [3169] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:00 -0400] [3169] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:01 -0400] [3169] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:01:22 -0400] [6301] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:01:22 -0400] [6301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:22 -0400] [6301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:23 -0400] [6301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:23 -0400] [6301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:24 -0400] [6301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:24 -0400] [6301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:25 -0400] [6301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:25 -0400] [6301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:26 -0400] [6301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:26 -0400] [6301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:27 -0400] [6301] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:01:44 -0400] [10249] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:01:44 -0400] [10249] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:44 -0400] [10249] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:45 -0400] [10249] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:45 -0400] [10249] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:46 -0400] [10249] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:46 -0400] [10249] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:47 -0400] [10249] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:47 -0400] [10249] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:48 -0400] [10249] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:01:48 -0400] [10249] [ERROR] Retrying in 1 second.
+[2019-03-14 20:01:49 -0400] [10249] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:02:11 -0400] [15937] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:02:11 -0400] [15937] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:11 -0400] [15937] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:12 -0400] [15937] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:12 -0400] [15937] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:13 -0400] [15937] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:13 -0400] [15937] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:14 -0400] [15937] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:14 -0400] [15937] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:15 -0400] [15937] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:15 -0400] [15937] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:16 -0400] [15937] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:02:26 -0400] [17963] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:02:26 -0400] [17963] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:26 -0400] [17963] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:27 -0400] [17963] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:27 -0400] [17963] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:28 -0400] [17963] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:28 -0400] [17963] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:29 -0400] [17963] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:29 -0400] [17963] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:30 -0400] [17963] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:30 -0400] [17963] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:31 -0400] [17963] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:02:46 -0400] [22199] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:02:46 -0400] [22199] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:46 -0400] [22199] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:47 -0400] [22199] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:47 -0400] [22199] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:48 -0400] [22199] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:48 -0400] [22199] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:49 -0400] [22199] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:49 -0400] [22199] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:50 -0400] [22199] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:50 -0400] [22199] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:51 -0400] [22199] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:02:58 -0400] [23346] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:02:58 -0400] [23346] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:58 -0400] [23346] [ERROR] Retrying in 1 second.
+[2019-03-14 20:02:59 -0400] [23346] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:02:59 -0400] [23346] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:00 -0400] [23346] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:00 -0400] [23346] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:01 -0400] [23346] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:01 -0400] [23346] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:02 -0400] [23346] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:02 -0400] [23346] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:03 -0400] [23346] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:03:10 -0400] [25113] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:03:10 -0400] [25113] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:10 -0400] [25113] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:11 -0400] [25113] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:11 -0400] [25113] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:12 -0400] [25113] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:12 -0400] [25113] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:13 -0400] [25113] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:13 -0400] [25113] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:14 -0400] [25113] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:14 -0400] [25113] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:15 -0400] [25113] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:03:34 -0400] [28459] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:03:34 -0400] [28459] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:34 -0400] [28459] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:35 -0400] [28459] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:35 -0400] [28459] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:36 -0400] [28459] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:36 -0400] [28459] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:37 -0400] [28459] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:37 -0400] [28459] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:38 -0400] [28459] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:38 -0400] [28459] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:39 -0400] [28459] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:03:53 -0400] [31382] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:03:53 -0400] [31382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:53 -0400] [31382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:54 -0400] [31382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:54 -0400] [31382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:55 -0400] [31382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:55 -0400] [31382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:56 -0400] [31382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:56 -0400] [31382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:57 -0400] [31382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:03:57 -0400] [31382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:03:58 -0400] [31382] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:04:12 -0400] [2265] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:04:12 -0400] [2265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:12 -0400] [2265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:13 -0400] [2265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:13 -0400] [2265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:14 -0400] [2265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:14 -0400] [2265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:15 -0400] [2265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:15 -0400] [2265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:16 -0400] [2265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:16 -0400] [2265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:17 -0400] [2265] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:04:31 -0400] [5947] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:04:31 -0400] [5947] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:31 -0400] [5947] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:32 -0400] [5947] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:32 -0400] [5947] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:33 -0400] [5947] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:33 -0400] [5947] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:34 -0400] [5947] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:34 -0400] [5947] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:35 -0400] [5947] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:35 -0400] [5947] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:36 -0400] [5947] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:04:56 -0400] [9332] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:04:56 -0400] [9332] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:56 -0400] [9332] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:57 -0400] [9332] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:57 -0400] [9332] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:58 -0400] [9332] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:58 -0400] [9332] [ERROR] Retrying in 1 second.
+[2019-03-14 20:04:59 -0400] [9332] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:04:59 -0400] [9332] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:00 -0400] [9332] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:00 -0400] [9332] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:01 -0400] [9332] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:05:08 -0400] [11592] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:05:08 -0400] [11592] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:08 -0400] [11592] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:09 -0400] [11592] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:09 -0400] [11592] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:10 -0400] [11592] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:10 -0400] [11592] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:11 -0400] [11592] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:11 -0400] [11592] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:12 -0400] [11592] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:12 -0400] [11592] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:13 -0400] [11592] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:05:29 -0400] [16756] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:05:29 -0400] [16756] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:29 -0400] [16756] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:30 -0400] [16756] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:30 -0400] [16756] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:31 -0400] [16756] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:31 -0400] [16756] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:32 -0400] [16756] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:32 -0400] [16756] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:33 -0400] [16756] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:33 -0400] [16756] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:34 -0400] [16756] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:05:54 -0400] [21092] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:05:54 -0400] [21092] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:54 -0400] [21092] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:55 -0400] [21092] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:55 -0400] [21092] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:56 -0400] [21092] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:56 -0400] [21092] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:57 -0400] [21092] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:57 -0400] [21092] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:58 -0400] [21092] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:05:58 -0400] [21092] [ERROR] Retrying in 1 second.
+[2019-03-14 20:05:59 -0400] [21092] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:06:11 -0400] [23839] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:06:11 -0400] [23839] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:11 -0400] [23839] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:12 -0400] [23839] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:12 -0400] [23839] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:13 -0400] [23839] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:13 -0400] [23839] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:14 -0400] [23839] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:14 -0400] [23839] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:15 -0400] [23839] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:15 -0400] [23839] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:16 -0400] [23839] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:06:25 -0400] [25704] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:06:25 -0400] [25704] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:25 -0400] [25704] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:26 -0400] [25704] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:26 -0400] [25704] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:27 -0400] [25704] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:27 -0400] [25704] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:29 -0400] [25704] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:29 -0400] [25704] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:30 -0400] [25704] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:30 -0400] [25704] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:31 -0400] [25704] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:06:52 -0400] [29655] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:06:53 -0400] [29655] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:53 -0400] [29655] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:54 -0400] [29655] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:54 -0400] [29655] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:55 -0400] [29655] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:55 -0400] [29655] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:56 -0400] [29655] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:56 -0400] [29655] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:57 -0400] [29655] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:06:57 -0400] [29655] [ERROR] Retrying in 1 second.
+[2019-03-14 20:06:58 -0400] [29655] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:07:09 -0400] [31885] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:07:09 -0400] [31885] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:09 -0400] [31885] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:10 -0400] [31885] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:10 -0400] [31885] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:11 -0400] [31885] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:11 -0400] [31885] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:12 -0400] [31885] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:12 -0400] [31885] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:13 -0400] [31885] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:13 -0400] [31885] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:14 -0400] [31885] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:07:28 -0400] [1388] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:07:28 -0400] [1388] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:28 -0400] [1388] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:29 -0400] [1388] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:29 -0400] [1388] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:30 -0400] [1388] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:30 -0400] [1388] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:31 -0400] [1388] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:31 -0400] [1388] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:32 -0400] [1388] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:32 -0400] [1388] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:33 -0400] [1388] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:07:46 -0400] [4966] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:07:46 -0400] [4966] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:46 -0400] [4966] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:47 -0400] [4966] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:47 -0400] [4966] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:48 -0400] [4966] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:48 -0400] [4966] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:49 -0400] [4966] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:49 -0400] [4966] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:50 -0400] [4966] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:07:50 -0400] [4966] [ERROR] Retrying in 1 second.
+[2019-03-14 20:07:51 -0400] [4966] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:08:03 -0400] [6804] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:08:03 -0400] [6804] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:03 -0400] [6804] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:04 -0400] [6804] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:04 -0400] [6804] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:05 -0400] [6804] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:05 -0400] [6804] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:06 -0400] [6804] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:06 -0400] [6804] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:07 -0400] [6804] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:07 -0400] [6804] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:08 -0400] [6804] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:08:26 -0400] [9552] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:08:26 -0400] [9552] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:26 -0400] [9552] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:27 -0400] [9552] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:27 -0400] [9552] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:28 -0400] [9552] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:28 -0400] [9552] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:29 -0400] [9552] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:29 -0400] [9552] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:30 -0400] [9552] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:30 -0400] [9552] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:31 -0400] [9552] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:08:43 -0400] [12011] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:08:43 -0400] [12011] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:43 -0400] [12011] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:44 -0400] [12011] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:44 -0400] [12011] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:45 -0400] [12011] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:45 -0400] [12011] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:46 -0400] [12011] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:46 -0400] [12011] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:47 -0400] [12011] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:08:47 -0400] [12011] [ERROR] Retrying in 1 second.
+[2019-03-14 20:08:48 -0400] [12011] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:09:11 -0400] [18035] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:09:11 -0400] [18035] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:11 -0400] [18035] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:12 -0400] [18035] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:12 -0400] [18035] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:13 -0400] [18035] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:13 -0400] [18035] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:14 -0400] [18035] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:14 -0400] [18035] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:15 -0400] [18035] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:15 -0400] [18035] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:16 -0400] [18035] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:09:30 -0400] [20531] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:09:30 -0400] [20531] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:30 -0400] [20531] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:31 -0400] [20531] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:31 -0400] [20531] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:32 -0400] [20531] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:32 -0400] [20531] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:33 -0400] [20531] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:33 -0400] [20531] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:34 -0400] [20531] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:34 -0400] [20531] [ERROR] Retrying in 1 second.
+[2019-03-14 20:09:35 -0400] [20531] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:09:59 -0400] [24343] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:09:59 -0400] [24343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:09:59 -0400] [24343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:00 -0400] [24343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:00 -0400] [24343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:01 -0400] [24343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:01 -0400] [24343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:02 -0400] [24343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:02 -0400] [24343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:03 -0400] [24343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:03 -0400] [24343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:04 -0400] [24343] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:10:21 -0400] [27962] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:10:21 -0400] [27962] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:21 -0400] [27962] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:22 -0400] [27962] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:22 -0400] [27962] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:23 -0400] [27962] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:23 -0400] [27962] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:24 -0400] [27962] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:24 -0400] [27962] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:25 -0400] [27962] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:25 -0400] [27962] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:26 -0400] [27962] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:10:44 -0400] [30360] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:10:44 -0400] [30360] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:44 -0400] [30360] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:45 -0400] [30360] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:45 -0400] [30360] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:46 -0400] [30360] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:46 -0400] [30360] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:47 -0400] [30360] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:47 -0400] [30360] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:48 -0400] [30360] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:48 -0400] [30360] [ERROR] Retrying in 1 second.
+[2019-03-14 20:10:49 -0400] [30360] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:10:59 -0400] [382] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:10:59 -0400] [382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:10:59 -0400] [382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:00 -0400] [382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:00 -0400] [382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:01 -0400] [382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:01 -0400] [382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:02 -0400] [382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:02 -0400] [382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:03 -0400] [382] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:03 -0400] [382] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:04 -0400] [382] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:11:26 -0400] [4114] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:11:26 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:26 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:27 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:27 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:28 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:28 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:29 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:29 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:30 -0400] [4114] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:30 -0400] [4114] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:31 -0400] [4114] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:11:37 -0400] [5855] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:11:37 -0400] [5855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:37 -0400] [5855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:38 -0400] [5855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:38 -0400] [5855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:39 -0400] [5855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:39 -0400] [5855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:40 -0400] [5855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:40 -0400] [5855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:41 -0400] [5855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:41 -0400] [5855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:42 -0400] [5855] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:11:57 -0400] [8201] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:11:57 -0400] [8201] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:57 -0400] [8201] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:58 -0400] [8201] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:58 -0400] [8201] [ERROR] Retrying in 1 second.
+[2019-03-14 20:11:59 -0400] [8201] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:11:59 -0400] [8201] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:00 -0400] [8201] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:00 -0400] [8201] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:01 -0400] [8201] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:01 -0400] [8201] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:02 -0400] [8201] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:12:15 -0400] [11079] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:12:15 -0400] [11079] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:15 -0400] [11079] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:16 -0400] [11079] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:16 -0400] [11079] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:17 -0400] [11079] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:17 -0400] [11079] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:18 -0400] [11079] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:18 -0400] [11079] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:19 -0400] [11079] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:19 -0400] [11079] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:20 -0400] [11079] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:12:37 -0400] [14774] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:12:37 -0400] [14774] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:37 -0400] [14774] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:38 -0400] [14774] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:38 -0400] [14774] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:39 -0400] [14774] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:39 -0400] [14774] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:40 -0400] [14774] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:40 -0400] [14774] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:41 -0400] [14774] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:12:41 -0400] [14774] [ERROR] Retrying in 1 second.
+[2019-03-14 20:12:42 -0400] [14774] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:13:01 -0400] [18739] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:13:01 -0400] [18739] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:01 -0400] [18739] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:02 -0400] [18739] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:02 -0400] [18739] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:03 -0400] [18739] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:03 -0400] [18739] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:04 -0400] [18739] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:04 -0400] [18739] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:05 -0400] [18739] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:05 -0400] [18739] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:06 -0400] [18739] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:13:29 -0400] [22672] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:13:29 -0400] [22672] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:29 -0400] [22672] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:30 -0400] [22672] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:30 -0400] [22672] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:31 -0400] [22672] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:31 -0400] [22672] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:32 -0400] [22672] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:32 -0400] [22672] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:33 -0400] [22672] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:33 -0400] [22672] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:34 -0400] [22672] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:13:57 -0400] [26764] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:13:58 -0400] [26764] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:58 -0400] [26764] [ERROR] Retrying in 1 second.
+[2019-03-14 20:13:59 -0400] [26764] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:13:59 -0400] [26764] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:00 -0400] [26764] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:00 -0400] [26764] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:01 -0400] [26764] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:01 -0400] [26764] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:02 -0400] [26764] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:02 -0400] [26764] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:03 -0400] [26764] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:14:18 -0400] [30097] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:14:18 -0400] [30097] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:18 -0400] [30097] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:19 -0400] [30097] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:19 -0400] [30097] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:20 -0400] [30097] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:20 -0400] [30097] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:21 -0400] [30097] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:21 -0400] [30097] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:22 -0400] [30097] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:22 -0400] [30097] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:23 -0400] [30097] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:14:45 -0400] [722] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:14:45 -0400] [722] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:45 -0400] [722] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:46 -0400] [722] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:46 -0400] [722] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:47 -0400] [722] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:47 -0400] [722] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:48 -0400] [722] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:48 -0400] [722] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:49 -0400] [722] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:14:49 -0400] [722] [ERROR] Retrying in 1 second.
+[2019-03-14 20:14:50 -0400] [722] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:15:04 -0400] [4223] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:15:04 -0400] [4223] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:04 -0400] [4223] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:05 -0400] [4223] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:05 -0400] [4223] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:06 -0400] [4223] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:06 -0400] [4223] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:07 -0400] [4223] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:07 -0400] [4223] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:08 -0400] [4223] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:08 -0400] [4223] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:09 -0400] [4223] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:15:27 -0400] [6698] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:15:27 -0400] [6698] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:27 -0400] [6698] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:28 -0400] [6698] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:28 -0400] [6698] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:29 -0400] [6698] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:29 -0400] [6698] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:30 -0400] [6698] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:30 -0400] [6698] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:31 -0400] [6698] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:31 -0400] [6698] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:32 -0400] [6698] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:15:50 -0400] [9855] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:15:50 -0400] [9855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:50 -0400] [9855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:51 -0400] [9855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:51 -0400] [9855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:52 -0400] [9855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:52 -0400] [9855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:53 -0400] [9855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:53 -0400] [9855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:54 -0400] [9855] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:15:54 -0400] [9855] [ERROR] Retrying in 1 second.
+[2019-03-14 20:15:55 -0400] [9855] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:16:12 -0400] [12898] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:16:12 -0400] [12898] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:12 -0400] [12898] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:13 -0400] [12898] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:13 -0400] [12898] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:14 -0400] [12898] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:14 -0400] [12898] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:15 -0400] [12898] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:15 -0400] [12898] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:16 -0400] [12898] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:16 -0400] [12898] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:17 -0400] [12898] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:16:34 -0400] [17389] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:16:34 -0400] [17389] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:34 -0400] [17389] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:35 -0400] [17389] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:35 -0400] [17389] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:36 -0400] [17389] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:36 -0400] [17389] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:37 -0400] [17389] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:37 -0400] [17389] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:38 -0400] [17389] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:38 -0400] [17389] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:39 -0400] [17389] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:16:57 -0400] [21193] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:16:57 -0400] [21193] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:57 -0400] [21193] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:58 -0400] [21193] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:58 -0400] [21193] [ERROR] Retrying in 1 second.
+[2019-03-14 20:16:59 -0400] [21193] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:16:59 -0400] [21193] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:00 -0400] [21193] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:00 -0400] [21193] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:01 -0400] [21193] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:01 -0400] [21193] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:02 -0400] [21193] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:17:22 -0400] [24695] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:17:22 -0400] [24695] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:22 -0400] [24695] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:23 -0400] [24695] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:23 -0400] [24695] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:24 -0400] [24695] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:24 -0400] [24695] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:25 -0400] [24695] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:25 -0400] [24695] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:26 -0400] [24695] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:26 -0400] [24695] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:27 -0400] [24695] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:17:38 -0400] [27102] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:17:38 -0400] [27102] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:38 -0400] [27102] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:39 -0400] [27102] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:39 -0400] [27102] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:40 -0400] [27102] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:40 -0400] [27102] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:41 -0400] [27102] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:41 -0400] [27102] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:42 -0400] [27102] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:17:42 -0400] [27102] [ERROR] Retrying in 1 second.
+[2019-03-14 20:17:43 -0400] [27102] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:18:03 -0400] [30647] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:18:03 -0400] [30647] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:03 -0400] [30647] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:04 -0400] [30647] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:04 -0400] [30647] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:05 -0400] [30647] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:05 -0400] [30647] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:06 -0400] [30647] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:06 -0400] [30647] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:07 -0400] [30647] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:07 -0400] [30647] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:08 -0400] [30647] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:18:26 -0400] [1222] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:18:26 -0400] [1222] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:26 -0400] [1222] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:27 -0400] [1222] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:27 -0400] [1222] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:28 -0400] [1222] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:28 -0400] [1222] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:29 -0400] [1222] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:29 -0400] [1222] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:30 -0400] [1222] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:30 -0400] [1222] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:31 -0400] [1222] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:18:52 -0400] [5591] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:18:52 -0400] [5591] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:52 -0400] [5591] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:53 -0400] [5591] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:53 -0400] [5591] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:54 -0400] [5591] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:54 -0400] [5591] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:55 -0400] [5591] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:55 -0400] [5591] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:56 -0400] [5591] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:18:56 -0400] [5591] [ERROR] Retrying in 1 second.
+[2019-03-14 20:18:57 -0400] [5591] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:19:15 -0400] [9072] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:19:15 -0400] [9072] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:15 -0400] [9072] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:16 -0400] [9072] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:16 -0400] [9072] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:17 -0400] [9072] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:17 -0400] [9072] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:18 -0400] [9072] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:18 -0400] [9072] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:19 -0400] [9072] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:19 -0400] [9072] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:20 -0400] [9072] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:19:40 -0400] [11887] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:19:40 -0400] [11887] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:40 -0400] [11887] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:41 -0400] [11887] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:41 -0400] [11887] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:42 -0400] [11887] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:42 -0400] [11887] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:43 -0400] [11887] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:43 -0400] [11887] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:44 -0400] [11887] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:44 -0400] [11887] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:45 -0400] [11887] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:19:58 -0400] [16896] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:19:58 -0400] [16896] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:58 -0400] [16896] [ERROR] Retrying in 1 second.
+[2019-03-14 20:19:59 -0400] [16896] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:19:59 -0400] [16896] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:00 -0400] [16896] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:00 -0400] [16896] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:01 -0400] [16896] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:01 -0400] [16896] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:02 -0400] [16896] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:02 -0400] [16896] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:03 -0400] [16896] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:20:09 -0400] [18572] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:20:09 -0400] [18572] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:09 -0400] [18572] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:10 -0400] [18572] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:10 -0400] [18572] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:11 -0400] [18572] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:11 -0400] [18572] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:12 -0400] [18572] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:12 -0400] [18572] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:13 -0400] [18572] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:13 -0400] [18572] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:14 -0400] [18572] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:20:38 -0400] [22319] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:20:38 -0400] [22319] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:38 -0400] [22319] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:39 -0400] [22319] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:39 -0400] [22319] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:40 -0400] [22319] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:40 -0400] [22319] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:41 -0400] [22319] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:41 -0400] [22319] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:42 -0400] [22319] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:20:42 -0400] [22319] [ERROR] Retrying in 1 second.
+[2019-03-14 20:20:43 -0400] [22319] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:21:13 -0400] [26918] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:21:13 -0400] [26918] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:13 -0400] [26918] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:14 -0400] [26918] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:14 -0400] [26918] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:15 -0400] [26918] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:15 -0400] [26918] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:16 -0400] [26918] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:16 -0400] [26918] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:17 -0400] [26918] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:17 -0400] [26918] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:18 -0400] [26918] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:21:38 -0400] [30789] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:21:38 -0400] [30789] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:38 -0400] [30789] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:39 -0400] [30789] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:39 -0400] [30789] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:40 -0400] [30789] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:40 -0400] [30789] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:41 -0400] [30789] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:41 -0400] [30789] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:42 -0400] [30789] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:21:42 -0400] [30789] [ERROR] Retrying in 1 second.
+[2019-03-14 20:21:43 -0400] [30789] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:28:47 -0400] [3757] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:28:47 -0400] [3757] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:28:47 -0400] [3757] [ERROR] Retrying in 1 second.
+[2019-03-14 20:28:48 -0400] [3757] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:28:48 -0400] [3757] [ERROR] Retrying in 1 second.
+[2019-03-14 20:28:49 -0400] [3757] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:28:49 -0400] [3757] [ERROR] Retrying in 1 second.
+[2019-03-14 20:28:50 -0400] [3757] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:28:50 -0400] [3757] [ERROR] Retrying in 1 second.
+[2019-03-14 20:28:51 -0400] [3757] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:28:51 -0400] [3757] [ERROR] Retrying in 1 second.
+[2019-03-14 20:28:52 -0400] [3757] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:29:11 -0400] [6549] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:29:11 -0400] [6549] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:11 -0400] [6549] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:12 -0400] [6549] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:12 -0400] [6549] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:13 -0400] [6549] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:13 -0400] [6549] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:14 -0400] [6549] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:14 -0400] [6549] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:15 -0400] [6549] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:15 -0400] [6549] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:16 -0400] [6549] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:29:35 -0400] [9356] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:29:35 -0400] [9356] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:35 -0400] [9356] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:36 -0400] [9356] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:36 -0400] [9356] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:37 -0400] [9356] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:37 -0400] [9356] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:38 -0400] [9356] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:38 -0400] [9356] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:39 -0400] [9356] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:29:39 -0400] [9356] [ERROR] Retrying in 1 second.
+[2019-03-14 20:29:40 -0400] [9356] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:30:01 -0400] [12716] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:30:01 -0400] [12716] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:01 -0400] [12716] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:02 -0400] [12716] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:02 -0400] [12716] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:03 -0400] [12716] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:03 -0400] [12716] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:04 -0400] [12716] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:04 -0400] [12716] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:05 -0400] [12716] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:05 -0400] [12716] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:06 -0400] [12716] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:30:30 -0400] [18501] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:30:30 -0400] [18501] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:30 -0400] [18501] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:31 -0400] [18501] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:31 -0400] [18501] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:32 -0400] [18501] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:32 -0400] [18501] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:33 -0400] [18501] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:33 -0400] [18501] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:34 -0400] [18501] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:34 -0400] [18501] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:35 -0400] [18501] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:30:50 -0400] [21285] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:30:50 -0400] [21285] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:50 -0400] [21285] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:51 -0400] [21285] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:51 -0400] [21285] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:52 -0400] [21285] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:52 -0400] [21285] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:53 -0400] [21285] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:53 -0400] [21285] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:54 -0400] [21285] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:30:54 -0400] [21285] [ERROR] Retrying in 1 second.
+[2019-03-14 20:30:55 -0400] [21285] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:31:09 -0400] [24021] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:31:09 -0400] [24021] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:09 -0400] [24021] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:10 -0400] [24021] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:10 -0400] [24021] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:11 -0400] [24021] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:11 -0400] [24021] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:12 -0400] [24021] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:12 -0400] [24021] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:13 -0400] [24021] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:13 -0400] [24021] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:14 -0400] [24021] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:31:30 -0400] [26840] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:31:30 -0400] [26840] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:30 -0400] [26840] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:31 -0400] [26840] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:31 -0400] [26840] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:32 -0400] [26840] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:32 -0400] [26840] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:33 -0400] [26840] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:33 -0400] [26840] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:35 -0400] [26840] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:35 -0400] [26840] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:36 -0400] [26840] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:31:50 -0400] [29055] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:31:50 -0400] [29055] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:50 -0400] [29055] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:51 -0400] [29055] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:51 -0400] [29055] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:52 -0400] [29055] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:52 -0400] [29055] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:53 -0400] [29055] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:53 -0400] [29055] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:54 -0400] [29055] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:31:54 -0400] [29055] [ERROR] Retrying in 1 second.
+[2019-03-14 20:31:55 -0400] [29055] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:32:08 -0400] [30816] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:32:08 -0400] [30816] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:08 -0400] [30816] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:09 -0400] [30816] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:09 -0400] [30816] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:10 -0400] [30816] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:10 -0400] [30816] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:11 -0400] [30816] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:11 -0400] [30816] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:12 -0400] [30816] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:12 -0400] [30816] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:13 -0400] [30816] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:32:24 -0400] [1359] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:32:24 -0400] [1359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:24 -0400] [1359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:25 -0400] [1359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:25 -0400] [1359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:26 -0400] [1359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:26 -0400] [1359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:27 -0400] [1359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:27 -0400] [1359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:28 -0400] [1359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:28 -0400] [1359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:29 -0400] [1359] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:32:47 -0400] [4446] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:32:47 -0400] [4446] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:47 -0400] [4446] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:48 -0400] [4446] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:48 -0400] [4446] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:49 -0400] [4446] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:49 -0400] [4446] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:50 -0400] [4446] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:50 -0400] [4446] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:51 -0400] [4446] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:32:51 -0400] [4446] [ERROR] Retrying in 1 second.
+[2019-03-14 20:32:52 -0400] [4446] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:33:14 -0400] [8565] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:33:14 -0400] [8565] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:14 -0400] [8565] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:15 -0400] [8565] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:15 -0400] [8565] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:16 -0400] [8565] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:16 -0400] [8565] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:17 -0400] [8565] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:17 -0400] [8565] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:18 -0400] [8565] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:18 -0400] [8565] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:19 -0400] [8565] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:33:36 -0400] [11095] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:33:36 -0400] [11095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:36 -0400] [11095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:37 -0400] [11095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:37 -0400] [11095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:38 -0400] [11095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:38 -0400] [11095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:39 -0400] [11095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:39 -0400] [11095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:40 -0400] [11095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:33:40 -0400] [11095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:33:41 -0400] [11095] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:34:01 -0400] [17095] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:34:01 -0400] [17095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:01 -0400] [17095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:02 -0400] [17095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:02 -0400] [17095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:03 -0400] [17095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:03 -0400] [17095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:04 -0400] [17095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:04 -0400] [17095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:05 -0400] [17095] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:05 -0400] [17095] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:06 -0400] [17095] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:34:18 -0400] [19660] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:34:18 -0400] [19660] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:18 -0400] [19660] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:19 -0400] [19660] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:19 -0400] [19660] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:20 -0400] [19660] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:20 -0400] [19660] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:21 -0400] [19660] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:21 -0400] [19660] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:22 -0400] [19660] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:22 -0400] [19660] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:23 -0400] [19660] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:34:40 -0400] [21888] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:34:40 -0400] [21888] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:40 -0400] [21888] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:41 -0400] [21888] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:41 -0400] [21888] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:42 -0400] [21888] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:42 -0400] [21888] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:43 -0400] [21888] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:43 -0400] [21888] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:44 -0400] [21888] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:34:44 -0400] [21888] [ERROR] Retrying in 1 second.
+[2019-03-14 20:34:45 -0400] [21888] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:35:06 -0400] [25860] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:35:06 -0400] [25860] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:06 -0400] [25860] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:07 -0400] [25860] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:07 -0400] [25860] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:08 -0400] [25860] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:08 -0400] [25860] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:09 -0400] [25860] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:09 -0400] [25860] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:10 -0400] [25860] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:10 -0400] [25860] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:11 -0400] [25860] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:35:28 -0400] [28358] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:35:28 -0400] [28358] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:28 -0400] [28358] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:29 -0400] [28358] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:29 -0400] [28358] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:30 -0400] [28358] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:30 -0400] [28358] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:31 -0400] [28358] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:31 -0400] [28358] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:32 -0400] [28358] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:32 -0400] [28358] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:33 -0400] [28358] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:35:53 -0400] [32110] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:35:53 -0400] [32110] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:53 -0400] [32110] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:54 -0400] [32110] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:54 -0400] [32110] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:55 -0400] [32110] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:55 -0400] [32110] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:56 -0400] [32110] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:56 -0400] [32110] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:57 -0400] [32110] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:35:57 -0400] [32110] [ERROR] Retrying in 1 second.
+[2019-03-14 20:35:58 -0400] [32110] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:36:09 -0400] [1835] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:36:09 -0400] [1835] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:09 -0400] [1835] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:10 -0400] [1835] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:10 -0400] [1835] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:11 -0400] [1835] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:11 -0400] [1835] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:12 -0400] [1835] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:12 -0400] [1835] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:13 -0400] [1835] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:13 -0400] [1835] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:14 -0400] [1835] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:36:26 -0400] [4728] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:36:26 -0400] [4728] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:26 -0400] [4728] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:27 -0400] [4728] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:27 -0400] [4728] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:28 -0400] [4728] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:28 -0400] [4728] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:29 -0400] [4728] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:29 -0400] [4728] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:30 -0400] [4728] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:30 -0400] [4728] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:31 -0400] [4728] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:36:43 -0400] [7343] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:36:43 -0400] [7343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:43 -0400] [7343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:44 -0400] [7343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:44 -0400] [7343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:45 -0400] [7343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:45 -0400] [7343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:46 -0400] [7343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:46 -0400] [7343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:47 -0400] [7343] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:36:47 -0400] [7343] [ERROR] Retrying in 1 second.
+[2019-03-14 20:36:48 -0400] [7343] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:37:04 -0400] [10112] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:37:04 -0400] [10112] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:04 -0400] [10112] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:05 -0400] [10112] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:05 -0400] [10112] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:06 -0400] [10112] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:06 -0400] [10112] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:07 -0400] [10112] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:07 -0400] [10112] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:08 -0400] [10112] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:08 -0400] [10112] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:09 -0400] [10112] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:37:27 -0400] [12875] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:37:27 -0400] [12875] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:27 -0400] [12875] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:28 -0400] [12875] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:28 -0400] [12875] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:29 -0400] [12875] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:29 -0400] [12875] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:30 -0400] [12875] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:30 -0400] [12875] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:31 -0400] [12875] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:31 -0400] [12875] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:32 -0400] [12875] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:37:44 -0400] [17221] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:37:44 -0400] [17221] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:44 -0400] [17221] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:45 -0400] [17221] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:45 -0400] [17221] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:46 -0400] [17221] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:46 -0400] [17221] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:47 -0400] [17221] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:47 -0400] [17221] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:48 -0400] [17221] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:37:48 -0400] [17221] [ERROR] Retrying in 1 second.
+[2019-03-14 20:37:49 -0400] [17221] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:38:07 -0400] [19905] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:38:07 -0400] [19905] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:07 -0400] [19905] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:08 -0400] [19905] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:08 -0400] [19905] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:09 -0400] [19905] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:09 -0400] [19905] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:10 -0400] [19905] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:10 -0400] [19905] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:11 -0400] [19905] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:11 -0400] [19905] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:12 -0400] [19905] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:38:35 -0400] [23313] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:38:35 -0400] [23313] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:35 -0400] [23313] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:36 -0400] [23313] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:36 -0400] [23313] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:37 -0400] [23313] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:37 -0400] [23313] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:38 -0400] [23313] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:38 -0400] [23313] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:39 -0400] [23313] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:39 -0400] [23313] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:40 -0400] [23313] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:38:58 -0400] [26265] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:38:58 -0400] [26265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:58 -0400] [26265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:38:59 -0400] [26265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:38:59 -0400] [26265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:00 -0400] [26265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:00 -0400] [26265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:01 -0400] [26265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:01 -0400] [26265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:02 -0400] [26265] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:02 -0400] [26265] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:03 -0400] [26265] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:39:19 -0400] [29229] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:39:19 -0400] [29229] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:19 -0400] [29229] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:20 -0400] [29229] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:20 -0400] [29229] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:21 -0400] [29229] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:21 -0400] [29229] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:22 -0400] [29229] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:22 -0400] [29229] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:23 -0400] [29229] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:23 -0400] [29229] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:24 -0400] [29229] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:39:40 -0400] [31992] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:39:40 -0400] [31992] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:40 -0400] [31992] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:41 -0400] [31992] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:41 -0400] [31992] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:42 -0400] [31992] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:42 -0400] [31992] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:43 -0400] [31992] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:43 -0400] [31992] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:44 -0400] [31992] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:39:44 -0400] [31992] [ERROR] Retrying in 1 second.
+[2019-03-14 20:39:45 -0400] [31992] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:50:47 -0400] [9625] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:50:47 -0400] [9625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:50:47 -0400] [9625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:50:48 -0400] [9625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:50:48 -0400] [9625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:50:49 -0400] [9625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:50:49 -0400] [9625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:50:50 -0400] [9625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:50:50 -0400] [9625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:50:51 -0400] [9625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:50:51 -0400] [9625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:50:52 -0400] [9625] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:51:09 -0400] [12558] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:51:09 -0400] [12558] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:09 -0400] [12558] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:10 -0400] [12558] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:10 -0400] [12558] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:11 -0400] [12558] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:11 -0400] [12558] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:12 -0400] [12558] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:12 -0400] [12558] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:13 -0400] [12558] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:13 -0400] [12558] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:14 -0400] [12558] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:51:29 -0400] [17474] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:51:29 -0400] [17474] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:29 -0400] [17474] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:30 -0400] [17474] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:30 -0400] [17474] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:31 -0400] [17474] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:31 -0400] [17474] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:32 -0400] [17474] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:32 -0400] [17474] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:33 -0400] [17474] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:33 -0400] [17474] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:34 -0400] [17474] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:51:45 -0400] [19334] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:51:45 -0400] [19334] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:45 -0400] [19334] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:46 -0400] [19334] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:46 -0400] [19334] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:47 -0400] [19334] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:47 -0400] [19334] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:48 -0400] [19334] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:48 -0400] [19334] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:49 -0400] [19334] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:51:49 -0400] [19334] [ERROR] Retrying in 1 second.
+[2019-03-14 20:51:50 -0400] [19334] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:52:04 -0400] [22068] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:52:04 -0400] [22068] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:04 -0400] [22068] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:05 -0400] [22068] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:05 -0400] [22068] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:06 -0400] [22068] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:06 -0400] [22068] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:07 -0400] [22068] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:07 -0400] [22068] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:08 -0400] [22068] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:08 -0400] [22068] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:09 -0400] [22068] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:52:29 -0400] [25362] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:52:29 -0400] [25362] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:29 -0400] [25362] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:30 -0400] [25362] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:30 -0400] [25362] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:31 -0400] [25362] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:31 -0400] [25362] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:32 -0400] [25362] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:32 -0400] [25362] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:33 -0400] [25362] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:33 -0400] [25362] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:34 -0400] [25362] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:52:51 -0400] [28376] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:52:51 -0400] [28376] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:51 -0400] [28376] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:52 -0400] [28376] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:52 -0400] [28376] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:53 -0400] [28376] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:53 -0400] [28376] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:54 -0400] [28376] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:54 -0400] [28376] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:55 -0400] [28376] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:52:55 -0400] [28376] [ERROR] Retrying in 1 second.
+[2019-03-14 20:52:56 -0400] [28376] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:53:09 -0400] [30379] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:53:09 -0400] [30379] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:09 -0400] [30379] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:10 -0400] [30379] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:10 -0400] [30379] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:11 -0400] [30379] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:11 -0400] [30379] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:12 -0400] [30379] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:12 -0400] [30379] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:13 -0400] [30379] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:13 -0400] [30379] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:14 -0400] [30379] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:53:36 -0400] [1154] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:53:36 -0400] [1154] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:36 -0400] [1154] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:37 -0400] [1154] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:37 -0400] [1154] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:38 -0400] [1154] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:38 -0400] [1154] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:39 -0400] [1154] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:39 -0400] [1154] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:40 -0400] [1154] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:40 -0400] [1154] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:41 -0400] [1154] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:53:52 -0400] [4042] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:53:52 -0400] [4042] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:52 -0400] [4042] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:53 -0400] [4042] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:53 -0400] [4042] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:54 -0400] [4042] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:54 -0400] [4042] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:55 -0400] [4042] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:55 -0400] [4042] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:56 -0400] [4042] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:53:56 -0400] [4042] [ERROR] Retrying in 1 second.
+[2019-03-14 20:53:57 -0400] [4042] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:54:20 -0400] [7467] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:54:20 -0400] [7467] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:20 -0400] [7467] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:21 -0400] [7467] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:21 -0400] [7467] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:22 -0400] [7467] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:22 -0400] [7467] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:23 -0400] [7467] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:23 -0400] [7467] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:24 -0400] [7467] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:24 -0400] [7467] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:25 -0400] [7467] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:54:44 -0400] [10874] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:54:44 -0400] [10874] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:44 -0400] [10874] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:45 -0400] [10874] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:45 -0400] [10874] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:46 -0400] [10874] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:46 -0400] [10874] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:47 -0400] [10874] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:47 -0400] [10874] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:48 -0400] [10874] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:54:48 -0400] [10874] [ERROR] Retrying in 1 second.
+[2019-03-14 20:54:49 -0400] [10874] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:55:03 -0400] [16359] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:55:03 -0400] [16359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:03 -0400] [16359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:04 -0400] [16359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:04 -0400] [16359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:05 -0400] [16359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:05 -0400] [16359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:06 -0400] [16359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:06 -0400] [16359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:07 -0400] [16359] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:07 -0400] [16359] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:08 -0400] [16359] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:55:24 -0400] [18941] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:55:24 -0400] [18941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:24 -0400] [18941] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:25 -0400] [18941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:25 -0400] [18941] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:26 -0400] [18941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:26 -0400] [18941] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:27 -0400] [18941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:27 -0400] [18941] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:28 -0400] [18941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:28 -0400] [18941] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:29 -0400] [18941] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:55:54 -0400] [23161] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:55:54 -0400] [23161] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:54 -0400] [23161] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:55 -0400] [23161] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:55 -0400] [23161] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:56 -0400] [23161] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:56 -0400] [23161] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:57 -0400] [23161] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:57 -0400] [23161] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:58 -0400] [23161] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:55:58 -0400] [23161] [ERROR] Retrying in 1 second.
+[2019-03-14 20:55:59 -0400] [23161] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:56:22 -0400] [26544] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:56:22 -0400] [26544] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:22 -0400] [26544] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:23 -0400] [26544] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:23 -0400] [26544] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:24 -0400] [26544] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:24 -0400] [26544] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:25 -0400] [26544] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:25 -0400] [26544] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:26 -0400] [26544] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:26 -0400] [26544] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:27 -0400] [26544] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:56:39 -0400] [29093] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:56:39 -0400] [29093] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:39 -0400] [29093] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:40 -0400] [29093] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:40 -0400] [29093] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:41 -0400] [29093] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:41 -0400] [29093] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:42 -0400] [29093] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:42 -0400] [29093] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:43 -0400] [29093] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:56:43 -0400] [29093] [ERROR] Retrying in 1 second.
+[2019-03-14 20:56:44 -0400] [29093] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:57:04 -0400] [31625] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:57:04 -0400] [31625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:04 -0400] [31625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:05 -0400] [31625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:05 -0400] [31625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:06 -0400] [31625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:06 -0400] [31625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:07 -0400] [31625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:07 -0400] [31625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:08 -0400] [31625] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:08 -0400] [31625] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:09 -0400] [31625] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:57:23 -0400] [2326] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:57:23 -0400] [2326] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:23 -0400] [2326] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:24 -0400] [2326] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:24 -0400] [2326] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:25 -0400] [2326] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:25 -0400] [2326] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:26 -0400] [2326] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:26 -0400] [2326] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:27 -0400] [2326] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:27 -0400] [2326] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:28 -0400] [2326] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:57:40 -0400] [4878] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:57:40 -0400] [4878] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:40 -0400] [4878] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:41 -0400] [4878] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:41 -0400] [4878] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:42 -0400] [4878] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:42 -0400] [4878] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:43 -0400] [4878] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:43 -0400] [4878] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:44 -0400] [4878] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:44 -0400] [4878] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:45 -0400] [4878] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:57:58 -0400] [7336] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:57:58 -0400] [7336] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:58 -0400] [7336] [ERROR] Retrying in 1 second.
+[2019-03-14 20:57:59 -0400] [7336] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:57:59 -0400] [7336] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:00 -0400] [7336] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:00 -0400] [7336] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:01 -0400] [7336] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:01 -0400] [7336] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:02 -0400] [7336] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:02 -0400] [7336] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:03 -0400] [7336] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:58:21 -0400] [10058] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:58:21 -0400] [10058] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:21 -0400] [10058] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:22 -0400] [10058] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:22 -0400] [10058] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:23 -0400] [10058] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:23 -0400] [10058] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:24 -0400] [10058] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:24 -0400] [10058] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:25 -0400] [10058] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:25 -0400] [10058] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:26 -0400] [10058] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:58:40 -0400] [13053] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:58:40 -0400] [13053] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:40 -0400] [13053] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:41 -0400] [13053] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:41 -0400] [13053] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:42 -0400] [13053] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:42 -0400] [13053] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:43 -0400] [13053] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:43 -0400] [13053] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:44 -0400] [13053] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:58:44 -0400] [13053] [ERROR] Retrying in 1 second.
+[2019-03-14 20:58:45 -0400] [13053] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:59:02 -0400] [17766] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:59:02 -0400] [17766] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:02 -0400] [17766] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:03 -0400] [17766] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:03 -0400] [17766] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:04 -0400] [17766] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:04 -0400] [17766] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:05 -0400] [17766] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:05 -0400] [17766] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:06 -0400] [17766] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:06 -0400] [17766] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:07 -0400] [17766] [ERROR] Can't connect to ('127.0.0.1', 11356)
+
+Could not connect to database
+\n\n\n starting new server run \n
+[2019-03-14 20:59:17 -0400] [20301] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:59:17 -0400] [20301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:17 -0400] [20301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:18 -0400] [20301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:18 -0400] [20301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:19 -0400] [20301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:19 -0400] [20301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:20 -0400] [20301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:20 -0400] [20301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:21 -0400] [20301] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:21 -0400] [20301] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:22 -0400] [20301] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 20:59:33 -0400] [23056] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 20:59:33 -0400] [23056] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:33 -0400] [23056] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:34 -0400] [23056] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:34 -0400] [23056] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:35 -0400] [23056] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:35 -0400] [23056] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:36 -0400] [23056] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:36 -0400] [23056] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:37 -0400] [23056] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 20:59:37 -0400] [23056] [ERROR] Retrying in 1 second.
+[2019-03-14 20:59:38 -0400] [23056] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 21:21:04 -0400] [13306] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 21:21:04 -0400] [13306] [INFO] Listening at: http://127.0.0.1:11356 (13306)
+[2019-03-14 21:21:04 -0400] [13306] [INFO] Using worker: sync
+[2019-03-14 21:21:04 -0400] [14510] [INFO] Booting worker with pid: 14510
+[2019-03-14 21:21:05 -0400] [14519] [INFO] Booting worker with pid: 14519
+[2019-03-14 21:21:05 -0400] [14536] [INFO] Booting worker with pid: 14536
+[2019-03-14 21:21:05 -0400] [14550] [INFO] Booting worker with pid: 14550
+[2019-03-15 01:24:12 +0000] [14536] [INFO] Worker exiting (pid: 14536)
+[2019-03-15 01:24:12 +0000] [14510] [INFO] Worker exiting (pid: 14510)
+[2019-03-15 01:24:12 +0000] [14550] [INFO] Worker exiting (pid: 14550)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-15 01:24:12 +0000] [14519] [INFO] Worker exiting (pid: 14519)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-14 21:26:00 -0400] [1941] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 21:26:00 -0400] [1941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:26:00 -0400] [1941] [ERROR] Retrying in 1 second.
+[2019-03-14 21:26:01 -0400] [1941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:26:01 -0400] [1941] [ERROR] Retrying in 1 second.
+[2019-03-14 21:26:02 -0400] [1941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:26:02 -0400] [1941] [ERROR] Retrying in 1 second.
+[2019-03-14 21:26:03 -0400] [1941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:26:03 -0400] [1941] [ERROR] Retrying in 1 second.
+[2019-03-14 21:26:04 -0400] [1941] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:26:04 -0400] [1941] [ERROR] Retrying in 1 second.
+[2019-03-14 21:26:05 -0400] [1941] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 21:27:22 -0400] [7328] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 21:27:22 -0400] [7328] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:27:22 -0400] [7328] [ERROR] Retrying in 1 second.
+[2019-03-14 21:27:23 -0400] [7328] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:27:23 -0400] [7328] [ERROR] Retrying in 1 second.
+[2019-03-14 21:27:24 -0400] [7328] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:27:24 -0400] [7328] [ERROR] Retrying in 1 second.
+[2019-03-14 21:27:25 -0400] [7328] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:27:25 -0400] [7328] [ERROR] Retrying in 1 second.
+[2019-03-14 21:27:26 -0400] [7328] [ERROR] Connection in use: ('127.0.0.1', 11356)
+[2019-03-14 21:27:26 -0400] [7328] [ERROR] Retrying in 1 second.
+[2019-03-14 21:27:27 -0400] [7328] [ERROR] Can't connect to ('127.0.0.1', 11356)
+\n\n\n starting new server run \n
+[2019-03-14 21:43:36 -0400] [24273] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 21:43:36 -0400] [24273] [INFO] Listening at: http://127.0.0.1:11356 (24273)
+[2019-03-14 21:43:36 -0400] [24273] [INFO] Using worker: sync
+[2019-03-14 21:43:36 -0400] [25484] [INFO] Booting worker with pid: 25484
+[2019-03-14 21:43:36 -0400] [25518] [INFO] Booting worker with pid: 25518
+[2019-03-14 21:43:36 -0400] [25511] [INFO] Booting worker with pid: 25511
+[2019-03-14 21:43:36 -0400] [25503] [INFO] Booting worker with pid: 25503
+[2019-03-15 01:44:34 +0000] [25511] [INFO] Worker exiting (pid: 25511)
+[2019-03-15 01:44:34 +0000] [25518] [INFO] Worker exiting (pid: 25518)
+[2019-03-15 01:44:34 +0000] [25503] [INFO] Worker exiting (pid: 25503)
+/web/projects/schedule/public/scheduleServer
+[2019-03-15 01:44:34 +0000] [25484] [INFO] Worker exiting (pid: 25484)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-14 21:45:37 -0400] [29053] [INFO] Starting gunicorn 19.9.0
+[2019-03-14 21:45:37 -0400] [29053] [INFO] Listening at: http://127.0.0.1:11356 (29053)
+[2019-03-14 21:45:37 -0400] [29053] [INFO] Using worker: sync
+[2019-03-14 21:45:37 -0400] [29769] [INFO] Booting worker with pid: 29769
+[2019-03-14 21:45:37 -0400] [29772] [INFO] Booting worker with pid: 29772
+[2019-03-14 21:45:37 -0400] [29780] [INFO] Booting worker with pid: 29780
+[2019-03-14 21:45:37 -0400] [29791] [INFO] Booting worker with pid: 29791
+[2019-03-15 10:00:43 -0400] [29053] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-03-15 12:47:08 -0400] [2809] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 12:47:08 -0400] [2809] [INFO] Listening at: http://127.0.0.1:11356 (2809)
+[2019-03-15 12:47:08 -0400] [2809] [INFO] Using worker: sync
+[2019-03-15 12:47:08 -0400] [2814] [INFO] Booting worker with pid: 2814
+[2019-03-15 12:47:08 -0400] [2815] [INFO] Booting worker with pid: 2815
+[2019-03-15 12:47:08 -0400] [2817] [INFO] Booting worker with pid: 2817
+[2019-03-15 12:47:08 -0400] [2818] [INFO] Booting worker with pid: 2818
+\n\n\n starting new server run \n
+[2019-03-15 13:41:37 -0400] [20895] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 13:41:37 -0400] [20895] [INFO] Listening at: http://127.0.0.1:11356 (20895)
+[2019-03-15 13:41:37 -0400] [20895] [INFO] Using worker: sync
+[2019-03-15 13:41:37 -0400] [20899] [INFO] Booting worker with pid: 20899
+[2019-03-15 13:41:37 -0400] [20900] [INFO] Booting worker with pid: 20900
+[2019-03-15 13:41:37 -0400] [20901] [INFO] Booting worker with pid: 20901
+[2019-03-15 13:41:37 -0400] [20902] [INFO] Booting worker with pid: 20902
+\n\n\n starting new server run \n
+[2019-03-15 13:42:32 -0400] [21157] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 13:42:32 -0400] [21157] [INFO] Listening at: http://127.0.0.1:11356 (21157)
+[2019-03-15 13:42:32 -0400] [21157] [INFO] Using worker: sync
+[2019-03-15 13:42:32 -0400] [21160] [INFO] Booting worker with pid: 21160
+[2019-03-15 13:42:32 -0400] [21161] [INFO] Booting worker with pid: 21161
+[2019-03-15 13:42:32 -0400] [21163] [INFO] Booting worker with pid: 21163
+[2019-03-15 13:42:32 -0400] [21166] [INFO] Booting worker with pid: 21166
+\n\n\n starting new server run \n
+[2019-03-15 13:50:25 -0400] [24232] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 13:50:25 -0400] [24232] [INFO] Listening at: http://127.0.0.1:11356 (24232)
+[2019-03-15 13:50:25 -0400] [24232] [INFO] Using worker: sync
+[2019-03-15 13:50:25 -0400] [24236] [INFO] Booting worker with pid: 24236
+[2019-03-15 13:50:25 -0400] [24238] [INFO] Booting worker with pid: 24238
+[2019-03-15 13:50:25 -0400] [24239] [INFO] Booting worker with pid: 24239
+[2019-03-15 13:50:25 -0400] [24242] [INFO] Booting worker with pid: 24242
+\n\n\n starting new server run \n
+[2019-03-15 14:01:55 -0400] [27290] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 14:01:55 -0400] [27290] [INFO] Listening at: http://127.0.0.1:11356 (27290)
+[2019-03-15 14:01:55 -0400] [27290] [INFO] Using worker: sync
+[2019-03-15 14:01:55 -0400] [27299] [INFO] Booting worker with pid: 27299
+[2019-03-15 14:01:56 -0400] [27300] [INFO] Booting worker with pid: 27300
+[2019-03-15 14:01:56 -0400] [27302] [INFO] Booting worker with pid: 27302
+[2019-03-15 14:01:56 -0400] [27303] [INFO] Booting worker with pid: 27303
+[2019-03-15 18:13:02 +0000] [27300] [INFO] Worker exiting (pid: 27300)
+[2019-03-15 14:13:02 -0400] [27290] [INFO] Handling signal: term
+[2019-03-15 18:13:02 +0000] [27302] [INFO] Worker exiting (pid: 27302)
+/web/projects/schedule/public/scheduleServer
+[2019-03-15 18:13:02 +0000] [27303] [INFO] Worker exiting (pid: 27303)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-15 14:13:03 -0400] [32245] [INFO] Starting gunicorn 19.9.0
+[2019-03-15 14:13:03 -0400] [32245] [INFO] Listening at: http://127.0.0.1:11356 (32245)
+[2019-03-15 14:13:03 -0400] [32245] [INFO] Using worker: sync
+[2019-03-15 14:13:03 -0400] [32256] [INFO] Booting worker with pid: 32256
+[2019-03-15 14:13:04 -0400] [32267] [INFO] Booting worker with pid: 32267
+[2019-03-15 14:13:04 -0400] [32270] [INFO] Booting worker with pid: 32270
+[2019-03-15 14:13:04 -0400] [32272] [INFO] Booting worker with pid: 32272
+\n\n\n starting new server run \n
+[2019-03-18 15:41:35 -0400] [7687] [INFO] Starting gunicorn 19.9.0
+[2019-03-18 15:41:35 -0400] [7687] [INFO] Listening at: http://127.0.0.1:11356 (7687)
+[2019-03-18 15:41:35 -0400] [7687] [INFO] Using worker: sync
+[2019-03-18 15:41:35 -0400] [7692] [INFO] Booting worker with pid: 7692
+[2019-03-18 15:41:35 -0400] [7695] [INFO] Booting worker with pid: 7695
+[2019-03-18 15:41:35 -0400] [7696] [INFO] Booting worker with pid: 7696
+[2019-03-18 15:41:35 -0400] [7697] [INFO] Booting worker with pid: 7697
+[2019-03-18 19:53:10 +0000] [7692] [INFO] Worker exiting (pid: 7692)
+\n\n\n starting new server run \n
+[2019-03-18 15:53:11 -0400] [18872] [INFO] Starting gunicorn 19.9.0
+[2019-03-18 15:53:11 -0400] [18872] [INFO] Listening at: http://127.0.0.1:11356 (18872)
+[2019-03-18 15:53:11 -0400] [18872] [INFO] Using worker: sync
+[2019-03-18 15:53:11 -0400] [18896] [INFO] Booting worker with pid: 18896
+[2019-03-18 15:53:11 -0400] [18902] [INFO] Booting worker with pid: 18902
+[2019-03-18 15:53:11 -0400] [18904] [INFO] Booting worker with pid: 18904
+[2019-03-18 15:53:11 -0400] [18906] [INFO] Booting worker with pid: 18906
+[2019-03-18 19:55:13 +0000] [18906] [INFO] Worker exiting (pid: 18906)
+[2019-03-18 19:55:13 +0000] [18904] [INFO] Worker exiting (pid: 18904)
+[2019-03-18 19:55:13 +0000] [18896] [INFO] Worker exiting (pid: 18896)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-18 19:55:13 +0000] [18902] [INFO] Worker exiting (pid: 18902)
+[2019-03-18 15:55:13 -0400] [18872] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-18 15:55:14 -0400] [22188] [INFO] Starting gunicorn 19.9.0
+[2019-03-18 15:55:14 -0400] [22188] [INFO] Listening at: http://127.0.0.1:11356 (22188)
+[2019-03-18 15:55:14 -0400] [22188] [INFO] Using worker: sync
+[2019-03-18 15:55:14 -0400] [22204] [INFO] Booting worker with pid: 22204
+[2019-03-18 15:55:14 -0400] [22205] [INFO] Booting worker with pid: 22205
+[2019-03-18 15:55:14 -0400] [22206] [INFO] Booting worker with pid: 22206
+[2019-03-18 15:55:14 -0400] [22209] [INFO] Booting worker with pid: 22209

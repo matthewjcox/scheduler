@@ -262,7 +262,7 @@ class master_schedule(chromosome):
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 2 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-5000
-        self.course_period_overlap=-10*(1-_CLOSENESS_TO_COMPLETION)**2
+        self.course_period_overlap=0#-10*(1-_CLOSENESS_TO_COMPLETION)**2
 
         self.section_exceeds_max_students_delta=-100
 
