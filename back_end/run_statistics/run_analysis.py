@@ -17,6 +17,8 @@ import re
 import sys
 import statistics
 import tabulate
+from openpyxl import Workbook
+import openpyxl
 
 # First command line argument: file with run data to interpret
 toInterpret = "../../runs/past_runs/" + sys.argv[1] + "/readable_schedule.txt" # "../../runs/past_runs/2018_12_07__18_52_41/readable_schedule.txt"  # Currently, ../../runs/perfect_schedule.txt
@@ -120,7 +122,7 @@ for x in range(numSections):
     # Prints sections[section] for debugging.
     # print(sections[section])
 
-# students is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
+# studentScheds is a dictionary of studentID:[(0) studentID, (1) [course requests], (2) [alternates], (3) [sections], (4) [courses received]], with course and section info in IDs.
 studentScheds = {}
 
 numStuds = int(file.readline()[:-1])
@@ -293,7 +295,7 @@ if teachersWithCons:
 else:
     statFile.write("None\n")
 
-# Check that teaming works (calculates the number of students in some but not all of a set of teamed sections)
+# Check that team_1 works (calculates the number of students in some but not all of a set of teamed sections)
 #print("\n")
 teamMistakes = 0
 checked = set()
@@ -319,7 +321,7 @@ for sect in sections.values():
     for stud in sharedStuds.values():
         if stud < len(teamed):
             teamMistakes += 1
-statFile.write("Number of students in some but not all of a set of teamed sections: " + teamMistakes.__str__() + "\n")
+statFile.write("Number of students in some but not all of a set of team_1 sections: " + teamMistakes.__str__() + "\n")
 
 # Calculate the number of sections with class sizes exceeding maxStudents
 
@@ -378,6 +380,34 @@ for course in courseToEmptyPer.keys():
         toTable[course].append(unfulfilledCourses[course][x])
     toTable[course].insert(1,sum(courseToEmptyPer[course][1:]))
     toTable[course].insert(2,sum(unfulfilledCourses[course][1:]))
+
+statwb = Workbook()
+dest_filename = "stat_spreadsheet.xlsx"
+ws1 = statwb.active
+ws1.title = "Empty Seats and Students Lacking Class by Period"
+ws1['A1'] = "Course"
+ws1['B1'] = "Total Empty Seats"
+ws1['C1'] = "Total Students Missing Class"
+ws1['D1'] = "P1 Empty Seats"
+ws1['E1'] = "P1 Students Missing"
+ws1['F1'] = "P2 Empty Seats"
+ws1['G1'] = "P2 Students Missing"
+ws1['H1'] = "P3 Empty Seats"
+ws1['I1'] = "P3 Students Missing"
+ws1['J1'] = "P4 Empty Seats"
+ws1['K1'] = "P4 Students Missing"
+ws1['L1'] = "P5 Empty Seats"
+ws1['M1'] = "P5 Students Missing"
+ws1['N1'] = "P6 Empty Seats"
+ws1['O1'] = "P6 Students Missing"
+ws1['P1'] = "P7 Empty Seats"
+ws1['Q1'] = "P7 Students Missing"
+r = 2
+for course in toTable.values():
+    for l in range(len(course)):
+        ws1.cell(row=r, column=l+1).value = course[l]
+statwb.save(filename="../../runs/past_runs/" + sys.argv[1] + "/" + dest_filename)
+
 statFile.write("\n\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
 statFile.write(tabulate.tabulate(toTable.values(), headers=["Course", "T ES", "T SM", "P1 ES", "SM P1","P2 ES", "SM P2","P3 ES", "SM P3", "P4 ES", "SM P4", "P5 ES", "SM P5", "P6 ES", "SM P6", "P7 ES", "SM P7"], tablefmt="grid"))
 statFile.write("\n")
