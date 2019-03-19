@@ -95,7 +95,7 @@ def input_sections(request):
         })
     for num in request.POST.getlist('period'):
         c = course.section_set.create(
-            section_id = #courseID-number #request.POST['section']+str(num),
+            #section_id = courseID-number #request.POST['section']+str(num),
             room = Room.objects.get(rmNum = request.POST['room']),
             student_num_max = request.POST['numStudent'],
             period = num,

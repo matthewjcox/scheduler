@@ -40,7 +40,6 @@ class Room(models.Model):
     rmNum = models.CharField(max_length = 15)
 
 class Section(models.Model):
-    section_id = models.CharField(max_length = 15)
     course = models.ForeignKey(Course, on_delete = models.CASCADE)
     teachers = models.ManyToManyField(Teacher)
     room = models.ForeignKey(Room, on_delete = models.SET_NULL, null = True)

@@ -21118,3 +21118,187 @@ Could not connect to database
 [2019-03-18 15:55:14 -0400] [22205] [INFO] Booting worker with pid: 22205
 [2019-03-18 15:55:14 -0400] [22206] [INFO] Booting worker with pid: 22206
 [2019-03-18 15:55:14 -0400] [22209] [INFO] Booting worker with pid: 22209
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 117, in get_parent
+    raise TemplateSyntaxError(error_msg)
+django.template.exceptions.TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'background.html' variable.
+[2019-03-19 15:57:00 +0000] [22206] [INFO] Worker exiting (pid: 22206)
+[2019-03-19 15:57:00 +0000] [22205] [INFO] Worker exiting (pid: 22205)
+\n\n\n starting new server run \n
+[2019-03-19 11:57:01 -0400] [24219] [INFO] Starting gunicorn 19.9.0
+[2019-03-19 11:57:01 -0400] [24219] [INFO] Listening at: http://127.0.0.1:11356 (24219)
+[2019-03-19 11:57:01 -0400] [24219] [INFO] Using worker: sync
+[2019-03-19 11:57:01 -0400] [24234] [INFO] Booting worker with pid: 24234
+[2019-03-19 11:57:01 -0400] [24250] [INFO] Booting worker with pid: 24250
+[2019-03-19 11:57:01 -0400] [24252] [INFO] Booting worker with pid: 24252
+[2019-03-19 11:57:01 -0400] [24259] [INFO] Booting worker with pid: 24259
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: background.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: background.html
+[2019-03-19 15:57:24 +0000] [24259] [INFO] Worker exiting (pid: 24259)
+[2019-03-19 15:57:24 +0000] [24234] [INFO] Worker exiting (pid: 24234)
+[2019-03-19 11:57:24 -0400] [24219] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-03-19 15:57:24 +0000] [24252] [INFO] Worker exiting (pid: 24252)
+[2019-03-19 15:57:24 +0000] [24250] [INFO] Worker exiting (pid: 24250)
+\n\n\n starting new server run \n
+[2019-03-19 11:57:25 -0400] [24466] [INFO] Starting gunicorn 19.9.0
+[2019-03-19 11:57:25 -0400] [24466] [INFO] Listening at: http://127.0.0.1:11356 (24466)
+[2019-03-19 11:57:25 -0400] [24466] [INFO] Using worker: sync
+[2019-03-19 11:57:25 -0400] [24471] [INFO] Booting worker with pid: 24471
+[2019-03-19 11:57:26 -0400] [24472] [INFO] Booting worker with pid: 24472
+[2019-03-19 11:57:26 -0400] [24483] [INFO] Booting worker with pid: 24483
+[2019-03-19 11:57:26 -0400] [24484] [INFO] Booting worker with pid: 24484
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: background.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: background.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: background.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/projectIndex/views.py", line 13, in home
+    return render(request, 'projectIndex/homePage.html',{})
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: background.html
