@@ -743,6 +743,7 @@ class multiple_hill_climb:
         j.retrieve_schedule(outfolder)
         self.current_sched=j.copy()
         self.current_sched.initialize_weights()
+        self.current_sched.set_progress()
         self.num_processes=_NUM_CORES
         self.pool = multiprocessing.Pool(self.num_processes)
 
@@ -755,13 +756,14 @@ class multiple_hill_climb:
 
         while 1:
             self.current_sched.initialize_weights()
+
             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
                 save_schedule(self.current_sched, self.outfolder)
                 print_schedule(self.current_sched, self.outfolder)
             _ITERATION+=1
             it=_ITERATION
-            if first_it == 1:
+            if first_it == 1 and it==1:
                 self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(3*self.num_processes)])
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
