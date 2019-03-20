@@ -5,7 +5,7 @@ dynscores=[]
 statscores=[]
 newdynscores=[]
 newstatscores=[]
-with open("runs/past_runs/2019_03_04__20_51_00/log.log") as f:
+with open("runs/past_runs/log.log") as f:
     lines=f.readlines()
     splits=[]
     for i in lines:
