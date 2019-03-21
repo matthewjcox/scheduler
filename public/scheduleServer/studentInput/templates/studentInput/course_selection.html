@@ -1,27 +1,17 @@
-<style>
-    body {
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        /*
-        Grey-themed background
-        background-image: linear-gradient(grey,white)
-        
-        Colorful background
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        */
-    }
-</style>
-
+{% extends "projectIndex/background.html" %}
+{% block sun %}
 <h1>Course Selection</h1>
-
+{% endblock %}
+{% block sky %}
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
 <!-- <a href="{% url 'studentInput:index' %}" >Back to Index</a> -->
+<form action="{% url 'studentInput:submit' %}" method="post" style = "padding-left: 10px;">
 <a href="{% url 'projectIndex:student' %}" >Back to Index</a>
 Hi {{student}}!
-<form action="{% url 'studentInput:submit' %}" method="post">
 {% csrf_token %}
-<br>
+<br><br>
 {% for num in courseNum %}
     Course {{ forloop.counter }}:
     <input type ="text" name = "course{{ forloop.counter }}" onchange="displayCourseName({{ forloop.counter }},this.value)">
@@ -52,3 +42,5 @@ Hi {{student}}!
 </script>
 
 {% include "projectIndex/expandable_course_list.html" %}
+
+{% endblock %}

@@ -21302,3 +21302,41 @@ Traceback (most recent call last):
   File "/web/projects/schedule/env/lib/python3.5/site-packages/django/template/backends/django.py", line 84, in reraise
     raise new from exc
 django.template.exceptions.TemplateDoesNotExist: background.html
+[2019-03-20 13:34:18 -0400] [24466] [INFO] Handling signal: term
+[2019-03-20 17:34:18 +0000] [24484] [INFO] Worker exiting (pid: 24484)
+/web/projects/schedule/public/scheduleServer
+[2019-03-20 17:34:18 +0000] [24471] [INFO] Worker exiting (pid: 24471)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-20 13:34:19 -0400] [570] [INFO] Starting gunicorn 19.9.0
+[2019-03-20 13:34:19 -0400] [570] [INFO] Listening at: http://127.0.0.1:11356 (570)
+[2019-03-20 13:34:19 -0400] [570] [INFO] Using worker: sync
+[2019-03-20 13:34:19 -0400] [677] [INFO] Booting worker with pid: 677
+[2019-03-20 13:34:20 -0400] [679] [INFO] Booting worker with pid: 679
+[2019-03-20 13:34:20 -0400] [687] [INFO] Booting worker with pid: 687
+[2019-03-20 13:34:20 -0400] [697] [INFO] Booting worker with pid: 697
+[2019-03-20 14:05:09 -0400] [570] [INFO] Handling signal: term
+[2019-03-20 18:05:09 +0000] [687] [INFO] Worker exiting (pid: 687)
+[2019-03-20 18:05:09 +0000] [679] [INFO] Worker exiting (pid: 679)
+[2019-03-20 18:05:09 +0000] [697] [INFO] Worker exiting (pid: 697)
+[2019-03-20 18:05:09 +0000] [677] [INFO] Worker exiting (pid: 677)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-03-20 14:05:10 -0400] [19424] [INFO] Starting gunicorn 19.9.0
+[2019-03-20 14:05:10 -0400] [19424] [INFO] Listening at: http://127.0.0.1:11356 (19424)
+[2019-03-20 14:05:10 -0400] [19424] [INFO] Using worker: sync
+[2019-03-20 14:05:10 -0400] [19428] [INFO] Booting worker with pid: 19428
+[2019-03-20 14:05:10 -0400] [19429] [INFO] Booting worker with pid: 19429
+[2019-03-20 14:05:10 -0400] [19430] [INFO] Booting worker with pid: 19430
+[2019-03-20 14:05:10 -0400] [19433] [INFO] Booting worker with pid: 19433
+\n\n\n starting new server run \n
+[2019-03-21 11:11:17 -0400] [30841] [INFO] Starting gunicorn 19.9.0
+[2019-03-21 11:11:17 -0400] [30841] [INFO] Listening at: http://127.0.0.1:11356 (30841)
+[2019-03-21 11:11:17 -0400] [30841] [INFO] Using worker: sync
+[2019-03-21 11:11:17 -0400] [30851] [INFO] Booting worker with pid: 30851
+[2019-03-21 11:11:17 -0400] [30852] [INFO] Booting worker with pid: 30852
+[2019-03-21 11:11:17 -0400] [30855] [INFO] Booting worker with pid: 30855
+[2019-03-21 11:11:17 -0400] [30856] [INFO] Booting worker with pid: 30856
