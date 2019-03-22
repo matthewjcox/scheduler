@@ -72,7 +72,12 @@ for x in range(numSections):
     # Adds max students to sections[section] as an int.
     sections[section].append(int(nextLine[21:-1]))
     # Adds courseID to sections[section] as a string.
-    sections[section].append(re.search(r'[0-9A-Z&]+', file.readline()[13:-1]).group(0))
+    words = file.readline().split(" ")
+    if words[1] == "Course":
+        sections[section].append(words[2])
+    else:
+        sections[section].append(words[1])
+    print(sections[section])
     # print(sections[section][-1])
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
     tempLine = file.readline()
@@ -134,16 +139,31 @@ for x in range(numStuds):
     studentScheds[curStud] = [curStud, [], [], []]
     nextLine = file.readline()
     while not re.search('Alternates:', nextLine):
-        studentScheds[curStud][1].append(nextLine.split(" ")[1])
+        words = [l.strip() for l in nextLine.split(" ")]
+        #print(words)
+        if words[0] == "Course":
+            studentScheds[curStud][1].append(words[1])
+        else:
+            studentScheds[curStud][1].append(words[0])
+            #print(studentScheds[curStud][1][-1])
         nextLine = file.readline()
     nextLine = file.readline()
     while not re.search('None', nextLine) and not re.search('Schedule:', nextLine):
-        studentScheds[curStud][2].append(re.search(r'\w*(?= )', nextLine).group(0))
+        raise Exception("Fix so that this is compatable with schedule section of students that does or does not include the word course")
+        words = nextline.split(" ")
+        #print(words)
+        if words[3] == "Course":
+            studentScheds[curStud][2].append(words[4])
+        else:
+            studentScheds[curStud][2].append(words[3])
         nextLine = file.readline()
     if re.search('None', nextLine):
         file.readline()
     nextLine = file.readline()
     while not nextLine == "\n":
+        #raise Exception("Fix so that this is compatable with schedule section of students that does or does not include the word course")
+        #print(nextLine)
+        #print(nextLine.split(" ")[1][:-1])
         studentScheds[curStud][3].append(nextLine.split(" ")[1][:-1])
         nextLine = file.readline()
     #print(studentScheds[curStud])
