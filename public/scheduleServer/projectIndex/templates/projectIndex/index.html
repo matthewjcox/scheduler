@@ -1,19 +1,9 @@
-<style>
-    h1 {
-        text-align: center;
-    }
-    body {
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        /*
-        Grey-themed background
-        background-image: linear-gradient(grey,white)
-        
-        Colorful background
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        */
-    }
-</style>
-<h1>Hidden site index</h1>
+{% extends "projectIndex/background.html" %}
+
+{% block sun %}
+<h1 style = "text-align: center;">Hidden site index</h1>
+{% endblock %}
+{% block sky %}
 {% if app_list %}
     <ul>
     {% for app in app_list %}
@@ -31,3 +21,5 @@
   <p>You are not logged in</p>
   <!-- <a href="{% url 'login' %}">login</a> -->
 {% endif %}
+
+{% endblock %}

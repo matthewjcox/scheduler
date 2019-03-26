@@ -53,13 +53,17 @@ def submit(request):
         # Redisplay the question voting form.
         return render(request, 'studentInput/course_selection.html', {
             'courseNum': "x"*numCoursesSelected,
+            'courseDict': Course.objects.all(),
             'category_list': Category.objects.all(),
+            'student': request.user.get_username(),
             'error_message': "Your username doesn't exist :(",
         })
     except (KeyError, Course.DoesNotExist):
         return render(request, 'studentInput/course_selection.html', {
             'courseNum': "x"*numCoursesSelected,
+            'courseDict': Course.objects.all(),
             'category_list': Category.objects.all(),
+            'student': request.user.get_username(),
             'error_message': "Invalid Course ID on Course " + str(i+1),
         })
     else:

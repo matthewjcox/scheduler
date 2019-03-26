@@ -1,5 +1,6 @@
-{% include "counselorEditor/search.html"%}
+{% extends "counselorEditor/search.html"%}
 
+{% block content %}
 <form action="{% url 'counselorEditor:submit' %}" method="post">
 {% csrf_token %}
 <br>
@@ -32,6 +33,6 @@
     
 </script>
 
-
 <br>
 {% include "projectIndex/expandable_course_list.html" %}
+{% endblock %}

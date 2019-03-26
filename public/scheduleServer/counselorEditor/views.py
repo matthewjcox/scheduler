@@ -50,6 +50,7 @@ def edit(request):
     except (KeyError, Student.DoesNotExist):
         return render(request, 'counselorEditor/search.html', {
             'error_message': "User not found",
+            'username': request.POST['username']
         })
     
     return render(request, 'counselorEditor/editor.html', {
@@ -57,6 +58,7 @@ def edit(request):
         'course_list': student.student_course_request.all(),
         'category_list': Category.objects.all(),
         'courseDict': Course.objects.all(),
+        'username': request.POST['username']
     })
 
 
@@ -96,6 +98,7 @@ def input_sections(request):
     for num in request.POST.getlist('period'):
         c = course.section_set.create(
             #section_id = courseID-number #request.POST['section']+str(num),
+            section_id = request.POST['course'] + str(len(c.section_set.all())),
             room = Room.objects.get(rmNum = request.POST['room']),
             student_num_max = request.POST['numStudent'],
             period = num,
@@ -106,7 +109,8 @@ def input_sections(request):
     return HttpResponseRedirect(reverse('counselorEditor:sections'))
     
     
-def big_red_button(request):
-    return
+def big_button(request):
+    return render(request, 'counselorEditor/start.html')
     
-    
+def start(request):
+    return HttpResponseRedirect(reverse('counselorEditor:index'))

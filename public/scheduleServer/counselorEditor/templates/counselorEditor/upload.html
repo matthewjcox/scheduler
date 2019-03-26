@@ -1,17 +1,8 @@
-<style>
-    body {
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        /*
-        Grey-themed background
-        background-image: linear-gradient(grey,white)
-        
-        Colorful background
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        */
-    }
-</style>
+{% extends "projectIndex/background.html" %}
+{% block sun %}
 <h1>Upload Schedule Parameters</h1>
-
+{% endblock %}
+{% block sky %}
 <!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
 <a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
 <br><br>
@@ -23,3 +14,4 @@
     <br><br>
     <button type = 'submit' accesskey='s' ><u>S</u>ubmit Parameters</button>
 </form>
+{% endblock %}

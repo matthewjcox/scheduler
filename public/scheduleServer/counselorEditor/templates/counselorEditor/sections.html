@@ -1,19 +1,11 @@
-<style>
-    body {
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        /*
-        Grey-themed background
-        background-image: linear-gradient(grey,white)
-        
-        Colorful background
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        */
-    }
-</style>
+{% extends "projectIndex/background.html" %}
+{% block sun %}
 <h1>
 <a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
     <br>
 </h1>
+{% endblock %}
+{% block sky %}
 <body>
 {#Note to Young: all menu items should be in alphabetical order, except room numbers which should be numerical (e.g. 83 goes before 101. Make sure this still has, e.g., 83B before 101A)#}
 {# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> </form>#}
@@ -36,21 +28,21 @@
         {% endcomment %}
     </select><br><br>
     
-    {% comment %}
+
+    Teacher:<input list = "teacher" name = "teacher"><datalist id = "teacher">
+        {% for teacher in teacher_list %}
+            <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
+        {% endfor %}
+        
+    </datalist>
+        
+            {% comment %}
     Teacher: <select multiple name = "teacher">
         {% for teacher in teacher_list %}
             <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
         {% endfor %}
         
-    </select>
     {% endcomment %}
-        
-        
-    Teacher: <select multiple name = "teacher">
-        {% for teacher in teacher_list %}
-            <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
-        {% endfor %}
-        
         
         {% comment %}
         <option>dteacher - Teacher, Dummy</option>
@@ -60,7 +52,9 @@
         <option>mbkochman - Kochman, Mary B.</option>
         <option>mhmiller - Miller, Michael H.</option>
         {% endcomment %}
-    </select><br><br>
+    {# </select> #}
+    
+    <br><br>
     Room: <select name = "room">
         
         {% for room in room_list %}
@@ -129,3 +123,4 @@
 </script>
 
 </body>
+{% endblock %}

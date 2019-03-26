@@ -1,17 +1,8 @@
-<style>
-    body {
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        /*
-        Grey-themed background
-        background-image: linear-gradient(grey,white)
-        
-        Colorful background
-        background-image: linear-gradient(yellow,yellow,lightgrey,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,lightblue,green,#784800,#784800,#392400);
-        */
-    }
-</style>
+{% extends "projectIndex/background.html" %}
+{% block sun %}
 <h1>Request Editor</h1>
-
+{% endblock %}
+{% block sky %}
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
@@ -20,7 +11,12 @@
 <form action="{% url 'counselorEditor:edit' %}" method="post">
 {% csrf_token %}
 Username (eg. 2021jbrown):<br>
-<input type = "text" name = "username"><br>
+<input type = "text" name = "username" value="{{username}}"><br>
 <br>
 <button type = 'submit' accesskey="f"><u>F</u>ind Student</button>
 </form>
+
+{% block content %}
+
+{% endblock %}
+{% endblock %}

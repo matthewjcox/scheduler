@@ -1,0 +1,15 @@
+{% extends "projectIndex/background.html" %}
+
+{% block sun %}
+<h1 style = "text-align:center">Start the Code!</h1>
+{% endblock %}
+
+{% block sky %}
+    <div class = "centered">
+    <a href="{% url 'counselorEditor:start' %}" class = 'large button'>SCHEDULE</a>
+    </div>
+{% endblock %}
+
+{% block earth %}
+<a href="{% url 'counselorEditor:index' %}">Back to Index</a>
+{% endblock %}
