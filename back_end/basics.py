@@ -173,7 +173,7 @@ class Course:
         return course
 
     def __str__(self):
-        return '{} {}'.format(self.courseID,self.name)
+        return '{} {}'.format(self.courseID,self.shortname)
 
     def __repr__(self):
         return str(self)
