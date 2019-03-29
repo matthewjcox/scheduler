@@ -199,6 +199,7 @@ totalRequests = 0
 fulfilledRequests = 0
 unrecievedCourses = {}
 for student in studentScheds.values():
+    print(student)
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
     fulfilledRequests += (len(student[1]) - len(unfulfilledSet))
@@ -426,6 +427,7 @@ r = 2
 for course in toTable.values():
     for l in range(len(course)):
         ws1.cell(row=r, column=l+1).value = course[l]
+    r += 1
 statwb.save(filename="../../runs/past_runs/" + sys.argv[1] + "/" + dest_filename)
 
 statFile.write("\n\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
