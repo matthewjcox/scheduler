@@ -16,6 +16,7 @@ import sys
 import logging
 import os
 import time
+import sqlite3
 # Global vars:
 _course_creation_disabled= 1
 # End global vars
@@ -26,6 +27,8 @@ class InvalidPeriodError(Exception):
 def start_logging(save):
     logging.basicConfig(filename=save+'/log.log',level=logging.DEBUG, format="%(asctime)s|%(levelname)s|{}|%(message)s".format(os.getpid()))
     logging.Formatter.converter = time.gmtime
+    fmt=logging.Formatter(fmt="%(asctime)s|%(levelname)s|{}|%(message)s".format(os.getpid()))
+
 
     class Logger(object):
         # Takes the place of stdout so everything printed to the console, in addition to being printed, also automatically gets logged.
@@ -33,12 +36,24 @@ def start_logging(save):
         def __init__(self):
             self.terminal = sys.stdout
             self.dir=save
+            conn = sqlite3.connect(save + "/log.db")
+            cursor = conn.cursor()
+            cursor.execute("CREATE TABLE IF NOT EXISTS log(entries text);")
+            conn.close()
 
         def write(self, message):
             self.terminal.write(message)
             msg = message.strip()
             if msg:
                 logging.info(msg)
+                rec = logging.LogRecord("", 10, "", "", msg, "", "")
+                full_msg=fmt.format(rec)
+                conn = sqlite3.connect(save + "/log.db")
+                cursor = conn.cursor()
+                cursor.execute("INSERT INTO log(entries) VALUES (?)",(full_msg,))
+                conn.commit()
+                conn.close()
+            # print_nolog(full_msg)
 
         def flush(self):
             self.terminal.flush()
@@ -50,12 +65,25 @@ def start_logging(save):
         def __init__(self):
             self.terminal = sys.stderr
             self.dir = save
+            conn = sqlite3.connect(save + "/log.db")
+            cursor = conn.cursor()
+            cursor.execute("CREATE TABLE IF NOT EXISTS logerr(entries text);")
+            conn.close()
+
 
         def write(self, message):
             self.terminal.write(message)
             msg = message.strip()
             if msg:
                 logging.error(msg)
+                rec = logging.LogRecord("", 40, "", "", msg, "", "")
+                full_msg=fmt.format(rec)
+                conn = sqlite3.connect(save + "/log.db")
+                cursor = conn.cursor()
+                cursor.execute("INSERT INTO logerr(entries) VALUES (?)",(full_msg,))
+                conn.commit()
+                conn.close()
+            # # print(full_msg)
 
         def flush(self):
             self.terminal.flush()
@@ -65,6 +93,12 @@ def start_logging(save):
     sys.stderr = Err_Logger()
     global _SAVE
     _SAVE=save
+
+
+
+
+def print_nolog(*args):
+    sys.stdout.terminal.write(" ".join(map(str, args))+"\n")
 
 def get_save_loc():
     return _SAVE

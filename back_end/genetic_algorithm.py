@@ -189,13 +189,16 @@ class master_schedule(chromosome):
         self.fill_new()
 
 
-    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0):
+    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1):
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
             p = random.choice(mutating_section.allowed_periods)
         if verbose:
-            print("{} {}".format(repr(mutating_section),p))
+            if log:
+                print("{} {}".format(repr(mutating_section),p))
+            else:
+                print_nolog("{} {}".format(repr(mutating_section), p))
         try:
             self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness)
         except InvalidPeriodError:
@@ -269,7 +272,7 @@ class master_schedule(chromosome):
 
         self.section_exceeds_max_students_delta=-100
 
-    def preliminary_score(self,static=0,verbose=0):
+    def preliminary_score(self,static=0,verbose=0, log=1):
         if not self.initialized:
             raise ReferenceError
         score=0
@@ -340,8 +343,9 @@ class master_schedule(chromosome):
         score+=section_penalty_score
 
         if verbose:
-            print("S_b: {}, S_add: {:.2f}, S_con: {:.2f}, T_con: {:.2f}, Per_sp: {:.2f}, Sec_pen: {:.2f}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
-            print("{} {:.2f}".format(score,score+addl_score))
+            print_func=print if log else print_nolog
+            print_func("St base: {}, St addl: {:.2f}, S conflict: {:.2f}, T conflict: {:.2f}, Per spread: {:.2f}, Sec penalty: {:.2f}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
+            print_func("{} {:.2f}".format(score,score+addl_score))
 
         return score if static else score+addl_score
 
@@ -714,7 +718,7 @@ def multi_improve_sched(data):
     _CLOSENESS_TO_COMPLETION=closeness_to_completion
     sched=blank_sched.copy()
     sched.load_schedule(state)
-    print('Working {}'.format(i))
+    print_nolog('Working {}'.format(i))
     try:
         sched.remove_teacher_conflicts()
         sched.score()
@@ -722,10 +726,10 @@ def multi_improve_sched(data):
         for _ in range(num_rounds):
             for j in sched.students.values():
                 sched.optimize_student(j, max_it=num_subrounds)
-        sched.preliminary_score(verbose=1)
+        sched.preliminary_score(verbose=1,log=0)
         sched.score()
         sched.initialize_weights()
-        print("Done {}: {:.2f}".format(i,sched.score()))
+        print_nolog("Done {}: {:.2f}".format(i,sched.score()))
         return sched.serialize_schedule()
     except ValueError:
         pass
@@ -780,9 +784,9 @@ class multiple_hill_climb:
                     org = self.current_sched.copy()
                     org.initialize_weights()
                     num_mutations = int(1 + random.random() * 2)  # if i%20!=1 else 0
-                    print(num_mutations)
+                    print_nolog(num_mutations)
                     for i in range(num_mutations):
-                        org.mutate_period()
+                        org.mutate_period(log=0)
                     scheds.append(org)
                 new_organism = self.improve_sched(10,5, scheds)
             print('New:')
