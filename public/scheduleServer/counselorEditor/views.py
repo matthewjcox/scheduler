@@ -92,15 +92,17 @@ def sections(request):
 def input_sections(request):
     
     course = Course.objects.get(course_id =  request.POST['course'])
+    """
     return render(request, "counselorEditor/info.html", {
         'info': request.POST,
         })
+    #"""
     for num in request.POST.getlist('period'):
         c = course.section_set.create(
-            #section_id = courseID-number #request.POST['section']+str(num),
-            section_id = request.POST['course'] + str(len(c.section_set.all())),
+            #section_id = courseID-number,
+            section_id = request.POST['course'] + "-" + str(len(course.section_set.all())),
             room = Room.objects.get(rmNum = request.POST['room']),
-            student_num_max = request.POST['numStudent'],
+            students_num_max = request.POST['numStudent'],
             period = num,
         )
         for teacher in request.POST.getlist('teacher'):
@@ -108,6 +110,10 @@ def input_sections(request):
     
     return HttpResponseRedirect(reverse('counselorEditor:sections'))
     
+def relation(request):
+    return render(request, "counselorEditor/relation.html",{
+        'section_list': [{'section':section.section_id,'course':Course.objects.get(section__section_id = section.section_id).course_name} for section in Section.objects.all()],
+    })
     
 def big_button(request):
     return render(request, 'counselorEditor/start.html')

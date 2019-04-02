@@ -15,4 +15,5 @@ urlpatterns = [
     path('input_sections/', views.input_sections, name = 'input_sections'),
     path('big_red_button/', views.big_button, name = 'big_button'),
     path('start/', views.start, name = 'start'),
+    path('relation/',views.relation, name = 'relation'),
 ]

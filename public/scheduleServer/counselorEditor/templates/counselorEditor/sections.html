@@ -28,14 +28,21 @@
         {% endcomment %}
     </select><br><br>
     
-
-    Teacher:<input list = "teacher" name = "teacher"><datalist id = "teacher">
-        {% for teacher in teacher_list %}
-            <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
-        {% endfor %}
-        
-    </datalist>
-        
+    <div id = 'teachers'>
+        <div>
+        Teacher:<input list = "teacher" name = "teacher"><datalist id = "teacher">
+            {% for teacher in teacher_list %}
+                <option value = "{{teacher.teacher_id}}">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>
+            {% endfor %}
+            
+        </datalist>
+        <button onclick = "this.parentNode.style.display = 'none';" type = "button">Remove Teacher</button>
+        </div>
+    </div>
+    <br><button onclick = "addTeacher()" type = "button">Add Teacher</button>
+    
+    
+    
             {% comment %}
     Teacher: <select multiple name = "teacher">
         {% for teacher in teacher_list %}
@@ -74,7 +81,7 @@
     Allowed periods:<br>
     <button onclick = "ALL()" type = "button">All</button><button onclick = "NONE()" type = "button">None</button><button onclick = "BLUE()" type = "button">Blue day</button><button onclick = "RED()" type = "button">Red day</button><br>
     {% for n in "x"|rjust:7 %}
-    <input type="checkbox" name = "period" id = "{{ forloop.counter }}" value = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
+    <input type="checkbox" name = "period" id = "P{{ forloop.counter }}" value = "{{ forloop.counter }}">  {{ forloop.counter }}<br>
     {% endfor %}
     <br>
 
@@ -85,41 +92,47 @@
         alert("submission successful");
     }
     function ALL() {
-        document.getElementById("1").checked = true;
-        document.getElementById("2").checked = true;
-        document.getElementById("3").checked = true;
-        document.getElementById("4").checked = true;
-        document.getElementById("5").checked = true;
-        document.getElementById("6").checked = true;
-        document.getElementById("7").checked = true;
+        document.getElementById("P1").checked = true;
+        document.getElementById("P2").checked = true;
+        document.getElementById("P3").checked = true;
+        document.getElementById("P4").checked = true;
+        document.getElementById("P5").checked = true;
+        document.getElementById("P6").checked = true;
+        document.getElementById("P7").checked = true;
     }
     function NONE() {
-        document.getElementById("1").checked = false;
-        document.getElementById("2").checked = false;
-        document.getElementById("3").checked = false;
-        document.getElementById("4").checked = false;
-        document.getElementById("5").checked = false;
-        document.getElementById("6").checked = false;
-        document.getElementById("7").checked = false;
+        document.getElementById("P1").checked = false;
+        document.getElementById("P2").checked = false;
+        document.getElementById("P3").checked = false;
+        document.getElementById("P4").checked = false;
+        document.getElementById("P5").checked = false;
+        document.getElementById("P6").checked = false;
+        document.getElementById("P7").checked = false;
     }
     function RED() {
-        document.getElementById("1").checked = false;
-        document.getElementById("2").checked = false;
-        document.getElementById("3").checked = false;
-        document.getElementById("4").checked = false;
-        document.getElementById("5").checked = true;
-        document.getElementById("6").checked = true;
-        document.getElementById("7").checked = true;
+        document.getElementById("P1").checked = false;
+        document.getElementById("P2").checked = false;
+        document.getElementById("P3").checked = false;
+        document.getElementById("P4").checked = false;
+        document.getElementById("P5").checked = true;
+        document.getElementById("P6").checked = true;
+        document.getElementById("P7").checked = true;
     }
     function BLUE() {
-        document.getElementById("1").checked = true;
-        document.getElementById("2").checked = true;
-        document.getElementById("3").checked = true;
-        document.getElementById("4").checked = true;
-        document.getElementById("5").checked = false;
-        document.getElementById("6").checked = false;
-        document.getElementById("7").checked = false;
+        document.getElementById("P1").checked = true;
+        document.getElementById("P2").checked = true;
+        document.getElementById("P3").checked = true;
+        document.getElementById("P4").checked = true;
+        document.getElementById("P5").checked = false;
+        document.getElementById("P6").checked = false;
+        document.getElementById("P7").checked = false;
     }
+    function addTeacher(){
+        var tchr = document.createElement('div');
+        tchr.innerHTML = "Teacher:<input list = \"teacher\" name = \"teacher\"><datalist id = \"teacher\"> {% for teacher in teacher_list %}  <option value = \"{{teacher.teacher_id}}\">{{teacher.teacher_id}} - {{teacher.teacher_last_name}}, {{teacher.teacher_first_name}}</option>{% endfor %}</datalist> <button onclick = \"this.parentNode.style.display = 'none';\" type = \"button\">Remove Teacher</button>";
+        document.getElementById('teachers').appendChild(tchr);
+    }
+    
 </script>
 
 </body>

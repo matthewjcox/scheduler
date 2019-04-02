@@ -1,0 +1,17 @@
+{% extends "projectIndex/background.html" %}
+
+{% block sun %}
+<h1>
+<a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
+</h1>
+{% endblock %}
+
+{% block sky %}
+Choose 2 Sections:
+        <input list = "section" name = "section1"><datalist id = "section">
+        {% for sect in section_list %}
+            <option value = "{{sect.section}} {{sect.course}}">what does this even do?</option>
+        {% endfor %}
+        </datalist>
+        <input list = "section" name = "section2">
+{% endblock %}
