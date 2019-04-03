@@ -19,6 +19,7 @@ import statistics
 import tabulate
 from openpyxl import Workbook
 import openpyxl
+from openpyxl.utils import get_column_letter
 
 # First command line argument: file with run data to interpret
 toInterpret = "../../runs/past_runs/" + sys.argv[1] + "/readable_schedule.txt" # "../../runs/past_runs/2018_12_07__18_52_41/readable_schedule.txt"  # Currently, ../../runs/perfect_schedule.txt
@@ -77,7 +78,7 @@ for x in range(numSections):
         sections[section].append(words[2])
     else:
         sections[section].append(words[1])
-    print(sections[section])
+    # print(sections[section])
     # print(sections[section][-1])
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
     tempLine = file.readline()
@@ -199,7 +200,7 @@ totalRequests = 0
 fulfilledRequests = 0
 unrecievedCourses = {}
 for student in studentScheds.values():
-    print(student)
+    # print(student)
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
     fulfilledRequests += (len(student[1]) - len(unfulfilledSet))
@@ -428,6 +429,13 @@ for course in toTable.values():
     for l in range(len(course)):
         ws1.cell(row=r, column=l+1).value = course[l]
     r += 1
+ws1.freeze_panes = 'B2'
+ws1.column_dimensions['A'].width = 30
+ws1.cell(row=r, column=1).value = "Total"
+for i in range(1,17):
+    ws1.column_dimensions[get_column_letter(i+1)].width = len(ws1.cell(row=1, column=i+1).value)-2
+    ws1.cell(row=r, column=i+1).value = "=SUM(" + get_column_letter(i+1) + "2:" + get_column_letter(i+1) + (r-1).__str__() + ")"
+ws1.sheet_view.zoomScale = 120
 statwb.save(filename="../../runs/past_runs/" + sys.argv[1] + "/" + dest_filename)
 
 statFile.write("\n\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
