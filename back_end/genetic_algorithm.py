@@ -190,6 +190,10 @@ class master_schedule(chromosome):
 
 
     def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1):
+        # raise NotImplementedError
+        #Mutate emptier classes, esp when other sections of course w/free seats are in same period
+        #Automatically remove/reshuffle students if possible
+        #
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
@@ -750,7 +754,7 @@ class multiple_hill_climb:
         self.current_sched.set_progress()
         self.num_processes=_NUM_CORES
         print(self.current_sched.theoretical_max_score)
-        self.pool = multiprocessing.Pool(self.num_processes)
+        self.pool = multiprocessing.Pool(self.num_processes,None,None,5)
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS

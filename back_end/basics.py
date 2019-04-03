@@ -65,10 +65,10 @@ def start_logging(save):
         def __init__(self):
             self.terminal = sys.stderr
             self.dir = save
-            conn = sqlite3.connect(save + "/log.db")
-            cursor = conn.cursor()
-            cursor.execute("CREATE TABLE IF NOT EXISTS logerr(entries text);")
-            conn.close()
+            # conn = sqlite3.connect(save + "/log.db")
+            # cursor = conn.cursor()
+            # cursor.execute("CREATE TABLE IF NOT EXISTS logerr(entries text);")
+            # conn.close()
 
 
         def write(self, message):
@@ -76,13 +76,13 @@ def start_logging(save):
             msg = message.strip()
             if msg:
                 logging.error(msg)
-                rec = logging.LogRecord("", 40, "", "", msg, "", "")
-                full_msg=fmt.format(rec)
-                conn = sqlite3.connect(save + "/log.db")
-                cursor = conn.cursor()
-                cursor.execute("INSERT INTO logerr(entries) VALUES (?)",(full_msg,))
-                conn.commit()
-                conn.close()
+                # rec = logging.LogRecord("", 40, "", "", msg, "", "")
+                # full_msg=fmt.format(rec)
+                # conn = sqlite3.connect(save + "/log.db")
+                # cursor = conn.cursor()
+                # cursor.execute("INSERT INTO logerr(entries) VALUES (?)",(full_msg,))
+                # conn.commit()
+                # conn.close()
             # # print(full_msg)
 
         def flush(self):
