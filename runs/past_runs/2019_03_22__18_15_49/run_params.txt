@@ -1,0 +1,7 @@
+7
+full_school_classrooms.txt
+fullCourses.txt
+full_school_teachers.txt
+full_school_2017_students.txt
+blank_file.txt
+full_school_sections.txt

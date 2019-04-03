@@ -189,13 +189,16 @@ class master_schedule(chromosome):
         self.fill_new()
 
 
-    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0):
+    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1):
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
             p = random.choice(mutating_section.allowed_periods)
         if verbose:
-            print(repr(mutating_section),p)
+            if log:
+                print("{} {}".format(repr(mutating_section),p))
+            else:
+                print_nolog("{} {}".format(repr(mutating_section), p))
         try:
             self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness)
         except InvalidPeriodError:
@@ -227,6 +230,59 @@ class master_schedule(chromosome):
 
         return section,period
 
+    def new_choose_mutating_section(self):
+        period=None
+        while 1:
+            sects=list(self.sections.values())
+
+            #Select a section:
+            section=random.choice(tuple(self.sections.values()))
+            if section.maxstudents==0:
+                continue
+
+            #Choose the new period for the section.
+                #Avoid moving the section to a period in which the teacher is already teaching the same course:
+            courses={}
+            for i in section.teachers:
+                for j in i.sched:
+                    if j.period not in courses:
+                        courses[j.period]=[]
+                    courses[j.period].append(j.course)
+            for i in sorted(section.allowed_periods,key=lambda i:random.random()):
+                if i not in courses or not section.course in courses[i]:
+                    period=i
+                    break
+            if period is not None:
+                break
+
+        return section,period
+
+    def course_statistics(self):
+        courses=list(self.course_sections.keys())
+        course_use={}
+        for i in courses:
+            course_use[i]={}
+            for j in self.course_sections[i]:
+                if j.period not in course_use[i]:
+                    course_use[i][(j.semester,j.period)]=[0,0,0,0]
+                spots_used,free_spots,all_spots,needed_spots=course_use[i][(j.semester,j.period)]
+                spots_used+=len(j.students)
+                free_spots+=j.maxstudents-len(j.students)
+                all_spots += j.maxstudents
+                course_use[i][(j.semester,j.period)]=[spots_used,free_spots,all_spots,needed_spots]
+        for i in self.students:
+            course_requests=i.courses.courses.copy()
+            i.free_periods={_:[0,1,2] for _ in range(1,8)}
+            for j in i.sched:
+                course_requests.remove(j.course)
+                if j.semester==0:
+                    i.free_periods[j.period]=[]
+                else:
+                    i.free_periods[j.period].remove(0)
+                    i.free_periods[j.period].remove(j.semester)
+                                    #compute needed spots per period per section
+            raise NotImplementedError
+
     def change_to_period(self, section, new_period, reached,allow_randomness=0):
         if new_period==section.period or section in reached:
             return
@@ -249,7 +305,7 @@ class master_schedule(chromosome):
             raise
 
     def initialize_weights(self):
-        self.student_conflict_score_delta = -3
+        self.student_conflict_score_delta = -5
         self.teacher_conflict_score_delta = -10000
         self.correct_yr_course_score_delta = 4
         self.correct_sem_course_score_delta = 2
@@ -265,11 +321,11 @@ class master_schedule(chromosome):
         self.duplicate_correct_course_score_delta = -5
         self.rare_class_bonus = 2 * (1 - _CLOSENESS_TO_COMPLETION**2)
         self.section_in_prohibited_period_delta=-5000
-        self.course_period_overlap=0#-10*(1-_CLOSENESS_TO_COMPLETION)**2
+        self.course_period_overlap=-1*(1-_CLOSENESS_TO_COMPLETION)**2
 
         self.section_exceeds_max_students_delta=-100
 
-    def preliminary_score(self,static=0,verbose=0):
+    def preliminary_score(self,static=0,verbose=0, log=1):
         if not self.initialized:
             raise ReferenceError
         score=0
@@ -340,8 +396,9 @@ class master_schedule(chromosome):
         score+=section_penalty_score
 
         if verbose:
-            print("St base: {:.2f}, St addl: {:.2f}, S conflict: {:.2f}, T conflict: {:.2f}, Per spread: {:.2f}, Sec penalty: {:.2f}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
-            print(score,score+addl_score)
+            print_func=print if log else print_nolog
+            print_func("St base: {}, St addl: {:.2f}, S conflict: {:.2f}, T conflict: {:.2f}, Per spread: {:.2f}, Sec penalty: {:.2f}".format(student_base_score,student_addl_score,student_conflict_score,teacher_conflict_score,period_spread_score,section_penalty_score))
+            print_func("{} {:.2f}".format(score,score+addl_score))
 
         return score if static else score+addl_score
 
@@ -521,7 +578,7 @@ class master_schedule(chromosome):
 
             s=self.course_sections[i] if i in self.course_sections else []
             random.shuffle(s)
-            allow_full_period=random.random()<.05
+            allow_full_period=random.random()<.2
             for i in range(self.num_periods):
                 free_periods[i+1]=[1,2]
             for i in student.sched:
@@ -564,7 +621,7 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score or random.random()<2**(-9*(score-new_score)):
+            if new_score>=score: #or random.random()<2**(-9*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
@@ -714,7 +771,7 @@ def multi_improve_sched(data):
     _CLOSENESS_TO_COMPLETION=closeness_to_completion
     sched=blank_sched.copy()
     sched.load_schedule(state)
-    print('Working '+str(i))
+    print_nolog('Working {}'.format(i))
     try:
         sched.remove_teacher_conflicts()
         sched.score()
@@ -722,10 +779,10 @@ def multi_improve_sched(data):
         for _ in range(num_rounds):
             for j in sched.students.values():
                 sched.optimize_student(j, max_it=num_subrounds)
-        sched.preliminary_score(verbose=1)
+        sched.preliminary_score(verbose=1,log=0)
         sched.score()
         sched.initialize_weights()
-        print("Done "+str(i)+"; score: ",sched.score())
+        print_nolog("Done {}: {:.2f}".format(i,sched.score()))
         return sched.serialize_schedule()
     except ValueError:
         pass
@@ -745,7 +802,8 @@ class multiple_hill_climb:
         self.current_sched.initialize_weights()
         self.current_sched.set_progress()
         self.num_processes=_NUM_CORES
-        self.pool = multiprocessing.Pool(self.num_processes)
+        print(self.current_sched.theoretical_max_score)
+        self.pool = multiprocessing.Pool(self.num_processes,None,None,5)
 
     def solve(self, verbose=0, print_every=500):
         # global _NUM_ITERATIONS
@@ -764,7 +822,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1 and it==1:
-                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(3*self.num_processes)])
+                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(10*self.num_processes)])
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -775,15 +833,15 @@ class multiple_hill_climb:
                 new_organism = self.improve_sched(10,5, [new_organism for i in range(self.num_processes)])
             else:
                 scheds=[]
-                for i in range(self.num_processes):
+                for i in range(self.num_processes*2):
                     org = self.current_sched.copy()
                     org.initialize_weights()
-                    num_mutations = int(1 + random.random() * 9)  # if i%20!=1 else 0
-                    print(num_mutations)
+                    num_mutations = int(1 + random.random() * 2)  # if i%20!=1 else 0
+                    print_nolog(num_mutations)
                     for i in range(num_mutations):
-                        org.mutate_period()
+                        org.mutate_period(log=0)
                     scheds.append(org)
-                new_organism = self.improve_sched(10,1, scheds)
+                new_organism = self.improve_sched(10,5, scheds)
             print('New:')
             new_score=new_organism.preliminary_score(verbose=1)
             print('Old:')

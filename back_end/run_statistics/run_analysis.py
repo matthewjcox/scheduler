@@ -19,6 +19,7 @@ import statistics
 import tabulate
 from openpyxl import Workbook
 import openpyxl
+from openpyxl.utils import get_column_letter
 
 # First command line argument: file with run data to interpret
 toInterpret = "../../runs/past_runs/" + sys.argv[1] + "/readable_schedule.txt" # "../../runs/past_runs/2018_12_07__18_52_41/readable_schedule.txt"  # Currently, ../../runs/perfect_schedule.txt
@@ -72,7 +73,12 @@ for x in range(numSections):
     # Adds max students to sections[section] as an int.
     sections[section].append(int(nextLine[21:-1]))
     # Adds courseID to sections[section] as a string.
-    sections[section].append(re.search(r'[0-9A-Z&]+', file.readline()[13:-1]).group(0))
+    words = file.readline().split(" ")
+    if words[1] == "Course":
+        sections[section].append(words[2])
+    else:
+        sections[section].append(words[1])
+    # print(sections[section])
     # print(sections[section][-1])
     # Adds a list of teachers to section[sections] using teacher's IDs (amreid, for instance).
     tempLine = file.readline()
@@ -134,16 +140,31 @@ for x in range(numStuds):
     studentScheds[curStud] = [curStud, [], [], []]
     nextLine = file.readline()
     while not re.search('Alternates:', nextLine):
-        studentScheds[curStud][1].append(nextLine.split(" ")[1])
+        words = [l.strip() for l in nextLine.split(" ")]
+        #print(words)
+        if words[0] == "Course":
+            studentScheds[curStud][1].append(words[1])
+        else:
+            studentScheds[curStud][1].append(words[0])
+            #print(studentScheds[curStud][1][-1])
         nextLine = file.readline()
     nextLine = file.readline()
     while not re.search('None', nextLine) and not re.search('Schedule:', nextLine):
-        studentScheds[curStud][2].append(re.search(r'\w*(?= )', nextLine).group(0))
+        raise Exception("Fix so that this is compatable with schedule section of students that does or does not include the word course")
+        words = nextline.split(" ")
+        #print(words)
+        if words[3] == "Course":
+            studentScheds[curStud][2].append(words[4])
+        else:
+            studentScheds[curStud][2].append(words[3])
         nextLine = file.readline()
     if re.search('None', nextLine):
         file.readline()
     nextLine = file.readline()
     while not nextLine == "\n":
+        #raise Exception("Fix so that this is compatable with schedule section of students that does or does not include the word course")
+        #print(nextLine)
+        #print(nextLine.split(" ")[1][:-1])
         studentScheds[curStud][3].append(nextLine.split(" ")[1][:-1])
         nextLine = file.readline()
     #print(studentScheds[curStud])
@@ -179,6 +200,7 @@ totalRequests = 0
 fulfilledRequests = 0
 unrecievedCourses = {}
 for student in studentScheds.values():
+    # print(student)
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
     fulfilledRequests += (len(student[1]) - len(unfulfilledSet))
@@ -406,6 +428,14 @@ r = 2
 for course in toTable.values():
     for l in range(len(course)):
         ws1.cell(row=r, column=l+1).value = course[l]
+    r += 1
+ws1.freeze_panes = 'B2'
+ws1.column_dimensions['A'].width = 30
+ws1.cell(row=r, column=1).value = "Total"
+for i in range(1,17):
+    ws1.column_dimensions[get_column_letter(i+1)].width = len(ws1.cell(row=1, column=i+1).value)-2
+    ws1.cell(row=r, column=i+1).value = "=SUM(" + get_column_letter(i+1) + "2:" + get_column_letter(i+1) + (r-1).__str__() + ")"
+ws1.sheet_view.zoomScale = 120
 statwb.save(filename="../../runs/past_runs/" + sys.argv[1] + "/" + dest_filename)
 
 statFile.write("\n\nP1 = Period 1\tES = Empty Seats\tSM = Students Missing\tT = Total\n")
