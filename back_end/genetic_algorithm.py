@@ -190,10 +190,6 @@ class master_schedule(chromosome):
 
 
     def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1):
-        # raise NotImplementedError
-        #Mutate emptier classes, esp when other sections of course w/free seats are in same period
-        #Automatically remove/reshuffle students if possible
-        #
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
@@ -233,6 +229,59 @@ class master_schedule(chromosome):
                 break
 
         return section,period
+
+    def new_choose_mutating_section(self):
+        period=None
+        while 1:
+            sects=list(self.sections.values())
+
+            #Select a section:
+            section=random.choice(tuple(self.sections.values()))
+            if section.maxstudents==0:
+                continue
+
+            #Choose the new period for the section.
+                #Avoid moving the section to a period in which the teacher is already teaching the same course:
+            courses={}
+            for i in section.teachers:
+                for j in i.sched:
+                    if j.period not in courses:
+                        courses[j.period]=[]
+                    courses[j.period].append(j.course)
+            for i in sorted(section.allowed_periods,key=lambda i:random.random()):
+                if i not in courses or not section.course in courses[i]:
+                    period=i
+                    break
+            if period is not None:
+                break
+
+        return section,period
+
+    def course_statistics(self):
+        courses=list(self.course_sections.keys())
+        course_use={}
+        for i in courses:
+            course_use[i]={}
+            for j in self.course_sections[i]:
+                if j.period not in course_use[i]:
+                    course_use[i][(j.semester,j.period)]=[0,0,0,0]
+                spots_used,free_spots,all_spots,needed_spots=course_use[i][(j.semester,j.period)]
+                spots_used+=len(j.students)
+                free_spots+=j.maxstudents-len(j.students)
+                all_spots += j.maxstudents
+                course_use[i][(j.semester,j.period)]=[spots_used,free_spots,all_spots,needed_spots]
+        for i in self.students:
+            course_requests=i.courses.courses.copy()
+            i.free_periods={_:[0,1,2] for _ in range(1,8)}
+            for j in i.sched:
+                course_requests.remove(j.course)
+                if j.semester==0:
+                    i.free_periods[j.period]=[]
+                else:
+                    i.free_periods[j.period].remove(0)
+                    i.free_periods[j.period].remove(j.semester)
+                                    #compute needed spots per period per section
+            raise NotImplementedError
 
     def change_to_period(self, section, new_period, reached,allow_randomness=0):
         if new_period==section.period or section in reached:
@@ -572,7 +621,7 @@ class master_schedule(chromosome):
             old_sections=new_section.add_student_removing_conflicts(student)
             new_score = self.score_student(student)[0]
             # raise NotImplementedError#Need to check that teamed things can be slotted in too.
-            if new_score>=score or random.random()<2**(-9*(score-new_score)):
+            if new_score>=score: #or random.random()<2**(-9*(score-new_score)):
                 # if score>new_score:
                 #     print(score-new_score)
                 pass
