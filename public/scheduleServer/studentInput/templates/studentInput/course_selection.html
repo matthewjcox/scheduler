@@ -5,19 +5,18 @@
 {% block sky %}
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<!-- <a href="{% url 'projectIndex:index' %}" >Back to projectIndex</a> -->
-<!-- <a href="{% url 'studentInput:index' %}" >Back to Index</a> -->
 <form action="{% url 'studentInput:submit' %}" method="post" style = "padding-left: 10px;">
 <a href="{% url 'projectIndex:student' %}" >Back to Index</a>
 Hi {{student}}!
 {% csrf_token %}
 <br><br>
-{% for num in courseNum %}
+{% for course in course_list %}
     Course {{ forloop.counter }}:
-    <input type ="text" name = "course{{ forloop.counter }}" onchange="displayCourseName({{ forloop.counter }},this.value)">
-    <div id="name{{ forloop.counter }}" style="display:inline-block">Error: Invalid Course ID</div>
+    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course.course_id}}" onchange="displayCourseName({{ forloop.counter }}, this.value)">
+    <div id="name{{ forloop.counter }}" style="display:inline-block">{{course.course_name}}</div>
     <br>
 {% endfor %}
+<br>
 <input type="submit" value="Submit Course Request">
 <input type="hidden" name="username" value="{{student}}">
 </form>

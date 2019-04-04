@@ -22709,3 +22709,42 @@ NameError: name 'course' is not defined
 [2019-04-02 11:34:59 -0400] [570] [INFO] Booting worker with pid: 570
 [2019-04-02 11:34:59 -0400] [571] [INFO] Booting worker with pid: 571
 [2019-04-02 11:34:59 -0400] [572] [INFO] Booting worker with pid: 572
+[2019-04-03 12:59:33 -0400] [556] [INFO] Handling signal: term
+[2019-04-03 16:59:33 +0000] [568] [INFO] Worker exiting (pid: 568)
+/web/projects/schedule/public/scheduleServer
+[2019-04-03 16:59:33 +0000] [571] [INFO] Worker exiting (pid: 571)
+\n\n\n starting new server run \n
+[2019-04-03 12:59:34 -0400] [5453] [INFO] Starting gunicorn 19.9.0
+[2019-04-03 12:59:34 -0400] [5453] [INFO] Listening at: http://127.0.0.1:11356 (5453)
+[2019-04-03 12:59:34 -0400] [5453] [INFO] Using worker: sync
+[2019-04-03 12:59:34 -0400] [5460] [INFO] Booting worker with pid: 5460
+[2019-04-03 12:59:34 -0400] [5461] [INFO] Booting worker with pid: 5461
+[2019-04-03 12:59:34 -0400] [5462] [INFO] Booting worker with pid: 5462
+[2019-04-03 12:59:34 -0400] [5465] [INFO] Booting worker with pid: 5465
+[2019-04-03 18:07:15 +0000] [5462] [INFO] Worker exiting (pid: 5462)
+/web/projects/schedule/public/scheduleServer
+[2019-04-03 18:07:15 +0000] [5460] [INFO] Worker exiting (pid: 5460)
+[2019-04-03 18:07:15 +0000] [5461] [INFO] Worker exiting (pid: 5461)
+[2019-04-03 18:07:15 +0000] [5465] [INFO] Worker exiting (pid: 5465)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-04-03 14:07:15 -0400] [5453] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-04-03 14:07:16 -0400] [18760] [INFO] Starting gunicorn 19.9.0
+[2019-04-03 14:07:16 -0400] [18760] [INFO] Listening at: http://127.0.0.1:11356 (18760)
+[2019-04-03 14:07:16 -0400] [18760] [INFO] Using worker: sync
+[2019-04-03 14:07:16 -0400] [18764] [INFO] Booting worker with pid: 18764
+[2019-04-03 14:07:16 -0400] [18765] [INFO] Booting worker with pid: 18765
+[2019-04-03 14:07:16 -0400] [18767] [INFO] Booting worker with pid: 18767
+[2019-04-03 14:07:16 -0400] [18769] [INFO] Booting worker with pid: 18769
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-04-04 11:51:52 -0400] [12566] [INFO] Starting gunicorn 19.9.0
+[2019-04-04 11:51:52 -0400] [12566] [INFO] Listening at: http://127.0.0.1:11356 (12566)
+[2019-04-04 11:51:52 -0400] [12566] [INFO] Using worker: sync
+[2019-04-04 11:51:52 -0400] [12575] [INFO] Booting worker with pid: 12575
+[2019-04-04 11:51:52 -0400] [12576] [INFO] Booting worker with pid: 12576
+[2019-04-04 11:51:52 -0400] [12578] [INFO] Booting worker with pid: 12578
+[2019-04-04 11:51:52 -0400] [12581] [INFO] Booting worker with pid: 12581

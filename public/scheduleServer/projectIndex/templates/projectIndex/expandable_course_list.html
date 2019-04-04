@@ -3,6 +3,11 @@
     th {
         text-align: left;
     }
+    button {
+        background-color: lightblue;
+        width: 25px;
+        border:none;
+    }
 </style>
 
 {% for category in category_list %}
@@ -11,12 +16,14 @@
             var x = document.getElementById("{{category|cut:" "|cut:":"}}");
             if (x.style.display == "none"){
                 x.style.display = "block";
+                document.getElementById("button{{category|cut:" "|cut:":"}}").innerHTML = '-';
             } else {
                 x.style.display = "none";
+                document.getElementById("button{{category|cut:" "|cut:":"}}").innerHTML = '+';
             }
         }
     </script>
-    <button onclick="toggle{{category|cut:" "|cut:":"}}()">{{category}}</button>
+    <button id = "button{{category|cut:" "|cut:":"}}" onclick="toggle{{category|cut:" "|cut:":"}}()">+</button>{{category}}
     <div id = "{{category|cut:" "|cut:":"}}" style = "display:none">
         <style>
         th,td {

@@ -55,9 +55,11 @@ def redirect(request):
     user = authenticate(username = info['ion_username'], password = '12345')
     if user is None:
         user = User.objects.create_user(info['ion_username'], info['tj_email'],'12345')
-        Student.objects.create( student_id = info['ion_username'], 
+        student = Student.objects.create( student_id = info['ion_username'], 
                                 student_first_name = info['first_name'], 
                                 student_last_name = info['last_name'])
+        for i in range(7):
+            student.student_course_request.add(Course.objects.get(course_id = '000934'))
     request.session.set_expiry(86400)
     user.first_name = info['first_name']
     user.last_name = info['last_name']

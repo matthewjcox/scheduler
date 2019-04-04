@@ -25,19 +25,14 @@ def index(request):
     """
     
 def course_selection(request):
-    context = {
-        'courseDict': Course.objects.all(),
+    student = Student.objects.get(student_id = request.user.get_username())
+    
+    return render(request, 'studentInput/course_selection.html', {
+        'student': student.student_id,
+        'course_list': student.student_course_request.all(),
         'category_list': Category.objects.all(),
-        'courseNum': "x"*numCoursesSelected,
-        'student': request.user.get_username(),
-    }
-    return render(request, 'studentInput/course_selection.html', context)
-
-#def results(request, Student student):
-#    return render(request, 'studentInput/results.html', {'course_list': student.student_course_request.all(),})
-def results(request):
-    return render(request, 'studentInput/results.html')
-
+        'courseDict': Course.objects.all(),
+    })
 
 def submit(request):
     try:
@@ -71,5 +66,5 @@ def submit(request):
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
-        return HttpResponseRedirect(reverse('studentInput:results'))
+        return HttpResponseRedirect(reverse('studentInput:index'))
 
