@@ -189,7 +189,7 @@ class master_schedule(chromosome):
         self.fill_new()
 
 
-    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1):
+    def mutate_period(self,mutating_section=None,p=None,verbose=1,allow_randomness=0,log=1,remove_students=0):
         if mutating_section is None:
             mutating_section,p=self.choose_mutating_section()
         if p is None:
@@ -200,7 +200,7 @@ class master_schedule(chromosome):
             else:
                 print_nolog("{} {}".format(repr(mutating_section), p))
         try:
-            self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness)
+            self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness,remove_students=remove_students)
         except InvalidPeriodError:
             pass
 
@@ -283,7 +283,9 @@ class master_schedule(chromosome):
                                     #compute needed spots per period per section
             raise NotImplementedError
 
-    def change_to_period(self, section, new_period, reached,allow_randomness=0):
+    def change_to_period(self, section, new_period, reached,allow_randomness=0,remove_students=0):
+        raise NotImplementedError
+        #bug where students don't get removed??
         if new_period==section.period or section in reached:
             return
         if new_period not in section.allowed_periods:
@@ -291,15 +293,21 @@ class master_schedule(chromosome):
         reached.append(section)
         old_period=section.period
         section.set_period(new_period)
+        if remove_students:
+            for i in section.students.copy():
+                section.remove_student(i)
+            for j in section.teamed2:
+                for i in j.students.copy():
+                    j.remove_student(i)
         try:
             for i in section.teachers:
                 for j in i.sched:
                     if (section.semester==0 or j.semester==0 or section.semester==j.semester) and j not in section.teamed2:
                         if j.period==new_period:
-                            self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached)
+                            self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached,remove_students=remove_students)
             for j in section.teamed1:
                 if j.period == new_period:
-                    self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached)
+                    self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached,remove_students=remove_students)
         except InvalidPeriodError:
             section.set_period(old_period)
             raise
@@ -426,14 +434,17 @@ class master_schedule(chromosome):
             if j.semester == 0:
                 if k in periods_yr or k in periods_s1 or k in periods_s2:
                     base_score += self.student_conflict_score_delta
+                    print(j)
                 periods_yr.add(k)
             elif j.semester == 1:
                 if k in periods_yr or k in periods_s1:
                     base_score += self.student_conflict_score_delta
+                    print(j)
                 periods_s1.add(k)
             elif j.semester == 2:
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
+                    print(j)
                 periods_s2.add(k)
             addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
         return base_score,addl_score
@@ -822,7 +833,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1 and it==1:
-                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(10*self.num_processes)])
+                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(1*self.num_processes)])#10
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -839,7 +850,7 @@ class multiple_hill_climb:
                     num_mutations = int(1 + random.random() * 2)  # if i%20!=1 else 0
                     print_nolog(num_mutations)
                     for i in range(num_mutations):
-                        org.mutate_period(log=0)
+                        org.mutate_period(log=0,remove_students=1)
                     scheds.append(org)
                 new_organism = self.improve_sched(10,5, scheds)
             print('New:')
