@@ -359,7 +359,16 @@ class Section:
             removed+=rem
         return removed
 
-    def remove_student(self, student):
+    def remove_student(self, student, reached=None):
+        if reached is None:
+            reached=[]
+        if self in reached:
+            return
+        reached.append(self)
+        for i in self.teamed1:
+            i.remove_student(student,reached)
+        for i in self.teamed3:
+            i.remove_student(student,reached)
         # self.remove_student_old(student)
         if student not in self.students:
             return
@@ -369,10 +378,6 @@ class Section:
         #     if i in student.teamed:
         #         for j in student.teamed[i]:
         #             self.remove_student(j)
-        for i in self.teamed1:
-            i.remove_student(student)
-        for i in self.teamed3:
-            i.remove_student(student)
 
 
     # def add_student_old(self, student):
@@ -415,14 +420,14 @@ class Section:
     def fix_period(self):
         self.period_fixed=1
 
-    def set_period(self, period, override_fixed=0,check_conflicts_team=1,reached=None,allow_randomness=0):
+    def set_period(self, period, override_fixed=0,reached=None,allow_randomness=0):
         if self.period==period:
             return
         if self.period_fixed and not override_fixed:
             raise AttributeError
-        if not check_conflicts_team:
-            self.period=period
-            return
+        # if not check_conflicts_team:
+        #     self.period=period
+        #     return
 
         if reached==None:
             reached=[]
@@ -436,21 +441,27 @@ class Section:
         old_period=self.period
         self.period=period
         try:
-            for i in self.teachers:
-                for j in i.sched:
-                    if (self.semester==0 or j.semester==0 or self.semester==j.semester) and j not in self.teamed2:
-                        if j.period==period:
-                            j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
-            for j in self.teamed1:
-                if j.period == period:
-                    j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
             for j in self.teamed2:
-                j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+                j.set_period(period, override_fixed=override_fixed, reached=reached,allow_randomness=allow_randomness)
             for j in self.teamed3:
-                j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+                j.set_period(period,override_fixed=override_fixed,reached=reached, allow_randomness=allow_randomness)
         except InvalidPeriodError:
             self.period=old_period
             raise
+        # try:
+        #     for i in self.teachers:
+        #         for j in i.sched:
+        #             if (self.semester==0 or j.semester==0 or self.semester==j.semester) and j not in self.teamed2:
+        #                 if j.period==period:
+        #                     j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+        #     for j in self.teamed1:
+        #         if j.period == period:
+        #             j.set_period(random.choice(j.allowed_periods) if allow_randomness else old_period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+        #     for j in self.teamed2:
+        #         j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+        #     for j in self.teamed3:
+        #         j.set_period(period,override_fixed=override_fixed,check_conflicts_team=check_conflicts_team,reached=reached, allow_randomness=allow_randomness)
+        #
 
 
 

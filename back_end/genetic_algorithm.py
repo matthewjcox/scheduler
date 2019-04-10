@@ -284,7 +284,7 @@ class master_schedule(chromosome):
             raise NotImplementedError
 
     def change_to_period(self, section, new_period, reached,allow_randomness=0,remove_students=0):
-        raise NotImplementedError
+        # raise NotImplementedError
         #bug where students don't get removed??
         if new_period==section.period or section in reached:
             return
@@ -293,12 +293,21 @@ class master_schedule(chromosome):
         reached.append(section)
         old_period=section.period
         section.set_period(new_period)
+        s_to_remove=section.students.copy()
         if remove_students:
-            for i in section.students.copy():
+            for i in s_to_remove:
                 section.remove_student(i)
-            for j in section.teamed2:
-                for i in j.students.copy():
-                    j.remove_student(i)
+            # unreached=[section]
+            # reached=[]
+            # while unreached:
+            #     j=unreached.pop()
+            #     if j in reached:
+            #         continue
+            #     reached.append(j)
+            #     for i in j.teamed2:
+            #         unreached.append(i)
+            #     for i in j.students.copy():
+            #         j.remove_student(i)
         try:
             for i in section.teachers:
                 for j in i.sched:
@@ -308,8 +317,13 @@ class master_schedule(chromosome):
             for j in section.teamed1:
                 if j.period == new_period:
                     self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached,remove_students=remove_students)
+            for j in section.teamed2:
+                self.change_to_period(j,new_period, reached,allow_randomness=allow_randomness,remove_students=remove_students)
+            for j in section.teamed3:
+                self.change_to_period(j, new_period,  reached,allow_randomness=allow_randomness,remove_students=remove_students)
         except InvalidPeriodError:
             section.set_period(old_period)
+            # for i in s_to_remove:
             raise
 
     def initialize_weights(self):
@@ -434,17 +448,17 @@ class master_schedule(chromosome):
             if j.semester == 0:
                 if k in periods_yr or k in periods_s1 or k in periods_s2:
                     base_score += self.student_conflict_score_delta
-                    print(j)
+                    print_nolog("Err",j)
                 periods_yr.add(k)
             elif j.semester == 1:
                 if k in periods_yr or k in periods_s1:
                     base_score += self.student_conflict_score_delta
-                    print(j)
+                    print_nolog("Err",j)
                 periods_s1.add(k)
             elif j.semester == 2:
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
-                    print(j)
+                    print_nolog("Err",j)
                 periods_s2.add(k)
             addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
         return base_score,addl_score
