@@ -2,9 +2,9 @@
 
 <!-- comment -->
 
-# Project Title
+# Scheduler
 
-One Paragraph of project description goes here
+This project inclues code that seeks to build master and student schedules for high schools. The method currently in use is a modified hill-climbing approach that involves hill-climbing on master schedules and then hill-climbing individual students' schedules within iteration of the master schedule. To run the code, run run_schedule.py from the scheduler directory. To change run parameters, edit the text file run_params.txt.
 
 ## Getting Started
 
