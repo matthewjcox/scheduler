@@ -120,7 +120,7 @@ class master_schedule(chromosome):
                 s.set_course(course)
                 s.set_semester(i.semester)
                 s.set_max_students(i.maxstudents)
-                s.set_period(i.period,check_conflicts_team=0)
+                self.change_period_wrapper(s,i.period,[])
                 if i.period_fixed:
                     s.fix_period()
                 s.set_allowed_periods(i.allowed_periods)
@@ -161,7 +161,7 @@ class master_schedule(chromosome):
             data=cursor.execute("SELECT * FROM schedule")
             for section,students,period in data:
                 s=self.sections[section]
-                s.set_period(int(period),check_conflicts_team=0)
+                self.change_period_wrapper(s,int(period),[])
                 for i in students.split('|'):
                     if i:
                         s.add_student_basic(self.students[i])
@@ -174,7 +174,7 @@ class master_schedule(chromosome):
     def load_schedule(self,data):
         for section,students,period in data:
             s=self.sections[section]
-            s.set_period(int(period),check_conflicts_team=0)
+            self.change_period_wrapper(s,int(period),[])
             for i in students.split('|'):
                 if i:
                     s.add_student_basic(self.students[i])
@@ -282,6 +282,12 @@ class master_schedule(chromosome):
                     i.free_periods[j.period].remove(j.semester)
                                     #compute needed spots per period per section
             raise NotImplementedError
+
+    def change_period_wrapper(self, section, new_period, reached,allow_randomness=0,remove_students=0):
+        try:
+            self.change_to_period(section, new_period, reached,allow_randomness=allow_randomness,remove_students=remove_students)
+        except InvalidPeriodError:
+            pass
 
     def change_to_period(self, section, new_period, reached,allow_randomness=0,remove_students=0):
         # raise NotImplementedError
@@ -666,7 +672,7 @@ class master_schedule(chromosome):
             s.set_course(course)
             s.set_semester(i.semester)
             s.set_max_students(i.maxstudents)
-            s.set_period(i.period, check_conflicts_team=0)
+            sched.change_period_wrapper(s,i.period,[])
             s.set_allowed_periods(i.allowed_periods)
             for j in i.teachers:
                 teacher = sched.teachers[j.teacherID]
@@ -715,81 +721,6 @@ class master_schedule(chromosome):
         return '{} object, score={} ({})'.format(self.__class__.__name__,self.score(),self.preliminary_score(static=1))
 
 
-# class hill_climb:
-#     def __init__(self, dataclass, num_periods,classrooms,courses,teachers,students,sections,outfolder, *args, **kwargs):
-#         self.dataclass = dataclass
-#         assert issubclass(self.dataclass, chromosome)
-#         self.current_sched = None
-#         self.outfolder=outfolder
-#         j = self.dataclass(num_periods,classrooms,courses,teachers,students,sections,*args, **kwargs)
-#         j.retrieve_schedule(outfolder)
-#         self.current_sched=j
-#         self.current_sched.initialize_weights()
-#
-#
-#     def solve(self, verbose=0, print_every=500):
-#         # global _NUM_ITERATIONS
-#         global _ITERATION
-#         # _NUM_ITERATIONS=num_iterations
-#         last_save=-1
-#         first_it=1
-#         while 1:
-#             self.current_sched.initialize_weights()
-#             if (time.perf_counter()-_START_TIME)//_SAVE_TIME>last_save:
-#                 last_save=(time.perf_counter()-_START_TIME)//_SAVE_TIME
-#                 save_schedule(self.current_sched, self.outfolder)
-#                 print_schedule(self.current_sched, self.outfolder)
-#             _ITERATION+=1
-#             i=_ITERATION
-#             if first_it == 1:
-#                 self.current_sched.remove_teacher_conflicts()
-#                 self.current_sched.score()
-#                 self.current_sched.initialize_weights()
-#             if first_it==1 or i<10 or i % print_every == 0:
-#                 print('\n\nRound {}: score {:.2f} ({:.2f}). Elapsed time: {}.'.format(i,self.current_sched.score(),self.current_sched.preliminary_score(static=1),current_time_formatted()))
-#             new_organism = self.current_sched.copy()
-#             new_organism.initialize_weights()
-#             if i%20==1:
-#                 for _ in range(10):
-#                     for i in new_organism.students.values():
-#                         new_organism.optimize_student(i, max_it=10)
-#             else:
-#                 num_mutations=int(1+random.random()*9) #if i%20!=1 else 0
-#                 for i in range(num_mutations):
-#                     new_organism.mutate_period()
-#                 for _ in range(10):
-#                     for i in new_organism.students.values():
-#                         new_organism.optimize_student(i,max_it=1)
-#             print('New:')
-#             new_score=new_organism.preliminary_score(verbose=1)
-#             print('Old:')
-#             old_score=self.current_sched.preliminary_score(verbose=1)
-#             delta_score=old_score-new_score
-#             if new_score>=old_score:# or (first_it==0 and random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3):#10**(-5*_CLOSENESS_TO_COMPLETION)*
-#                 self.current_sched=new_organism
-#             self.current_sched.set_progress()
-#             if _CLOSENESS_TO_COMPLETION>1:
-#                 print('Scheduling complete.')
-#                 break
-#             first_it = 0
-# # def multi_improve_sched(q,resultq):
-# #     while 1:
-# #         sched=q.get()
-# #         print('Working')
-# #         if sched is None:
-# #             print('Ending process')
-# #             break
-# #         sched.remove_teacher_conflicts()
-# #         sched.score()
-# #         sched.initialize_weights()
-# #         for _ in range(10):
-# #             for j in sched.students.values():
-# #                 sched.optimize_student(j, max_it=10)
-# #         sched.preliminary_score(verbose=1)
-# #         sched.score()
-# #         sched.initialize_weights()
-# #         print(sched.score())
-# #         resultq.put(sched.serialize_schedule())
 def multi_improve_sched(data):
     i,blank_sched,num_rounds,num_subrounds,state,closeness_to_completion=data
     global _CLOSENESS_TO_COMPLETION

@@ -20,7 +20,7 @@ $RECYCLE.BIN/
 # Compiled Python
 *.pyc
 
-.idea
+workspace.xml
 
 # =========================
 # Operating System Files
