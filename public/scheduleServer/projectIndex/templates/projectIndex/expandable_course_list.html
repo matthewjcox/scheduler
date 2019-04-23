@@ -3,7 +3,7 @@
     th {
         text-align: left;
     }
-    button {
+    .expand {
         background-color: lightblue;
         width: 25px;
         border:none;
@@ -23,7 +23,7 @@
             }
         }
     </script>
-    <button id = "button{{category|cut:" "|cut:":"}}" onclick="toggle{{category|cut:" "|cut:":"}}()">+</button>{{category}}
+    <button class = 'expand' id = "button{{category|cut:" "|cut:":"}}" onclick="toggle{{category|cut:" "|cut:":"}}()">+</button>{{category}}
     <div id = "{{category|cut:" "|cut:":"}}" style = "display:none">
         <style>
         th,td {

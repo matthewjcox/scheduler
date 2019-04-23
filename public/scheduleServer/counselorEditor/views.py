@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import os.path
 
-numCoursesSelected = 7
+
 
 from studentInput.models import Student, Category,Course, Teacher, Room, Section
 # Create your views here.
@@ -19,11 +19,29 @@ def index(request):
 def search(request):
     return render(request, 'counselorEditor/search.html')
 
+def edit(request):
+    try:
+        student = Student.objects.get(student_id = request.POST['username'])
+    except (KeyError, Student.DoesNotExist):
+        return render(request, 'counselorEditor/search.html', {
+            'error_message': "User not found",
+            'username': request.POST['username']
+        })
+    
+    return render(request, 'counselorEditor/editor.html', {
+        'student': student.student_id,
+        'course_list': [course.course_id for course in student.student_course_request.all()],
+        'category_list': Category.objects.all(),
+        'courseDict': Course.objects.all(),
+        'username': request.POST['username'],
+        'numCourses': len(student.student_course_request.all()),
+    })
+
 def submit(request):
     try:
         student = Student.objects.get(student_id = request.POST['username'])
         courseRequestList = []
-        for i in range(numCoursesSelected):
+        for i in range(int(request.POST['numCourses'])):
             courseRequestList.append(Course.objects.get(course_id = request.POST['course'+str(i+1)]))
         
         student.student_course_request.clear()
@@ -36,6 +54,7 @@ def submit(request):
             'category_list': Category.objects.all(),
             'courseDict': Course.objects.all(),
             'error_message': "Invalid CourseID",
+            'numCourses': request.POST['numCourses'],
         })
     else:
         student.save()
@@ -43,24 +62,6 @@ def submit(request):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('counselorEditor:search'))
-
-def edit(request):
-    try:
-        student = Student.objects.get(student_id = request.POST['username'])
-    except (KeyError, Student.DoesNotExist):
-        return render(request, 'counselorEditor/search.html', {
-            'error_message': "User not found",
-            'username': request.POST['username']
-        })
-    
-    return render(request, 'counselorEditor/editor.html', {
-        'student': student.student_id,
-        'course_list': student.student_course_request.all(),
-        'category_list': Category.objects.all(),
-        'courseDict': Course.objects.all(),
-        'username': request.POST['username']
-    })
-
 
 
 def upload(request):

@@ -22748,3 +22748,366 @@ Not Found: /favicon.ico
 [2019-04-04 11:51:52 -0400] [12576] [INFO] Booting worker with pid: 12576
 [2019-04-04 11:51:52 -0400] [12578] [INFO] Booting worker with pid: 12578
 [2019-04-04 11:51:52 -0400] [12581] [INFO] Booting worker with pid: 12581
+[2019-04-04 16:01:23 +0000] [12581] [INFO] Worker exiting (pid: 12581)
+\n\n\n starting new server run \n
+[2019-04-04 12:01:24 -0400] [15994] [INFO] Starting gunicorn 19.9.0
+[2019-04-04 12:01:24 -0400] [15994] [INFO] Listening at: http://127.0.0.1:11356 (15994)
+[2019-04-04 12:01:24 -0400] [15994] [INFO] Using worker: sync
+[2019-04-04 12:01:24 -0400] [16000] [INFO] Booting worker with pid: 16000
+[2019-04-04 12:01:24 -0400] [16001] [INFO] Booting worker with pid: 16001
+[2019-04-04 12:01:24 -0400] [16002] [INFO] Booting worker with pid: 16002
+[2019-04-04 12:01:24 -0400] [16003] [INFO] Booting worker with pid: 16003
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 22, in <module>
+    path('studentInput/', include('studentInput.urls'), name = 'studentInput'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/studentInput/urls.py", line 12, in <module>
+    path('course_selection/results/', views.results, name='results'),
+AttributeError: module 'studentInput.views' has no attribute 'results'
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 52, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    not is_valid_path(request.path_info, urlconf) and
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 157, in is_valid_path
+    resolve(path, urlconf)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/scheduleServer/urls.py", line 22, in <module>
+    path('studentInput/', include('studentInput.urls'), name = 'studentInput'),
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/web/projects/schedule/public/scheduleServer/studentInput/urls.py", line 12, in <module>
+    path('course_selection/results/', views.results, name='results'),
+AttributeError: module 'studentInput.views' has no attribute 'results'
+[2019-04-04 16:27:27 +0000] [16000] [INFO] Worker exiting (pid: 16000)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-04 12:27:29 -0400] [26531] [INFO] Starting gunicorn 19.9.0
+[2019-04-04 12:27:29 -0400] [26531] [INFO] Listening at: http://127.0.0.1:11356 (26531)
+[2019-04-04 12:27:29 -0400] [26531] [INFO] Using worker: sync
+[2019-04-04 12:27:29 -0400] [26536] [INFO] Booting worker with pid: 26536
+[2019-04-04 12:27:29 -0400] [26538] [INFO] Booting worker with pid: 26538
+[2019-04-04 12:27:29 -0400] [26539] [INFO] Booting worker with pid: 26539
+[2019-04-04 12:27:29 -0400] [26542] [INFO] Booting worker with pid: 26542
+Not Found: /favicon.ico
+[2019-04-04 16:35:11 +0000] [26539] [INFO] Worker exiting (pid: 26539)
+[2019-04-04 16:35:11 +0000] [26536] [INFO] Worker exiting (pid: 26536)
+\n\n\n starting new server run \n
+[2019-04-04 12:35:12 -0400] [29459] [INFO] Starting gunicorn 19.9.0
+[2019-04-04 12:35:12 -0400] [29459] [INFO] Listening at: http://127.0.0.1:11356 (29459)
+[2019-04-04 12:35:12 -0400] [29459] [INFO] Using worker: sync
+[2019-04-04 12:35:12 -0400] [29466] [INFO] Booting worker with pid: 29466
+[2019-04-04 12:35:12 -0400] [29468] [INFO] Booting worker with pid: 29468
+[2019-04-04 12:35:12 -0400] [29469] [INFO] Booting worker with pid: 29469
+[2019-04-04 12:35:12 -0400] [29471] [INFO] Booting worker with pid: 29471
+Not Found: /favicon.ico
+[2019-04-09 14:45:30 +0000] [29468] [INFO] Worker exiting (pid: 29468)
+\n\n\n starting new server run \n
+[2019-04-09 10:45:32 -0400] [20733] [INFO] Starting gunicorn 19.9.0
+[2019-04-09 10:45:32 -0400] [20733] [INFO] Listening at: http://127.0.0.1:11356 (20733)
+[2019-04-09 10:45:32 -0400] [20733] [INFO] Using worker: sync
+[2019-04-09 10:45:32 -0400] [20742] [INFO] Booting worker with pid: 20742
+[2019-04-09 10:45:32 -0400] [20743] [INFO] Booting worker with pid: 20743
+[2019-04-09 10:45:32 -0400] [20744] [INFO] Booting worker with pid: 20744
+[2019-04-09 10:45:32 -0400] [20745] [INFO] Booting worker with pid: 20745
+[2019-04-09 14:51:55 +0000] [20745] [INFO] Worker exiting (pid: 20745)
+[2019-04-09 10:51:55 -0400] [20733] [INFO] Handling signal: term
+[2019-04-09 14:51:55 +0000] [20744] [INFO] Worker exiting (pid: 20744)
+/web/projects/schedule/public/scheduleServer
+[2019-04-09 14:51:55 +0000] [20743] [INFO] Worker exiting (pid: 20743)
+[2019-04-09 14:51:55 +0000] [20742] [INFO] Worker exiting (pid: 20742)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-09 10:51:56 -0400] [23615] [INFO] Starting gunicorn 19.9.0
+[2019-04-09 10:51:56 -0400] [23615] [INFO] Listening at: http://127.0.0.1:11356 (23615)
+[2019-04-09 10:51:56 -0400] [23615] [INFO] Using worker: sync
+[2019-04-09 10:51:56 -0400] [23621] [INFO] Booting worker with pid: 23621
+[2019-04-09 10:51:56 -0400] [23623] [INFO] Booting worker with pid: 23623
+[2019-04-09 10:51:56 -0400] [23624] [INFO] Booting worker with pid: 23624
+[2019-04-09 10:51:56 -0400] [23626] [INFO] Booting worker with pid: 23626
+[2019-04-09 15:26:22 +0000] [23626] [INFO] Worker exiting (pid: 23626)
+[2019-04-09 15:26:22 +0000] [23624] [INFO] Worker exiting (pid: 23624)
+[2019-04-09 15:26:22 +0000] [23621] [INFO] Worker exiting (pid: 23621)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-09 11:26:24 -0400] [5681] [INFO] Starting gunicorn 19.9.0
+[2019-04-09 11:26:24 -0400] [5681] [INFO] Listening at: http://127.0.0.1:11356 (5681)
+[2019-04-09 11:26:24 -0400] [5681] [INFO] Using worker: sync
+[2019-04-09 11:26:24 -0400] [5684] [INFO] Booting worker with pid: 5684
+[2019-04-09 11:26:24 -0400] [5685] [INFO] Booting worker with pid: 5685
+[2019-04-09 11:26:24 -0400] [5688] [INFO] Booting worker with pid: 5688
+[2019-04-09 11:26:24 -0400] [5690] [INFO] Booting worker with pid: 5690
+[2019-04-09 15:48:03 +0000] [5685] [INFO] Worker exiting (pid: 5685)
+[2019-04-09 15:48:03 +0000] [5684] [INFO] Worker exiting (pid: 5684)
+[2019-04-09 15:48:03 +0000] [5690] [INFO] Worker exiting (pid: 5690)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-04-09 15:48:03 +0000] [5688] [INFO] Worker exiting (pid: 5688)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-09 11:48:05 -0400] [19214] [INFO] Starting gunicorn 19.9.0
+[2019-04-09 11:48:05 -0400] [19214] [INFO] Listening at: http://127.0.0.1:11356 (19214)
+[2019-04-09 11:48:05 -0400] [19214] [INFO] Using worker: sync
+[2019-04-09 11:48:05 -0400] [19224] [INFO] Booting worker with pid: 19224
+[2019-04-09 11:48:05 -0400] [19225] [INFO] Booting worker with pid: 19225
+[2019-04-09 11:48:05 -0400] [19226] [INFO] Booting worker with pid: 19226
+[2019-04-09 11:48:05 -0400] [19229] [INFO] Booting worker with pid: 19229
+[2019-04-09 16:00:53 +0000] [19229] [INFO] Worker exiting (pid: 19229)
+/web/projects/schedule/public/scheduleServer
+[2019-04-09 16:00:53 +0000] [19225] [INFO] Worker exiting (pid: 19225)
+[2019-04-09 12:00:53 -0400] [19214] [INFO] Handling signal: term
+[2019-04-09 16:00:53 +0000] [19226] [INFO] Worker exiting (pid: 19226)
+/web/projects/schedule/public/scheduleServer
+[2019-04-09 16:00:53 +0000] [19224] [INFO] Worker exiting (pid: 19224)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-09 12:00:54 -0400] [26436] [INFO] Starting gunicorn 19.9.0
+[2019-04-09 12:00:54 -0400] [26436] [INFO] Listening at: http://127.0.0.1:11356 (26436)
+[2019-04-09 12:00:54 -0400] [26436] [INFO] Using worker: sync
+[2019-04-09 12:00:54 -0400] [26442] [INFO] Booting worker with pid: 26442
+[2019-04-09 12:00:54 -0400] [26444] [INFO] Booting worker with pid: 26444
+[2019-04-09 12:00:54 -0400] [26447] [INFO] Booting worker with pid: 26447
+[2019-04-09 12:00:54 -0400] [26448] [INFO] Booting worker with pid: 26448
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+[2019-04-10 18:01:15 +0000] [26442] [INFO] Worker exiting (pid: 26442)
+/web/projects/schedule/public/scheduleServer
+[2019-04-10 14:01:15 -0400] [26436] [INFO] Handling signal: term
+[2019-04-10 18:01:15 +0000] [26448] [INFO] Worker exiting (pid: 26448)
+[2019-04-10 18:01:15 +0000] [26444] [INFO] Worker exiting (pid: 26444)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-04-10 18:01:15 +0000] [26447] [INFO] Worker exiting (pid: 26447)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-10 14:01:17 -0400] [32724] [INFO] Starting gunicorn 19.9.0
+[2019-04-10 14:01:17 -0400] [32724] [INFO] Listening at: http://127.0.0.1:11356 (32724)
+[2019-04-10 14:01:17 -0400] [32724] [INFO] Using worker: sync
+[2019-04-10 14:01:17 -0400] [32738] [INFO] Booting worker with pid: 32738
+[2019-04-10 14:01:17 -0400] [32739] [INFO] Booting worker with pid: 32739
+[2019-04-10 14:01:17 -0400] [32741] [INFO] Booting worker with pid: 32741
+[2019-04-10 14:01:17 -0400] [32746] [INFO] Booting worker with pid: 32746
+[2019-04-10 18:04:33 +0000] [32741] [INFO] Worker exiting (pid: 32741)
+[2019-04-10 18:04:33 +0000] [32739] [INFO] Worker exiting (pid: 32739)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-04-10 18:04:33 +0000] [32746] [INFO] Worker exiting (pid: 32746)
+/web/projects/schedule/public/scheduleServer
+[2019-04-10 14:04:33 -0400] [32724] [INFO] Handling signal: term
+[2019-04-10 18:04:33 +0000] [32738] [INFO] Worker exiting (pid: 32738)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-10 14:04:35 -0400] [2250] [INFO] Starting gunicorn 19.9.0
+[2019-04-10 14:04:35 -0400] [2250] [INFO] Listening at: http://127.0.0.1:11356 (2250)
+[2019-04-10 14:04:35 -0400] [2250] [INFO] Using worker: sync
+[2019-04-10 14:04:35 -0400] [2256] [INFO] Booting worker with pid: 2256
+[2019-04-10 14:04:35 -0400] [2258] [INFO] Booting worker with pid: 2258
+[2019-04-10 14:04:35 -0400] [2259] [INFO] Booting worker with pid: 2259
+[2019-04-10 14:04:35 -0400] [2262] [INFO] Booting worker with pid: 2262
+[2019-04-10 18:07:04 +0000] [2256] [INFO] Worker exiting (pid: 2256)
+[2019-04-10 18:07:04 +0000] [2258] [INFO] Worker exiting (pid: 2258)
+[2019-04-10 14:07:04 -0400] [2250] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-10 14:07:05 -0400] [3826] [INFO] Starting gunicorn 19.9.0
+[2019-04-10 14:07:05 -0400] [3826] [INFO] Listening at: http://127.0.0.1:11356 (3826)
+[2019-04-10 14:07:05 -0400] [3826] [INFO] Using worker: sync
+[2019-04-10 14:07:05 -0400] [3830] [INFO] Booting worker with pid: 3830
+[2019-04-10 14:07:05 -0400] [3831] [INFO] Booting worker with pid: 3831
+[2019-04-10 14:07:06 -0400] [3833] [INFO] Booting worker with pid: 3833
+[2019-04-10 14:07:06 -0400] [3837] [INFO] Booting worker with pid: 3837
+Internal Server Error: /studentInput/course_selection/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/studentInput/views.py", line 28, in course_selection
+    student = Student.objects.get(student_id = request.user.get_username())
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+studentInput.models.Student.DoesNotExist: Student matching query does not exist.
+\n\n\n starting new server run \n
+[2019-04-11 11:36:30 -0400] [1188] [INFO] Starting gunicorn 19.9.0
+[2019-04-11 11:36:30 -0400] [1188] [INFO] Listening at: http://127.0.0.1:11356 (1188)
+[2019-04-11 11:36:30 -0400] [1188] [INFO] Using worker: sync
+[2019-04-11 11:36:30 -0400] [1193] [INFO] Booting worker with pid: 1193
+[2019-04-11 11:36:31 -0400] [1194] [INFO] Booting worker with pid: 1194
+[2019-04-11 11:36:31 -0400] [1198] [INFO] Booting worker with pid: 1198
+[2019-04-11 11:36:31 -0400] [1199] [INFO] Booting worker with pid: 1199
+Internal Server Error: /studentInput/course_selection/submit/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/studentInput/views.py", line 42, in submit
+    for i in range(request.POST['numCourses']):
+TypeError: 'str' object cannot be interpreted as an integer
+[2019-04-11 15:37:31 +0000] [1199] [INFO] Worker exiting (pid: 1199)
+[2019-04-11 11:37:31 -0400] [1188] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:37:31 +0000] [1198] [INFO] Worker exiting (pid: 1198)
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:37:31 +0000] [1193] [INFO] Worker exiting (pid: 1193)
+\n\n\n starting new server run \n
+[2019-04-11 11:37:33 -0400] [1733] [INFO] Starting gunicorn 19.9.0
+[2019-04-11 11:37:33 -0400] [1733] [INFO] Listening at: http://127.0.0.1:11356 (1733)
+[2019-04-11 11:37:33 -0400] [1733] [INFO] Using worker: sync
+[2019-04-11 11:37:33 -0400] [1760] [INFO] Booting worker with pid: 1760
+[2019-04-11 11:37:33 -0400] [1761] [INFO] Booting worker with pid: 1761
+[2019-04-11 11:37:33 -0400] [1762] [INFO] Booting worker with pid: 1762
+[2019-04-11 11:37:33 -0400] [1764] [INFO] Booting worker with pid: 1764
+[2019-04-11 15:47:05 +0000] [1760] [INFO] Worker exiting (pid: 1760)
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:47:05 +0000] [1762] [INFO] Worker exiting (pid: 1762)
+[2019-04-11 11:47:05 -0400] [1733] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:47:05 +0000] [1764] [INFO] Worker exiting (pid: 1764)
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:47:05 +0000] [1761] [INFO] Worker exiting (pid: 1761)
+\n\n\n starting new server run \n
+[2019-04-11 11:47:07 -0400] [5404] [INFO] Starting gunicorn 19.9.0
+[2019-04-11 11:47:07 -0400] [5404] [INFO] Listening at: http://127.0.0.1:11356 (5404)
+[2019-04-11 11:47:07 -0400] [5404] [INFO] Using worker: sync
+[2019-04-11 11:47:07 -0400] [5412] [INFO] Booting worker with pid: 5412
+[2019-04-11 11:47:07 -0400] [5413] [INFO] Booting worker with pid: 5413
+[2019-04-11 11:47:07 -0400] [5414] [INFO] Booting worker with pid: 5414
+[2019-04-11 11:47:07 -0400] [5415] [INFO] Booting worker with pid: 5415
+[2019-04-11 15:54:06 +0000] [5415] [INFO] Worker exiting (pid: 5415)
+/web/projects/schedule/public/scheduleServer
+[2019-04-11 15:54:06 +0000] [5413] [INFO] Worker exiting (pid: 5413)
+\n\n\n starting new server run \n
+[2019-04-11 11:54:08 -0400] [8128] [INFO] Starting gunicorn 19.9.0
+[2019-04-11 11:54:08 -0400] [8128] [INFO] Listening at: http://127.0.0.1:11356 (8128)
+[2019-04-11 11:54:08 -0400] [8128] [INFO] Using worker: sync
+[2019-04-11 11:54:08 -0400] [8133] [INFO] Booting worker with pid: 8133
+[2019-04-11 11:54:08 -0400] [8134] [INFO] Booting worker with pid: 8134
+[2019-04-11 11:54:08 -0400] [8135] [INFO] Booting worker with pid: 8135
+[2019-04-11 11:54:08 -0400] [8137] [INFO] Booting worker with pid: 8137
+\n\n\n starting new server run \n
+[2019-04-22 15:55:41 -0400] [12413] [INFO] Starting gunicorn 19.9.0
+[2019-04-22 15:55:41 -0400] [12413] [INFO] Listening at: http://127.0.0.1:11356 (12413)
+[2019-04-22 15:55:41 -0400] [12413] [INFO] Using worker: sync
+[2019-04-22 15:55:41 -0400] [12418] [INFO] Booting worker with pid: 12418
+[2019-04-22 15:55:41 -0400] [12420] [INFO] Booting worker with pid: 12420
+[2019-04-22 15:55:41 -0400] [12421] [INFO] Booting worker with pid: 12421
+[2019-04-22 15:55:42 -0400] [12422] [INFO] Booting worker with pid: 12422
+Not Found: /favicon.ico
+[2019-04-23 14:46:06 +0000] [12420] [INFO] Worker exiting (pid: 12420)
+/web/projects/schedule/public/scheduleServer
+[2019-04-23 14:46:06 +0000] [12422] [INFO] Worker exiting (pid: 12422)
+\n\n\n starting new server run \n
+[2019-04-23 10:46:07 -0400] [10373] [INFO] Starting gunicorn 19.9.0
+[2019-04-23 10:46:07 -0400] [10373] [INFO] Listening at: http://127.0.0.1:11356 (10373)
+[2019-04-23 10:46:07 -0400] [10373] [INFO] Using worker: sync
+[2019-04-23 10:46:07 -0400] [10379] [INFO] Booting worker with pid: 10379
+[2019-04-23 10:46:07 -0400] [10380] [INFO] Booting worker with pid: 10380
+[2019-04-23 10:46:08 -0400] [10383] [INFO] Booting worker with pid: 10383
+[2019-04-23 10:46:08 -0400] [10385] [INFO] Booting worker with pid: 10385
+[2019-04-23 15:20:37 +0000] [10379] [INFO] Worker exiting (pid: 10379)
+[2019-04-23 11:20:37 -0400] [10373] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+[2019-04-23 15:20:37 +0000] [10380] [INFO] Worker exiting (pid: 10380)
+[2019-04-23 15:20:37 +0000] [10385] [INFO] Worker exiting (pid: 10385)
+\n\n\n starting new server run \n
+[2019-04-23 11:20:38 -0400] [29012] [INFO] Starting gunicorn 19.9.0
+[2019-04-23 11:20:38 -0400] [29012] [INFO] Listening at: http://127.0.0.1:11356 (29012)
+[2019-04-23 11:20:38 -0400] [29012] [INFO] Using worker: sync
+[2019-04-23 11:20:38 -0400] [29018] [INFO] Booting worker with pid: 29018
+[2019-04-23 11:20:38 -0400] [29019] [INFO] Booting worker with pid: 29019
+[2019-04-23 11:20:38 -0400] [29020] [INFO] Booting worker with pid: 29020
+[2019-04-23 11:20:38 -0400] [29023] [INFO] Booting worker with pid: 29023
+[2019-04-23 15:36:21 +0000] [29018] [INFO] Worker exiting (pid: 29018)
+[2019-04-23 15:36:21 +0000] [29020] [INFO] Worker exiting (pid: 29020)
+[2019-04-23 15:36:21 +0000] [29019] [INFO] Worker exiting (pid: 29019)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-04-23 11:36:21 -0400] [29012] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-04-23 11:36:22 -0400] [4638] [INFO] Starting gunicorn 19.9.0
+[2019-04-23 11:36:22 -0400] [4638] [INFO] Listening at: http://127.0.0.1:11356 (4638)
+[2019-04-23 11:36:22 -0400] [4638] [INFO] Using worker: sync
+[2019-04-23 11:36:22 -0400] [4647] [INFO] Booting worker with pid: 4647
+[2019-04-23 11:36:22 -0400] [4648] [INFO] Booting worker with pid: 4648
+[2019-04-23 11:36:22 -0400] [4649] [INFO] Booting worker with pid: 4649
+[2019-04-23 11:36:22 -0400] [4652] [INFO] Booting worker with pid: 4652

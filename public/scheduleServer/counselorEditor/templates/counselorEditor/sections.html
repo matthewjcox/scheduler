@@ -1,12 +1,14 @@
 {% extends "projectIndex/background.html" %}
 {% block sun %}
 <h1>
-<a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
+    Input Sections
     <br>
 </h1>
 {% endblock %}
 {% block sky %}
 <body>
+    <a href="{% url 'projectIndex:counselor' %}" >Back to Index</a>
+    <br><br>
 {#Note to Young: all menu items should be in alphabetical order, except room numbers which should be numerical (e.g. 83 goes before 101. Make sure this still has, e.g., 83B before 101A)#}
 {# <form action="{% url 'counselorEditor:input_sections' %}" method="post"> </form>#}
 <form action="{% url 'counselorEditor:input_sections' %}" method="post">

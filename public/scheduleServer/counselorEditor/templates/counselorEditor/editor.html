@@ -1,26 +1,13 @@
 {% extends "counselorEditor/search.html"%}
 
 {% block content %}
-<form action="{% url 'counselorEditor:submit' %}" method="post">
-{% csrf_token %}
-<br>
-{% for course in course_list %}
-    Course {{ forloop.counter }}:
-    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course.course_id}}" onchange="displayCourseName({{ forloop.counter }}, this.value)">
-    <div id="name{{ forloop.counter }}" style="display:inline-block">{{course.course_name}}</div>
-    <br>
-{% endfor %}
-<input type="hidden" name="username" value="{{student}}">
-<input type="hidden" name="message" value="Changes Saved">
-<button type = 'submit' accesskey='s' ><u>S</u>ubmit Course Request</button>
-</form>
-
 <script>
     
     courseDict = {};
-    
+    courseCredit = {};
     {% for course in courseDict %}
         courseDict["{{ course.course_id }}"] = "{{course.course_name}}";
+        courseCredit["{{course.course_id}}"] = "{{course.course_credits}}"
     {% endfor %}
     
     function displayCourseName(numCourse, value){
@@ -30,8 +17,38 @@
             document.getElementById("name" + numCourse).innerHTML = "Error: Invalid Course ID";
         }
     }
+    numCourses = {{numCourses}};
+    function addCourse(){
+        numCourses++;
+        document.getElementById('numCourses').value = numCourses
+        var course = document.createElement('div');
+        course.innerHTML = "Course "+numCourses+": <input type =\"text\" name = \"course"+numCourses+"\" value = \"\" onchange=\"displayCourseName("+numCourses+", this.value)\"> <button onclick = \"this.parentNode.style.display = 'none';document.getElementByName('course'+"+numCourses+").value = 'empty';\" type = \"button\">Remove Course</button> <div id=\"name"+numCourses+"\" style=\"display:inline-block\"></div>";
+        document.getElementById('courses').appendChild(course);
+    }
     
 </script>
+
+<form action="{% url 'counselorEditor:submit' %}" method="post">
+{% csrf_token %}
+<br>
+<div id = 'courses'>
+{% for course in course_list %}
+    <div>
+    Course {{ forloop.counter }}:
+    <input type ="text" name = "course{{ forloop.counter }}" value = "{{course}}" onchange="displayCourseName({{ forloop.counter }}, this.value)">
+    <button onclick = "document.getElementsByName('course'+'{{ forloop.counter }}')[0].value = 'empty'; this.parentNode.style.display = 'none';" type = "button">Remove Course</button>
+    <div id="name{{ forloop.counter }}" style="display:inline-block"></div>
+    <script>displayCourseName({{ forloop.counter }}, '{{course}}')</script>
+    <br>
+    </div>
+{% endfor %}
+</div><button onclick = "addCourse()" type = "button">Add Course</button>
+<br><br>
+<input type="hidden" name="username" value="{{student}}">
+<input type="hidden" name="message" value="Changes Saved">
+<input type="hidden" name="numCourses" value="{{numCourses}}" id="numCourses">
+<button type = 'submit' accesskey='s' ><u>S</u>ubmit Course Request</button>
+</form>
 
 <br>
 {% include "projectIndex/expandable_course_list.html" %}

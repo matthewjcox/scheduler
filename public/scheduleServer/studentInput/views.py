@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 
 from .models import Course, Category, Student
 
-numCoursesSelected = 7
 
 # Create your views here.
 #@permission_required('counselorEditor.can_view')
@@ -29,16 +28,20 @@ def course_selection(request):
     
     return render(request, 'studentInput/course_selection.html', {
         'student': student.student_id,
-        'course_list': student.student_course_request.all(),
+        #'course_list': student.student_course_request.all(),
+        'course_list': [course.course_id for course in student.student_course_request.all()],
         'category_list': Category.objects.all(),
         'courseDict': Course.objects.all(),
+        'numCourses': len(student.student_course_request.all()),
     })
 
 def submit(request):
     try:
         student = Student.objects.get(student_id = request.POST['username'])
         courseRequestList = []
-        for i in range(numCoursesSelected):
+        for i in range(int(request.POST['numCourses'])):
+            if request.POST['course'+str(i+1)] == 'empty':
+                continue;
             courseRequestList.append(Course.objects.get(course_id = request.POST['course'+str(i+1)]))
         
         student.student_course_request.clear()
@@ -47,19 +50,23 @@ def submit(request):
     except (KeyError, Student.DoesNotExist):
         # Redisplay the question voting form.
         return render(request, 'studentInput/course_selection.html', {
-            'courseNum': "x"*numCoursesSelected,
+            #'course_list': student.student_course_request.all(),
+            'course_list': [request.POST['course'+str(i+1)] for i in range(int(request.POST['numCourses']))],
             'courseDict': Course.objects.all(),
             'category_list': Category.objects.all(),
             'student': request.user.get_username(),
             'error_message': "Your username doesn't exist :(",
+            'numCourses': int(request.POST['numCourses']),
         })
     except (KeyError, Course.DoesNotExist):
         return render(request, 'studentInput/course_selection.html', {
-            'courseNum': "x"*numCoursesSelected,
+            #'course_list': student.student_course_request.all(),
+            'course_list': [request.POST['course'+str(i+1)] for i in range(int(request.POST['numCourses']))],
             'courseDict': Course.objects.all(),
             'category_list': Category.objects.all(),
             'student': request.user.get_username(),
             'error_message': "Invalid Course ID on Course " + str(i+1),
+            'numCourses': int(request.POST['numCourses']),
         })
     else:
         student.save()

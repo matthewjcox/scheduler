@@ -9,7 +9,5 @@ urlpatterns = [
 
     path('course_selection/', views.course_selection, name='course_selection'),
     
-    path('course_selection/results/', views.results, name='results'),
-    
     path('course_selection/submit/', views.submit, name='submit'),
 ]

@@ -12739,3 +12739,192 @@
 2019-04-04 16:00:44,885|INFO|21430|45308 45664.02
 2019-04-04 16:00:45,280|INFO|21430|Saving schedule. (1592)
 2019-04-04 16:00:46,109|INFO|21430|Round 1593: score 45664.02 (45308.00). Elapsed time: 21 hr, 49 min, 38.04 sec.
+2019-04-04 16:01:33,468|INFO|21430|New:
+2019-04-04 16:01:34,727|INFO|21430|St base: 45288, St addl: 365.17, S conflict: -405.00, T conflict: 0.00, Per spread: -9.15, Sec penalty: 0.00
+2019-04-04 16:01:37,713|INFO|21430|45288 45644.02
+2019-04-04 16:01:38,696|INFO|21430|Old:
+2019-04-04 16:01:41,303|INFO|21430|St base: 45308, St addl: 365.17, S conflict: -385.00, T conflict: 0.00, Per spread: -9.15, Sec penalty: 0.00
+2019-04-04 16:01:43,309|INFO|21430|45308 45664.02
+2019-04-04 16:01:44,413|INFO|21430|Saving schedule. (1593)
+2019-04-04 16:01:50,236|INFO|21430|Round 1594: score 45664.02 (45308.00). Elapsed time: 21 hr, 50 min, 42.16 sec.
+2019-04-04 16:02:37,017|INFO|21430|New:
+2019-04-04 16:02:38,062|INFO|21430|St base: 45308, St addl: 365.17, S conflict: -385.00, T conflict: 0.00, Per spread: -9.15, Sec penalty: 0.00
+2019-04-04 16:02:39,162|INFO|21430|45308 45664.02
+2019-04-04 16:02:39,780|INFO|21430|Old:
+2019-04-04 16:02:41,492|INFO|21430|St base: 45308, St addl: 365.17, S conflict: -385.00, T conflict: 0.00, Per spread: -9.15, Sec penalty: 0.00
+2019-04-04 16:02:42,114|INFO|21430|45308 45664.02
+2019-04-04 16:02:43,428|INFO|21430|Saving schedule. (1594)
+2019-04-04 16:02:48,397|INFO|21430|Round 1595: score 45664.02 (45308.00). Elapsed time: 21 hr, 51 min, 40.32 sec.
+2019-04-04 16:03:35,322|INFO|21430|New:
+2019-04-04 16:03:35,514|INFO|21430|St base: 45263, St addl: 365.17, S conflict: -430.00, T conflict: 0.00, Per spread: -9.16, Sec penalty: 0.00
+2019-04-04 16:03:35,682|INFO|21430|45263 45619.00
+2019-04-04 16:03:35,741|INFO|21430|Old:
+2019-04-04 16:03:35,879|INFO|21430|St base: 45308, St addl: 365.17, S conflict: -385.00, T conflict: 0.00, Per spread: -9.15, Sec penalty: 0.00
+2019-04-04 16:03:35,933|INFO|21430|45308 45664.02
+2019-04-04 16:03:36,076|INFO|21430|Saving schedule. (1595)
+2019-04-04 16:03:36,825|INFO|21430|Round 1596: score 45664.02 (45308.00). Elapsed time: 21 hr, 52 min, 28.75 sec.
+2019-04-04 16:04:14,778|ERROR|21430|Process ForkPoolWorker-7479:
+2019-04-04 16:04:14,778|ERROR|21430|Process ForkPoolWorker-7477:
+2019-04-04 16:04:14,779|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,779|ERROR|21430|File "back_end/run_schedule.py", line 78, in <module>
+2019-04-04 16:04:14,779|ERROR|21430|Process ForkPoolWorker-7486:
+2019-04-04 16:04:14,779|ERROR|21430|Process ForkPoolWorker-7485:
+2019-04-04 16:04:14,779|ERROR|21430|Process ForkPoolWorker-7482:
+2019-04-04 16:04:14,780|ERROR|21430|main()
+2019-04-04 16:04:14,781|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,781|ERROR|21430|File "back_end/run_schedule.py", line 74, in main
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,781|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,781|ERROR|21430|run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,781|ERROR|21430|File "back_end/run_schedule.py", line 70, in run_scheduler
+2019-04-04 16:04:14,781|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,781|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,782|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 343, in get
+    res = self._reader.recv_bytes()
+2019-04-04 16:04:14,782|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+2019-04-04 16:04:14,782|ERROR|21430|solver.solve(verbose=0, print_every=1)
+2019-04-04 16:04:14,782|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+2019-04-04 16:04:14,782|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+2019-04-04 16:04:14,782|ERROR|21430|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 844, in solve
+2019-04-04 16:04:14,782|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,783|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,783|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,783|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,783|ERROR|21430|new_organism = self.improve_sched(10,5, scheds)
+2019-04-04 16:04:14,783|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,783|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,783|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,783|ERROR|21430|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 865, in improve_sched
+2019-04-04 16:04:14,783|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,783|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,784|ERROR|21430|i.load_schedule(res)
+2019-04-04 16:04:14,784|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,784|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,784|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,784|ERROR|21430|File "/web/projects/schedule/back_end/genetic_algorithm.py", line 180, in load_schedule
+2019-04-04 16:04:14,784|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,785|ERROR|21430|s.add_student_basic(self.students[i])
+2019-04-04 16:04:14,785|ERROR|21430|File "/web/projects/schedule/back_end/basics.py", line 328, in add_student_basic
+2019-04-04 16:04:14,785|ERROR|21430|student.sched.add(self)
+2019-04-04 16:04:14,786|ERROR|21430|File "/web/projects/schedule/back_end/basics.py", line 515, in __hash__
+2019-04-04 16:04:14,786|ERROR|21430|return hash(object.__repr__(self))
+2019-04-04 16:04:14,786|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,789|ERROR|21430|Process ForkPoolWorker-7478:
+2019-04-04 16:04:14,789|ERROR|21430|Process ForkPoolWorker-7480:
+2019-04-04 16:04:14,791|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,791|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,792|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,792|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,792|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,792|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,798|ERROR|21430|Process ForkPoolWorker-7484:
+2019-04-04 16:04:14,801|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,801|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,802|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,802|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,802|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,802|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,802|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,805|ERROR|21430|Process ForkPoolWorker-7483:
+2019-04-04 16:04:14,809|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,809|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,809|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,809|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,809|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,809|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,809|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,819|ERROR|21430|Process ForkPoolWorker-7488:
+2019-04-04 16:04:14,819|ERROR|21430|Process ForkPoolWorker-7487:
+2019-04-04 16:04:14,822|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,822|ERROR|21430|Traceback (most recent call last):
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/pool.py", line 108, in worker
+    task = get()
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/queues.py", line 342, in get
+    with self._rlock:
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,823|ERROR|21430|File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+2019-04-04 16:04:14,823|ERROR|21430|KeyboardInterrupt
+2019-04-04 16:04:14,823|ERROR|21430|KeyboardInterrupt

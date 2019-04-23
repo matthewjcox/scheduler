@@ -11,7 +11,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "scheduleServer.settings")
 import django
 django.setup()
 
-from studentInput.models import Student
+from studentInput.models import Student,Course
 # Create your views here.
 
     
@@ -58,8 +58,8 @@ def redirect(request):
         student = Student.objects.create( student_id = info['ion_username'], 
                                 student_first_name = info['first_name'], 
                                 student_last_name = info['last_name'])
-        for i in range(7):
-            student.student_course_request.add(Course.objects.get(course_id = '000934'))
+        for i in {'000001','000002','000003','000004','000005','000006','000007'}:
+            student.student_course_request.add(Course.objects.get(course_id = i))
     request.session.set_expiry(86400)
     user.first_name = info['first_name']
     user.last_name = info['last_name']
