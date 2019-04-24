@@ -120,7 +120,7 @@ class master_schedule(chromosome):
                 s.set_course(course)
                 s.set_semester(i.semester)
                 s.set_max_students(i.maxstudents)
-                self.change_period_wrapper(s,i.period,[])
+                self.change_period_wrapper(s,i.period)
                 if i.period_fixed:
                     s.fix_period()
                 s.set_allowed_periods(i.allowed_periods)
@@ -161,7 +161,7 @@ class master_schedule(chromosome):
             data=cursor.execute("SELECT * FROM schedule")
             for section,students,period in data:
                 s=self.sections[section]
-                self.change_period_wrapper(s,int(period),[])
+                self.change_period_wrapper(s,int(period))
                 for i in students.split('|'):
                     if i:
                         s.add_student_basic(self.students[i])
@@ -174,7 +174,7 @@ class master_schedule(chromosome):
     def load_schedule(self,data):
         for section,students,period in data:
             s=self.sections[section]
-            self.change_period_wrapper(s,int(period),[])
+            self.change_period_wrapper(s,int(period))
             for i in students.split('|'):
                 if i:
                     s.add_student_basic(self.students[i])
@@ -200,7 +200,7 @@ class master_schedule(chromosome):
             else:
                 print_nolog("{} {}".format(repr(mutating_section), p))
         try:
-            self.change_to_period(mutating_section, p, [],allow_randomness=allow_randomness,remove_students=remove_students)
+            self.change_to_period(mutating_section, p,allow_randomness=allow_randomness,remove_students=remove_students)
         except InvalidPeriodError:
             pass
 
@@ -283,22 +283,24 @@ class master_schedule(chromosome):
                                     #compute needed spots per period per section
             raise NotImplementedError
 
-    def change_period_wrapper(self, section, new_period, reached,allow_randomness=0,remove_students=0):
+    def change_period_wrapper(self, section, new_period, reached=None,allow_randomness=0,remove_students=0):
         try:
             self.change_to_period(section, new_period, reached,allow_randomness=allow_randomness,remove_students=remove_students)
         except InvalidPeriodError:
             pass
 
-    def change_to_period(self, section, new_period, reached,allow_randomness=0,remove_students=0):
+    def change_to_period(self, section, new_period, reached=None,allow_randomness=0,remove_students=0,top_level=1):
         # raise NotImplementedError
         #bug where students don't get removed??
+        if reached==None:
+            reached={}
         if new_period==section.period or section in reached:
             return
         if new_period not in section.allowed_periods:
             raise InvalidPeriodError
-        reached.append(section)
+        reached[section]=section.period
         old_period=section.period
-        section.set_period(new_period)
+        section.set_period(new_period,set_teamed=0)
         s_to_remove=section.students.copy()
         if remove_students:
             for i in s_to_remove:
@@ -319,16 +321,18 @@ class master_schedule(chromosome):
                 for j in i.sched:
                     if (section.semester==0 or j.semester==0 or section.semester==j.semester) and j not in section.teamed2:
                         if j.period==new_period:
-                            self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached,remove_students=remove_students)
+                            self.change_to_period(j,random.choice(j.allowed_periods) if allow_randomness else old_period,reached,remove_students=remove_students,top_level=0)
             for j in section.teamed1:
                 if j.period == new_period:
-                    self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached,remove_students=remove_students)
+                    self.change_to_period(j, random.choice(j.allowed_periods) if allow_randomness else old_period, reached,remove_students=remove_students,top_level=0)
             for j in section.teamed2:
-                self.change_to_period(j,new_period, reached,allow_randomness=allow_randomness,remove_students=remove_students)
+                self.change_to_period(j,new_period, reached,allow_randomness=allow_randomness,remove_students=remove_students,top_level=0)
             for j in section.teamed3:
-                self.change_to_period(j, new_period,  reached,allow_randomness=allow_randomness,remove_students=remove_students)
+                self.change_to_period(j, new_period,  reached,allow_randomness=allow_randomness,remove_students=remove_students,top_level=0)
         except InvalidPeriodError:
-            section.set_period(old_period)
+            if top_level:
+                for sec,per in reached.items():
+                    sec.set_period(per)
             # for i in s_to_remove:
             raise
 
@@ -454,17 +458,17 @@ class master_schedule(chromosome):
             if j.semester == 0:
                 if k in periods_yr or k in periods_s1 or k in periods_s2:
                     base_score += self.student_conflict_score_delta
-                    print_nolog("Err",j)
+                    # print_nolog("Err",j)
                 periods_yr.add(k)
             elif j.semester == 1:
                 if k in periods_yr or k in periods_s1:
                     base_score += self.student_conflict_score_delta
-                    print_nolog("Err",j)
+                    # print_nolog("Err",j)
                 periods_s1.add(k)
             elif j.semester == 2:
                 if k in periods_yr or k in periods_s2:
                     base_score += self.student_conflict_score_delta
-                    print_nolog("Err",j)
+                    # print_nolog("Err",j)
                 periods_s2.add(k)
             addl_score += self.rare_class_bonus * len(self.course_sections[j.course]) ** -2.5
         return base_score,addl_score
@@ -672,7 +676,7 @@ class master_schedule(chromosome):
             s.set_course(course)
             s.set_semester(i.semester)
             s.set_max_students(i.maxstudents)
-            sched.change_period_wrapper(s,i.period,[])
+            sched.change_period_wrapper(s,i.period)
             s.set_allowed_periods(i.allowed_periods)
             for j in i.teachers:
                 teacher = sched.teachers[j.teacherID]
@@ -778,7 +782,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1 and it==1:
-                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(1*self.num_processes)])#10
+                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(10*self.num_processes)])#10
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -789,7 +793,7 @@ class multiple_hill_climb:
                 new_organism = self.improve_sched(10,5, [new_organism for i in range(self.num_processes)])
             else:
                 scheds=[]
-                for i in range(self.num_processes*2):
+                for i in range(self.num_processes*2):#2
                     org = self.current_sched.copy()
                     org.initialize_weights()
                     num_mutations = int(1 + random.random() * 2)  # if i%20!=1 else 0
