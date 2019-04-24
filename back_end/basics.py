@@ -420,7 +420,7 @@ class Section:
     def fix_period(self):
         self.period_fixed=1
 
-    def set_period(self, period, override_fixed=0,reached=None,allow_randomness=0):
+    def set_period(self, period, override_fixed=0,reached=None,allow_randomness=0, set_teamed=1):
         if self.period==period:
             return
         if self.period_fixed and not override_fixed:
@@ -440,14 +440,15 @@ class Section:
 
         old_period=self.period
         self.period=period
-        try:
-            for j in self.teamed2:
-                j.set_period(period, override_fixed=override_fixed, reached=reached,allow_randomness=allow_randomness)
-            for j in self.teamed3:
-                j.set_period(period,override_fixed=override_fixed,reached=reached, allow_randomness=allow_randomness)
-        except InvalidPeriodError:
-            self.period=old_period
-            raise
+        if set_teamed:
+            try:
+                for j in self.teamed2:
+                    j.set_period(period, override_fixed=override_fixed, reached=reached,allow_randomness=allow_randomness)
+                for j in self.teamed3:
+                    j.set_period(period,override_fixed=override_fixed,reached=reached, allow_randomness=allow_randomness)
+            except InvalidPeriodError:
+                self.period=old_period
+                raise
         # try:
         #     for i in self.teachers:
         #         for j in i.sched:
