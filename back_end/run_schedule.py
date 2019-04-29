@@ -5,6 +5,8 @@ import datetime
 import sqlite3
 import os
 import shutil
+import tkinter as tk
+
 # from tendo import singleton
 # lock=singleton.SingleInstance()
 
@@ -18,7 +20,7 @@ def run_scheduler(save=None):
         except TypeError:
             pass
     if save is None:
-        save='runs/past_runs/'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
+        save='[name for name in os.listdir(".") if os.path.isdir(name)]'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
         os.mkdir(save)
         start_logging(save)
         param_file_name = 'runs/run_params.txt'
@@ -69,9 +71,45 @@ def run_scheduler(save=None):
     solver = multiple_hill_climb(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
     solver.solve(verbose=0, print_every=1)
 
+class Application(tk.Frame):
+    def __init__(self, root, master=None):
+        self.root=root
+        self.root.minsize(300, 300)
+        self.root.geometry("800x600+300+300")
+        tk.Frame.__init__(self, master)
+        self.grid(sticky="nwse")
+        self.createWidgets()
+
+    def createWidgets(self):
+        # top = self.winfo_toplevel()
+        # top.rowconfigure(0, weight=1)
+        # top.columnconfigure(0, weight=1)
+        self.rowconfigure(0, weight=1)
+        self.columnconfigure(0, weight=1)
+        self.rowconfigure(1, weight=1)
+        self.columnconfigure(1, weight=1)
+
+        dirs=["Start from scratch"]+[name for name in os.listdir("runs/past_runs/") if os.path.isdir("runs/past_runs/"+name)][::-1]
+        print(dirs)
+
+        self.start_button = tk.Button(self, text='Start Schedule', background="#AAFFAA",activebackground="#AAEEAA", command=self.run_sched)
+        self.start_button.grid(row=0, column=0, sticky="nsew")
+
+    def full_exit(self):
+        # self.quit()
+        self.destroy()
+
+    def run_sched(self):
+        self.full_exit()
+        pass
+
 
 def main():
-    run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
+    root=tk.Tk()
+    app = Application(root)
+    app.master.title('Scheduler')
+    app.mainloop()
+    # run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
 
 
 if __name__=="__main__":
