@@ -72,7 +72,6 @@ def weighted_choice(elements,n,weights):
 
 
 class master_schedule(chromosome):
-    #criteria, data structures
     def __init__(self,num_periods,classrooms,courses,teachers,students,sections,*args,**kwargs):
         super(master_schedule, self).__init__(*args, **kwargs)
         self.num_periods=num_periods
@@ -290,8 +289,6 @@ class master_schedule(chromosome):
             pass
 
     def change_to_period(self, section, new_period, reached=None,allow_randomness=0,remove_students=0,top_level=1):
-        # raise NotImplementedError
-        #bug where students don't get removed??
         if reached==None:
             reached={}
         if new_period==section.period or section in reached:
@@ -305,17 +302,6 @@ class master_schedule(chromosome):
         if remove_students:
             for i in s_to_remove:
                 section.remove_student(i)
-            # unreached=[section]
-            # reached=[]
-            # while unreached:
-            #     j=unreached.pop()
-            #     if j in reached:
-            #         continue
-            #     reached.append(j)
-            #     for i in j.teamed2:
-            #         unreached.append(i)
-            #     for i in j.students.copy():
-            #         j.remove_student(i)
         try:
             for i in section.teachers:
                 for j in i.sched:
@@ -333,7 +319,6 @@ class master_schedule(chromosome):
             if top_level:
                 for sec,per in reached.items():
                     sec.set_period(per)
-            # for i in s_to_remove:
             raise
 
     def initialize_weights(self):
@@ -796,7 +781,7 @@ class multiple_hill_climb:
                 for i in range(self.num_processes*2):#2
                     org = self.current_sched.copy()
                     org.initialize_weights()
-                    num_mutations = int(1 + random.random() * 2)  # if i%20!=1 else 0
+                    num_mutations = int(1 + random.random() * 3)
                     print_nolog(num_mutations)
                     for i in range(num_mutations):
                         org.mutate_period(log=0,remove_students=1)
@@ -807,7 +792,7 @@ class multiple_hill_climb:
             print('Old:')
             old_score=self.current_sched.preliminary_score(verbose=1)
             delta_score=old_score-new_score
-            if new_score>=old_score:# or (first_it==0 and random.random()<(.5-.5*_CLOSENESS_TO_COMPLETION)**3):#10**(-5*_CLOSENESS_TO_COMPLETION)*
+            if new_score>=old_score:
                 self.current_sched=new_organism
             self.current_sched.set_progress()
             if _CLOSENESS_TO_COMPLETION>1:
@@ -830,9 +815,6 @@ class multiple_hill_climb:
         return max(scheds, key=lambda i: i.score())
 
 def save_schedule(master_sched,outfolder,verbose=1):
-    # return
-    # print('Saving schedules not yet implemented.')
-    # print('Saving progress. '+current_time_formatted(round=0))
     if verbose:
         print('Saving schedule. ({})'.format(_ITERATION))
     outfile=outfolder+'/schedule.db'
@@ -846,12 +828,8 @@ def save_schedule(master_sched,outfolder,verbose=1):
     cursor.execute('UPDATE metadata SET iteration=?,time_elapsed=?',(_ITERATION,time.perf_counter()-_START_TIME))
     connection.commit()
     connection.close()
-    # print('Finished saving progress. '+current_time_formatted(round=0))
 
 def print_schedule(master_sched,outfolder):
-    # master_sched = fill_in_schedule(master_sched)
-    # print(master_sched)
-
     filename = outfolder+'/readable_schedule.txt'
 
     with open(filename, 'w') as f:
@@ -886,7 +864,6 @@ def fill_in_schedule(sched,num_it=3):
             sched.optimize_student(student,max_it=200,skip_if_filled=0)
     print('Elapsed time: {}.'.format(current_time_formatted()))
     return sched
-#remove duplicated periods
 
 def post_process(sched):
     #assign homerooms
@@ -912,9 +889,4 @@ def current_time_formatted(round=1):
 
 if __name__=='__main__':
     pass
-    # # for i in range(100):
-    # #     master_schedule().fill_new()
-    # solver=genetic_solver(knapsack,population_size=10)
-    # winner=solver.solve(num_iterations=10000, verbose=1)
-    # #     # print(winner)
 
