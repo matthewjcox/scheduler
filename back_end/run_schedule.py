@@ -72,65 +72,67 @@ def run_scheduler(save=None):
     solver = multiple_hill_climb(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
     yield from solver.solve(verbose=0, print_every=1)
 
-class Application(tk.Frame):
+class Application:
     def __init__(self, root, master=None):
+        self.master=master
+        self.frame=tk.Frame(self.master)
+        self.frame.master.title("Scheduler")
+        # self.fr1.grid(column=0, row=0,sticky="nsew")
+        # self.frame = tk.Frame(self.fr1)
         self.root=root
-        self.root.minsize(300, 300)
-        self.root.geometry("800x600+300+300")
-        tk.Frame.__init__(self, master)
-        self.grid(sticky=(tk.N,tk.W,tk.E,tk.S))
-        self.createWidgets()
+        self.root.minsize(400, 200)
+        self.root.geometry("800x600")
+        self.frame.grid(sticky=(tk.N,tk.W,tk.E,tk.S))
         self.running_state=0#0:stopped; 1:running; 2:stopping
 
-    def createWidgets(self):
-        # top = self.winfo_toplevel()
-        # top.rowconfigure(0, weight=1)
-        # top.rowconfigure(1, weight=1)
-        # top.rowconfigure(2, weight=1)
-        # top.rowconfigure(3, weight=1)
-        # top.rowconfigure(4, weight=1)
-        # top.rowconfigure(5, weight=1)
-        # top.rowconfigure(6, weight=2)
-        # top.columnconfigure(0, weight=1)
-        # top.columnconfigure(1, weight=1)
-        self.rowconfigure(0, weight=1)
-        self.rowconfigure(1, weight=1)
-        self.rowconfigure(2, weight=1)
-        self.rowconfigure(3, weight=1)
-        self.rowconfigure(4, weight=1)
-        self.rowconfigure(5, weight=1)
-        self.rowconfigure(6, weight=2)
-        self.columnconfigure(0, weight=1)
-        self.columnconfigure(1, weight=1)
+        top = self.frame.winfo_toplevel()
+
+        top.rowconfigure(0, weight=1)
+        top.rowconfigure(1, weight=1)
+        top.rowconfigure(2, weight=1)
+        top.rowconfigure(3, weight=1)
+        top.rowconfigure(4, weight=1)
+        top.rowconfigure(5, weight=2)
+        top.columnconfigure(0, weight=1)
+        top.columnconfigure(1, weight=1)
+
+        self.frame.rowconfigure(0, weight=1)
+        self.frame.rowconfigure(1, weight=1)
+        self.frame.rowconfigure(2, weight=1)
+        self.frame.rowconfigure(3, weight=1)
+        self.frame.rowconfigure(4, weight=1)
+        self.frame.rowconfigure(5, weight=2)
+        self.frame.columnconfigure(0, weight=1)
+        self.frame.columnconfigure(1, weight=1)
 
         self.default_dir="Start from scratch"
         self.chosen_dir= tk.StringVar(self.root)
         dirs=[self.default_dir]+[name for name in os.listdir("runs/past_runs/") if os.path.isdir("runs/past_runs/"+name)][::-1]
         self.chosen_dir.set(dirs[0])
-        self.dirchooser=tk.OptionMenu(self,self.chosen_dir,*dirs)
-        self.dirchooser.grid(row=0,column=1, sticky='w')
-        self.dirchooserlabel=tk.Label(self,text="Choose prior run to continue improving: ")
-        self.dirchooserlabel.grid(row=0,column=0,sticky="e")
-        self.statuslabel = tk.Label(self, text="Status: ")
-        self.statuslabel.grid(row=1, column=0, sticky="e")
-        self.roundlabel = tk.Label(self, text="Round: ")
-        self.roundlabel.grid(row=2, column=0, sticky="e")
-        self.scorelabel = tk.Label(self, text="Completion: ")
-        self.scorelabel.grid(row=3, column=0, sticky="e")
-        self.timelabel = tk.Label(self, text="Time elapsed: ")
-        self.timelabel.grid(row=4, column=0, sticky="e")
-        self.statusdisp = tk.Label(self, text="Awaiting input")
-        self.statusdisp.grid(row=1, column=1, sticky="w")
-        self.rounddisp = tk.Label(self, text="Awaiting input")
-        self.rounddisp.grid(row=2, column=1, sticky="w")
-        self.scoredisp = tk.Label(self, text="Awaiting input")
-        self.scoredisp.grid(row=3, column=1, sticky="w")
-        self.timedisp = tk.Label(self, text="Awaiting input")
-        self.timedisp.grid(row=4, column=1, sticky="w")
-        # print(dirs)
 
-        self.toggle_button = tk.Button(self, text='\nStart Scheduling\n', background="#AAFFAA",activebackground="#AAEEAA", command=self.run_sched)
-        self.toggle_button.grid(row=6, column=0,columnspan=2, sticky=(tk.N,tk.W,tk.E,tk.S))
+        self.dirchooser=tk.OptionMenu(self.frame,self.chosen_dir,*dirs)
+        self.dirchooser.grid(row=0,column=1, sticky='w')
+        self.dirchooserlabel=tk.Label(self.frame,text="Choose prior run to continue improving: ")
+        self.dirchooserlabel.grid(row=0,column=0,sticky="e")
+        self.statuslabel = tk.Label(self.frame, text="Status: ")
+        self.statuslabel.grid(row=1, column=0, sticky="e")
+        self.roundlabel = tk.Label(self.frame, text="Round: ")
+        self.roundlabel.grid(row=2, column=0, sticky="e")
+        self.scorelabel = tk.Label(self.frame, text="Completion: ")
+        self.scorelabel.grid(row=3, column=0, sticky="e")
+        self.timelabel = tk.Label(self.frame, text="Time elapsed: ")
+        self.timelabel.grid(row=4, column=0, sticky="e")
+        self.statusdisp = tk.Label(self.frame, text="Awaiting input")
+        self.statusdisp.grid(row=1, column=1, sticky="w")
+        self.rounddisp = tk.Label(self.frame, text="Awaiting input")
+        self.rounddisp.grid(row=2, column=1, sticky="w")
+        self.scoredisp = tk.Label(self.frame, text="Awaiting input")
+        self.scoredisp.grid(row=3, column=1, sticky="w")
+        self.timedisp = tk.Label(self.frame, text="Awaiting input")
+        self.timedisp.grid(row=4, column=1, sticky="w")
+
+        self.toggle_button = tk.Button(self.frame, text='\nStart Scheduling\n', background="#AAFFAA",activebackground="#AAEEAA", command=self.run_sched)
+        self.toggle_button.grid(row=5, column=0,columnspan=2, sticky=(tk.N,tk.W,tk.E,tk.S))
 
     def full_exit(self):
         # self.quit()
@@ -141,6 +143,7 @@ class Application(tk.Frame):
         self.toggle_button.config(text='\nStop Scheduling\n',background="#FFAAAA",activebackground="#EEAAAA", command=self.stop_sched)
         self.dirchooser.config(state='disabled')
         self.update_display("starting run")
+        self.root.update()
         thr=threading.Thread(target=self.thread_sched_runner)
         thr.start()
 
@@ -150,11 +153,11 @@ class Application(tk.Frame):
         if dir == self.default_dir:
             dir = None
         runner = run_scheduler(save=dir)
-        self.root.update()
         while 1:
             if self.running==1:
                 data=runner.send(None)
                 self.update_display(data)
+                self.root.update()
                 runner.send(None)
             elif self.running==2:
                 try:
@@ -195,8 +198,7 @@ class Application(tk.Frame):
 def main():
     root=tk.Tk()
     app = Application(root)
-    app.master.title('Scheduler')
-    app.mainloop()
+    app.frame.mainloop()
     # run_scheduler(save=None)#"2019_02_25__19_27_42")#"2019_02_22__18_12_46")#"2019_01_16__20_53_43")
 
 
