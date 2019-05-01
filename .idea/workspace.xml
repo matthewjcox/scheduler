@@ -5,6 +5,43 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back_end/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/genetic_algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back_end/run_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/run_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/blank_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/fullCourses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/full_school_2017_students.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/full_school_classrooms.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/full_school_sections.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/full_school_teachers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/readable_schedule.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/readable_schedule_stats.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/run_params.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/schedule.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_20__18_05_41/stat_spreadsheet.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/blank_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/fullCourses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/full_school_2017_students.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/full_school_classrooms.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/full_school_sections.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/full_school_teachers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/readable_schedule.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/readable_schedule_stats.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/run_params.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/schedule.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_22__18_15_49/stat_spreadsheet.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/blank_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/fullCourses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/full_school_2017_students.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/full_school_classrooms.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/full_school_sections.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/full_school_teachers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/readable_schedule (copy 1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/readable_schedule.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/readable_schedule_stats.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/run_params.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/schedule.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/stat_spreadsheet.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/past_runs/2019_03_26__16_09_32/~$stat_spreadsheet.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back_end/genetic_algorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
-              <caret line="413" selection-start-line="413" selection-end-line="413" />
+            <state relative-caret-position="137">
+              <caret line="800" column="26" selection-start-line="800" selection-start-column="26" selection-end-line="800" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -41,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-883">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="351">
+              <caret line="185" column="54" selection-start-line="185" selection-start-column="54" selection-end-line="185" selection-end-column="54" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -51,19 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runs/past_runs/2019_04_24__16_58_28/log.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="270">
-              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back_end/basics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6495">
-              <caret line="438" column="36" selection-start-line="438" selection-start-column="36" selection-end-line="438" selection-end-column="36" />
+            <state relative-caret-position="181">
+              <caret line="292" column="29" selection-start-line="292" selection-start-column="29" selection-end-line="292" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -78,7 +106,15 @@
       <find>change_t</find>
       <find>change_p</find>
       <find>&quot;err</find>
+      <find>self</find>
+      <find>class</find>
+      <find>label</find>
+      <find>name for name</find>
     </findStrings>
+    <replaceStrings>
+      <replace>top</replace>
+      <replace>disp</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,17 +162,11 @@
               <item name="runs" type="462c0819:PsiDirectoryNode" />
               <item name="past_runs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
-              <item name="runs" type="462c0819:PsiDirectoryNode" />
-              <item name="past_runs" type="462c0819:PsiDirectoryNode" />
-              <item name="2019_04_24__16_58_28" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,6 +223,7 @@
       <workItem from="1555962210753" duration="645000" />
       <workItem from="1556124112588" duration="4884000" />
       <workItem from="1556564942753" duration="2801000" />
+      <workItem from="1556728965341" duration="5167000" />
     </task>
     <task id="LOCAL-00001" summary="Student auto-removal bug fixes">
       <created>1556125433423</created>
@@ -206,13 +236,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8495000" />
+    <option name="totallyTimeSpent" value="13662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1922" height="1125" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25773746" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3479189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,23 +273,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Student auto-removal bug fixes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/scheduler$run_schedule.coverage" NAME="run_schedule Coverage Results" MODIFIED="1556567942772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scheduler$run_schedule.coverage" NAME="run_schedule Coverage Results" MODIFIED="1556734279208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/back_end/basics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6495">
-          <caret line="438" column="36" selection-start-line="438" selection-start-column="36" selection-end-line="438" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runs/past_runs/2019_04_24__16_58_28/log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="270">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -270,10 +286,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2019_04_24__16_58_28/log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="270">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/basics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="292" column="29" selection-start-line="292" selection-start-column="29" selection-end-line="292" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back_end/genetic_algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4080">
-          <caret line="413" selection-start-line="413" selection-end-line="413" />
+        <state relative-caret-position="137">
+          <caret line="800" column="26" selection-start-line="800" selection-start-column="26" selection-end-line="800" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -282,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-883">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="351">
+          <caret line="185" column="54" selection-start-line="185" selection-start-column="54" selection-end-line="185" selection-end-column="54" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

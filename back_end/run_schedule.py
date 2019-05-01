@@ -6,6 +6,7 @@ import sqlite3
 import os
 import shutil
 import tkinter as tk
+import threading
 
 # from tendo import singleton
 # lock=singleton.SingleInstance()
@@ -20,7 +21,7 @@ def run_scheduler(save=None):
         except TypeError:
             pass
     if save is None:
-        save='[name for name in os.listdir(".") if os.path.isdir(name)]'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
+        save='runs/past_runs/'+datetime.datetime.strftime(datetime.datetime.utcnow(),"%Y_%m_%d__%H_%M_%S")
         os.mkdir(save)
         start_logging(save)
         param_file_name = 'runs/run_params.txt'
@@ -69,7 +70,7 @@ def run_scheduler(save=None):
     read_sections(section_fn, sections,num_periods,classrooms,courses,teachers,students)
 
     solver = multiple_hill_climb(master_schedule,num_periods,classrooms,courses,teachers,students,sections,save)
-    solver.solve(verbose=0, print_every=1)
+    yield from solver.solve(verbose=0, print_every=1)
 
 class Application(tk.Frame):
     def __init__(self, root, master=None):
@@ -77,31 +78,118 @@ class Application(tk.Frame):
         self.root.minsize(300, 300)
         self.root.geometry("800x600+300+300")
         tk.Frame.__init__(self, master)
-        self.grid(sticky="nwse")
+        self.grid(sticky=(tk.N,tk.W,tk.E,tk.S))
         self.createWidgets()
+        self.running_state=0#0:stopped; 1:running; 2:stopping
 
     def createWidgets(self):
         # top = self.winfo_toplevel()
         # top.rowconfigure(0, weight=1)
+        # top.rowconfigure(1, weight=1)
+        # top.rowconfigure(2, weight=1)
+        # top.rowconfigure(3, weight=1)
+        # top.rowconfigure(4, weight=1)
+        # top.rowconfigure(5, weight=1)
+        # top.rowconfigure(6, weight=2)
         # top.columnconfigure(0, weight=1)
+        # top.columnconfigure(1, weight=1)
         self.rowconfigure(0, weight=1)
-        self.columnconfigure(0, weight=1)
         self.rowconfigure(1, weight=1)
+        self.rowconfigure(2, weight=1)
+        self.rowconfigure(3, weight=1)
+        self.rowconfigure(4, weight=1)
+        self.rowconfigure(5, weight=1)
+        self.rowconfigure(6, weight=2)
+        self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
 
-        dirs=["Start from scratch"]+[name for name in os.listdir("runs/past_runs/") if os.path.isdir("runs/past_runs/"+name)][::-1]
-        print(dirs)
+        self.default_dir="Start from scratch"
+        self.chosen_dir= tk.StringVar(self.root)
+        dirs=[self.default_dir]+[name for name in os.listdir("runs/past_runs/") if os.path.isdir("runs/past_runs/"+name)][::-1]
+        self.chosen_dir.set(dirs[0])
+        self.dirchooser=tk.OptionMenu(self,self.chosen_dir,*dirs)
+        self.dirchooser.grid(row=0,column=1, sticky='w')
+        self.dirchooserlabel=tk.Label(self,text="Choose prior run to continue improving: ")
+        self.dirchooserlabel.grid(row=0,column=0,sticky="e")
+        self.statuslabel = tk.Label(self, text="Status: ")
+        self.statuslabel.grid(row=1, column=0, sticky="e")
+        self.roundlabel = tk.Label(self, text="Round: ")
+        self.roundlabel.grid(row=2, column=0, sticky="e")
+        self.scorelabel = tk.Label(self, text="Completion: ")
+        self.scorelabel.grid(row=3, column=0, sticky="e")
+        self.timelabel = tk.Label(self, text="Time elapsed: ")
+        self.timelabel.grid(row=4, column=0, sticky="e")
+        self.statusdisp = tk.Label(self, text="Awaiting input")
+        self.statusdisp.grid(row=1, column=1, sticky="w")
+        self.rounddisp = tk.Label(self, text="Awaiting input")
+        self.rounddisp.grid(row=2, column=1, sticky="w")
+        self.scoredisp = tk.Label(self, text="Awaiting input")
+        self.scoredisp.grid(row=3, column=1, sticky="w")
+        self.timedisp = tk.Label(self, text="Awaiting input")
+        self.timedisp.grid(row=4, column=1, sticky="w")
+        # print(dirs)
 
-        self.start_button = tk.Button(self, text='Start Schedule', background="#AAFFAA",activebackground="#AAEEAA", command=self.run_sched)
-        self.start_button.grid(row=0, column=0, sticky="nsew")
+        self.toggle_button = tk.Button(self, text='\nStart Scheduling\n', background="#AAFFAA",activebackground="#AAEEAA", command=self.run_sched)
+        self.toggle_button.grid(row=6, column=0,columnspan=2, sticky=(tk.N,tk.W,tk.E,tk.S))
 
     def full_exit(self):
         # self.quit()
         self.destroy()
 
     def run_sched(self):
-        self.full_exit()
-        pass
+        self.running=1
+        self.toggle_button.config(text='\nStop Scheduling\n',background="#FFAAAA",activebackground="#EEAAAA", command=self.stop_sched)
+        self.dirchooser.config(state='disabled')
+        self.update_display("starting run")
+        thr=threading.Thread(target=self.thread_sched_runner)
+        thr.start()
+
+        
+    def thread_sched_runner(self):
+        dir = self.chosen_dir.get()
+        if dir == self.default_dir:
+            dir = None
+        runner = run_scheduler(save=dir)
+        self.root.update()
+        while 1:
+            if self.running==1:
+                data=runner.send(None)
+                self.update_display(data)
+                runner.send(None)
+            elif self.running==2:
+                try:
+                    runner.send(None)
+                    runner.send(1)
+                except StopIteration:
+                    pass
+                break
+        self.sched_stopped()
+
+    def update_display(self,data):
+        if data == "starting run":
+            self.statusdisp.config(text="Run starting")
+        elif data=="no run":
+            self.statusdisp.config(text="Awaiting input")
+            self.rounddisp.config(text="Awaiting input")
+            self.scoredisp.config(text="Awaiting input")
+            self.timedisp.config(text="Awaiting input")
+        else:
+            score,maxscore,it,time=data
+            self.statusdisp.config(text="Running")
+            self.rounddisp.config(text="{}".format(it))
+            self.scoredisp.config(text="{:.3f}%".format(score/maxscore*100))
+            self.timedisp.config(text="{}".format(time))
+
+
+    def sched_stopped(self):
+        self.running = 0
+        self.toggle_button.config(text='\nStart Scheduling\n', background="#AAFFAA", activebackground="#AAEEAA",command=self.run_sched)
+        self.update_display("no run")
+        self.dirchooser.config(state='normal')
+
+    def stop_sched(self):
+        self.running = 2
+        self.toggle_button.config(text='\nStopping ...\n')
 
 
 def main():
