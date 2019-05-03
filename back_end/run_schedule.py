@@ -182,9 +182,8 @@ class Application:
 
     def sched_stopped(self):
         self.running = 0
-        self.toggle_button.config(text='\nStart Scheduling\n', background="#AAFFAA", activebackground="#AAEEAA",command=self.run_sched)
+        self.toggle_button.config(text='\nStart Scheduling\n', background="#AAFFAA", activebackground="#AAEEAA",command=self.run_sched,state="normal")
         self.update_display("no run")
-        self.dirchooser.config(state='normal')
 
     def stop_sched(self):
         self.running = 2
