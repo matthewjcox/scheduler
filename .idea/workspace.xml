@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b7a7666-7885-4b83-92a6-d2688f17d70e" name="Default Changelist" comment="">
+    <list default="true" id="8b7a7666-7885-4b83-92a6-d2688f17d70e" name="Default Changelist" comment="End-of-year commit with all final files">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/past_runs/2019_04_04__16_10_48/log.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/past_runs/2019_04_04__16_10_48/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scheduler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scheduler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/run_schedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/run_schedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/genetic_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/genetic_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/parse_constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/parse_constraints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/run_statistics/analyze_log_scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/run_statistics/analyze_log_scores.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,22 +20,6 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/scheduler$run_schedule.coverage" NAME="run_schedule Coverage Results" MODIFIED="1556754634071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="184" column="92" selection-start-line="184" selection-start-column="92" selection-end-line="184" selection-end-column="92" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -42,6 +33,7 @@
       <find>label</find>
       <find>name for name</find>
       <find>self</find>
+      <find>remove_t</find>
     </findStrings>
     <replaceStrings>
       <replace>top</replace>
@@ -57,8 +49,10 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/back_end/basics.py" />
-        <option value="$PROJECT_DIR$/back_end/genetic_algorithm.py" />
         <option value="$PROJECT_DIR$/back_end/run_schedule.py" />
+        <option value="$PROJECT_DIR$/back_end/run_statistics/analyze_log_scores.py" />
+        <option value="$PROJECT_DIR$/back_end/parse_constraints.py" />
+        <option value="$PROJECT_DIR$/back_end/genetic_algorithm.py" />
       </list>
     </option>
   </component>
@@ -73,7 +67,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,16 +79,53 @@
               <item name="scheduler" type="462c0819:PsiDirectoryNode" />
               <item name="back_end" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="back_end" type="462c0819:PsiDirectoryNode" />
+              <item name="run_statistics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="runs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="runs" type="462c0819:PsiDirectoryNode" />
+              <item name="constraint_files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="runs" type="462c0819:PsiDirectoryNode" />
+              <item name="past_runs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scheduler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+              <item name="runs" type="462c0819:PsiDirectoryNode" />
+              <item name="past_runs" type="462c0819:PsiDirectoryNode" />
+              <item name="2019_04_04__16_10_48" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/runs/past_runs" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/runs/past_runs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,7 +139,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.run_schedule">
+    <configuration name="analyze_log_scores" type="PythonConfigurationType" factoryName="Python">
+      <module name="scheduler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../untitled/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/back_end/run_statistics/analyze_log_scores.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_schedule" type="PythonConfigurationType" factoryName="Python">
       <module name="scheduler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,7 +201,13 @@
       <workItem from="1556564942753" duration="2801000" />
       <workItem from="1556728965341" duration="5167000" />
       <workItem from="1556901781005" duration="111000" />
-      <workItem from="1556901911592" duration="866000" />
+      <workItem from="1556901911592" duration="1296000" />
+      <workItem from="1557247317668" duration="3624000" />
+      <workItem from="1557765735204" duration="1073000" />
+      <workItem from="1558111456989" duration="1588000" />
+      <workItem from="1558544267968" duration="641000" />
+      <workItem from="1559152751837" duration="990000" />
+      <workItem from="1559584035349" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="Student auto-removal bug fixes">
       <created>1556125433423</created>
@@ -158,21 +216,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556125433423</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Student auto-removal bug fixes">
+      <created>1556906911963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556906911963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16389000" />
+    <option name="totallyTimeSpent" value="25064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1123" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27103302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32798395" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32798395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -186,7 +251,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" auto_hide="true" x="991" y="205" width="619" height="670" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.32960597" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -195,18 +260,55 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Student auto-removal bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Student auto-removal bug fixes" />
+    <MESSAGE value="Final commit" />
+    <MESSAGE value="End-of-year commit with all final files" />
+    <option name="LAST_COMMIT_MESSAGE" value="End-of-year commit with all final files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/scheduler$run_schedule.coverage" NAME="run_schedule Coverage Results" MODIFIED="1556902094870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scheduler$run_schedule.coverage" NAME="run_schedule Coverage Results" MODIFIED="1559153401759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scheduler$analyze_log_scores.coverage" NAME="analyze_log_scores Coverage Results" MODIFIED="1558544355466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
+    <entry file="file://$PROJECT_DIR$/runs/past_runs/2019_04_04__16_10_48/log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="180">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/parse_constraints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="184" column="92" selection-start-line="184" selection-start-column="92" selection-end-line="184" selection-end-column="92" />
+        <state relative-caret-position="285">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/genetic_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="787" column="38" selection-start-line="787" selection-start-column="38" selection-end-line="787" selection-end-column="38" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/run_schedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="192" column="11" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_end/run_statistics/analyze_log_scores.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
