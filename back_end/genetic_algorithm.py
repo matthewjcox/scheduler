@@ -767,7 +767,7 @@ class multiple_hill_climb:
             _ITERATION+=1
             it=_ITERATION
             if first_it == 1 and it==1:
-                self.current_sched=self.improve_sched(10,1,[self.current_sched.copy() for i in range(1*self.num_processes)])#10,5,10
+                self.current_sched=self.improve_sched(10,5,[self.current_sched.copy() for i in range(10*self.num_processes)])#10,5,10
                 # self.current_sched.score()
                 # self.current_sched.initialize_weights()
             if first_it==1 or it<10 or it % print_every == 0:
@@ -775,7 +775,7 @@ class multiple_hill_climb:
             new_organism = self.current_sched.copy()
             new_organism.initialize_weights()
             if it%20==1:
-                new_organism = self.improve_sched(10,1, [new_organism for i in range(self.num_processes)])#10,5,10
+                new_organism = self.improve_sched(10,5, [new_organism for i in range(10*self.num_processes)])#10,5,10
             else:
                 scheds=[]
                 for i in range(self.num_processes*2):#2
@@ -786,7 +786,7 @@ class multiple_hill_climb:
                     for i in range(num_mutations):
                         org.mutate_period(log=0,remove_students=1)
                     scheds.append(org)
-                new_organism = self.improve_sched(10,1, scheds)#10,5
+                new_organism = self.improve_sched(10,5, scheds)#10,5
             print('New:')
             new_score=new_organism.preliminary_score(verbose=1)
             print('Old:')

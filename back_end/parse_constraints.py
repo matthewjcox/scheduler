@@ -31,7 +31,7 @@ def set_attribute(s,field,value,sections,classrooms,courses,teachers,students):
         s.set_semester(v)
     elif field == 'maxstudents':
         v = int(value)
-        s.set_max_students(v)
+        s.set_max_students(v+1)
     elif field == 'minstudents':
         v = int(value)
         s.set_min_students(v)
