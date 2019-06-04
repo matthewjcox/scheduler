@@ -33,8 +33,9 @@ runParams = [line.strip() for line in runParamsFile.readlines()]
 # Creates dictionary of course IDs to relevant info about courses from the courses.txt file
 courseFile = open(directory +"/" + runParams[2])
 # FIX THIS COMMAND SO IT BUILDS THE CORRECT DICTIONARY!!!!
-# Dictionary contains courseID:[(0) course title, (1) long course title]
-courses = {course[2]:course[:2] for course in [[thing.strip() for thing in line.split("|")] for line in courseFile.readlines()]}
+# Dictionary contains courseID:[(0) course title, (1) long course title, (2) term ('semester' or 'year')]
+courses = {course[2]:course[:2] + [course[3]] for course in [[thing.strip() for thing in line.split("|")] for line in courseFile.readlines()]}
+#print(courses)
 
 # Opens the file with run information to analyze
 file = open(toInterpret, 'r')
@@ -177,8 +178,10 @@ for student in studentScheds.values():
         student[4].append(sections[section][3])
     #print(student)
 
+
 # Creates a statistic file named for the file plus _stats
 statFile = open(toInterpret[:-4] + "_stats.txt", "w")
+statFile.write(sys.argv[1] + "\n")
 
 theoreticalEmptySeats = (sum([sect[2] for sect in sections.values()]) - numStuds*sum([len(stud[1]) for stud in studentScheds.values()]))
 statFile.write("Minimum Empty Seats: " + theoreticalEmptySeats.__str__() + "\n")
@@ -197,9 +200,21 @@ statFile.write("Students with empty spaces in schedule: " + ", ".join(studentsWi
 
 # Calculate percent course requests fulfilled
 totalRequests = 0
+totalRequestsSemHalf = 0
 fulfilledRequests = 0
+fulfilledRequestsHalfSem = 0
 unrecievedCourses = {}
 for student in studentScheds.values():
+    for c in student[1]:
+        if courses[c][2] == "semester":
+            totalRequestsSemHalf += 0.5
+        else:
+            totalRequestsSemHalf += 1
+    for c in student[4]:
+        if courses[c][2] == "semester":
+            fulfilledRequestsHalfSem += 0.5
+        else:
+            fulfilledRequestsHalfSem += 1
     # print(student)
     unfulfilledSet = {*student[1]}.difference({*student[4]})
     totalRequests += len(student[1])
@@ -209,7 +224,9 @@ for student in studentScheds.values():
             unrecievedCourses[sect] = 0
         unrecievedCourses[sect] += 1
 percentFulfilled = (fulfilledRequests/totalRequests*100).__str__() + "%"
+percentFulfilledHalfSem = (fulfilledRequestsHalfSem/totalRequestsSemHalf*100).__str__() + "%"
 statFile.write("Percentage of Course Requests Fulfilled: " + percentFulfilled + "\n")
+statFile.write("Percentage of Course Requests Fulfilled (semester classes half-weighted): " + percentFulfilledHalfSem + "\n")
 
 # Calculate number of student conflicts (number of periods during which one student has two sections)
 # Semester conflicts should count as half a conflict
