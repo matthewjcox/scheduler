@@ -63,9 +63,11 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Matthew Cox** - *Initial work on scheduling algorithm*
-* **Sarah Gold** - *Work on data collection and processing*
-* **Young Qi** - *Initial work on website*
+* **Matthew Cox** - *Initial work on scheduling algorithm* (matthewjcox.2000@gmail.com, coxm@mit.edu)
+* **Sarah Gold** - *Work on data collection and processing* (sarahredhen@yahoo.com, segold@haverford.edu)
+* **Young Qi** - *Initial work on website* (haycockyoung@gmail.com, yqi05@email.wm.edu)
+* **Koushik Thiyagarajan** - -*kkt.dude74@gmail.com
+* **Tuan Tran** - *rebeday124@gmail.com
 
 See also the list of [contributors](https://github.com/matthewjcox/scheduler/contributors) who participated in this project.
 
