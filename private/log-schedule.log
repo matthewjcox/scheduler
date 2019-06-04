@@ -23111,3 +23111,422 @@ Not Found: /favicon.ico
 [2019-04-23 11:36:22 -0400] [4648] [INFO] Booting worker with pid: 4648
 [2019-04-23 11:36:22 -0400] [4649] [INFO] Booting worker with pid: 4649
 [2019-04-23 11:36:22 -0400] [4652] [INFO] Booting worker with pid: 4652
+\n\n\n starting new server run \n
+[2019-04-24 13:04:16 -0400] [27074] [INFO] Starting gunicorn 19.9.0
+[2019-04-24 13:04:16 -0400] [27074] [INFO] Listening at: http://127.0.0.1:11356 (27074)
+[2019-04-24 13:04:16 -0400] [27074] [INFO] Using worker: sync
+[2019-04-24 13:04:16 -0400] [27077] [INFO] Booting worker with pid: 27077
+[2019-04-24 13:04:16 -0400] [27078] [INFO] Booting worker with pid: 27078
+[2019-04-24 13:04:16 -0400] [27080] [INFO] Booting worker with pid: 27080
+[2019-04-24 13:04:16 -0400] [27081] [INFO] Booting worker with pid: 27081
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 41, in redirect
+    client_secret=CLIENT_SECRET)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/requests_oauthlib/oauth2_session.py", line 192, in fetch_token
+    raise ValueError('Please supply either code or '
+ValueError: Please supply either code or authorization_response parameters.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+\n\n\n starting new server run \n
+[2019-04-30 10:56:55 -0400] [26669] [INFO] Starting gunicorn 19.9.0
+[2019-04-30 10:56:55 -0400] [26669] [INFO] Listening at: http://127.0.0.1:11356 (26669)
+[2019-04-30 10:56:55 -0400] [26669] [INFO] Using worker: sync
+[2019-04-30 10:56:55 -0400] [26674] [INFO] Booting worker with pid: 26674
+[2019-04-30 10:56:55 -0400] [26675] [INFO] Booting worker with pid: 26675
+[2019-04-30 10:56:55 -0400] [26676] [INFO] Booting worker with pid: 26676
+[2019-04-30 10:56:55 -0400] [26677] [INFO] Booting worker with pid: 26677
+[2019-05-01 14:15:04 -0400] [26669] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-05-01 14:15:05 -0400] [27385] [INFO] Starting gunicorn 19.9.0
+[2019-05-01 14:15:05 -0400] [27385] [INFO] Listening at: http://127.0.0.1:11356 (27385)
+[2019-05-01 14:15:05 -0400] [27385] [INFO] Using worker: sync
+[2019-05-01 14:15:05 -0400] [27393] [INFO] Booting worker with pid: 27393
+[2019-05-01 14:15:05 -0400] [27395] [INFO] Booting worker with pid: 27395
+[2019-05-01 14:15:05 -0400] [27396] [INFO] Booting worker with pid: 27396
+[2019-05-01 14:15:05 -0400] [27397] [INFO] Booting worker with pid: 27397
+\n\n\n starting new server run \n
+[2019-05-01 19:53:31 -0400] [20948] [INFO] Starting gunicorn 19.9.0
+[2019-05-01 19:53:31 -0400] [20948] [INFO] Listening at: http://127.0.0.1:11356 (20948)
+[2019-05-01 19:53:31 -0400] [20948] [INFO] Using worker: sync
+[2019-05-01 19:53:31 -0400] [20951] [INFO] Booting worker with pid: 20951
+[2019-05-01 19:53:31 -0400] [20952] [INFO] Booting worker with pid: 20952
+[2019-05-01 19:53:31 -0400] [20955] [INFO] Booting worker with pid: 20955
+[2019-05-01 19:53:31 -0400] [20956] [INFO] Booting worker with pid: 20956
+\n\n\n starting new server run \n
+[2019-05-01 20:22:37 -0400] [25218] [INFO] Starting gunicorn 19.9.0
+[2019-05-01 20:22:37 -0400] [25218] [INFO] Listening at: http://127.0.0.1:11356 (25218)
+[2019-05-01 20:22:37 -0400] [25218] [INFO] Using worker: sync
+[2019-05-01 20:22:37 -0400] [25221] [INFO] Booting worker with pid: 25221
+[2019-05-01 20:22:38 -0400] [25222] [INFO] Booting worker with pid: 25222
+[2019-05-01 20:22:38 -0400] [25224] [INFO] Booting worker with pid: 25224
+[2019-05-01 20:22:38 -0400] [25227] [INFO] Booting worker with pid: 25227
+\n\n\n starting new server run \n
+[2019-05-03 14:08:58 -0400] [9071] [INFO] Starting gunicorn 19.9.0
+[2019-05-03 14:08:58 -0400] [9071] [INFO] Listening at: http://127.0.0.1:11356 (9071)
+[2019-05-03 14:08:58 -0400] [9071] [INFO] Using worker: sync
+[2019-05-03 14:08:58 -0400] [9083] [INFO] Booting worker with pid: 9083
+[2019-05-03 14:08:59 -0400] [9084] [INFO] Booting worker with pid: 9084
+[2019-05-03 14:08:59 -0400] [9085] [INFO] Booting worker with pid: 9085
+[2019-05-03 14:08:59 -0400] [9086] [INFO] Booting worker with pid: 9086
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /teacherView/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view projectIndex.views.redirectT didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /teacherView/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view projectIndex.views.redirectT didn't return an HttpResponse object. It returned None instead.
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 41, in redirect
+    client_secret=CLIENT_SECRET)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/requests_oauthlib/oauth2_session.py", line 192, in fetch_token
+    raise ValueError('Please supply either code or '
+ValueError: Please supply either code or authorization_response parameters.
+[2019-05-23 15:09:57 +0000] [9086] [INFO] Worker exiting (pid: 9086)
+/web/projects/schedule/public/scheduleServer
+[2019-05-23 15:09:57 +0000] [9085] [INFO] Worker exiting (pid: 9085)
+[2019-05-23 15:09:57 +0000] [9083] [INFO] Worker exiting (pid: 9083)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-05-23 11:09:57 -0400] [9071] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-05-23 11:09:59 -0400] [13626] [INFO] Starting gunicorn 19.9.0
+[2019-05-23 11:09:59 -0400] [13626] [INFO] Listening at: http://127.0.0.1:11356 (13626)
+[2019-05-23 11:09:59 -0400] [13626] [INFO] Using worker: sync
+[2019-05-23 11:09:59 -0400] [13633] [INFO] Booting worker with pid: 13633
+[2019-05-23 11:09:59 -0400] [13636] [INFO] Booting worker with pid: 13636
+[2019-05-23 11:09:59 -0400] [13637] [INFO] Booting worker with pid: 13637
+[2019-05-23 11:09:59 -0400] [13638] [INFO] Booting worker with pid: 13638
+Internal Server Error: /teacherView/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view projectIndex.views.redirectT didn't return an HttpResponse object. It returned None instead.
+[2019-05-23 15:12:05 +0000] [13637] [INFO] Worker exiting (pid: 13637)
+[2019-05-23 15:12:05 +0000] [13633] [INFO] Worker exiting (pid: 13633)
+/web/projects/schedule/public/scheduleServer
+[2019-05-23 15:12:05 +0000] [13636] [INFO] Worker exiting (pid: 13636)
+[2019-05-23 15:12:05 +0000] [13638] [INFO] Worker exiting (pid: 13638)
+/web/projects/schedule/public/scheduleServer
+[2019-05-23 11:12:05 -0400] [13626] [INFO] Handling signal: term
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-05-23 11:12:06 -0400] [14050] [INFO] Starting gunicorn 19.9.0
+[2019-05-23 11:12:06 -0400] [14050] [INFO] Listening at: http://127.0.0.1:11356 (14050)
+[2019-05-23 11:12:06 -0400] [14050] [INFO] Using worker: sync
+[2019-05-23 11:12:06 -0400] [14058] [INFO] Booting worker with pid: 14058
+[2019-05-23 11:12:06 -0400] [14059] [INFO] Booting worker with pid: 14059
+[2019-05-23 11:12:06 -0400] [14060] [INFO] Booting worker with pid: 14060
+[2019-05-23 11:12:06 -0400] [14063] [INFO] Booting worker with pid: 14063
+Internal Server Error: /teacherView/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view projectIndex.views.redirectT didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /teacherView/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 137, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view projectIndex.views.redirectT didn't return an HttpResponse object. It returned None instead.
+[2019-05-23 15:14:56 +0000] [14059] [INFO] Worker exiting (pid: 14059)
+[2019-05-23 15:14:56 +0000] [14060] [INFO] Worker exiting (pid: 14060)
+[2019-05-23 15:14:56 +0000] [14058] [INFO] Worker exiting (pid: 14058)
+[2019-05-23 15:14:56 +0000] [14063] [INFO] Worker exiting (pid: 14063)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-05-23 11:14:56 -0400] [14050] [INFO] Handling signal: term
+\n\n\n starting new server run \n
+[2019-05-23 11:14:58 -0400] [14365] [INFO] Starting gunicorn 19.9.0
+[2019-05-23 11:14:58 -0400] [14365] [INFO] Listening at: http://127.0.0.1:11356 (14365)
+[2019-05-23 11:14:58 -0400] [14365] [INFO] Using worker: sync
+[2019-05-23 11:14:58 -0400] [14373] [INFO] Booting worker with pid: 14373
+[2019-05-23 11:14:58 -0400] [14374] [INFO] Booting worker with pid: 14374
+[2019-05-23 11:14:58 -0400] [14376] [INFO] Booting worker with pid: 14376
+[2019-05-23 11:14:58 -0400] [14377] [INFO] Booting worker with pid: 14377
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 41, in redirect
+    client_secret=CLIENT_SECRET)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/requests_oauthlib/oauth2_session.py", line 244, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 411, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 379, in parse_token_response
+    validate_token_parameters(params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 386, in validate_token_parameters
+    raise_from_error(params.get('error'), params)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/oauthlib/oauth2/rfc6749/errors.py", line 415, in raise_from_error
+    raise cls(**kwargs)
+oauthlib.oauth2.rfc6749.errors.InvalidGrantError: (invalid_grant) 
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /loginPage/redirect/
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/web/projects/schedule/public/scheduleServer/loginPage/views.py", line 66, in redirect
+    login(request,user)
+  File "/web/projects/schedule/env/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 118, in login
+    'You have multiple authentication backends configured and '
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+[2019-06-03 13:50:13 -0400] [14365] [INFO] Handling signal: term
+[2019-06-03 17:50:13 +0000] [14373] [INFO] Worker exiting (pid: 14373)
+[2019-06-03 17:50:13 +0000] [14376] [INFO] Worker exiting (pid: 14376)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-06-03 17:50:13 +0000] [14374] [INFO] Worker exiting (pid: 14374)
+/web/projects/schedule/public/scheduleServer
+\n\n\n starting new server run \n
+[2019-06-03 13:50:15 -0400] [26426] [INFO] Starting gunicorn 19.9.0
+[2019-06-03 13:50:15 -0400] [26426] [INFO] Listening at: http://127.0.0.1:11356 (26426)
+[2019-06-03 13:50:15 -0400] [26426] [INFO] Using worker: sync
+[2019-06-03 13:50:15 -0400] [26432] [INFO] Booting worker with pid: 26432
+[2019-06-03 13:50:16 -0400] [26433] [INFO] Booting worker with pid: 26433
+[2019-06-03 13:50:16 -0400] [26434] [INFO] Booting worker with pid: 26434
+[2019-06-03 13:50:16 -0400] [26436] [INFO] Booting worker with pid: 26436
+\n\n\n starting new server run \n
+[2019-06-03 13:57:53 -0400] [15825] [INFO] Starting gunicorn 19.9.0
+[2019-06-03 13:57:53 -0400] [15825] [INFO] Listening at: http://127.0.0.1:11356 (15825)
+[2019-06-03 13:57:53 -0400] [15825] [INFO] Using worker: sync
+[2019-06-03 13:57:53 -0400] [15828] [INFO] Booting worker with pid: 15828
+[2019-06-03 13:57:53 -0400] [15829] [INFO] Booting worker with pid: 15829
+[2019-06-03 13:57:53 -0400] [15831] [INFO] Booting worker with pid: 15831
+[2019-06-03 13:57:53 -0400] [15834] [INFO] Booting worker with pid: 15834
+[2019-06-03 18:05:42 +0000] [15829] [INFO] Worker exiting (pid: 15829)
+[2019-06-03 18:05:42 +0000] [15828] [INFO] Worker exiting (pid: 15828)
+/web/projects/schedule/public/scheduleServer
+/web/projects/schedule/public/scheduleServer
+[2019-06-03 14:05:42 -0400] [15825] [INFO] Handling signal: term
+[2019-06-03 18:05:42 +0000] [15831] [INFO] Worker exiting (pid: 15831)
+[2019-06-03 18:05:42 +0000] [15834] [INFO] Worker exiting (pid: 15834)
+\n\n\n starting new server run \n
+[2019-06-03 14:05:43 -0400] [6458] [INFO] Starting gunicorn 19.9.0
+[2019-06-03 14:05:43 -0400] [6458] [INFO] Listening at: http://127.0.0.1:11356 (6458)
+[2019-06-03 14:05:43 -0400] [6458] [INFO] Using worker: sync
+[2019-06-03 14:05:43 -0400] [6461] [INFO] Booting worker with pid: 6461
+[2019-06-03 14:05:43 -0400] [6463] [INFO] Booting worker with pid: 6463
+[2019-06-03 14:05:43 -0400] [6464] [INFO] Booting worker with pid: 6464
+[2019-06-03 14:05:43 -0400] [6465] [INFO] Booting worker with pid: 6465
+Not Found: /favicon.ico
+Not Found: /favicon.ico

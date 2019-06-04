@@ -24,13 +24,15 @@ def index(request):
     return HttpResponse(template.render(context, request))
     
 def redirectS(request):
-    HttpResponseRedirect(reverse('studentInput:index'))
+    return HttpResponseRedirect(reverse('studentInput:index'))
     
 def redirectT(request):
-    HttpResponseRedirect(reverse('counselorEditor:index'))
+    #HttpResponseRedirect(reverse('studentInput:index'))
+    return HttpResponseRedirect(reverse('counselorEditor:index'))
     
 def redirectC(request):
-    HttpResponseRedirect(reverse('projectIndex:index'))
+#    HttpResponseRedirect(reverse('studentInput:index'))
+    return HttpResponseRedirect(reverse('counselorEditor:index'))
     
     
     

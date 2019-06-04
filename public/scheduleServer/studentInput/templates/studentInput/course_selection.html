@@ -7,26 +7,38 @@
 
 <script>
     
+    credits = 0;
+    creditList = [];
     courseDict = {};
     courseCredit = {};
     {% for course in courseDict %}
         courseDict["{{ course.course_id }}"] = "{{course.course_name}}";
-        courseCredit["{{course.course_id}}"] = "{{course.course_credits}}"
+        courseCredit["{{course.course_id}}"] = {{course.course_credits}};
     {% endfor %}
     
+    function updateCredits(){
+        document.getElementById("credits").innerHTML = "Credits: "+credits;
+    }
+    
     function displayCourseName(numCourse, value){
+        credits -= creditList[numCourse];
         if (courseDict[value]){
             document.getElementById("name" + numCourse).innerHTML = courseDict[value];
+            creditList[numCourse] = courseCredit[value];
+            credits += creditList[numCourse];
         }else{
             document.getElementById("name" + numCourse).innerHTML = "Error: Invalid Course ID";
+            creditList[numCourse] = 0;
         }
+        updateCredits();
     }
     numCourses = {{numCourses}};
     function addCourse(){
         numCourses++;
+        creditList[numCourses] = 0;
         document.getElementById('numCourses').value = numCourses
         var course = document.createElement('div');
-        course.innerHTML = "Course "+numCourses+": <input type =\"text\" name = \"course"+numCourses+"\" value = \"\" onchange=\"displayCourseName("+numCourses+", this.value)\"> <button onclick = \"this.parentNode.style.display = 'none';document.getElementByName('course'+"+numCourses+").value = 'empty';\" type = \"button\">Remove Course</button> <div id=\"name"+numCourses+"\" style=\"display:inline-block\"></div>";
+        course.innerHTML = "Course "+numCourses+": <input type =\"text\" name = \"course"+numCourses+"\" value = \"\" onchange=\"displayCourseName("+numCourses+", this.value)\"> <button onclick = \"credits -= creditList["+numCourses+"];creditList["+numCourses+"]=0;updateCredits();this.parentNode.style.display = 'none';document.getElementsByName('course'+"+numCourses+")[0].value = 'empty';\" type = \"button\">Remove Course</button> <div id=\"name"+numCourses+"\" style=\"display:inline-block\"></div>";
         document.getElementById('courses').appendChild(course);
     }
     
@@ -42,15 +54,25 @@ Hi {{student}}!
     <div>
     Course {{ forloop.counter }}:
     <input type ="text" name = "course{{ forloop.counter }}" value = "{{course}}" onchange="displayCourseName({{ forloop.counter }}, this.value)">
-    <button onclick = "document.getElementsByName('course'+'{{ forloop.counter }}')[0].value = 'empty'; this.parentNode.style.display = 'none';" type = "button">Remove Course</button>
+    <button name = "button{{forloop.counter}}" onclick = "document.getElementsByName('course'+'{{ forloop.counter }}')[0].value = 'empty'; credits -= creditList[{{forloop.counter}}];creditList[{{forloop.counter}}]=0;updateCredits();this.parentNode.style.display = 'none';" type = "button">Remove Course</button>
     <div id="name{{ forloop.counter }}" style="display:inline-block"></div>
-    <script>displayCourseName({{ forloop.counter }}, '{{course}}')</script>
+    <script>
+    creditList[{{forloop.counter}}] = 0;
+    if(document.getElementsByName('course'+'{{ forloop.counter }}')[0].value == 'empty'){
+        document.getElementsByName('button'+'{{forloop.counter}}')[0].click();
+    }else{
+        displayCourseName({{ forloop.counter }}, '{{course}}');
+    }
+    </script>
     <br>
     </div>
 {% endfor %}
 </div>
 <button onclick = "addCourse()" type = "button">Add Course</button>
 <br><br>
+<div id = "credits">0</div>
+<br>
+<script>updateCredits();</script>
 <input type="submit" value="Submit Course Request">
 <input type="hidden" name="username" value="{{student}}">
 <input type="hidden" name="numCourses" value="{{numCourses}}" id="numCourses">
